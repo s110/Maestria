@@ -1,23 +1,25 @@
 [project]
-name = "collabnotebooks"
+name = "maestria"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.13"
 dependencies = [
     "beautifulsoup4>=4.13.4",
     "cvxopt>=1.3.2",
-    "duckdb>=1.3.0",
+    "duckdb==1.4.0.dev646",
     "fastexcel>=0.14.0",
     "google>=3.0.0",
     "httpx>=0.28.1",
     "jsonschema>=4.24.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.3",
+    "numpy==2.3.0",
     "office365-rest-python-client>=2.6.2",
-    "pandas==2.2.3",
+    "pandas==2.3.0",
     "polars>=1.30.0",
-    "requests>=2.32.3",
-    "scikit-learn>=1.6.1",
+    "pywavelets==1.8.0",
+    "requests==2.32.4",
+    "scikit-learn==1.7.0",
     "scipy>=1.15.3",
     "seaborn>=0.13.2",
     "sqlalchemy>=2.0.41",
