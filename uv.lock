@@ -383,21 +383,6 @@ wheels = [
 ]
 
 [[package]]
-name = "duckdb"
-version = "1.4.0.dev646"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/ec/d9/7bf30d08c82e8046eae6547267e3d60df079318c45c58cbbd2d8e62cabea/duckdb-1.4.0.dev646.tar.gz", hash = "sha256:50b0966afb4510ac7d52b7ed834dfe98505b8fdf87263715661d0252541f5c07", size = 11685223, upload-time = "2025-06-16T07:27:27.105Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c5/69/134f0dee82e3b4c63ad0a4d83c76bd1524b10eccfb2ae7bfa3296e9b570e/duckdb-1.4.0.dev646-cp313-cp313-macosx_12_0_arm64.whl", hash = "sha256:0b5d8bf4f857d0ceb3d41d5a4f337536673c706f3979f862f1a5e996132bf88e", size = 15800502, upload-time = "2025-06-16T07:26:56.338Z" },
-    { url = "https://files.pythonhosted.org/packages/7f/30/576c87b57d7cd6ee54614cbc4f2476646bdd5bd9903d01bd4efeddc4012e/duckdb-1.4.0.dev646-cp313-cp313-macosx_12_0_universal2.whl", hash = "sha256:0219cb7f76ad18654481973f36d3c86038f1a2b825b3a7bb348e1861590959bf", size = 33116397, upload-time = "2025-06-16T07:26:58.694Z" },
-    { url = "https://files.pythonhosted.org/packages/11/68/f2908e10372ef6a7d8d08186cd738dcda2055910f2d0b40b6a378cd72143/duckdb-1.4.0.dev646-cp313-cp313-macosx_12_0_x86_64.whl", hash = "sha256:d9da42173bbf306d9d24ee67a46648067cb4b93250fb6e6230fa21a1969fe44d", size = 17422475, upload-time = "2025-06-16T07:27:00.787Z" },
-    { url = "https://files.pythonhosted.org/packages/60/a6/2b05c8566092d00acda49ffc5d45814a89feb6be42bfd9e17a3a5b4727ab/duckdb-1.4.0.dev646-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:bc7f6339f8352a48d13c150d1155b531f97d85b20837716d6fd4ee9953c141f0", size = 19536987, upload-time = "2025-06-16T07:27:03.022Z" },
-    { url = "https://files.pythonhosted.org/packages/e0/83/f0f5c731248976c5aa6b26ddf9346ad9f73f8f9a26af2b8f71055bc2dcc7/duckdb-1.4.0.dev646-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:de75c3b384f8731afd6b57b8ceb18d75e9996b9f006b822db3903474891ae4b4", size = 21523048, upload-time = "2025-06-16T07:27:05.841Z" },
-    { url = "https://files.pythonhosted.org/packages/4e/9d/df5c726cf9a4840efd273187496d7eea8a4579e676c0f1c429debe7f4570/duckdb-1.4.0.dev646-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:7dbe116e6732adcc86cb1017614dde0a2dfaefdb9b5afeff8b78db22eea6e545", size = 23198163, upload-time = "2025-06-16T07:27:08.276Z" },
-    { url = "https://files.pythonhosted.org/packages/b1/8c/512c3ed2a828d1b376830a8ccaaf3bbd260139942d11d01cf4a7e0b81b90/duckdb-1.4.0.dev646-cp313-cp313-win_amd64.whl", hash = "sha256:99c557ffa91b8d4ee135f26ee8d6fa2e2855a77a6caed3868316315081121cad", size = 11552577, upload-time = "2025-06-16T07:27:10.187Z" },
-]
-
-[[package]]
 name = "executing"
 version = "2.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1009,7 +994,6 @@ source = { virtual = "." }
 dependencies = [
     { name = "beautifulsoup4" },
     { name = "cvxopt" },
-    { name = "duckdb" },
     { name = "fastexcel" },
     { name = "google" },
     { name = "httpx" },
@@ -1021,6 +1005,7 @@ dependencies = [
     { name = "office365-rest-python-client" },
     { name = "pandas" },
     { name = "pandas-stubs" },
+    { name = "playwright" },
     { name = "polars" },
     { name = "pywavelets" },
     { name = "requests" },
@@ -1035,7 +1020,6 @@ dependencies = [
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.13.4" },
     { name = "cvxopt", specifier = ">=1.3.2" },
-    { name = "duckdb", specifier = "==1.4.0.dev646" },
     { name = "fastexcel", specifier = ">=0.14.0" },
     { name = "google", specifier = ">=3.0.0" },
     { name = "httpx", specifier = ">=0.28.1" },
@@ -1047,6 +1031,7 @@ requires-dist = [
     { name = "office365-rest-python-client", specifier = ">=2.6.2" },
     { name = "pandas", specifier = "==2.3.0" },
     { name = "pandas-stubs", specifier = "==2.2.3.250527" },
+    { name = "playwright", specifier = "==1.52.0" },
     { name = "polars", specifier = ">=1.30.0" },
     { name = "pywavelets", specifier = "==1.8.0" },
     { name = "requests", specifier = "==2.32.4" },
@@ -1054,7 +1039,7 @@ requires-dist = [
     { name = "scipy", specifier = ">=1.15.3" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "sqlalchemy", specifier = ">=2.0.41" },
-    { name = "xlsxwriter", specifier = ">=3.2.3" },
+    { name = "xlsxwriter", specifier = "==3.2.5" },
 ]
 
 [[package]]
@@ -1449,6 +1434,25 @@ wheels = [
 ]
 
 [[package]]
+name = "playwright"
+version = "1.52.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "greenlet" },
+    { name = "pyee" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1e/62/a20240605485ca99365a8b72ed95e0b4c5739a13fb986353f72d8d3f1d27/playwright-1.52.0-py3-none-macosx_10_13_x86_64.whl", hash = "sha256:19b2cb9d4794062008a635a99bd135b03ebb782d460f96534a91cb583f549512", size = 39611246, upload-time = "2025-04-30T09:28:32.386Z" },
+    { url = "https://files.pythonhosted.org/packages/dc/23/57ff081663b3061a2a3f0e111713046f705da2595f2f384488a76e4db732/playwright-1.52.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:0797c0479cbdc99607412a3c486a3a2ec9ddc77ac461259fd2878c975bcbb94a", size = 37962977, upload-time = "2025-04-30T09:28:37.719Z" },
+    { url = "https://files.pythonhosted.org/packages/a2/ff/eee8532cff4b3d768768152e8c4f30d3caa80f2969bf3143f4371d377b74/playwright-1.52.0-py3-none-macosx_11_0_universal2.whl", hash = "sha256:7223960b7dd7ddeec1ba378c302d1d09733b8dac438f492e9854c85d3ca7144f", size = 39611247, upload-time = "2025-04-30T09:28:41.082Z" },
+    { url = "https://files.pythonhosted.org/packages/73/c6/8e27af9798f81465b299741ef57064c6ec1a31128ed297406469907dc5a4/playwright-1.52.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:d010124d24a321e0489a8c0d38a3971a7ca7656becea7656c9376bfea7f916d4", size = 45141333, upload-time = "2025-04-30T09:28:45.103Z" },
+    { url = "https://files.pythonhosted.org/packages/4e/e9/0661d343ed55860bcfb8934ce10e9597fc953358773ece507b22b0f35c57/playwright-1.52.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4173e453c43180acc60fd77ffe1ebee8d0efbfd9986c03267007b9c3845415af", size = 44540623, upload-time = "2025-04-30T09:28:48.749Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/81/a850dbc6bc2e1bd6cc87341e59c253269602352de83d34b00ea38cf410ee/playwright-1.52.0-py3-none-win32.whl", hash = "sha256:cd0bdf92df99db6237a99f828e80a6a50db6180ef8d5352fc9495df2c92f9971", size = 34839156, upload-time = "2025-04-30T09:28:52.768Z" },
+    { url = "https://files.pythonhosted.org/packages/51/f3/cca2aa84eb28ea7d5b85d16caa92d62d18b6e83636e3d67957daca1ee4c7/playwright-1.52.0-py3-none-win_amd64.whl", hash = "sha256:dcbf75101eba3066b7521c6519de58721ea44379eb17a0dafa94f9f1b17f59e4", size = 34839164, upload-time = "2025-04-30T09:28:56.36Z" },
+    { url = "https://files.pythonhosted.org/packages/b5/4f/71a8a873e8c3c3e2d3ec03a578e546f6875be8a76214d90219f752f827cd/playwright-1.52.0-py3-none-win_arm64.whl", hash = "sha256:9d0085b8de513de5fb50669f8e6677f0252ef95a9a1d2d23ccee9638e71e65cb", size = 30688972, upload-time = "2025-04-30T09:28:59.47Z" },
+]
+
+[[package]]
 name = "polars"
 version = "1.30.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1563,6 +1567,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/1d/b2/31537cf4b1ca988837256c910a668b553fceb8f069bedc4b1c826024b52c/pycparser-2.22.tar.gz", hash = "sha256:491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6", size = 172736, upload-time = "2024-03-30T13:22:22.564Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl", hash = "sha256:c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc", size = 117552, upload-time = "2024-03-30T13:22:20.476Z" },
+]
+
+[[package]]
+name = "pyee"
+version = "13.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/95/03/1fd98d5841cd7964a27d729ccf2199602fe05eb7a405c1462eb7277945ed/pyee-13.0.0.tar.gz", hash = "sha256:b391e3c5a434d1f5118a25615001dbc8f669cf410ab67d04c4d4e07c55481c37", size = 31250, upload-time = "2025-03-17T18:53:15.955Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9b/4d/b9add7c84060d4c1906abe9a7e5359f2a60f7a9a4f67268b2766673427d8/pyee-13.0.0-py3-none-any.whl", hash = "sha256:48195a3cddb3b1515ce0695ed76036b5ccc2ef3a9f963ff9f77aec0139845498", size = 15730, upload-time = "2025-03-17T18:53:14.532Z" },
 ]
 
 [[package]]
@@ -2181,9 +2197,9 @@ wheels = [
 
 [[package]]
 name = "xlsxwriter"
-version = "3.2.3"
+version = "3.2.5"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a7/d1/e026d33dd5d552e5bf3a873dee54dad66b550230df8290d79394f09b2315/xlsxwriter-3.2.3.tar.gz", hash = "sha256:ad6fd41bdcf1b885876b1f6b7087560aecc9ae5a9cc2ba97dcac7ab2e210d3d5", size = 209135, upload-time = "2025-04-17T10:11:23.481Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a7/47/7704bac42ac6fe1710ae099b70e6a1e68ed173ef14792b647808c357da43/xlsxwriter-3.2.5.tar.gz", hash = "sha256:7e88469d607cdc920151c0ab3ce9cf1a83992d4b7bc730c5ffdd1a12115a7dbe", size = 213306, upload-time = "2025-06-17T08:59:14.619Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/37/b1/a252d499f2760b314fcf264d2b36fcc4343a1ecdb25492b210cb0db70a68/XlsxWriter-3.2.3-py3-none-any.whl", hash = "sha256:593f8296e8a91790c6d0378ab08b064f34a642b3feb787cf6738236bd0a4860d", size = 169433, upload-time = "2025-04-17T10:11:21.329Z" },
+    { url = "https://files.pythonhosted.org/packages/fa/34/a22e6664211f0c8879521328000bdcae9bf6dbafa94a923e531f6d5b3f73/xlsxwriter-3.2.5-py3-none-any.whl", hash = "sha256:4f4824234e1eaf9d95df9a8fe974585ff91d0f5e3d3f12ace5b71e443c1c6abd", size = 172347, upload-time = "2025-06-17T08:59:13.453Z" },
 ]
