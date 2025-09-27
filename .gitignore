@@ -1,0 +1,52 @@
+# ===================================================================
+# Archivo .gitignore para el Repositorio de la Maestría
+# ===================================================================
+
+# 1. Python (uv y entornos virtuales)
+# Ignora la carpeta del entorno virtual, que contiene todos los paquetes instalados.
+# ¡Esta es la regla más importante para Python!
+.venv/
+venv/
+env/
+
+# Ignora las carpetas de caché de bytecode de Python.
+__pycache__/
+*.pyc
+
+
+# 2. C++ (CLion, CMake y archivos compilados)
+# Ignora el directorio de compilación por defecto de CLion.
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+
+# Ignora archivos de compilación genéricos y ejecutables.
+Makefile
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dylib
+
+
+# 3. IDEs (JetBrains: PyCharm y CLion)
+# Ignora la carpeta de configuración específica del usuario y del proyecto.
+# Esto evita conflictos con las configuraciones locales de tu otra máquina.
+.idea/
+
+
+# 4. Sistema Operativo y Archivos de Escritorio
+# Ignora archivos de metadatos del sistema operativo que no deben estar en el repo.
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+
+# 5. Archivos de Data Science temporales (Opcional, pero recomendado)
+# Si generas archivos temporales, puedes añadir sus patrones aquí.
+# Por ejemplo, si guardas modelos intermedios o plots que no quieres versionar.
+# .ipynb_checkpoints/
+# temp_plots/
+# *.tmp
