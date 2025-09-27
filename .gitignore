@@ -1,26 +1,28 @@
 # ===================================================================
-# Archivo .gitignore para el Repositorio de la Maestría
+# Archivo .gitignore para el Repositorio de la Maestría (Versión Robusta)
 # ===================================================================
 
-# 1. Python (uv y entornos virtuales)
-# Ignora la carpeta del entorno virtual, que contiene todos los paquetes instalados.
-# ¡Esta es la regla más importante para Python!
+# 1. Secretos y archivos de entorno
+# ¡NUNCA subir secretos al repositorio!
+*.env
+
+
+# 2. Python (uv y entornos virtuales)
 .venv/
 venv/
 env/
-
-# Ignora las carpetas de caché de bytecode de Python.
 __pycache__/
 *.pyc
 
 
-# 2. C++ (CLion, CMake y archivos compilados)
-# Ignora el directorio de compilación por defecto de CLion.
+# 3. Jupyter Notebooks
+.ipynb_checkpoints/
+
+
+# 4. C++ (CLion, CMake y archivos compilados)
 cmake-build-*/
 CMakeCache.txt
 CMakeFiles/
-
-# Ignora archivos de compilación genéricos y ejecutables.
 Makefile
 *.o
 *.a
@@ -30,23 +32,17 @@ Makefile
 *.dylib
 
 
-# 3. IDEs (JetBrains: PyCharm y CLion)
-# Ignora la carpeta de configuración específica del usuario y del proyecto.
-# Esto evita conflictos con las configuraciones locales de tu otra máquina.
+# 5. IDEs y Editores (JetBrains y VS Code)
 .idea/
+.vscode/
 
 
-# 4. Sistema Operativo y Archivos de Escritorio
-# Ignora archivos de metadatos del sistema operativo que no deben estar en el repo.
-# macOS
+# 6. Sistema Operativo y Archivos de Escritorio
 .DS_Store
-# Windows
 Thumbs.db
 
 
-# 5. Archivos de Data Science temporales (Opcional, pero recomendado)
-# Si generas archivos temporales, puedes añadir sus patrones aquí.
-# Por ejemplo, si guardas modelos intermedios o plots que no quieres versionar.
-# .ipynb_checkpoints/
-# temp_plots/
-# *.tmp
+# 7. Cachés de Herramientas y Logs
+.pytest_cache/
+.mypy_cache/
+*.log
