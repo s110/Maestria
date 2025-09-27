@@ -1,0 +1,5 @@
+/var/spool/slurmd/job12711/slurm_script: line 20: cd: /home/jfiestas/HPC/semana_4/random_forest: Permission denied
+[INFO] Aproximación de uso de memoria (dataset) ~ 0.16 GB
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-n006: error: *** STEP 12711.0 ON n006 CANCELLED AT 2025-09-20T15:36:38 ***
+slurmstepd-n006: error: *** JOB 12711 ON n006 CANCELLED AT 2025-09-20T15:36:38 ***
