@@ -1,0 +1,2 @@
+/var/spool/slurmd/job12689/slurm_script: line 20: cd: /home/jfiestas/HPC/semana_4/random_forest: Permission denied
+[INFO] Aproximación de uso de memoria (dataset) ~ 0.08 GB

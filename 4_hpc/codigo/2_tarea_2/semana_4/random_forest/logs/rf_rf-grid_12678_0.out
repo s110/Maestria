@@ -1,0 +1,2 @@
+[INFO] Combo: N_JOBS=1  N_SAMPLES=100000
+[OK] n_jobs=1 ns=100000 nf=40 fit_avg=272.655s pred_avg=1.091s acc_avg=0.9629
