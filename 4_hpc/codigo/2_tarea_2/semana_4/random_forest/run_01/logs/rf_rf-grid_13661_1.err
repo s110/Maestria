@@ -1,0 +1,4 @@
+[INFO] Aproximación de uso de memoria (dataset) ~ 0.08 GB
+slurmstepd-n003: error: *** STEP 13663.0 ON n003 CANCELLED AT 2025-09-27T19:27:45 ***
+slurmstepd-n003: error: *** JOB 13663 ON n003 CANCELLED AT 2025-09-27T19:27:45 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
