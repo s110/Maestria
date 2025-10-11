@@ -1,0 +1,5 @@
+[INFO] Tarea 0: N_JOBS=1, N_SAMPLES=40000
+[INFO] Directorio de trabajo: /home/sebastian.lopez/HPC/3_ec01/run_2025101118
+[INFO] Ejecutando script: /home/sebastian.lopez/HPC/3_ec01/rnn_joblib.py
+[INFO] Archivo de modelo: results_j1_s40000_model.joblib
+[INFO] Archivo de métricas: results_j1_s40000_metrics.csv
