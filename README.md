@@ -1,4 +1,4 @@
-# Maestría en Ciencia de Datos e Inteligencia Artificial - UTEC
+# Maestría en Ciencia de Datos e Inteligencia Artificial 25-26 - UTEC
 
 Este repositorio contiene todos los proyectos, tareas, y material de estudio desarrollados durante mi Maestría en Ciencia de Datos e Inteligencia Artificial en la Universidad de Ingeniería y Tecnología (UTEC).
 
