@@ -26,6 +26,8 @@ ARRAY_MAX_IDX=$(( TOTAL_COMBOS - 1 ))
 # --- Preparación del Entorno de Ejecución ---
 # (Opcional) Módulos y entorno virtual
 # module load python/3.10
+#
+# Modificacion
 
 # --- CORRECCIÓN 2: Construir la ruta al script de forma robusta ---
 # Asumiendo que `rnn_joblib.py` está en el mismo directorio que este script de SLURM.
