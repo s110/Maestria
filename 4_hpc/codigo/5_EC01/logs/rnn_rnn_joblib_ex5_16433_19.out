@@ -1,0 +1,6 @@
+[INFO] Tarea 19: N_FEATURES=64, N_JOBS=2, N_SAMPLES=40000
+[INFO] Directorio de trabajo: /home/sebastian.lopez/HPC/3_ec01/run_2025101812
+[INFO] Ejecutando script: /home/sebastian.lopez/HPC/3_ec01/rnn_joblib_ex5.py
+[INFO] Archivo de modelo: results_f64_j2_s40000_model.joblib
+[INFO] Archivo de métricas: results_f64_j2_s40000_metrics.csv
+[INFO] SLURM_CPUS_PER_TASK=32, n_jobs=2, backend=loky, inner_n_jobs=1
