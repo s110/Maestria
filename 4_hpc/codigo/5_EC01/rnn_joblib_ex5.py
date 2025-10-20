@@ -87,8 +87,11 @@ def cmd_train(args):
         )
 
     # rejilla
+    hls_configs = [
+        tuple(map(int, s.split(","))) for s in args.hidden_layer_sizes.split(";") if s
+    ]
     param_grid = {
-        "mlpclassifier__hidden_layer_sizes": [(256,), (128,), (512, 256, 128)],
+        "mlpclassifier__hidden_layer_sizes": hls_configs,
         "mlpclassifier__learning_rate_init": [1e-3, 5e-4],
         "mlpclassifier__alpha": [1e-4, 1e-5],
     }
@@ -223,6 +226,12 @@ def main():
     tr.add_argument("--out-model", default="mlp_model.joblib")
     tr.add_argument("--metrics-json", default=None)
     tr.add_argument("--metrics-csv", default=None)
+    tr.add_argument(
+        "--hidden-layer-sizes",
+        type=str,
+        default="256;128;512,256,128",
+        help="Tuplas de tamaños de capas ocultas para MLPClassifier, separadas por ';'. Ejemplo: '256;128;512,256,128'",
+    )
 
     pr = sub.add_parser("predict")
     pr.add_argument("--model", required=True)
