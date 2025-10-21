@@ -1,0 +1,5 @@
+[Parallel(n_jobs=1)]: Done   1 tasks      | elapsed:  9.1min
+[Parallel(n_jobs=1)]: Done   4 tasks      | elapsed: 41.2min
+[Parallel(n_jobs=1)]: Done   7 tasks      | elapsed: 73.0min
+[Parallel(n_jobs=1)]: Done  12 tasks      | elapsed: 128.2min
+[Parallel(n_jobs=1)]: Done  16 out of  16 | elapsed: 167.2min finished
