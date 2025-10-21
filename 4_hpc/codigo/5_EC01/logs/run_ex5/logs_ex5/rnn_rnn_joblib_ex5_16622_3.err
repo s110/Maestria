@@ -1,8 +1,0 @@
-[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
-[Parallel(n_jobs=8)]: Done   3 out of  16 | elapsed:   30.9s remaining:  2.2min
-[Parallel(n_jobs=8)]: Done   5 out of  16 | elapsed:   32.5s remaining:  1.2min
-[Parallel(n_jobs=8)]: Done   7 out of  16 | elapsed:   32.7s remaining:   42.1s
-[Parallel(n_jobs=8)]: Done   9 out of  16 | elapsed:  1.0min remaining:   46.7s
-[Parallel(n_jobs=8)]: Done  11 out of  16 | elapsed:  1.0min remaining:   27.9s
-[Parallel(n_jobs=8)]: Done  13 out of  16 | elapsed:  1.1min remaining:   14.7s
-[Parallel(n_jobs=8)]: Done  16 out of  16 | elapsed:  1.1min finished
