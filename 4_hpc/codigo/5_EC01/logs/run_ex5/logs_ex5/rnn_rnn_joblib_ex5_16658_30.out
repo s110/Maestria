@@ -1,0 +1,5 @@
+[INFO] Tarea 30: HLS_CONFIG=256;256,128;512,256,128, N_FEATURES=128, N_JOBS=1, N_SAMPLES=20000
+[INFO] Directorio de trabajo: /home/sebastian.lopez/HPC/3_ec01/run_ex5_20251020
+[INFO] Ejecutando script: /home/sebastian.lopez/HPC/3_ec01/rnn_joblib_ex5.py
+[INFO] Archivo de modelo: results_hls0_f128_j1_s20000_model.joblib
+[INFO] Archivo de métricas: results_hls0_f128_j1_s20000_metrics.csv
