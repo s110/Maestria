@@ -1,0 +1,7 @@
+[Parallel(n_jobs=1)]: Done   1 tasks      | elapsed:   52.8s
+[Parallel(n_jobs=1)]: Done   4 tasks      | elapsed:  3.5min
+[Parallel(n_jobs=1)]: Done   7 tasks      | elapsed:  6.2min
+[Parallel(n_jobs=1)]: Done  12 tasks      | elapsed: 10.5min
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-n003: error: *** STEP 16694.0 ON n003 CANCELLED AT 2025-10-20T07:46:06 ***
+slurmstepd-n003: error: *** JOB 16694 ON n003 CANCELLED AT 2025-10-20T07:46:06 ***
