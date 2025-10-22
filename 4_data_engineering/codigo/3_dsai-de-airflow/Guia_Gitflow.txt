@@ -1,0 +1,53 @@
+Creación y configuración  de Nuevo Repo
+=======================================
+En GitHub: Crear nuevo repo.
+En Github: Ir al Repo, click en Code, copiar url
+En VSCode: Clonar repo y pegar url
+En VSCode: localizar carpeta donde se guardará el repositorio clonado
+En VSCode: Abrir Terminal
+En VSCode Terminal: git checkout -b develop
+En VSCode Terminal: git push origin develop
+En Github: Cambiar el branch por defecto a develop
+	- Ir a Settings
+	- Seleccionar develop como default branch
+
+Realizar cambios en el código
+=============================
+En VSCode Terminal: Hacer pull a develop: git pull origin develop
+En VSCode Terminal: Crear el feature branch desde develop:
+	git checkout -b feature/add_requirements
+En VSCode Terminal: En el nuevo terminal, hacer cambios:
+	Crear archivo requirements.txt
+	Agregar pandas al notebook
+En VSCode Terminal: Verificar estado actual (Archivo en rojo):
+	git status
+En VSCode Terminal: Agregar cambios a stage: git add requirements.txt
+En VSCode Terminal: Verificar estado actual (Archivo en verde):
+	git status
+En VSCode Terminal: Hacer commit: git commit -m "Agregando archivo requirements"
+En VSCode Terminal: Verificar estado actual (No hay cambios):
+	git status
+En VSCode Terminal: Llevar la rama a la nube: git push origin feature/add_requirements
+Comparar que en Github, ya existe la nueva rama.
+
+Solicitar y aplicar cambios en develop (Hacer Pull Request)
+===========================================================
+En Github: Click Compare & Pull Request
+En Github: Verificar que se está yendo del Branch Creado a la rama Develop
+En Github: Agregar la descripción
+En Github: Click “Create Pull Request”
+En Github: Merge Pull request: Click “Merge Pull Request”
+En Github: Click in Confirm Merge
+En Github: Click in Delete Branch
+Verificar que todos los cambios se hayan aplicado en Develop
+
+Limpiar rama en VSCode:
+=======================
+En VSCode Terminal: Verificar en que rama nos encontramos
+	git branch
+En VSCode Terminal: Verificar estado actual (No hay cambios):
+	git status
+En VSCode Terminal: Ir a develop: git checkout develop
+En VSCode Terminar: Traer los cambios de develop: git pull origin develop
+En VSCode Terminal: Borrar rama "mergeada": git branch -d feature/add_requirements
+En VSCode Terminal: Borrar residuos internos de la rama: git prune
