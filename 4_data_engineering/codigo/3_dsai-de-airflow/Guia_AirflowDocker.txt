@@ -1,0 +1,48 @@
+Clonando Airflow Repo: https://github.com/de-atintaya/dsai-de-airflow.git
+=========================================================================
+- Ir a VS Code y dar click: Git Clone Repository
+- Pegar URL
+- Click en: Clone from URL
+- Seleccionar folder donde el repositorio sera clonado.
+- Click en: Select as a Repository Destination
+
+Ejecutar  Docker Compose
+========================
+- En VS Code: Abrir Terminal
+- En PC Local: Asegurar que docker desktop esta abierto
+- En VSCode Terminal: Verificar que no haya contenedores en ejecución con el comando: docker ps
+- En VSCode Terminal: Si estamos en mac, ejecutar el código (README Linea 10):
+	“echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env”
+- En el navegador: Verificar si se puede conectar a airflow (README Linea 54)
+	Ir al sitio web: http://localhost:8080
+- En VSCode Terminal: Inicializar el airflow:
+	docker compose up airflow-init
+- En VSCode Terminal: Lanzar airflow:
+	docker compose up --build -d
+- En el navegador: Una vez terminado, ir al link en el navegador: http://localhost:8080/
+- En el navegador: Loggearse con usuario y password (Yaml, Linea 262, 267):
+	airflow
+- En VS Code: En la carpeta dags/templates
+	Analizar un DAG, que será ejecutado
+- En el navegador: Ir a DAGs, y ejecutar dags.
+
+Crear conexión a Azure Storage Account
+======================================
+- En Airflow: Click Admin
+- En Airflow: Click Connection
+- En Airflow: Click Add Connection
+- En Airflow: Define a connection_id: azure_blob_storage
+- En Airflow: Connection Type: wasb
+- En Airflow: En Extra Files JSON: Copiar el connection string:
+	{"connection_string": <copy_the_connection_string>}
+- En Airflow: Click en Save
+
+(Opcional) Obtener Connection String
+====================================
+Requisito: Contar con un storage account
+- Ir a Storage Account
+- Ir a Seguridad y Redes
+- Ir a Claves de Acceso
+- Copiar Cadena de Conexión de la Key 1 o Key 2
+
+
