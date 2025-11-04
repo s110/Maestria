@@ -1,0 +1,202 @@
+\documentclass[11pt]{article}
+
+% --- PAQUETES DE LENGUAJE Y CODIFICACIÓN ---
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+% --- DISEÑO DE PÁGINA ---
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{parskip} % Párrafos separados por espacio, sin indentación
+
+% --- PAQUETES ÚTILES ---
+\usepackage{amsmath}     % Fórmulas matemáticas
+\usepackage{amssymb}     % Símbolos matemáticos
+\usepackage{graphicx}    % Inclusión de imágenes
+\usepackage{booktabs}    % Tablas de mejor calidad
+\usepackage[colorlinks=true, allcolors=blue]{hyperref} % Hipervínculos
+
+% --- PAQUETES PARA PSEUDOCÓDIGO ---
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+% Configuración de nombres en español para el pseudocódigo
+% \algrenewcommand\algorithmicrequire{\textbf{Entrada:}}
+% \algrenewcommand\algorithmicensure{\textbf{Salida:}}
+% \algrenewcommand\algorithmicprocedure{\textbf{Procedimiento}}
+% \algrenewcommand\algorithmicfunction{\textbf{Función}}
+% \algrenewcommand\algorithmicif{\textbf{Si}}
+% \algrenewcommand\algorithmicelse{\textbf{Sino}}
+% \algrenewcommand\algorithmicelsif{\textbf{Sino si}}
+% \algrenewcommand\algorithmicfor{\textbf{Para}}
+% \algrenewcommand\algorithmicforall{\textbf{Para cada}}
+% \algrenewcommand\algorithmicwhile{\textbf{Mientras}}
+% \algrenewcommand\algorithmicrepeat{\textbf{Repetir}}
+% \algrenewcommand\algorithmicuntil{\textbf{Hasta que}}
+% \algrenewcommand\algorithmicreturn{\textbf{Devolver}}
+% \algrenewcommand\algorithmicend{\textbf{Fin}}
+
+% --- INFORMACIÓN DEL DOCUMENTO ---
+\title{Análisis PRAM para la Simulación de la Ecuación de Calor 2D}
+\author{
+  Amador Zuñiga
+  \and
+  Hugo Villanueva
+  \and
+  Sebastian Lopez
+}
+\date{\today}
+
+
+
+
+% --- INICIO DEL DOCUMENTO ---
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+El presente documento detalla el análisis teórico de un algoritmo paralelo diseñado para resolver la ecuación de calor bidimensional. Se utiliza el modelo PRAM (Parallel Random Access Machine) para describir el algoritmo y establecer su complejidad teórica, identificando el potencial de paralelismo y los cuellos de botella inherentes a la sincronización. Este análisis sirve como la base teórica para la posterior evaluación de rendimiento de una implementación práctica del algoritmo utilizando MPI (Message Passing Interface).
+\end{abstract}
+
+\section{Introducción a la Ecuación de Calor}
+
+La ecuación de calor es una Ecuación Diferencial Parcial (EDP) fundamental en física e ingeniería que describe cómo se distribuye y evoluciona la temperatura en un objeto o dominio a lo largo del tiempo. En su forma bidimensional, la ecuación se expresa como:
+
+$$
+\frac{\partial T}{\partial t} = \alpha \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} \right)
+$$
+
+Donde $T(x,y,t)$ es la temperatura en la posición $(x,y)$ en el instante $t$, y $\alpha$ es la difusividad térmica del material.
+
+Esta ecuación establece que la tasa de cambio de la temperatura en un punto ($\frac{\partial T}{\partial t}$) es proporcional al Laplaciano de la temperatura ($\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2}$). Intuitivamente, esto significa que un punto se calentará si el promedio de la temperatura de sus vecinos es mayor que la suya, y se enfriará si es menor.
+
+Para resolver esta EDP en una computadora, se utiliza un método numérico como el de \textbf{diferencias finitas}. Este método implica dos tipos de discretización:
+\begin{itemize}
+    \item \textbf{Discretización del dominio:} El espacio 2D se divide en una matriz o rejilla (grid) de $N \times N$ puntos.
+    \item \textbf{Discretización del tiempo:} La simulación avanza en pequeños pasos de tiempo $\Delta t$.
+\end{itemize}
+
+En cada paso de tiempo, la nueva temperatura de una celda $\phi[i,k]$ se calcula iterativamente basándose en su valor actual y el valor de sus cuatro vecinos (arriba, abajo, izquierda, derecha) en el paso de tiempo anterior.
+
+\section{Descripción de los Códigos Fuente}
+
+El proyecto nos proporciona dos implementaciones del mismo algoritmo de diferencias finitas:
+
+\begin{itemize}
+    \item \texttt{heat-big.c}: Es la implementación \textbf{secuencial} del algoritmo. Resuelve el problema completo utilizando un único procesador. El propósito de este código es servir como la \textbf{línea base ($T_1$)} para medir la ganancia de rendimiento (Speedup) obtenida con la versión paralela.
+    
+    \item \texttt{heat-mpi-big.c}: Es la implementación \textbf{paralela} que utiliza \textbf{MPI} (Message Passing Interface). Este código aplica una estrategia de \textbf{descomposición de dominio}, donde la matriz global se divide en subdominios rectangulares, y cada proceso MPI se encarga de calcular la evolución de la temperatura únicamente en su subdominio asignado. Para que esto funcione, el código implementa:
+    \begin{itemize}
+        \item \textbf{Cálculo local:} Cada proceso ejecuta el bucle de diferencias finitas sobre sus celdas.
+        \item \textbf{Comunicación de halos:} Antes de cada cálculo, los procesos intercambian los valores de sus bordes (halos) con sus procesos vecinos.
+        \item \textbf{Reducción global:} Para determinar el criterio de parada global (cuando el cambio máximo de temperatura es menor a un $\epsilon$), se utiliza una operación de reducción \texttt{MPI\_Allreduce} para encontrar el máximo de todos los cambios máximos locales.
+    \end{itemize}
+\end{itemize}
+
+\section{Pseudocódigo del Algoritmo Paralelo}
+
+El siguiente pseudocódigo describe el algoritmo de forma abstracta, utilizando el modelo PRAM, donde $P$ procesadores tienen acceso a una memoria compartida que contiene las matrices $\phi$ (estado actual) y $\phi_{in}$ (nuevo estado).
+
+\begin{algorithm}[H]
+\caption{Algoritmo PRAM para la Ecuación de Calor 2D}
+\label{alg:heat}
+\begin{algorithmic}[1]
+\Require Matriz $\phi$ ($N \times N$), $\phi_{in}$ ($N \times N$), $P$ procesadores, $K_{max}$ iteraciones, $\epsilon$
+\State $K \gets 0$
+\While{$K < K_{max}$}
+    \State $K \gets K + 1$
+    \State $dphimax_{global} \gets 0$
+    
+    \For{cada procesador $p$ de $1$ a $P$ \textbf{en paralelo}}
+        \State $dphimax_{local} \gets 0$
+        \For{cada celda $(i,k)$ asignada a $p$}
+            \State \Comment{Lectura Concurrente de vecinos (de $\phi$)}
+            \State $d\phi \gets (\phi[i+1,k] + \phi[i-1,k] - 2\phi[i,k]) \cdot \Delta t / \Delta y^2$
+            \State $d\phi \gets d\phi + (\phi[i,k+1] + \phi[i,k-1] - 2\phi[i,k]) \cdot \Delta t / \Delta x^2$
+            
+            \State \Comment{Escritura Exclusiva en $\phi_{in}$}
+            \State $\phi_{in}[i,k] \gets \phi[i,k] + d\phi$
+            \State $dphimax_{local} \gets \max(dphimax_{local}, |d\phi|)$
+        \EndFor
+        \State \Comment{Almacena el máximo local en un arreglo compartido}
+        \State $MaximosLocales[p] \gets dphimax_{local}$
+    \EndFor
+    
+    \State \textbf{Barrera de Sincronización}
+    
+    \State \Comment{Reducción paralela (costo $O(\log P)$)}
+    \State $dphimax_{global} \gets \max(MaximosLocales[1...P])$
+    
+    \If{$dphimax_{global} < \epsilon$}
+        \State \textbf{break} \Comment{Convergencia alcanzada}
+    \EndIf
+    
+    \For{cada procesador $p$ de $1$ a $P$ \textbf{en paralelo}}
+        \For{cada celda $(i,k)$ asignada a $p$}
+             \State $\phi[i,k] \gets \phi_{in}[i,k]$ \Comment{Copia para la siguiente iteración}
+        \EndFor
+    \EndFor
+    
+    \State \textbf{Barrera de Sincronización}
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+
+\section{Análisis del Modelo PRAM}
+
+\subsection{Modelo PRAM Seleccionado}
+
+Para analizar este algoritmo, empleamos el modelo \textbf{PRAM CREW (Concurrent Read, Exclusive Write)}.
+
+\begin{itemize}
+    \item \textbf{Concurrent Read (Lectura Concurrente):} Se permite la lectura concurrente. Durante el paso de cálculo, un procesador $p_1$ asignado al bloque de celdas $(i, k)$ necesita leer los valores de sus vecinos, por ejemplo, $(i+1, k)$. Esta celda vecina $(i+1, k)$ puede ser el borde de otro procesador $p_2$, que también la leerá para sus propios cálculos. En un modelo de memoria compartida, ambos procesadores leen la misma dirección de memoria $\phi[i+1,k]$ simultáneamente.
+    
+    \item \textbf{Exclusive Write (Escritura Exclusiva):} Se garantiza la escritura exclusiva. Cada procesador $p$ calcula los nuevos valores y los escribe en su porción asignada de la matriz $\phi_{in}$. Dado que la descomposición del dominio asigna un conjunto único de celdas $(i,k)$ a cada procesador, no habrá dos procesadores que intenten escribir en la misma ubicación de memoria $\phi_{in}[i,k]$ al mismo tiempo.
+\end{itemize}
+
+\subsection{Análisis de Complejidad Teórica}
+
+Definimos $N$ como la dimensión de la matriz ($N \times N$) y $P$ como el número de procesadores. Sea $K$ el número total de iteraciones que el algoritmo ejecuta hasta alcanzar la convergencia.
+
+\subsubsection{Complejidad Secuencial ($T_s$)}
+
+En la versión secuencial (un solo procesador), cada una de las $K$ iteraciones debe realizar dos tareas principales:
+\begin{enumerate}
+    \item Calcular el nuevo valor para las $\approx N^2$ celdas internas.
+    \item Copiar los $\approx N^2$ valores de la matriz $\phi_{in}$ de vuelta a $\phi$.
+\end{enumerate}
+El trabajo (Work) total del algoritmo es la suma de estas tareas por cada iteración:
+$$
+T_s = W = K \times (O(N^2) + O(N^2)) = \boldsymbol{O(K \cdot N^2)}
+$$
+
+\subsubsection{Complejidad Paralela ($T_p$)}
+
+En el modelo PRAM con $P$ procesadores, el tiempo de ejecución $T_p$ se determina analizando el tiempo de una sola iteración ($T_{iter}$).
+
+\begin{itemize}
+    \item \textbf{Cálculo (Paso 11):} El trabajo de $O(N^2)$ del bucle de cálculo se divide entre $P$ procesadores. El tiempo de este paso es $T_{\text{cálculo}} = O(N^2 / P)$.
+    
+    \item \textbf{Reducción (Paso 19):} Encontrar el máximo global ($dphimax_{global}$) a partir de los $P$ valores locales ($dphimax_{local}$) es una operación de reducción. En el modelo PRAM, esta operación se puede realizar de manera eficiente usando un árbol binario en $T_{\text{reducción}} = O(\log P)$.
+    
+    \item \textbf{Copia (Paso 25):} Al igual que el cálculo, el trabajo de $O(N^2)$ de copiar la matriz $\phi_{in}$ a $\phi$ se divide entre $P$ procesadores, resultando en $T_{\text{copia}} = O(N^2 / P)$.
+    
+    \item \textbf{Sincronización (Pasos 17 y 29):} Se requieren barreras de sincronización para asegurar que todos los procesadores terminen una fase antes de comenzar la siguiente (ej. terminar todo el cálculo antes de la reducción). El costo de una barrera en PRAM es $T_{\text{sinc}} = O(\log P)$.
+\end{itemize}
+
+El tiempo total para una iteración es la suma de sus componentes, dominada por el término más lento:
+$$
+T_{\text{iter}} = T_{\text{cálculo}} + T_{\text{reducción}} + T_{\text{copia}} + T_{\text{sinc}} = O(N^2/P) + O(\log P) + O(N^2/P) + O(\log P)
+$$
+$$
+T_{\text{iter}} = \boldsymbol{O\left(\frac{N^2}{P} + \log P\right)}
+$$
+El tiempo de ejecución paralelo total $T_p$ es el tiempo de una iteración multiplicado por el número de iteraciones $K$:
+$$
+T_p = K \times T_{\text{iter}} = \boldsymbol{O\left(K \left( \frac{N^2}{P} + \log P \right)\right)}
+$$
+Este análisis teórico predice que el rendimiento escala linealmente con $P$ (debido al término $N^2/P$), pero está fundamentalmente limitado por el costo logarítmico ($O(\log P)$) de la reducción y sincronización, que se vuelve significativo a medida que $P$ aumenta.
+
+\end{document}
