@@ -1,0 +1,13 @@
+[project]
+name = "codigo"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.13.2",
+    "deltalake>=1.2.1",
+    "fastexcel>=0.16.0",
+    "httpx>=0.28.1",
+    "polars>=1.35.1",
+    "pyarrow>=22.0.0",
+    "requests>=2.32.5",
+]

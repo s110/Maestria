@@ -1,0 +1,14 @@
+
+[notice] A new release of pip is available: 24.3.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Traceback (most recent call last):
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 175, in <module>
+    main()  # Ejecución: mpiexec -n <num_procesos> python matmul_mpi_torch.py --size <N>
+    ~~~~^^
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 74, in main
+    A_sub = torch.empty(
+        rows_per_process, matrix_size, device=device, dtype=torch.float32
+    )
+RuntimeError: [enforce fail at alloc_cpu.cpp:124] err == 0. DefaultCPUAllocator: can't allocate memory: you tried to allocate 34359738368 bytes. Error code 12 (Cannot allocate memory)
+slurmstepd-n003: error: *** STEP 19910.0 ON n003 CANCELLED AT 2025-11-16T00:11:07 DUE TO TIME LIMIT ***
+slurmstepd-n003: error: *** JOB 19910 ON n003 CANCELLED AT 2025-11-16T00:11:07 DUE TO TIME LIMIT ***
