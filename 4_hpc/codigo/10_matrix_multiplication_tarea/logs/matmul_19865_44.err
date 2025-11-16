@@ -1,0 +1,39 @@
+
+[notice] A new release of pip is available: 24.3.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 175, in <module>
+    main()  # Ejecución: mpiexec -n <num_procesos> python matmul_mpi_torch.py --size <N>
+    ~~~~^^
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 93, in main
+    comm.Bcast([B, MPI.FLOAT], root=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/mpi4py/MPI.src/Comm.pyx", line 922, in mpi4py.MPI.Comm.Bcast
+mpi4py.MPI.Exception: Invalid argument
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 175, in <module>
+    main()  # Ejecución: mpiexec -n <num_procesos> python matmul_mpi_torch.py --size <N>
+    ~~~~^^
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 93, in main
+    comm.Bcast([B, MPI.FLOAT], root=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/mpi4py/MPI.src/Comm.pyx", line 922, in mpi4py.MPI.Comm.Bcast
+mpi4py.MPI.Exception: Invalid argument
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 175, in <module>
+    main()  # Ejecución: mpiexec -n <num_procesos> python matmul_mpi_torch.py --size <N>
+    ~~~~^^
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 93, in main
+    comm.Bcast([B, MPI.FLOAT], root=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/mpi4py/MPI.src/Comm.pyx", line 922, in mpi4py.MPI.Comm.Bcast
+mpi4py.MPI.Exception: Invalid argument
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 175, in <module>
+    main()  # Ejecución: mpiexec -n <num_procesos> python matmul_mpi_torch.py --size <N>
+    ~~~~^^
+  File "/home/sebastian.lopez/HPC/5_mpi_matmul/matmul_mpi_torch.py", line 93, in main
+    comm.Bcast([B, MPI.FLOAT], root=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/mpi4py/MPI.src/Comm.pyx", line 922, in mpi4py.MPI.Comm.Bcast
+mpi4py.MPI.Exception: Invalid argument
