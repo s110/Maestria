@@ -1,0 +1,86 @@
+Ejecutando con N = 1048576
+[INFO] N total pedido = 1048576, points_per_cluster = 349525
+[ROOT] N_total generado = 1048575, size = 32
+  Rank 0 recibirá 32768 puntos
+  Rank 1 recibirá 32768 puntos
+  Rank 2 recibirá 32768 puntos
+  Rank 3 recibirá 32768 puntos
+  Rank 4 recibirá 32768 puntos
+  Rank 5 recibirá 32768 puntos
+  Rank 6 recibirá 32768 puntos
+  Rank 7 recibirá 32768 puntos
+  Rank 8 recibirá 32768 puntos
+  Rank 9 recibirá 32768 puntos
+  Rank 10 recibirá 32768 puntos
+  Rank 11 recibirá 32768 puntos
+  Rank 12 recibirá 32768 puntos
+  Rank 13 recibirá 32768 puntos
+  Rank 14 recibirá 32768 puntos
+  Rank 15 recibirá 32768 puntos
+  Rank 16 recibirá 32768 puntos
+  Rank 17 recibirá 32768 puntos
+  Rank 18 recibirá 32768 puntos
+  Rank 19 recibirá 32768 puntos
+  Rank 20 recibirá 32768 puntos
+  Rank 21 recibirá 32768 puntos
+  Rank 22 recibirá 32768 puntos
+  Rank 23 recibirá 32768 puntos
+  Rank 24 recibirá 32768 puntos
+  Rank 25 recibirá 32768 puntos
+  Rank 26 recibirá 32768 puntos
+  Rank 27 recibirá 32768 puntos
+  Rank 28 recibirá 32768 puntos
+  Rank 29 recibirá 32768 puntos
+  Rank 30 recibirá 32768 puntos
+  Rank 31 recibirá 32767 puntos
+Rank 1 has 32768 points.
+Rank 2 has 32768 points.
+Rank 3 has 32768 points.
+Rank 4 has 32768 points.
+Rank 5 has 32768 points.
+Rank 6 has 32768 points.
+Rank 8 has 32768 points.
+Rank 7 has 32768 points.
+Rank 9 has 32768 points.
+Rank 10 has 32768 points.
+Rank 11 has 32768 points.
+Rank 12 has 32768 points.
+Rank 13 has 32768 points.
+Rank 14 has 32768 points.
+Rank 15 has 32768 points.
+Rank 16 has 32768 points.
+Rank 17 has 32768 points.
+Rank 18 has 32768 points.
+Rank 19 has 32768 points.
+Rank 20 has 32768 points.
+Rank 21 has 32768 points.
+Rank 22 has 32768 points.
+Rank 23 has 32768 points.
+Rank 24 has 32768 points.
+Rank 25 has 32768 points.
+Rank 26 has 32768 points.
+Rank 27 has 32768 points.
+Rank 28 has 32768 points.
+Rank 29 has 32768 points.
+Rank 30 has 32768 points.
+Rank 31 has 32767 points.
+Total points: 1048575, MPI size: 32
+Rank 0 has 32768 points.
+[Iter 0] Initial centers:
+[[ 8.41065339  3.09484648]
+ [-9.95389111  8.06591274]
+ [ 3.47349607 -1.9104055 ]]
+[Iter 1] shift = 3.207965
+[Iter 2] shift = 0.417903
+[Iter 3] shift = 0.098907
+[Iter 4] shift = 0.028072
+[Iter 5] shift = 0.008092
+[Iter 6] shift = 0.002374
+[Iter 7] shift = 0.000571
+Converged at iteration 7 with shift=5.713098e-04
+K-means Tcomp 0.113185 seconds.
+K-means Tcomm 0.338494 seconds.
+Final centers:
+[[ 7.18714168  3.98905006]
+ [-8.1156305   9.5111557 ]
+ [ 5.46187471 -1.26512907]]

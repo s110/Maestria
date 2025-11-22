@@ -1,0 +1,31 @@
+Ejecutando con N = 65536
+[INFO] N total pedido = 65536, points_per_cluster = 21845
+[ROOT] N_total generado = 65535, size = 4
+  Rank 0 recibirá 16384 puntos
+  Rank 1 recibirá 16384 puntos
+  Rank 2 recibirá 16384 puntos
+  Rank 3 recibirá 16383 puntos
+Rank 1 has 16384 points.
+Rank 2 has 16384 points.
+Rank 3 has 16383 points.
+Total points: 65535, MPI size: 4
+Rank 0 has 16384 points.
+[Iter 0] Initial centers:
+[[ 8.90081856  5.72410133]
+ [-4.96570957  9.68597176]
+ [ 5.78723676 -1.93955579]]
+[Iter 1] shift = 3.981425
+[Iter 2] shift = 0.282302
+[Iter 3] shift = 0.081498
+[Iter 4] shift = 0.025491
+[Iter 5] shift = 0.009101
+[Iter 6] shift = 0.003276
+[Iter 7] shift = 0.001072
+[Iter 8] shift = 0.000000
+Converged at iteration 8 with shift=0.000000e+00
+K-means Tcomp 0.047185 seconds.
+K-means Tcomm 0.064662 seconds.
+Final centers:
+[[ 7.17560473  3.98646085]
+ [-8.11802014  9.49343534]
+ [ 5.46915396 -1.24764591]]

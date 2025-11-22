@@ -1,0 +1,86 @@
+Ejecutando con N = 32768
+[INFO] N total pedido = 32768, points_per_cluster = 10922
+[ROOT] N_total generado = 32766, size = 32
+  Rank 0 recibirá 1024 puntos
+  Rank 1 recibirá 1024 puntos
+  Rank 2 recibirá 1024 puntos
+  Rank 3 recibirá 1024 puntos
+  Rank 4 recibirá 1024 puntos
+  Rank 5 recibirá 1024 puntos
+  Rank 6 recibirá 1024 puntos
+  Rank 7 recibirá 1024 puntos
+  Rank 8 recibirá 1024 puntos
+  Rank 9 recibirá 1024 puntos
+  Rank 10 recibirá 1024 puntos
+  Rank 11 recibirá 1024 puntos
+  Rank 12 recibirá 1024 puntos
+  Rank 13 recibirá 1024 puntos
+  Rank 14 recibirá 1024 puntos
+  Rank 15 recibirá 1024 puntos
+  Rank 16 recibirá 1024 puntos
+  Rank 17 recibirá 1024 puntos
+  Rank 18 recibirá 1024 puntos
+  Rank 19 recibirá 1024 puntos
+  Rank 20 recibirá 1024 puntos
+  Rank 21 recibirá 1024 puntos
+  Rank 22 recibirá 1024 puntos
+  Rank 23 recibirá 1024 puntos
+  Rank 24 recibirá 1024 puntos
+  Rank 25 recibirá 1024 puntos
+  Rank 26 recibirá 1024 puntos
+  Rank 27 recibirá 1024 puntos
+  Rank 28 recibirá 1024 puntos
+  Rank 29 recibirá 1024 puntos
+  Rank 30 recibirá 1023 puntos
+  Rank 31 recibirá 1023 puntos
+Rank 1 has 1024 points.
+Rank 2 has 1024 points.
+Rank 3 has 1024 points.
+Rank 4 has 1024 points.
+Rank 5 has 1024 points.
+Rank 6 has 1024 points.
+Rank 7 has 1024 points.
+Rank 8 has 1024 points.
+Rank 9 has 1024 points.
+Rank 10 has 1024 points.
+Rank 11 has 1024 points.
+Rank 12 has 1024 points.
+Rank 13 has 1024 points.
+Rank 14 has 1024 points.
+Rank 15 has 1024 points.
+Rank 16 has 1024 points.
+Rank 17 has 1024 points.
+Rank 18 has 1024 points.
+Rank 19 has 1024 points.
+Rank 20 has 1024 points.
+Rank 21 has 1024 points.
+Rank 22 has 1024 points.
+Rank 23 has 1024 points.
+Rank 24 has 1024 points.
+Rank 25 has 1024 points.
+Rank 26 has 1024 points.
+Rank 27 has 1024 points.
+Rank 28 has 1024 points.
+Rank 29 has 1024 points.
+Rank 30 has 1023 points.
+Rank 31 has 1023 points.
+Total points: 32766, MPI size: 32
+Rank 0 has 1024 points.
+[Iter 0] Initial centers:
+[[  7.07047479   0.13672621]
+ [-11.65212594   8.05733205]
+ [  5.55738095  -1.63320696]]
+[Iter 1] shift = 4.875506
+[Iter 2] shift = 0.764431
+[Iter 3] shift = 0.236899
+[Iter 4] shift = 0.070596
+[Iter 5] shift = 0.018200
+[Iter 6] shift = 0.003949
+[Iter 7] shift = 0.000396
+Converged at iteration 7 with shift=3.959706e-04
+K-means Tcomp 0.020453 seconds.
+K-means Tcomm 0.308514 seconds.
+Final centers:
+[[ 7.17870501  3.984553  ]
+ [-8.13063656  9.49673899]
+ [ 5.46118117 -1.25329931]]
