@@ -3,8 +3,8 @@
 #SBATCH --output=logs/kmeans_%A_%a.out
 #SBATCH --error=logs/kmeans_%A_%a.err
 #SBATCH --nodes=1
-#SBATCH --ntasks=8            # número de procesos MPI
-#SBATCH --time=00:10:00
+#SBATCH --ntasks=32            # número de procesos MPI
+#SBATCH --time=00:20:00
 #SBATCH --partition=standard
 #SBATCH --array=1,2,3,4,5,6     # 6 tamaños diferentes
 
@@ -30,4 +30,3 @@ export KMEANS_N=$N
 
 # Ejecutar el código MPI
 mpirun -np $SLURM_NTASKS python3.6 Kmeans_mpi.py
-
