@@ -8,6 +8,7 @@ dependencies = [
     "matplotlib>=3.10.7",
     "notebook>=7.4.7",
     "opencv-python>=4.12.0.88",
+    "polars>=1.35.2",
     "pydantic>=2.12.3",
     "scikit-image>=0.25.2",
     "scikit-learn>=1.7.2",
@@ -16,4 +17,5 @@ dependencies = [
     "tensorflow>=2.20.0",
     "torch>=2.9.1",
     "torchvision>=0.24.1",
+    "ultralytics>=8.3.233",
 ]
