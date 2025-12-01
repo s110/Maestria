@@ -1,0 +1,6 @@
+
+path: datasets/BCCD
+train: images/train
+val: images/val
+nc: 3
+names: [RBC, WBC, Platelets]
