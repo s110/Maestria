@@ -1,0 +1,71 @@
+graph LR
+    %% -- STYLING --
+    classDef source fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef ingest fill:#ffecb3,stroke:#e6b800,stroke-width:2px;
+    classDef storage fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef process fill:#ffccbc,stroke:#bf360c,stroke-width:2px;
+    classDef govern fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef consumer fill:#dcedc8,stroke:#33691e,stroke-width:2px;
+
+    %% -- SOURCES --
+    subgraph Sources ["1. Data Sources"]
+        direction TB
+        Binance[("Binance API<br/>(Market Prices)")]:::source
+        Portfolio[("Portfolio CSV<br/>(Holdings Data)")]:::source
+    end
+
+    %% -- INGESTION --
+    subgraph Ingestion ["2. Ingestion Layer"]
+        Airflow[("Apache Airflow<br/>(Orchestrator)")]:::ingest
+    end
+
+    %% -- DATA PLATFORM (Medallion) --
+    subgraph Lakehouse ["3. Azure Data Platform (Medallion Architecture)"]
+        direction TB
+
+        %% Bronze Layer
+        Bronze[("Bronze Layer<br/>(Raw Data - ADLS)")]:::storage
+
+        %% Silver Layer
+        Silver[("Silver Layer<br/>(Cleaned & Enriched)")]:::storage
+
+        %% Gold Layer (The Data Product)
+        Gold[("Gold Layer<br/>(Risk Metrics & KPIs)")]:::storage
+
+        %% Processing Engine
+        Databricks{{"Databricks<br/>(Spark Processing)"}}:::process
+
+        %% Governance Wrapper
+        Unity["Unity Catalog<br/>(Governance, Lineage & Security)"]:::govern
+    end
+
+    %% -- CONSUMPTION --
+    subgraph Consumption ["4. Consumption"]
+        Dashboard["Risk Dashboard<br/>(PowerBI / Streamlit)"]:::consumer
+        Alerts["Alert System<br/>(Slack/Email)"]:::consumer
+    end
+
+    %% -- CONNECTIONS --
+
+    %% Ingestion Flow
+    Binance -->|JSON| Airflow
+    Portfolio -->|CSV| Airflow
+    Airflow -->|Parquet| Bronze
+
+    %% Processing Flow (The Medallion Hop)
+    Bronze --> Databricks
+    Databricks -->|Cleaning & Deduplication| Silver
+    Silver --> Databricks
+    Databricks -->|"Aggregations (Drawdown/VaR)"| Gold
+
+    %% Governance Link (Conceptual)
+    Unity -.->|Manages Metadata| Bronze
+    Unity -.->|Manages Metadata| Silver
+    Unity -.->|Manages Metadata| Gold
+
+    %% Output Flow
+    Gold -->|Reads Data Product| Dashboard
+    Gold -->|Trigger Thresholds| Alerts
+
+    %% Formatting connections
+    linkStyle default stroke:#333,stroke-width:2px;
