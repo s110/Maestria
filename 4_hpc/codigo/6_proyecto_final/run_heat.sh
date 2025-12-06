@@ -1,49 +1,67 @@
 #!/bin/bash
-#SBATCH --job-name=heat-mpi
-#SBATCH --output=logs/heat_%x_%A_%a.out
-#SBATCH --error=logs/heat_%x_%A_%a.err
-#SBATCH --time=00:10:00
+#SBATCH --partition=standard
+#SBATCH --job-name=heat_mpi_exp
+#SBATCH --output=heat_exp_%j.log
+#SBATCH --error=heat_err_%j.log
+#SBATCH --time=01:59:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=32
-#SBATCH --exclusive
-# --- CONFIGURACIÓN DEL ARRAY ---
-# Vamos a probar:
-# Procesos (P): 1, 2, 4, 8, 16, 32 (6 variantes)
-# Tamaños (N):  200, 800, 1600, 3200 (4 variantes)
-# Total combinaciones: 6 * 4 = 24
-#SBATCH --array=0-23
 
-# Cargar módulos (AJUSTA ESTO SEGÚN TU CLUSTER)
-# module load openmpi/4.1.4  <-- Ejemplo, descomenta si es necesario
+#SBATCH --cpus-per-task=1
 
-mkdir -p logs
+# --- 1. CARGA DE MÓDULOS ---
+# Cargar modulos (Usamos los default de Khipu)
+module load gnu12/12.4.0
+module load openmpi4/4.1.6
 
-# --- DEFINICIÓN DE VARIABLES ---
-# Lista de procesos a probar (P)
-PROCS_OPTS=(1 2 4 8 16 32)
-# Lista de tamaños de matriz a probar (N)
-SIZES_OPTS=(200 800 1600 3200)
+# Verificar que el ejecutable existe
+if [ ! -f ./heat_mpi ]; then
+    echo "Error: No se encuentra el ejecutable 'heat_mpi'."
+    echo "Por favor compila en el nodo de acceso antes de enviar el job."
+    exit 1
+fi
 
-# --- MAPEO DEL INDICE (Igual que tu ejemplo de Python) ---
-NUM_P=${#PROCS_OPTS[@]}
-NUM_S=${#SIZES_OPTS[@]}
-IDX=${SLURM_ARRAY_TASK_ID}
+output_file="resultados_heat.csv"
+# Escribimos encabezado si es archivo nuevo
+if [ ! -f $output_file ]; then
+    echo "Procesos,N,Iter_Reales,WallTime,CommTime,ReduceTime" > $output_file
+fi
 
-# Matemáticas para sacar la combinación
-P_IDX=$(( IDX % NUM_P ))
-S_IDX=$(( IDX / NUM_P ))
+# Configuración del Experimento
+SIZES=(400 565 800 1131 1600 2262) #100 141 200 282 400 565 | 300 424 600 848 1200 1697 | 
+ITERACIONES=20000 
+PROCS=(1 2 4 8 16 32) #1 2 4 8 16 32
 
-N_PROCS=${PROCS_OPTS[$P_IDX]}
-MATRIX_SIZE=${SIZES_OPTS[$S_IDX]}
+echo "Iniciando benchmarks ..."
 
-echo "=========================================="
-echo "Ejecutando Heat Equation MPI"
-echo "Job ID: ${SLURM_JOB_ID} - Array ID: ${SLURM_ARRAY_TASK_ID}"
-echo "Configuración: Procesos=$N_PROCS, Tamaño=${MATRIX_SIZE}x${MATRIX_SIZE}"
-echo "=========================================="
+for N in "${SIZES[@]}"; do
+    for P in "${PROCS[@]}"; do
+        if [ "$P" -le "$SLURM_NTASKS" ]; then
+            echo "Ejecutando con P=$P, N=$N..."
+            
+            # Ejecutamos MPI
+            OUTPUT=$(mpiexec -n $P ./heat_mpi $N $N $ITERACIONES)
+            
+            # --- CORRECCIÓN AQUÍ ---
+            # 1. Filtramos las líneas que inician con "!"
+            # 2. Usamos 'tail -n 1' para quedarnos SOLO con la última línea (los datos numéricos)
+            # 3. Ignoramos el encabezado de texto
+            LINE=$(echo "$OUTPUT" | grep "^!" | tail -n 1)
+            
+            # --- EXTRACCIÓN DE DATOS ---
+            # $5  : Iteraciones realizadas (útil si converge antes)
+            # $6  : Wall Clock Time (Tiempo total)
+            # $8  : Communication Time (Intercambio de Halos)
+            # $11 : Criterion Time (MPI_Allreduce / Sincronización)
+            
+            ITERS=$(echo "$LINE" | awk '{print $5}')
+            WALL=$(echo "$LINE" | awk '{print $6}')
+            COMM=$(echo "$LINE" | awk '{print $8}')
+            REDUCE=$(echo "$LINE" | awk '{print $11}')
+            echo "$P,$N,$ITERS,$WALL,$COMM,$REDUCE" >> $output_file
+            echo "  -> Tiempo: $WALL s"
+        fi
+    done
+done
 
-# --- EJECUCIÓN ---
-# Sintaxis: mpirun -np [NumProcesos] ./[Ejecutable] [ArgumentoTamaño]
-mpirun -np $N_PROCS ./heat_mpi $MATRIX_SIZE
-
-echo "Finalizado."
+echo "Finalizado. Datos guardados en $output_file"
