@@ -1,0 +1,230 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <mpi.h>
+
+// Macros para calcular mínimo y máximo
+#define min(a,b) ((a)<(b) ? (a) : (b))
+#define max(a,b) ((a)>(b) ? (a) : (b))
+
+// Macros de índice
+// idx:  Mapeo para la matriz con halos (Global local)
+// idxn: Mapeo para la matriz interior (Update local)
+#define idx(i,k)   (((i)-is)  *kouter + (k)-ks)
+#define idxn(i,k) (((i)-is-1)*kinner + (k)-ks-1)
+
+int main(int argc, char *argv[])
+{
+  int i, k, it;
+
+  // --- CONFIGURACIÓN DE RENDIMIENTO ---
+  // prt=0: Desactiva impresión (CRÍTICO para benchmarks)
+  int const prt=0, prt_halo=0;
+
+  // Valores por defecto
+  int imax=80, kmax=80, itmax=20000;
+  int const istart=0, kstart=0, b1=1;
+  double const eps=1.e-08;
+
+  // --- LECTURA DE ARGUMENTOS (Vital para scripts de Slurm) ---
+  // Uso: ./heat_mpi [N] [N] [ITERACIONES]
+  if (argc >= 2) imax = atoi(argv[1]);
+  if (argc >= 3) kmax = atoi(argv[2]); else kmax = imax;
+  if (argc >= 4) itmax = atoi(argv[3]);
+
+  double *phi, *phin, dx,dy,dx2,dy2,dx2i,dy2i,dt,dphi,dphimax;
+
+  // --- VARIABLES MPI ---
+  int numprocs, my_rank;
+  int right, left, upper, lower;
+  MPI_Comm comm;
+  int dims[2], coords[2], period[2];
+  int idim, kdim, icoord, kcoord;
+  int isize, iinner0, in1, ksize, kinner0, kn1;
+  int iinner, iouter, is, ie, kinner, kouter, ks, ke;
+  int const stride=100; // Chequear convergencia cada 100 pasos para eficiencia
+  MPI_Request req[4];
+  MPI_Status statuses[4];
+
+  // Tipos de datos para fronteras
+  int gsizes[2], lsizes[2], starts[2];
+  MPI_Datatype row_border, col_border; // Renombrados para claridad (ver abajo)
+
+  double dphimaxpartial;
+  double start_time, end_time, comm_time, criterion_time;
+
+  MPI_Init(&argc, &argv); // Pasar args a MPI_Init es buena práctica
+  MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+  MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
+
+  // --- TOPOLOGÍA CARTESIANA ---
+  dims[0] = 0; dims[1] = 0;
+  period[0] = 0; period[1] = 0;
+  MPI_Dims_create(numprocs, 2, dims);
+  idim = dims[0]; kdim = dims[1]; // idim=Filas de Procs, kdim=Cols de Procs
+
+  MPI_Cart_create(MPI_COMM_WORLD, 2, dims, period, 1, &comm);
+  MPI_Comm_rank(comm, &my_rank);
+  MPI_Cart_coords(comm, my_rank, 2, coords);
+  icoord = coords[0]; // Coordenada Y del proceso
+  kcoord = coords[1]; // Coordenada X del proceso
+
+  // Vecinos en Y (Filas): Left=Arriba, Right=Abajo (Nombres de MPI_Cart_shift son abstractos)
+  MPI_Cart_shift(comm, 0, 1, &left, &right);
+  // Vecinos en X (Columnas): Lower=Izquierda, Upper=Derecha
+  MPI_Cart_shift(comm, 1, 1, &lower, &upper);
+
+  // --- DESCOMPOSICIÓN DE DOMINIO ---
+  // Eje Y (Filas)
+  isize = imax - istart + 1;
+  iinner0 = (isize - 2*b1) / idim;
+  in1 = isize - 2*b1 - idim * iinner0;
+  if (icoord < in1) {
+    iinner = iinner0 + 1;
+    is = (istart+b1) + icoord * iinner - b1;
+  } else {
+    iinner = iinner0;
+    is = istart + in1 * (iinner0+1) + (icoord-in1) * iinner;
+  }
+  iouter = iinner + 2*b1;
+  ie = is + iouter - 1;
+
+  // Eje X (Columnas)
+  ksize = kmax - kstart + 1;
+  kinner0 = (ksize - 2*b1) / kdim;
+  kn1 = ksize - 2*b1 - kdim * kinner0;
+  if (kcoord < kn1) {
+    kinner = kinner0 + 1;
+    ks = (kstart+b1) + kcoord * kinner - b1;
+  } else {
+    kinner = kinner0;
+    ks = kstart + kn1 * (kinner0+1) + (kcoord-kn1) * kinner;
+  }
+  kouter = kinner + 2*b1;
+  ke = ks + kouter - 1;
+
+  if(((isize - 2*b1) < idim) || ((ksize - 2*b1) < kdim)) {
+    if(my_rank == 0) printf("Error: Demasiados procesos para el tamaño de la matriz.\n");
+    MPI_Finalize(); exit(0);
+  }
+
+  phi  = (double *) malloc(iouter*kouter*sizeof(double));
+  phin = (double *) malloc(iinner*kinner*sizeof(double));
+
+  // --- TIPOS DE DATOS ---
+  // NOTA: En C (Row-Major), una "Fila" es contigua, una "Columna" no.
+  // row_border: Para vecinos Arriba/Abajo (Left/Right en Y). Es un bloque ancho y bajo.
+  // En tu código original se llamaba "vertical_border", lo cual es confuso geométricamente.
+  gsizes[0]=iouter; gsizes[1]=kouter;
+  lsizes[0]=b1;     lsizes[1]=kinner; // Altura 1, Ancho kinner (FILA)
+  starts[0]=0;      starts[1]=0;
+  MPI_Type_create_subarray(2, gsizes, lsizes, starts, MPI_ORDER_C, MPI_DOUBLE, &row_border);
+  MPI_Type_commit(&row_border);
+
+  // col_border: Para vecinos Izq/Der (Lower/Upper en X). Es un bloque alto y estrecho.
+  // En tu código original se llamaba "horizontal_border".
+  gsizes[0]=iouter; gsizes[1]=kouter;
+  lsizes[0]=iinner; lsizes[1]=b1;     // Altura iinner, Ancho 1 (COLUMNA)
+  starts[0]=0;      starts[1]=0;
+  MPI_Type_create_subarray(2, gsizes, lsizes, starts, MPI_ORDER_C, MPI_DOUBLE, &col_border);
+  MPI_Type_commit(&col_border);
+
+  dx=1.e0/(kmax-kstart);
+  dy=1.e0/(imax-istart);
+  dx2=dx*dx; dy2=dy*dy;
+  dx2i=1.e0/dx2; dy2i=1.e0/dy2;
+  dt=min(dx2,dy2)/4.e0;
+
+  // Inicialización
+  for(i=max(1,is); i<=min(ie,imax-1); i++)
+    for(k=ks; k<=min(ke,kmax-1); k++) phi[idx(i,k)]=0.e0;
+
+  if (ke == kmax)
+    for(i=is; i<=ie; i++) phi[idx(i,kmax)]=1.e0;
+
+  if (is == istart)
+    for(k=ks; k<=min(ke,kmax-1); k++) phi[idx(istart,k)] = (k-kstart)*dx;
+
+  if (ie == imax)
+    for(k=ks; k<=min(ke,kmax-1); k++) phi[idx(imax,k)] = (k-kstart)*dx;
+
+  start_time = MPI_Wtime();
+  comm_time = 0;
+  criterion_time = 0;
+
+  // --- BUCLE PRINCIPAL ---
+  for(it=1; it<=itmax; it++) {
+      dphimax=0.;
+      // Cómputo
+      for(i=is+b1; i<=ie-b1; i++) {
+       for(k=ks+b1; k<=ke-b1; k++) {
+        dphi=(phi[idx(i+1,k)]+phi[idx(i-1,k)]-2.*phi[idx(i,k)])*dy2i
+               +(phi[idx(i,k+1)]+phi[idx(i,k-1)]-2.*phi[idx(i,k)])*dx2i;
+        dphi=dphi*dt;
+        if(dphi > dphimax) dphimax = dphi; // Max manual es mas rapido que macro a veces
+        phin[idxn(i,k)]=phi[idx(i,k)]+dphi;
+       }
+      }
+
+      // Update local
+      for(i=is+b1; i<=ie-b1; i++) {
+       for(k=ks+b1; k<=ke-b1; k++) phi[idx(i,k)]=phin[idxn(i,k)];
+      }
+
+      // Reducción (Criterio de parada)
+      criterion_time -= MPI_Wtime();
+      if ((it % stride) == 0) {
+        if (numprocs > 1) {
+          dphimaxpartial = dphimax;
+          MPI_Allreduce(&dphimaxpartial, &dphimax, 1, MPI_DOUBLE, MPI_MAX, comm);
+        }
+        if(dphimax < eps) {
+          criterion_time += MPI_Wtime();
+          goto endOfLoop;
+        }
+      }
+      criterion_time += MPI_Wtime();
+
+      // Comunicación
+      comm_time -= MPI_Wtime();
+
+      // Intercambio X (Columnas) - usa col_border
+      if (kdim > 1) {
+        MPI_Irecv(&phi[idx(is+b1,ks)],   1,col_border, lower,1,comm, &req[0]);
+        MPI_Irecv(&phi[idx(is+b1,ke)],   1,col_border, upper,2,comm, &req[1]);
+        MPI_Isend(&phi[idx(is+b1,ke-b1)],1,col_border, upper,1,comm, &req[2]);
+        MPI_Isend(&phi[idx(is+b1,ks+b1)],1,col_border, lower,2,comm, &req[3]);
+        MPI_Waitall(4, req, statuses);
+      }
+
+      // Intercambio Y (Filas) - usa row_border
+      if (idim > 1) {
+        MPI_Irecv(&phi[idx(is,ks+b1)],   1,row_border, left, 3,comm, &req[0]);
+        MPI_Irecv(&phi[idx(ie,ks+b1)],   1,row_border, right,4,comm, &req[1]);
+        MPI_Isend(&phi[idx(ie-b1,ks+b1)],1,row_border, right,3,comm, &req[2]);
+        MPI_Isend(&phi[idx(is+b1,ks+b1)],1,row_border, left, 4,comm, &req[3]);
+        MPI_Waitall(4, req, statuses);
+      }
+      comm_time += MPI_Wtime();
+
+  } // fin for
+
+endOfLoop:
+  end_time = MPI_Wtime();
+
+  if (my_rank == 0) {
+   // Formato específico para ser leído por grep/awk en el script
+   printf("\n!numprocs=idim    iter-   wall clock time  communication part  abort criterion\n");
+   printf(  "!      %3d x%3d %6d %12.4g      %2d %12.4g    %2d %6d %12.4g\n",
+          idim,kdim,it-1, end_time - start_time,
+                              1, comm_time, 1, stride, criterion_time);
+
+   // Línea extra para depuración humana (opcional)
+   printf("Info: P=%d, Grid=%dx%d, Size=%dx%d, Steps=%d, Time=%f\n",
+          numprocs, idim, kdim, imax, kmax, it-1, end_time - start_time);
+  }
+
+  MPI_Type_free(&row_border);
+  MPI_Type_free(&col_border);
+  MPI_Finalize();
+  return 0;
+}

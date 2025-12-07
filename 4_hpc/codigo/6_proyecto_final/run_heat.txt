@@ -1,0 +1,67 @@
+#!/bin/bash
+#SBATCH --partition=standard
+#SBATCH --job-name=heat_mpi_exp
+#SBATCH --output=heat_exp_%j.log
+#SBATCH --error=heat_err_%j.log
+#SBATCH --time=01:59:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=32
+
+#SBATCH --cpus-per-task=1
+
+# --- 1. CARGA DE MÓDULOS ---
+# Cargar modulos (Usamos los default de Khipu)
+module load gnu12/12.4.0
+module load openmpi4/4.1.6
+
+# Verificar que el ejecutable existe
+if [ ! -f ./heat_mpi ]; then
+    echo "Error: No se encuentra el ejecutable 'heat_mpi'."
+    echo "Por favor compila en el nodo de acceso antes de enviar el job."
+    exit 1
+fi
+
+output_file="resultados_heat.csv"
+# Escribimos encabezado si es archivo nuevo
+if [ ! -f $output_file ]; then
+    echo "Procesos,N,Iter_Reales,WallTime,CommTime,ReduceTime" > $output_file
+fi
+
+# Configuración del Experimento
+SIZES=(400 565 800 1131 1600 2262) #100 141 200 282 400 565 | 300 424 600 848 1200 1697 |
+ITERACIONES=20000
+PROCS=(1 2 4 8 16 32) #1 2 4 8 16 32
+
+echo "Iniciando benchmarks ..."
+
+for N in "${SIZES[@]}"; do
+    for P in "${PROCS[@]}"; do
+        if [ "$P" -le "$SLURM_NTASKS" ]; then
+            echo "Ejecutando con P=$P, N=$N..."
+
+            # Ejecutamos MPI
+            OUTPUT=$(mpiexec -n $P ./heat_mpi $N $N $ITERACIONES)
+
+            # --- CORRECCIÓN AQUÍ ---
+            # 1. Filtramos las líneas que inician con "!"
+            # 2. Usamos 'tail -n 1' para quedarnos SOLO con la última línea (los datos numéricos)
+            # 3. Ignoramos el encabezado de texto
+            LINE=$(echo "$OUTPUT" | grep "^!" | tail -n 1)
+
+            # --- EXTRACCIÓN DE DATOS ---
+            # $5  : Iteraciones realizadas (útil si converge antes)
+            # $6  : Wall Clock Time (Tiempo total)
+            # $8  : Communication Time (Intercambio de Halos)
+            # $11 : Criterion Time (MPI_Allreduce / Sincronización)
+
+            ITERS=$(echo "$LINE" | awk '{print $5}')
+            WALL=$(echo "$LINE" | awk '{print $6}')
+            COMM=$(echo "$LINE" | awk '{print $8}')
+            REDUCE=$(echo "$LINE" | awk '{print $11}')
+            echo "$P,$N,$ITERS,$WALL,$COMM,$REDUCE" >> $output_file
+            echo "  -> Tiempo: $WALL s"
+        fi
+    done
+done
+
+echo "Finalizado. Datos guardados en $output_file"
