@@ -1,0 +1,12 @@
+[project]
+name = "01-synapse-dataset-downloader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "pandas>=2.3.3",
+    "polars>=1.36.1",
+    "synapseclient>=4.10.0",
+]
