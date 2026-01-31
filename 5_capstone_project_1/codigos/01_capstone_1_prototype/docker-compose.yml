@@ -1,0 +1,27 @@
+services:
+  # Base de datos
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: dbname
+    ports:
+      - "5432:5432"
+
+  # Backend (Tu código actual con UV)
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql://user:pass@db:5432/dbname
+    depends_on:
+      - db
+
+  # Frontend (TypeScript)
+  frontend:
+    build: ./frontend
+    ports:
+      - "8081:5173"
+    depends_on:
+      - backend
