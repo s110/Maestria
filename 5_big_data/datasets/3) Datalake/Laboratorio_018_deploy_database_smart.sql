@@ -5,7 +5,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- COMANDO DE EJECUCION
--- beeline -u jdbc:hive2:// -f Laboratorio_018_deploy_database_smart.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+-- beeline -u jdbc:hive2:// -f Laboratorio_018_deploy_database_smart.sql --hivevar "PARAM_USERNAME=anitaquevedo"
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -23,7 +23,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- Eliminación de bases de datos
-DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_SMART CASCADE;
+DROP DATABASE IF EXISTS __PARAM_USERNAME___SMART CASCADE;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -32,5 +32,4 @@ DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_SMART CASCADE;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de base de datos
-CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_SMART LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_SMART';
-
+CREATE DATABASE IF NOT EXISTS __PARAM_USERNAME___SMART LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___SMART';

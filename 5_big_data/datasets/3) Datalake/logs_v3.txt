@@ -1,0 +1,1351 @@
+sebastian_lopez_m_testing@cluster-860d-m:~$ ls -l
+total 7592
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    5262 Mar  3 04:53 Laboratorio_001_Taller_HDFS.sh
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    6309 Mar  3 05:24 Laboratorio_007_Comandos_Utilitarios.sh
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    3230 Mar  7 22:22 Laboratorio_014_deploy.sh
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    4515 Mar  7 22:22 Laboratorio_015_deploy_database_landing_tmp.sql
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    4958 Mar  7 22:22 Laboratorio_016_deploy_database_landing.sql
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    6023 Mar  7 22:22 Laboratorio_017_deploy_database_universal.sql
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    1558 Mar  7 22:22 Laboratorio_018_deploy_database_smart.sql
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    1866 Mar  7 22:22 Laboratorio_019_execute_all.sh
+drwxr-xr-x 2 sebastian_lopez_m_testing sebastian_lopez_m_testing    4096 Mar  3 05:03 archivos
+drwxr-xr-x 2 sebastian_lopez_m_testing sebastian_lopez_m_testing    4096 Mar  3 05:14 dataset
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing     246 Mar  7 21:47 desktop.ini
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing     194 Mar  7 21:47 empresa.avsc
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing     105 Mar  7 21:45 empresa.data
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing     628 Mar  7 21:47 persona.avsc
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing    7282 Mar  7 21:45 persona.data
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing     277 Mar  7 21:47 transaccion.avsc
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing  538827 Mar  7 21:49 transacciones-2018-01-21.data
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing  668498 Mar  7 21:49 transacciones-2018-01-22.data
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing 1336418 Mar  7 21:49 transacciones-2018-01-23.data
+-rw-r--r-- 1 sebastian_lopez_m_testing sebastian_lopez_m_testing 5129134 Mar  7 21:47 transacciones.data
+sebastian_lopez_m_testing@cluster-860d-m:~$ bash Laboratorio_019_execute_all.sh 'sebastian"
+> ^C
+sebastian_lopez_m_testing@cluster-860d-m:~$ bash Laboratorio_019_execute_all.sh "sebastian"
+Ejecutando deploy de arbol de directorios...
+Eliminando la carpeta...
+Deleted /user/sebastian/ejercicio2
+Creando la estructura de carpetas para landing_tmp...
+Creando la estructura de carpetas para landing...
+Creando la estructura de carpetas para universal...
+Creando la estructura de carpetas para smart...
+Listando arbol de directorios...
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING/empresa
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING/persona
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING/transaccion
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING_TMP
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING_TMP/empresa
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING_TMP/persona
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_LANDING_TMP/transaccion
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_SMART
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_UNIVERSAL
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_UNIVERSAL/empresa
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_UNIVERSAL/persona
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_UNIVERSAL/transaccion
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/database/sebastian_UNIVERSAL/transaccion_enriquecida
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/schema
+drwxr-xr-x   - sebastian_lopez_m_testing hadoop          0 2026-03-07 22:23 /user/sebastian/ejercicio2/schema/sebastian_LANDING
+-rw-r--r--   1 sebastian_lopez_m_testing hadoop        194 2026-03-07 22:23 /user/sebastian/ejercicio2/schema/sebastian_LANDING/empresa.avsc
+-rw-r--r--   1 sebastian_lopez_m_testing hadoop        628 2026-03-07 22:23 /user/sebastian/ejercicio2/schema/sebastian_LANDING/persona.avsc
+-rw-r--r--   1 sebastian_lopez_m_testing hadoop        277 2026-03-07 22:23 /user/sebastian/ejercicio2/schema/sebastian_LANDING/transaccion.avsc
+Desplegando landing_tmp...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = 38b0e4c8-d523-4ca8-a2d9-bd7682771644
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 22:23:53 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_015_deploy_database_landing_tmp.sql --hivevar "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS sebastian_LANDING_TMP CASCADE;
+OK
+No rows affected (0.705 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 3. Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE DATABASE IF NOT EXISTS sebastian_LANDING_TMP LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING_TMP';
+OK
+No rows affected (0.092 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 4. Despliegue de tabla PERSONA
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_LANDING_TMP.PERSONA(
+. . . . . . . . > 
+. . . . . . . . >     ID STRING,
+. . . . . . . . > 
+. . . . . . . . >     NOMBRE STRING,
+. . . . . . . . > 
+. . . . . . . . >     TELEFONO STRING,
+. . . . . . . . > 
+. . . . . . . . >     CORREO STRING,
+. . . . . . . . > 
+. . . . . . . . >     FECHA_INGRESO STRING,
+. . . . . . . . > 
+. . . . . . . . >     EDAD STRING,
+. . . . . . . . > 
+. . . . . . . . >     SALARIO STRING,
+. . . . . . . . > 
+. . . . . . . . >     ID_EMPRESA STRING
+. . . . . . . . > 
+. . . . . . . . > )
+. . . . . . . . > 
+. . . . . . . . > ROW FORMAT DELIMITED
+. . . . . . . . > 
+. . . . . . . . > FIELDS TERMINATED BY '|'
+. . . . . . . . > 
+. . . . . . . . > LINES TERMINATED BY '\n'
+. . . . . . . . > 
+. . . . . . . . > STORED AS TEXTFILE
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING_TMP/persona'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'skip.header.line.count'='1',
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.403 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Subida de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> LOAD DATA LOCAL INPATH 'persona.data'
+. . . . . . . . > 
+. . . . . . . . > INTO TABLE sebastian_LANDING_TMP.PERSONA;
+Loading data to table sebastian_landing_tmp.persona
+OK
+No rows affected (0.803 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_LANDING_TMP.PERSONA LIMIT 10;
+OK
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+| persona.id  | persona.nombre  | persona.telefono  |             persona.correo              | persona.fecha_ingreso  | persona.edad  | persona.salario  | persona.id_empresa  |
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+| 1           | Carl            | 1-745-633-9145    | arcu.Sed.et@ante.co.uk                  | 2004-04-23             | 32            | 20095            | 5                   |
+| 2           | Priscilla       | 155-2498          | Donec.egestas.Aliquam@volutpatnunc.edu  | 2019-02-17             | 34            | 9298             | 2                   |
+| 3           | Jocelyn         | 1-204-956-8594    | amet.diam@lobortis.co.uk                | 2002-08-01             | 27            | 10853            | 3                   |
+| 4           | Aidan           | 1-719-862-9385    | euismod.et.commodo@nibhlaciniaorci.edu  | 2018-11-06             | 29            | 3387             | 10                  |
+| 5           | Leandra         | 839-8044          | at@pretiumetrutrum.com                  | 2002-10-10             | 41            | 22102            | 1                   |
+| 6           | Bert            | 797-4453          | a.felis.ullamcorper@arcu.org            | 2017-04-25             | 70            | 7800             | 7                   |
+| 7           | Mark            | 1-680-102-6792    | Quisque.ac@placerat.ca                  | 2006-04-21             | 52            | 8112             | 5                   |
+| 8           | Jonah           | 214-2975          | eu.ultrices.sit@vitae.ca                | 2017-10-07             | 23            | 17040            | 5                   |
+| 9           | Hanae           | 935-2277          | eu@Nunc.ca                              | 2003-05-25             | 69            | 6834             | 3                   |
+| 10          | Cadman          | 1-866-561-2701    | orci.adipiscing.non@semperNam.ca        | 2001-05-19             | 19            | 7996             | 7                   |
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+10 rows selected (1.367 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 5. Despliegue de tabla EMPRESA
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_LANDING_TMP.EMPRESA(
+. . . . . . . . > 
+. . . . . . . . >     ID STRING,
+. . . . . . . . > 
+. . . . . . . . >     NOMBRE STRING
+. . . . . . . . > 
+. . . . . . . . > )
+. . . . . . . . > 
+. . . . . . . . > ROW FORMAT DELIMITED
+. . . . . . . . > 
+. . . . . . . . > FIELDS TERMINATED BY '|'
+. . . . . . . . > 
+. . . . . . . . > LINES TERMINATED BY '\n'
+. . . . . . . . > 
+. . . . . . . . > STORED AS TEXTFILE
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING_TMP/empresa'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'skip.header.line.count'='1',
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.122 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Subida de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> LOAD DATA LOCAL INPATH 'empresa.data'
+. . . . . . . . > 
+. . . . . . . . > INTO TABLE sebastian_LANDING_TMP.EMPRESA;
+Loading data to table sebastian_landing_tmp.empresa
+OK
+No rows affected (0.287 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_LANDING_TMP.EMPRESA LIMIT 10;
+OK
++-------------+-----------------+
+| empresa.id  | empresa.nombre  |
++-------------+-----------------+
+| 1           | Walmart         |
+| 2           | Microsoft       |
+| 3           | Apple           |
+| 4           | Toyota          |
+| 5           | Amazon          |
+| 6           | Google          |
+| 7           | Samsung         |
+| 8           | HP              |
+| 9           | IBM             |
+| 10          | Sony            |
++-------------+-----------------+
+10 rows selected (0.237 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 6. Despliegue de tabla TRANSACCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_LANDING_TMP.TRANSACCION(
+. . . . . . . . > 
+. . . . . . . . >     ID_PERSONA STRING,
+. . . . . . . . > 
+. . . . . . . . >     ID_EMPRESA STRING,
+. . . . . . . . > 
+. . . . . . . . >     MONTO STRING,
+. . . . . . . . > 
+. . . . . . . . >     FECHA STRING
+. . . . . . . . > 
+. . . . . . . . > )
+. . . . . . . . > 
+. . . . . . . . > ROW FORMAT DELIMITED
+. . . . . . . . > 
+. . . . . . . . > FIELDS TERMINATED BY '|'
+. . . . . . . . > 
+. . . . . . . . > LINES TERMINATED BY '\n'
+. . . . . . . . > 
+. . . . . . . . > STORED AS TEXTFILE
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING_TMP/transaccion'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'skip.header.line.count'='1',
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.123 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Subida de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> LOAD DATA LOCAL INPATH 'transacciones.data'
+. . . . . . . . > 
+. . . . . . . . > INTO TABLE sebastian_LANDING_TMP.TRANSACCION;
+Loading data to table sebastian_landing_tmp.transaccion
+OK
+No rows affected (0.818 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_LANDING_TMP.TRANSACCION LIMIT 10;
+OK
++-------------------------+-------------------------+--------------------+--------------------+
+| transaccion.id_persona  | transaccion.id_empresa  | transaccion.monto  | transaccion.fecha  |
++-------------------------+-------------------------+--------------------+--------------------+
+| 18                      | 3                       | 1383               | 2018-01-21         |
+| 30                      | 6                       | 2331               | 2018-01-21         |
+| 47                      | 2                       | 2280               | 2018-01-21         |
+| 28                      | 1                       | 730                | 2018-01-21         |
+| 91                      | 4                       | 3081               | 2018-01-21         |
+| 74                      | 8                       | 2409               | 2018-01-21         |
+| 41                      | 2                       | 3754               | 2018-01-22         |
+| 42                      | 9                       | 4079               | 2018-01-22         |
+| 24                      | 6                       | 4475               | 2018-01-22         |
+| 67                      | 9                       | 561                | 2018-01-22         |
++-------------------------+-------------------------+--------------------+--------------------+
+10 rows selected (0.264 seconds)
+0: jdbc:hive2://> Closing: 0: jdbc:hive2://
+26/03/07 22:24:00 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 22:24:00 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+Desplegando landing...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = 66e7d71b-f720-41e0-b033-75b4e848cdaf
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 22:24:06 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_016_deploy_database_landing.sql --hivevar "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS sebastian_LANDING CASCADE;
+OK
+No rows affected (0.589 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 3. Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE DATABASE IF NOT EXISTS sebastian_LANDING LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING';
+OK
+No rows affected (0.08 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 4. Tunning
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Compresión
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET hive.exec.compress.output=true;
+No rows affected (0.004 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET avro.output.codec=snappy;
+No rows affected (0.005 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Particionamiendo dinámico
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET hive.exec.dynamic.partition=true;
+No rows affected (0.002 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET hive.exec.dynamic.partition.mode=nonstrict;
+No rows affected (0.003 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 5. Despliegue de tabla PERSONA
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_LANDING.PERSONA
+. . . . . . . . > 
+. . . . . . . . > STORED AS AVRO
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING/persona'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'avro.schema.url'='/user/sebastian/ejercicio2/schema/sebastian_LANDING/persona.avsc',
+. . . . . . . . > 
+. . . . . . . . >     'avro.output.codec'='snappy'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.654 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Inserción de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> INSERT INTO TABLE sebastian_LANDING.PERSONA
+. . . . . . . . > 
+. . . . . . . . > SELECT * FROM  sebastian_LANDING_TMP.PERSONA;
+Query ID = sebastian_lopez_m_testing_20260307222409_bc60f8ba-707c-4abf-8886-531fd2dd5284
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1772919570261_0001)
+
+Loading data to table sebastian_landing.persona
+OK
+No rows affected (26.766 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_LANDING.PERSONA LIMIT 10;
+OK
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+| persona.id  | persona.nombre  | persona.telefono  |             persona.correo              | persona.fecha_ingreso  | persona.edad  | persona.salario  | persona.id_empresa  |
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+| 1           | Carl            | 1-745-633-9145    | arcu.Sed.et@ante.co.uk                  | 2004-04-23             | 32            | 20095.0          | 5                   |
+| 2           | Priscilla       | 155-2498          | Donec.egestas.Aliquam@volutpatnunc.edu  | 2019-02-17             | 34            | 9298.0           | 2                   |
+| 3           | Jocelyn         | 1-204-956-8594    | amet.diam@lobortis.co.uk                | 2002-08-01             | 27            | 10853.0          | 3                   |
+| 4           | Aidan           | 1-719-862-9385    | euismod.et.commodo@nibhlaciniaorci.edu  | 2018-11-06             | 29            | 3387.0           | 10                  |
+| 5           | Leandra         | 839-8044          | at@pretiumetrutrum.com                  | 2002-10-10             | 41            | 22102.0          | 1                   |
+| 6           | Bert            | 797-4453          | a.felis.ullamcorper@arcu.org            | 2017-04-25             | 70            | 7800.0           | 7                   |
+| 7           | Mark            | 1-680-102-6792    | Quisque.ac@placerat.ca                  | 2006-04-21             | 52            | 8112.0           | 5                   |
+| 8           | Jonah           | 214-2975          | eu.ultrices.sit@vitae.ca                | 2017-10-07             | 23            | 17040.0          | 5                   |
+| 9           | Hanae           | 935-2277          | eu@Nunc.ca                              | 2003-05-25             | 69            | 6834.0           | 3                   |
+| 10          | Cadman          | 1-866-561-2701    | orci.adipiscing.non@semperNam.ca        | 2001-05-19             | 19            | 7996.0           | 7                   |
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+10 rows selected (0.381 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 6. Despliegue de tabla EMPRESA
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_LANDING.EMPRESA
+. . . . . . . . > 
+. . . . . . . . > STORED AS AVRO
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING/empresa'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'avro.schema.url'='/user/sebastian/ejercicio2/schema/sebastian_LANDING/empresa.avsc',
+. . . . . . . . > 
+. . . . . . . . >     'avro.output.codec'='snappy'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.127 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Inserción de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> INSERT INTO TABLE sebastian_LANDING.EMPRESA
+. . . . . . . . > 
+. . . . . . . . > SELECT * FROM  sebastian_LANDING_TMP.EMPRESA;
+Query ID = sebastian_lopez_m_testing_20260307222436_f011caa4-b3f0-4811-9116-3dbe52bf60b8
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1772919570261_0001)
+
+Loading data to table sebastian_landing.empresa
+OK
+No rows affected (1.886 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_LANDING.EMPRESA LIMIT 10;
+OK
++-------------+-----------------+
+| empresa.id  | empresa.nombre  |
++-------------+-----------------+
+| 1           | Walmart         |
+| 2           | Microsoft       |
+| 3           | Apple           |
+| 4           | Toyota          |
+| 5           | Amazon          |
+| 6           | Google          |
+| 7           | Samsung         |
+| 8           | HP              |
+| 9           | IBM             |
+| 10          | Sony            |
++-------------+-----------------+
+10 rows selected (0.277 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 7. Despliegue de tabla TRANSACCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_LANDING.TRANSACCION
+. . . . . . . . > 
+. . . . . . . . > PARTITIONED BY (FECHA STRING)
+. . . . . . . . > 
+. . . . . . . . > STORED AS AVRO
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_LANDING/transaccion'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'avro.schema.url'='/user/sebastian/ejercicio2/schema/sebastian_LANDING/transaccion.avsc', 
+. . . . . . . . > 
+. . . . . . . . >     'avro.output.codec'='snappy'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.097 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Inserción de datos por particionamiento dinámico
+0: jdbc:hive2://> 
+0: jdbc:hive2://> INSERT INTO TABLE sebastian_LANDING.TRANSACCION
+. . . . . . . . > 
+. . . . . . . . > PARTITION(FECHA)
+. . . . . . . . > 
+. . . . . . . . > SELECT * FROM  sebastian_LANDING_TMP.TRANSACCION;
+26/03/07 22:24:39 [57bd4650-7757-497b-96e2-55d296f6e4f7 main]: WARN parse.BaseSemanticAnalyzer: Dynamic partitioning is used; only validating 0 columns
+26/03/07 22:24:39 [57bd4650-7757-497b-96e2-55d296f6e4f7 main]: WARN parse.BaseSemanticAnalyzer: Dynamic partitioning is used; only validating 0 columns
+Query ID = sebastian_lopez_m_testing_20260307222439_72c2ec9f-fce6-4c8c-a6bb-8cba5eb6a242
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1772919570261_0001)
+
+Loading data to table sebastian_landing.transaccion partition (fecha=null)
+
+Loaded : 3/3 partitions.
+         Time taken to load dynamic partitions: 0.394 seconds
+         Time taken for adding to write entity : 0.004 seconds
+OK
+No rows affected (5.829 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_LANDING.TRANSACCION LIMIT 10;
+OK
++-------------------------+-------------------------+--------------------+--------------------+
+| transaccion.id_persona  | transaccion.id_empresa  | transaccion.monto  | transaccion.fecha  |
++-------------------------+-------------------------+--------------------+--------------------+
+| 18                      | 3                       | 1383               | 2018-01-21         |
+| 30                      | 6                       | 2331               | 2018-01-21         |
+| 47                      | 2                       | 2280               | 2018-01-21         |
+| 28                      | 1                       | 730                | 2018-01-21         |
+| 91                      | 4                       | 3081               | 2018-01-21         |
+| 74                      | 8                       | 2409               | 2018-01-21         |
+| 83                      | 5                       | 2079               | 2018-01-21         |
+| 48                      | 4                       | 2543               | 2018-01-21         |
+| 15                      | 6                       | 1434               | 2018-01-21         |
+| 89                      | 4                       | 780                | 2018-01-21         |
++-------------------------+-------------------------+--------------------+--------------------+
+10 rows selected (0.364 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Verificamos las particiones
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SHOW PARTITIONS sebastian_LANDING.TRANSACCION;
+OK
++-------------------+
+|     partition     |
++-------------------+
+| fecha=2018-01-21  |
+| fecha=2018-01-22  |
+| fecha=2018-01-23  |
++-------------------+
+3 rows selected (0.28 seconds)
+0: jdbc:hive2://> Closing: 0: jdbc:hive2://
+26/03/07 22:24:45 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 22:24:45 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+Desplegando universal...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = 19bbe5cb-2b35-4636-8766-ead867dcdf25
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 22:24:53 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_017_deploy_database_universal.sql --hivevar "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS sebastian_UNIVERSAL CASCADE;
+OK
+No rows affected (1.132 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 3. Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE DATABASE IF NOT EXISTS sebastian_UNIVERSAL LOCATION '/user/sebastian/ejercicio2/database/sebastian_UNIVERSAL';
+OK
+No rows affected (0.092 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 4. Tunning
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Compresión
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET hive.exec.compress.output=true;
+No rows affected (0.007 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET parquet.compression=SNAPPY;
+No rows affected (0.008 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Particionamiendo dinámico
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET hive.exec.dynamic.partition=true;
+No rows affected (0.004 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SET hive.exec.dynamic.partition.mode=nonstrict;
+No rows affected (0.003 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 5. Despliegue de tabla PERSONA
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_UNIVERSAL.PERSONA(
+. . . . . . . . > 
+. . . . . . . . >     ID STRING,
+. . . . . . . . > 
+. . . . . . . . >     NOMBRE STRING,
+. . . . . . . . > 
+. . . . . . . . >     TELEFONO STRING,
+. . . . . . . . > 
+. . . . . . . . >     CORREO STRING,
+. . . . . . . . > 
+. . . . . . . . >     FECHA_INGRESO STRING,
+. . . . . . . . > 
+. . . . . . . . >     EDAD INT,
+. . . . . . . . > 
+. . . . . . . . >     SALARIO DOUBLE,
+. . . . . . . . > 
+. . . . . . . . >     ID_EMPRESA STRING
+. . . . . . . . > 
+. . . . . . . . > )
+. . . . . . . . > 
+. . . . . . . . > STORED AS PARQUET
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_UNIVERSAL/PERSONA'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'parquet.compression'='SNAPPY'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.413 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Inserción, casteo de datos y aplicacion de reglas de limpieza
+0: jdbc:hive2://> 
+0: jdbc:hive2://> INSERT INTO TABLE sebastian_UNIVERSAL.PERSONA
+. . . . . . . . > 
+. . . . . . . . >     SELECT
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.ID AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.NOMBRE AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.TELEFONO AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.CORREO AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.FECHA_INGRESO AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.EDAD AS INT),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.SALARIO AS DOUBLE),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.ID_EMPRESA AS STRING)
+. . . . . . . . > 
+. . . . . . . . >     FROM
+. . . . . . . . > 
+. . . . . . . . >         sebastian_LANDING.PERSONA T
+. . . . . . . . > 
+. . . . . . . . >     WHERE
+. . . . . . . . > 
+. . . . . . . . >         T.ID IS NOT NULL AND
+. . . . . . . . > 
+. . . . . . . . >         T.ID_EMPRESA IS NOT NULL AND
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.EDAD AS INT) > 0 AND
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.EDAD AS INT) < 100 AND
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.SALARIO AS DOUBLE) > 0 AND
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.SALARIO AS DOUBLE) < 10000000;
+Query ID = sebastian_lopez_m_testing_20260307222456_e8fb47db-9901-4f21-91a3-5d97cfbcef4d
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1772919570261_0002)
+
+Loading data to table sebastian_universal.persona
+OK
+No rows affected (22.759 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_UNIVERSAL.PERSONA LIMIT 10;
+OK
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+| persona.id  | persona.nombre  | persona.telefono  |             persona.correo              | persona.fecha_ingreso  | persona.edad  | persona.salario  | persona.id_empresa  |
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+| 1           | Carl            | 1-745-633-9145    | arcu.Sed.et@ante.co.uk                  | 2004-04-23             | 32            | 20095.0          | 5                   |
+| 2           | Priscilla       | 155-2498          | Donec.egestas.Aliquam@volutpatnunc.edu  | 2019-02-17             | 34            | 9298.0           | 2                   |
+| 3           | Jocelyn         | 1-204-956-8594    | amet.diam@lobortis.co.uk                | 2002-08-01             | 27            | 10853.0          | 3                   |
+| 4           | Aidan           | 1-719-862-9385    | euismod.et.commodo@nibhlaciniaorci.edu  | 2018-11-06             | 29            | 3387.0           | 10                  |
+| 5           | Leandra         | 839-8044          | at@pretiumetrutrum.com                  | 2002-10-10             | 41            | 22102.0          | 1                   |
+| 6           | Bert            | 797-4453          | a.felis.ullamcorper@arcu.org            | 2017-04-25             | 70            | 7800.0           | 7                   |
+| 7           | Mark            | 1-680-102-6792    | Quisque.ac@placerat.ca                  | 2006-04-21             | 52            | 8112.0           | 5                   |
+| 8           | Jonah           | 214-2975          | eu.ultrices.sit@vitae.ca                | 2017-10-07             | 23            | 17040.0          | 5                   |
+| 9           | Hanae           | 935-2277          | eu@Nunc.ca                              | 2003-05-25             | 69            | 6834.0           | 3                   |
+| 10          | Cadman          | 1-866-561-2701    | orci.adipiscing.non@semperNam.ca        | 2001-05-19             | 19            | 7996.0           | 7                   |
++-------------+-----------------+-------------------+-----------------------------------------+------------------------+---------------+------------------+---------------------+
+10 rows selected (0.93 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 6. Despliegue de tabla EMPRESA
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_UNIVERSAL.EMPRESA(
+. . . . . . . . > 
+. . . . . . . . >     ID STRING,
+. . . . . . . . > 
+. . . . . . . . >     NOMBRE STRING
+. . . . . . . . > 
+. . . . . . . . > )
+. . . . . . . . > 
+. . . . . . . . > STORED AS PARQUET
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_UNIVERSAL/EMPRESA'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'parquet.compression'='SNAPPY'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.107 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Inserción, casteo de datos y aplicacion de reglas de limpieza
+0: jdbc:hive2://> 
+0: jdbc:hive2://> INSERT INTO TABLE sebastian_UNIVERSAL.EMPRESA
+. . . . . . . . > 
+. . . . . . . . >     SELECT
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.ID AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.NOMBRE AS STRING)
+. . . . . . . . > 
+. . . . . . . . >     FROM
+. . . . . . . . > 
+. . . . . . . . >         sebastian_LANDING.EMPRESA T
+. . . . . . . . > 
+. . . . . . . . >     WHERE
+. . . . . . . . > 
+. . . . . . . . >         T.ID IS NOT NULL;
+Query ID = sebastian_lopez_m_testing_20260307222520_d73707d3-360e-427b-af7d-1d3e0c5e1445
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1772919570261_0002)
+
+Loading data to table sebastian_universal.empresa
+OK
+No rows affected (1.53 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_UNIVERSAL.EMPRESA LIMIT 10;
+OK
++-------------+-----------------+
+| empresa.id  | empresa.nombre  |
++-------------+-----------------+
+| 1           | Walmart         |
+| 2           | Microsoft       |
+| 3           | Apple           |
+| 4           | Toyota          |
+| 5           | Amazon          |
+| 6           | Google          |
+| 7           | Samsung         |
+| 8           | HP              |
+| 9           | IBM             |
+| 10          | Sony            |
++-------------+-----------------+
+10 rows selected (0.184 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 7. Despliegue de tabla TRANSACCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de tabla
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE TABLE sebastian_UNIVERSAL.TRANSACCION(
+. . . . . . . . > 
+. . . . . . . . >     ID_PERSONA STRING,
+. . . . . . . . > 
+. . . . . . . . >     ID_EMPRESA STRING,
+. . . . . . . . > 
+. . . . . . . . >     MONTO DOUBLE
+. . . . . . . . > 
+. . . . . . . . > )
+. . . . . . . . > 
+. . . . . . . . > PARTITIONED BY (FECHA STRING)
+. . . . . . . . > 
+. . . . . . . . > STORED AS PARQUET
+. . . . . . . . > 
+. . . . . . . . > LOCATION '/user/sebastian/ejercicio2/database/sebastian_UNIVERSAL/TRANSACCION'
+. . . . . . . . > 
+. . . . . . . . > TBLPROPERTIES(
+. . . . . . . . > 
+. . . . . . . . >     'store.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'retrieve.charset'='ISO-8859-1',
+. . . . . . . . > 
+. . . . . . . . >     'parquet.compression'='SNAPPY'
+. . . . . . . . > 
+. . . . . . . . > );
+OK
+No rows affected (0.104 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Inserción por particionamiento dinámico, casteo de datos y aplicacion de reglas de limpieza
+0: jdbc:hive2://> 
+0: jdbc:hive2://> INSERT INTO TABLE sebastian_UNIVERSAL.TRANSACCION
+. . . . . . . . > 
+. . . . . . . . > PARTITION(FECHA)
+. . . . . . . . > 
+. . . . . . . . >     SELECT
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.ID_PERSONA AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.ID_EMPRESA AS STRING),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.MONTO AS DOUBLE),
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.FECHA AS STRING)
+. . . . . . . . > 
+. . . . . . . . >     FROM
+. . . . . . . . > 
+. . . . . . . . >         sebastian_LANDING.TRANSACCION T
+. . . . . . . . > 
+. . . . . . . . >     WHERE
+. . . . . . . . > 
+. . . . . . . . >         T.ID_PERSONA IS NOT NULL AND
+. . . . . . . . > 
+. . . . . . . . >         T.ID_EMPRESA IS NOT NULL AND
+. . . . . . . . > 
+. . . . . . . . >         CAST(T.MONTO AS DOUBLE) >= 0;
+26/03/07 22:25:22 [7b5db024-92ed-4e1f-bb9e-417b19c3bbbd main]: WARN parse.BaseSemanticAnalyzer: Dynamic partitioning is used; only validating 0 columns
+26/03/07 22:25:23 [7b5db024-92ed-4e1f-bb9e-417b19c3bbbd main]: WARN parse.BaseSemanticAnalyzer: Dynamic partitioning is used; only validating 0 columns
+Query ID = sebastian_lopez_m_testing_20260307222522_5a024f65-ade7-45a4-9dec-311aed3adefd
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1772919570261_0002)
+
+Loading data to table sebastian_universal.transaccion partition (fecha=null)
+
+Loaded : 3/3 partitions.
+         Time taken to load dynamic partitions: 0.324 seconds
+         Time taken for adding to write entity : 0.0 seconds
+OK
+No rows affected (6.041 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Impresión de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SELECT * FROM sebastian_UNIVERSAL.TRANSACCION LIMIT 10;
+OK
++-------------------------+-------------------------+--------------------+--------------------+
+| transaccion.id_persona  | transaccion.id_empresa  | transaccion.monto  | transaccion.fecha  |
++-------------------------+-------------------------+--------------------+--------------------+
+| 18                      | 3                       | 1383.0             | 2018-01-21         |
+| 30                      | 6                       | 2331.0             | 2018-01-21         |
+| 47                      | 2                       | 2280.0             | 2018-01-21         |
+| 28                      | 1                       | 730.0              | 2018-01-21         |
+| 91                      | 4                       | 3081.0             | 2018-01-21         |
+| 74                      | 8                       | 2409.0             | 2018-01-21         |
+| 83                      | 5                       | 2079.0             | 2018-01-21         |
+| 48                      | 4                       | 2543.0             | 2018-01-21         |
+| 15                      | 6                       | 1434.0             | 2018-01-21         |
+| 89                      | 4                       | 780.0              | 2018-01-21         |
++-------------------------+-------------------------+--------------------+--------------------+
+10 rows selected (0.397 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Verificamos las particiones
+0: jdbc:hive2://> 
+0: jdbc:hive2://> SHOW PARTITIONS sebastian_UNIVERSAL.TRANSACCION;
+OK
++-------------------+
+|     partition     |
++-------------------+
+| fecha=2018-01-21  |
+| fecha=2018-01-22  |
+| fecha=2018-01-23  |
++-------------------+
+3 rows selected (0.191 seconds)
+0: jdbc:hive2://> Shutting down tez session.
+Closing: 0: jdbc:hive2://
+26/03/07 22:25:29 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 22:25:29 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+Desplegando smart...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = bd1a8001-b913-4c66-9755-3a91128f0207
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 22:25:36 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_018_deploy_database_smart.sql --hivevar "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS sebastian_SMART CASCADE;
+OK
+No rows affected (0.588 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 3. Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Creación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> CREATE DATABASE IF NOT EXISTS sebastian_SMART LOCATION '/user/sebastian/ejercicio2/database/sebastian_SMART';
+OK
+No rows affected (0.076 seconds)
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> Closing: 0: jdbc:hive2://
+26/03/07 22:25:38 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 22:25:38 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit

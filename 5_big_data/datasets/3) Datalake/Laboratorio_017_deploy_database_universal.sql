@@ -5,7 +5,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- COMANDO DE EJECUCION
--- beeline -u jdbc:hive2:// -f Laboratorio_017_deploy_database_universal.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+-- beeline -u jdbc:hive2:// -f Laboratorio_017_deploy_database_universal.sql --hivevar "PARAM_USERNAME=anitaquevedo"
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -23,7 +23,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- Eliminación de bases de datos
-DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_UNIVERSAL CASCADE;
+DROP DATABASE IF EXISTS __PARAM_USERNAME___UNIVERSAL CASCADE;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -32,7 +32,7 @@ DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_UNIVERSAL CASCADE;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de base de datos
-CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_UNIVERSAL LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_UNIVERSAL';
+CREATE DATABASE IF NOT EXISTS __PARAM_USERNAME___UNIVERSAL LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___UNIVERSAL';
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -55,7 +55,7 @@ SET hive.exec.dynamic.partition.mode=nonstrict;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.PERSONA(
+CREATE TABLE __PARAM_USERNAME___UNIVERSAL.PERSONA(
     ID STRING,
     NOMBRE STRING,
     TELEFONO STRING,
@@ -66,15 +66,15 @@ CREATE TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.PERSONA(
     ID_EMPRESA STRING
 )
 STORED AS PARQUET
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_UNIVERSAL/PERSONA'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___UNIVERSAL/PERSONA'
 TBLPROPERTIES(
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1',
     'parquet.compression'='SNAPPY'
 );
 
 -- Inserción, casteo de datos y aplicacion de reglas de limpieza
-INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.PERSONA
+INSERT INTO TABLE __PARAM_USERNAME___UNIVERSAL.PERSONA
     SELECT
         CAST(T.ID AS STRING),
         CAST(T.NOMBRE AS STRING),
@@ -84,9 +84,9 @@ INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.PERSONA
         CAST(T.EDAD AS INT),
         CAST(T.SALARIO AS DOUBLE),
         CAST(T.ID_EMPRESA AS STRING)
-    FROM 
-        ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA T
-    WHERE 
+    FROM
+        __PARAM_USERNAME___LANDING.PERSONA T
+    WHERE
         T.ID IS NOT NULL AND
         T.ID_EMPRESA IS NOT NULL AND
         CAST(T.EDAD AS INT) > 0 AND
@@ -95,7 +95,7 @@ INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.PERSONA
         CAST(T.SALARIO AS DOUBLE) < 10000000;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_UNIVERSAL.PERSONA LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___UNIVERSAL.PERSONA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -104,30 +104,30 @@ SELECT * FROM ${hiveconf:PARAM_USERNAME}_UNIVERSAL.PERSONA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.EMPRESA(
+CREATE TABLE __PARAM_USERNAME___UNIVERSAL.EMPRESA(
     ID STRING,
     NOMBRE STRING
 )
 STORED AS PARQUET
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_UNIVERSAL/EMPRESA'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___UNIVERSAL/EMPRESA'
 TBLPROPERTIES(
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1',
     'parquet.compression'='SNAPPY'
 );
 
 -- Inserción, casteo de datos y aplicacion de reglas de limpieza
-INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.EMPRESA
+INSERT INTO TABLE __PARAM_USERNAME___UNIVERSAL.EMPRESA
     SELECT
         CAST(T.ID AS STRING),
         CAST(T.NOMBRE AS STRING)
-    FROM 
-        ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA T
-    WHERE 
-        T.ID IS NOT NULL; 
+    FROM
+        __PARAM_USERNAME___LANDING.EMPRESA T
+    WHERE
+        T.ID IS NOT NULL;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_UNIVERSAL.EMPRESA LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___UNIVERSAL.EMPRESA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -136,37 +136,37 @@ SELECT * FROM ${hiveconf:PARAM_USERNAME}_UNIVERSAL.EMPRESA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.TRANSACCION(
+CREATE TABLE __PARAM_USERNAME___UNIVERSAL.TRANSACCION(
     ID_PERSONA STRING,
     ID_EMPRESA STRING,
     MONTO DOUBLE
 )
 PARTITIONED BY (FECHA STRING)
 STORED AS PARQUET
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_UNIVERSAL/TRANSACCION'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___UNIVERSAL/TRANSACCION'
 TBLPROPERTIES(
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1',
     'parquet.compression'='SNAPPY'
 );
 
 -- Inserción por particionamiento dinámico, casteo de datos y aplicacion de reglas de limpieza
-INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_UNIVERSAL.TRANSACCION
+INSERT INTO TABLE __PARAM_USERNAME___UNIVERSAL.TRANSACCION
 PARTITION(FECHA)
     SELECT
         CAST(T.ID_PERSONA AS STRING),
         CAST(T.ID_EMPRESA AS STRING),
         CAST(T.MONTO AS DOUBLE),
         CAST(T.FECHA AS STRING)
-    FROM 
-        ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION T
-    WHERE 
+    FROM
+        __PARAM_USERNAME___LANDING.TRANSACCION T
+    WHERE
         T.ID_PERSONA IS NOT NULL AND
         T.ID_EMPRESA IS NOT NULL AND
         CAST(T.MONTO AS DOUBLE) >= 0;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_UNIVERSAL.TRANSACCION LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___UNIVERSAL.TRANSACCION LIMIT 10;
 
 -- Verificamos las particiones
-SHOW PARTITIONS ${hiveconf:PARAM_USERNAME}_UNIVERSAL.TRANSACCION;
+SHOW PARTITIONS __PARAM_USERNAME___UNIVERSAL.TRANSACCION;

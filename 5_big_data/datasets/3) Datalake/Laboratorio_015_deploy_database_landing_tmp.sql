@@ -5,7 +5,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- COMANDO DE EJECUCION
--- beeline -u jdbc:hive2:// -f Laboratorio_015_deploy_database_landing_tmp.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+-- beeline -u jdbc:hive2:// -f Laboratorio_015_deploy_database_landing_tmp.sql --hivevar "PARAM_USERNAME=anitaquevedo"
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -23,7 +23,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- Eliminación de bases de datos
-DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING_TMP CASCADE;
+DROP DATABASE IF EXISTS __PARAM_USERNAME___LANDING_TMP CASCADE;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -32,7 +32,7 @@ DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING_TMP CASCADE;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de base de datos
-CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_LANDING_TMP LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP';
+CREATE DATABASE IF NOT EXISTS __PARAM_USERNAME___LANDING_TMP LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING_TMP';
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -41,33 +41,33 @@ CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_LANDING_TMP LOCATION '/
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA(
-	ID STRING,
-	NOMBRE STRING,
-	TELEFONO STRING,
-	CORREO STRING,
-	FECHA_INGRESO STRING,
-	EDAD STRING,
-	SALARIO STRING,
-	ID_EMPRESA STRING
+CREATE TABLE __PARAM_USERNAME___LANDING_TMP.PERSONA(
+    ID STRING,
+    NOMBRE STRING,
+    TELEFONO STRING,
+    CORREO STRING,
+    FECHA_INGRESO STRING,
+    EDAD STRING,
+    SALARIO STRING,
+    ID_EMPRESA STRING
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP/persona'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING_TMP/persona'
 TBLPROPERTIES(
     'skip.header.line.count'='1',
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1'
 );
 
 -- Subida de datos
 LOAD DATA LOCAL INPATH 'persona.data'
-INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA;
+INTO TABLE __PARAM_USERNAME___LANDING_TMP.PERSONA;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___LANDING_TMP.PERSONA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -76,27 +76,27 @@ SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA(
-	ID STRING,
-	NOMBRE STRING
+CREATE TABLE __PARAM_USERNAME___LANDING_TMP.EMPRESA(
+    ID STRING,
+    NOMBRE STRING
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP/empresa'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING_TMP/empresa'
 TBLPROPERTIES(
     'skip.header.line.count'='1',
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1'
 );
 
 -- Subida de datos
 LOAD DATA LOCAL INPATH 'empresa.data'
-INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA;
+INTO TABLE __PARAM_USERNAME___LANDING_TMP.EMPRESA;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___LANDING_TMP.EMPRESA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -105,26 +105,26 @@ SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION(
-	ID_PERSONA STRING,
-	ID_EMPRESA STRING,
-	MONTO STRING,
-	FECHA STRING
+CREATE TABLE __PARAM_USERNAME___LANDING_TMP.TRANSACCION(
+    ID_PERSONA STRING,
+    ID_EMPRESA STRING,
+    MONTO STRING,
+    FECHA STRING
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP/transaccion'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING_TMP/transaccion'
 TBLPROPERTIES(
     'skip.header.line.count'='1',
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1'
 );
 
 -- Subida de datos
 LOAD DATA LOCAL INPATH 'transacciones.data'
-INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION;
+INTO TABLE __PARAM_USERNAME___LANDING_TMP.TRANSACCION;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___LANDING_TMP.TRANSACCION LIMIT 10;

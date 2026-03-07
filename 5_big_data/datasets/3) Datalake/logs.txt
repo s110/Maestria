@@ -1,0 +1,835 @@
+sebastian_lopez_m_testing@cluster-860d-m:~$ sh Laboratorio_019_execute_all.sh 'sebastian'
+Ejecutando deploy de arbol de directorios...
+Laboratorio_019_execute_all.sh: 28: source: not found
+Desplegando landing_tmp...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = aa74b310-086d-427e-9b2b-e37777a7a922
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 21:53:36 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_015_deploy_database_landing_tmp.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING_TMP CASCADE;
+NoViableAltException(15@[])
+        at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.identifier(HiveParser_IdentifiersParser.java:11910)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.identifier(HiveParser.java:45046)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.dropDatabaseStatement(HiveParser.java:6217)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:4281)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:2494)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1420)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:220)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+26/03/07 21:53:37 [f16529c3-6a8e-47e5-afa1-0b10cf3eb2ef main]: ERROR ql.Driver: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+
+26/03/07 21:53:37 [main]: WARN thrift.ThriftCLIService: Error executing statement: 
+org.apache.hive.service.cli.HiveSQLException: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hive.service.cli.operation.Operation.toSQLException(Operation.java:332) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:202) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562) ~[hive-service-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source) ~[?:?]
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330) ~[hadoop-common-3.3.6.jar:?]
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245) ~[hadoop-common-3.3.6.jar:?]
+Caused by: org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200) ~[hive-service-3.1.3.jar:3.1.3]
+        ... 29 more
+Error: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement (state=42000,code=40000)
+Closing: 0: jdbc:hive2://
+26/03/07 21:53:38 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 21:53:38 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+Desplegando landing...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = 651f0eba-8b57-4f89-a15b-0b914ec2bde2
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 21:53:44 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_016_deploy_database_landing.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING CASCADE;
+NoViableAltException(15@[])
+        at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.identifier(HiveParser_IdentifiersParser.java:11910)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.identifier(HiveParser.java:45046)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.dropDatabaseStatement(HiveParser.java:6217)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:4281)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:2494)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1420)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:220)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+26/03/07 21:53:45 [ce257cf6-4f4a-476a-8b5d-2b8ee37e313d main]: ERROR ql.Driver: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+
+26/03/07 21:53:45 [main]: WARN thrift.ThriftCLIService: Error executing statement: 
+org.apache.hive.service.cli.HiveSQLException: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hive.service.cli.operation.Operation.toSQLException(Operation.java:332) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:202) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562) ~[hive-service-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source) ~[?:?]
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330) ~[hadoop-common-3.3.6.jar:?]
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245) ~[hadoop-common-3.3.6.jar:?]
+Caused by: org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200) ~[hive-service-3.1.3.jar:3.1.3]
+        ... 29 more
+Error: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement (state=42000,code=40000)
+Closing: 0: jdbc:hive2://
+26/03/07 21:53:45 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 21:53:45 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+Desplegando universal...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = 8b5800fc-6c2a-4227-8734-895d39aebea8
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 21:53:51 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_017_deploy_database_universal.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_UNIVERSAL CASCADE;
+NoViableAltException(15@[])
+        at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.identifier(HiveParser_IdentifiersParser.java:11910)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.identifier(HiveParser.java:45046)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.dropDatabaseStatement(HiveParser.java:6217)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:4281)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:2494)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1420)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:220)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+26/03/07 21:53:52 [371b35dd-2844-4f33-9625-2123ec065ecc main]: ERROR ql.Driver: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+
+26/03/07 21:53:52 [main]: WARN thrift.ThriftCLIService: Error executing statement: 
+org.apache.hive.service.cli.HiveSQLException: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hive.service.cli.operation.Operation.toSQLException(Operation.java:332) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:202) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562) ~[hive-service-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source) ~[?:?]
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330) ~[hadoop-common-3.3.6.jar:?]
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245) ~[hadoop-common-3.3.6.jar:?]
+Caused by: org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200) ~[hive-service-3.1.3.jar:3.1.3]
+        ... 29 more
+Error: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement (state=42000,code=40000)
+Closing: 0: jdbc:hive2://
+26/03/07 21:53:53 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 21:53:53 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+Desplegando smart...
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/tez/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+Connecting to jdbc:hive2://
+Hive Session ID = 19f0cb47-d4af-4b69-acfd-f523ebc9b695
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.hive.common.StringInternUtils (file:/usr/lib/hive/lib/hive-common-3.1.3.jar) to field java.net.URI.string
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.hive.common.StringInternUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/03/07 21:53:58 [main]: WARN session.SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @copyright Anita Quevedo
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- COMANDO DE EJECUCION
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- beeline -u jdbc:hive2:// -f Laboratorio_018_deploy_database_smart.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 1. Definición de parámetros
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- [HIVE] Creamos una variable en HIVE
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- SET PARAM_USERNAME=anitaquevedo;
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- @section 2. Eliminación de base de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- -------------------------------------------------------------------------------------------------------
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> 
+0: jdbc:hive2://> -- Eliminación de bases de datos
+0: jdbc:hive2://> 
+0: jdbc:hive2://> DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_SMART CASCADE;
+NoViableAltException(15@[])
+        at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.identifier(HiveParser_IdentifiersParser.java:11910)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.identifier(HiveParser.java:45046)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.dropDatabaseStatement(HiveParser.java:6217)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:4281)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:2494)
+        at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1420)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:220)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+26/03/07 21:54:00 [952b5a18-a8a7-40a4-9f5b-05a2f8484fed main]: ERROR ql.Driver: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200)
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263)
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531)
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517)
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315)
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585)
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source)
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323)
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265)
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005)
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203)
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132)
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429)
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291)
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265)
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067)
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538)
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245)
+
+26/03/07 21:54:00 [main]: WARN thrift.ThriftCLIService: Error executing statement: 
+org.apache.hive.service.cli.HiveSQLException: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hive.service.cli.operation.Operation.toSQLException(Operation.java:332) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:202) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.runInternal(SQLOperation.java:263) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.Operation.run(Operation.java:244) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementInternal(HiveSessionImpl.java:531) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.session.HiveSessionImpl.executeStatementAsync(HiveSessionImpl.java:517) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.CLIService.executeStatementAsync(CLIService.java:315) ~[hive-service-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.thrift.ThriftCLIService.ExecuteStatement(ThriftCLIService.java:562) ~[hive-service-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hive.jdbc.HiveConnection$SynchronizedHandler.invoke(HiveConnection.java:1585) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at com.sun.proxy.$Proxy37.ExecuteStatement(Unknown Source) ~[?:?]
+        at org.apache.hive.jdbc.HiveStatement.runAsyncOnServer(HiveStatement.java:323) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:265) ~[hive-jdbc-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.executeInternal(Commands.java:1005) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.execute(Commands.java:1203) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.Commands.sql(Commands.java:1132) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.dispatch(BeeLine.java:1429) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.execute(BeeLine.java:1291) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.executeFile(BeeLine.java:1265) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.begin(BeeLine.java:1067) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.mainWithInputRedirection(BeeLine.java:538) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at org.apache.hive.beeline.BeeLine.main(BeeLine.java:520) ~[hive-beeline-3.1.3.jar:3.1.3]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:330) ~[hadoop-common-3.3.6.jar:?]
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:245) ~[hadoop-common-3.3.6.jar:?]
+Caused by: org.apache.hadoop.hive.ql.parse.ParseException: line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:223) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126) ~[hive-exec-3.1.3.jar:3.1.3]
+        at org.apache.hive.service.cli.operation.SQLOperation.prepare(SQLOperation.java:200) ~[hive-service-3.1.3.jar:3.1.3]
+        ... 29 more
+Error: Error while compiling statement: FAILED: ParseException line 1:24 cannot recognize input near '$' '{' 'hiveconf' in drop database statement (state=42000,code=40000)
+Closing: 0: jdbc:hive2://
+26/03/07 21:54:00 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
+26/03/07 21:54:00 [shutdown-hook-0]: WARN util.ShutdownHookManager: Shutdown in progress, cannot cancel a deleteOnExit
