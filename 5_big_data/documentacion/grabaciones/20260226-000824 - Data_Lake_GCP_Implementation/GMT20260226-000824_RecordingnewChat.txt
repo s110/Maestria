@@ -1,0 +1,34 @@
+00:22:14	Juan Casavilca:	sip
+00:26:25	Eder Basurto:	Hive?
+00:33:25	Eder Basurto:	Buenas noches prof. HaSta el momento cuántas tareas ya se debieron presentar ?
+00:35:37	Brajan Nieto:	grupos de 3 a 5
+00:35:46	Kelvin Palomino Huallanca:	En grupos de 3 a 5
+00:37:46	Juan Casavilca:	sip se me complica
+00:37:57	Juan Casavilca:	también estoy en la chamba
+00:38:23	Jorge Luis Palacios Chilo:	en marzo ya las clases son jueves
+00:38:36	Juan Casavilca:	Reacted to "en marzo ya las clas..." with 👏
+00:46:19	Jorge Luis Palacios Chilo:	tampoco a mi
+00:47:27	Jorge Luis Palacios Chilo:	Si todo bien
+00:50:08	Anita Quevedo:	https://docs.google.com/document/d/1EKXegu07wcAxnRf8epcKBXxo-RinepKc0YqqfyrwdDQ/edit?usp=sharing
+00:55:01	Paúl Sánchez:	Es una cuenta que tiene los permisos a los diferentes servicios.
+00:56:05	Anita Quevedo:	Dataproc AdministratorDataproc WorkerStorage AdminStorage Object Admin
+01:37:45	Anita Quevedo:	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi1CC7I4x5PgtedJcIGOOkWp2tU8sQfsXgjg&s
+01:42:53	sebastian lopez medina:	puedes hacer z ordering?
+01:50:51	sebastian lopez medina:	como json? puede ser conmas jerarquias
+01:51:04	Jorge Luis Palacios Chilo:	algo asi como una tabla de arrays
+01:51:30	Amador Zuñiga:	orden?
+01:51:39	Juan Casavilca:	Reacted to "orden?" with 👍
+01:52:11	Eder Basurto:	Es un arreglo
+02:15:27	Juan Casavilca:	imprimir?
+02:15:30	Amador Zuñiga:	recursivo
+02:15:42	Josué Israel Sánchez Flores:	Para crear los directorios padre en caso de que no existan
+02:15:45	Jorge Luis Palacios Chilo:	recursividad
+02:23:01	Jorge Luis Palacios Chilo:	compresion
+02:43:04	Anita Quevedo:	clear
+02:51:02	Anita Quevedo:	https://docs.google.com/spreadsheets/d/1p7K4jOBS_TXiqxzQ0XerK4Jz1eJYcU20OXy2mb0sV3Q/edit?gid=0#gid=0
+02:52:50	Juan Casavilca:	funcionoooo!!!
+03:02:18	Anita Quevedo:	https://docs.cloud.google.com/bigquery/docs/geospatial-data?hl=es-419
+03:03:54	Anita Quevedo:	https://docs.cloud.google.com/bigquery/docs/samples?hl=es-419
+03:05:46	Anita Quevedo:	gcloud services enable documentai.googleapis.com      gcloud services enable cloudfunctions.googleapis.com  gcloud services enable cloudbuild.googleapis.com    gcloud services enable geocoding-backend.googleapis.com
+03:10:49	Anita Quevedo:	https://docs.google.com/document/d/1vuLsX26CKs4XTokd6c4k0BHOYf0nCttgfOofG6tQx3Q/edit?usp=sharing
+03:11:29	Amador Zuñiga:	error en los 4

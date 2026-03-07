@@ -1,0 +1,5660 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+Hola, hola, buenas noches, ¿me escuchan bien?
+
+00:00:03.000 --> 00:00:11.000
+Sí, vamos a empezar ya. Hola, muy buenas noches, espero que todos estén súper bien, pues me alegra poder volver a verlos.
+
+00:00:11.000 --> 00:00:15.000
+Ya vamos a continuar con lo que nos habíamos quedado.
+
+00:00:15.000 --> 00:00:23.000
+A ver, vamos por aquí. I, un segundo para poder compartirles la pantalla.
+
+00:00:23.000 --> 00:00:30.000
+Y vamos a hacer un recap de forma. Eh bastante rápida para que no haya un tema.
+
+00:00:30.000 --> 00:00:38.000
+Quizás de me olvidé Anita esa parte. Y, o cosas por el estilo ya entonces deme un segundo vamos para acá.
+
+00:00:38.000 --> 00:00:43.000
+Rápidamente. donde te me fuiste aquí.
+
+00:00:43.000 --> 00:00:50.000
+Entonces.
+
+00:00:50.000 --> 00:00:54.000
+esta parte. Ay, no carga.
+
+00:00:54.000 --> 00:01:03.000
+Está, entonces. Si bien es cierto, habíamos conversado toda la parte de que, pues, habíamos creado nuestro cluster de, de Hadon.
+
+00:01:03.000 --> 00:01:11.000
+Ya, pregunta, vamos a, vamos a cambiar un poquito la la forma como estamos trabajando, vamos a empezar como se dice.
+
+00:01:11.000 --> 00:01:21.000
+El, el dedo clase ya no se democracia, de dotlasia vamos a llamar por ejemplo a a ver acá hubo, ¿cómo estás? ¿te acuerdas cuál era el servicio para trabajar en Google Cloud?
+
+00:01:21.000 --> 00:01:30.000
+Para la parte lo que era jadú de apache Hadú.
+
+00:01:30.000 --> 00:01:31.000
+¿Cómo estás? Exacto, bien, vamos por acá. Vamos a ir, también voy a, voy a abrir también.
+
+00:01:31.000 --> 00:01:37.000
+Well, I need, uh, a data broke?
+
+00:01:37.000 --> 00:01:42.000
+Ehm. como para poder ir también ponerle sus notas.
+
+00:01:42.000 --> 00:01:47.000
+para qué cosa que les queda así ya el tema de la participación.
+
+00:01:47.000 --> 00:01:48.000
+Dame un segundo, Hugo me regalas tú? Perdóname, te corté.
+
+00:01:48.000 --> 00:01:49.000
+Anilga, I do not…
+
+00:01:49.000 --> 00:01:54.000
+Okay. Yeah, no problem.
+
+00:01:54.000 --> 00:02:03.000
+Ah, sí. Sí, sí, sí, no, no, no, todavía, no, no, todavía no, todavía no, todavía no, tranquilo, tranquilo. Me regalas, porfa, tu, tu.
+
+00:02:03.000 --> 00:02:04.000
+Tu apellido porfa. Villanueva Villanueva Villanueva bien.
+
+00:02:04.000 --> 00:02:10.000
+Vienna.
+
+00:02:10.000 --> 00:02:17.000
+Para que vayan sumando sus puntos ahorita vamos a hablar sobre todas esas partes de un segundito veinticinco cero dos ya está.
+
+00:02:17.000 --> 00:02:29.000
+Acá está bien, entonces. Vamos como de a poco sois recapitulando primero todas las cosas que hemos visto, luego vamos a ir viendo qué es lo que vamos a ver y otras cosas, anuncios importantes también el tema de la calificación per se.
+
+00:02:29.000 --> 00:02:39.000
+Yeah? Entonces, vamos a otro. ¿Cómo se llama dentro de la arquitectura de la arquitectura de Hadoo que estamos mencionando ya.
+
+00:02:39.000 --> 00:02:44.000
+El servicio que permite poder almacenar los archivos per se, vamos a llamar por acá.
+
+00:02:44.000 --> 00:02:51.000
+Kelvin, hola Kelvin, ¿cómo estás? ¿Te acuerdas del nombre de servicio?
+
+00:02:51.000 --> 00:03:00.000
+Donde borraba los archivos dentro de la arquitectura de Habú?
+
+00:03:00.000 --> 00:03:05.000
+We creo que Kelvin está tomando el cafecito, no nos escucha, vamos a llamar a otro.
+
+00:03:05.000 --> 00:03:09.000
+Eh a ver quién levantó la manita. Adelante, Julio, ¿cómo estás?
+
+00:03:09.000 --> 00:03:11.000
+See?
+
+00:03:11.000 --> 00:03:18.000
+Exacto, dame un segundo. Ya también te pongo nota.
+
+00:03:18.000 --> 00:03:31.000
+Julio Salgado. Espectacular, ¿cómo se llama el servicio que si ustedes quisieran hacer toda la parte dentro de la estamos dentro de la arquitectura de Havu, ya es más que nada como un recap de lo que hemos estado viendo.
+
+00:03:31.000 --> 00:03:35.000
+Que ustedes necesitan hacer. Tipo una base de datos de metadatos.
+
+00:03:35.000 --> 00:03:40.000
+Cómo se llamaría este servicio vamos a llamar a otro eh Matt.
+
+00:03:40.000 --> 00:03:50.000
+Hola Max, ¿cómo estás? ¿Te acuerdas cómo se llama ese servicio?
+
+00:03:50.000 --> 00:03:55.000
+Salimas. See?
+
+00:03:55.000 --> 00:04:05.000
+Perfecto, perdóname, máximo, ya está. Sí.
+
+00:04:05.000 --> 00:04:13.000
+Tranquilo, ya tranquilo, tranquilo, tranquilo, no te preocupes. Alguien quiere responder? Adelante, Brian, ¿cómo estás?
+
+00:04:13.000 --> 00:04:14.000
+Exacto. El high, ¿no? Espérame.
+
+00:04:14.000 --> 00:04:17.000
+Hi!
+
+00:04:17.000 --> 00:04:22.000
+Fue a casta hubo dos alumnos que respondieron a la vez.
+
+00:04:22.000 --> 00:04:23.000
+Eh copié fui yo. Regálame tu tu nombre ay.
+
+00:04:23.000 --> 00:04:27.000
+Oh, for you, for you on. Oh.
+
+00:04:27.000 --> 00:04:32.000
+Cuál o ya ya está bien está bien. Bien, bien, bien.
+
+00:04:32.000 --> 00:04:35.000
+No, los, no, no, está súper bien, está súper bien.
+
+00:04:35.000 --> 00:04:41.000
+E I EDER, ¿no? Vamos para acá. Eder, me regalas Eder, ah no está tu apellido, Eder Basurto.
+
+00:04:41.000 --> 00:04:50.000
+Bien, perfecto. Y vuelve a haber más preguntas, ya es más que nada para hacer un recap de las, más o menos de las cosas que hemos estado viendo, ¿ya? Ese es el primer anuncio, segundo anuncio.
+
+00:04:50.000 --> 00:04:56.000
+Eh si bien es cierto no sé si les llegó a comentar el equipo ya.
+
+00:04:56.000 --> 00:05:01.000
+Emm hay algunas clases que son me parece como cuatro clases que tenemos.
+
+00:05:01.000 --> 00:05:10.000
+Ehm les llegaron a comentar algo sobre eso. The presencialidad y de la parte online les llegaron a decir algo?
+
+00:05:10.000 --> 00:05:15.000
+O nada sí. Si es que no les.
+
+00:05:15.000 --> 00:05:16.000
+Nada ya les cuento ya les ya. Ya les cuento les cuento les cuento.
+
+00:05:16.000 --> 00:05:17.000
+No, no.
+
+00:05:17.000 --> 00:05:20.000
+No, no, okay, online, in Delhi.
+
+00:05:20.000 --> 00:05:27.000
+Hay un punto importante, ya lo que pasa es que justo lo que comentaba al equipo, ya al equipo TEC, en mi caso.
+
+00:05:27.000 --> 00:05:33.000
+El estar mucho tiempo parada como tal. Justamente por el todo el tema que tengo, el tema de las rodillas ya.
+
+00:05:33.000 --> 00:05:39.000
+Este, ahorita estoy, estoy en. Medicina rehabilita y rehabilitación es terapia física.
+
+00:05:39.000 --> 00:05:44.000
+Y el estar mucho tiempo parada como que no ayuda mucho a esa rehabilitación porque tengo el tema de las rodillas la condomalacia.
+
+00:05:44.000 --> 00:05:50.000
+Yeah, entonces me habían comentado los chicos del equipo que les comenta a ustedes en las sesiones que por lo menos tengo yo ya.
+
+00:05:50.000 --> 00:05:59.000
+Vamos a llevarlo a la parte online. ¿Qué significa el día sábado me parece si este sábado tenemos la parte la parte presencial.
+
+00:05:59.000 --> 00:06:05.000
+Entonces es como más o menos de tres y media a siete de la noche ya más o menos aproximadamente.
+
+00:06:05.000 --> 00:06:10.000
+Entonces, eh, esas horas que estamos eh comentando pues lo vamos a llevar a la parte online.
+
+00:06:10.000 --> 00:06:20.000
+La última clase, que es la clase ya de su tentación de proyecto y todo eso, es así pues vamos a ir presencial, pues, ¿no? Ya para esa fecha ya, ya, ya estaría terminado todo el tema de.
+
+00:06:20.000 --> 00:06:32.000
+Mis terapia, mi terapia física. Y esos chicos, no se preocupen respecto al tema pues, o sea de oye, oye ir a cambiar todo eso, voy a dar lo máximo, lo como siempre, lo lo máximo para que ustedes puedan.
+
+00:06:32.000 --> 00:06:42.000
+Sacarle provecho al curso. Y vamos a cambiar también la forma como hemos estado trabajando. Voy a llamar a dedotracia, ya no quería, no quería llegar a ese punto, pero voy a llamar hedotracia.
+
+00:06:42.000 --> 00:06:45.000
+eh, que es decir, con la lista de cada uno de, de ustedes.
+
+00:06:45.000 --> 00:06:49.000
+Para que puedan participar, para poder ver si realmente se está entendiendo todas las clases, ¿ya?
+
+00:06:49.000 --> 00:06:55.000
+Otro punto importante, ese es el primer anuncio, segunda, tercer anuncio, mejor dicho, respecto al examen.
+
+00:06:55.000 --> 00:07:00.000
+El día de hoy vamos a terminar de revisar primero la parte de lo que es armar el data ley per se.
+
+00:07:00.000 --> 00:07:05.000
+Yeah, y luego ya se ve en mi pantalla, yo estoy hablando y no, no estoy acá.
+
+00:07:05.000 --> 00:07:10.000
+Espéreme un segundo. Voy a poner esta parte acá.
+
+00:07:10.000 --> 00:07:18.000
+Esto por acá y ahora sí te comparto. Entonces, el segundo, el primer examen, vamos a llamarlo así.
+
+00:07:18.000 --> 00:07:24.000
+Yeah, ¿qué consiste? Yo primero tengo, tengo que enseñarles.
+
+00:07:24.000 --> 00:07:27.000
+Esto que está acá, ya, esta, esta arquitectura como tal.
+
+00:07:27.000 --> 00:07:34.000
+Que ya lo tienen también dentro del de lo que es su plataforma después que terminemos la parte alta ley vamos a hacer esto.
+
+00:07:34.000 --> 00:07:41.000
+Eso es una arquitectura end to end. Para eso yo les he traído a la parte superior dice el caso de uso de negocio.
+
+00:07:41.000 --> 00:07:50.000
+Y cómo lo vamos a resolver técnicamente y además de todo eso una vez que terminemos esto, ¿cómo vamos a hacer las estimaciones respecto a calculadora, ¿ya?
+
+00:07:50.000 --> 00:07:59.000
+Por eso decía que iba iba a cambiar un poco la forma como íbamos a trabajar porque porque si bien es cierto dentro del sílabo dice pasa, dice varios servicios.
+
+00:07:59.000 --> 00:08:02.000
+Pero creo que va a ser de mucho provecho más que ir.
+
+00:08:02.000 --> 00:08:05.000
+O sea, haciendo servicio por servicio.
+
+00:08:05.000 --> 00:08:12.000
+Poniéndoles un end to end, ya un caso de uso, un caso real que que puede enfrentarse día a día, más la arquitectura per se.
+
+00:08:12.000 --> 00:08:15.000
+Creo que van a sacar más provecho eh llevándolo de esta parte.
+
+00:08:15.000 --> 00:08:20.000
+Yeah? Una vez que yo expliqué todo esto, recién ustedes tendrán una semana.
+
+00:08:20.000 --> 00:08:27.000
+Para que puedan desarrollar qué cosa desarrollar el eh su examen per se y además que nada es un examen.
+
+00:08:27.000 --> 00:08:32.000
+Eh para que usted lo pueda lo puedan. Hacer con los servicios que están por acá.
+
+00:08:32.000 --> 00:08:40.000
+Por ejemplo, se me ocurre si esta parte que estamos diciendo acá consiste en extraer información de facturas.
+
+00:08:40.000 --> 00:08:46.000
+Para poder mejorar la precisión de la misma al momento de generar su ciencia que está requiriendo.
+
+00:08:46.000 --> 00:08:55.000
+Tú podías utilizar. Eh he aprendido la storage he aprendido cómo se configuran los los transfunction he aprendido la parte WhatsApp.
+
+00:08:55.000 --> 00:08:59.000
+Se me ocurre, voy a generar yo con Python ya?
+
+00:08:59.000 --> 00:09:03.000
+Toda la data per se. La voy a recepcionar con WhatsApp.
+
+00:09:03.000 --> 00:09:10.000
+Y la voy a almacenar eh en Bisquery. Pero para poder almacenarla voy a ejecutar una función.
+
+00:09:10.000 --> 00:09:13.000
+En esa función parcela voy a enriquecer los datos.
+
+00:09:13.000 --> 00:09:16.000
+Para resolver el caso, ta ta tal cosa. Entonces.
+
+00:09:16.000 --> 00:09:24.000
+La idea es que ese caso ese trabajo ya con lo que ustedes van a aprender de de de las clases anteriores más esta puedan resolver otro caso.
+
+00:09:24.000 --> 00:09:32.000
+Que ustedes planteen como tal, ¿ya? Eso es como más o menos el, el trabajo igual luego que termine de explicar, pues subo lo mismo que le estoy diciendo.
+
+00:09:32.000 --> 00:09:38.000
+En el detalle de los módulos, justo es lo que le comentaba a Juanjo, más que nada, ¿por qué? Porque si yo subía la tarea.
+
+00:09:38.000 --> 00:09:43.000
+Me van a decir, tú no me has enseñado a utilizar transfunction, no me has enseñado que, a utilizar WhatsApp.
+
+00:09:43.000 --> 00:09:49.000
+Entonces tampoco quiero que esten pasando horas y horas investigando cuando la idea es que.
+
+00:09:49.000 --> 00:09:54.000
+puedan reforzar los conocimientos que han ido aprendiendo a lo largo del de las clases, ¿ya?
+
+00:09:54.000 --> 00:10:03.000
+This cuarto anuncio como tal, ya, eh cualquier pregunta, cualquier duda, porfa me la van comentando.
+
+00:10:03.000 --> 00:10:08.000
+También en la clase del sábado que tenemos. Ehh como son va varias horas.
+
+00:10:08.000 --> 00:10:14.000
+Yo voy a tener otro caso de uso. Ya, en ese caso de uso que vamos a desarrollar.
+
+00:10:14.000 --> 00:10:18.000
+Va a haber una parte que yo lo voy a desarrollar.
+
+00:10:18.000 --> 00:10:25.000
+En la otra parte vamos a trabajar mediante equipos equipos virtuales ya que cada uno se va a ir conectando.
+
+00:10:25.000 --> 00:10:32.000
+Eh para que para que sea lo más provechoso posible, así que más o menos para que se vayan dando la idea nos vayan a faltar porfis ya.
+
+00:10:32.000 --> 00:10:36.000
+Para que eh. puedan ir consultando cualquier duda que tengan.
+
+00:10:36.000 --> 00:10:41.000
+Esos son los avisos parroquiales, no sé si tienen alguna duda, pregunta, comentario, queja.
+
+00:10:41.000 --> 00:10:46.000
+Lo que fuese para ya poder empezar estamos. Sí, estamos.
+
+00:10:46.000 --> 00:10:47.000
+¿Alguna pregunta? Adelante, adelante, adelante, ¿cómo estás?
+
+00:10:47.000 --> 00:10:51.000
+Joyce, Anita.
+
+00:10:51.000 --> 00:11:09.000
+pero si estan como anticipacion.
+
+00:11:09.000 --> 00:11:10.000
+Yeah.
+
+00:11:10.000 --> 00:11:17.000
+pitch.
+
+00:11:17.000 --> 00:11:18.000
+Ah, ya, ya, ya.
+
+00:11:18.000 --> 00:11:19.000
+deep learning, different power. Genesis.
+
+00:11:19.000 --> 00:11:31.000
+Yeah, no te preocupes, no te preocupes, no te preocupes. Lo, lo del, lo del sábado lo voy a lo que estamos hoy día, estamos miércoles, sí, lo cuelgo, lo cuelgo mañana, lo cuelgo mañana más o menos como en la mañana, ¿ya?
+
+00:11:31.000 --> 00:11:32.000
+acá bajito, entonces, por ejemplo acá les puse yo.
+
+00:11:32.000 --> 00:11:36.000
+Yeah, that's it.
+
+00:11:36.000 --> 00:11:41.000
+Laboratorio uno. Le puse uno porque va, vamos a empezar como uno, dos, tres, cuatro, así, todo y.
+
+00:11:41.000 --> 00:11:47.000
+Esa numeración está seteado para que sea en to end ya como del inicio al final de arquitectura completa.
+
+00:11:47.000 --> 00:11:51.000
+Pero ya súper válida mañana cuelgo el el del día sábado ya.
+
+00:11:51.000 --> 00:12:01.000
+eh algún punto adicional, espérate hasta el momento cuántas tareas ya se debieron presentar? No, no, todavía, todavía ninguna, todavía ninguna, todavía ninguna, solamente tienen tienen ahorita, ahorita van a tener una.
+
+00:12:01.000 --> 00:12:09.000
+Una vez que yo ya le diga ya está colgado chico verdad y explique esto, ustedes van recién recién ahí van a tener su primera tarea.
+
+00:12:09.000 --> 00:12:16.000
+Yeah, lo que sí, lo que sí para comentarles que en todas las clases está habiendo un tema de lo que es participación.
+
+00:12:16.000 --> 00:12:20.000
+Pero como siempre participan nada más vamos a poner acá.
+
+00:12:20.000 --> 00:12:30.000
+Eh nueve alumnos y son prácticamente más. Quitando a Juanjo y y quitando a mí somos son diecinueve alumnos, entonces nos faltan diez que participen, ¿cierto?
+
+00:12:30.000 --> 00:12:34.000
+Y esos días no van a tener nota, entonces para que.
+
+00:12:34.000 --> 00:12:37.000
+Puedan tener también su nota, por saber si se está entendiendo.
+
+00:12:37.000 --> 00:12:45.000
+Por eso le decía al inicio, va a ser la dedocracia. Ya ella no va a ser la democracia, la dedocracia. Yo voy a empezar a llamar para que todos puedan tener participación per se.
+
+00:12:45.000 --> 00:12:48.000
+Yeah, y poder también ayudarles en el tema de su nota, ¿ya?
+
+00:12:48.000 --> 00:12:54.000
+Eso, ¿alguna pregunta acional estamos? Se entendió para ya empezar.
+
+00:12:54.000 --> 00:12:57.000
+Sí, sí, cuéntamelo, ¿cómo estás?
+
+00:12:57.000 --> 00:13:01.000
+individuales, o son grupales.
+
+00:13:01.000 --> 00:13:08.000
+Una pregunta y eh pueden hacerlo individuales, ya pueden hacerlo individuales, pero yo les hago la pregunta a ustedes.
+
+00:13:08.000 --> 00:13:17.000
+La forma como han estado evaluando evaluándoles. más que nada la parte práctica porque teoría de nada sirve que yo les ponga teoría, lo van a poner en Yemen o G P T para que le responda.
+
+00:13:17.000 --> 00:13:21.000
+Y eso no vale, ¿no? ¿cómo lo han estado manejando? ¿en grupos o individual?
+
+00:13:21.000 --> 00:13:33.000
+Y grupos de cuánto? Bien, más o menos de cuántos?
+
+00:13:33.000 --> 00:13:34.000
+Yeah. Yeah.
+
+00:13:34.000 --> 00:13:35.000
+What's a persona? Patro Cinco.
+
+00:13:35.000 --> 00:13:44.000
+Entonces, hagámoslo lo mismo, ya, hagámoslo lo mismo. Yo, yo, eh, voy a subir a la, a la plataforma la tarea.
+
+00:13:44.000 --> 00:13:53.000
+Y usted ya yo le voy a preguntar a Juanjo la forma como como se tiene que visualizar la la tarea pero si si si si han trabajado del grupo de tres a cinco.
+
+00:13:53.000 --> 00:13:58.000
+Ehh pueden pueden hacer hacerlo también de tres a cinco ya.
+
+00:13:58.000 --> 00:14:09.000
+Eh pero sí, sí es importante porfa que todos participen para para que al final pues todos aprendan ya no, no hay problema con eso, lo pueden trabajar grupal, porque sé que creo que tienen otros cursos y quizás tienen también trabajos con ellos.
+
+00:14:09.000 --> 00:14:21.000
+Yeah? Entonces también trabajémoslo lo mismo para que también se puedan apoyar entre ustedes, ¿les parece?
+
+00:14:21.000 --> 00:14:34.000
+No va a estar en el Canvas, va a estar en el Canvas, va a estar en el Canvas, ajá, va a estar en el Canvas. Tengo que terminar de explicar todavía esto porque si no al final me me ha pasado que luego me dicen, "No entendí y le están preguntando a a ChatGPT o a Jimin para que se lo resuelva.
+
+00:14:34.000 --> 00:14:38.000
+Entonces, termino de explicar esto y recién libero la otra parte de, del examen.
+
+00:14:38.000 --> 00:14:43.000
+Ya que realmente va a ser aplicar la parte que han aprendido, o sea, es como que.
+
+00:14:43.000 --> 00:14:49.000
+Es como un trabajo investigativo que tú dices oye, mira, yo la neta me enseñó, en este caso, por ejemplo, yo te estoy poniendo de.
+
+00:14:49.000 --> 00:14:58.000
+Automatización de despachos y optimización de rutas. El primer caso de uso, tú miras, mira, yo voy a utilizar Bisquery y utilizaré, vamos a poner trastorage.
+
+00:14:58.000 --> 00:15:00.000
+Y data from y voy a resolver tal caso.
+
+00:15:00.000 --> 00:15:05.000
+Entonces, en la estructura de cómo tienen que presentar el trabajo también se los voy a subir ya.
+
+00:15:05.000 --> 00:15:13.000
+Y y eso les parece? ¿Les parece para poder trabajar de esa forma?
+
+00:15:13.000 --> 00:15:23.000
+Entonces, ¿alguna. Ay sí pero cuéntamelo, cuéntamelo, perdón, cuéntame, cuéntame.
+
+00:15:23.000 --> 00:15:24.000
+Ah sí, sí, sí.
+
+00:15:24.000 --> 00:15:34.000
+por eso. Planifico.
+
+00:15:34.000 --> 00:16:04.000
+Claro, claro.
+
+00:16:06.000 --> 00:16:07.000
+I'll.
+
+00:16:07.000 --> 00:16:09.000
+soy en el cargo. tomar encuento mas la participacion, y lo otros…
+
+00:16:09.000 --> 00:16:16.000
+Claro. Claro no sí yo te diría que sí igual hay juanjo estás para acá.
+
+00:16:16.000 --> 00:16:21.000
+Juanjo, igual no te preocupes eh yo lo, yo lo, yo lo tomo.
+
+00:16:21.000 --> 00:16:27.000
+Igual yo yo entendería que sí, sí, de esa parte igual yo te lo, le, lo, se los valido, déjame un segundito.
+
+00:16:27.000 --> 00:16:33.000
+Eh para apuntarlo este. Juanjo, Laura, ¿no?
+
+00:16:33.000 --> 00:16:42.000
+Si yo te diría que sí, ya no no de esa parte yo te diría que sí, ya déjame igual eh le le le hago, le hago, le hago recordar a Juanjo.
+
+00:16:42.000 --> 00:16:48.000
+Ehh y el que le se envíe como la la la encabo la va a hacer y todo eso, no te preocupes, yo lo tengo acá.
+
+00:16:48.000 --> 00:17:01.000
+Ya que lo tengo aja. Y lo otro el tema de la participación, de esa parte no se preocupen, siempre, realmente siempre paro llamando en todas las clases. Antes era más que nada como quien quería participar.
+
+00:17:01.000 --> 00:17:10.000
+Pero como ves a veces uno es tímido y les comprendo ya entonces a veces como que no como que dices ay no me voy a equivocar entonces ahora va a ser la dedocracia.
+
+00:17:10.000 --> 00:17:19.000
+Entonces, siempre va a haber participación de esa parte no te preocupes, pues Anita, ¿qué pasa si yo participé en ese día una vez? ¿puedo volver a participar para acumular puntos? La respuesta es sí.
+
+00:17:19.000 --> 00:17:22.000
+Tú puedes participar en las N veces que tú quieras, ¿ya?
+
+00:17:22.000 --> 00:17:27.000
+Pero en primera instancia que como que voy a llamar a las personas que ni siquiera tengo en lista.
+
+00:17:27.000 --> 00:17:34.000
+para que para que también tenga su punto ya para como que para que todo salgan bien en en en la parte de participación. Ajá, eso.
+
+00:17:34.000 --> 00:17:49.000
+En marzo ya son los jefes ya. Ajá. Hola, ¿cómo estás? Cuéntamelo.
+
+00:17:49.000 --> 00:17:50.000
+Ah, ya sí, vuelvo a repetir, el tema, el tema del sábado como tal.
+
+00:17:50.000 --> 00:17:53.000
+muy bien.
+
+00:17:53.000 --> 00:17:57.000
+Vamos a hacer eh un laboratorio donde te me fuistes .
+
+00:17:57.000 --> 00:18:01.000
+Un laboratorio si este acaso es como la, vamos a ponerle complejidad.
+
+00:18:01.000 --> 00:18:07.000
+entre, entre un nivel cien y un nivel doscientos, vamos a llamarlo así, ¿no?
+
+00:18:07.000 --> 00:18:12.000
+El el día sábado como tenemos más más horas ya para poder llevar a cabo eso.
+
+00:18:12.000 --> 00:18:16.000
+La arquitectura es un poquito más compleja. de las cosas que han visto más cositas más.
+
+00:18:16.000 --> 00:18:21.000
+Y en paralelo también dentro de ese vamos a ponerle.
+
+00:18:21.000 --> 00:18:26.000
+Ehh Ron mando o ruta o ruta aprendizaje va a haber un trabajo en equipo.
+
+00:18:26.000 --> 00:18:31.000
+Ese trabajo de equipo no es que sea evaluado, ¿ya? Tiene una nota claramente, sí, porque es igual.
+
+00:18:31.000 --> 00:18:38.000
+Todas las cosas que ustedes van haciendo que van participando, tiene una nota, pero no es que sea como que ay, me van a jalar si es que no lo no no estoy.
+
+00:18:38.000 --> 00:18:43.000
+Sería ideal que estén claramente porque porque va a haber nuevos servicios que se van a tocar.
+
+00:18:43.000 --> 00:18:53.000
+Entonces eso. Vamos a poner el caso hipotético que el día sábado por equis motivo no pueden venir en general todo el día, ¿por qué? Bloque fue ese.
+
+00:18:53.000 --> 00:18:57.000
+Por el compañero de de de alguien porque tienen temas personales, lo que fuese.
+
+00:18:57.000 --> 00:19:03.000
+Entonces lo puedo presentar luego, luego, luego Anita, sí, lo podías presentar sin ningún problema.
+
+00:19:03.000 --> 00:19:08.000
+Ya, pero, pero eso, no sé si me deja entender.
+
+00:19:08.000 --> 00:19:12.000
+pero.
+
+00:19:12.000 --> 00:19:18.000
+See, no te preocupes, no te preocupes, igual si tú quieres, o sea, el tema es de que la, la cosa es que lo haga en laboratorio.
+
+00:19:18.000 --> 00:19:27.000
+Y la idea de todo esto es que. En primera instancia es que se puede hacer en clase para que ustedes vayan preguntando oye pero por qué pones esto? ¿por qué aquello?
+
+00:19:27.000 --> 00:19:39.000
+Y en caso no llegan ese día en general ya no no no pasa nada pues este lo pueden presentar luego, o sea, de esa parte no, no me pasa nada igual tienen su su punto, pero la idea es que estén en la clase.
+
+00:19:39.000 --> 00:19:48.000
+Para que pueda solventar sus dudas. porque como les había dicho al inicio, como vamos a llevar prácticamente las cosas virtuales, no los voy a ver físicamente, sí los voy a pedir.
+
+00:19:48.000 --> 00:19:55.000
+Con el corazón en la mano ya porfa su participación para que se pueda entender cada uno de los temas que estamos hablando.
+
+00:19:55.000 --> 00:20:01.000
+Yeah, yo voy a dar todo, todo de mí y también necesito por parte de ustedes como han venido trabajando, que está súper bien.
+
+00:20:01.000 --> 00:20:10.000
+Eh, que sigan participando, ya eso. Creo que alguien más tenía la mano levantada antes de poder empezar.
+
+00:20:10.000 --> 00:20:23.000
+Hola, sí, ¿cómo estás? Cuéntamelo.
+
+00:20:23.000 --> 00:20:24.000
+Sí, sin ningún problema.
+
+00:20:24.000 --> 00:20:28.000
+O…
+
+00:20:28.000 --> 00:20:35.000
+Sí, sí, o sea, el tema acá lo es lo siguiente, tú puedes, tú puedes hacerlo, por ejemplo, para tu empresa que es sumamente válido ya.
+
+00:20:35.000 --> 00:20:40.000
+y dices, oye, yo voy a armar, vamos a poner el caso hipotetico, voy a armar mi data lake.
+
+00:20:40.000 --> 00:20:46.000
+Entonces para armar toda lake no solamente es Big Query, ¿cierto? Tendrás que también considerar el tema, por ejemplo, no sé.
+
+00:20:46.000 --> 00:20:54.000
+Eh Dataflow tendrás que considerar el tema quizás Data Fusion o inclusive el tema Databrock, lo que fuese.
+
+00:20:54.000 --> 00:21:00.000
+De por sí lo que puedes hacer lo que realmente lo que se va a evaluar son los productos que se han visto.
+
+00:21:00.000 --> 00:21:07.000
+Pero si tú dices no mira sabes que yo eh quiero investigar sobre esto porque me llama la atención bla está sumamente válido.
+
+00:21:07.000 --> 00:21:11.000
+Ya no hay ningún problema pero la cosa es que pongan en práctica las cosas que han estado viendo.
+
+00:21:11.000 --> 00:21:17.000
+Entonces eso, ajá. No sé ahí si si si me genera si bien ya estamos .
+
+00:21:17.000 --> 00:21:22.000
+Alguna pregunta adicional o está o o ya estamos para poder empezar?
+
+00:21:22.000 --> 00:21:28.000
+Ya estamos, sí. Ya está entonces.
+
+00:21:28.000 --> 00:21:34.000
+Entonces ustedes tienen todavía el cluster dataproteado o lo eliminaron?
+
+00:21:34.000 --> 00:21:41.000
+Tienen todavía el cluster de data bloqueado? Me confirman, porfa?
+
+00:21:41.000 --> 00:21:47.000
+Sí, bien, entonces van a ingresar a su ráster, déjeme un segundo para compartir acá.
+
+00:21:47.000 --> 00:21:53.000
+Un segundo. Acá estás.
+
+00:21:53.000 --> 00:21:59.000
+Yo tuve que crear otra cuenta ya. Para porque yo me había quedado sin me había quedado ya sin créditos.
+
+00:21:59.000 --> 00:22:08.000
+Entonces, como ven, ya tengo otra cuenta nuevamente nuevos créditos, ¿ya? Y nos va a pasar eso, es más que seguro, ¿por qué? Porque prácticamente nosotros casi acabamos en abril.
+
+00:22:08.000 --> 00:22:15.000
+Y la cuenta salió como en enero. Entonces posiblemente posiblemente se queden.
+
+00:22:15.000 --> 00:22:20.000
+Que se les acabe más antes el crédito. Ya porque son tres meses nada más.
+
+00:22:20.000 --> 00:22:23.000
+Y si llegas a pasar eso te quedas otro correo.
+
+00:22:23.000 --> 00:22:29.000
+Y te vuelven a dar como ves acá. Nuevamente la la eh los créditos ya.
+
+00:22:29.000 --> 00:22:31.000
+Entonces ahora sí.
+
+00:22:31.000 --> 00:22:34.000
+India sent data broke.
+
+00:22:34.000 --> 00:22:44.000
+Ya en esa nosotras terata block. Y vamos a ir para campe de que cargue ven para acá.
+
+00:22:44.000 --> 00:22:50.000
+Ya está, está cargando. Sí, cuéntamelo, ¿cómo estás?
+
+00:22:50.000 --> 00:22:55.000
+you can use Google Platform.
+
+00:22:55.000 --> 00:22:57.000
+After you enable billing.
+
+00:22:57.000 --> 00:22:59.000
+Y creo que es porque…
+
+00:22:59.000 --> 00:23:05.000
+una trajo.
+
+00:23:05.000 --> 00:23:06.000
+Sí.
+
+00:23:06.000 --> 00:23:07.000
+este la cambien.
+
+00:23:07.000 --> 00:23:11.000
+Yeah?
+
+00:23:11.000 --> 00:23:17.000
+Sí solamente la actualiza sí sí sí solamente actualiza nada más y si fíjate y un punto importante ya.
+
+00:23:17.000 --> 00:23:25.000
+Eh que siempre os tengan este regalito activado ya porque si esta cosa, o sea me refiero esta cosita acá.
+
+00:23:25.000 --> 00:23:31.000
+Eh que lo tengan ahí por qué. Porque si este regalito no aparece en sus cuentas ya .
+
+00:23:31.000 --> 00:23:36.000
+Eso quiere decir que de una u otra forma te estás yendo para la capa ya pagada y no queremos eso.
+
+00:23:36.000 --> 00:23:40.000
+Yeah, todas las cosas que estamos haciendo debería estar dentro de la capa gratuita.
+
+00:23:40.000 --> 00:23:45.000
+Entonces para lo que tú necesitas, cambia la tarjeta.
+
+00:23:45.000 --> 00:23:49.000
+Y fíjate nada más que sigas estando en la capa en la capa gratuita porfa.
+
+00:23:49.000 --> 00:23:55.000
+Y sin por ahí necesitas ayuda me avisas para poder para eh poder ayudarte ya.
+
+00:23:55.000 --> 00:23:56.000
+No, no, no, but…
+
+00:23:56.000 --> 00:24:00.000
+Estamos sí. Comparteme tu pantalla. Compárteme tu pantallita.
+
+00:24:00.000 --> 00:24:08.000
+Para ayudarte a ver.
+
+00:24:08.000 --> 00:24:15.000
+A ver, ya, dame un segundo, ahorita lo revisamos.
+
+00:24:15.000 --> 00:24:18.000
+Pero te se ve súper chiquitito, espérame allá.
+
+00:24:18.000 --> 00:24:24.000
+Yeah, anda la parte, en la parte superior busca la palabra billing o facturación.
+
+00:24:24.000 --> 00:24:30.000
+En la parte donde pusiste data, en la parte de arriba en el centro, ponle billing, a ver.
+
+00:24:30.000 --> 00:24:32.000
+Uh-huh.
+
+00:24:32.000 --> 00:24:36.000
+A billing accounts, el primero, eso.
+
+00:24:36.000 --> 00:24:40.000
+Ajá, Ana dice go to linked billing account.
+
+00:24:40.000 --> 00:24:51.000
+Eso, mhm. Todavía tienes créditos, mira, tienes 981 créditos, lo que pasa es que como no estás activado tu, tu billing per se.
+
+00:24:51.000 --> 00:24:56.000
+O sea tu tarjet tu tarjeta asociada para que identifiques que es una que es.
+
+00:24:56.000 --> 00:25:00.000
+Si mira acá estoy el catorce de abril. Si te queda crédito está súper bien.
+
+00:25:00.000 --> 00:25:06.000
+Ujum si está bien si si si siempre fíjense en la parte del bille ya siempre fíjense en la parte del billing.
+
+00:25:06.000 --> 00:25:11.000
+Eh que esos te queso esté como que tengan ustedes los créditos como tal ya.
+
+00:25:11.000 --> 00:25:18.000
+Eso, en tu caso, Jorge, revisa de igual forma, si no me avisas, porfa y lo revisamos.
+
+00:25:18.000 --> 00:25:26.000
+Ya, revisen, sí, ya está bien. Entonces siempre revisen eso porque siempre pasa que uno está como que.
+
+00:25:26.000 --> 00:25:32.000
+Eh. Ven para aquí donde te me fuistes.
+
+00:25:32.000 --> 00:25:39.000
+Voy a cambiar la cara para allá para que ustedes puedan ver mejor, dame un segundito.
+
+00:25:39.000 --> 00:25:44.000
+Esta cosa ven para acá. Ah, sí, sí, sí, compartemente que yo comparto.
+
+00:25:44.000 --> 00:25:53.000
+Compárte. A ver, a ver, a ver.
+
+00:25:53.000 --> 00:25:56.000
+A ver, ajá.
+
+00:25:56.000 --> 00:25:58.000
+Yeah? And that cluster?
+
+00:25:58.000 --> 00:26:05.000
+lo eliminaste el trastor de Atabrook, ¿cierto? Por lo que veo.
+
+00:26:05.000 --> 00:26:12.000
+o nunca lo llegaste a crear.
+
+00:26:12.000 --> 00:26:26.000
+Juan. Si estás hablando, estás moteado.
+
+00:26:26.000 --> 00:26:32.000
+Yeah, entonces vamos a crearlo, ¿te parece? Primero quiero revisar tu Ana en la mano.
+
+00:26:32.000 --> 00:26:39.000
+Ehh derecha. Hay como el símbolo de Yemina y el regalito. Haz clic en el regalito.
+
+00:26:39.000 --> 00:26:41.000
+El costado ese.
+
+00:26:41.000 --> 00:26:45.000
+Yeah, entonces tienes tienes eh eh eh ah ya.
+
+00:26:45.000 --> 00:26:47.000
+ya no tienes créditos mira.
+
+00:26:47.000 --> 00:26:50.000
+Yeah.
+
+00:26:50.000 --> 00:26:58.000
+Si ya no tienes créditos. Anda en la parte superior donde dice search, en la parte central busca billing.
+
+00:26:58.000 --> 00:26:59.000
+Uh-huh.
+
+00:26:59.000 --> 00:27:02.000
+billing accounts. Is that Jose wow.
+
+00:27:02.000 --> 00:27:08.000
+Sí, pero te debería salir como los, como la cantidad de, de, de plata que te quedaste y uno dice go to link linding.
+
+00:27:08.000 --> 00:27:09.000
+Linket. ¿Así? A ver, a ver.
+
+00:27:09.000 --> 00:27:12.000
+Si elimision.
+
+00:27:12.000 --> 00:27:22.000
+Allá bájale un poquito. baja baja un poquito ah ya está perfecto ya ya ya está genial ya ya ya ocasos.
+
+00:27:22.000 --> 00:27:23.000
+Ah no estaba estaba muy bien ya entonces miren.
+
+00:27:23.000 --> 00:27:27.000
+See, so look at me again.
+
+00:27:27.000 --> 00:27:30.000
+Entonces vamos para acá ya link de clase mira acá.
+
+00:27:30.000 --> 00:27:36.000
+Te voy a compartir yo es es te voy a explicar acá y luego me vuelves a compartir porque no sé si el resto también está igual.
+
+00:27:36.000 --> 00:27:42.000
+Ya vamos para acá. Déjeme compartirte aquí está.
+
+00:27:42.000 --> 00:27:47.000
+Ehm en una de las clases como tal, yo les, les compartí.
+
+00:27:47.000 --> 00:27:52.000
+Este archivo ya. te que cargue este archivo.
+
+00:27:52.000 --> 00:27:57.000
+Que está como. Vamos a poner como pa todo el mundo.
+
+00:27:57.000 --> 00:28:01.000
+En ese archivo. Yo les voy a volver a compartir .
+
+00:28:01.000 --> 00:28:07.000
+Miren, acá entonces. Cuando tú creas todo el tema de lo que se refiere un cluster per se.
+
+00:28:07.000 --> 00:28:17.000
+Mayormente tienes dos formas de hacerlo. O lo haces de forma visual como ese día que lo hicimos ya y la otra es que utilicen la parte de comandos.
+
+00:28:17.000 --> 00:28:21.000
+Es decir, lo utilicen a través de la parte draws shell.
+
+00:28:21.000 --> 00:28:26.000
+Entonces, dicho esto ya. Porque de por sí estarte dándolo.
+
+00:28:26.000 --> 00:28:32.000
+llegué acá y da la configuración cada paso, paso, paso, paso por paso, pues toma mucho tiempo.
+
+00:28:32.000 --> 00:28:41.000
+Yeah, y para evitar eso, para evitar eso. Yo les puse en la parte que está por acá les puse el comando de cómo.
+
+00:28:41.000 --> 00:28:45.000
+Crea la ejecución del tema del traste de dataprock.
+
+00:28:45.000 --> 00:28:50.000
+En el caso de ustedes ya lo único que se cambia, ¿qué cosa?
+
+00:28:50.000 --> 00:28:53.000
+Es el nombre del llaster.
+
+00:28:53.000 --> 00:28:58.000
+Just Pepito, Tracer Maria, Tracer el nombre que ustedes quieran.
+
+00:28:58.000 --> 00:29:04.000
+Y el ID de proyecto. ¿Y por qué la ID de proyecto? Recuerden que cuando uno trabaja.
+
+00:29:04.000 --> 00:29:10.000
+Dentro de Google Cloud. El concepto de trabajar en proyectos, en ese proyecto.
+
+00:29:10.000 --> 00:29:14.000
+Como tú sabes cuál es tu ID proyecto, tienes dos opciones de poder verlo.
+
+00:29:14.000 --> 00:29:19.000
+Haz clic acá. te va a salir el project ID.
+
+00:29:19.000 --> 00:29:24.000
+Y la segunda das clic donde dice Google Cloud.
+
+00:29:24.000 --> 00:29:36.000
+Pete que cargue. Ay, mi intermedios mío que cara está y la otra que cosa es donde te me fuistes?
+
+00:29:36.000 --> 00:29:39.000
+Mayormente estaba acá.
+
+00:29:39.000 --> 00:29:41.000
+Mhmm. Vio, ahí está.
+
+00:29:41.000 --> 00:29:43.000
+You project detail.
+
+00:29:43.000 --> 00:29:50.000
+Butte que cargue acá estando el project ID. Y el project number, ¿ya?
+
+00:29:50.000 --> 00:29:56.000
+entonces tienes 2 opciones. Para mí la más rápida, la primera opción, ¿por qué?
+
+00:29:56.000 --> 00:30:02.000
+Porque tú subes no más en la parte en la parte en la parte que está acá y sacas el ID proyecto y esto.
+
+00:30:02.000 --> 00:30:06.000
+Lo reemplazas con esta parte solamente con esto.
+
+00:30:06.000 --> 00:30:12.000
+Yeah, una vez que lo cambias. Tomas esto, una vez cambiado control C.
+
+00:30:12.000 --> 00:30:19.000
+Ya. Vas acá, vas acá donde dice que dice activar trauchel.
+
+00:30:19.000 --> 00:30:25.000
+Danticaka. Y en esta interfaz, vete que cargue.
+
+00:30:25.000 --> 00:30:31.000
+Te voy a pedir que te loguees. términos y condiciones autorizas.
+
+00:30:31.000 --> 00:30:36.000
+Pete que cargue por acá. Karanga cargo.
+
+00:30:36.000 --> 00:30:41.000
+Y no me carga, ay mi internet, Dios mío.
+
+00:30:41.000 --> 00:30:46.000
+para que cargue ya que cargue no sé por qué, qué, qué está pasando con el internet, un segundito.
+
+00:30:46.000 --> 00:30:50.000
+Ahí está, y eso que ya la reinicié ya.
+
+00:30:50.000 --> 00:30:53.000
+Y hasta que cargue, que cargue.
+
+00:30:53.000 --> 00:30:58.000
+Vas nuevamente donde dice eh.
+
+00:30:58.000 --> 00:31:03.000
+que termine y vas a lo que dice Klaushel ya que cargue nuevamente.
+
+00:31:03.000 --> 00:31:07.000
+y pones el, el pones el código per se que estamos diciendo, ¿ya?
+
+00:31:07.000 --> 00:31:08.000
+Si está muy lento me van avisando si se pierde mi voz o algo para yo compartir en todo caso la.
+
+00:31:08.000 --> 00:31:13.000
+Yeah.
+
+00:31:13.000 --> 00:31:19.000
+La parte de esta no autorizar. Ahora sí.
+
+00:31:19.000 --> 00:31:23.000
+In my first project.
+
+00:31:23.000 --> 00:31:29.000
+Exacto, siempre va a ser en la en la parte superior, ya siempre, siempre, siempre.
+
+00:31:29.000 --> 00:31:33.000
+Cuando trabajas en el caso G C P. Tú si vas a tener tu proyecto.
+
+00:31:33.000 --> 00:31:37.000
+y el aire de tu proyecto esta idea de proyecto es único a nivel de todas las cuentas G C P.
+
+00:31:37.000 --> 00:31:41.000
+Entonces, cada vez que tú tengas algún problema, vamos a poner que dices, oye.
+
+00:31:41.000 --> 00:31:45.000
+Mi máquinas virtuales no sirven. Entonces lo que haces, lo que haces.
+
+00:31:45.000 --> 00:31:53.000
+eh abres un ticket de soporte y lo que te piden es esto, el project ID en este caso, para identificar cuál es tu proyecto. Esto no sirve mucho.
+
+00:31:53.000 --> 00:31:57.000
+Porque puede haber homónimos lo que sirve es este que está acá ajá.
+
+00:31:57.000 --> 00:32:01.000
+Yep, y luego copy saca el código que saca y pum, entra, pues, ¿no?
+
+00:32:01.000 --> 00:32:04.000
+Y es más que seguro que en la primera ejecución.
+
+00:32:04.000 --> 00:32:09.000
+Ya en la primera ejecución que tú vas a dar, porque si es una cuenta nueva.
+
+00:32:09.000 --> 00:32:13.000
+Te va a salir que el service account. Es le falta permisos.
+
+00:32:13.000 --> 00:32:16.000
+Y tú dices cómo así? Entonces vamos a recordar acá.
+
+00:32:16.000 --> 00:32:22.000
+Pregunta qué es un service account? Antes de, de, de seguir, de seguir hablando.
+
+00:32:22.000 --> 00:32:29.000
+que es un service account. Vamos a llamar a alguien que no, que no participa.
+
+00:32:29.000 --> 00:32:34.000
+para que tenga su nota, espere. Tenemos a.
+
+00:32:34.000 --> 00:32:42.000
+Diego, Dieguito, ¿cómo estás? Que era un service account.
+
+00:32:42.000 --> 00:32:49.000
+Diego. No nos escucha, vamos para acá.
+
+00:32:49.000 --> 00:33:02.000
+si no, vamos con. Exactamente, ¿no? Exacto, dame un segundo, eh.
+
+00:33:02.000 --> 00:33:09.000
+Paul, ondame, voy a conectar la laptop. ¿Dónde está el creador? Acá está.
+
+00:33:09.000 --> 00:33:17.000
+Un segundo, pero también ponerte, ¿no? Entonces, cuando tú vas a ejecutar eso, ya las personas que todavía no han creado su dataprock.
+
+00:33:17.000 --> 00:33:23.000
+Ese dataprock está asociado a un service account. Y el error que seguro te va a salir te va a decir.
+
+00:33:23.000 --> 00:33:26.000
+que el service account inclusive te da el nombre del service account.
+
+00:33:26.000 --> 00:33:29.000
+Que más o menos se ve algo como esto.
+
+00:33:29.000 --> 00:33:33.000
+Miren, ya casi te voy a poner por acá.
+
+00:33:33.000 --> 00:33:39.000
+está. Entonces, en la parte que está acá, tú dices bueno.
+
+00:33:39.000 --> 00:33:43.000
+El service account que necesita ese Datapro que estamos diciendo se verá?
+
+00:33:43.000 --> 00:33:47.000
+Algo como esto ya. Y tú tendrías que darle permisos de qué.
+
+00:33:47.000 --> 00:33:55.000
+de dataprock, Datapro worker y. Y esos que están por acá, eso siempre y cuando estás creando por primera vez.
+
+00:33:55.000 --> 00:34:00.000
+El tema de lo que es el Ataproc ya.
+
+00:34:00.000 --> 00:34:09.000
+Ejecútalo el comando me avisas el error, el error que te digo, te va a salir un service account con un número, un, un número que te va que te va a salir el error.
+
+00:34:09.000 --> 00:34:13.000
+Vas a ingresar a I A M. Ese servicio lo vas a copiar.
+
+00:34:13.000 --> 00:34:17.000
+Dasian access copias acá el servicio acá vamos a poner que sea este.
+
+00:34:17.000 --> 00:34:27.000
+Eh verdad ya. comparte, comparte, sí, comparte, comparte.
+
+00:34:27.000 --> 00:34:31.000
+Yeah, when you digo. I like to sell numero.
+
+00:34:31.000 --> 00:34:36.000
+Espérame, espérame, espérame, ya está cargando, ya cargo, ya, a ver.
+
+00:34:36.000 --> 00:34:38.000
+Bien, ahí hay un hay un.
+
+00:34:38.000 --> 00:34:42.000
+Pun allá yo veo un.
+
+00:34:42.000 --> 00:34:47.000
+Yep, lo que pasa que, mira. Te voy a compartir pantalla no lo vais a ejecutar porque te va error.
+
+00:34:47.000 --> 00:34:57.000
+Ya te voy a compartir pantalla, mira esto. De por sí tú has borrado todo lo que está por acá y has puesto de frente.
+
+00:34:57.000 --> 00:35:04.000
+El nombre de tu proyecto. Entonces voy a ponerlo, voy a ponerlo en un blog de notas para que se pueda entender.
+
+00:35:04.000 --> 00:35:09.000
+Tengo sobre, mira. Espérate.
+
+00:35:09.000 --> 00:35:16.000
+Entonces tú tienes algo así el comando así. que se ve algo así como esto.
+
+00:35:16.000 --> 00:35:23.000
+Si tú borras todo esto, estás eliminando la palabra guión project, que es una palabra reservada.
+
+00:35:23.000 --> 00:35:27.000
+Para ejecución del proyecto entonces lo que tú deberías solamente cambiar.
+
+00:35:27.000 --> 00:35:33.000
+Es esta parte la parte que dice acá. Por por eso en esta partecita.
+
+00:35:33.000 --> 00:35:38.000
+Está del color naranja. Del color naranja significa lo que tú vas a cambiar.
+
+00:35:38.000 --> 00:35:42.000
+Ajá ahora sí comparte tú.
+
+00:35:42.000 --> 00:35:48.000
+comparte todo.
+
+00:35:48.000 --> 00:35:49.000
+Icargando, sí, abre tu prueba de notas que tenías.
+
+00:35:49.000 --> 00:35:52.000
+Oh, yeah.
+
+00:35:52.000 --> 00:35:56.000
+que copiaste ese, ese comando, a verlo de notas.
+
+00:35:56.000 --> 00:35:57.000
+Thank you.
+
+00:35:57.000 --> 00:36:01.000
+Eso, entonces. Exacto, espacio, ahora, ahora sí, copia todo.
+
+00:36:01.000 --> 00:36:04.000
+Nice.
+
+00:36:04.000 --> 00:36:09.000
+Eso. Bien, borra todo eso.
+
+00:36:09.000 --> 00:36:18.000
+No, no sé, no, no sé, no, no, esa parte como es Linux vas a tener que hacerle entering, enter, enter, enter enter para que se vaya borrando.
+
+00:36:18.000 --> 00:36:25.000
+Ajá todo todo entra aja. Porque si señalas todo ahí se copia.
+
+00:36:25.000 --> 00:36:28.000
+Ujum espera ya está, ahora copiar.
+
+00:36:28.000 --> 00:36:33.000
+Yeah, borra y vuelve nuevamente a copiar lo que tenías en el blog de notas.
+
+00:36:33.000 --> 00:36:39.000
+Borra Borra eso copia lo del blog de notas.
+
+00:36:39.000 --> 00:36:48.000
+Regreso a lo de notas. que tenías con sol C y el otro control B, eso, ahora sí dale enter.
+
+00:36:48.000 --> 00:36:50.000
+Indeed.
+
+00:36:50.000 --> 00:36:55.000
+Dale enter, eso. Entonces, ahí está, mira.
+
+00:36:55.000 --> 00:36:58.000
+Y está justamente el ser y sacan que les decía.
+
+00:36:58.000 --> 00:37:01.000
+Cierto, ya está, mira, idor, ¿qué dice?
+
+00:37:01.000 --> 00:37:03.000
+Default service account.
+
+00:37:03.000 --> 00:37:11.000
+Noventa y seis va va va va hasta la hasta el punto com señalalo nada más, señalalo del 96 al punto com.
+
+00:37:11.000 --> 00:37:16.000
+Cuando ustedes señalan ya cuando ustedes señalan así sombrean vamos a llamar la palabra.
+
+00:37:16.000 --> 00:37:19.000
+En el caso cuando ustedes trabajan en el caso de Linux.
+
+00:37:19.000 --> 00:37:26.000
+Automáticamente se copia. Esa interfaz que ustedes están viendo es Linux internamente.
+
+00:37:26.000 --> 00:37:28.000
+Y en la inter terminal de Linux de Google Cloud.
+
+00:37:28.000 --> 00:37:32.000
+lo mismo concepto tiene a B W S el mismo concepto tiene Azure.
+
+00:37:32.000 --> 00:37:36.000
+Ya bien, ahora, como ya tienes el service account.
+
+00:37:36.000 --> 00:37:42.000
+La pantalla tú lo tienes mucho mucho eh la como muy muy levan levantado.
+
+00:37:42.000 --> 00:37:45.000
+Y déjame te muestro para al que me refiero.
+
+00:37:45.000 --> 00:37:48.000
+Déjame te muestro acá y no vayas a mover nada .
+
+00:37:48.000 --> 00:37:54.000
+Solamente déjame mostrarte acá rápidamente. Ustedes tienen algo así su pantalla, ¿cierto?
+
+00:37:54.000 --> 00:37:57.000
+Ya, entonces lo que van a hacer cuando ustedes quieren poder visualizar.
+
+00:37:57.000 --> 00:38:02.000
+Bajan un poquito así del centro que estaba acá arriba lo bajan.
+
+00:38:02.000 --> 00:38:08.000
+Y aquí vas a buscar I A M ahora si comparte tu pantalla.
+
+00:38:08.000 --> 00:38:14.000
+Comparte tu pantallita.
+
+00:38:14.000 --> 00:38:18.000
+para que cargue, ya está. Baja tu poquito pantalla, bien.
+
+00:38:18.000 --> 00:38:28.000
+En la parte superior busca IAM. que es el servicio de identity management que te permite dar todo el tema de accesos, ¿ya? Haz clic en el primero.
+
+00:38:28.000 --> 00:38:34.000
+Eso muy bien. Entonces.
+
+00:38:34.000 --> 00:38:43.000
+But bájale un poquito. Baja un poquito más la la esto, bájale eso cierra, cierra la cierra el tutorial.
+
+00:38:43.000 --> 00:38:48.000
+Eso, ponle dejar, ajá. Entonces, vas a.
+
+00:38:48.000 --> 00:38:53.000
+Tata de achicar un poco la pantalla, para que no se no esté tan, tan, la puedas visualizar más, ¿o está bien ahí.
+
+00:38:53.000 --> 00:38:59.000
+Está bien ahí ya en la mano derecha hay uno que dice subes un poquito.
+
+00:38:59.000 --> 00:39:04.000
+Dice in truth Google provide, ¿cierto? Hazle click ahí, bien.
+
+00:39:04.000 --> 00:39:08.000
+Baja un poco. Baja baja entonces como puedes observar .
+
+00:39:08.000 --> 00:39:12.000
+Directamente no está el service account que te está diciendo que falta.
+
+00:39:12.000 --> 00:39:17.000
+ya que hacen en eso, en esos casos? Sube un poco.
+
+00:39:17.000 --> 00:39:22.000
+Sube sube eso yang axes.
+
+00:39:22.000 --> 00:39:27.000
+Eso, copiese service account.
+
+00:39:27.000 --> 00:39:36.000
+Pégalo ahí. Ese con realicen nuevos nuevos principales cópialo ahí eso control b.
+
+00:39:36.000 --> 00:39:38.000
+Lo copias del otro lado, ¿cierto? Ahí está, dale enter, bien.
+
+00:39:38.000 --> 00:39:39.000
+See? into Miles.
+
+00:39:39.000 --> 00:39:46.000
+Dale enter, sí, dale enter no más eso. Abajo que dice baja, baja.
+
+00:39:46.000 --> 00:39:55.000
+Ujum abajo que dice asignación de roles. Vas a vas a a a darles justo lo que lo que yo había puesto ¿no? Buscas dataprock.
+
+00:39:55.000 --> 00:39:58.000
+Digitadata proc.
+
+00:39:58.000 --> 00:39:59.000
+Thank you. Ah, real.
+
+00:39:59.000 --> 00:40:07.000
+Arribita arribita mira tienes varias opciones o lo aja o lo escribes el el el lo que te digo o lo buscas, ambas son válidas.
+
+00:40:07.000 --> 00:40:13.000
+Dale clic en el primero eso. At a no de rol.
+
+00:40:13.000 --> 00:40:19.000
+El botón azul eso. Dale click nuevamente en, en la cosita eso.
+
+00:40:19.000 --> 00:40:24.000
+Busca dataprock nuevamente, pero ahora le vas a poner worker.
+
+00:40:24.000 --> 00:40:29.000
+Y ahorita les voy a explicar ya para para que no solamente sea como que lo tienen que poner y ya está.
+
+00:40:29.000 --> 00:40:37.000
+Ada no de rol. Eso el tema lo que se llama storage admin.
+
+00:40:37.000 --> 00:40:41.000
+I think I storage.
+
+00:40:41.000 --> 00:40:47.000
+Mhm, espacio en mí. En la primera, bien. Y la ultima que nos falta.
+
+00:40:47.000 --> 00:40:53.000
+Eso, Storage object admin.
+
+00:40:53.000 --> 00:40:59.000
+Espacio, ahí está. Y le das clic en save.
+
+00:40:59.000 --> 00:41:04.000
+Abajito hay un botón que dice guardar y cancelar, ¿cierto?
+
+00:41:04.000 --> 00:41:08.000
+En el abajo, abajo, debajo de él dice ayuda a buscar roles, el botón azul.
+
+00:41:08.000 --> 00:41:12.000
+The basic custom policy.
+
+00:41:12.000 --> 00:41:19.000
+El botón azul, eso, muy bien. Espérate ya está. La pantalla que tú habías bajado bastante, súbele un poquito.
+
+00:41:19.000 --> 00:41:22.000
+¿Te acuerdas el que estaban, estaba en el centro? Eso.
+
+00:41:22.000 --> 00:41:26.000
+Súper bien, ya está. Entonces, saca eso?
+
+00:41:26.000 --> 00:41:30.000
+Ya bájale bájale baja sube un poquito más para poder ver todo.
+
+00:41:30.000 --> 00:41:35.000
+La pantallita la eso. Ya está entonces.
+
+00:41:35.000 --> 00:41:41.000
+Para que ustedes vuelvan a ejecutar. las cosas que han ido corriendo dentro de la consola.
+
+00:41:41.000 --> 00:41:45.000
+Ustedes van a utilizar las flechas de arriba y abajo.
+
+00:41:45.000 --> 00:41:50.000
+esas que se utilizan para el juego. Esas, dale enter.
+
+00:41:50.000 --> 00:41:51.000
+There we go.
+
+00:41:51.000 --> 00:41:57.000
+O sea, dale enter, exacto, dale enter. Y ahora sí recién se está volviendo a tirar qué cosa.
+
+00:41:57.000 --> 00:41:59.000
+to register de dataprock.
+
+00:41:59.000 --> 00:42:04.000
+Ya, déjalo que vaya creando mientras yo voy explicando, déjalo ahí que se vaya tirando.
+
+00:42:04.000 --> 00:42:06.000
+Permítame compartir.
+
+00:42:06.000 --> 00:42:11.000
+Permítame por acá. Ajá, si yo estoy compartiendo, tranquilo, yo estoy compartiendo, sí, sí, sí, tranquilo. Entonces.
+
+00:42:11.000 --> 00:42:15.000
+I am.
+
+00:42:15.000 --> 00:42:19.000
+Y esas cosas está súper bien que levanten la mano ya eh.
+
+00:42:19.000 --> 00:42:26.000
+Porque de otra forma ustedes van viendo. Quizás quizás eso lo mismo que yo que yo que que yo acabo de hacer con su compañero.
+
+00:42:26.000 --> 00:42:32.000
+Lo mismo quizás están ustedes y dicen algunos dicen, "Levanten la mano, otros no, porque les da vergüenza, no.
+
+00:42:32.000 --> 00:42:42.000
+Está muy bien eso porque les vas ir sirviendo para ver cómo van a ir corrigiendo cada error que va a ir saliendo en vez de estar copiando y poniendo en internet y buscando y quizás.
+
+00:42:42.000 --> 00:42:55.000
+Eh tomando más tiempo sobre esto ya. Entonces, este servicio que nosotros nosotros acabamos, vamos a ponerlo de de de asignar los permisos, el primero, ¿por qué data pro administrator?
+
+00:42:55.000 --> 00:43:01.000
+Porque lo que buscamos ya. Es que tenga toda esa propiedad.
+
+00:43:01.000 --> 00:43:09.000
+De poder tener acceso. A los worker tener acceso a los a la parte del nodo principal.
+
+00:43:09.000 --> 00:43:15.000
+Yeah, y alguna configuración per se o instalación de leviería en caso se requiera.
+
+00:43:15.000 --> 00:43:20.000
+Porque yo pongo data broadworker a pesar que el dataprock administrator tiene ese permiso.
+
+00:43:20.000 --> 00:43:28.000
+Porque lata prod worker como tal . Permite poder asegurarse que realmente.
+
+00:43:28.000 --> 00:43:35.000
+Pueda yo acceder a los esclavos. Recordando que el data, los workers son los que realmente hacen la.
+
+00:43:35.000 --> 00:43:39.000
+Tarea. Y esto era chammin por qué .
+
+00:43:39.000 --> 00:43:45.000
+Porque va a haber ocasiones dentro del lúster que tu data lo puedes almacenar.
+
+00:43:45.000 --> 00:43:53.000
+en 2 horas. Aquí no el rol no lo llaman la storage per se sino lo llaman storage admin.
+
+00:43:53.000 --> 00:44:00.000
+Y por qué pongo el storage object admin. Porque si bien es cierto, voy a tener acceso.
+
+00:44:00.000 --> 00:44:06.000
+I love storage, pero yo necesito tener acceso a los objetos que hay dentro del drive storage.
+
+00:44:06.000 --> 00:44:13.000
+Que son los objetos recuerden. Cada archivo, vídeos, audio, lo que fuese, que tú subas al trabajo storage.
+
+00:44:13.000 --> 00:44:16.000
+Automáticamente se vuelve storage.
+
+00:44:16.000 --> 00:44:20.000
+object como tal, ya objetos de storage.
+
+00:44:20.000 --> 00:44:26.000
+Yeah, entonces, ahora sí. Mientras que vas dando su compañero, vamos vamos bien.
+
+00:44:26.000 --> 00:44:34.000
+Sí, el resto nadie ahora sí todos todos ya recordaron lo que vimos y todo prácticamente un resumen de lo que de lo que hemos estado conversando.
+
+00:44:34.000 --> 00:44:42.000
+De manera bien fácil ya entonces. Vamos para acá. En la parte que nosotros habíamos estado conversando y todo eso.
+
+00:44:42.000 --> 00:44:45.000
+Había dos formas de crear la tabla.
+
+00:44:45.000 --> 00:44:50.000
+Ya la tabern Hive. El típico J.
+
+00:44:50.000 --> 00:44:53.000
+Table y la segunda.
+
+00:44:53.000 --> 00:44:56.000
+DA external table.
+
+00:44:56.000 --> 00:45:00.000
+Pregunta más que nada para ver si se recuerda ya.
+
+00:45:00.000 --> 00:45:04.000
+Vamos a llamar a ver por acá, a máximo.
+
+00:45:04.000 --> 00:45:08.000
+Hola Máximo cómo estás con la diferencia entre entre la.
+
+00:45:08.000 --> 00:45:14.000
+Utilizar que llegue externa al table. Dentro de la parte de la arquitectura de Hadu versus day.
+
+00:45:14.000 --> 00:45:22.000
+Table como tal te recuerdas más o menos.
+
+00:45:22.000 --> 00:45:23.000
+Ya, tranquilo no.
+
+00:45:23.000 --> 00:45:33.000
+No, President queue. Estesos de fuerano.
+
+00:45:33.000 --> 00:45:39.000
+Por ahí, por ahí, va por ahí va por ahí, pero igual te voy a poner tu punto porque va por ahí, espérame.
+
+00:45:39.000 --> 00:45:46.000
+Maximo Aguilar va por ahí va por ahí. Alguien que por ahí quiera, quiera responder sobre esa pregunta?
+
+00:45:46.000 --> 00:45:48.000
+Adelante, Sebas. ¿Cómo estás?
+
+00:45:48.000 --> 00:46:13.000
+Yo creo que se mundo recordo es si. era porque este… Mientras external table.
+
+00:46:13.000 --> 00:46:14.000
+Bien, eh. Exactamente, exacto.
+
+00:46:14.000 --> 00:46:18.000
+Entonces era como que la frencia.
+
+00:46:18.000 --> 00:46:23.000
+Entonces mucha, ya, ya te puse, vamos por aquí.
+
+00:46:23.000 --> 00:46:28.000
+Miren por acá entonces. Cuando nosotros empezamos a revisar.
+
+00:46:28.000 --> 00:46:34.000
+Y aquí vamos a abrir un poquito esto. Ya, voy a cerrar esto.
+
+00:46:34.000 --> 00:46:41.000
+Ay, ¿no? Y aquí vamos a abrir esta parte open folder.
+
+00:46:41.000 --> 00:46:47.000
+mi folder, se perdió.
+
+00:46:47.000 --> 00:46:51.000
+Allá que está. No lo veía, perdón, es un segundito.
+
+00:46:51.000 --> 00:46:53.000
+Hola.
+
+00:46:53.000 --> 00:46:54.000
+Hola, ¿cómo estás? Cuéntame.
+
+00:46:54.000 --> 00:47:00.000
+Camio.
+
+00:47:00.000 --> 00:47:10.000
+Exacto, exactamente. Exacto, exacto, Walter me regala su apellido, porfa?
+
+00:47:10.000 --> 00:47:11.000
+Whether Pena.
+
+00:47:11.000 --> 00:47:17.000
+pocas, exactamente, ¿no? Vamos para acá, miren acá.
+
+00:47:17.000 --> 00:47:24.000
+Cuando ustedes empiezan a crear tablas ya. Cuando ustedes empiezan a tirar tablas.
+
+00:47:24.000 --> 00:47:28.000
+Acá ya. Si yo de por sí hago esto.
+
+00:47:28.000 --> 00:47:31.000
+Y vamos a por casualidad de de la vida.
+
+00:47:31.000 --> 00:47:36.000
+Yo hago un dob table, lo que va a pasar que automáticamente se va a borrar los metadatos.
+
+00:47:36.000 --> 00:47:42.000
+Yeah, y se va a borrar. La data que estaba en H D F S.
+
+00:47:42.000 --> 00:47:46.000
+Entonces una de las buenas prácticas siempre es que tú pongas a todo esto.
+
+00:47:46.000 --> 00:47:49.000
+El external table ya?
+
+00:47:49.000 --> 00:47:58.000
+Siempre siempre luego. Entonces esta parte la habíamos revisado habíamos también mencionado la lo que habíamos dicho de que.
+
+00:47:58.000 --> 00:48:06.000
+La parte que tú para poder trabajar. Parámetros en la parte de lo que era hive tú tenías que cosa.
+
+00:48:06.000 --> 00:48:15.000
+El set paramet y tal cosa. Y en el caso de lo que era hadu tú utilizas la palabra espor, el nombre de la el nombre de la de la variable.
+
+00:48:15.000 --> 00:48:18.000
+Y el valor que tú quieres que tenga, pues, ¿no? Bien.
+
+00:48:18.000 --> 00:48:29.000
+I todo esto que estamos diciendo. Que también hay un concepto que se llama donde te me fuiste acá, acá está la externa que le decía.
+
+00:48:29.000 --> 00:48:35.000
+Ya, pero acá, particionado. Habíamos también dicho que cuando uno trabaja.
+
+00:48:35.000 --> 00:48:41.000
+Con datos mucha cantidad de datos lo más recomendable es que tú particiones.
+
+00:48:41.000 --> 00:48:46.000
+Esa partición que estamos diciendo va a ser quizás por fecha.
+
+00:48:46.000 --> 00:48:51.000
+Va a ser quizás por una organizativa va a ser dependiendo.
+
+00:48:51.000 --> 00:48:58.000
+¿Qué tantos datos, qué tanta complejidad de datos tenga sobre esto, es sumamente importante entender esto.
+
+00:48:58.000 --> 00:49:04.000
+Ha pasado muchas veces que tú dices. No, a mí me dijeron que tengo que sí o sí particionar.
+
+00:49:04.000 --> 00:49:09.000
+It dinas dos gigas si quieres particionar. Realmente tendrías que particionar por dos gigas.
+
+00:49:09.000 --> 00:49:12.000
+No, ¿por qué? Porque al final no estás no estás generando.
+
+00:49:12.000 --> 00:49:17.000
+Eh realmente esa potencialidad del concepto de lo que es big data per se.
+
+00:49:17.000 --> 00:49:21.000
+Yeah, cuando tu particionas cuando, por ejemplo, tú sabes de que.
+
+00:49:21.000 --> 00:49:26.000
+Estás hablando, vamos a poner de un tera. Tienes un año tienes prácticamente un año de historia.
+
+00:49:26.000 --> 00:49:29.000
+Un tela de información hay que particionar.
+
+00:49:29.000 --> 00:49:35.000
+Yeah, entonces. Para la parte partición.
+
+00:49:35.000 --> 00:49:38.000
+Para la parte particion, que es lo que se hacía?
+
+00:49:38.000 --> 00:49:43.000
+Tú tenías una tabla, una tabla. Le ponías llegue external.
+
+00:49:43.000 --> 00:49:51.000
+¿Qué cosa? El nombre. Que tú querías particio nadar déme un segundo voy a pagar esta cosa.
+
+00:49:51.000 --> 00:49:59.000
+Para que no esté prendida un segundito. A.
+
+00:49:59.000 --> 00:50:05.000
+Entonces, esta parte también recordar. Que yo podía cargar los datos.
+
+00:50:05.000 --> 00:50:12.000
+Cómo estaban en qué estaban. En este caso, con este comando estoy diciendo que mi data está donde.
+
+00:50:12.000 --> 00:50:17.000
+En Linote y lo estoy cargando directamente a una tabla de Hive.
+
+00:50:17.000 --> 00:50:21.000
+Y con este comando lo que hace no solamente es pasar.
+
+00:50:21.000 --> 00:50:30.000
+De Linux. Cargarlo a la tabla hive sino también registrarlo en la ruta de HDFS.
+
+00:50:30.000 --> 00:50:33.000
+Y tú dices pero cómo sucedió esto? ¿por qué?
+
+00:50:33.000 --> 00:50:38.000
+Porque como podemos observar. En esta línea que dice la línea cuarenta y cuatro.
+
+00:50:38.000 --> 00:50:41.000
+Tú vas a tener esto que estamos diciendo, esta es una ruta.
+
+00:50:41.000 --> 00:50:46.000
+De H D F S y tú al tener estas tres líneas que estamos diciendo.
+
+00:50:46.000 --> 00:50:55.000
+Automáticamente pasas tanto. De los datos de Linux a HDFS y además lo cargas en donde en hive.
+
+00:50:55.000 --> 00:51:00.000
+Yeah? Entonces eso es lo que habíamos nosotros revisado para todo eso.
+
+00:51:00.000 --> 00:51:05.000
+También habíamos mencionado. en las, en la clase que habíamos tenido.
+
+00:51:05.000 --> 00:51:09.000
+Que los comandos de de Haddo. Eran, eran la combinación.
+
+00:51:09.000 --> 00:51:19.000
+De estas letras de estas que están acá. de esas que están acá, HDFS, espacio, DFS, espacio menos.
+
+00:51:19.000 --> 00:51:22.000
+Y ese es un comando Linux per se.
+
+00:51:22.000 --> 00:51:28.000
+Yeah, por ejemplo, en este caso estoy listando esta ruta que estamos hablando.
+
+00:51:28.000 --> 00:51:32.000
+Y este parámetro user, este parámetro user es el que yo definífi.
+
+00:51:32.000 --> 00:51:34.000
+En la parte que está dejado.
+
+00:51:34.000 --> 00:51:41.000
+Yeah, ¿cómo llamo un parámetro, lo llamo. dólar, cierro, eh, vamos a poner, eh, llaves por acá.
+
+00:51:41.000 --> 00:51:49.000
+Y ya está ya entonces. hasta habíamos más o menos como revisado. Vamos por aquí para poder.
+
+00:51:49.000 --> 00:51:56.000
+Ver otro ejemplo haces aparte tipo rica si estamos bien hasta hay alguna pregunta?
+
+00:51:56.000 --> 00:52:02.000
+Hasta ahí todavía. Sí, pa poder pasar esta partita bien.
+
+00:52:02.000 --> 00:52:11.000
+Entonces, miren acá. ¿Qué es lo que tú tienes en esta parte, en esta parte que estamos hablando, espérate acá.
+
+00:52:11.000 --> 00:52:17.000
+Esto aquí es lo mismo que el otro. Pero acá ya te voy a dar otro tipo de dato.
+
+00:52:17.000 --> 00:52:20.000
+Otro tipo de archivo más que mejor dicho mira acá.
+
+00:52:20.000 --> 00:52:26.000
+Tú tienes que goza que hago yo Anita. Cuando tengo archivos.
+
+00:52:26.000 --> 00:52:33.000
+tipo abro, ¿ya? Podían tener que tipo archivos parquets.
+
+00:52:33.000 --> 00:52:35.000
+Abro O R C.
+
+00:52:35.000 --> 00:52:38.000
+CCB text file.
+
+00:52:38.000 --> 00:52:40.000
+Judy, iceberg.
+
+00:52:40.000 --> 00:52:45.000
+Y los del el tipo de datos del. El el hoody.
+
+00:52:45.000 --> 00:52:49.000
+El hoodie del talek. Y iceberg esos tres.
+
+00:52:49.000 --> 00:53:00.000
+Son, son parquet solamente que hay una opción que tú le pones el tipo de dato per se ya y cada uno tiene sus diferentes diferentes diferentes funcionalidades y diferentes casos de uso que ya iremos hablando.
+
+00:53:00.000 --> 00:53:07.000
+Pero en realidad son parquets como tal. Entonces, en ese abro punto importante acá tú dices.
+
+00:53:07.000 --> 00:53:12.000
+Bueno gay table. Lo voy a ponerte external también.
+
+00:53:12.000 --> 00:53:15.000
+El nombre la base datos, el nombre de la tabla.
+
+00:53:15.000 --> 00:53:22.000
+Guardado como abro storage as. Abro donde lo voy a localizar?
+
+00:53:22.000 --> 00:53:31.000
+En esta ruta. en esta ruta, ¿qué tipo de tabla va a tener esto? Bueno.
+
+00:53:31.000 --> 00:53:38.000
+Voy a parciarlo con esto. Voy a utilizar también toda esta parte que está acá para el tema del paseo.
+
+00:53:38.000 --> 00:53:46.000
+Y aquí hay un punto interesante. Abro particularmente para el tema de lo que es inclusive ciencia de datos.
+
+00:53:46.000 --> 00:53:53.000
+Para el tema lo que es diferentes cosas, casos de uso, vamos a llamarlo así, casi no es muy utilizado.
+
+00:53:53.000 --> 00:54:00.000
+Y por qué porque a diferencia del parquet. El parque tú lo registras y ya está.
+
+00:54:00.000 --> 00:54:04.000
+A cambio en el otro lado, en el concepto de abro.
+
+00:54:04.000 --> 00:54:08.000
+Tú tienes que preocuparte. de tener un esquema.
+
+00:54:08.000 --> 00:54:14.000
+Más o menos con esa con esta extensión. más tus datos.
+
+00:54:14.000 --> 00:54:19.000
+Entonces se vuelve más complicado por el hecho de que porque vas a tener como dos tipos de archivos no o sea tus datos.
+
+00:54:19.000 --> 00:54:23.000
+Y el esquema. Entonces, para evitar eso, tú dices, ah, mejor parquet.
+
+00:54:23.000 --> 00:54:26.000
+Ya me olvid me me olvido me olvidó el tema.
+
+00:54:26.000 --> 00:54:34.000
+Más o menos cómo se ve ese ese archivo que estamos diciendo, se ve algo así como esto, ya te voy a mostrar.
+
+00:54:34.000 --> 00:54:38.000
+Así esto. Es el es que cosa.
+
+00:54:38.000 --> 00:54:48.000
+El detalle es como la metadata, ¿cierto? Nombre. Tal cosa tipo un récord y los campos que necesita esa tabla.
+
+00:54:48.000 --> 00:54:52.000
+Entonces, y acá está la data, ¿no? La data tipo, tipo, tipo abro.
+
+00:54:52.000 --> 00:54:58.000
+Entonces, es sumamente importante. Llegar a entender ya.
+
+00:54:58.000 --> 00:55:01.000
+Cuando en qué ocasiones voy a utilizar el abro.
+
+00:55:01.000 --> 00:55:07.000
+Realmente en los proyectos de ciencia de datos la mayoría opta.
+
+00:55:07.000 --> 00:55:12.000
+por utilizar archivos parquets. Sin embargo, he visto todavía.
+
+00:55:12.000 --> 00:55:18.000
+Eh algunas empresas que todavía utilizan Abro nosotros es importante también mencionarlo que tienen.
+
+00:55:18.000 --> 00:55:23.000
+Y en la consideración ya. Y en la última línea.
+
+00:55:23.000 --> 00:55:24.000
+En la en la fase row no tanto a y ahí un poquito como que si no.
+
+00:55:24.000 --> 00:55:28.000
+In La Pazaro.
+
+00:55:28.000 --> 00:55:34.000
+Porque les digo mayormente y ahí les cuento un poquito.
+
+00:55:34.000 --> 00:55:42.000
+¿Por qué les digo sí y no? porque a veces lo que, lo que en la, en la, en la parte, lo que es la, la capa row.
+
+00:55:42.000 --> 00:55:47.000
+Lo que se recomienda. Como de por sí lo que tú necesitas es llevar el dato.
+
+00:55:47.000 --> 00:55:56.000
+Al doubt entonces dice no mira sabes que. Porque puede pasar que tú tengas vamos a poner que tienes un oracle.
+
+00:55:56.000 --> 00:56:02.000
+Y quieres un hora con un premisa. quiere sí o sí subirlo al subirlo en este caso al trout?
+
+00:56:02.000 --> 00:56:13.000
+Cualquier vendor ya cualquier AWSP Azure, cualquier vendor. Y muchas veces pasa que uno más uno cuando hace la hora con la oracle.
+
+00:56:13.000 --> 00:56:18.000
+No seriamente, porque lo que estás buscando quizás el cliente está buscando ese concepto de armar.
+
+00:56:18.000 --> 00:56:23.000
+El Leijas, entonces yo le digo de pasada hora con la hora no estoy armando un lejas.
+
+00:56:23.000 --> 00:56:26.000
+Entonces, ¿qué es lo que yo voy a hacer para esa estrategia?
+
+00:56:26.000 --> 00:56:31.000
+Que lo que voy a hacer? Bueno, diré. Cojo el el ora cola acá.
+
+00:56:31.000 --> 00:56:37.000
+Voy a utilizar qué cosa. Pasa los archivos, en este caso al cloud storage.
+
+00:56:37.000 --> 00:56:44.000
+de un formato tipo todo que sea stream. El rogue que todos los que todas las columnas sean string.
+
+00:56:44.000 --> 00:56:50.000
+Pero por qué Anita? Porque si posiblemente puede pasar y está comprobado que yo digo no.
+
+00:56:50.000 --> 00:56:59.000
+Aquí era decimal, ¿ya? Y vamos a poner el caso hipotético que tu decimal aquí te soportaba vamos a ponerle doce, doce dígitos del décima, no lo sé.
+
+00:56:59.000 --> 00:57:05.000
+Yeah, puede ser que la herramienta cuando tú digas no lo voy a pasar tal cual, el tipo de dato.
+
+00:57:05.000 --> 00:57:09.000
+te corte, te corte el la cantidad de dígitos.
+
+00:57:09.000 --> 00:57:14.000
+Te lo redondea no sé pues a cinco. A 5 decimales o a dos decimales.
+
+00:57:14.000 --> 00:57:20.000
+No pues cierto porque tú tienes que tú tienes que tener la misma copia la misma copia espejo que tienes en el otro lado.
+
+00:57:20.000 --> 00:57:26.000
+Entonces hay algunos arquitectos. Que recomien recomiendan, ¿no? Que recomendamos.
+
+00:57:26.000 --> 00:57:32.000
+Que la copa row, que tú tengas sea, sea la parte de lo que es este este.
+
+00:57:32.000 --> 00:57:38.000
+Recién la siguiente capa en la silla capa siguiente podrías tener qué cosa un parquet.
+
+00:57:38.000 --> 00:57:47.000
+O un abro per se y cuando ya pasas a la última capa si necesariamente tener el tema quizás de parque per se.
+
+00:57:47.000 --> 00:57:57.000
+No por eso ahí es un poquito como que si no porque hay otros que dicen no yo voy a hacer la transformación y he comprobado que no borro, que no corto datos, que todo va completo, bien.
+
+00:57:57.000 --> 00:58:00.000
+Pero se ha comprobado muchas veces que a veces las las los sistemas antiguos.
+
+00:58:00.000 --> 00:58:10.000
+Con la parte del chao no tienen tan. No, no son tan compatibles y te van cortando cosas, ¿ya? Me ha pasado en en un en un proyecto de de de de un cliente.
+
+00:58:10.000 --> 00:58:15.000
+Ajá, ya. Entonces, bien. Otro punto importante en esto.
+
+00:58:15.000 --> 00:58:20.000
+Qué cosa es. Cuando yo quiero compartirles por ejemplo algo.
+
+00:58:20.000 --> 00:58:25.000
+O o cual o cualquiera ustedes quieren compartir. Con otra persona sus archivos.
+
+00:58:25.000 --> 00:58:33.000
+Vamos a poner que sean veinte archivos. En vez de, en vez de estar pasando los 20 archivos, que lo que haces, lo pones en un punto zip, ¿cierto?
+
+00:58:33.000 --> 00:58:38.000
+O en un punto raro. El snappy es el simil de eso.
+
+00:58:38.000 --> 00:58:43.000
+Con la diferencia que vas a utilizar qué cosa la comprensión comprensión.
+
+00:58:43.000 --> 00:58:48.000
+De que de los datos, ya sea de abro, ya sea de parquets.
+
+00:58:48.000 --> 00:58:53.000
+Esto va a ser más eficiente, ¿ya? Ese tamaño del archivo que estás buscando.
+
+00:58:53.000 --> 00:58:57.000
+Entonces.
+
+00:58:57.000 --> 00:59:02.000
+aquí ya es tu, tu primera tabla, tu tabla, tu tabla de persona.
+
+00:59:02.000 --> 00:59:05.000
+Lo que lo que tú haces en todo esto.
+
+00:59:05.000 --> 00:59:09.000
+Tú dices, yo necesito que sí o sí.
+
+00:59:09.000 --> 00:59:15.000
+se permita que cosa el tema. De la compresión de datos.
+
+00:59:15.000 --> 00:59:24.000
+Hay servidores, ya, hay servidores de Hadoo. Que por defecto no lo tiene no lo tienen habilitado vamos a llamarlo.
+
+00:59:24.000 --> 00:59:27.000
+Y tú para que lo habilites? Es una línea de código.
+
+00:59:27.000 --> 00:59:31.000
+cuál línea de código esta. Activo la comprensión.
+
+00:59:31.000 --> 00:59:36.000
+Igualto y el tema lo que es el tema de la salida tipo snappy.
+
+00:59:36.000 --> 00:59:47.000
+¿A quién alabro ya? Es de esta forma que al fin y al cabo tú tienes que activas la compresión para que realmente funcione lo que pusiste en la parte superior.
+
+00:59:47.000 --> 00:59:52.000
+Inserta los datos, insert un select, bien, aquí voy a poner un poquito.
+
+00:59:52.000 --> 00:59:58.000
+Para poder avanzar esto lo mismo lo mismo a que lo mismo lo mismo pero estoy pasando un poquito, ya está.
+
+00:59:58.000 --> 01:00:07.000
+Eso es la parte nueva, ¿ya? Vamos al otro y luego vamos a probar todo esta primera explicación vamos bien ¿se entendió?
+
+01:00:07.000 --> 01:00:12.000
+Sí esta parte de acá luego vamos a probar a probar todo cada uno de los archivos.
+
+01:00:12.000 --> 01:00:16.000
+Pero se entendió esa partecita. Sí.
+
+01:00:16.000 --> 01:00:19.000
+Me avisan con un pulgarcito para poder pasar al otro.
+
+01:00:19.000 --> 01:00:24.000
+Gracias, ahí vamos para acá. Entonces. Y aquí acá.
+
+01:00:24.000 --> 01:00:31.000
+eh cuál es la parte distinta, ya, acá. Entonces tú dices.
+
+01:00:31.000 --> 01:00:38.000
+Mira, yo necesito. insertar la partición.
+
+01:00:38.000 --> 01:00:47.000
+De una manera automática. Porque qué pasaba en el otro? Yo yo prácticamente en cada de las de las cosas de las tablas particionadas.
+
+01:00:47.000 --> 01:00:53.000
+Yo tenía un código para cargar esta fecha. Luego otro código para cargar esa otra fecha.
+
+01:00:53.000 --> 01:00:56.000
+Y eso todo código pa cargar la otra fecha.
+
+01:00:56.000 --> 01:01:04.000
+Y así no debería ser, ¿cierto? Entonces. En esta parte que estamos hablando, en esta parte que es la parte nueva donde te me fuistes.
+
+01:01:04.000 --> 01:01:14.000
+Aquí espérame. que está ese es en esto que tú donde estás acá.
+
+01:01:14.000 --> 01:01:23.000
+No, acá no espérate, ya lo perdí ya. Espérame participamiento dinámico estás.
+
+01:01:23.000 --> 01:01:28.000
+Entonces es en esta parte donde tú vas a tener de forma automática esa.
+
+01:01:28.000 --> 01:01:32.000
+carga de que de partición como hacianita?
+
+01:01:32.000 --> 01:01:34.000
+Primero cargarás tu tabla.
+
+01:01:34.000 --> 01:01:36.000
+J Table.
+
+01:01:36.000 --> 01:01:43.000
+Ya está, tarda sin particionar. Una tabla tal cual hay de persona hay de empresa monto y fecha.
+
+01:01:43.000 --> 01:01:49.000
+Ya no tiene partición. Una tabla que está en qué.
+
+01:01:49.000 --> 01:01:52.000
+Que está en formato en este caso.
+
+01:01:52.000 --> 01:01:56.000
+That's file? Por esta línea que dice.
+
+01:01:56.000 --> 01:02:03.000
+It's fine, ya bajo. Como yo lo voy a empezar a cargar de forma particionada.
+
+01:02:03.000 --> 01:02:09.000
+Porque previamente previamente . Eh usted lo que van a hacer que cosa.
+
+01:02:09.000 --> 01:02:14.000
+Van a empezar a trabajar ya. En la en la en la otra tabla.
+
+01:02:14.000 --> 01:02:20.000
+que ya habían creado la tabla particionada de transacciones, lo vas a cargar de la siguiente forma.
+
+01:02:20.000 --> 01:02:22.000
+Incerinto, table.
+
+01:02:22.000 --> 01:02:27.000
+El nombre de la tabla partillo. El nombre el el campo con el que vas a particionar.
+
+01:02:27.000 --> 01:02:30.000
+Y todo lo que está por acá como esta.
+
+01:02:30.000 --> 01:02:39.000
+Esa tabla fue creada de forma particionada. Tú al utilizar esto que estamos hablando automáticamente va a vapear y dice.
+
+01:02:39.000 --> 01:02:42.000
+Voy a poner acá lo siguiente ya.
+
+01:02:42.000 --> 01:02:52.000
+Tienes columna uno columna dos columna tres y así sucesivamente y luego la columna fecha.
+
+01:02:52.000 --> 01:02:55.000
+Tú estás haciendo un sell asterisco from, ¿cierto? La tabla.
+
+01:02:55.000 --> 01:03:04.000
+Cuando lo que quieres. Aquí está tabla particionada tú quieres pasar.
+
+01:03:04.000 --> 01:03:08.000
+de la tabla. Que no está particionada.
+
+01:03:08.000 --> 01:03:13.000
+Yeah, que no está particionada. Lo que es pasar a una tabla particionada.
+
+01:03:13.000 --> 01:03:17.000
+Entonces, lo que necesitas es mapear solamente la partición.
+
+01:03:17.000 --> 01:03:21.000
+¿Cómo así? Dices yo sé que esto es mi partición.
+
+01:03:21.000 --> 01:03:24.000
+Perfecto, entonces lo que voy a hacer es.
+
+01:03:24.000 --> 01:03:30.000
+partillo, el nombre de la partición ya en la tabla que estamos diciendo en la tabla la tabla particionada.
+
+01:03:30.000 --> 01:03:37.000
+Y solamente la consulta per se. Y viene la pregunta hoy Anita, la, ¿y qué pasaría?
+
+01:03:37.000 --> 01:03:46.000
+¿Y qué pasaría si yo tengo lo siguiente? Que la la la columna la columna está vamos a ponerlo por acá.
+
+01:03:46.000 --> 01:03:51.000
+Fecha se recomienda si ese fuese el escenario ya.
+
+01:03:51.000 --> 01:04:00.000
+que siempre tu última columna, tu última columna que tú acabas tú de hacer el cele columna uno, columna 2.
+
+01:04:00.000 --> 01:04:04.000
+Tu última columna sea tu el nombre de tu partición.
+
+01:04:04.000 --> 01:04:11.000
+Porque Anita, si bien es cierto. Lo que puede pasar es que lo reconozca ya.
+
+01:04:11.000 --> 01:04:15.000
+Pero va a tomar un poco más de tiempo que pueda hacer la inferencia.
+
+01:04:15.000 --> 01:04:18.000
+Y lo que tú estás buscando es mayor rendimiento.
+
+01:04:18.000 --> 01:04:22.000
+Entonces como estás buscando mayor rendimiento es mucho mejor.
+
+01:04:22.000 --> 01:04:25.000
+Que la última columna sea tu columna de partición.
+
+01:04:25.000 --> 01:04:38.000
+Yeah? Hasta ahí, ¿sí? Vamos bien, adelante, adelante, Julio, cuéntamelo.
+
+01:04:38.000 --> 01:04:43.000
+Ah, sí, sí, sí, claro, claro. ¿cómo sería? Vamos para acá, donde me fuiste aquí.
+
+01:04:43.000 --> 01:04:46.000
+Tendia que ser de loismo tipoedato.
+
+01:04:46.000 --> 01:04:51.000
+Exacto, mira, mira, mira por aquí. Vamos a poner que tú dices, bueno, enita yortear.
+
+01:04:51.000 --> 01:04:56.000
+Ustedes particiones, ya, bien. Vamos a vamos a utilizar esto, por ejemplo.
+
+01:04:56.000 --> 01:05:03.000
+Dices acá particiónado by. Ya le pones coma eh vamos a ponernos eh este.
+
+01:05:03.000 --> 01:05:07.000
+Mm, unidad organizativa, organizativa.
+
+01:05:07.000 --> 01:05:10.000
+este, por ejemplo, ¿no? Entonces, aquí tú tienes dos particiones.
+
+01:05:10.000 --> 01:05:16.000
+Tu primera partición más, la, la, la, la, la, la, la más jerárquica, vamos a llamarlo.
+
+01:05:16.000 --> 01:05:21.000
+Dentro de fecha vas a tener. Toda partición que se va a llamar unidad organizativa.
+
+01:05:21.000 --> 01:05:24.000
+A tú te hace esta forma tu tabla bien.
+
+01:05:24.000 --> 01:05:28.000
+Y en la parte que está acá. te pones unidad organizativa.
+
+01:05:28.000 --> 01:05:37.000
+Y ya está sin ningún problema. Pero siempre como que empezar de la partición más ya más este vamos a ponerlo de fecha y luego que vayas al.
+
+01:05:37.000 --> 01:05:41.000
+al detalle pues no ajá. esto lo borramos y listo.
+
+01:05:41.000 --> 01:05:44.000
+Simple efficient, otro camp. Yes?
+
+01:05:44.000 --> 01:05:52.000
+Sí, sí, sí, sí, porque, o sea, no, no es que sea, no es que, no es que sea como una regla como tal, ¿ya?
+
+01:05:52.000 --> 01:05:53.000
+No es que el, en este caso digas uy, el, el, el Jadun no va a funcionar si lo hago diferente.
+
+01:05:53.000 --> 01:05:57.000
+Mm-hmm.
+
+01:05:57.000 --> 01:06:02.000
+No es tanto eso sino lo que pasa que en los sistemas que ustedes van a encontrar ya.
+
+01:06:02.000 --> 01:06:06.000
+Por ejemplo en el caso si usted dice oye yo tengo un cliente que tiene Bisquary .
+
+01:06:06.000 --> 01:06:14.000
+Baca, Bisquery. Como herramienta como tal, inclusive el mismo el el mismo M R de A B W S.
+
+01:06:14.000 --> 01:06:18.000
+La forma que particiona que te dice que tienes que particionar.
+
+01:06:18.000 --> 01:06:24.000
+Es solamente por fecha. Por fechas tipo date.
+
+01:06:24.000 --> 01:06:28.000
+tipo day, daytime. O tipo entero.
+
+01:06:28.000 --> 01:06:31.000
+tú dices pero y, y, y, pero, ¿por qué no, por ejemplo, en Steam?
+
+01:06:31.000 --> 01:06:37.000
+Porque la búsqueda tú lo que necesitas es que sea lo más rápido, lo más rápido posible.
+
+01:06:37.000 --> 01:06:41.000
+Es por eso que tú dices bueno yo lo voy a particionar por fecha.
+
+01:06:41.000 --> 01:06:44.000
+Como tal o un integer la fecha lo pongo en inteller.
+
+01:06:44.000 --> 01:06:50.000
+Es por eso que tanto MR B Square y los otros que los los los otros cosas que hay.
+
+01:06:50.000 --> 01:07:02.000
+Eh, utilizan esta parte. pero si vamos a utilizar el Hadoo en el mundo vamos a poner el mundo on premise, ¿no? O o de por sí el Hadoo per se, yo puedo particionar y decir fecha no quiero, quiero por unidad organizativa.".
+
+01:07:02.000 --> 01:07:07.000
+Y de la unión organizativa quiero por fecha recién, puedes hacerlo, lo va, lo va a soportar.
+
+01:07:07.000 --> 01:07:11.000
+No es lo más recomendable porque mayormente particiones por fecha.
+
+01:07:11.000 --> 01:07:16.000
+Y así aja y eso.
+
+01:07:16.000 --> 01:07:17.000
+Sí, claro, cuéntamelo.
+
+01:07:17.000 --> 01:07:29.000
+Otra consultant. the en la carga al virtivos el lorn los campos ti que ser este identical dataceno o es que puedo vehicular los por el nombre del las Colugnes.
+
+01:07:29.000 --> 01:07:36.000
+Aya, bien. Cuando tú tiras la tabla, cuando tú tiras la tabla, tú dices, bueno, hay di persona, hay de empresa, bla bla.
+
+01:07:36.000 --> 01:07:41.000
+No, cuando tú vas a hacer la inserción de los campos.
+
+01:07:41.000 --> 01:07:46.000
+Tenemos que fijarnos que de por sí. Vaya y me ape con los correctos.
+
+01:07:46.000 --> 01:07:50.000
+Porque vamos a poner que dices esta tabla pues impartial Anita.
+
+01:07:50.000 --> 01:07:54.000
+Mi primera columna era, no sé, ID empresa al revés.
+
+01:07:54.000 --> 01:08:01.000
+Entonces lo que vas a insertar es como que al revés, ¿no? Tu ID empresa está en ED persona y tu ID persona en ID empresa.
+
+01:08:01.000 --> 01:08:07.000
+Si fueses el caso, ya que están en diferente orden, sí sería bueno que acá lo especifica.
+
+01:08:07.000 --> 01:08:15.000
+para que no les dé error a mí me ha pasado hace un tiempo atrás hace unos ocho años atrás cuando empecé toda esa parte de lo que es Hadu .
+
+01:08:15.000 --> 01:08:22.000
+Yeah, yo hacía como ese error ya y luego tratando de hacer el cuadre.
+
+01:08:22.000 --> 01:08:27.000
+Y no cuadra, ¿por qué no cuadra claro por el tema del orden es también importante, ya en esa partecita, pero sí.
+
+01:08:27.000 --> 01:08:33.000
+Uh-huh, hasta ahí bien, esa partecita bien? Sí, para pasarlo.
+
+01:08:33.000 --> 01:08:34.000
+Cuéntamelo.
+
+01:08:34.000 --> 01:08:41.000
+Prashada. parque accident.
+
+01:08:41.000 --> 01:08:47.000
+yeah, vamos para acá. No necesariamente, no necesariamente, voy de acá y buen punto lo que dijiste.
+
+01:08:47.000 --> 01:08:56.000
+Se va a crear par, eh, archivos parquet siempre y cuando, siempre y cuando tu tabla que tú creastes aquí.
+
+01:08:56.000 --> 01:09:03.000
+Diga que se está abordando en parquet. Mientras no se guarden no tenga ese storage esta línea que está acá.
+
+01:09:03.000 --> 01:09:06.000
+No se guarden no se guarda eh en parte per se.
+
+01:09:06.000 --> 01:09:14.000
+Cuando tú llevas a un concepto de día de data lake ya ahorita estamos viendo comandos para que boom ya vayan viendo, cuando vayamos a pasar al otro.
+
+01:09:14.000 --> 01:09:18.000
+Ya al o al otro ejemplo recién ahí sí o sí.
+
+01:09:18.000 --> 01:09:24.000
+Esas esos esos archivos que tú has particionado, la tabla tiene que ser almacenada en parquets.
+
+01:09:24.000 --> 01:09:31.000
+masking abro, más que en text file. No sé si me dejo entender.
+
+01:09:31.000 --> 01:09:33.000
+Sí.
+
+01:09:33.000 --> 01:09:34.000
+Yeah, bien.
+
+01:09:34.000 --> 01:09:41.000
+Okay, see. Has una a partision y es como que ya divider la tabla indicresolios, si es que estu tienes no, tu vacu bueno.
+
+01:09:41.000 --> 01:09:48.000
+Exacto, exacto. Exacto, exacto.
+
+01:09:48.000 --> 01:09:54.000
+Eso.
+
+01:09:54.000 --> 01:09:59.000
+Exacto, exacto, y tú dices pero por qué voy a hacer eso, Anita? Porque claro.
+
+01:09:59.000 --> 01:10:00.000
+Porque vamos a poner el caso hipotético que ustedes.
+
+01:10:00.000 --> 01:10:01.000
+Agamo siento.
+
+01:10:01.000 --> 01:10:06.000
+Le dan para ser un modelo. De segmentación de clientes ya.
+
+01:10:06.000 --> 01:10:12.000
+Y les da aproximadamente unos cinco años. Cinco años de edad en un solo archivo.
+
+01:10:12.000 --> 01:10:20.000
+You los cinco años de historia, ¿cierto? Utilizaras quizás un año o inclusive dos años para evitar esta estacionalidad.
+
+01:10:20.000 --> 01:10:24.000
+Entonces lo que haces, en vez de estar consultándote todos los cinco años.
+
+01:10:24.000 --> 01:10:27.000
+Vas a consultar solamente al universo, a la partición.
+
+01:10:27.000 --> 01:10:31.000
+Eh de de esos datos para qué? Para que te tome menos tiempo.
+
+01:10:31.000 --> 01:10:38.000
+consuma menos costo y ya está pues pero si se recomienda particicionar siempre los datos, siempre, siempre, siempre.
+
+01:10:38.000 --> 01:10:51.000
+Ajá, y así.
+
+01:10:51.000 --> 01:10:56.000
+Sí. Bien, te cuento, les cuento, les cuento.
+
+01:10:56.000 --> 01:10:57.000
+Ahí va a ser depende cómo así, ahorita lo vamos a poner, vamos a poner que ustedes dividen por año.
+
+01:10:57.000 --> 01:11:01.000
+porque que…
+
+01:11:01.000 --> 01:11:09.000
+Eh por mes. por día, inclusive por hora, ¿ya?
+
+01:11:09.000 --> 01:11:15.000
+Por ejemplo, vamos a poner. Eh vamos a poner el caso eh de un retailer.
+
+01:11:15.000 --> 01:11:21.000
+Yeah, un retail, vamos a poner plaza vea, eh Vivanda, cualquier retail que ustedes.
+
+01:11:21.000 --> 01:11:30.000
+Les gusta ir a comprar cualquiera ya. Ellos como tal claramente siempre van a tener quizás el tema de lo que son transacciones.
+
+01:11:30.000 --> 01:11:39.000
+Cierto? Bien, entonces ellos van a poder analizar esa información si quieren ser como más precisos y ver en qué, en qué determinadas horas.
+
+01:11:39.000 --> 01:11:45.000
+Hay mayores ventas, posiblemente les convenga ese tipo de jerarquía.
+
+01:11:45.000 --> 01:11:49.000
+Cuando tú ya vas a a eso que estamos diciendo cuando por ejemplo.
+
+01:11:49.000 --> 01:11:57.000
+Vamos a poner otro caso. Tú dices, "Oye, yo quiero saber el tema de lo que son los inventarios, tengo mi data de inventarios.
+
+01:11:57.000 --> 01:12:04.000
+Y quiero, quiero poder ir viendo, tu alimentario no lo vas a ver por, por hora, ¿cierto? No tendría un poquito sentido en la parte de lo que es el el análisis per se.
+
+01:12:04.000 --> 01:12:07.000
+Tú dices no, mira, yo la verdad me conviene a mí.
+
+01:12:07.000 --> 01:12:14.000
+Como gerente de inventarios ese cargo no existe la acabo de inventar no gerente de de porque tiene que ver con inventarios.
+
+01:12:14.000 --> 01:12:18.000
+Me interesa a mí saber y particionar la data por día.
+
+01:12:18.000 --> 01:12:25.000
+Porque puede ser que el día los días. A poner caso los días domingos, no, domingo, no, los días sábados y los días lunes.
+
+01:12:25.000 --> 01:12:35.000
+Hacen reposición de stock, bien. Hay otros que dicen no sabes que eso tampoco tampoco como que no tanto, no me, no me, no me ayuda tanto, solamente.
+
+01:12:35.000 --> 01:12:41.000
+Año mes. quien aplica acá? No sé si han escuchado ustedes.
+
+01:12:41.000 --> 01:12:46.000
+Del R C C de los bancos. No he escuchado eso?
+
+01:12:46.000 --> 01:12:54.000
+yeah, bien, la data del RC. esta particionada por año mes, ¿por qué? Porque los que no han escuchado, ¿cierto?
+
+01:12:54.000 --> 01:12:56.000
+Es la data consolidada.
+
+01:12:56.000 --> 01:13:02.000
+Ita consolidada de todos los bancos. Entonces es como que Pepito.
+
+01:13:02.000 --> 01:13:08.000
+Todo tiene todas esas tarjetas intervamp, B V A este no sé pues qué más bancos hay.
+
+01:13:08.000 --> 01:13:14.000
+Y así sucesivamente de bancos entonces el R C C en ese caso está particionado por año mes.
+
+01:13:14.000 --> 01:13:18.000
+Como tal consolidado todas las cuentas de los gastos.
+
+01:13:18.000 --> 01:13:24.000
+De nosotros las personas ya . Hay otro caso que tú dices, bueno.
+
+01:13:24.000 --> 01:13:28.000
+Soy Spotify. En Spotify como tal.
+
+01:13:28.000 --> 01:13:34.000
+Pues yo necesito como Spotify. Quizás ya.
+
+01:13:34.000 --> 01:13:39.000
+dividir año mes día. Posiblemente quizás también.
+
+01:13:39.000 --> 01:13:46.000
+En minutos, ¿no? En el minuto uno, en el minuto, en, en el minuto 2, lo que fuese, ¿no? Entonces.
+
+01:13:46.000 --> 01:13:49.000
+Va a depender mucho al fin y al cabo.
+
+01:13:49.000 --> 01:13:53.000
+Que tanta granularidad. Realmente necesita el negocio.
+
+01:13:53.000 --> 01:14:03.000
+Y que tanta data tienes? Porque qué pasa? Si si yo sé que prácticamente al minuto yo genero, vamos a poner un caso hipotético.
+
+01:14:03.000 --> 01:14:05.000
+Mmm.
+
+01:14:05.000 --> 01:14:10.000
+700 gigas. Claramente yo no lo yo no lo voy a particionar a la hora.
+
+01:14:10.000 --> 01:14:15.000
+Tendría que partisionar al minuto para que la búsqueda que estamos haciendo sea lo más optimizada.
+
+01:14:15.000 --> 01:14:21.000
+Ya entonces va a depender mucho siempre siempre va a depender mucho del concepto de que.
+
+01:14:21.000 --> 01:14:26.000
+De cuánta cantidad tú tienes. Para poder hacer esa partición.
+
+01:14:26.000 --> 01:14:33.000
+Mayormente, mayormente te quedas con ano mes, mayormente. Hay otros que no, que dicen no, año mes y día.
+
+01:14:33.000 --> 01:14:36.000
+Ya, eso es lo más como convencional como tal, ¿ya?
+
+01:14:36.000 --> 01:14:39.000
+Hasta ahí vamos bien? ¿alguna pregunta? Sí, ya.
+
+01:14:39.000 --> 01:14:50.000
+See, in 2016 por defecto.
+
+01:14:50.000 --> 01:14:57.000
+paqueta. Derek, good.
+
+01:14:57.000 --> 01:15:04.000
+Sí, sí. Sí, exacto, exacto, sin embargo, sin embargo, a veces, a veces todavía ya.
+
+01:15:04.000 --> 01:15:10.000
+A veces todavía hay empresas que utilizan toda la parte de lo que es el el abroad utilizándolo y por qué?
+
+01:15:10.000 --> 01:15:15.000
+Este cuadrito que les voy a compartir. Que es el que yo siempre muestro.
+
+01:15:15.000 --> 01:15:24.000
+Eh. Sí sin ningún problema justo y y justo eso lo que quiero hacer luego con ustedes miren.
+
+01:15:24.000 --> 01:15:28.000
+Ehh no ese no. Hay uno este acá.
+
+01:15:28.000 --> 01:15:35.000
+Este, guárdenlo ya, guárdenlo. Les va a servir harto esto que está acá.
+
+01:15:35.000 --> 01:15:41.000
+Las voy a poner aquí, miren. En esta parte, en este dibujo como tal, tú dices.
+
+01:15:41.000 --> 01:15:49.000
+Yo necesito capacidad de lectura lo más rápido posible para poder leer para poder generar esos ciencia que estoy requiriendo.
+
+01:15:49.000 --> 01:15:54.000
+Entonces porque por eso mismo también los científico de datos pues hay como relación no pues los científico de datos.
+
+01:15:54.000 --> 01:16:03.000
+¿Qué es lo que más le le le preocupa leer los datos más rápido para poder hacer sus análisis, ¿cierto? Ya está. Entonces tú tienes parquet para poder utilizarlos.
+
+01:16:03.000 --> 01:16:08.000
+En el caso que tú dices no mira sabes que yo mi mayor preocupación, mi mayor de cabeza, el.
+
+01:16:08.000 --> 01:16:12.000
+Que sea lo más rápido en escritura. utilizarse en el tema del abro .
+
+01:16:12.000 --> 01:16:15.000
+Y en el otro lado también que tienes el O R C.
+
+01:16:15.000 --> 01:16:19.000
+Porque yo no lo estoy mencionando el tema lo rece sabiendo que también.
+
+01:16:19.000 --> 01:16:23.000
+Es rápido en todo esto ya en el tema de la lectura.
+
+01:16:23.000 --> 01:16:29.000
+Porque al ver al ver al ver ingresado. Delta ley, hood y iceberg.
+
+01:16:29.000 --> 01:16:34.000
+Se va se guardan en parquet. Entonces el O R C.
+
+01:16:34.000 --> 01:16:40.000
+Pueden también se les puede también mencionar que que también quizás pueda ser utilizado.
+
+01:16:40.000 --> 01:16:43.000
+Pero no es tan común por el momento ya.
+
+01:16:43.000 --> 01:16:49.000
+eh dentro, dentro de, de, dentro de los paila en que uno va armando, mayormente siempre es parquet.
+
+01:16:49.000 --> 01:16:55.000
+O es parquet o es sabro, dependiendo más que nada esta esta esta último, la última línea.
+
+01:16:55.000 --> 01:17:02.000
+Yeah, eso, ajá. Y era eh no sé si hasta ahí estamos creo que máximo tenía una pregunta me parece.
+
+01:17:02.000 --> 01:17:32.000
+a lo necesario. Pero en que punto esto resultano se mas constos, porque imagino que si tu… Enemacia particiones.
+
+01:17:40.000 --> 01:17:46.000
+Sí, ya, eh, por eso es importante, por eso es sumamente importante.
+
+01:17:46.000 --> 01:17:52.000
+Saber más o menos cuántos. Por meses, cuántos, cuántos te cuánto promedio?
+
+01:17:52.000 --> 01:17:59.000
+En gigas o enteras no pesa mis datos. Porque si no va a pasar lo que tú comentas no que que también es importante.
+
+01:17:59.000 --> 01:18:04.000
+Y otro punto y para poder también eh contarles un poquito .
+
+01:18:04.000 --> 01:18:07.000
+Mayormente cuando uno hace todo el concepto de base de datos.
+
+01:18:07.000 --> 01:18:10.000
+¿Se acuerdan de los índices?
+
+01:18:10.000 --> 01:18:12.000
+Indices de base de datos. Se acuerda? Bien, ¿qué pasaba con los índices cuál es el mayor el mayor problema de los índices?
+
+01:18:12.000 --> 01:18:32.000
+Big, you know.
+
+01:18:32.000 --> 01:18:37.000
+Yeah.
+
+01:18:37.000 --> 01:18:39.000
+Tiene su pros y contra.
+
+01:18:39.000 --> 01:18:46.000
+Yeah, bien, ¿qué más? Eso es válido, pero ¿qué más? ¿alguno por ahí?
+
+01:18:46.000 --> 01:18:50.000
+¿Qué más? ¿cuál es el, también el dolor que hacen los índices todavía?
+
+01:18:50.000 --> 01:18:58.000
+A pesar de los años. que ya los datos son son pues de, de, de muchos años atrás, ¿no? ¿cuál va a ser es el problema?
+
+01:18:58.000 --> 01:19:06.000
+El tema que cuando uno hay antes que responder, ahí, ahí Julito.
+
+01:19:06.000 --> 01:19:07.000
+Más o menos por ahí, más o menos por ahí, más o menos por ahí, bien.
+
+01:19:07.000 --> 01:19:10.000
+Los grandes paciad.
+
+01:19:10.000 --> 01:19:15.000
+Alguien más por ahí? Sí, les cuento.
+
+01:19:15.000 --> 01:19:20.000
+¿Qué pasa con los índices cuando yo creo, empiezo a crear índices como tal, ya?
+
+01:19:20.000 --> 01:19:23.000
+Digo, voy a crear el indice para esa tabla.
+
+01:19:23.000 --> 01:19:28.000
+Tú lo creas espectacular, te empieza a funcionar y todo eso, bien.
+
+01:19:28.000 --> 01:19:32.000
+Haces el tema lo que se lo llaman la rapidez.
+
+01:19:32.000 --> 01:19:37.000
+Sin embargo, sin embargo. Cuando tú dices oye mira.
+
+01:19:37.000 --> 01:19:41.000
+Voy a, voy a ingresar nuevos registros o voy a añadir columnas.
+
+01:19:41.000 --> 01:19:49.000
+A la tabla, ¿ya? Ya el índice se mueve y vas a tener que dar mantenibilidad mantenibilidad al índice.
+
+01:19:49.000 --> 01:19:56.000
+Es por eso ser sumamente importantes todavía viene viene a ser todavía un tema un tema lo que es la falencia como tal, ¿ya?
+
+01:19:56.000 --> 01:20:00.000
+Del tema de los índices. Entonces, a raíz de esto.
+
+01:20:00.000 --> 01:20:07.000
+Te lo estoy contando. Si estamos hablando de la parte, lo que vamos a ver luego, la parte de lo que es Bisquery per se, ¿ya?
+
+01:20:07.000 --> 01:20:13.000
+Teniendo en cuenta que dentro de Bisquery. Tú armas tu ley house.
+
+01:20:13.000 --> 01:20:16.000
+armas toda ley y todo lo que ya conocen.
+
+01:20:16.000 --> 01:20:20.000
+No, tú tienes, tú sigues teniendo un concepto de qué, de partición.
+
+01:20:20.000 --> 01:20:26.000
+Ya, pero ¿qué pasa con los, con las columnas que yo quiero buscar?
+
+01:20:26.000 --> 01:20:34.000
+Rápido aquí yo particino por fecha vacan. Bien, pero ¿qué pasa con las columnas que yo sé que siempre hago la búsqueda.
+
+01:20:34.000 --> 01:20:39.000
+Y quiero que sea lo más performante. Si yo me fuera al mundo de base de datos.
+
+01:20:39.000 --> 01:20:43.000
+¿Qué pasa con los índices yo en Bisquary no tengo índices, ¿qué tengo?
+
+01:20:43.000 --> 01:20:49.000
+Tengo el concepto de clústeres. No puede ser un Zordin.
+
+01:20:49.000 --> 01:20:53.000
+Eh en donde perdóname en cuál en cuál. En qué parte en los índices en cuál.
+
+01:20:53.000 --> 01:21:07.000
+Ahí me perdí, ¿en qué participa? ¿Cómo estás?
+
+01:21:07.000 --> 01:21:08.000
+Ajá. ah ya ya eso ah ya, ya, ya, perdón, perdón.
+
+01:21:08.000 --> 01:21:13.000
+todos para hacer.
+
+01:21:13.000 --> 01:21:21.000
+eh, directamente mis query no tiene eso, ya, pero ahorita justo ahí les voy a contar qué es lo que se hace para para ese caso.
+
+01:21:21.000 --> 01:21:29.000
+Ahí voy entonces. Si uno quiere como que dices oye yo sé que la columna vamos a poner la columna yo siempre hago búsquedas.
+
+01:21:29.000 --> 01:21:35.000
+Con el D N I siempre hago búsquedas vamos a poner caso hipotético con.
+
+01:21:35.000 --> 01:21:41.000
+La ciudad, siempre hago búsquedas con tal cosa, ya, tú tienes un concepto de lústeres.
+
+01:21:41.000 --> 01:21:45.000
+Pero no es que tú dices oye yo siempre hago búsquedas con diez campos.
+
+01:21:45.000 --> 01:21:48.000
+Yeah, está bien que ya es con 10 campos haga su búsqueda siempre.
+
+01:21:48.000 --> 01:21:54.000
+Pero realmente cuando tú trabajas el concepto de Bisquery como tal, Bisquery te dice yo te voy a dar.
+
+01:21:54.000 --> 01:21:58.000
+Cuatro columnas para que tú puedas crear tu lúster.
+
+01:21:58.000 --> 01:22:03.000
+Que vayas de la más pequeña. A la más grande a qué me refiero.
+
+01:22:03.000 --> 01:22:06.000
+De la más pequeña no va a ser la ciudad, ¿cierto? Será por ejemplo tu cédula.
+
+01:22:06.000 --> 01:22:12.000
+Luego quizás será eh la ciudad. Luego quizás será el país va de chiquito.
+
+01:22:12.000 --> 01:22:15.000
+amas Yante, ¿ya? Entonces eso te va a permitir a ti.
+
+01:22:15.000 --> 01:22:20.000
+Poder hacer la búsqueda que tú estás requiriendo. Y luego, punto importante acá.
+
+01:22:20.000 --> 01:22:24.000
+Cuando tú quieres hacer hacer el tema de ordenar los datos.
+
+01:22:24.000 --> 01:22:29.000
+En todo esto que estamos diciendo. Mayormente pasa.
+
+01:22:29.000 --> 01:22:31.000
+Que yo tendría que hacer quizás.
+
+01:22:31.000 --> 01:22:36.000
+Un round number un con un order by. No para todo esto.
+
+01:22:36.000 --> 01:22:40.000
+Y cuál es el el el el problema de eso.
+
+01:22:40.000 --> 01:22:43.000
+El tema del del performance per se.
+
+01:22:43.000 --> 01:22:47.000
+Yeah, para eso también dentro de Bisquery como tal.
+
+01:22:47.000 --> 01:22:50.000
+Siempre va a ser ideal que tú tengas la partición.
+
+01:22:50.000 --> 01:22:52.000
+Que tengas el llaster per se.
+
+01:22:52.000 --> 01:22:59.000
+ya y básicamente esas 2 cosas para hacer la voz a la búsqueda pues mucho más eficiente.
+
+01:22:59.000 --> 01:23:10.000
+No tienes directamente eso que que comentaba eh eh Sebas no dentro de lo que es Bisquery pero sí en las bases de datos convencionales que podría ser budget, podría ser CQL.
+
+01:23:10.000 --> 01:23:18.000
+eh o podía ser my equal como tal. Y así hasta ahí alguna pregunta hasta ahí estamos bien.
+
+01:23:18.000 --> 01:23:19.000
+Sí, sí, claro.
+
+01:23:19.000 --> 01:23:24.000
+See, I think the thing is…
+
+01:23:24.000 --> 01:23:35.000
+como la gustri.
+
+01:23:35.000 --> 01:23:41.000
+No, esas dos, es por el tema de lo que es BigQuery, esas dos, pero hay, hay, hay otra cosa mucho más chévere.
+
+01:23:41.000 --> 01:23:47.000
+Yeah, yo, mucho más chévere en la siguiente. En el tema de mayormente de base datos.
+
+01:23:47.000 --> 01:23:50.000
+Mayormente que lo que uno hace si yo quiero .
+
+01:23:50.000 --> 01:23:55.000
+Hacer como vamos a ver búsquedas pero esa búsqueda implica unir tablas, ¿cierto?
+
+01:23:55.000 --> 01:24:01.000
+Los famosos Joints. Y que pasa mayormente no sé si ustedes han llegado a ser en algún momento.
+
+01:24:01.000 --> 01:24:06.000
+Queries the queries de queries de queries de su queries de su queries y al final tienes tu tabla final.
+
+01:24:06.000 --> 01:24:10.000
+Sí, mira, yo recuerdo mi vida en mi vida pasada.
+
+01:24:10.000 --> 01:24:16.000
+Mi primera chamba. Era hacer eso, era, era justamente en un eh.
+
+01:24:16.000 --> 01:24:22.000
+En una en una financiera. Y recuerdo que yo yo había salido a la residencia de la universidad.
+
+01:24:22.000 --> 01:24:27.000
+Y a mí la universidad me habían enseñado con las justas dos queries, o sea, una query y una subquery nada más.
+
+01:24:27.000 --> 01:24:39.000
+Y primera chamba, salida de la universidad recién. Si mentirles era query principal su query de su query de su query y su query su query su query no sé cuándo su queries había.
+
+01:24:39.000 --> 01:24:48.000
+Ya yo decía y para entender a todo un parto, o sea era sumamente difícil porque no había ella en ese momento, ¿cierto? No había algo para que te para que te pueda explicar.
+
+01:24:48.000 --> 01:24:55.000
+Entonces, a raíz de eso, ya. Que cual es el el el tema.
+
+01:24:55.000 --> 01:25:04.000
+Mayormente cuando tú pasas de un oracle, ya. De un MySQL de un post de cualquier base de datos convencional.
+
+01:25:04.000 --> 01:25:06.000
+y lo pasas al tema de lo que es BigQuery.
+
+01:25:06.000 --> 01:25:09.000
+Lo pasas tal cual como está tus cuenta lo pasas.
+
+01:25:09.000 --> 01:25:15.000
+Mayormente pasa, ya casi el noventa y ocho por ciento.
+
+01:25:15.000 --> 01:25:19.000
+Que la tú estás buscando y dices oye yo, yo estoy pasando de aquí para Bisquery.
+
+01:25:19.000 --> 01:25:26.000
+¿Por qué estoy buscando que sea rápido? Todo el tema del del ordenamiento, el tema de la búsqueda, entre otras cosas.
+
+01:25:26.000 --> 01:25:29.000
+Y te das con la sorpresa que uy, demoró la vida.
+
+01:25:29.000 --> 01:25:34.000
+Porque demora la vida porque lo que hay que hacer es refactorizar.
+
+01:25:34.000 --> 01:25:37.000
+Y para evitar esos joy dentro de Bisquery .
+
+01:25:37.000 --> 01:25:42.000
+Tú tienes un concepto que vamos a ir luego a ir hablando, estoy ahorita estoy para poder terminar terminar la idea completa.
+
+01:25:42.000 --> 01:25:48.000
+Les voy a mostrar acá, miren esto. Vamos a una imagen para que se entienda más.
+
+01:25:48.000 --> 01:25:54.000
+Acá, miren acá. Copiar dirección de imagen, voy para acá.
+
+01:25:54.000 --> 01:25:59.000
+Qué horrible se ve la foto. Copiar dirección de imagen.
+
+01:25:59.000 --> 01:26:05.000
+Ahora sí, mire, si yo. Lo veo a esta tabla.
+
+01:26:05.000 --> 01:26:10.000
+Que estamos diciendo, ojo, pestañiceja acá. Mira aquí.
+
+01:26:10.000 --> 01:26:14.000
+Es 1 y ahí debemos explicar. Esto es 2.
+
+01:26:14.000 --> 01:26:24.000
+Y esto que está acá es tres. Tú dices, ah el primero tiene que ver el ID, la primera visita, la última visita.
+
+01:26:24.000 --> 01:26:31.000
+una información de una tabla, ¿ya? La información de Tatabra tiene que ver con los países. El pais que visitó quizás no.
+
+01:26:31.000 --> 01:26:37.000
+la información del país, la cantidad de visitas y todo lo que tenga que ver con el tema de país.
+
+01:26:37.000 --> 01:26:41.000
+Tercera tabla tiene que ver con el nombre de producto.
+
+01:26:41.000 --> 01:26:47.000
+Producto el nombre del producto y el total de visitas del producto.
+
+01:26:47.000 --> 01:26:56.000
+Entonces, como puedes observar, tú tienes 3 tablas. Si yo me voy al me voy a lo que yo tenía quizás en en el mundo SQL ya, posiblemente yo tendría que hacer.
+
+01:26:56.000 --> 01:27:01.000
+join the join de join para llegar a mitad de la final, ¿cierto? Ya está.
+
+01:27:01.000 --> 01:27:06.000
+Tú con el concepto de step, en este caso, del staff de lo que es Bisquery te permite poder llegar en.
+
+01:27:06.000 --> 01:27:11.000
+Una sola tabla, este tipo. De registros y tú dices.
+
+01:27:11.000 --> 01:27:15.000
+¿Cómo así? ¿dónde lo puedo apoyar todo eso, Anita?
+
+01:27:15.000 --> 01:27:23.000
+Ya, voy a ir primero por acá. Voy a enseñarles dónde te me fuiste por acá, mire.
+
+01:27:23.000 --> 01:27:29.000
+Es acá para que ustedes lo vayan luego también luego vamos a ver más detalle eso para que vayan revisando para poder cerrar la idea de eso.
+
+01:27:29.000 --> 01:27:33.000
+Miren acá, quitar un ratito.
+
+01:27:33.000 --> 01:27:36.000
+Carga, carga, ¿dón?
+
+01:27:36.000 --> 01:27:42.000
+But on data se rápidamente.
+
+01:27:42.000 --> 01:27:46.000
+Vamos a poner acá UTEC, carambas.
+
+01:27:46.000 --> 01:27:48.000
+full deck.
+
+01:27:48.000 --> 01:27:51.000
+U.S. Data set.
+
+01:27:51.000 --> 01:27:55.000
+Ya está, esto lo voy a cerrar, no lo necesito, chao.
+
+01:27:55.000 --> 01:27:59.000
+Ya está, entonces aquí voy a tirar la tabla que les digo.
+
+01:27:59.000 --> 01:28:04.000
+que hartabra, miren acá. Vamos a poner acá.
+
+01:28:04.000 --> 01:28:12.000
+eh, demo 1 y aquí tienes tu esquema. Y tú dices columnas a poner columna uno ya.
+
+01:28:12.000 --> 01:28:16.000
+¿Qué tipo de registro es? El récord ves?
+
+01:28:16.000 --> 01:28:21.000
+¿Vieron como pueden, por cómo puede estudiar esa, esta, esa estructura que estaba.
+
+01:28:21.000 --> 01:28:26.000
+En este lado utilizando el concepto que lo llaman SAP.
+
+01:28:26.000 --> 01:28:30.000
+No es que aquí tú tienes tipo tipo uy, pero no lo veo ni tal que dice sap.
+
+01:28:30.000 --> 01:28:33.000
+Lo el el tipo de datos se llama stop.
+
+01:28:33.000 --> 01:28:38.000
+Pero cuando tú registras en esto lo ponen lo ponen eh tipo récord ya para esa parte.
+
+01:28:38.000 --> 01:28:42.000
+Anita y una pregunta. Y ese staff que tú comentas.
+
+01:28:42.000 --> 01:28:48.000
+Podrá tener quizás lo siguiente. Vamos a poner eh edad ya.
+
+01:28:48.000 --> 01:28:53.000
+Pueda tener diferente tipo de dato sí. Como Jason exactamente.
+
+01:28:53.000 --> 01:29:01.000
+es como un Jason anidado exacto. Con la exacto y buen punto lo que mencionaste ahí va, iba a llegar.
+
+01:29:01.000 --> 01:29:04.000
+¿Qué pasa con los arrays? ¿cuál es la característica principal del array?
+
+01:29:04.000 --> 01:29:13.000
+Pregunta. almacenar un conjunto de datos, bien, pero ¿cuál es la característica principal de un array como concepto?
+
+01:29:13.000 --> 01:29:18.000
+Se acuerda.
+
+01:29:18.000 --> 01:29:23.000
+Por ahí alguno.
+
+01:29:23.000 --> 01:29:28.000
+Varios tipo objeto ya válido, pero. Pero hay una palabra clave en todo eso.
+
+01:29:28.000 --> 01:29:36.000
+Hay una palabra sumamente clave.
+
+01:29:36.000 --> 01:29:37.000
+No tanto. ¿Quién más le da, quién más, quién más le da?
+
+01:29:37.000 --> 01:29:43.000
+teniente estar juntos.
+
+01:29:43.000 --> 01:29:47.000
+El orden ya válido pero qué más.
+
+01:29:47.000 --> 01:29:54.000
+I mean, la característica particular de la RAI de concepto de array.
+
+01:29:54.000 --> 01:30:02.000
+se pueden recorrer si se puede recorrer claramente. No tanto, o sea, no, no va por ese lado, les cuento.
+
+01:30:02.000 --> 01:30:07.000
+Recuerden la diferencia del del la reiteración arreglo realmente.
+
+01:30:07.000 --> 01:30:15.000
+No, aparte de eso, aparte de eso. Es que cosa que es el mismo tipo de dato.
+
+01:30:15.000 --> 01:30:19.000
+Tú si te hace un array tú no puedes decir a voy a tirar mi array.
+
+01:30:19.000 --> 01:30:23.000
+De, de, no sé, el cero uno eh papá .
+
+01:30:23.000 --> 01:30:28.000
+Tres cuatro, no puedo hacer eso. Tiene que ser el mismo tipo de dato.
+
+01:30:28.000 --> 01:30:32.000
+ya entonces ese mismo concepto de ar de array tú puedes hacer aquí.
+
+01:30:32.000 --> 01:30:34.000
+Tú puedes, si yo le doy clic acá en Steam.
+
+01:30:34.000 --> 01:30:38.000
+Aquí indirectamente yo estoy haciendo un array, ¿de qué? ¿un array de string.
+
+01:30:38.000 --> 01:30:43.000
+Yeah, pero si yo al final. estoy diciendo dentro de todo este conjunto.
+
+01:30:43.000 --> 01:30:49.000
+Dentro de JSON tengo string, tengo quizás, no sé, pues, entero, tengo frot.
+
+01:30:49.000 --> 01:30:51.000
+Tú estás armando ya un strap.
+
+01:30:51.000 --> 01:30:59.000
+Yeah, eso es como la diferencia es importante entender esa partecita, ¿ya? Claro, tiene una red, es un arreglo, permite un orden, sí.
+
+01:30:59.000 --> 01:31:01.000
+Pero tiene que ver más que nada con el tipo de datos.
+
+01:31:01.000 --> 01:31:07.000
+Si yo estoy diciendo que todos son números yo no puedo poner poner por ejemplo a a llegar a esa array.
+
+01:31:07.000 --> 01:31:12.000
+Un un un no podía porque se rompe que cosa todo el tema que estamos diciendo.
+
+01:31:12.000 --> 01:31:17.000
+Yeah? Bien, hasta ahí vamos bien, hasta hay alguna otra pregunta?
+
+01:31:17.000 --> 01:31:18.000
+Sí, sí, chao, cuéntamelo.
+
+01:31:18.000 --> 01:31:32.000
+Professor Rana Consulta. Sarah Rice. que… ingressan elemento por elemento las… ejemplo que izon las actuelizaciones son un mas costosas y 197o en mi query.
+
+01:31:32.000 --> 01:31:37.000
+Bien, cuando tú tienes un, cuando tienes un array como tal, ¿ya?
+
+01:31:37.000 --> 01:31:43.000
+De por sí en general se arrai, sea vamos a llamarle string o lo que fuese.
+
+01:31:43.000 --> 01:31:50.000
+Los updates para Bisquare es más costoso. En general, así sea RAI, así sea, así sea lo que fuese.
+
+01:31:50.000 --> 01:31:58.000
+¿Cómo así? Lo que toses para esos casos, para evitar esa parte como los updates, mayormente lo que se hace.
+
+01:31:58.000 --> 01:32:03.000
+Postizar el el tema de merge que realmente es casi como un tipo un update ya.
+
+01:32:03.000 --> 01:32:05.000
+Tiene menos impacto, sí, que ahí lo vamos a revisar luego.
+
+01:32:05.000 --> 01:32:08.000
+Sin embargo, a veces lo que se recomienda quizás.
+
+01:32:08.000 --> 01:32:16.000
+Es el tema de. eh borrar, borrar, borrar el registro que no te sirve y volver a insertar porque porque al final tu Bisquery.
+
+01:32:16.000 --> 01:32:19.000
+No es una no es una base datos per se es tu ley house.
+
+01:32:19.000 --> 01:32:25.000
+En teoría tu data que insertas en en el en en el en el resultado de Bisquary.
+
+01:32:25.000 --> 01:32:32.000
+No debería eh mutar cierto de ser inmutable en teoría porque a veces pasa.
+
+01:32:32.000 --> 01:32:37.000
+Que te dicen, no mira. Vamos a armar el lay house financiero.
+
+01:32:37.000 --> 01:32:41.000
+Ya hicimos la la la ingesta de los datos.
+
+01:32:41.000 --> 01:32:47.000
+Pero uy el no cuadraba el que estamos ahora no cuadraba en enero.
+
+01:32:47.000 --> 01:32:54.000
+Hay que volver a reprocesar. Todo enero te conviene a ti por temas de rendimiento, por temas de costo eficiencia.
+
+01:32:54.000 --> 01:33:01.000
+Si vas a reprocesar todo, todo, todo enero. Borra la partición, ir inserta, inserta nuevamente.
+
+01:33:01.000 --> 01:33:04.000
+Y tú me puedes decir, oye, ¿pero qué pasaría si de por sí.
+
+01:33:04.000 --> 01:33:11.000
+Repasaría si el negocio me pide a mí. Que haya una trazabilidad.
+
+01:33:11.000 --> 01:33:16.000
+De ese cambio que estamos diciendo. Ahí tu es otra historia.
+
+01:33:16.000 --> 01:33:20.000
+Tú tendrías que habilitar en el concepto que lo llaman, que ya te digo.
+
+01:33:20.000 --> 01:33:29.000
+Ven pa acá C D C Shane Datakatcher. Siempre y cuando, y lo puedes evitar el intento GCP, siempre y cuando, ¿sí?
+
+01:33:29.000 --> 01:33:35.000
+Data siempre y cuando el negocio sea necesidad del negocio en esta parte.
+
+01:33:35.000 --> 01:33:40.000
+Yeah, en general todo el tema de API recuerden es costoso para Bisquery como tal, ¿ya?
+
+01:33:40.000 --> 01:33:45.000
+Yeah, y ya sea raya, sea, ya sea sting, lo que fuese.
+
+01:33:45.000 --> 01:33:50.000
+Ajá eso hasta ahí estamos bien hasta hay alguna otra pregunta?
+
+01:33:50.000 --> 01:33:51.000
+Sí.
+
+01:33:51.000 --> 01:34:01.000
+No questionites. Sierre.
+
+01:34:01.000 --> 01:34:08.000
+Exacto. Exacto, exactamente, exacto.
+
+01:34:08.000 --> 01:34:11.000
+Pero, eh, pero ha pasado y me ha pasado ya.
+
+01:34:11.000 --> 01:34:20.000
+Más que nada la parte financiera. Que a pesar que se que es edad histórica que en teoría debería estar ya cerrada no dice uy hay tengo que hacer un reproceso.
+
+01:34:20.000 --> 01:34:24.000
+Hay que volver a insertar en, en el ata ley, tú dices.
+
+01:34:24.000 --> 01:34:29.000
+Con tu registro dos millones ay Dios mío entonces te conviene mejor.
+
+01:34:29.000 --> 01:34:33.000
+Elimina la partición más barato más barato eliminas y lo voy a insertar.
+
+01:34:33.000 --> 01:34:38.000
+Hay otros que te dicen no sabes que yo quiero tu historia, ah bien, entonces hagamos changer. Ajá.
+
+01:34:38.000 --> 01:34:50.000
+Ya está hasta ahí alguna pregunta? Vamos bien? Bien, vamos a un break de unos diez minutos ya para que vayan vayan al al al baño, tomen su cafecito, ¿no?
+
+01:34:50.000 --> 01:34:55.000
+Volvemos volvemos volvemos. Volvemos.
+
+01:34:55.000 --> 01:35:01.000
+A las 8:53. ¿Ya? Acá.
+
+01:35:01.000 --> 01:35:31.000
+Ya está, los veo al ratito. Gracias.
+
+01:46:04.000 --> 01:46:10.000
+Hola. Continuamos.
+
+01:46:10.000 --> 01:46:16.000
+Hola, hola. Están por acá.
+
+01:46:16.000 --> 01:46:21.000
+Sí, ya está, vamos por aquí ya para poder seguir.
+
+01:46:21.000 --> 01:46:27.000
+Deme un segundo. mhm.
+
+01:46:27.000 --> 01:46:35.000
+Deme un segundito. para subirles.
+
+01:46:35.000 --> 01:46:37.000
+Lo siguiente.
+
+01:46:37.000 --> 01:46:45.000
+mhm mhm.
+
+01:46:45.000 --> 01:46:51.000
+En la última parte, ya. En la última parte como tal.
+
+01:46:51.000 --> 01:46:54.000
+Vamos a hacer la parte de lo que es el data lay par se.
+
+01:46:54.000 --> 01:47:00.000
+Yeah, para esa parte del data lake como tal tenemos lo siguiente.
+
+01:47:00.000 --> 01:47:02.000
+Voy a mostrarles por aquí.
+
+01:47:02.000 --> 01:47:10.000
+Yeah, déjame un segundo.
+
+01:47:10.000 --> 01:47:18.000
+listo. Ya está, entonces.
+
+01:47:18.000 --> 01:47:22.000
+Sabemos que para poder armar todo un tema lo que es data lake, ¿ya?
+
+01:47:22.000 --> 01:47:25.000
+Lo que tienes que tomar en cuenta son las capas.
+
+01:47:25.000 --> 01:47:31.000
+en esas capas que estamos mencionando. Claramente tienes el el hecho de que .
+
+01:47:31.000 --> 01:47:37.000
+El hecho de tres capas como mínimo. Inclusive, si nosotros empezamos a revisar.
+
+01:47:37.000 --> 01:47:40.000
+se llama esa arquitectura la la arquitectura medallio .
+
+01:47:40.000 --> 01:47:44.000
+Esa arquitectura medallion como tal. Y tendrás las capas.
+
+01:47:44.000 --> 01:47:51.000
+Bronce plata y oro. Ya, pero nosotros lo vamos a llevar un poquito distinto.
+
+01:47:51.000 --> 01:48:01.000
+Entonces vamos para acá. En vez está ejecutando eh todos los archivos que estamos mención que están por acá para que usted luego puedan practicar.
+
+01:48:01.000 --> 01:48:06.000
+Vamos a ir a la parte lo que es el data ley per se que va de una otra manera.
+
+01:48:06.000 --> 01:48:09.000
+Eh utilizar utilizar lo que han ido aprendiendo con esto.
+
+01:48:09.000 --> 01:48:15.000
+Más la parte de quema la parte . De comandos nuevos que vamos a ir explicando, ¿ya?
+
+01:48:15.000 --> 01:48:21.000
+Pero para antes de empezar con todo el código voy a mostrarles este slide que creo que es importante.
+
+01:48:21.000 --> 01:48:28.000
+Vamos por acá. está.
+
+01:48:28.000 --> 01:48:36.000
+Acá está adelante, Juan, ¿cómo estás?
+
+01:48:36.000 --> 01:48:41.000
+Eh, sí, sí, sí, sí. van a bajar van a bajar porfa.
+
+01:48:41.000 --> 01:48:50.000
+El que está eh acá. Esto lo voy a poner después un segundo, así, el que está acá, el que lo llaman dataley punto rara.
+
+01:48:50.000 --> 01:48:56.000
+Ese, porfa, ese descargue. Ese descargue ya.
+
+01:48:56.000 --> 01:49:02.000
+Que se descargue entonces. Vamos para acá. La idea de todo esto es que tú puedas implementar un data lake.
+
+01:49:02.000 --> 01:49:10.000
+En esa alta ley tú tendrás que cosa. Tendrás varias capas en la primera capa se le llamará la ninth M P.
+
+01:49:10.000 --> 01:49:15.000
+El otro se llamará Landy. El otro universal y la capa Smar.
+
+01:49:15.000 --> 01:49:23.000
+Independientemente los nombres siempre tienes que tener como tres capas como mínimo. Aquí estamos inclusive considerando un TMP.
+
+01:49:23.000 --> 01:49:27.000
+En S T M P como tal, tú tienes un text file.
+
+01:49:27.000 --> 01:49:32.000
+En otro landing que es más o menos lo que comentaba su compañero el tema abro.
+
+01:49:32.000 --> 01:49:36.000
+Yeah, pero en primera instancia, la primera carga siempre es.
+
+01:49:36.000 --> 01:49:39.000
+That's fine, ya, o un CCB.
+
+01:49:39.000 --> 01:49:47.000
+Luego conviertes a parquet. Y luego el tema lo que es eh haces algún reportería en caso en caso necesitases.
+
+01:49:47.000 --> 01:49:51.000
+La idea de todo esto es que tú vas a tener tres archivos.
+
+01:49:51.000 --> 01:49:56.000
+El archivo persona, el archivo empresa y el archivo de transacciones per se.
+
+01:49:56.000 --> 01:49:59.000
+que hace la persona en su día a día?
+
+01:49:59.000 --> 01:50:05.000
+Cada uno de estos va a ser ingestado en que en HDFS y en hdfs luego.
+
+01:50:05.000 --> 01:50:08.000
+Se va a leer con una tabla en la parte de lo que es hive.
+
+01:50:08.000 --> 01:50:12.000
+Luego de eso que ya tenemos es esa primera approach.
+
+01:50:12.000 --> 01:50:24.000
+Ya se va a hacer que cosa. Lo siguiente en el primer diagrama, en el primer diagrama para la capa universal que estás por acá en la capa universal, que es la capa vamos a poner enriquecida.
+
+01:50:24.000 --> 01:50:27.000
+Tú tendrás lo siguiente, ya tienes descargado tu transacción.
+
+01:50:27.000 --> 01:50:35.000
+Tienes cargado tu persona tienes cargado tu empresa. Todo es el primer proceso va a elaborar una tabla enriquecida.
+
+01:50:35.000 --> 01:50:45.000
+Y en la capa Smart tú elaborarás qué cosa como que ya una consulta per se que quieres que analice. Vamos a poner como que tu reportería de Power BI, tableau, lo que fuese.
+
+01:50:45.000 --> 01:50:51.000
+Yep. Dicho todo esto, ahora sí, vamos a los comandos. Ya vamos para, vamos para acá.
+
+01:50:51.000 --> 01:50:56.000
+Pero se entiende el objetivo que queremos hacer en esta parte.
+
+01:50:56.000 --> 01:51:02.000
+Se entiende esa partecita. Me ayudan con pulgar porfios.
+
+01:51:02.000 --> 01:51:10.000
+Me avisan? Sí, perfecto, miren por acá. Dicho esto, voy a cerrar esto.
+
+01:51:10.000 --> 01:51:16.000
+Also, we'll not y voy a vivir acá.
+
+01:51:16.000 --> 01:51:28.000
+Vamos a ver acá, open folder y voy a ir directamente a esta parte.
+
+01:51:28.000 --> 01:51:30.000
+No.
+
+01:51:30.000 --> 01:51:37.000
+Open folder, ahora sí. Ya está, entonces.
+
+01:51:37.000 --> 01:51:45.000
+tiene varios procesos. Pregunta, ¿para qué servía una chel como tal?
+
+01:51:45.000 --> 01:51:50.000
+Esto, ¿para qué servía una chela? ¿Se acuerda?
+
+01:51:50.000 --> 01:51:52.000
+Excuse this section.
+
+01:51:52.000 --> 01:51:58.000
+Exacto, bien, bien ahí, espérame, espérame, espérame, espérame, ya está.
+
+01:51:58.000 --> 01:52:05.000
+Para poder automatizar las cosas, ya está. Entonces, en el primero vas a tener la Chell que ya conoces, ¿para qué?
+
+01:52:05.000 --> 01:52:10.000
+Pones el tema de tu variable que vas a eso lo vas a correr en Hadoo.
+
+01:52:10.000 --> 01:52:16.000
+Que va a ir dando cada uno de las carpetas de la estructura que tú necesitas.
+
+01:52:16.000 --> 01:52:23.000
+H D F S borras en caso exista. Y empieza a crear eso que estamos comentando, pregunta.
+
+01:52:23.000 --> 01:52:29.000
+El menos P para qué servía. Déjame voy a llamar a otra persona para que también tenga nota.
+
+01:52:29.000 --> 01:52:43.000
+Para acá a ver . El alumno RG, ¿qué alumno será? ¿qué nombre, qué nombre eh tienes, perdóname, el alumno RG que está acá en el zoom?
+
+01:52:43.000 --> 01:52:53.000
+Que para que servía el menos P.
+
+01:52:53.000 --> 01:52:58.000
+Si estás hablando no te escucho.
+
+01:52:58.000 --> 01:53:03.000
+Para que el menos esta partecita de acá? Esto, ¿para qué era eso?
+
+01:53:03.000 --> 01:53:08.000
+¿Te acuerdas?
+
+01:53:08.000 --> 01:53:16.000
+No noté el oro escuchar. Vamos a, si es que, si es que quiere responder, si no tienes problemas con el audio, no hay problema, me lo pones por el chatito.
+
+01:53:16.000 --> 01:53:22.000
+¿Ya? Dame altito, voy a imprimir, no tanto.
+
+01:53:22.000 --> 01:53:33.000
+Dame al eh chance para poder llamar al resto para que también tenga, eh, chance de, de participar, ¿ya? Si no, si no, si no, no contestan, ya te doy para ti la palabra, dame un segundito.
+
+01:53:33.000 --> 01:53:37.000
+El Brian ya participó Diego también.
+
+01:53:37.000 --> 01:53:47.000
+Eh exacto José, exacto, exacto bien. Vamos para acá, ya te, acá te voy a apuntar, Josué Sánchez.
+
+01:53:47.000 --> 01:53:53.000
+Exacto, exactamente, ¿no? es para poder llegar a los directorios.
+
+01:53:53.000 --> 01:54:01.000
+Ay, perdón, es favor. Sí, ahora sí te escucho, ¿cómo estás?
+
+01:54:01.000 --> 01:54:08.000
+Yeah, tranquilo, no, no pasa nada. ¿me regalas tú, me regalas tu nombre, Porfis, para poder ponerte también dentro de, de tu punto?
+
+01:54:08.000 --> 01:54:13.000
+Seeing Rodrigo Guerrez.
+
+01:54:13.000 --> 01:54:14.000
+There it is. E buen de eso.
+
+01:54:14.000 --> 01:54:17.000
+Rodrigo, ¿me repite su apellido, porfa? Okay.
+
+01:54:17.000 --> 01:54:18.000
+O P U E U D.
+
+01:54:18.000 --> 01:54:21.000
+this, ya está. Okay.
+
+01:54:21.000 --> 01:54:27.000
+Yeah. Okay, entonces. Marca, uno va tirando qué cosa para el landing.
+
+01:54:27.000 --> 01:54:35.000
+para el landing de MP, perdón, landing. Luego para la capa universal y luego haces todo el tema de qué cosa nuevamente aquí también para la parte smart.
+
+01:54:35.000 --> 01:54:40.000
+Perfecto, luego. Pregunta.
+
+01:54:40.000 --> 01:54:48.000
+Que hace esta línea de código per se? Cualquiera que quiera participar.
+
+01:54:48.000 --> 01:54:54.000
+Copi copia archivo. Bien, ¿qué más?
+
+01:54:54.000 --> 01:54:55.000
+Copia archivo está súper bien pero que cómo hacías la copia de que de dónde a dónde.
+
+01:54:55.000 --> 01:55:02.000
+Green sun.
+
+01:55:02.000 --> 01:55:06.000
+The Linux, uh, to explore.
+
+01:55:06.000 --> 01:55:12.000
+Exacto, fíjate efe walter y fue julitos para mí aquí está.
+
+01:55:12.000 --> 01:55:18.000
+Exactamente, ¿no? Bien. tiene su archivo que está en Linux, ¿ya?
+
+01:55:18.000 --> 01:55:23.000
+Y lo y vete vamos pa acá y lo vas a pasar en qué cosa a la ruta que está.
+
+01:55:23.000 --> 01:55:27.000
+en HDFS, ¿ya? Por eso que pones el menos puts.
+
+01:55:27.000 --> 01:55:34.000
+Y luego acá para que listas recuerda si tú quieres que te dé el detalle de todas las carpetas que hay dentro del mismo.
+
+01:55:34.000 --> 01:55:42.000
+Tú tienes el menos erre. Ya pero el R mayúscula porque pones R minúscula es que hay sensitive no te lo va a aceptar.
+
+01:55:42.000 --> 01:55:50.000
+Hemos al otro en esta parte se parece a lo que usted ya, ya conocen y han ido trabajando súper bien, voy a voy a esto.
+
+01:55:50.000 --> 01:55:53.000
+En esto tú que lo que vas a hacer.
+
+01:55:53.000 --> 01:56:00.000
+Borra la tabla, borras ya la tabla en la tabla volteas la la borras la base de datos, la vuelves a crear.
+
+01:56:00.000 --> 01:56:05.000
+Y tras cada uno de las. Columnas, perdóname de las tablas que necesitas trabajar.
+
+01:56:05.000 --> 01:56:10.000
+persona. Lo insertas.
+
+01:56:10.000 --> 01:56:17.000
+empresa insertas lo que ya conoces. Y haces en la alteración de la parte transaccional.
+
+01:56:17.000 --> 01:56:22.000
+Sabemos si yo reviso este PDF ya este PDF por acá.
+
+01:56:22.000 --> 01:56:29.000
+Tú tienes data particionada. Pero recuerda que en esta parte en la carga inicial tú no vas a tu no vas a.
+
+01:56:29.000 --> 01:56:34.000
+Crear la data particionada, pasarte a lo tal cual ya sin ninguna.
+
+01:56:34.000 --> 01:56:38.000
+Party, si o es por eso que como puedes observar acá.
+
+01:56:38.000 --> 01:56:40.000
+Esa eh.
+
+01:56:40.000 --> 01:56:44.000
+Tabra transacción tú no le estás estudiando particionada.
+
+01:56:44.000 --> 01:56:46.000
+Yeah, luego insertas.
+
+01:56:46.000 --> 01:56:51.000
+Y terminó todo esto aquí tienes que cosa la capa de qué, la capa de landing.
+
+01:56:51.000 --> 01:56:54.000
+T M P ¿ya?
+
+01:56:54.000 --> 01:56:59.000
+Esos dos vamos bien, es como el resumen de lo que hemos estado viendo, ¿sí?
+
+01:56:59.000 --> 01:57:03.000
+Me ayudan con pulgar porfa para pasarlo todo perfecto vamos al landing.
+
+01:57:03.000 --> 01:57:09.000
+En el caso del landing como tal. Ya y aquí voy, me voy a atender un poco.
+
+01:57:09.000 --> 01:57:14.000
+que es algo nuevo, sí, en esta, en tanto la 15 como la de adelante.
+
+01:57:14.000 --> 01:57:18.000
+Tienen en la en la línea donde dice comando ejecución.
+
+01:57:18.000 --> 01:57:23.000
+Esta parte de acá y que significa esto? Significa lo siguiente.
+
+01:57:23.000 --> 01:57:26.000
+Si bien es cierto con nosotros hemos estado trabajando.
+
+01:57:26.000 --> 01:57:29.000
+e ingresando a lo que es.
+
+01:57:29.000 --> 01:57:34.000
+Hive, ya. Yo ponía.
+
+01:57:34.000 --> 01:57:41.000
+Ingresaba la chel ponía la palabra hive. Esta palabra acá y empezó a ejecutar cada uno.
+
+01:57:41.000 --> 01:57:47.000
+De los comandos. Pero lo que tú quieres es que sea de forma automatizada, ¿cierto?
+
+01:57:47.000 --> 01:57:51.000
+Ya está. Entonces, para que tú puedas ejecutar ese punto, ese QL.
+
+01:57:51.000 --> 01:57:55.000
+Que es todo tu código que lo que tú haces.
+
+01:57:55.000 --> 01:57:58.000
+Billy menos su de la parte de usuario.
+
+01:57:58.000 --> 01:58:03.000
+JBC, recuerda que es una, de una u otra forma es una base de datos JBS.
+
+01:58:03.000 --> 01:58:09.000
+hive-F por el tema de los de los del del archivo del file.
+
+01:58:09.000 --> 01:58:14.000
+El nombre del archivo. Ya, ¿y qué cosa?
+
+01:58:14.000 --> 01:58:19.000
+Como eso está esperando que tenga un parámetro, tú utilizarás.
+
+01:58:19.000 --> 01:58:22.000
+En caso sea necesario, guión.
+
+01:58:22.000 --> 01:58:29.000
+Haikov el nombre del parámetro. Y el valor que le estás mandando.
+
+01:58:29.000 --> 01:58:37.000
+En esta parte si yo corro esto. Por más que yo le ponga el parámetro que Sanita Quevedo no lo va a tomar, ¿por qué?
+
+01:58:37.000 --> 01:58:42.000
+Porque esta línea que se tea ese parámetro está comentada.
+
+01:58:42.000 --> 01:58:46.000
+Así que en ese caso usted solamente van a correr.
+
+01:58:46.000 --> 01:58:54.000
+Hasta acá, pero en caso adquieran algún parámetro. para correr dentro de hive y que se pueda tener en el código sería de la forma que les estoy comentando.
+
+01:58:54.000 --> 01:59:05.000
+Yeah, bajo, bajo, bajo. Esa parte lo conocen del otro strip que estamos diciendo. Yo voy a hacer un tema de comprensión de archivos.
+
+01:59:05.000 --> 01:59:07.000
+Entonces aquí ya cambia y se parece mucho a lo que ya veníamos diciendo.
+
+01:59:07.000 --> 01:59:10.000
+Te dicen, la arquitectura que tú quieres armar.
+
+01:59:10.000 --> 01:59:16.000
+The test files abro. Quiero una las preguntas, oye, ¿puedo pasar de este tipo de dato a este otro tipo? Sí.
+
+01:59:16.000 --> 01:59:20.000
+Y que lo que haces? Pasas. Eh tie a la tabla.
+
+01:59:20.000 --> 01:59:25.000
+Abro localizado. Insertas.
+
+01:59:25.000 --> 01:59:28.000
+tu tabla que tenías el landing de M P.
+
+01:59:28.000 --> 01:59:34.000
+En formato textfier? Lo insertas a la tabla que está creada en.
+
+01:59:34.000 --> 01:59:38.000
+Abro y ya . Y luego lo imprimes, bajas.
+
+01:59:38.000 --> 01:59:44.000
+La misma historia para la parte que. De empresa y abajo para acá.
+
+01:59:44.000 --> 01:59:50.000
+Y para la parte de transacción. Mira acá en la parte transacción.
+
+01:59:50.000 --> 01:59:57.000
+Tú se estás utilizando. Lo que se le conoce como que.
+
+01:59:57.000 --> 02:00:03.000
+Lo que se le conoce como la partición. Fecha y poniendo.
+
+02:00:03.000 --> 02:00:06.000
+Aquí también el tema del snap.
+
+02:00:06.000 --> 02:00:17.000
+Yeah. Otro punto. Para insertar, como lo veniamos revisando en los otros tipos decía que los strippers como que ustedes vayan practicando y todo eso, este era como el resumen de todo lo que habíamos visto.
+
+02:00:17.000 --> 02:00:23.000
+Y ser into table? El nombre de la tabla, la partición per se.
+
+02:00:23.000 --> 02:00:30.000
+Irse el asterisco fro y ya está. Luego tú dices no quiero quiero que me muestre las el total de particiones tú lo que pondrás.
+
+02:00:30.000 --> 02:00:37.000
+show partillo y ya está. Ya está este es este otro tipo se llega a entender.
+
+02:00:37.000 --> 02:00:40.000
+Estas dos puntos el cual se llega a entender.
+
+02:00:40.000 --> 02:00:45.000
+Para poder explicar el el los siguientes. Y luego ejecutamos todo.
+
+02:00:45.000 --> 02:00:46.000
+Sí, claro, ah ya, el snap es para, ¿se acuerdan de que yo les, les había contado la parte.
+
+02:00:46.000 --> 02:00:51.000
+Una consulta quero es napi.
+
+02:00:51.000 --> 02:00:56.000
+Que yo cuando comparto archivos, muchos archivos es un punto raro, un punto zip.
+
+02:00:56.000 --> 02:01:02.000
+Cierto ya el snapy es justo lo que comenta eh Jorge el tema de la compresión de archivos.
+
+02:01:02.000 --> 02:01:09.000
+para que sea como pese menos la tabla. Para eso es aquí uno puede poner punto rar como tal, mayormente se utiliza el snappy.
+
+02:01:09.000 --> 02:01:13.000
+Hay otros mecanismos de compresión, sí, pero el más conocido es Snapi.
+
+02:01:13.000 --> 02:01:19.000
+Ajá nos ahí sí tienen alguna otra pregunta se entendió hasta esa parte.
+
+02:01:19.000 --> 02:01:21.000
+¿Sí?
+
+02:01:21.000 --> 02:01:26.000
+Oye, ya está. Vamos a poner también a Jorge su participación, ya está.
+
+02:01:26.000 --> 02:01:32.000
+Entonces, seguimos. Vamos al otro. Ven para aquí.
+
+02:01:32.000 --> 02:01:40.000
+Mira acá. En esta parte que estamos diciendo, tú vas a hacer que goza la capa universal. En la capa universal.
+
+02:01:40.000 --> 02:01:44.000
+Como tal, que es este que está por acá, vas a hacer lo siguiente.
+
+02:01:44.000 --> 02:01:47.000
+Que lo que tú tienes lo mismo del otro.
+
+02:01:47.000 --> 02:01:50.000
+En la capa universal y aquí viene el parquet.
+
+02:01:50.000 --> 02:01:53.000
+Y acá te voy a poner lo siguiente mira esto.
+
+02:01:53.000 --> 02:02:02.000
+Storage has abro. Tú necesariamente necesitas el esquema guardado teniendo en algún lado ese esquema, porque mira.
+
+02:02:02.000 --> 02:02:05.000
+Aquí ya se da tabla y no pone las columnas.
+
+02:02:05.000 --> 02:02:11.000
+Anita pero no le puedo poner paréntesis columnas no sé cuánto no no no es parte del mismo abro.
+
+02:02:11.000 --> 02:02:17.000
+Qué diferente del parquet. Que table toda esa parte que está acá.
+
+02:02:17.000 --> 02:02:20.000
+Todas las columnas que tú quieres.
+
+02:02:20.000 --> 02:02:22.000
+Storage Azparquet.
+
+02:02:22.000 --> 02:02:32.000
+La localización. Las, el tema de lo que son las, eh, los hizo que tiene la, la, lo, la, lo, los mismos conceptos que utilizan en la parte Python.
+
+02:02:32.000 --> 02:02:39.000
+Ya, y la parte de compresión. Y luego porque tienes que insertar a esa tabla persona.
+
+02:02:39.000 --> 02:02:43.000
+Haces toda una query ya toda una query para que insertes a tu tabla.
+
+02:02:43.000 --> 02:02:47.000
+Final y luego se usa el asterisco para que lo puedas imprimir.
+
+02:02:47.000 --> 02:02:51.000
+Y ya está. Lo mismo pa la parte empresa.
+
+02:02:51.000 --> 02:02:56.000
+En la parte empresa que es parquet. Que a la tabla en parquet.
+
+02:02:56.000 --> 02:02:59.000
+Ya e insertas.
+
+02:02:59.000 --> 02:03:04.000
+la base de datos, el nombre de la tabla.
+
+02:03:04.000 --> 02:03:09.000
+Y se le de lo que necesitas. y luego nuevamente un ser asterisco front.
+
+02:03:09.000 --> 02:03:12.000
+Vamos para el otro lado el tema de transacción.
+
+02:03:12.000 --> 02:03:18.000
+Que tienes aquí. Hay 10 personas, hay 10 empresa.
+
+02:03:18.000 --> 02:03:24.000
+Y el monto. Yo no estoy poniendo la fecha ya, miren en esta parte.
+
+02:03:24.000 --> 02:03:30.000
+Yo lo pongo la fecha en esta parte que estamos hablando porque la fecha para mí es mi partición.
+
+02:03:30.000 --> 02:03:37.000
+Cuando sea mi partición yo no lo voy a poder nombrar nuevamente acá cuando yo sé que esa columna es partición.
+
+02:03:37.000 --> 02:03:40.000
+Entonces, lo pongo en esto de acá.
+
+02:03:40.000 --> 02:03:46.000
+Yeah, otro punto importante. Cuando yo ya voy a insertar aquí aquí estoy tirando la tabla.
+
+02:03:46.000 --> 02:03:57.000
+Parquet particionada por fecha. Segundo punto, cuando yo ya voy a insertar recuerda ya tiene que estar el orden.
+
+02:03:57.000 --> 02:04:04.000
+En este caso y mira acá. aquí creo la tabla y no está.
+
+02:04:04.000 --> 02:04:11.000
+No está dentro. De la, de las columnas no está la columna fecha.
+
+02:04:11.000 --> 02:04:18.000
+Perfecto, en esta parte que estamos hablando. Que que los al momento de insertarlos si lo tendrás que considerar.
+
+02:04:18.000 --> 02:04:23.000
+Selec hay de empresa. Ya hay de persona perdón .
+
+02:04:23.000 --> 02:04:25.000
+hay empresa.
+
+02:04:25.000 --> 02:04:31.000
+Monto y la fecha. Porque necesariamente tienes que llamar a la fecha K.
+
+02:04:31.000 --> 02:04:35.000
+para que esa fecha que tú pusiste al último.
+
+02:04:35.000 --> 02:04:38.000
+Como, como vieron, se pueda ir a la parte de la.
+
+02:04:38.000 --> 02:04:44.000
+Partición per se ya. Y luego, ¿qué cosa?
+
+02:04:44.000 --> 02:04:46.000
+Lo lo haces un ser asterisco from a la tabla.
+
+02:04:46.000 --> 02:04:52.000
+Ya y nuevamente para ver las particiones. Un show partition y ya está.
+
+02:04:52.000 --> 02:04:57.000
+Esa parte se llega a entender hasta ahí estamos bien.
+
+02:04:57.000 --> 02:05:03.000
+Hasta estamos bien esa partecita. Ah, sí, sí, vamos nuevamente.
+
+02:05:03.000 --> 02:05:08.000
+Si vamos nuevamente, vamos, sí, sí, vamos nuevamente. Así vamos nuevamente.
+
+02:05:08.000 --> 02:05:14.000
+Cuando ustedes ya en la tabla ya. De por sí yo tendría que poner las columnas.
+
+02:05:14.000 --> 02:05:23.000
+Columna uno, dos, tres, cuatro, etcétera. Yo sé que mi que la fecha como tal es una columna más.
+
+02:05:23.000 --> 02:05:26.000
+Pero es una columna que me va a servir a mí para partición.
+
+02:05:26.000 --> 02:05:31.000
+Es por eso mismo en este caso yo no estoy poniendo.
+
+02:05:31.000 --> 02:05:35.000
+En el listado de columnas. la fecha lo pongo recién acá.
+
+02:05:35.000 --> 02:05:40.000
+Ya, hasta ahí vaca. Vamos para acá.
+
+02:05:40.000 --> 02:05:45.000
+Voy a poner esto aca mas arriba así. Entonces.
+
+02:05:45.000 --> 02:05:51.000
+Seguimos en esto. Yo ya tiene la tabla particionada por fecha.
+
+02:05:51.000 --> 02:05:57.000
+Me toca a mí ingestar, ¿cierto? Ya está. Entonces, ¿qué es lo que yo hubiese hecho?
+
+02:05:57.000 --> 02:06:02.000
+A simple vista si tengo tres columnas, columna uno, dos y tres.
+
+02:06:02.000 --> 02:06:10.000
+Yo hubiese puesto en el sell asterisco from se le columna uno se le columna dos, se le columna tres, ¿cierto?
+
+02:06:10.000 --> 02:06:16.000
+Pero nos falta la la otra columna. esta columna que está acá es por eso mismo.
+
+02:06:16.000 --> 02:06:21.000
+que la última columna. coma va a ser la columna.
+
+02:06:21.000 --> 02:06:25.000
+Que va a permitirte a ti poder llenar la partición.
+
+02:06:25.000 --> 02:06:30.000
+A pesar que yo tiré la tabla con tres campos, pero la tengo particionada.
+
+02:06:30.000 --> 02:06:32.000
+Ya eso significa esa partecita, ajá.
+
+02:06:32.000 --> 02:06:34.000
+Yep. ¿mejor, ¿sí?
+
+02:06:34.000 --> 02:06:39.000
+Vamos bien eso bien. Vamos para acá, entonces.
+
+02:06:39.000 --> 02:06:45.000
+Hasta ahí ya tenemos el el diploy. Bien el landing T M P.
+
+02:06:45.000 --> 02:06:49.000
+El Anding, el universal nos falta la parte de Smart.
+
+02:06:49.000 --> 02:06:54.000
+Entonces voy acá. En eso que estamos diciendo, en la capa Smart.
+
+02:06:54.000 --> 02:07:00.000
+Aquí realmente solamente es creación de la base de datos, no hay, no hay ninguna lógica per se, ¿ya?
+
+02:07:00.000 --> 02:07:08.000
+Voy acá, acá está. esa capa smart es como que lo tiene porque me dice que tengo que tirarla pero no le he puesto ninguna lógica.
+
+02:07:08.000 --> 02:07:17.000
+Porque porque eh. En el P D F dice un tema que eh utilizarlo el tema lo que es par pero todavía no no les quiero te voy a enseñar la parte de spar.
+
+02:07:17.000 --> 02:07:22.000
+Para poder hacerlo en en en en otro lado ya pa no ir complicándoles.
+
+02:07:22.000 --> 02:07:27.000
+Luego, miren acá. Luego lo que tú haces que cosa es.
+
+02:07:27.000 --> 02:07:34.000
+Tú dices yo tengo. Uno dos tres cuatro cinco.
+
+02:07:34.000 --> 02:07:40.000
+Cinco cosas que tengo que ejecutar. Yo no voy a estar corriendo uno por uno, ¿cierto?
+
+02:07:40.000 --> 02:07:43.000
+Porque al final te puedes te puedes olvidar de alguno .
+
+02:07:43.000 --> 02:07:52.000
+Two agrupas, haces una tarea, una Chel. Que va a agrupar cada uno de los procesos que quieres que corra, ¿cómo así?
+
+02:07:52.000 --> 02:07:58.000
+Dices, se todo el parámetro. Empiezo a hacer la ejecución.
+
+02:07:58.000 --> 02:08:07.000
+cada uno de estos, el primero. del diploy, el segundo que hará esta parte del, de lo que vimos de landing TMP.
+
+02:08:07.000 --> 02:08:11.000
+El otro, el landing per se. El otro el universal y el otro el smart.
+
+02:08:11.000 --> 02:08:19.000
+Es como ponerlo todo. En un solo strip ya para que vaya a las a que haga la ejecución y yo lo lo ejecuto.
+
+02:08:19.000 --> 02:08:26.000
+Pregunta si yo tengo estos estos seis archivos. Y quiero que se ejecute todo esto.
+
+02:08:26.000 --> 02:08:31.000
+Llamaría a todos o llamaría solamente el que dice diecinueve execute all.
+
+02:08:31.000 --> 02:08:40.000
+Y por qué exacto. Exactamente exacto dicho todo esto ahora sí vamos a probarlo ya, bien.
+
+02:08:40.000 --> 02:08:45.000
+Entonces vamos para acá, voy por acá. Cierro esto.
+
+02:08:45.000 --> 02:08:51.000
+Y voy para acá, esto los, para acá, pero donde me fuiste aquí.
+
+02:08:51.000 --> 02:08:58.000
+Acá, acá con celo. Ya está, pongo storage, esto ahora estoy grabando data tablets.
+
+02:08:58.000 --> 02:09:02.000
+la tabla de Dataproc. acá está, clic aquí.
+
+02:09:02.000 --> 02:09:08.000
+ya está. Ya eh Juan se creó tu cluster, ¿sí?
+
+02:09:08.000 --> 02:09:11.000
+termina tras tu clúster, ya vaca.
+
+02:09:11.000 --> 02:09:12.000
+Yeah.
+
+02:09:12.000 --> 02:09:13.000
+People should have seen clarity.
+
+02:09:13.000 --> 02:09:18.000
+El resto tiene su rastro también activo? Sí, ya.
+
+02:09:18.000 --> 02:09:23.000
+Si no, ya, hagan clic. En el lúster, en el nombre.
+
+02:09:23.000 --> 02:09:33.000
+Ya, Pete que cargue. Carga, carga y en la parte donde dice virtual virtual machine instance.
+
+02:09:33.000 --> 02:09:40.000
+En esto. Aquí donde dices S C H, hagan clic acá, ¿ya?
+
+02:09:40.000 --> 02:09:47.000
+Vean que cargue entonces. Una vez que cargue los datos que vas a subir ya, los datos que vas a subir.
+
+02:09:47.000 --> 02:09:57.000
+Son los siguientes, vamos a autorizar primero. que cargue.
+
+02:09:57.000 --> 02:10:00.000
+Yeah. Entonces, ¿qué datos tengo que subir, Anita?
+
+02:10:00.000 --> 02:10:08.000
+Persona, empresa y las transacciones, ¿cierto? En su, en su.
+
+02:10:08.000 --> 02:10:10.000
+¿Cómo se llama en su plataforma?
+
+02:10:10.000 --> 02:10:15.000
+Ustedes tienen los, la carpeta de datos. Que van a subir empresa.
+
+02:10:15.000 --> 02:10:21.000
+Persona punto data. Y transacciones ya en otras palabras.
+
+02:10:21.000 --> 02:10:25.000
+Sobre clic acá, vamos por acá.
+
+02:10:25.000 --> 02:10:33.000
+data set, persona.
+
+02:10:33.000 --> 02:10:36.000
+Las transacciones primero, ya lo voy a ir subiendo.
+
+02:10:36.000 --> 02:10:42.000
+Vayan subiendo sus datos, porfa, para poder, poder, poder, este, estar iguales. Vayan subiendo sus datitos, ¿ya?
+
+02:10:42.000 --> 02:10:45.000
+upload file, sus transacciones.
+
+02:10:45.000 --> 02:10:47.000
+But it's not punto Datapos right?
+
+02:10:47.000 --> 02:10:56.000
+Persona punto data exacto persona punto data. Ya, eh, empresa punto data.
+
+02:10:56.000 --> 02:11:04.000
+Y también los, los esquemas de los abros. Que era esta parte, ¿se acuerdan? Que era esto?
+
+02:11:04.000 --> 02:11:07.000
+donde te me fuistes?
+
+02:11:07.000 --> 02:11:12.000
+Racá, entonces, ¿qué más? Que ya te voy a decir, ya te voy a decir cuáles, ¿ya?
+
+02:11:12.000 --> 02:11:16.000
+Los esquemas, las acción esta. Y esta parte acá, ya te digo.
+
+02:11:16.000 --> 02:11:20.000
+Eh. mhm una empresa.
+
+02:11:20.000 --> 02:11:22.000
+Persona.
+
+02:11:22.000 --> 02:11:26.000
+Persona, persona.
+
+02:11:26.000 --> 02:11:28.000
+Um, acá.
+
+02:11:28.000 --> 02:11:31.000
+By a.
+
+02:11:31.000 --> 02:11:33.000
+Sí, ahorita solamente eso y adicional. Ajá, ya te voy a, les voy a pasar que creo que no les subí.
+
+02:11:33.000 --> 02:11:39.000
+this.
+
+02:11:39.000 --> 02:11:45.000
+esta que está acá. Solito un segundo, ¿dónde está?
+
+02:11:45.000 --> 02:11:50.000
+Yo qué sé, esas me faltó. me faltó el esquema del abro un segundo.
+
+02:11:50.000 --> 02:11:54.000
+Ya se los bajo, lo voy a pasar por acá y luego ahorita lo voy a subir también a la plataforma.
+
+02:11:54.000 --> 02:11:59.000
+¿Ya? Espéreme carga, carga.
+
+02:11:59.000 --> 02:12:04.000
+Está acá. Nos falta eso.
+
+02:12:04.000 --> 02:12:10.000
+Esta que está acá. Que también se los, se lo voy a pasar ahorita.
+
+02:12:10.000 --> 02:12:14.000
+ay. Acá está.
+
+02:12:14.000 --> 02:12:19.000
+descargar.
+
+02:12:19.000 --> 02:12:25.000
+Descargar, ya está y el último. que es transacciones.
+
+02:12:25.000 --> 02:12:30.000
+Que eso no va a pasar, ya dame un segundo, estoy descargando acá de, de mi, de midday.
+
+02:12:30.000 --> 02:12:35.000
+Porque eso, eso sí me, me faltó descar, eh, ponerles.
+
+02:12:35.000 --> 02:12:40.000
+Segundito. Ya está, ahora sí, les voy a subir para acá.
+
+02:12:40.000 --> 02:12:45.000
+Y luego se los hubo también la plataforma ahorita mismo.
+
+02:12:45.000 --> 02:12:50.000
+Ajá. Ahí está.
+
+02:12:50.000 --> 02:12:55.000
+Ahí está. Y ahí está.
+
+02:12:55.000 --> 02:12:59.000
+Yeah, esos archivos también súbanlo, porfa, ¿ya? Esos también súbanlo.
+
+02:12:59.000 --> 02:13:03.000
+para que pueda, eh, tener, tener el tema de la bro que estoy comentándoles.
+
+02:13:03.000 --> 02:13:08.000
+Entonces vamos a subir esos también, que les acabo de compartir.
+
+02:13:08.000 --> 02:13:12.000
+Descargas.
+
+02:13:12.000 --> 02:13:20.000
+1 por 1 ahí está. También el otro.
+
+02:13:20.000 --> 02:13:25.000
+También y también el otro. que es acá ya está.
+
+02:13:25.000 --> 02:13:34.000
+Esos archivos suban por oficia? Y me avisa, yo voy cargándoles para que les quede en su plataforma también.
+
+02:13:34.000 --> 02:13:37.000
+Ujum.
+
+02:13:37.000 --> 02:13:43.000
+archivos, subir archivos.
+
+02:13:43.000 --> 02:13:48.000
+listo para llegar.
+
+02:13:48.000 --> 02:13:52.000
+Sí lo pueden descargar por el zoom, ¿cierto? Si les permiten, ¿sí?
+
+02:13:52.000 --> 02:14:02.000
+Sí, ya chévere. mientras que voy terminando de subir, cosa que también les queda también por él.
+
+02:14:02.000 --> 02:14:05.000
+A ver, dame un segundo, dame un segundito, un segundito.
+
+02:14:05.000 --> 02:14:07.000
+A ver, a ver. Una, dos.
+
+02:14:07.000 --> 02:14:10.000
+Persona.
+
+02:14:10.000 --> 02:14:18.000
+3 4 5 6 7 8 son 8. Son ocho, son ocho, son ocho, son ocho.
+
+02:14:18.000 --> 02:14:21.000
+Uh-huh.
+
+02:14:21.000 --> 02:14:22.000
+Y también suba, ya también, o sea. Son 8, acá está, ¿no?
+
+02:14:22.000 --> 02:14:26.000
+Sure, I don't know.
+
+02:14:26.000 --> 02:14:30.000
+Y suban también el que dice transacciones solamente punto data por sí solito.
+
+02:14:30.000 --> 02:14:35.000
+Yeah, que es este que está acá, donaciones punto data.
+
+02:14:35.000 --> 02:14:39.000
+Voy a subirlo, serían 9, 9 archivos.
+
+02:14:39.000 --> 02:14:46.000
+Sonciones punto data.
+
+02:14:46.000 --> 02:14:58.000
+Sounds donde te fuiste a transacciones, acá estás. Ya está 9 archivos por fin ya.
+
+02:14:58.000 --> 02:14:59.000
+Cuéntamelo, ¿cómo estás?
+
+02:14:59.000 --> 02:15:10.000
+What's that? Uh, eh… sono do.
+
+02:15:10.000 --> 02:15:14.000
+Ah no no no esa es esta mira las acciones guión dos mil dieciocho.
+
+02:15:14.000 --> 02:15:18.000
+Es eso, sino que está cortado el nombre, eso está que está acá, mira.
+
+02:15:18.000 --> 02:15:23.000
+Es esta cosita. y esas y esas 3 cositas de acá.
+
+02:15:23.000 --> 02:15:29.000
+Ajá, eso. Sí, sí, sí, solo que el nombre se corta, pues, ¿no? Ajá.
+
+02:15:29.000 --> 02:15:40.000
+Está cambia, espérame, espérame. Espérame dónde te me fuiste aquí?
+
+02:15:40.000 --> 02:15:43.000
+en esta carpeta que dices datasets puntor.
+
+02:15:43.000 --> 02:15:44.000
+Ah, that doesn't control therapy. Yeah. Yeah.
+
+02:15:44.000 --> 02:15:48.000
+Uh-huh, ahí está, ajá. Igual se los paso por acá para que les quede.
+
+02:15:48.000 --> 02:15:55.000
+Miles ha pasado ahí. Pero mejor bajen ese porque es un poquito pesada así que.
+
+02:15:55.000 --> 02:15:59.000
+Y al igual se los he pasado para que lo tengan.
+
+02:15:59.000 --> 02:16:07.000
+Presa y persona puta. Y luego que hacen eso, ya luego que hacen eso, que subieron sus datos.
+
+02:16:07.000 --> 02:16:13.000
+Suban sus archivos a Shell. Vamos a subir a Chel. Blast fight?
+
+02:16:13.000 --> 02:16:31.000
+Esto que está por acá. Vamos a subir a Shelpérame.
+
+02:16:31.000 --> 02:16:35.000
+Espérate, quiero ver que, que he subido, ya me olvidé ella.
+
+02:16:35.000 --> 02:16:42.000
+Transacciones a ver persona transven personas ven. Eso es data, personal data, sí está perfecto.
+
+02:16:42.000 --> 02:16:50.000
+Esos son los archivos que deberían subir. Y luego, después que subieron eso, ya vamos a subir.
+
+02:16:50.000 --> 02:16:58.000
+las que justo estamos diciendo. Espérame.
+
+02:16:58.000 --> 02:17:06.000
+que serían todos estos acá? todo esto.
+
+02:17:06.000 --> 02:17:08.000
+Desde la 14 hasta la diecinueve, ¿ya?
+
+02:17:08.000 --> 02:17:14.000
+No.
+
+02:17:14.000 --> 02:17:19.000
+Eh. Ah, sí, tienes razón.
+
+02:17:19.000 --> 02:17:23.000
+Tiene razón, tiene razón, modifíquelo con el nombre de ustedes, porfa.
+
+02:17:23.000 --> 02:17:26.000
+para que salga con su nombre, pues, ¿no? Antes que lo suba.
+
+02:17:26.000 --> 02:17:30.000
+Yeah, porque en algunos como que sí tiene el, el parámetro.
+
+02:17:30.000 --> 02:17:38.000
+Ya, pero hay otros. Que que como que no tiene el, el, el parámetro setiado vamos a llamarlo, ¿no?
+
+02:17:38.000 --> 02:17:44.000
+Uh-huh, moifiquen cada uno, cada uno en el del quince para, para el.
+
+02:17:44.000 --> 02:17:48.000
+Para el dieciocho, póngale el nombre de ustedes ajá.
+
+02:17:48.000 --> 02:17:52.000
+Ponen así con dolefe. Contolerre, perdón.
+
+02:17:52.000 --> 02:18:01.000
+No, como sacan subray? A esta. Control H. Y lo reemplazan, ¿no? Todo lo que quería Anita queda con el nombre de ustedes, ¿ya?
+
+02:18:01.000 --> 02:18:05.000
+para que le salga con su nombre, ajá. Y buen punto que me dijiste, se me había olvidado.
+
+02:18:05.000 --> 02:18:11.000
+Ajá. Desde el el el.
+
+02:18:11.000 --> 02:18:16.000
+Realmente desde el quince, ¿por qué? Porque el catorce si tiene parámetros.
+
+02:18:16.000 --> 02:18:19.000
+Entonces como que, como tiene parámetros, pues no pasa nada.
+
+02:18:19.000 --> 02:18:23.000
+Ya, pero sí tengan el, el, sí tengan en cuenta.
+
+02:18:23.000 --> 02:18:25.000
+Ah, sí, sí, catorce sí supero, súper, sí, sí, sí.
+
+02:18:25.000 --> 02:18:30.000
+Sí, mhm.
+
+02:18:30.000 --> 02:18:35.000
+Y el nombre que ustedes van a reemplazar del 15 al 18.
+
+02:18:35.000 --> 02:18:40.000
+Yeah, al momento que van ustedes a ejecutar este que está acá.
+
+02:18:40.000 --> 02:18:45.000
+Que sea el mismo nombre que reemplazaron en duro en el del quince al dieciocho.
+
+02:18:45.000 --> 02:18:47.000
+Porque si no lo que va a pasar que cosa es.
+
+02:18:47.000 --> 02:18:53.000
+Esto que está acá que yo estoy diciendo. del parámetro de configuración no estoy utilizándolo.
+
+02:18:53.000 --> 02:18:58.000
+Entonces es como que digo van a ser por las puras entonces sí o sí ya.
+
+02:18:58.000 --> 02:19:03.000
+El nombre con el que van a ejecutar. Ehh que sea el mismo.
+
+02:19:03.000 --> 02:19:09.000
+Con el que reemplazaron en sus. en el resto de archivos, ¿ya?
+
+02:19:09.000 --> 02:19:16.000
+Se llega a entender sí.
+
+02:19:16.000 --> 02:19:17.000
+Exacto, sí, porfici. Si ya lo subieron por equivocación, ya.
+
+02:19:17.000 --> 02:19:20.000
+antes de suburlo.
+
+02:19:20.000 --> 02:19:24.000
+Lo que pueden hacer es lo siguiente. R M.
+
+02:19:24.000 --> 02:19:32.000
+De remove asterisco. Punto este S H.
+
+02:19:32.000 --> 02:19:33.000
+O S C L no O S C L no.
+
+02:19:33.000 --> 02:19:34.000
+We're helping.
+
+02:19:34.000 --> 02:19:37.000
+Este hijo porque el comodín punto es el Q L.
+
+02:19:37.000 --> 02:19:40.000
+Si yo lo vuelvo a hacer un LS ya los borré.
+
+02:19:40.000 --> 02:19:45.000
+Voy a volver a subirlo, ¿ya? Ajá vuelve a subirlo.
+
+02:19:45.000 --> 02:19:51.000
+Ven pa aquí solamente hasta acá. Ahí estamos, pull the file.
+
+02:19:51.000 --> 02:19:58.000
+Ya está, ahí está.
+
+02:19:58.000 --> 02:20:15.000
+Me avisan Porfis, que cuando ya lo, ya lo, ya lo tenga.
+
+02:20:15.000 --> 02:20:28.000
+Hay verdad tiene que tomar esto.
+
+02:20:28.000 --> 02:20:39.000
+Se llegue a entender hasta ahí estamos bien. ¿Sí?
+
+02:20:39.000 --> 02:20:43.000
+Para que usted lo puedan probar, ya, para que lo puedan probar, vamos a correr la última línea, ¿no?
+
+02:20:43.000 --> 02:20:48.000
+ondas que termine de subir todo eso ahí. Vamos a correrle, ven para aquí.
+
+02:20:48.000 --> 02:20:51.000
+Voy a limpiar pantalla.
+
+02:20:51.000 --> 02:20:57.000
+Yeah. Contrigar limpia en pantalla, ¿ya? Con este acá.
+
+02:20:57.000 --> 02:21:02.000
+Le damos enter.
+
+02:21:02.000 --> 02:21:06.000
+Mi archivo que hice de abortorio no fue encontrado.
+
+02:21:06.000 --> 02:21:13.000
+Espérate que no, bueno, que siga ejecutando. De ahí ahorita dio un error ahorita lo vamos a revisar.
+
+02:21:13.000 --> 02:21:23.000
+Creo que me olvidé subir el archivo. Vamos por aquí.
+
+02:21:23.000 --> 02:21:30.000
+mhm.
+
+02:21:30.000 --> 02:21:35.000
+Mi archivo dice no le encontró línea, a ver espérate.
+
+02:21:35.000 --> 02:21:40.000
+Línea veintiocho. Línea veintiocho.
+
+02:21:40.000 --> 02:21:44.000
+14. No está bien, vamos para acá.
+
+02:21:44.000 --> 02:21:52.000
+Umjú. Y ejecutó, creó todo ya, a ver acá un segundo.
+
+02:21:52.000 --> 02:21:59.000
+haya punto importante, ¿no? aquí yo estoy diciendo que mi data como tal la data.
+
+02:21:59.000 --> 02:22:08.000
+eh está en dataset guión persona punto data. Entonces, ¿qué significa esto si yo reviso este script?
+
+02:22:08.000 --> 02:22:16.000
+Espéreme, posar a los demás. Chao, chao, chao.
+
+02:22:16.000 --> 02:22:20.000
+hm.
+
+02:22:20.000 --> 02:22:25.000
+No está acá la data. Acá debe estar.
+
+02:22:25.000 --> 02:22:30.000
+Tampoco. en persona punto data.
+
+02:22:30.000 --> 02:22:34.000
+¿Dónde salió el error? Archivo no matching com.
+
+02:22:34.000 --> 02:22:43.000
+Persona punto a dataset se llama. un dataset, un segundo.
+
+02:22:43.000 --> 02:22:49.000
+No tengo nada. Okay, poco.
+
+02:22:49.000 --> 02:22:57.000
+Tampoco.
+
+02:22:57.000 --> 02:23:05.000
+Thenal ningún data set, vamos para acá.
+
+02:23:05.000 --> 02:23:07.000
+¿Dónde está? Sí, cuéntamelo.
+
+02:23:07.000 --> 02:23:16.000
+El nombre de mi. Let me call it.
+
+02:23:16.000 --> 02:23:19.000
+El nombre que tú quieras, el nombre que tú quieras.
+
+02:23:19.000 --> 02:23:21.000
+Sí, sí, es el nombre que tú quieras, ajá.
+
+02:23:21.000 --> 02:23:30.000
+Sí, sí, sí, lo que sí me llama la atención es esta parte, ya creo que él es un nido malo, los archivos, espérame.
+
+02:23:30.000 --> 02:23:34.000
+Creo que he subido mal, voy a, en mi caso, voy a eliminarlo ya?
+
+02:23:34.000 --> 02:23:41.000
+eh R M, primero un L S. porque en ningún lado desta parte.
+
+02:23:41.000 --> 02:23:48.000
+De esto. que yo estoy utilizando el persona puntodata.
+
+02:23:48.000 --> 02:23:51.000
+Persona a persona punto datan hasta acá.
+
+02:23:51.000 --> 02:23:59.000
+Persona a punto data. Acá está, ¿no? Está de forma directa, ya creo que he subido mal yo. Voy a eliminar los archivos.
+
+02:23:59.000 --> 02:24:03.000
+R M punto S Q L.
+
+02:24:03.000 --> 02:24:12.000
+rm asterisco punto. que se cuele IRM asterisco punto h.
+
+02:24:12.000 --> 02:24:16.000
+Ya, voy a volver a volver a subirlo.
+
+02:24:16.000 --> 02:24:18.000
+P W D.
+
+02:24:18.000 --> 02:24:25.000
+Ya está, voy a volver a subirlo de la ruta correcta, un segundo.
+
+02:24:25.000 --> 02:24:29.000
+Voy a guardarlo, estoy en.
+
+02:24:29.000 --> 02:24:32.000
+Loveir, copiar.
+
+02:24:32.000 --> 02:24:34.000
+Copiar copy path.
+
+02:24:34.000 --> 02:24:40.000
+Tengo tantas versiones. Este, no, un segundito.
+
+02:24:40.000 --> 02:24:47.000
+Fíjense porfa sí, dónde han guardado sus, sus, sus tablas ya, porque si no van, va a pasar como, como yo.
+
+02:24:47.000 --> 02:24:53.000
+Que estoy cargando una versión antigua y está diciendo que la persona punto no existe y si existe.
+
+02:24:53.000 --> 02:24:57.000
+Porque estaba llamándolo yo desde mis archivos que están en otro lado ya.
+
+02:24:57.000 --> 02:25:01.000
+Entonces fíjese bien esa partecita vamos a subir nuevamente.
+
+02:25:01.000 --> 02:25:06.000
+Ahora sí en por acá.
+
+02:25:06.000 --> 02:25:12.000
+Ya está, no subir acá. Todo esto.
+
+02:25:12.000 --> 02:25:18.000
+Ahora sí, o los fail.
+
+02:25:18.000 --> 02:25:24.000
+Hasta ahí ya lo subieron todos, el resto ya lo subieron, ¿sí? Ya estamos.
+
+02:25:24.000 --> 02:25:31.000
+No, no, no, no, no, no, eh, en, en su caso no en su caso no porque esos archivos están directamente acá en persona punto data.
+
+02:25:31.000 --> 02:25:34.000
+Así que no hay ningún problema, lo que sí.
+
+02:25:34.000 --> 02:25:39.000
+Lo que sí es el nombre, el nombre el nombre que tiene que ser reemplazado pues no.
+
+02:25:39.000 --> 02:26:00.000
+ella en, en duro, ¿ya? Eso sí. Y luego simplemente lo corre, vamos a volver a correrlo.
+
+02:26:00.000 --> 02:26:08.000
+Ya está, entonces. Hasta ahí alguna pregunta, alguna duda con respecto a lo que estamos viendo?
+
+02:26:08.000 --> 02:26:12.000
+A esta no la silla cargo bien vieron no ya ahora sí no miren.
+
+02:26:12.000 --> 02:26:16.000
+Pasa que el otro está llamando a mi a los a los Danloat que había hecho yo.
+
+02:26:16.000 --> 02:26:23.000
+Ahí está, ¿no? Hasta ahí estamos bien hasta ahí se va entendiendo.
+
+02:26:23.000 --> 02:26:32.000
+Hasta ahí alguna pregunta. Sí todavía ya está a todo el mundo le ejecutó le salió bien les pueden ver las tablitas y todo eso.
+
+02:26:32.000 --> 02:26:38.000
+Derias deberían ir viendo como cada . como cada cosa que van ejecutando, ¿ya?
+
+02:26:38.000 --> 02:26:41.000
+De hecho, ay sí cuéntamelo. Ah ya como ejecutan pero perdóname, perdóname, ya te pasa dame un segundito, ejecutas acá.
+
+02:26:41.000 --> 02:26:47.000
+If…
+
+02:26:47.000 --> 02:26:50.000
+Una vez que tú reemplazas, una vez que tú reemplazas ya.
+
+02:26:50.000 --> 02:26:55.000
+Recuerda que el único que tiene realmente parámetros de entrada.
+
+02:26:55.000 --> 02:27:04.000
+Es el primero entonces en el primero. Como tal tienes que poner el nombre que le pusiste en el resto de cosas, es decir.
+
+02:27:04.000 --> 02:27:11.000
+En esta parte que tú cambiaste es que decía Juan que decía María lo el el nombre que hayas definido.
+
+02:27:11.000 --> 02:27:16.000
+Tiene que ser el mismo de que cuando tú envíes esto que estamos hablando.
+
+02:27:16.000 --> 02:27:22.000
+Yeah, eso, ahora sí, perdóname te corté.
+
+02:27:22.000 --> 02:27:28.000
+No, no, no, no, el, el catorce si tiene parámetros, ¿cómo te das cuenta que tiene parámetros por esto.
+
+02:27:28.000 --> 02:27:33.000
+Mira, todo tiene parámetros, claro, ajá. Y así, ajá.
+
+02:27:33.000 --> 02:27:35.000
+Okay.
+
+02:27:35.000 --> 02:27:36.000
+Y aquí ya termina ejecutar.
+
+02:27:36.000 --> 02:27:37.000
+mortality into it.
+
+02:27:37.000 --> 02:27:45.000
+Ajá, there you go, está todo, ¿no? .
+
+02:27:45.000 --> 02:27:46.000
+Else escuel, los cuadros escueles con el y segutar el cempo.
+
+02:27:46.000 --> 02:27:49.000
+Exacto.
+
+02:27:49.000 --> 02:27:52.000
+Let's Chel.
+
+02:27:52.000 --> 02:27:58.000
+mhm. Espérate ya te digo.
+
+02:27:58.000 --> 02:28:03.000
+El catorce que es una chel. Y el diecinueve que es una chela.
+
+02:28:03.000 --> 02:28:08.000
+Los los cuatro, los 4 puntos igual y los las doce, ajá.
+
+02:28:08.000 --> 02:28:18.000
+O sea, del catorce al diecinueve, otras palabras. Bueno, terminé de ejecutar, ya vamos, vamos, les voy explicando esta segunda parte.
+
+02:28:18.000 --> 02:28:22.000
+Hola miti.
+
+02:28:22.000 --> 02:28:29.000
+Solo estoy con exactamente. ¿Por qué? Porque ¿por qué? Porque este diecinueve llama al resto, eso, exacto.
+
+02:28:29.000 --> 02:28:34.000
+Exacto, empezar poniendo uno por uno que se puede uno olvidar pues ya está ya.
+
+02:28:34.000 --> 02:28:41.000
+Entonces, vamos para acá. Para registrar los, los, los equipos de trabajo.
+
+02:28:41.000 --> 02:28:45.000
+Justo, eh. me, me, me acaban de compartir.
+
+02:28:45.000 --> 02:28:51.000
+Ya en lo siguiente. El Juanjo me compartió esto, se lo voy a hacer llegar.
+
+02:28:51.000 --> 02:28:53.000
+Y entiendo que es el que ya venían trabajando.
+
+02:28:53.000 --> 02:29:01.000
+Esto, entonces, en esta parte en esto. Ustedes entiendo que tienen permisos de editor.
+
+02:29:01.000 --> 02:29:06.000
+Y entonces. Vayan, porfa, poniendo.
+
+02:29:06.000 --> 02:29:13.000
+Registrando sus grupos. Juan, María, José, lo, como vienen trabajando, como quieran ustedes hacerlo, ¿no?
+
+02:29:13.000 --> 02:29:20.000
+Ha pasado también dice no mira, quiero hacerlo solo, también es válido, ya, pero yo te sugiero al equipo para que.
+
+02:29:20.000 --> 02:29:24.000
+Para que cualquier cosa pues te puedas también apoyar de de tu equipo ya.
+
+02:29:24.000 --> 02:29:34.000
+Entonces. Dicho todo esto, hasta ahí, hasta esa parte de toda la parte de lo que es adou y todo eso, bien.
+
+02:29:34.000 --> 02:29:42.000
+No hay ninguna pregunta sobre eso? Sí, para pasar a, al, a lo que el, al, a la otra partecita.
+
+02:29:42.000 --> 02:29:46.000
+Estamos bien con esa parte, lo que hemos visto hasta ahí.
+
+02:29:46.000 --> 02:29:47.000
+¿Cómo estás?
+
+02:29:47.000 --> 02:30:03.000
+Hold up. pasar directamente a parquet.
+
+02:30:03.000 --> 02:30:08.000
+No, no, no. Sí, puedes pasar directamente a parquets sin ningún problema.
+
+02:30:08.000 --> 02:30:11.000
+Eso que saca es más que nada para que ustedes puedan ver.
+
+02:30:11.000 --> 02:30:19.000
+Como que pueden ir pasando de varios tipos de datos, inclusive yo pude haber dicho de al fin y al cabo el smart va a ser un ORC.
+
+02:30:19.000 --> 02:30:23.000
+realmente en los proyectos reales, en los proyectos que ustedes se van a enfrentar.
+
+02:30:23.000 --> 02:30:26.000
+Pasa de un Txt o de un C C B.
+
+02:30:26.000 --> 02:30:29.000
+Pasa un parquet y se queda en parquet como tal.
+
+02:30:29.000 --> 02:30:36.000
+Y en la parte del parque usted decide mira yo voy a trabajar con con iceberg voy a trabajar con Judy, pero al fin y al cabo sigue siendo un parquette.
+
+02:30:36.000 --> 02:30:40.000
+Entonces siempre tu dato, los datos finales, pues, es un parque como tal.
+
+02:30:40.000 --> 02:30:44.000
+Y eso y no sé los los nombres que.
+
+02:30:44.000 --> 02:30:49.000
+Súper bien, muy bien muy bien Juan exacto. Excelente entonces.
+
+02:30:49.000 --> 02:30:54.000
+Eso, ¿alguna otra pregunta vamos bien con esa parte.
+
+02:30:54.000 --> 02:30:59.000
+Todos bien, sí. Miren por acá, les voy a contar lo siguiente.
+
+02:30:59.000 --> 02:31:08.000
+Entonces, este caso de uso ya. Esto ya lo tienen ustedes acá para que lo puedan también ir out.
+
+02:31:08.000 --> 02:31:18.000
+Que está acá bien para aquí, venga aquí. Ya está que se llama Laboratorio 1, yo voy a ir poniendo laboratorio 2, laboratorio 3 no es que sea el primer laboratorio.
+
+02:31:18.000 --> 02:31:23.000
+sabe la redundancia, ya. Si no tiene que ver con los laboratorios.
+
+02:31:23.000 --> 02:31:28.000
+Los end to end que quiero yo armar con ustedes para que les quede como guía para su para su proyecto.
+
+02:31:28.000 --> 02:31:33.000
+Entonces empezamos en este caso de uso te detallo cuál es el problema.
+
+02:31:33.000 --> 02:31:36.000
+Que la empresa recibe miles de documentos en papel.
+
+02:31:36.000 --> 02:31:41.000
+la típica empresa puede ser de de de de de la parte abogados.
+
+02:31:41.000 --> 02:31:47.000
+La parte quizás de un retail mismo. La parte quizás de la parte logística.
+
+02:31:47.000 --> 02:31:51.000
+todo el mundo hace el tema aún el tema de papel, ¿ya?
+
+02:31:51.000 --> 02:31:56.000
+El personal administrativo, que lo que suele. Digita manualmente cada una.
+
+02:31:56.000 --> 02:32:02.000
+de las direcciones de entradas y cada una de las cosas que hay dentro del, dentro de la boleta lo digita.
+
+02:32:02.000 --> 02:32:09.000
+Ya está. ¿qué puede pasar con eso? Error humano claro no porque puede pasar no sé que vio quizás.
+
+02:32:09.000 --> 02:32:14.000
+Eh no sé pues no que diga tal cosa y lo registro de otra forma.
+
+02:32:14.000 --> 02:32:21.000
+Puede haber también lentitud. Claro porque si yo les doy yo vamos a poner el caso, si les, si les damos a ustedes.
+
+02:32:21.000 --> 02:32:32.000
+Cien hojas para que lo puedan digitalizar. Tendrían que hacer que cosa quizás escanearlas eso mientras que vas volteando la página y todo eso ya tomas tiempo.
+
+02:32:32.000 --> 02:32:37.000
+Falta de visibilidad, claro, porque. Como lo que yo lo que yo necesito son entregas.
+
+02:32:37.000 --> 02:32:42.000
+Que se van a ir a dando el negocio entrega de los productos y todo eso.
+
+02:32:42.000 --> 02:32:47.000
+No hay un mapa para poder visualizar. donde están las entregas.
+
+02:32:47.000 --> 02:32:51.000
+Típico caso de holva. Típico caso de algún.
+
+02:32:51.000 --> 02:32:55.000
+And one mas hay adentro acá de Lima, creo que Olva.
+
+02:32:55.000 --> 02:32:58.000
+Hay otros más jobs y no estoy mal no pero hay hay varios.
+
+02:32:58.000 --> 02:33:03.000
+Entonces, tú necesitas resolver esa necesidad de negocio, ¿ya?
+
+02:33:03.000 --> 02:33:04.000
+Entonces exacto no Shalon también no y así hay otros más.
+
+02:33:04.000 --> 02:33:09.000
+Charlotte?
+
+02:33:09.000 --> 02:33:16.000
+Entonces el la problemática de negocios se entiende? Lo que se quiere resolver sí.
+
+02:33:16.000 --> 02:33:21.000
+Yep. A parte de todo eso, vamos a ponerlo algo más crítico todavía.
+
+02:33:21.000 --> 02:33:26.000
+Te dicen, tienes que armar. Una arquitectura que sea ser Vélez.
+
+02:33:26.000 --> 02:33:31.000
+Que sea costo eficiente . Porque la empresa está.
+
+02:33:31.000 --> 02:33:39.000
+En qué en ahorros ahorros máximos pero necesita. Esto para poder llevar la solución ya.
+
+02:33:39.000 --> 02:33:42.000
+Es por eso que a raíz de esa situación.
+
+02:33:42.000 --> 02:33:46.000
+tú planteas una arquitectura que se ve algo como esta.
+
+02:33:46.000 --> 02:33:52.000
+que vamos a poner un poquito más acá. Un poquito a que está ahí se ve mejor.
+
+02:33:52.000 --> 02:33:58.000
+Entonces tú vas a tener. los en archivos en archivos imágenes.
+
+02:33:58.000 --> 02:34:01.000
+Eh PDFs.
+
+02:34:01.000 --> 02:34:08.000
+en archivos que se van a subir. En este caso se van a subir.
+
+02:34:08.000 --> 02:34:10.000
+at the storage.
+
+02:34:10.000 --> 02:34:15.000
+va a llamar a una función. una función como tal velo como que tú ya sabes voy a amar un paito.
+
+02:34:15.000 --> 02:34:21.000
+Ya voy a amar un Python, voy a llamar a un código que va a hacer determinada acción.
+
+02:34:21.000 --> 02:34:26.000
+Esa determinada acción como tal. Tú tienes que cosa en este caso.
+
+02:34:26.000 --> 02:34:31.000
+Estás llamando a la , a la API de document AI.
+
+02:34:31.000 --> 02:34:37.000
+Esa API como tal. Te va a devolver que cosa un Jason.
+
+02:34:37.000 --> 02:34:42.000
+Ese Jason va a ser almacenado es decir como que tú digas.
+
+02:34:42.000 --> 02:34:50.000
+Eh voy a estar. La información que hay dentro de ese P D F de esa eh factura.
+
+02:34:50.000 --> 02:34:56.000
+Y lo voy a almacenar. Al extraer esos esas características en un tipo JSON.
+
+02:34:56.000 --> 02:35:00.000
+Bien, y nuevamente vuelven nuevamente acá.
+
+02:35:00.000 --> 02:35:04.000
+Para que lo tengas no solamente las fotos, sino también asociado.
+
+02:35:04.000 --> 02:35:08.000
+A la metadata que hay dentro de esos P D F.
+
+02:35:08.000 --> 02:35:12.000
+En eso, en ese ínterin que tú vas vas vas teniendo.
+
+02:35:12.000 --> 02:35:17.000
+Luego, lo que necesitas. Es que ese resultado.
+
+02:35:17.000 --> 02:35:22.000
+de esa extracción de documentos. Lo almacenes.
+
+02:35:22.000 --> 02:35:27.000
+En algún repositorio. y en ese repositorio que estamos comentando.
+
+02:35:27.000 --> 02:35:35.000
+Lo vas a almacenar en Big Queue. Ya bien hasta ahí tú po yo podría haber terminado quizás.
+
+02:35:35.000 --> 02:35:41.000
+Mi primer caso de uso. Lo puedo ver suelto con esto.
+
+02:35:41.000 --> 02:35:48.000
+Pero que me está diciendo. El en la problemática, miren acá me está diciendo.
+
+02:35:48.000 --> 02:35:55.000
+No pueden ver. En un mapa donde están las entregas.
+
+02:35:55.000 --> 02:36:01.000
+Hasta que alguien termine de escribir. Entonces no tienes, no tiene visibilidad, estás así a, a los ciegos.
+
+02:36:01.000 --> 02:36:10.000
+Entonces es un segundo, te ahorra. ¿Ya? Entonces, en ese en para tú poder pasar.
+
+02:36:10.000 --> 02:36:19.000
+De un de un de unfunction. hacia otro tú vas tienes que colectar esa información.
+
+02:36:19.000 --> 02:36:25.000
+Ya para colectar esa información. Se llama qué? Whatsapp.
+
+02:36:25.000 --> 02:36:28.000
+Si yo me voy al mundo agnóstico cómo se llamaría.
+
+02:36:28.000 --> 02:36:38.000
+Eh Kafka ya apache Kafka. Si yo me voy al mundo de A B W S, que entiendo que es lo que ustedes han, han estado ahí, este, por ahí un poquito viendo.
+
+02:36:38.000 --> 02:36:42.000
+Un real fun function el símil del mismo sería un lambda.
+
+02:36:42.000 --> 02:36:47.000
+Ya pa acá. tú WhatsApp que va a coleccionar.
+
+02:36:47.000 --> 02:36:51.000
+Cada uno de los vamos a poner de los datos.
+
+02:36:51.000 --> 02:36:58.000
+Va y va a pasar este resultado. A una función, una función de geocoding.
+
+02:36:58.000 --> 02:37:03.000
+¿Qué significa esto?
+
+02:37:03.000 --> 02:37:07.000
+Tú que, tú lo que quieres es extraer? Donde está actualmente.
+
+02:37:07.000 --> 02:37:14.000
+El estado de tu producto, ¿en qué parte? Porque de ahí quieres aplicar quizás algún modelo.
+
+02:37:14.000 --> 02:37:18.000
+¿Cuánto tiempo se va a demorar? No sé, pues llegar del punto donde está a mi casa.
+
+02:37:18.000 --> 02:37:26.000
+Algún modelo ahí sencillo que quieras tú aplicar. Para hacer esa parte que estamos mencionando tú vas allá, tú vas te vas a ayudar.
+
+02:37:26.000 --> 02:37:32.000
+De Google Map con la fusión o con la API que se llama geocoding.
+
+02:37:32.000 --> 02:37:36.000
+Que es en otras palabras ese geocodi. Es cuando yo te diga, bueno.
+
+02:37:36.000 --> 02:37:44.000
+Eh. Avenida la avenidas avenida no creo que es la avenida Larcomar bueno avenida Larcomar.
+
+02:37:44.000 --> 02:37:51.000
+Cinco tres uno. Ya si yo le doy alguna de eso, o sea, claramente que lo va a identificar.
+
+02:37:51.000 --> 02:37:55.000
+Pero internamente que hizo. Latitud y longitud.
+
+02:37:55.000 --> 02:37:58.000
+un polígono como tal ya.
+
+02:37:58.000 --> 02:38:06.000
+query Bisquery va a almacenarte. En polígono en equis en y en y.
+
+02:38:06.000 --> 02:38:12.000
+La titula longitud para poder. Tener esto que estamos hablando.
+
+02:38:12.000 --> 02:38:14.000
+Luego tú dices no y yo quisiera también.
+
+02:38:14.000 --> 02:38:23.000
+Pintarlo en un mapa, ya podía sacar de Bisquery, poder conectarte directamente con tu Power BI o dates tú, perdón, Looker Studio.
+
+02:38:23.000 --> 02:38:26.000
+Para por llevar a cabo ese reporte, porque ya de por sí.
+
+02:38:26.000 --> 02:38:30.000
+las columnas. Tienen los puntos geo referenciales.
+
+02:38:30.000 --> 02:38:36.000
+Ya para poder armar el mapa per se. Esta arquitectura se llega a entender?
+
+02:38:36.000 --> 02:38:42.000
+Alguna pregunta con eso? Estamos bien con esa partecita.
+
+02:38:42.000 --> 02:38:44.000
+Sí, me ayudan con un pulgar porfa.
+
+02:38:44.000 --> 02:38:49.000
+O tieno. Right? Thanks.
+
+02:38:49.000 --> 02:38:56.000
+Los PD no no no lo vamos a cargar ahorita ahorita les vamos a cargar ahorita, aja si lo vamos a cargar.
+
+02:38:56.000 --> 02:39:00.000
+Hasta ahí vamos bien se entiende el objetivo se entiende lo que queremos hacer como arquitectura bien.
+
+02:39:00.000 --> 02:39:01.000
+I'm not going for that.
+
+02:39:01.000 --> 02:39:02.000
+Ahora sí, mano, si te hago cuéntamelo.
+
+02:39:02.000 --> 02:39:07.000
+i.e. Bueno.
+
+02:39:07.000 --> 02:39:10.000
+in BigQuery, or como…
+
+02:39:10.000 --> 02:39:11.000
+latitude.
+
+02:39:11.000 --> 02:39:18.000
+Sí. Te cuento, Bisquary como tal ya tiene esa funcionalidad, ¿ya?
+
+02:39:18.000 --> 02:39:26.000
+de las, de las típicas base de datos. que acabas tú de mencionar, tú podías decir, no sabes que yo no quiero guardar la la latitud y longitud en mi squarery.
+
+02:39:26.000 --> 02:39:30.000
+Bien, no pasa nada pero la idea es poder.
+
+02:39:30.000 --> 02:39:35.000
+Hacer una arquitectura lo más vamos a poner eh la más barata pa el cliente.
+
+02:39:35.000 --> 02:39:41.000
+No, que sea el menor consumo. Entonces si yo sé que Biscorey tiene esa esa funcionalidad.
+
+02:39:41.000 --> 02:39:46.000
+Y aparte estoy estoy pagando. Quizás la otra, la otra base.
+
+02:39:46.000 --> 02:39:53.000
+Como que no tanto entonces mejor va almacenarlo todo en la parte lo que es Biscoin Biscoin te soporta esa parte lo que les digo.
+
+02:39:53.000 --> 02:39:55.000
+Donde puedo ver más eso Anita? Ya te voy a pasar.
+
+02:39:55.000 --> 02:40:03.000
+Eh estoy estudiando yo espérate Big Query. Te voy a pasar tu longitud.
+
+02:40:03.000 --> 02:40:08.000
+So we have a esto acá para que puedas leer un poquito a esos datos se llaman datos geoespaciales.
+
+02:40:08.000 --> 02:40:15.000
+Y aquí les voy a compartir. Ya en ese link que les he pasado ustedes podrían profundizar un poquito más ya.
+
+02:40:15.000 --> 02:40:22.000
+de eso que estamos diciendo. La parte geospacial e inclusive a veces también.
+
+02:40:22.000 --> 02:40:28.000
+Si yo quisiera ser un modelo. Que me perm que permita a la empresa saber.
+
+02:40:28.000 --> 02:40:35.000
+En qué posición, en qué lugar. Es más rentable abrir la tienda de tambo por ejemplo no.
+
+02:40:35.000 --> 02:40:42.000
+O hay el otro que está ahí no me acuerdo el el otro que es el símil de tambo ya bueno el tambo.
+
+02:40:42.000 --> 02:40:43.000
+Eh el más eso el más no y así me de otras tiendas, tú puedes ser un modelo.
+
+02:40:43.000 --> 02:40:47.000
+Must, must…
+
+02:40:47.000 --> 02:40:51.000
+Un modelo con el concepto de de la parte geoespacial.
+
+02:40:51.000 --> 02:40:56.000
+Para que tú puedas ver, eh, que lo que tú estás requiriendo ya.
+
+02:40:56.000 --> 02:41:02.000
+Lo que tú estás requiriendo. En ese lugar es rentable.
+
+02:41:02.000 --> 02:41:08.000
+Abrir, vamos a poner un más. un, este, un tambo o lo que fuese.
+
+02:41:08.000 --> 02:41:17.000
+O también cuando más data geoespacial. Lo las inmobiliarias como sabe la inmobiliaria que tiene que construir en la esquina.
+
+02:41:17.000 --> 02:41:21.000
+No lo dijo porque apuesta libre no porque hizo un estudio de mercado.
+
+02:41:21.000 --> 02:41:26.000
+Empezó a revisar y su modelo para eso no y dijo ah mira yo.
+
+02:41:26.000 --> 02:41:30.000
+Ehh la me me es rentable por ta ta tal motivo.
+
+02:41:30.000 --> 02:41:33.000
+Entonces, la data geoespacial se vuelve algo importante pa todo esto, ¿no?
+
+02:41:33.000 --> 02:41:41.000
+e inclusive, en esta parte. Aquí, perdón, tú vas a encontrar también ejemplos.
+
+02:41:41.000 --> 02:41:45.000
+Y aquí te lo voy a compartir por acá para que también te quede.
+
+02:41:45.000 --> 02:41:48.000
+Y lo voy a poner esos 2 links allí en el.
+
+02:41:48.000 --> 02:41:53.000
+En el archivo que tienen ustedes, espérenme. Para que les quede por aquí.
+
+02:41:53.000 --> 02:42:03.000
+Ya de lo que estamos hablando. Ahí está, ¿ya? Entonces aquí te vas a encontrar en esta parte de ejemplos, por ejemplo, ¿cómo hago, no sé, pues.
+
+02:42:03.000 --> 02:42:09.000
+Tema Jason como hago tal cosa aquí varias varios que ustedes podían utilizar para poder entender un poquito más la parte BisQuery.
+
+02:42:09.000 --> 02:42:17.000
+Yeah, entonces. Hasta ahí, bien, para poder ya hacer una, eh, la primera parte, una primera parte.
+
+02:42:17.000 --> 02:42:22.000
+Sí se entiende para empezar ya. Vamos ahora sí manos a la obra ya.
+
+02:42:22.000 --> 02:42:29.000
+Entonces, lo primero que hay que hacer. Lo primero que hay que hacer pregunta empiezo ya.
+
+02:42:29.000 --> 02:42:34.000
+Ehh creando todo. que lo que tendría que hacer en primer lugar.
+
+02:42:34.000 --> 02:42:40.000
+Ya tengo acá, ¿no? Ya tengo mi consola chévere, tengo créditos, perfecto.
+
+02:42:40.000 --> 02:42:48.000
+Pero cuál es la primera tarea que te recomiendan cuando es un proyecto nuevo?
+
+02:42:48.000 --> 02:42:49.000
+¿Te acuerda.
+
+02:42:49.000 --> 02:42:52.000
+Go ahead.
+
+02:42:52.000 --> 02:42:58.000
+su P D F en la en la hojita seis.
+
+02:42:58.000 --> 02:43:04.000
+¿Qué dice la hojita 6? está cambia, y voy para aquí.
+
+02:43:04.000 --> 02:43:09.000
+donde te me fuistes? está acá en su hojita.
+
+02:43:09.000 --> 02:43:10.000
+No sé por aquí, exacto.
+
+02:43:10.000 --> 02:43:12.000
+I will test on this.
+
+02:43:12.000 --> 02:43:19.000
+Yeah, entonces. Cada y esto lo va a cerrar cada vez que ustedes y esto.
+
+02:43:19.000 --> 02:43:24.000
+Vamos a cerrarlo, chao. entonces cada vez que ustedes van a empezar.
+
+02:43:24.000 --> 02:43:30.000
+Con un proyecto nuevo siempre se habilita las APIs, esa es la primera tarea que hay que hacer.
+
+02:43:30.000 --> 02:43:36.000
+Entonces ahí. En ese en esa parte del P D F ¿no?
+
+02:43:36.000 --> 02:43:42.000
+Les va a pasar ahí esos, esos comandos también por si no lo han bajado.
+
+02:43:42.000 --> 02:43:50.000
+En la mano derecha. Activa en el que ya lo conocen, lo ponen un poquito más arriba.
+
+02:43:50.000 --> 02:43:57.000
+Íbamos ahorita las APIs autorizo.
+
+02:43:57.000 --> 02:44:02.000
+Te habilitándose, vamos a esperar un poquito y ya está, ¿no?
+
+02:44:02.000 --> 02:44:05.000
+mostitos. Ehm.
+
+02:44:05.000 --> 02:44:12.000
+ese terminal.
+
+02:44:12.000 --> 02:44:17.000
+Sí, puedes, puedes también estar acá mismo en Dataproc, mira.
+
+02:44:17.000 --> 02:44:24.000
+Mira mira puedes hacerlo ambos. Postar acá en Dataproc y también lo puedes activar tu trouser sin ningún problema.
+
+02:44:24.000 --> 02:44:25.000
+Porque como está arriba siempre así que no hay problema aja.
+
+02:44:25.000 --> 02:44:31.000
+I am. Yeah, but que habia un terminal a bierto, no porce?
+
+02:44:31.000 --> 02:44:33.000
+ah ya, ya, sí, sí había otro todavía, sí, sí, sí, porque ese terminal y buen punto lo que mencionaste, perdón, ahí no lo dije.
+
+02:44:33.000 --> 02:44:37.000
+Auto.
+
+02:44:37.000 --> 02:44:43.000
+Ese terminal es el terminal de la máquina. Y tú dices, ¿cómo así?
+
+02:44:43.000 --> 02:44:47.000
+En la parte superior que dice S C H in browser.
+
+02:44:47.000 --> 02:44:53.000
+Cada vez que tú digas este C H A de la máquina virtual y de qué máquina se refiere del dataprock.
+
+02:44:53.000 --> 02:44:54.000
+Ya, entonces vamos a cerrar vamos a cerrar esto acá ya no nos sirve porque ya lo hicimos bien.
+
+02:44:54.000 --> 02:44:58.000
+Mm-hmm.
+
+02:44:58.000 --> 02:45:03.000
+Entonces, aquí voy a habilitar las APIs. voy a copiar lo que les acabo yo de mandar.
+
+02:45:03.000 --> 02:45:10.000
+Pum Enter. Espera que termine, que lo cargue.
+
+02:45:10.000 --> 02:45:14.000
+Como te dice que todo está correcto, porque tiene que salirte.
+
+02:45:14.000 --> 02:45:21.000
+esta parte que dice successfully, ¿cierto? Ya está. demora un poquitito como pueden observar.
+
+02:45:21.000 --> 02:45:31.000
+¿Ya? Sí, cuéntame, no, sí, claro, cuéntamelo.
+
+02:45:31.000 --> 02:45:32.000
+ah sí, lo puedes cerrar, pues, puedes, aquí lo cierras y lo puedes abrir.
+
+02:45:32.000 --> 02:45:37.000
+No se si estabien.
+
+02:45:37.000 --> 02:45:38.000
+Sí, sí, sí, aja sí o también o también.
+
+02:45:38.000 --> 02:45:40.000
+Okay.
+
+02:45:40.000 --> 02:45:46.000
+También, también lo que pueden hacer. En el mismo terminal, Dante pa acá abre un nuevo tap.
+
+02:45:46.000 --> 02:45:50.000
+Es lo mismo pero a veces pero a veces pasa que cuando tú te llenas de puro stop .
+
+02:45:50.000 --> 02:45:57.000
+Me ha pasado que yo digo, ¿qué estaba corriendo en lo anterior? Y como que uno se olvida, entonces mejor quédate solamente con uno.
+
+02:45:57.000 --> 02:46:01.000
+Lo puede cerrar y o abrir este. Y el anterior cerrarlo y ya está.
+
+02:46:01.000 --> 02:46:05.000
+Ya pero te casco solamente con uno aja. Ya está bien.
+
+02:46:05.000 --> 02:46:06.000
+Okay.
+
+02:46:06.000 --> 02:46:12.000
+Entonces hasta ahí ejecuten esa primera parte porfa de habilitación de APIs.
+
+02:46:12.000 --> 02:46:16.000
+Ejecuten esa partecita.
+
+02:46:16.000 --> 02:46:21.000
+Um…
+
+02:46:21.000 --> 02:46:27.000
+Exacto, exacto. ¿qué hace eso? Si yo me fuera, si yo me fuera para la parte visual, ya.
+
+02:46:27.000 --> 02:46:31.000
+yo qué hubiera hecho, me voy acá al tema.
+
+02:46:31.000 --> 02:46:33.000
+Ya, don, perdón, eh, ah, la parte del ser.
+
+02:46:33.000 --> 02:46:38.000
+Busco A Pi. Caramba, API y servicios.
+
+02:46:38.000 --> 02:46:41.000
+Ya voy a poner ti derecho en un nuevo tap.
+
+02:46:41.000 --> 02:46:48.000
+Ahí está.
+
+02:46:48.000 --> 02:46:54.000
+esperan que cargue. Ahí está y digo ay, yo lo quiero hacer visual, Anita, bien.
+
+02:46:54.000 --> 02:46:58.000
+Esto voy a bajar un poquito. enegulapiservicios y digo.
+
+02:46:58.000 --> 02:47:05.000
+¿Qué servicios necesito habilitar a si yo reviso. Los comandos que les acaba de pasar.
+
+02:47:05.000 --> 02:47:07.000
+Uno de los servicios es el primero document I.
+
+02:47:07.000 --> 02:47:14.000
+Voy acá, tocome ya, le doy enter. A Ortigue en el primero.
+
+02:47:14.000 --> 02:47:18.000
+Y la habilito, eso es cuando yo lo hago por parte visual.
+
+02:47:18.000 --> 02:47:24.000
+Yeah, en nuestro caso estamos utilizando ya los comandos de que de la consola per se.
+
+02:47:24.000 --> 02:47:29.000
+Yeah, eso, me avisan cuando ya se les ha habilitado todo eso para poder seguir.
+
+02:47:29.000 --> 02:47:33.000
+Hasta ahí vamos bien.
+
+02:47:33.000 --> 02:47:37.000
+recent service config not found or purpose denied.
+
+02:47:37.000 --> 02:47:42.000
+Compárteme tu pantalla a ver, compárteme tu pantallita. A ver, compárteme tu pantallita.
+
+02:47:42.000 --> 02:47:48.000
+pick up. Just me if I die anyway.
+
+02:47:48.000 --> 02:47:51.000
+para que cargue, todavía está, a ver, a ver.
+
+02:47:51.000 --> 02:48:00.000
+Yeah, limpia pantalla. Astriar, limpia pantalla.
+
+02:48:00.000 --> 02:48:03.000
+See, not clear, de limpiar?
+
+02:48:03.000 --> 02:48:06.000
+Uh-huh.
+
+02:48:06.000 --> 02:48:12.000
+Eso, dale enter. Copia. Tienes el P D F por si acaso descargado?
+
+02:48:12.000 --> 02:48:17.000
+Porque a veces el zoom como que lo pone pone un poco raro los comandos.
+
+02:48:17.000 --> 02:48:19.000
+No.
+
+02:48:19.000 --> 02:48:25.000
+Yeah, espérate les voy a pasar. El, el link en.
+
+02:48:25.000 --> 02:48:33.000
+Eh, el link en vivo espérate. Un segundo.
+
+02:48:33.000 --> 02:48:36.000
+Le voy a pasar el, el documento en vivo, ¿ya?
+
+02:48:36.000 --> 02:48:43.000
+Y luego les voy a pasar, espérame, espérame. Ahí está, ingresas el link.
+
+02:48:43.000 --> 02:48:45.000
+que les he pasado ahorita por el, por el zoom.
+
+02:48:45.000 --> 02:48:49.000
+Eso, anda la hoja.
+
+02:48:49.000 --> 02:48:52.000
+um , espérate ya me olvidé que ojera.
+
+02:48:52.000 --> 02:48:58.000
+Hoja hoja 6. Hoja seis, bajas bajas.
+
+02:48:58.000 --> 02:49:00.000
+ahí está.
+
+02:49:00.000 --> 02:49:04.000
+Yeah, copia toda esa, esa, es, esa, esa, eso de ahí.
+
+02:49:04.000 --> 02:49:09.000
+Copia todo eso, ¿bien? Y lo pegas en el.
+
+02:49:09.000 --> 02:49:12.000
+en el, en, en la, en la Chel eso.
+
+02:49:12.000 --> 02:49:16.000
+Con todo el bebé, talenter.
+
+02:49:16.000 --> 02:49:19.000
+Mm-hm.
+
+02:49:19.000 --> 02:49:25.000
+no sé por qué lo que hace lo lo pone un poco raro y todo y al final los comandos ni siquiera sirve.
+
+02:49:25.000 --> 02:49:29.000
+Yeah, por eso es mejor error en los cuatro.
+
+02:49:29.000 --> 02:49:34.000
+Claro, entonces hagan esa parte que les digo, ingresen ese link que les he pasado, sino con el PDF que les he compartido.
+
+02:49:34.000 --> 02:49:42.000
+Ya ambos tienen lo mismo solamente es eh uno está en P pero está en document en doc pues no.
+
+02:49:42.000 --> 02:49:43.000
+Aja o quiso voy a compartir acá.
+
+02:49:43.000 --> 02:49:44.000
+Yeah, gracias.
+
+02:49:44.000 --> 02:49:45.000
+Mm-hmm.
+
+02:49:45.000 --> 02:49:49.000
+Permítame compartir. Ya pudieron habilitar con eso.
+
+02:49:49.000 --> 02:49:55.000
+Pon el link que les pasé. Pero también tengo pie.
+
+02:49:55.000 --> 02:50:02.000
+Pero ya copia lo copiaste con lo que está en el dock en vivo?
+
+02:50:02.000 --> 02:50:10.000
+Comparte tu pantalla, comparte tu pantallita. comparte tu pantallita.
+
+02:50:10.000 --> 02:50:18.000
+A ver. Pero está cargando.
+
+02:50:18.000 --> 02:50:26.000
+Todavía está cargando ya a ver a ver. Si es el SSH no lo necesitas.
+
+02:50:26.000 --> 02:50:32.000
+Eso ya ya eso ya terminó, porque es la es la máquina virtual, eso no lo necesitas, ciérrale.
+
+02:50:32.000 --> 02:50:38.000
+Ajá, ya está. Eh bien.
+
+02:50:38.000 --> 02:50:47.000
+En la parte de tu, de tu. de tu, la parte que hice arribita, que dice Google Drive ya.
+
+02:50:47.000 --> 02:50:51.000
+Hay una parte que dice. o por lo más grandecito para poder verlo mejor, porfa.
+
+02:50:51.000 --> 02:50:57.000
+Ahí está aja ahí nomás. Pon escape escape nada más escape.
+
+02:50:57.000 --> 02:51:02.000
+Ya está en la, en la parte donde está, donde está.
+
+02:51:02.000 --> 02:51:08.000
+el tu carita ya la cara. En esa recta hay como un cuadradito.
+
+02:51:08.000 --> 02:51:12.000
+Alétrica y eso. Ajá bien.
+
+02:51:12.000 --> 02:51:16.000
+Es ahí donde tú pones autor continuar eso.
+
+02:51:16.000 --> 02:51:24.000
+Autorizas todo. Ajá.
+
+02:51:24.000 --> 02:51:30.000
+That's pena que termine de conectarse.
+
+02:51:30.000 --> 02:51:37.000
+Ya está. Ahí pon los comandos, porfi.
+
+02:51:37.000 --> 02:51:42.000
+Pégalos por ahí. Dale enter. Ajá.
+
+02:51:42.000 --> 02:51:51.000
+Sí sí por a veces a veces a veces cuando uno ve pantalla negra ay, sé lo mismo, ¿no? O sea, cada vez que usted vean la palabra C C H arriba es porque está dentro de una máquina virtual, ¿ya?
+
+02:51:51.000 --> 02:51:54.000
+Permíteme compartir por acá.
+
+02:51:54.000 --> 02:52:00.000
+Yeah, entonces. Hasta ahí hemos hecho una pequeñisima primera parte.
+
+02:52:00.000 --> 02:52:06.000
+Luego, ¿ya? Vamos a bajar por acá, bajas un poquito.
+
+02:52:06.000 --> 02:52:13.000
+Data siempre de tener, trata siempre de tener por fa esa división entre la parte visual.
+
+02:52:13.000 --> 02:52:17.000
+Y la parte línea de comandos para que te sea un poco más sencillo.
+
+02:52:17.000 --> 02:52:22.000
+En el segundo paso te dice que hay que crear una credencial.
+
+02:52:22.000 --> 02:52:28.000
+Como así regresa al al menú principal que dice Google Drop.
+
+02:52:28.000 --> 02:52:35.000
+Hacemos clic acá, ¿ya? Y en el buscador como tal en este que dice search .
+
+02:52:35.000 --> 02:52:38.000
+Vas a poner donde dice API servicios.
+
+02:52:38.000 --> 02:52:43.000
+Api y servicios. Y le darás clic acá.
+
+02:52:43.000 --> 02:52:54.000
+Y me avisa cuando tenemos esta pantalla. Me avisa por que contengan esa pantallita.
+
+02:52:54.000 --> 02:52:59.000
+Sí, está en esa pantalla API servicios, ¿ya? API y servicios.
+
+02:52:59.000 --> 02:53:05.000
+En la mano. izquierda ustedes tienen varias cosas.
+
+02:53:05.000 --> 02:53:08.000
+Tiene la palabra donde dice.
+
+02:53:08.000 --> 02:53:12.000
+Library, credential bla bla bla.
+
+02:53:12.000 --> 02:53:16.000
+Cuando tú quieres, por ejemplo, vamos a poner casi hipotético que usted dice.
+
+02:53:16.000 --> 02:53:23.000
+Yo tengo mi data ya. Tengo mi data, eh.
+
+02:53:23.000 --> 02:53:26.000
+And GCP.
+
+02:53:26.000 --> 02:53:31.000
+Y lo quiero leer. Mediante un colap.
+
+02:53:31.000 --> 02:53:36.000
+En otro lado. ¿Qué necesito para que esto pueda funcionar?
+
+02:53:36.000 --> 02:53:40.000
+necesitaré una credencial. Ya para poder hacer eso.
+
+02:53:40.000 --> 02:53:43.000
+Entonces nosotros como tal vamos a crear una API.
+
+02:53:43.000 --> 02:53:47.000
+Se acuerda que necesitamos esa API de lo que es eh.
+
+02:53:47.000 --> 02:53:51.000
+Eh geocodi entonces para eso darán aquí donde dice.
+
+02:53:51.000 --> 02:54:00.000
+credentials, vete que cargue. Arriba donde dice credential, clic acá y miren acá.
+
+02:54:00.000 --> 02:54:06.000
+Cuando, por ejemplo. el caso que usted dice, no pues mira.
+
+02:54:06.000 --> 02:54:09.000
+El caso que les contaba de tener el colap.
+
+02:54:09.000 --> 02:54:13.000
+O tú inclusive tu notebook en tu en tu computador.
+
+02:54:13.000 --> 02:54:21.000
+Y quieres capturar. O hacer cosas dentro de GCP leader to add a GCP, necesitarás el concepto de qué?
+
+02:54:21.000 --> 02:54:25.000
+de un service account, es aquí por donde tú puedes crearlo.
+
+02:54:25.000 --> 02:54:30.000
+En nuestro caso, necesitamos solamente. Dar click donde dice.
+
+02:54:30.000 --> 02:54:32.000
+API key, ¿ya?
+
+02:54:32.000 --> 02:54:37.000
+Esta primera que esta por acá. En esta parte, en esta API.
+
+02:54:37.000 --> 02:54:43.000
+césped de que termine de tearte. Ya esta API.
+
+02:54:43.000 --> 02:54:47.000
+Si yo le pongo y se los comparto a ustedes.
+
+02:54:47.000 --> 02:54:51.000
+Teniendo esta API. Yo voy a poder ingresar.
+
+02:54:51.000 --> 02:54:57.000
+A la cuenta de cada uno de ustedes. Es por esto que es api .
+
+02:54:57.000 --> 02:55:03.000
+Estamos mencionando ya. Te va a permitir a ti qué cosa.
+
+02:55:03.000 --> 02:55:08.000
+Tú lo tendrías que almacenar. En el concepto que lo llaman secret manager.
+
+02:55:08.000 --> 02:55:13.000
+Ahorita ahorita la arquitectura como tal. No tienen no tienen nada de seguridad.
+
+02:55:13.000 --> 02:55:17.000
+porque está diciendo que tiene una API pero no lo estoy almacenando en ningún lado.
+
+02:55:17.000 --> 02:55:23.000
+Ya, entonces, ¿a qué me refiero? Vamos a poner el caso.
+
+02:55:23.000 --> 02:55:27.000
+Que tú dices mira yo quiero tener esa capa de seguridad.
+
+02:55:27.000 --> 02:55:33.000
+esta, esa API donde lo vas a almacenar? lo vas a almacenar en este lado.
+
+02:55:33.000 --> 02:55:37.000
+Cierro esto. Eso lo vamos a ver en los demás laboratorios.
+
+02:55:37.000 --> 02:55:40.000
+El servicio que se llama setred.
+
+02:55:40.000 --> 02:55:48.000
+Manager carambas ser el manager. Es aquí donde tú vas a asignar crear el concepto que lo llaman kibalbe.
+
+02:55:48.000 --> 02:55:52.000
+Aquí le pones un nombre y el vale la llave que estamos diciendo.
+
+02:55:52.000 --> 02:55:57.000
+Y a ver nuevamente como es algo nuevo, hay que habilitar el servicio. Ahorita no lo sé porque no no es parte de y ya.
+
+02:55:57.000 --> 02:56:01.000
+Pero les comento eso para que lo tomen en cuenta.
+
+02:56:01.000 --> 02:56:07.000
+Esta piki que estamos diciendo. Eh, vamos a editarla.
+
+02:56:07.000 --> 02:56:14.000
+En acciones en esta parte. Primero yo termine su bapi.
+
+02:56:14.000 --> 02:56:18.000
+Yo tenía otra suapi, sí, ya. En la parte de acciones.
+
+02:56:18.000 --> 02:56:20.000
+3 puntitos, editar.
+
+02:56:20.000 --> 02:56:22.000
+A piki, ¿ya?
+
+02:56:22.000 --> 02:56:27.000
+Editar a Piki. En esa parte de editara, de editar a Piki.
+
+02:56:27.000 --> 02:56:32.000
+Tú le puedes delimitar. ¿Para qué? Que.
+
+02:56:32.000 --> 02:56:34.000
+Que sin ninguna restricción none.
+
+02:56:34.000 --> 02:56:37.000
+Solamente enfocada.
+
+02:56:37.000 --> 02:56:42.000
+A website o solamente enfocada? Quizás hay pez como tal.
+
+02:56:42.000 --> 02:56:46.000
+En nuestro caso, voy a bajar un poquito por acá.
+
+02:56:46.000 --> 02:56:52.000
+Ya está, yo voy a tener restricciones. En esa restricción.
+
+02:56:52.000 --> 02:56:54.000
+Le vamos a cambiar donde dice.
+
+02:56:54.000 --> 02:56:56.000
+Restrict key.
+
+02:56:56.000 --> 02:57:03.000
+¿Ya? Esto lo dejas por defecto, solamente vas a cambiar el que dice restricción de la API.
+
+02:57:03.000 --> 02:57:09.000
+En esta API que estamos mencionando, tú buscaras el servicio, ¿ya?
+
+02:57:09.000 --> 02:57:14.000
+El servicio que se llama geocodi. Entonces geo.
+
+02:57:14.000 --> 02:57:20.000
+Código ya nuevamente. Ojo acá tú tenías esto, ¿cierto?
+
+02:57:20.000 --> 02:57:32.000
+Mueves a este botón, señalas acá. Y le pones geocodi ya estamos terminando para poder ir cerrando para que la otra parte lo terminemos lo terminamos el día sábado, ¿ya?
+
+02:57:32.000 --> 02:57:37.000
+das lleguen acá en esto. Le das trick en ok.
+
+02:57:37.000 --> 02:57:42.000
+Ya y le das clic en guardar. Esa parte se llega a entender.
+
+02:57:42.000 --> 02:57:48.000
+Esta partecita de las primero lápiz. Luego del API como tal.
+
+02:57:48.000 --> 02:57:54.000
+Restringes la llave solamente para que ajeo Cody. Y luego pum, lo guardas.
+
+02:57:54.000 --> 02:58:00.000
+Y ya está ya. hasta ahí nos vamos a quedar va a hacer un recap de forma muy rápida.
+
+02:58:00.000 --> 02:58:07.000
+Que hemos hecho? Hemos cerrado por la parte lo que es el data lake como tal, ya le subí también recibe un un este.
+
+02:58:07.000 --> 02:58:14.000
+Un arquitectura que en su momento se le trabajé con un colega.
+
+02:58:14.000 --> 02:58:22.000
+Y el y esto que está acá para que ustedes puedan ver cómo uno puede empezar todo el tema de la construcción de data lake.
+
+02:58:22.000 --> 02:58:29.000
+Recuerda que cuando uno hace. Toda esa parte de poder automatizar.
+
+02:58:29.000 --> 02:58:33.000
+Quizás tu primera opción más que una herramienta per se.
+
+02:58:33.000 --> 02:58:38.000
+Va a ser el uso de shell. Como ves acá ya.
+
+02:58:38.000 --> 02:58:46.000
+En esa automatización que tú tienes. Tú obtienes el mundo de la parte, lo que es HDFS en este caso.
+
+02:58:46.000 --> 02:58:48.000
+Y el mundo que corre en la parte high.
+
+02:58:48.000 --> 02:58:52.000
+teniendo en cuenta que tu dato se almacena en HDF.
+
+02:58:52.000 --> 02:58:58.000
+Y yo con lo consulto. Que más hemos visto.
+
+02:58:58.000 --> 02:59:02.000
+hasta ahí hemos cerrado como toda la parte de lo que es la arquitectura de Haddo bien.
+
+02:59:02.000 --> 02:59:09.000
+Luego la segunda cosa que te piden a ti que ven para acá donde te fuiste, esa arquitectura, ¿a qué estás?
+
+02:59:09.000 --> 02:59:16.000
+Luego te pide, tienen un problemon. Del tema de los de lo que son los documentos, quieren digitalizarlo.
+
+02:59:16.000 --> 02:59:20.000
+tienen que hacer de forma automática y además de eso le pone más problemática.
+
+02:59:20.000 --> 02:59:24.000
+tienen que ser económico. Siempre cada vez.
+
+02:59:24.000 --> 02:59:33.000
+que tú armes una arquitectura. La palabra clave o la o la la forma como tú vas a poder vamos a ponerle la palabra ganar.
+
+02:59:33.000 --> 02:59:36.000
+Con el área de negocio y con el área de T I.
+
+02:59:36.000 --> 02:59:41.000
+Costo eficiente que me ayude a la necesidad y además que sea costo eficiente.
+
+02:59:41.000 --> 02:59:45.000
+Muchas veces esa arquitectura se puede convertir en serbeles.
+
+02:59:45.000 --> 02:59:52.000
+Hay un tema tambien consérveles. Que yo lo puedo hacer costo eficiente pero qué pasa si por ahí.
+
+02:59:52.000 --> 02:59:57.000
+Hubo una persona un recurso. Que se mandó un millón de documentos.
+
+02:59:57.000 --> 03:00:04.000
+Imagínense la cantidad de un millón de documentos. ¿Qué va a pasar acá la cantidad de request que va a ir.
+
+03:00:04.000 --> 03:00:12.000
+Eh haciéndose ya es importante también entender eso. Ahí ya vamos a ver hablar el sábado que hacer frente a frente a ese escenario, ¿ya?
+
+03:00:12.000 --> 03:00:18.000
+Entonces, además quisimos que hemos configurado ahorita, bueno, hemos, hemos, lo que hemos hecho.
+
+03:00:18.000 --> 03:00:25.000
+No está bien hemos evito las APIs. Hemos creado la aplicación que vamos a utilizar el día, el día sábado y hasta ahí no vamos a quedar, ¿ya?
+
+03:00:25.000 --> 03:00:29.000
+Todavía no le voy a subir, voy a subir voy a subir si bien es cierto el.
+
+03:00:29.000 --> 03:00:34.000
+El eh la tarea el la evaluación vamos a ponerlo así.
+
+03:00:34.000 --> 03:00:37.000
+Pueden ir avanzando, lo pueden ir viendo qué casos de uso van a hacer.
+
+03:00:37.000 --> 03:00:46.000
+Ehh y ya está no pero realmente como todavía no hemos no hemos acabado el laboratorio pues recibimos acabado el día sábado pero pueden ir a ir avanzando.
+
+03:00:46.000 --> 03:00:51.000
+Más que nada palmando poniendo el caso de negocio que quieren resolver.
+
+03:00:51.000 --> 03:01:01.000
+Ya, eso. ¿alguna pregunta? ¿se entendió? Todavía.
+
+03:01:01.000 --> 03:01:02.000
+Mm-mm. No, ninguno, ninguno. Lo que.
+
+03:01:02.000 --> 03:01:07.000
+No. Yeah.
+
+03:01:07.000 --> 03:01:12.000
+Eh por tal cual como tal, no, como tal no.
+
+03:01:12.000 --> 03:01:15.000
+Pero tú tú podías en esta parte de acá.
+
+03:01:15.000 --> 03:01:16.000
+Give me that.
+
+03:01:16.000 --> 03:01:22.000
+En esto eliminarla o sea tú lo eliminas y ya está pero no tiene como un tema de caducidad per se por sí sola.
+
+03:01:22.000 --> 03:01:23.000
+Yeah, perfect.
+
+03:01:23.000 --> 03:01:30.000
+Aja no tiene aja no tiene . O lo que sí, lo que sí, lo que sí, porfa, como ya el tema del tras ya no lo vamos a utilizar, eso sí, eliminelo.
+
+03:01:30.000 --> 03:01:35.000
+Es decir, en la bananaproc. Toman acá, chao.
+
+03:01:35.000 --> 03:01:40.000
+delete porque ya terminaron la parte de ahí no les no quiero que les genere consumo innecesarios ya?
+
+03:01:40.000 --> 03:01:45.000
+Eso, pues, muchas gracias. Termino de colar con ustedes y voy a subir el documento que les decía.
+
+03:01:45.000 --> 03:01:52.000
+Un abrazo nos vemos el el día sábado me deja pendiente la pregunta a Juanjo la parte de.
+
+03:01:52.000 --> 03:01:57.000
+del que hablaba, va, va, va a hacerse para la parte presencial, ya eso.
+
+03:01:57.000 --> 03:01:58.000
+y lo demás va a ser virtual es. Con conmigo, conmigo.
+
+03:01:58.000 --> 03:02:02.000
+Alright, so this is.
+
+03:02:02.000 --> 03:02:10.000
+I knew de las 3:30 para abajo es virtual, es virtual, no sé cómo estarán con el resto de los profes, ahí sí desconozco.
+
+03:02:10.000 --> 03:02:11.000
+Ya diría que también virtual, pero igual ahí pregúnen pregúntele al, al, al juanjo.
+
+03:02:11.000 --> 03:02:15.000
+Yeah, perfect.
+
+03:02:15.000 --> 03:02:18.000
+Pero conmigo si es virtual por lo que les comentaba no eso ya.
+
+03:02:18.000 --> 03:02:33.000
+Okay, muchas gracias, un abrazo, que descansen. Nos vemos el sábado. Abrazos, chao, chao.
+
+03:02:33.000 --> 03:02:37.000
+Oh, yes, I feel like that. Yeah. No, no, touch up.
+
+03:02:37.000 --> 03:02:47.000
+Cha
+

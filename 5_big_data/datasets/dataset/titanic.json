@@ -1,0 +1,162 @@
+[
+  {
+    "PassengerId": 2,
+    "Pclass": 1,
+    "Gender": 0,
+    "Age": 38,
+    "Fare": 71.2833,
+    "Boarded": 0
+  },
+  {
+    "PassengerId": 4,
+    "Pclass": 1,
+    "Gender": 0,
+    "Age": 35,
+    "Fare": 53.1,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 7,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 54,
+    "Fare": 51.8625,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 11,
+    "Pclass": 3,
+    "Gender": 0,
+    "Age": 4,
+    "Fare": 16.7,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 12,
+    "Pclass": 1,
+    "Gender": 0,
+    "Age": 58,
+    "Fare": 26.55,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 22,
+    "Pclass": 2,
+    "Gender": 1,
+    "Age": 34,
+    "Fare": 13,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 24,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 28,
+    "Fare": 35.5,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 28,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 19,
+    "Fare": 263,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 53,
+    "Pclass": 1,
+    "Gender": 0,
+    "Age": 49,
+    "Fare": 76.7292,
+    "Boarded": 0
+  },
+  {
+    "PassengerId": 55,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 65,
+    "Fare": 61.9792,
+    "Boarded": 0
+  },
+  {
+    "PassengerId": 63,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 45,
+    "Fare": 83.475,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 67,
+    "Pclass": 2,
+    "Gender": 0,
+    "Age": 29,
+    "Fare": 10.5,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 76,
+    "Pclass": 3,
+    "Gender": 1,
+    "Age": 25,
+    "Fare": 7.65,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 89,
+    "Pclass": 1,
+    "Gender": 0,
+    "Age": 23,
+    "Fare": 263,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 93,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 46,
+    "Fare": 61.175,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 97,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 71,
+    "Fare": 34.6542,
+    "Boarded": 0
+  },
+  {
+    "PassengerId": 98,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 23,
+    "Fare": 63.3583,
+    "Boarded": 0
+  },
+  {
+    "PassengerId": 103,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 21,
+    "Fare": 77.2875,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 111,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 47,
+    "Fare": 52,
+    "Boarded": 1
+  },
+  {
+    "PassengerId": 119,
+    "Pclass": 1,
+    "Gender": 1,
+    "Age": 24,
+    "Fare": 247.5208,
+    "Boarded": 0
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "PERSONA": {
+      "ID_PERSONA":18,
+      "NOMBRE": "Owen",
+      "CONTACTO": [
+        {"TIPO": "CORREO", "VALOR": "owen@hotmail.com"},
+        {"TIPO": "CORREO", "VALOR": "owen@gmail.com"},
+        {"TIPO": "TELEFONO", "VALOR": "991281120"}
+      ]
+    },
+    "EMPRESA": {
+      "ID_EMPRESA":3,
+      "NOMBRE":"Apple"
+    },
+    "MONTO":1383,
+    "FECHA":"2020-01-03"
+  },
+  {
+    "PERSONA": {
+      "ID_PERSONA":30,
+      "NOMBRE": "Clayton"
+    },
+    "EMPRESA": {
+      "ID_EMPRESA":6,
+      "NOMBRE":"Google"
+    },
+    "MONTO":2331,
+    "FECHA":"2020-01-04"
+  },
+  {
+    "PERSONA": {
+      "ID_PERSONA":47,
+      "NOMBRE": "Vernon",
+      "APELLIDO": "Parker",
+      "CONTACTO": [
+        {"TIPO": "CORREO", "VALOR": "vernon@hotmail.com"},
+        {"TIPO": "TELEFONO", "VALOR": "9912451237"}
+      ]
+    },
+    "EMPRESA": {
+      "ID_EMPRESA":2,
+      "NOMBRE":"Microsoft"
+    },
+    "MONTO":2280,
+    "FECHA":"2020-01-04"
+  },
+  {
+    "PERSONA": {
+      "ID_PERSONA":28,
+      "NOMBRE": "Stephen",
+      "CONTACTO": [
+        {"TIPO": "CORREO", "VALOR": "stephen@gmail.com"},
+        {"TIPO": "TELEFONO", "VALOR": "9910275611"}
+      ]
+    },
+    "EMPRESA": {
+      "ID_EMPRESA":1,
+      "NOMBRE":"Walmart"
+    },
+    "MONTO":730,
+    "FECHA":"2020-01-04"
+  },
+  {
+    "PERSONA": {
+      "ID_PERSONA":91,
+      "NOMBRE": "Erica",
+      "CONTACTO": [
+        {"TIPO": "CORREO", "VALOR": "erica@hotmail.com"},
+        {"TIPO": "TELEFONO", "VALOR": "912331240"}
+      ]
+    },
+    "EMPRESA": {
+      "ID_EMPRESA":4,
+      "NOMBRE":"Toyota"
+    },
+    "MONTO":3081,
+    "FECHA":"2020-01-04"
+  }
+]

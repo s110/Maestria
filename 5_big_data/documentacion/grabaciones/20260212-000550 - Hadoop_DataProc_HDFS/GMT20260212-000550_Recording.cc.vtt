@@ -1,0 +1,5462 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.000
+Hola! Buenas noches!
+
+00:00:00.000 --> 00:00:04.000
+Hello!
+
+00:00:04.000 --> 00:00:06.000
+Hola! Buenas noches, buenas noches.
+
+00:00:06.000 --> 00:00:12.000
+Hola, ¿cómo están? ¿qué tal? ¿cómo están? Ya está. Vamos a empezar.
+
+00:00:12.000 --> 00:00:19.000
+Pero hay pocos alumnos. Igual. Empiezo, empiezo, empiezo.
+
+00:00:19.000 --> 00:00:25.000
+O esperamos unos 2 min más.
+
+00:00:25.000 --> 00:00:27.000
+Un par de minutos. Hay que esperar.
+
+00:00:27.000 --> 00:00:46.000
+Yeah. Mientras tanto, voy compartiendo.
+
+00:00:46.000 --> 00:00:49.000
+On it.
+
+00:00:49.000 --> 00:00:59.000
+Vamos a esperar un poquito 2 min más. Empezamos. Siete y 8 ya, mientras que les damos chance a sus compañeros.
+
+00:00:59.000 --> 00:01:06.000
+Pero los que están acá vayan aprovechando por fab, descarguen, descarguen todo lo que tengo. Todo lo que está acá.
+
+00:01:06.000 --> 00:01:13.000
+Todo lo de la clase 3 ya. Esta es la clase del día sábado. Vayan descargándolo por mientras.
+
+00:01:13.000 --> 00:01:17.000
+Mientras que esperamos al resto. Y esto voy a poner acá.
+
+00:01:17.000 --> 00:01:47.000
+Para poder iniciar. Y esperamos un ratito.
+
+00:02:27.000 --> 00:02:34.000
+No, no.
+
+00:02:34.000 --> 00:02:42.000
+Listo. Empezamos porque la hora es la hora y vamos para acá. Primero, muy buenas noches. Espero que todos estén súper bien.
+
+00:02:42.000 --> 00:02:48.000
+Se ve en pantalla, ¿cierto? Para ya empezar. Dios estaría dando de un segundo? Sí.
+
+00:02:48.000 --> 00:02:53.000
+Entonces, antes de empezar con todo, ya que vamos a ver el día de hoy.
+
+00:02:53.000 --> 00:02:59.000
+Pues, vamos a ver todo el tema que tiene que ver con la parte de lo que es hadoo y el cluster en lo que es la nube.
+
+00:02:59.000 --> 00:03:05.000
+Yeah. Pero antes de empezar vamos para acá. Primero, un pequeño, un pequeño lema.
+
+00:03:05.000 --> 00:03:09.000
+Todas las aplicaciones de la nube tienen que ser diseñadas para escalar.
+
+00:03:09.000 --> 00:03:16.000
+Significa que tú, si bien es cierto, es un curso de big data como tal.
+
+00:03:16.000 --> 00:03:19.000
+Pero estamos combinando un poco con lo que es arquitectura.
+
+00:03:19.000 --> 00:03:24.000
+Porque porque la idea es que tú puedas diseñar arquitecturas.
+
+00:03:24.000 --> 00:03:30.000
+Que no solamente sirvan para el momento. Sino para un año, 3 años, 5 años dentro de la Organización.
+
+00:03:30.000 --> 00:03:38.000
+Si no, si no haces esto, no hay sentido. Realmente desplegarlas. He visto periodos de concepto. He trabajado dentro de concepto.
+
+00:03:38.000 --> 00:03:46.000
+Que realmente fracasan, porque en la prueba concepto funciona súper bien. Pero cuando ya se pone tipo proyecto.
+
+00:03:46.000 --> 00:03:52.000
+Fracasa por la alta redundancia de datos. Y la idea es que ustedes puedan saber cómo elaborar todo esto.
+
+00:03:52.000 --> 00:04:00.000
+Dicho todo esto, ¿cuál es el objetivo. El primer objetivo. Así directo, la vena es entender y configurar el cluster dejado.
+
+00:04:00.000 --> 00:04:06.000
+O sea, todo el tema de big data. En la nube ya para eso, para eso.
+
+00:04:06.000 --> 00:04:15.000
+Vi sus comentarios. 1 000 1 000: gracias. Ya vamos. Vamos. Vamos a cambiar un poquito la forma como era de la edición es pasadas.
+
+00:04:15.000 --> 00:04:22.000
+Vamos a ponerlo bastante bastante práctico para que saquen provecho. Todo esto.
+
+00:04:22.000 --> 00:04:27.000
+Les ha subido bastante código, no se vayan a asustar. Ya vamos a ir de a poco. Se lo voy a explicar.
+
+00:04:27.000 --> 00:04:38.000
+De forma, conforme vayamos avanzando. Y luego, ¿cuál es el otro objetivo? Diseño, una arquitectura de datos elástica, es decir, que vamos a desacoplar.
+
+00:04:38.000 --> 00:04:48.000
+El cómputo y del almacenamiento. Significa que yo me preocuparé en tirar la infraestructura, pero mis datos van a estar almacenados en otro lado.
+
+00:04:48.000 --> 00:04:52.000
+¿cuál es el otro objetivo de esta sesión de esas 3 h.
+
+00:04:52.000 --> 00:05:00.000
+Optimización de costos y rendimiento operacional. ¿qué significa esto? Vamos a ir viendo conforme yo voy explicando la creación del cluster.
+
+00:05:00.000 --> 00:05:05.000
+Voy a ir explicando lo que es. Los diferentes.
+
+00:05:05.000 --> 00:05:11.000
+De máquinas virtuales que hay dentro al momento de crear todo el tema, lo que es del compute.
+
+00:05:11.000 --> 00:05:17.000
+Qué más? Y luego tienes. Lo que es el otro objetivo que es armar un pilot.
+
+00:05:17.000 --> 00:05:23.000
+Recordando un Pireland que es el concepto de varias cajas, ya para poder llevar a cabo ¿qué cosa.
+
+00:05:23.000 --> 00:05:31.000
+Vamos a ir dando introducción, porque, si bien es cierto tesoras nos queda corto para ver todo el tema, lo que es el cluster de big data per se.
+
+00:05:31.000 --> 00:05:41.000
+Vamos a dar pinceladas de lo que es Spark. Luego tenemos una sesión para profundizar. Veremos también lo que es Hdfs, el tema Storage, que ya habíamos visto no.
+
+00:05:41.000 --> 00:05:46.000
+Hasta ahí. El objetivo se llega a entender. ¿tienen alguna pregunta con esto?
+
+00:05:46.000 --> 00:05:52.000
+Si les va a pedir por fácil, como siempre, las demás sesiones, los pulgarcitos o algo para saber que están ahí y que se va entendiendo.
+
+00:05:52.000 --> 00:05:54.000
+Muchas gracias, Brian. Seguimos.
+
+00:05:54.000 --> 00:05:57.000
+I'll put it.
+
+00:05:57.000 --> 00:06:04.000
+Gracias a ella. El resto también. Seguimos, seguimos para acá punto importante en todo esto y aquí un segundo que no veo.
+
+00:06:04.000 --> 00:06:07.000
+La cuestión. Un segundito.
+
+00:06:07.000 --> 00:06:13.000
+Ya está. Y hasta ahora sí, problema de negocio.
+
+00:06:13.000 --> 00:06:18.000
+Porque yo voy a aprender el crear un cluster de big data.
+
+00:06:18.000 --> 00:06:23.000
+Primero, tú vas a tener. Es más que seguro a ti. Te van a contratar como que.
+
+00:06:23.000 --> 00:06:29.000
+Como un científico de datos. Vamos a hablar un poco más amplio. El abanico ya.
+
+00:06:29.000 --> 00:06:35.000
+Como un ingeniero de machine learning. Es ingeniero, machine learning recordar que no solamente sabe ciencia, datos.
+
+00:06:35.000 --> 00:06:40.000
+Sino también toda la parte de ingeniería de datos diciendo esto muy posiblemente.
+
+00:06:40.000 --> 00:06:45.000
+En 1 de los casos que ustedes tengan que se enfrenten en su día a día tengan que pasar.
+
+00:06:45.000 --> 00:06:52.000
+De on premise pasar al tema cloud. ¿por qué los típicos Cyber Days.
+
+00:06:52.000 --> 00:07:01.000
+Recordar que, cosa que los cyber day hay mucha congruencia de que mucha cantidad de usuarios utilizando el sistema.
+
+00:07:01.000 --> 00:07:10.000
+Qué más? ¿cuál es el otro problema? Costo de infraestructura. ¿qué pasa con el tema de lo que es tener todo el tema? Lo que son premios o inclusive en otras nubes.
+
+00:07:10.000 --> 00:07:16.000
+Y tenga que yo tener. Altos costos altos costos de que, de mantenibilidad.
+
+00:07:16.000 --> 00:07:21.000
+O Tomás, que es el otro problema. El otro problema: silos y rigidez.
+
+00:07:21.000 --> 00:07:27.000
+Mayormente pasa con los sistemas que se tienen en On premise o en algún otro lado.
+
+00:07:27.000 --> 00:07:37.000
+Que es un poco difícil el enterar Spar. Y qué cespar? Spark es un framework que te hace memoria, que se monta dentro de un clster de lo que es hadoo.
+
+00:07:37.000 --> 00:07:41.000
+Ya que te va a permitir a ti. Procesar tu información.
+
+00:07:41.000 --> 00:07:47.000
+Que tenga que ver con el concepto de big data. Big data. Estamos hablando de 500 gigas hacia arriba.
+
+00:07:47.000 --> 00:07:52.000
+Luego tienes a hive y high. ¿qué cosa es el lavasado del metadatos? Y luego todo el tema de machine learning.
+
+00:07:52.000 --> 00:07:56.000
+Para poder unificar todo lo que estamos diciendo. Esto.
+
+00:07:56.000 --> 00:07:59.000
+Y evita esos hilos de tecnología que estamos diciendo.
+
+00:07:59.000 --> 00:08:05.000
+La solución de todo esto va a ser que gozal que estamos proponiendo por el momento. Dataproc.
+
+00:08:05.000 --> 00:08:09.000
+No se me. Preocupen solamente son.
+
+00:08:09.000 --> 00:08:17.000
+Algunos Slide, nada más. Es más que nada para poder explicar que lo que vamos a hacer ya. Y luego vamos directamente a la consola.
+
+00:08:17.000 --> 00:08:21.000
+Que más. Además, ¿cuál es la solución de todo esto? El pago por uso.
+
+00:08:21.000 --> 00:08:27.000
+La ventaja. ¿qué cosa es es que si yo, el cluster, por ejemplo, de datapro, el cluster de hadoo.
+
+00:08:27.000 --> 00:08:31.000
+Ya no lo estoy utilizando, pues no pasa nada. Lo puedo apagar.
+
+00:08:31.000 --> 00:08:37.000
+Yeah y qué cosa la ventaja de poder integrar ese concepto de delta delta ley.
+
+00:08:37.000 --> 00:08:41.000
+O lay house o Data lake. Dentro de todo esto.
+
+00:08:41.000 --> 00:08:47.000
+Y cuál es el impacto estratégico? Claro, yo no solamente me voy a ir con la parte tecnológica. Tengo que también la parte.
+
+00:08:47.000 --> 00:08:52.000
+Pues táctica, no la parte estratégica. ¿qué tengo reducir sus procesamientos? Bach.
+
+00:08:52.000 --> 00:08:59.000
+Está comprobado que si tú tienes, por ejemplo, un proceso en oracle un proceso en alguna base de datos.
+
+00:08:59.000 --> 00:09:06.000
+Que se demora aproximadamente 12 h, muy posiblemente al pasarlo, una arquitectura de Big Data, una arquitectura utilizando.
+
+00:09:06.000 --> 00:09:10.000
+Disminuye el tiempo. Aproximadamente 45 min.
+
+00:09:10.000 --> 00:09:14.000
+Yeah que más lo que buscas eficiencia financiera, porque.
+
+00:09:14.000 --> 00:09:17.000
+La idea de todo esto. La idea de poder armar.
+
+00:09:17.000 --> 00:09:22.000
+Dataproc que, al fin y al cabo, son máquinas virtuales, ya es que tú puedes tener.
+
+00:09:22.000 --> 00:09:33.000
+Spot virtual machine que es esto. Esto significa instancias que van corriendo a menor costo para tareas que no son como que no son sumamente prioritarias.
+
+00:09:33.000 --> 00:09:35.000
+Al momento de escoger la máquina, y los voy a explicar.
+
+00:09:35.000 --> 00:09:38.000
+Y luego general time to value.
+
+00:09:38.000 --> 00:09:43.000
+¿qué significa esto? Recuerda que de nada sirve que yo te dé la mejor tecnología, la mejor arquitectura.
+
+00:09:43.000 --> 00:09:49.000
+Si no tenemos enfocado con la parte lo que es la toma de decisión con el negocio.
+
+00:09:49.000 --> 00:09:52.000
+Dicho todo esto aquí solamente es un tema de repaso.
+
+00:09:52.000 --> 00:09:59.000
+Yeah, porque realmente el corazón de todo todo todo lo que nosotros vamos a hacer prácticamente casi las 2 h y media es el laboratorio.
+
+00:09:59.000 --> 00:10:03.000
+Porque, como ustedes en el quería pedir feedback en la segunda sesión.
+
+00:10:03.000 --> 00:10:10.000
+Porque eran muy calladitos y sean capaces, porque todo se entiende o nada se está entendiendo. Y estaba un poco preocupada.
+
+00:10:10.000 --> 00:10:16.000
+Sin embargo, en los feedback más bien estábamos súper bien. Sin embargo, pedían un poco más como más que teoría.
+
+00:10:16.000 --> 00:10:22.000
+Más práctica, y eso es lo que se está haciendo ya para que para que vayamos directo a la meta.
+
+00:10:22.000 --> 00:10:26.000
+Dicho todo esto solamente para recordar, recuerden que big data.
+
+00:10:26.000 --> 00:10:32.000
+Mayormente, cuando 1 dice: Oye data, cantidad, información no enfócalo con es un marco de trabajo.
+
+00:10:32.000 --> 00:10:40.000
+Porque es un marco de trabajo, porque tú vas a tener conceptos, conceptos que ahorita. Vamos a ir mencionando e ir conversando más. La tecnología.
+
+00:10:40.000 --> 00:10:45.000
+Que quiero. Aws que quiero Data Bridge, que quiero. Gcp, lo que fuese bien.
+
+00:10:45.000 --> 00:10:51.000
+Pero es conceptos más tecnología, ya que, si bien es cierto, pueda cumplir todas las B.
+
+00:10:51.000 --> 00:10:56.000
+Como volumen mucha cantidad, información, velocidad, porque, claro, tengo que procesar.
+
+00:10:56.000 --> 00:11:02.000
+De forma rápida, de forma tipo, batch y realtime. A todo esto, variedad.
+
+00:11:02.000 --> 00:11:09.000
+Porque recuerden que ustedes van a tener tanto data. Json: Data, Tipo parque. Ssb: Es abro lo que sea.
+
+00:11:09.000 --> 00:11:17.000
+Valor claro, porque yo, si estoy armando una arquitectura desde el día, 1 yo debería generar valor para el negocio.
+
+00:11:17.000 --> 00:11:28.000
+Y. El tema de la veracidad. ¿y por qué? Todo esto? Porque, repito nuevamente, de una sirve que te cumpla todo lo que está acá.
+
+00:11:28.000 --> 00:11:35.000
+Y la data no es la no es lo real. No es realmente lo que es lo que yo voy a estar, por ejemplo, de consumo. Luego que más.
+
+00:11:35.000 --> 00:11:40.000
+Aquí solamente para que se pueda sintetizar la tecnología que tecnologías.
+
+00:11:40.000 --> 00:11:43.000
+Vamos a hablar en toda la parte, inclusive cuando empecemos a.
+
+00:11:43.000 --> 00:11:50.000
+Crear el cluster. Ya. Y hay mucho código. Repito, no se me asusten porfa porque mayormente, cuando 1 empieza y código, no.
+
+00:11:50.000 --> 00:11:59.000
+No está. Vamos a ir de a pocos. La tecnología. ¿qué tecnología tienes? Hadoo hive X. Y así sucesivamente.
+
+00:11:59.000 --> 00:12:04.000
+Todo esto que está por acá te va a mermar. ¿qué cosa? El marco de trabajo o el framework.
+
+00:12:04.000 --> 00:12:09.000
+¿qué tecnologías existen dentro del mercado? Bueno, existe para la ingesta.
+
+00:12:09.000 --> 00:12:15.000
+Yeah, ¿qué cosa tengo? Scoop. Por ejemplo esto y acabo de hacer un paréntesis.
+
+00:12:15.000 --> 00:12:19.000
+Si bien es cierto, S. C. U. P. Otros lo pronuncian S, C. O P.
+
+00:12:19.000 --> 00:12:23.000
+Como quieras pronunciarlo. La cosa que se escribe. Sk: o P.
+
+00:12:23.000 --> 00:12:29.000
+Te va a permitir a ti poder hacer ingesta de tus bases datos relacionales hacia el cluster de big data.
+
+00:12:29.000 --> 00:12:33.000
+¿cómo así vamos a poner que tú tienes un oracle.
+
+00:12:33.000 --> 00:12:37.000
+Yeah, un oracle que quieres mirar a tu cluster de hadoo.
+
+00:12:37.000 --> 00:12:41.000
+La forma más rápida de poder hacerlo es utilizando Scoop.
+
+00:12:41.000 --> 00:12:47.000
+Sin embargo, no es la más recomendable para una prueba de concepto. Te va a funcionar.
+
+00:12:47.000 --> 00:12:53.000
+Pero no para la parte realtime. Ya para toda la parte realtime para la parte de lo que es en productivo, porque ya te voy a explicar.
+
+00:12:53.000 --> 00:12:58.000
+Tú ves en Scoop. Pregunta: Cuántos de ustedes han creado.
+
+00:12:58.000 --> 00:13:02.000
+Una chel en su momento. Alguna chel.
+
+00:13:02.000 --> 00:13:10.000
+Antes de alguno por ahí. Los que sí pongan, sí, los que no pongan no.
+
+00:13:10.000 --> 00:13:13.000
+Antes de alguna shell por ahí? No bien, por ahí, no.
+
+00:13:13.000 --> 00:13:20.000
+Yeah made any cuento por acá. Le voy a mostrar esto.
+
+00:13:20.000 --> 00:13:27.000
+Cerrar los autostap bien. Y eso es lo que ustedes van a optimizar. Vamos por aquí.
+
+00:13:27.000 --> 00:13:30.000
+Miren. Esta es una shell. ¿qué es una Shelle.
+
+00:13:30.000 --> 00:13:35.000
+Mayormente, cuando tú haces todo el tema. A lo que se refiere procesos, vamos a llamarlo así.
+
+00:13:35.000 --> 00:13:42.000
+Yeah, tú tienes que automatizar tareas. Estas automatizaciones de tareas.
+
+00:13:42.000 --> 00:13:50.000
+Para que de por sí, el sistema Linux debian ubuntu todo lo que tenga que ver con la parte de la consola negra.
+
+00:13:50.000 --> 00:13:55.000
+Pues se pueda automatizar. ¿qué cosas son las puntos? Ch.
+
+00:13:55.000 --> 00:13:59.000
+Si yo me voy acá, y ahora voy a abrir el otro lado.
+
+00:13:59.000 --> 00:14:04.000
+One second. Then buggy: Yeah.
+
+00:14:04.000 --> 00:14:12.000
+Y aquí voy a poner por acá. Significa que la Shell se van a ver en algo así como esto.
+
+00:14:12.000 --> 00:14:15.000
+Made up imágenes.
+
+00:14:15.000 --> 00:14:21.000
+Algo así. Y qué te va a permitir eso? Te va a poder a ti, permitir.
+
+00:14:21.000 --> 00:14:29.000
+¿qué cosa la automatización. Ustedes en algún momento me habían comentado que habían trabajado con Apache y Flor.
+
+00:14:29.000 --> 00:14:32.000
+Un archivo C. H. Exactamente la shelles exacto.
+
+00:14:32.000 --> 00:14:34.000
+Is at the boat. Exacto.
+
+00:14:34.000 --> 00:14:42.000
+Entonces, ¿qué significa esto? Significa que cosa. Que, si bien es cierto, Apache Eiflor.
+
+00:14:42.000 --> 00:14:46.000
+Como tal, que está dentro de composer que lo habíamos mencionado en las anteriores clases.
+
+00:14:46.000 --> 00:14:56.000
+Te permite ser la orquestación. Pero en los sistemas que ustedes van a encontrar los sistemas, se puede decir de banco de cajas, entre otros.
+
+00:14:56.000 --> 00:15:01.000
+Hace la automatización e inclusive de sus modelos, utilizando las shell.
+
+00:15:01.000 --> 00:15:06.000
+Asentó toda la lógica de Python y el Python lo ponen dentro de una hiel para que corra determinado horario.
+
+00:15:06.000 --> 00:15:10.000
+E. Inclusive. Esa shell. Al momento de decir.
+
+00:15:10.000 --> 00:15:15.000
+De decir a qué hora quiero que ejecute. Tú tienes un concepto de Chrome.
+
+00:15:15.000 --> 00:15:19.000
+Yeah mayormente, cuando tú tienes, por ejemplo, una Mac.
+
+00:15:19.000 --> 00:15:24.000
+Yeah, que también te permita abrir la consola negra y todo eso. Tú trabajas bajo bajo esta parte.
+
+00:15:24.000 --> 00:15:30.000
+Bajo lo que son las shell mas, un tronyot. ¿para poder? Qué cosa es que duran las tareas.
+
+00:15:30.000 --> 00:15:35.000
+Todo esto que está, acá todo esto lo absorbió y lo puso. ¿qué cosa en la parte de lo que es.
+
+00:15:35.000 --> 00:15:43.000
+Apacheifer, ya, pero hay hay empresas que tienen los 2. Por eso es importante saber los 2, y vamos a ir viéndolo.
+
+00:15:43.000 --> 00:15:49.000
+A pocos. Otro punto importante cuando yo empiezo a trabajar todo esto, y ahí vamos a seguir a esto.
+
+00:15:49.000 --> 00:15:54.000
+Yeah, ya sabemos que son las el. Esa shell que estamos diciendo.
+
+00:15:54.000 --> 00:15:59.000
+Donde ya me fuistes, está Shell o este scoop se pone dentro de una chel.
+
+00:15:59.000 --> 00:16:03.000
+Y cuál es el problema? El problema es que yo tengo que poner.
+
+00:16:03.000 --> 00:16:06.000
+De una u otra forma. La clave.
+
+00:16:06.000 --> 00:16:15.000
+That el usuario y la contraseña. Si yo le doy, por ejemplo, es esa shell, ese código que ustedes ustedes vieron por acá.
+
+00:16:15.000 --> 00:16:21.000
+Que ustedes vieron por acá. Yo les doy el código como usuario y contraseña, y la Ip del servidor.
+
+00:16:21.000 --> 00:16:26.000
+Usted van a poder accederlo. Es recomendable claramente que no no es seguro.
+
+00:16:26.000 --> 00:16:34.000
+Yeah. Es por eso mismo de esas razones que Scoop como tal, no se recomienda en algo productivo.
+
+00:16:34.000 --> 00:16:37.000
+Luego tienes apache. Kafka: En la parte en ingesta.
+
+00:16:37.000 --> 00:16:42.000
+Entonces en la parte Kafka: que lo que tú tienes.
+
+00:16:42.000 --> 00:16:46.000
+Tú haces la ingesta en tiempo real. Ya esa ingesta en tiempo real.
+
+00:16:46.000 --> 00:16:51.000
+Tú lo haces con que con Kafka. Luego tienes el famoso Data Station.
+
+00:16:51.000 --> 00:16:54.000
+Que el banco, el Banco, por ejemplo, el Banco B, B, C. P.
+
+00:16:54.000 --> 00:16:58.000
+Sigo utilizándolo porque digo famoso porque es algo ya antiguo.
+
+00:16:58.000 --> 00:17:02.000
+No se suele utilizar tanto, pero igual es bueno mencionarlo.
+
+00:17:02.000 --> 00:17:12.000
+¿qué más tienes a Froome? Muy parecido a Pache Kafka, Para poder capturar todo el tema real Time, con la diferencia que te va a permitir capturar todo el tema de lo que son los.
+
+00:17:12.000 --> 00:17:16.000
+Yeah, ya tienen la ingesta. Ya ingestas. Tes bien.
+
+00:17:16.000 --> 00:17:21.000
+Ahora te toca esa ingesta que estás haciendo, almacenarlo en algún lugar.
+
+00:17:21.000 --> 00:17:26.000
+Es almacenamiento que estamos diciendo. Lo puedes hacer. ¿qué cosa en hadoo.
+
+00:17:26.000 --> 00:17:33.000
+Puedes hacerlo en algún Edgebase que es una base de datos de baja latencia o Initi, que es una base de datos.
+
+00:17:33.000 --> 00:17:37.000
+Que te permite hacer todo el tema. Lo que son el tracking de los datos.
+
+00:17:37.000 --> 00:17:41.000
+Y tú vienes la pregunta: Oye Anita. Pero si al final.
+
+00:17:41.000 --> 00:17:44.000
+Yo recuerdo que en la primera y la segunda clase, porque esta es la tercera.
+
+00:17:44.000 --> 00:17:51.000
+Tú hiciste. Es un tema de bigquery. ¿qué tiene que ver con toda esta parte de lo que me estás diciendo.
+
+00:17:51.000 --> 00:17:59.000
+En su momento antes que exista todo el tema de Bigquery, el tema, lo que es el Mrr. De Amazon o. El H. D. Insight.
+
+00:17:59.000 --> 00:18:06.000
+De Ashur, ya. La base de todo de todo todo lo que es big data.
+
+00:18:06.000 --> 00:18:08.000
+Era o es.
+
+00:18:08.000 --> 00:18:10.000
+Hadoo Apache, hadoo.
+
+00:18:10.000 --> 00:18:17.000
+Ya el elefantito. Y para que B Square y L, M, R, entre otros, se puedan crear.
+
+00:18:17.000 --> 00:18:22.000
+Tuvieron como base esto que estamos diciendo. Por eso es importante el entender esto.
+
+00:18:22.000 --> 00:18:25.000
+Porque esto me va a permitir a mí entender.
+
+00:18:25.000 --> 00:18:34.000
+Como tengo que yo, ir guardando los datos, ya sea particionado, ya sea trastesterizado, que ahorita, vamos a ver qué diferencia es cada 1.
+
+00:18:34.000 --> 00:18:41.000
+Y cuál es más performante? Ya y almacené. Bacán. Me voy al tercer paso. Tengo que procesarlo.
+
+00:18:41.000 --> 00:18:46.000
+En ese procesamiento que estamos diciendo. Ustedes ¿quién tiene tienen a Hive.
+
+00:18:46.000 --> 00:18:50.000
+Y acá vamos a ir luego a ir conversando, pregunta.
+
+00:18:50.000 --> 00:18:54.000
+Es más que seguro que ustedes en algún momento.
+
+00:18:54.000 --> 00:19:01.000
+Han hecho esto acá. Sí o no, sí, ¿cierto? Eso se cuele.
+
+00:19:01.000 --> 00:19:06.000
+Ya sea de oracle, ya sea desde su de su colegio, Server.
+
+00:19:06.000 --> 00:19:11.000
+Lo que fuese bien. Y la segunda noticia yo con hive.
+
+00:19:11.000 --> 00:19:16.000
+Sigo utilizando S. Q, L. Pero le pongo H.
+
+00:19:16.000 --> 00:19:24.000
+Huele, y es un tema no más de nomenclatura. Pero internamente hay ciertas ciertos cambios.
+
+00:19:24.000 --> 00:19:28.000
+Pero explicaste. Se cuele. Luego tienes spar.
+
+00:19:28.000 --> 00:19:37.000
+En esparco. Nosotros veamos la parte de Sparco que nos toca también un módulo de Spark, ya un nódulo de spar. Y todo eso. Ustedes van a poder. Van a poder observar que.
+
+00:19:37.000 --> 00:19:40.000
+Dentro de Spark se puede hacer con.
+
+00:19:40.000 --> 00:19:49.000
+Python, más spar. R. Más spar, Java, spar, escala, más spar o. S, Q. L, más spar.
+
+00:19:49.000 --> 00:19:54.000
+Ya el lenguaje kernel de todo esto es escala.
+
+00:19:54.000 --> 00:19:58.000
+Empresas como Uber. Como Netflix, entre otros.
+
+00:19:58.000 --> 00:20:04.000
+O inclusive spotify, utilizan para el procesamiento de sus C, T. L. Apaches par.
+
+00:20:04.000 --> 00:20:07.000
+¿por qué? Por la velocidad que tiene la velocidad de procesamiento.
+
+00:20:07.000 --> 00:20:12.000
+Yeah, todo lo que está, por lo que está por acá también utilizan para todo el tema, procesamiento.
+
+00:20:12.000 --> 00:20:17.000
+Pero lo más utilizado que ustedes van a tener en todo esto es Apache Spar.
+
+00:20:17.000 --> 00:20:23.000
+Yeah, explotación. Qué cosa todo el tema que tenga que ver con visualización.
+
+00:20:23.000 --> 00:20:25.000
+Tengo a Hugh, que está dentro del mismo servidor.
+
+00:20:25.000 --> 00:20:30.000
+Tengo Rapid Miner, que es un es una idea que te permite hacer todo el tema de modelos.
+
+00:20:30.000 --> 00:20:35.000
+Atribu que, como Power Bi Jupyter Tauro, entre otros.
+
+00:20:35.000 --> 00:20:39.000
+Y luego tienes un tema de gobierno. Gobierno que iba a tener.
+
+00:20:39.000 --> 00:20:42.000
+Claudera, Ya Horthler, boss.
+
+00:20:42.000 --> 00:20:47.000
+Bumble, Yankees, entre otros. Y viene la pregunta.
+
+00:20:47.000 --> 00:20:57.000
+Esto que estoy mostrándoles es una tecnología agnóstica. Significa que si yo me voy a cualquier nube, va a haber un símil dentro de todo esto.
+
+00:20:57.000 --> 00:21:04.000
+El símil de la parte de lo que es gobierno ya dentro de lo que es Google Cloud.
+
+00:21:04.000 --> 00:21:06.000
+¿quién es data?
+
+00:21:06.000 --> 00:21:12.000
+Que habíamos mencionado las veces pasadas. Y luego, en la parte de seguridad. ¿qué vamos a tener.
+
+00:21:12.000 --> 00:21:19.000
+El tema encriptación. Las famosas V. P. Ns los hace. El, entre otros.
+
+00:21:19.000 --> 00:21:24.000
+Entonces tú de por sí. Tienes distinta tecnología.
+
+00:21:24.000 --> 00:21:27.000
+Cuál es lo que tienes que preocuparte. Entender recontra bien.
+
+00:21:27.000 --> 00:21:32.000
+Esto que está acá porque anita porque yo también con Apache Spar.
+
+00:21:32.000 --> 00:21:35.000
+Puedo construir es para Ml.
+
+00:21:35.000 --> 00:21:39.000
+Yeah. Hasta ahí. ¿bien? ¿sí? Si va pasando ya.
+
+00:21:39.000 --> 00:21:46.000
+Entonces en esta parte también tenemos tecnología de ingesta. Aquí les puse todo el tema, lo que tenga que ver con Bach.
+
+00:21:46.000 --> 00:21:49.000
+Todo esto, todo lo que tenga que ver con real. Thai.
+
+00:21:49.000 --> 00:21:51.000
+Todo esto es como el resumen de lo anterior.
+
+00:21:51.000 --> 00:21:55.000
+Luego acá. Lo mismo. Quiero almacenar. Formaba Bachera, hadoo real time.
+
+00:21:55.000 --> 00:21:58.000
+Age, base, inmemory in night, ya.
+
+00:21:58.000 --> 00:22:10.000
+Entonces la ventaja de todo esto es que ustedes van a poder. ¿qué cosa escoger dependiendo lo que quieran almacenar y que lo que tengan lo van a poder hacer.
+
+00:22:10.000 --> 00:22:16.000
+Tengo procesos. Batch bien, tengo procesos realtime. También. Sigo por acá. Luego.
+
+00:22:16.000 --> 00:22:23.000
+¿qué tienes en toda esta parte? Tienes también? ¿qué cosa el procesamiento? Lo mismo cada 1 de estos para procesar.
+
+00:22:23.000 --> 00:22:28.000
+Tienes lo mismo. Tienes hi bachispar para real time. Por ejemplo, Apache Spar.
+
+00:22:28.000 --> 00:22:32.000
+If a phone needs or store, y así sucesivamente.
+
+00:22:32.000 --> 00:22:39.000
+Que esto, que está acá. Esto es más o menos desalegado a lo que yo estaba comentando.
+
+00:22:39.000 --> 00:22:48.000
+Yeah, la capa explotación. Vamos a tener todo lo que acabamos nosotros de comentar herramientas de visualización, herramientas para hacer el análisis preparatorio.
+
+00:22:48.000 --> 00:22:54.000
+Eran herramientas para poder. No sé generar modelos de forma visual.
+
+00:22:54.000 --> 00:22:58.000
+Entre otras cosas. Dicho todo esto también la capa de gobierno.
+
+00:22:58.000 --> 00:23:02.000
+En la capa de gobierno. Todo lo que está por acá recuerda.
+
+00:23:02.000 --> 00:23:07.000
+Tienes la gobernabilidad. Tecnológica ya.
+
+00:23:07.000 --> 00:23:15.000
+Y la gobernabilidad de datos. Nadie me ha preguntado todavía. Seguro que ya se acuerda de lo que habíamos conversado. Recuerden que dataplex.
+
+00:23:15.000 --> 00:23:23.000
+En la gobernabilidad del dato. Y el resto del resto. El resto, que está por acá de la parte de gobierno, cada nube.
+
+00:23:23.000 --> 00:23:30.000
+Tiene la forma como llevar a cabo su Gobierno, por ejemplo, en el caso de lo que es, pues Big query.
+
+00:23:30.000 --> 00:23:32.000
+Query Google Drive en general.
+
+00:23:32.000 --> 00:23:39.000
+Tiene toda la nube la capacidad de poder hacer. ¿qué cosa de poder hacer la gobernabilidad de la misma.
+
+00:23:39.000 --> 00:23:41.000
+Yeah. See you acá.
+
+00:23:41.000 --> 00:23:50.000
+Seguridad muy importante. Esto. Cuando nosotros vamos a crear el cluster y van a poder percatarse.
+
+00:23:50.000 --> 00:23:59.000
+Me hizo a mí. ¿qué cosa? La encriptación. ¿qué cosa significa esto? Todos los servicios en el caso de la nube que estamos utilizando, que es Google Cloud.
+
+00:23:59.000 --> 00:24:06.000
+Tienen encriptación por default. Además de todo eso, los servicios que vamos a ir creando, ustedes van a ir viendo.
+
+00:24:06.000 --> 00:24:10.000
+Que cada máquina virtual se tira dentro de una V, P, C.
+
+00:24:10.000 --> 00:24:16.000
+Y que es una B, P. C. En la nombradura significa virtual private Connect.
+
+00:24:16.000 --> 00:24:22.000
+Qué significa esto? Te permite. Tipo, una v, p, n, que es una V, p, n.
+
+00:24:22.000 --> 00:24:27.000
+Acá estoy, yo acá está mis oficinas. Vamos a poner las oficinas de.
+
+00:24:27.000 --> 00:24:32.000
+De otro país y para poderlo conectar de una forma segura lo que se hacía, por ejemplo, en pandemia.
+
+00:24:32.000 --> 00:24:38.000
+Tendría una V. P. N para que hagas como una conexión de túnel seguro.
+
+00:24:38.000 --> 00:24:41.000
+Eso se puede, como se puede decir, como de cliente.
+
+00:24:41.000 --> 00:24:49.000
+Al al al servidor, ya. Sin embargo, cuando yo quiero hacer lo mismo, pero para mis máquinas virtuales.
+
+00:24:49.000 --> 00:24:53.000
+Yo tengo. No tengo esto. Tengo las Bp.
+
+00:24:53.000 --> 00:24:58.000
+Ya que, inclusive cuando ustedes crearon la cuenta de Google Cloud.
+
+00:24:58.000 --> 00:25:04.000
+Por defecto, les cargó una V Pc que dice: default que también lo vamos a revisar.
+
+00:25:04.000 --> 00:25:08.000
+Yeah, también, puesto que cosas, pues dice que el veros.
+
+00:25:08.000 --> 00:25:17.000
+Al momento que vamos a traer el trastorata pro te va a permitir a ti decir Oye. Yo quiero hacer toda la administración a través de carveros bien.
+
+00:25:17.000 --> 00:25:23.000
+Quiero también, por ejemplo, yo, asegurar. Todos los controles de mis datos a través de un concepto que se llama los P. C. I, ya.
+
+00:25:23.000 --> 00:25:30.000
+Qué más, y luego el acceso a los clústeres. Quiero que a través de un Elda, significa, a través del directorio activo.
+
+00:25:30.000 --> 00:25:33.000
+Yo pueda trabajar con todo eso que estamos diciendo.
+
+00:25:33.000 --> 00:25:38.000
+Qué más en todo esto? Aparte de eso, tú tienes también lo que son. Los hace el.
+
+00:25:38.000 --> 00:25:43.000
+Y que eso nos hace. Él es los Ángeles. Son como la lista, la lista de controles de acceso.
+
+00:25:43.000 --> 00:25:51.000
+Que te va a permitir a ti poder decir quién accede, cómo accede, si tiene permiso de lectura o de escritura o lo que fuese.
+
+00:25:51.000 --> 00:25:53.000
+Yeah.
+
+00:25:53.000 --> 00:26:03.000
+Hasta acá. Vamos bien, ¿hasta ¿hay alguna pregunta. Así, estamos bien. Los que recién han venido, les decía a sus compañeros.
+
+00:26:03.000 --> 00:26:33.000
+Que porfa descargue de.
+
+00:26:34.000 --> 00:26:40.000
+Yeah, ya se conecto. Acá está. Seguimos lenguaje de programación.
+
+00:26:40.000 --> 00:26:45.000
+Y aquí te cuento un poco importantísimo. ¿cuál va a ser tu valor diferencial? Ya.
+
+00:26:45.000 --> 00:26:53.000
+Entonces ha sido una maestría. Está sumamente bien. Ya el primer día tienes tu primer gol. Ya ya casi ya ha metido.
+
+00:26:53.000 --> 00:27:01.000
+Pero si tú quieres como que sacarle provecho a todo esto, ya lo que te aconsejo en aprender.
+
+00:27:01.000 --> 00:27:06.000
+Que goza y que domines bien, no con la ayuda de chachipití ni con la ayuda de Yéminai.
+
+00:27:06.000 --> 00:27:12.000
+Sino esto: tu Python o algún lenguaje de programación, o puede ser Java, inclusive.
+
+00:27:12.000 --> 00:27:18.000
+Porque te comento esto. Si bien es cierto, la inteligencia generativa te va a permitir a ti poder crear el código.
+
+00:27:18.000 --> 00:27:25.000
+Súper bien. Sin embargo. No necesariamente se vuelve lo más eficiente.
+
+00:27:25.000 --> 00:27:32.000
+Yeah, me ha pasado con Partners con clientes de todo, el de todas las de todos, de todo el estilo.
+
+00:27:32.000 --> 00:27:38.000
+¿qué ha pasado? ¿qué me han dicho? Mira, he hecho todo un pilot en realtime.
+
+00:27:38.000 --> 00:27:46.000
+Con payespar Python con spar. Ya. Y pues va lento. No funciona en Intel, no funciona. El real time.
+
+00:27:46.000 --> 00:27:53.000
+Y revisando. Qué cosa había pasado, que, por ejemplo, los Four estaban mal hechos los wild. De igual manera.
+
+00:27:53.000 --> 00:28:00.000
+etc. Etc. Entonces, o bien utiliza la inteligencia negativa y te hace un para que te corrija el código que tú acabas de crear.
+
+00:28:00.000 --> 00:28:07.000
+O vas aprendiendo la parte como cuándo utilizar cada cosa. Cada parte de lo que es el lenguaje, programación per se.
+
+00:28:07.000 --> 00:28:12.000
+Yeah. Entonces. Dicho todo esto, otro punto.
+
+00:28:12.000 --> 00:28:17.000
+Y también importante a mencionar. Mayormente, cuando tú trabajas con spar.
+
+00:28:17.000 --> 00:28:20.000
+Ya estamos hablando. Acá es el señor Spark.
+
+00:28:20.000 --> 00:28:23.000
+A batches, bar.
+
+00:28:23.000 --> 00:28:28.000
+Para que funcione y saques provecho al real time.
+
+00:28:28.000 --> 00:28:34.000
+En qué tienes que escribirlo? En escala o inclusive muchas veces en Java.
+
+00:28:34.000 --> 00:28:37.000
+Su lenguaje. El Kernell es escala.
+
+00:28:37.000 --> 00:28:43.000
+Yeah, la forma como se programa en Python versus escala es muy distinto.
+
+00:28:43.000 --> 00:28:50.000
+Muy, muy distinto. Por ejemplo, en Python. Yo creo, una variable en Python como funciona a igual 10.
+
+00:28:50.000 --> 00:28:56.000
+Bien, ¿verdad? Ya en escala. Yo tengo que tirar para la variable, para crear la variable, y sé que.
+
+00:28:56.000 --> 00:29:01.000
+La variable puede cambiar con el tiempo. Yo creo, la palabra var.
+
+00:29:01.000 --> 00:29:06.000
+Igual a 10. Si no quiero que sea el mismo valor, siempre Val.
+
+00:29:06.000 --> 00:29:11.000
+A igual a 10. Entonces va cambiando la forma como tú vas programando.
+
+00:29:11.000 --> 00:29:16.000
+Pero no te pi. No, no, te no. Te pido que te te compliques con Python que manejes Python: bien.
+
+00:29:16.000 --> 00:29:24.000
+Estamos bien, ya vamos para acá. Arquitectura conceptual. Ya te expliqué toda la parte de tecnologías. Todo acám.
+
+00:29:24.000 --> 00:29:30.000
+Bien. Pero recuerda, tú tienes 2 arquitecturas. Mayormente, cuando tú sustentas.
+
+00:29:30.000 --> 00:29:36.000
+En un comité de datos con tu C d. O ya tu sitio te dice: Bien.
+
+00:29:36.000 --> 00:29:40.000
+Preséntame tu arquitectura. El Consejo que yo te puedo dar.
+
+00:29:40.000 --> 00:29:46.000
+Por las guerras de batallas que he tenido, presenta 2 arquitecturas, una de ellas una arquitectura conceptual.
+
+00:29:46.000 --> 00:29:50.000
+Y la otra tecnológica. ¿por qué? Porque puede pasar.
+
+00:29:50.000 --> 00:29:58.000
+Puede pasar, ya que tú más adelante. Tu nube principal fue: No sé, pues azure.
+
+00:29:58.000 --> 00:30:04.000
+Yeah. Y luego por cosa del Orinoco, cambiaron. Y pusieron Amazon.
+
+00:30:04.000 --> 00:30:12.000
+Y tú he says, Oh, ¿qué hago? Si todos los pones solamente solamente lo pones con dibujitos con tecnología, se te va a ser más difícil el poder entenderlo.
+
+00:30:12.000 --> 00:30:17.000
+Entonces es mucho mejor que empieces con la parte conceptual. La parte como que.
+
+00:30:17.000 --> 00:30:26.000
+Tengo ingesta. Tengo almacenamiento, procesamiento, bla, bla. Y luego en cada cajita, tú vayas llenando. ¿qué cosa la tecnología.
+
+00:30:26.000 --> 00:30:33.000
+Yeah, entonces vamos para acá. Así como existe arquitecturas tecnológicas.
+
+00:30:33.000 --> 00:30:41.000
+Y arquitecturas conceptuales. Existen patrones de diseño. Que es un patrón de diseño. Un patrón de diseño es lo siguiente.
+
+00:30:41.000 --> 00:30:50.000
+Independientemente. Recuerden la tecnología, tú tienes un estándar, un estándar de cómo hacer las cosas.
+
+00:30:50.000 --> 00:30:56.000
+Si vamos a poner en el mundo. De negocios ya en nuestro día a día.
+
+00:30:56.000 --> 00:31:04.000
+Estándares de gobierno, de datos. El de gobierno de datos va a tener que definir qué cosa, ¿cómo va a ser.
+
+00:31:04.000 --> 00:31:12.000
+El e, t, l. Enriquecido. ¿cómo va a ser la captura de la lluvia de datos en tiempo real.
+
+00:31:12.000 --> 00:31:15.000
+¿cómo va a ser ese modelo que vamos a utilizar tú vas definiendo.
+
+00:31:15.000 --> 00:31:18.000
+Yeah, esos son los patrones de diseño de big data.
+
+00:31:18.000 --> 00:31:24.000
+Como pueden observar ustedes, ¿qué tienen acá. Tienen en el e, T, l.
+
+00:31:24.000 --> 00:31:28.000
+Extraigo, Transformo. Cargo. Tengo los datos.
+
+00:31:28.000 --> 00:31:37.000
+Tengo un landing. Tengo mi data. Lake. O mi ley House o mi data. Tamesh, que ya sabemos cuál es el concepto que lo vimos en la primera y segunda clase.
+
+00:31:37.000 --> 00:31:44.000
+Y luego, qué cosa? La otra capa. La capa de que la capa ya de uso o la capa universal.
+
+00:31:44.000 --> 00:31:50.000
+Y como puedes observar, acá aquí lo voy a borrar. Vamos a poner otro color, un color azul.
+
+00:31:50.000 --> 00:31:53.000
+Capa, 1, capa, 2.
+
+00:31:53.000 --> 00:31:58.000
+Yep. But this más conocida en el mundo de Microsoft, capa medallion.
+
+00:31:58.000 --> 00:32:06.000
+Yeah o en el mundo. Atabilits Kappa, Medalio. Como lo llaman ellos. Pues.
+
+00:32:06.000 --> 00:32:12.000
+Bronce, plata y oro. Los nombres son independientes. Tú le puedes saber, pues. Así Landing.
+
+00:32:12.000 --> 00:32:19.000
+Mi data, ley y capa universal. Y ya está. Pero tienes que tener mínimo 3 áreas. Ya.
+
+00:32:19.000 --> 00:32:25.000
+Todo esto que está acá. Luego tienes que cosas dices: Ah, bueno, yo voy a hacer ley. Voy a tirar mi modelito.
+
+00:32:25.000 --> 00:32:31.000
+Mi modelo, que va a permitir a mí poder consumir en tiempo real. Y aquí va a ser un paréntesis. Conversé con el encargado.
+
+00:32:31.000 --> 00:32:37.000
+Ya de la parte que me justo que 1, usted me decía, para poder añadir todo lo que es modelos.
+
+00:32:37.000 --> 00:32:40.000
+Y me decía que en el curso de.
+
+00:32:40.000 --> 00:32:44.000
+Deep learning. Si no estoy mal, también iba a ver. Iban a haber modelos.
+
+00:32:44.000 --> 00:32:53.000
+Sin embargo, que yo también podía, como. Darles ejemplos. Ejemplos de eso en la parte de lo que es ya la parte. Google.
+
+00:32:53.000 --> 00:32:58.000
+Nosotros vamos a ir avanzando. Yo voy a ir poniendo modelos que vamos a ir incorporando.
+
+00:32:58.000 --> 00:33:04.000
+Ya, por ejemplo, ahorita, vamos a ver la parte de hacer un cluster de big data.
+
+00:33:04.000 --> 00:33:07.000
+En la otra clase, en la clase del sábado.
+
+00:33:07.000 --> 00:33:10.000
+Vamos a hacer? ¿qué cosa? El modelo dentro de big data.
+
+00:33:10.000 --> 00:33:20.000
+Y luego lo vamos a consumir. Entonces vamos a ir de una otra forma, añadiendo los temas que ustedes me habían pedido, como para toda la parte de Melods, y todo eso para que no se quede, como también en la duda.
+
+00:33:20.000 --> 00:33:25.000
+Y aparte, les voy a subir también contenido para que ustedes puedan ir viendo. Y voy a poner así m Elliott.
+
+00:33:25.000 --> 00:33:33.000
+Yeah, para que ustedes puedan ir leyendo. Que, si bien es cierto, puede ser que no veamos todo lo que le suba de la parte bellotz.
+
+00:33:33.000 --> 00:33:37.000
+Pero les va a servir para que ustedes lo puedan estudiar por su cuenta. Ya.
+
+00:33:37.000 --> 00:33:45.000
+Entonces seguimos por acá en la parte de lo que es la otra parte de lo que es la forma de capturar en tiempo real.
+
+00:33:45.000 --> 00:33:48.000
+Tocas a tener. Tú vas a tener apis.
+
+00:33:48.000 --> 00:33:51.000
+But other than y qué es una A. P. I pregunta qué es una Api.
+
+00:33:51.000 --> 00:33:56.000
+Algunos de ustedes ¿qué es una Api.
+
+00:33:56.000 --> 00:34:02.000
+Qué entienden por Api.
+
+00:34:02.000 --> 00:34:09.000
+Chicos. Que es una Api.
+
+00:34:09.000 --> 00:34:14.000
+A ver a ver una forma de consumir servicio exacto. Gracias. Amador.
+
+00:34:14.000 --> 00:34:22.000
+Gracias. Entonces. Ustedes. Al fin y al cabo, cuando van a empezar todo el tema, lo que es el consumo del modelo.
+
+00:34:22.000 --> 00:34:28.000
+Van a pasarlo a través de una Api. Todos los servicios de Cloud, independientemente el provider.
+
+00:34:28.000 --> 00:34:34.000
+Yeah tienen para ser consumidos a través de una Api.
+
+00:34:34.000 --> 00:34:40.000
+E inclusive e inclusive si tú tuvieras muchas apis, vamos a poner que tienes como más o menos unas.
+
+00:34:40.000 --> 00:34:46.000
+100 apis de distintas cosas de tu R. P. De tu visualizador de diferentes cosas.
+
+00:34:46.000 --> 00:34:54.000
+Existe un orquestador de Apis. Es orquestador de Apis. En el caso Google Cloud se llama.
+
+00:34:54.000 --> 00:34:58.000
+Api y les va a pasar el link para que usted lo pueda leer. Luego.
+
+00:34:58.000 --> 00:35:05.000
+Abby Yeah, Abby, ¿y qué cosa le da permitir a ustedes poder gestionar todo el tema de.
+
+00:35:05.000 --> 00:35:09.000
+A Apis e inclusive va a haber va a haber veces.
+
+00:35:09.000 --> 00:35:13.000
+Va a haber clientes, quizás que tengan toda la tecnología de Microsoft.
+
+00:35:13.000 --> 00:35:16.000
+Y tengan toda la gestión de a P. I. S.
+
+00:35:16.000 --> 00:35:22.000
+Con Google o de igual manera que tenga la parte de Amazon y toda la gestión de Apis con la parte de lo que es Google Cloud.
+
+00:35:22.000 --> 00:35:30.000
+Yeah que más tú puedes hacer. También puedes trapping, claro. O sea, todo el tema. El tema no se saca el tema. Lo que es este.
+
+00:35:30.000 --> 00:35:35.000
+La lata que está en Facebook en Tiktok. Entre otras cosas.
+
+00:35:35.000 --> 00:35:40.000
+También las redes sociales apis como el servicio de apping de azure, exactamente.
+
+00:35:40.000 --> 00:35:48.000
+Es apto, exacto, exacto. Pero y hay punto importante lo que mencionó este el amador.
+
+00:35:48.000 --> 00:35:54.000
+Mayormente mayormente acá les cuento la experiencia de algunos clientes.
+
+00:35:54.000 --> 00:36:00.000
+Algunos clientes empiezan con toda esta parte. ¿de qué cosa con toda esta parte.
+
+00:36:00.000 --> 00:36:06.000
+De dividir los warlocks. A qué me refiero con dividir los Warlords.
+
+00:36:06.000 --> 00:36:11.000
+Una parte de infla, por ejemplo. Gubernetes, lo tendrás.
+
+00:36:11.000 --> 00:36:14.000
+Con azure.
+
+00:36:14.000 --> 00:36:19.000
+Otra parte de datos lo tendrás quizás con. No sé, pues, con Amazon.
+
+00:36:19.000 --> 00:36:23.000
+Y la parte día lo tendrás en la parte de Google Chat.
+
+00:36:23.000 --> 00:36:29.000
+Entonces hay empresas que son grandes. Que son grandes dentro de todo esto, inclusive medianas.
+
+00:36:29.000 --> 00:36:38.000
+Que apuestan por el concepto multi Cloud. O inclusive el concepto híbrido, ya que eso pasa mucho con los bancos. Los bancos tienen un concepto híbrido. Hay cosas que están en on premise.
+
+00:36:38.000 --> 00:36:42.000
+Y hay otras que están en la parte, lo que es la nube ya.
+
+00:36:42.000 --> 00:36:52.000
+Entonces bien, acá también tiene ingesta en realtime. Armaste el tema de tu roll, armas, tu capa de procesamiento y luego lo pones para que lo puedas utilizar.
+
+00:36:52.000 --> 00:36:58.000
+Y luego, ¿qué cosa en todo esto. ¿qué haces? Acá tienes? ¿qué cosa? Tu visualización.
+
+00:36:58.000 --> 00:37:05.000
+Teniendo en cuenta, mira, acá. Este diagrama. Si lo podemos modificar con modificar o codificar.
+
+00:37:05.000 --> 00:37:09.000
+Porque ¿qué pasa si de frente no vamos a codificar.
+
+00:37:09.000 --> 00:37:15.000
+Y yo quiero explicarle a la otra persona. Cómo en mi proceso no me va a entender.
+
+00:37:15.000 --> 00:37:23.000
+Es mejor un dibujo, un patrón. Y luego ya recién la parte del código. Ya hasta ahí alguna pregunta alguna duda, hasta esa parte.
+
+00:37:23.000 --> 00:37:28.000
+Hasta ahí. Estamos ya sí. O para acá. Entonces.
+
+00:37:28.000 --> 00:37:37.000
+El hadoo. El hadoo está presente. ¿en qué. En todas las nubes, en el ave W. S. En el Ashur, en Google Cloud, en Huawei.
+
+00:37:37.000 --> 00:37:44.000
+In filters en todos lados. Los patrones, como te comentaba, son agnósticos.
+
+00:37:44.000 --> 00:37:55.000
+Independientemente el provider que tú utilices. Sigo acá el tema tal ley que usted, como decía, es un resumen para que del otro que estamos hablando.
+
+00:37:55.000 --> 00:38:01.000
+¿qué cosa ingesta. Otra ley y haces todo el tema. Los warfra que quieres implementar.
+
+00:38:01.000 --> 00:38:09.000
+Sigo en el tema de Atalake. La forma como construyó la Taleg. Y aquí vamos a detener un poco. Se acuerdan que en la primera.
+
+00:38:09.000 --> 00:38:13.000
+En la primera clase. Yo les hablaba del trauo Storage.
+
+00:38:13.000 --> 00:38:24.000
+Se acuerda que era un clave storage. Si preguntarle Chat, G. P. T. Quiero entrar al storage.
+
+00:38:24.000 --> 00:38:30.000
+Para ir poniéndole sus puntos también de participación. He nos vamos a vamos a crear el.
+
+00:38:30.000 --> 00:38:35.000
+En lo que les he creado de kudos. Para que jueguen. También.
+
+00:38:35.000 --> 00:38:36.000
+Un servicio de Google donde puedes almacenar este carpetas para que.
+
+00:38:36.000 --> 00:38:42.000
+¿qué cosa era?
+
+00:38:42.000 --> 00:38:50.000
+Perfecto. Bien. Exacto. Muy bien. Dame un segundo para ir poniéndote un puntito.
+
+00:38:50.000 --> 00:38:58.000
+Para que tengan puntos adicionales de un segundito. Me regalas tu nombre por Fa. ¿cuál era? Es que no vi.
+
+00:38:58.000 --> 00:38:59.000
+Hello!
+
+00:38:59.000 --> 00:39:06.000
+Algo. No, ya dame un segundito.
+
+00:39:06.000 --> 00:39:13.000
+Por acá por acá. Vamos a poner puntos de participación también para ayudarles a ustedes en todo esto, ya porque.
+
+00:39:13.000 --> 00:39:15.000
+La idea es que no sea una clase monótona.
+
+00:39:15.000 --> 00:39:21.000
+Que puedan ustedes participar, aprender. Vamos a poner acá al altitud un segundo.
+
+00:39:21.000 --> 00:39:26.000
+Acá al lo cual te va a buscar aldo. Tu apellido.
+
+00:39:26.000 --> 00:39:29.000
+Aldo Arias ya está.
+
+00:39:29.000 --> 00:39:31.000
+Yep, perfecto.
+
+00:39:31.000 --> 00:39:36.000
+Participación. Y estamos 11 del 2.
+
+00:39:36.000 --> 00:39:41.000
+Luego les he traído también. Luego, no sé si han jugado antes. Cahoot ya también se ha traído eso.
+
+00:39:41.000 --> 00:39:48.000
+Así que luego vemos esa parte. Para verte todo lo que han estado aprendiendo en todo esto.
+
+00:39:48.000 --> 00:39:57.000
+Yeah, me siento en la nube excelente. También. Más basura.
+
+00:39:57.000 --> 00:40:02.000
+O no, que es Paul Sánchez, también esperan un segundo.
+
+00:40:02.000 --> 00:40:05.000
+Paul Sánchez y Amador.
+
+00:40:05.000 --> 00:40:11.000
+Yep exacto, no teniendo en cuenta, teniendo en cuenta que no solamente son baratos, no estructurados.
+
+00:40:11.000 --> 00:40:17.000
+Como comentan sus compañeros, recuerden que el Cloud Storage, ¿qué cosa va a ser? Es como el símil.
+
+00:40:17.000 --> 00:40:19.000
+El símil de su Google Drive.
+
+00:40:19.000 --> 00:40:26.000
+Su banda. Todo lo que guardan en Wanda, en Google Drive que guardan Pdfs Audio, imágenes. Son todo todo todo.
+
+00:40:26.000 --> 00:40:31.000
+Estas otras 2 h. Teniendo en cuenta que el trabajo, un bucket.
+
+00:40:31.000 --> 00:40:36.000
+Ese bucket es el nombre de Bucket. Tiene que ser único en todas las cuentas de Google, Cloud.
+
+00:40:36.000 --> 00:40:42.000
+Que hace. Luego con esto tienes proceso de batch procesas toda la parte para hacer lo que es tu machine learning.
+
+00:40:42.000 --> 00:40:48.000
+Procesos, para lo que es. Almacenar tus datos, transformarlos.
+
+00:40:48.000 --> 00:40:52.000
+Todo esto que está acá te vas armando tú el tema de tu Ataleik.
+
+00:40:52.000 --> 00:40:56.000
+Además de todo esto, hay cargas de que carga directa.
+
+00:40:56.000 --> 00:41:05.000
+Qué significa y acá vamos un paréntesis. Ustedes tienen sus datos en Storage. Ya llegó los datos en Storage. Perfecto.
+
+00:41:05.000 --> 00:41:10.000
+Yo necesito que goza. Quizás hacer procesamiento del mismo.
+
+00:41:10.000 --> 00:41:17.000
+Entonces tengo varias formas de hacerlo. La primera de ellas y la que nosotros vamos ahorita a enfocarnos. Yo tengo datapro.
+
+00:41:17.000 --> 00:41:24.000
+Dataproc. ¿qué cosa es? Es para todo lo que estamos hablando? El tema, lo que es big data. Eso es tu data. Pero.
+
+00:41:24.000 --> 00:41:29.000
+Datagept como tal lo siguen mencionando. Sin embargo, no se utiliza mucho. ¿por qué.
+
+00:41:29.000 --> 00:41:38.000
+Porque es de un tercero, ya. De un tercero que se llama trifacta. Es caro y prefieren utilizar herramientas que es la misma de query.
+
+00:41:38.000 --> 00:41:44.000
+Y luego otra flow. Eso sí es muy utilizado, ya que les pongo un paréntesis.
+
+00:41:44.000 --> 00:41:47.000
+El área de negocio les dice lo siguiente.
+
+00:41:47.000 --> 00:41:56.000
+Chicos, necesito armar. Un arquitectura que sea altamente escalable, que sea altamente.
+
+00:41:56.000 --> 00:42:01.000
+Ser vélez. Y además de eso, que sea barata.
+
+00:42:01.000 --> 00:42:12.000
+Y tú dices que propongo. Entonces, para ese escenario que tú tienes un tema del límite de costos, un tema de escalabilidad. Y todo eso.
+
+00:42:12.000 --> 00:42:14.000
+Tú vas a proponer de todo lo que está por acá.
+
+00:42:14.000 --> 00:42:20.000
+Vas a decir, Bueno, yo te voy a ofrecer para la carga tu Etl o tu L, T.
+
+00:42:20.000 --> 00:42:25.000
+El Dataflow Data flow internamente que lo que corre Apachev.
+
+00:42:25.000 --> 00:42:31.000
+Yeah, de ahí hemos vas a ver otro laboratorio que eso hace la otra semana que vamos a hacer. ¿qué cosa.
+
+00:42:31.000 --> 00:42:35.000
+Streaming toda la parte, con lo que es Apache Kafka.
+
+00:42:35.000 --> 00:42:43.000
+Datafro para el tema de procesarlos. Los eventos. Y luego, qué cosa? El almacenamiento en alguna base de datos.
+
+00:42:43.000 --> 00:42:56.000
+Entonces tú con eso, hiciste tu pilot. Bien. Tú decides cómo guardarlo o lo guardo, parquet o lo guardo. Lo recé. Lo guardo. Abro lo guardo, inclusive se acuerdan que estábamos hablando las clases pasadas.
+
+00:42:56.000 --> 00:43:00.000
+La parte de lo que es lo guardo en Delta Lake.
+
+00:43:00.000 --> 00:43:08.000
+Lo guardo en formato apache, Hoodie lo guardo. Y qué cosa en lo que ustedes o formato iceberg.
+
+00:43:08.000 --> 00:43:14.000
+Si bien es cierto, y acá les tengo un paréntesis. Miren, acá igual. Eso lo vamos. Lo vamos a ver.
+
+00:43:14.000 --> 00:43:19.000
+En el laboratorio. Pero les voy. Comentando para que se pueda entender.
+
+00:43:19.000 --> 00:43:25.000
+Miren esto. Mayormente tiene la duda. Y tú dices: Oye, pero del Talley.
+
+00:43:25.000 --> 00:43:29.000
+Toda la parte de lo que es Apache Hoodie.
+
+00:43:29.000 --> 00:43:34.000
+¿cómo es eso? O sea, al final. Qué es eso? O sea, porque esos tipos de datos.
+
+00:43:34.000 --> 00:43:40.000
+Son nuevos. La verdad, entonces. Que tienes. Tienes lo siguiente.
+
+00:43:40.000 --> 00:43:46.000
+Tú tenés esos 3 tipos de datos y esos 3 tipos de datos que estamos diciendo, esos tipos de archivos.
+
+00:43:46.000 --> 00:43:50.000
+Dependiendo lo que tú necesites, utilizarás.
+
+00:43:50.000 --> 00:43:53.000
+Hoodie iceberg o delta.
+
+00:43:53.000 --> 00:43:57.000
+Yeah, vamos a ir viendo caso caso caso por caso.
+
+00:43:57.000 --> 00:44:01.000
+Cuando veamos la parte de lo que es armar nuestro Lay House.
+
+00:44:01.000 --> 00:44:09.000
+Cuándo utilizaré cada 1 de estos, ya. Entonces luego de todo esto, tú puedes ir nuevamente. Lo pongo nuevamente. Un tema. Data Block.
+
+00:44:09.000 --> 00:44:12.000
+Y lo hago que los usuarios utilicen. O esto lo borro.
+
+00:44:12.000 --> 00:44:16.000
+Tengo ya mis datos y directamente. El usuario lo utiliza.
+
+00:44:16.000 --> 00:44:20.000
+Va a depender mucho, como el arquitecto diagrame todo esto.
+
+00:44:20.000 --> 00:44:30.000
+Luego que más necesito un orquestador. En otras palabras, es como si usted dijera, necesito una chel. Si yo me fuera el mundo en premio y dijera a necesito.
+
+00:44:30.000 --> 00:44:32.000
+Una.
+
+00:44:32.000 --> 00:44:36.000
+Ya esté acá. Entonces estamos en el mundo.
+
+00:44:36.000 --> 00:44:43.000
+En el mundo que al final. Las empresas están adoptando para todo esto.
+
+00:44:43.000 --> 00:44:49.000
+Que lo que tú tienes al cloud composer. Era un composer internamente. ¿qué hay?
+
+00:44:49.000 --> 00:44:58.000
+Qué cosa apache y flor. Se acuerdan the astronomer que hubo un escándalo, inclusive con con con el CEO de astronomer.
+
+00:44:58.000 --> 00:45:00.000
+Yeah, no sé si lo llegaron a ver.
+
+00:45:00.000 --> 00:45:09.000
+Los dueños, los dueños como tal. Son, como se puede decir, como de la parte de lo que es.
+
+00:45:09.000 --> 00:45:15.000
+Como sea nuestra capa sheifer, y ellos fundaron. O Crearon, astronomer.
+
+00:45:15.000 --> 00:45:21.000
+Inclusive, inclusive. Si yo me voy acá y acá les voy a presentar esto.
+
+00:45:21.000 --> 00:45:26.000
+Ustedes van a tener. ¿qué cosa de Chao. Uds. Van a tener en esta parte.
+
+00:45:26.000 --> 00:45:33.000
+La plataforma y todo esto, pero Internet y certificaciones internamente. Todo esto es apache y firme.
+
+00:45:33.000 --> 00:45:39.000
+Si ustedes más adelante dicen: No, pues mira, quiero yo sacar alguna certificación que me valide a mí.
+
+00:45:39.000 --> 00:45:50.000
+Que realmente sé manejar Apache y Flor, independientemente. La nube astronomer. Esto es, tu certificación ideal.
+
+00:45:50.000 --> 00:45:55.000
+Yeah, pero va a ser. Depende. Depende que lo que te quieres enfocar. Si va, acá.
+
+00:45:55.000 --> 00:46:00.000
+Dicho esto, hasta ahí. Vamos bien hasta esa parte? Sí.
+
+00:46:00.000 --> 00:46:04.000
+Nadie se me perdió. Sí. Sigo por acá. Entonces.
+
+00:46:04.000 --> 00:46:07.000
+En la parte de lo que es Bach. Ya sabes, la forma de cargar.
+
+00:46:07.000 --> 00:46:12.000
+Voy acá streaming aquí ya cambia un poco. Mira, acá.
+
+00:46:12.000 --> 00:46:20.000
+En los enlace anterior. Yo te había comentado que en la ingesta en realtime quienes eran, ¿te acuerdas de esto.
+
+00:46:20.000 --> 00:46:27.000
+¿te acuerdas de esta parte. De esto. ¿te acuerdas del señor Kafka de Apache? Kafka? Ya.
+
+00:46:27.000 --> 00:46:33.000
+Recuerda que nosotros estamos haciendo. ¿qué cosa estamos haciendo? Una arquitectura dentro de Google.
+
+00:46:33.000 --> 00:46:40.000
+Simplemente son cambios de nombre. Y es el primo hermano. Si yo quiero trabajar.
+
+00:46:40.000 --> 00:46:47.000
+Con Apache Kafka, yo lo podría utilizar sin ningún problema. Pongo Apache Kafka, que está dentro del marketplace.
+
+00:46:47.000 --> 00:46:50.000
+Y lo llamo. No quiero eso porque al final.
+
+00:46:50.000 --> 00:46:54.000
+Al final, ¿qué pasa con eso? Yo, al estar dentro del marketplace.
+
+00:46:54.000 --> 00:47:00.000
+Tengo que preocuparme de autogestionarlo. Es decir, de.
+
+00:47:00.000 --> 00:47:05.000
+Hacer todo el proceso de actualización de parches de lo que fuese.
+
+00:47:05.000 --> 00:47:12.000
+Si yo quiero evitar eso y utilizar herramientas propiamente del tema, lo que es la nube.
+
+00:47:12.000 --> 00:47:19.000
+Que lo que tendrás acá Whatsapp. En el caso de Amazon, tienen, por ejemplo, a Kinesis.
+
+00:47:19.000 --> 00:47:23.000
+Ya en el caso Gürtel. Tienes a pads up.
+
+00:47:23.000 --> 00:47:29.000
+Luego tú dices: Ya capturé el evento. Tengo que transformarlo, porque directamente no lo voy a cargar.
+
+00:47:29.000 --> 00:47:41.000
+¿qué haces utilizas el datafrome. Y nuevamente, yo te dije: Acá cierto? ¿por qué? Porque data Flow no solamente es para Bach, sino también.
+
+00:47:41.000 --> 00:47:47.000
+Para real time. Luego ya tiene sus datos acá, y ya lo tienes transformado. Tienes que guardarlo en algún lado.
+
+00:47:47.000 --> 00:47:54.000
+Podrías guardarlo en trava. Storage. Podrías guardarlo en bestable. Por ejemplo, si estás buscando una base datos, ¿no? S. Q, L.
+
+00:47:54.000 --> 00:48:01.000
+Te baja latencia o en el mismo bigquery. Y luego tus usuarios que van a acceder a tus datos.
+
+00:48:01.000 --> 00:48:03.000
+Ya que te pongo el link para que tú puedas ver.
+
+00:48:03.000 --> 00:48:06.000
+El tema machine learning en el tema machine learning.
+
+00:48:06.000 --> 00:48:10.000
+Todo esto que está por acá todo esto que está para acá.
+
+00:48:10.000 --> 00:48:14.000
+Esto que goza. Lo pusieron un rebrand y lo llamaron.
+
+00:48:14.000 --> 00:48:21.000
+A quien lo llamaron Wertes. Ella. Y ese verdad sería que estamos mencionando.
+
+00:48:21.000 --> 00:48:26.000
+Es toda la parte para desarrollar el modelo. Y nuevamente, para orquestar el composer.
+
+00:48:26.000 --> 00:48:30.000
+See you. Okay, hacer todo el tema. Lo que es.
+
+00:48:30.000 --> 00:48:35.000
+Machine learning, pero tipo Serverless. Tinas. Apis recuerda que todas.
+
+00:48:35.000 --> 00:48:38.000
+Todo vendor, todo vendor de nube.
+
+00:48:38.000 --> 00:48:40.000
+Gcp, Amazon y azure.
+
+00:48:40.000 --> 00:48:45.000
+Tienen modelos ya desarrollados. Modelos que te van a permitir. ¿qué cosa.
+
+00:48:45.000 --> 00:48:51.000
+Poder. Quiero hacer lo que voy hablando. Lo voy convirtiendo a texto. Bien.
+
+00:48:51.000 --> 00:48:56.000
+Speech to death. Quiero yo, por ejemplo, no sé, yo quiero yo el tema: análisis de vídeos.
+
+00:48:56.000 --> 00:49:05.000
+Video: Intelligent Api, y así sucesivamente. Llamó a las Apis, que ya son. Simplemente Roger acá llamar a la Api, y me da el resultado.
+
+00:49:05.000 --> 00:49:09.000
+Y lo almaceno en algún lugar, ya sea en Bs Query, o ya sea en Cloud Storage.
+
+00:49:09.000 --> 00:49:13.000
+Y antes que me pregunten: cuando almacenan cada cosa.
+
+00:49:13.000 --> 00:49:16.000
+Lo siguiente: si tú, lo que estás buscando es armar.
+
+00:49:16.000 --> 00:49:22.000
+Un data lake un Lakehouse, un data mesh. Mi recomendación. Guárdalo en B. Query.
+
+00:49:22.000 --> 00:49:26.000
+Si tú sabes que no estás tan seguro y estás probando todo esto.
+
+00:49:26.000 --> 00:49:28.000
+Y más adelante te quieres mirar a otra nube.
+
+00:49:28.000 --> 00:49:34.000
+Guardar lo mejor entre los storage. Y ya está ya. Y ya con Big Query.
+
+00:49:34.000 --> 00:49:37.000
+Tú lees los datos que están entre los storage.
+
+00:49:37.000 --> 00:49:43.000
+Dicho todo esto, hasta ahí estamos bien, sí. ¿alguna pregunta, esa parte.
+
+00:49:43.000 --> 00:49:47.000
+Sí vamos para acá. Entonces seguimos.
+
+00:49:47.000 --> 00:49:52.000
+Y no es solamente un slain más para poder empezar. Ya.
+
+00:49:52.000 --> 00:49:55.000
+Directo a la vena. Esto sí quiero que, por favor.
+
+00:49:55.000 --> 00:49:59.000
+A súper atentos y me dicen igual esto mismo.
+
+00:49:59.000 --> 00:50:05.000
+Se va a llevar, dónde, qué cosa a la parte de lo que es al momento de construir el cluster.
+
+00:50:05.000 --> 00:50:11.000
+Empezamos todo esto que te estoy mostrando. Es tu arquitectura. Ha dejado.
+
+00:50:11.000 --> 00:50:15.000
+Cuando tú pasas entrevistas. Cuando tú haces proyectos, ya.
+
+00:50:15.000 --> 00:50:19.000
+A veces te preguntan el tema. Tú dices haber big data.
+
+00:50:19.000 --> 00:50:24.000
+Dice: saber modelos. Bien, ¿cuál es la arquitectura de hadoo.
+
+00:50:24.000 --> 00:50:31.000
+¿cuál es la arquitectura de tu modelo? ¿cuál es la arquitectura del de la red neuronal que estás utilizando.
+
+00:50:31.000 --> 00:50:37.000
+Y así sucesivamente te van poniendo que tú explicas la arquitectura.
+
+00:50:37.000 --> 00:50:42.000
+Dicho esto, dicho esto. Tenemos la arquitectura de hadoo. Todo empieza así.
+
+00:50:42.000 --> 00:50:48.000
+Tú tienes el h, d, F, S. El Hf S. Es el sistema de ficheros de hadoo.
+
+00:50:48.000 --> 00:50:53.000
+Así es como se hizo el H. D. F. S. Para todo lo que estamos diciendo. Ustedes tendrán que cosa.
+
+00:50:53.000 --> 00:51:00.000
+Are, you? Guardarán todos sus datos. Su Csv, su parque, su abro, lo que ustedes quieran.
+
+00:51:00.000 --> 00:51:05.000
+Que te permite todo esto e inclusive. E inclusive. Y aquí voy a.
+
+00:51:05.000 --> 00:51:12.000
+A dar un paréntesis. Ustedes en esta parte. Todo lo que yo estoy haciendo. El resumen está donde dice: materiales adicionales.
+
+00:51:12.000 --> 00:51:18.000
+Todo el resumen, ya donde ustedes pueden profundizar. Lo que estoy mencionando. El Google File System.
+
+00:51:18.000 --> 00:51:23.000
+Que fue la base de todo nuestro buscador buscador de Google.
+
+00:51:23.000 --> 00:51:28.000
+Ya el que utilizamos día a día. Fue nuestro H, d. F, S.
+
+00:51:28.000 --> 00:51:34.000
+El sistema de Maredus. Ya ahorita. Vamos a mencionarlo. Entonces en Hdf se tuvo ahora tus datos.
+
+00:51:34.000 --> 00:51:41.000
+En el jar. Tú tienes tu orquestador. De recursos, como así.
+
+00:51:41.000 --> 00:51:47.000
+Tú dirás, bueno, de todo el cluster. Yo tengo que utilizar un virtual C, P. U.
+
+00:51:47.000 --> 00:51:53.000
+Tanto R a M. Tanto disco ya está. El jar. Es el encargado de asignarte ese pedazo.
+
+00:51:53.000 --> 00:51:56.000
+Despacio. Encima de esto.
+
+00:51:56.000 --> 00:52:01.000
+Ya encima de esto, tú ejecutas el Map, reduce.
+
+00:52:01.000 --> 00:52:13.000
+El Map reduce fue la base de todo lo que conocemos ahora como el buscador, el Bsquare y todo eso, e inclusive el Mrr o el H de insight del resto de nubes.
+
+00:52:13.000 --> 00:52:20.000
+Sm. Reviews, lo que hace. Hace 2 procesos. Inclusive se puede decir el map.
+
+00:52:20.000 --> 00:52:24.000
+Que empieza, como se dice, a agrupar las las palabras.
+
+00:52:24.000 --> 00:52:30.000
+A solo un chaffle. Yeah. Un shuffle que cosa es como las operaciones que tú quieres hacer.
+
+00:52:30.000 --> 00:52:37.000
+Y el reduce, que al final te da el resultado final que estás buscando. Por ejemplo, el típico contador de palabras.
+
+00:52:37.000 --> 00:52:43.000
+¿qué cosa empiezas a agrupar a? Por ejemplo, haces el chaffle un count.
+
+00:52:43.000 --> 00:52:48.000
+Y los resultados. Encima de esto, encima de esto está ¿quién.
+
+00:52:48.000 --> 00:52:55.000
+Está hive. Y Haife Kosai era. Una base de datos de metadatos.
+
+00:52:55.000 --> 00:53:01.000
+Y tú dirás ¿Cómo así. Realmente tus datos se van a almacenar.
+
+00:53:01.000 --> 00:53:03.000
+En Hdfs.
+
+00:53:03.000 --> 00:53:14.000
+Yeah. Y tú con hive. Y qué te había dicho yo a H. Q. L: Cierto, ya. Y tú con S. Q. L. Si no te acuerdas con el Hq. L. Tuvo un Sql de hive.
+
+00:53:14.000 --> 00:53:18.000
+Vas a acceder a tus datos. Significa pregunta?
+
+00:53:18.000 --> 00:53:23.000
+Así se acuerda. Se acordaron que en Mysquery había 2 tipos de tablas.
+
+00:53:23.000 --> 00:53:29.000
+Se acuerda nativas. Y externas, porque Big query.
+
+00:53:29.000 --> 00:53:35.000
+Hizo la misma propiedad. ¿por qué? Porque recuerden que viene todo esto viene a la base de esto.
+
+00:53:35.000 --> 00:53:42.000
+Porque Hills te permite esto. Si bien es cierto, yo puedo dividir en este escenario.
+
+00:53:42.000 --> 00:53:46.000
+Que la data esté acá. Y el procesamiento con Hive.
+
+00:53:46.000 --> 00:53:54.000
+Pero puedo decir también que Hives tenga todo. Pero, ¿cuál es el problema? El problema va a ser cuando yo te tablas.
+
+00:53:54.000 --> 00:54:01.000
+Qué cosa tablas externas dentro de Hyve? Y yo hago un drop table, un borrado de la tabla.
+
+00:54:01.000 --> 00:54:03.000
+La data que está en H. D. F.
+
+00:54:03.000 --> 00:54:07.000
+Se va. Si yo me voy al mundo de bigquery.
+
+00:54:07.000 --> 00:54:12.000
+¿cómo era eso? La data estaba entraba Storage, por ejemplo.
+
+00:54:12.000 --> 00:54:16.000
+Y yo con bigquery, lo procesaba. Lada estaba en el S. Tres.
+
+00:54:16.000 --> 00:54:21.000
+O en algún bucket de azure. Lo procesaba con piece. Query.
+
+00:54:21.000 --> 00:54:27.000
+Siendo el símil más o menos. Que Bigquery se comporta más o menos como el tipo Hive.
+
+00:54:27.000 --> 00:54:33.000
+Yeah. Otro punto. Tienes a P. I, G. También terminó hacer operaciones.
+
+00:54:33.000 --> 00:54:37.000
+Sin embargo, sin embargo. No es muy utilizado realmente.
+
+00:54:37.000 --> 00:54:42.000
+E inclusive si ustedes empiezan, por ejemplo, vamos a poner que usted dice nada. Quiero yo entrar entrar.
+
+00:54:42.000 --> 00:54:52.000
+Google drive Amazon, lo que fuese. Y buscas ahí. Dices el tema de.
+
+00:54:52.000 --> 00:54:58.000
+Arquitecto de datos. Vamos a poner. Una de las cosas que tú tienes que dominar es justamente esta parte de acá.
+
+00:54:58.000 --> 00:55:04.000
+E inclusive e inclusive perfiles, como ingenieros de machine learning.
+
+00:55:04.000 --> 00:55:08.000
+Yeah, también te dicen saber el ecosistema de Habbu.
+
+00:55:08.000 --> 00:55:12.000
+Entonces es importante entender esa partecita. Luego, y te voy a introducir para utilizar P. I, G.
+
+00:55:12.000 --> 00:55:15.000
+Pero no se utiliza. No se utiliza. P. I, G.
+
+00:55:15.000 --> 00:55:22.000
+Se utiliza más. Todo lo que estoy mencionando. Más tienes de encima de todo esto. Tú dices: Oye, pero.
+
+00:55:22.000 --> 00:55:27.000
+Voy a procesar. Ok, con hi proceso. Pero es lento. ¿qué hago frente a esto?
+
+00:55:27.000 --> 00:55:30.000
+Y porque es lento, porque hace más. Abre Dios.
+
+00:55:30.000 --> 00:55:35.000
+Hace la búsqueda, hace el Chafo, la chafo de la operación y luego agrupa.
+
+00:55:35.000 --> 00:55:40.000
+Y tú dices: Ah, está lento. ¿qué hago para mejorar esto.
+
+00:55:40.000 --> 00:55:47.000
+Entonces viene la solución. Y quedaron. A este señor, al señor Spark, al señor Apache Spark.
+
+00:55:47.000 --> 00:55:52.000
+Y por qué se vuelve tan rápido? Porque. Si yo Gonjai así, Amable, Dios.
+
+00:55:52.000 --> 00:55:59.000
+Yo con spar, Chao, me quedo. Solamente mis datos en H. D. F, S.
+
+00:55:59.000 --> 00:56:03.000
+Mi orquestador de recursos de yar. Y mies par eso hace.
+
+00:56:03.000 --> 00:56:09.000
+Que si acá tu proceso se demoraba. Vamos a poner 5 min.
+
+00:56:09.000 --> 00:56:18.000
+Acá posiblemente demore cuestión de segundos. Pero hay un punto importante: acá que ya lo vamos a ir viendo cuando veamos la parte de Spar.
+
+00:56:18.000 --> 00:56:25.000
+Yeah, mayormente pasa. Cuando tú trabajas. Todo el tema de lo que es Apache Spar.
+
+00:56:25.000 --> 00:56:30.000
+Inclusive a taburino. Ha sido así en la tabarina. Ustedes van a poder ejecutar Apaches par.
+
+00:56:30.000 --> 00:56:34.000
+Sin embargo. Les había comentado que Spark.
+
+00:56:34.000 --> 00:56:37.000
+Tiene varias formas de ejecutar el código.
+
+00:56:37.000 --> 00:56:45.000
+Python, R. Java, escala y S. Q. L. Todo más la palabra spar.
+
+00:56:45.000 --> 00:56:51.000
+Cuando tú utilizas esparcicual. Y dices: Bueno, voy a ser yo mis parsi igual. Y tú comparas el timing.
+
+00:56:51.000 --> 00:57:02.000
+De un proyecto real, ya. De un sparse igual versus un hive. La verdad mejor utiliza simplemente hive.
+
+00:57:02.000 --> 00:57:10.000
+Porque el tiempo es casi lo mismo. Tu tarea. Tu tarea es optimizar tiempos. Recuerda que tú eres un científico de datos. Vas a procesar.
+
+00:57:10.000 --> 00:57:20.000
+Mucha información para traer tu modelo final. Entonces lo que necesitas es que el tiempo sea lo más rápido para que tus experimentos que vas a ir probando diferentes modelos.
+
+00:57:20.000 --> 00:57:25.000
+Sea así entonces. Se recomienda para esos escenarios.
+
+00:57:25.000 --> 00:57:29.000
+Qué cosa payespar o escala con spar.
+
+00:57:29.000 --> 00:57:34.000
+Yeah, ¿y por qué se vuelve tan rápido? Porque, a diferencia de lo que estamos hablando de acá.
+
+00:57:34.000 --> 00:57:37.000
+Este señor acá recuerde, trabaja en memoria.
+
+00:57:37.000 --> 00:57:44.000
+Yeah, hay también una arquitectura de spar. Pero. Eso no lo vamos a ver el día de hoy. Lo vamos a ver en las otras clases.
+
+00:57:44.000 --> 00:57:48.000
+Hasta esa parte. Vamos bien. El Hf es el sistema de ficheros de habú.
+
+00:57:48.000 --> 00:57:54.000
+El orquestador de recursos, el Mareduke, que te permite hacer todo el tema. Lo que es la parte, lo que es hive.
+
+00:57:54.000 --> 00:57:59.000
+Yeah, but Jasper, hasta ahí. Bien. Nadie se me perdió todavía. Sí.
+
+00:57:59.000 --> 00:58:05.000
+Todo lo que estoy diciendo. Este resumen es resumido en la parte de los libros. Ya le sigo contando.
+
+00:58:05.000 --> 00:58:10.000
+H base como tal es la base de datos de baja latencia.
+
+00:58:10.000 --> 00:58:15.000
+¿qué significa esto? Significa que les va a permitir a ustedes ¿qué cosa.
+
+00:58:15.000 --> 00:58:24.000
+Quiero yo tipo 1, no. S q, l. Que sea rápido que pueda. Yo guardar mi videojuegos. Por ejemplo, el logo de los videojuegos.
+
+00:58:24.000 --> 00:58:31.000
+But these are H base sin ningún problema. Luego tienes test que permite también hacer operaciones. Sin embargo, al igual que Pig.
+
+00:58:31.000 --> 00:58:36.000
+Se está dejando un poco de utilizar. Y luego, para que puedas orquestar todo lo que te estoy mencionando.
+
+00:58:36.000 --> 00:58:40.000
+En el mundo lo que es hadoo. Tú tienes qué cosa a zookeeper.
+
+00:58:40.000 --> 00:58:45.000
+Ya osea. Yeah. Pero en nuestro caso, como vamos a tener.
+
+00:58:45.000 --> 00:58:48.000
+Esto acá, si bien es cierto, pero lo vamos a orquestar.
+
+00:58:48.000 --> 00:58:53.000
+Con composer ya. Esta parte se entendió para pasar ya.
+
+00:58:53.000 --> 00:59:00.000
+A la parte del laboratorio. Se entendió ¿hasta ¿hay alguna pregunta.
+
+00:59:00.000 --> 00:59:05.000
+Estamos bien, hasta ahí. Me ayudan con un pulgar porfa.
+
+00:59:05.000 --> 00:59:11.000
+Ella está muy calladitos. Están. Todavía hay un pobrecito. Gracias. Ahí.
+
+00:59:11.000 --> 00:59:17.000
+Perfecto. Ahora sí ingresen a su consola. Vamos por acá.
+
+00:59:17.000 --> 00:59:25.000
+Esta cierro esto, pero esto y ya está. Entonces, antes de empezar, vamos a explicar un poquito.
+
+00:59:25.000 --> 00:59:29.000
+Porque si no se me vayan a perder, miren acá ojo, pestañesa y jaca acá.
+
+00:59:29.000 --> 00:59:35.000
+Well, they're standing. Y aquí voy a poner un poquito más grande.
+
+00:59:35.000 --> 00:59:39.000
+Y acá lápices. Lápiz. O lapicito. Aquí está.
+
+00:59:39.000 --> 00:59:46.000
+El lapicito. Ahora sí, ustedes tienen este resumen que ya le hemos explicado.
+
+00:59:46.000 --> 00:59:49.000
+Yeah, there's many people.
+
+00:59:49.000 --> 00:59:53.000
+Fast. ¿por qué? Porque acá tienen todo para que ustedes puedan profundizar.
+
+00:59:53.000 --> 00:59:58.000
+Luego en este, en estas 2 cosas, en esas 2 cosas, ese puesto.
+
+00:59:58.000 --> 01:00:09.000
+En el primero es el link oficial de la documentación de Google Cloud de la creación de Dataproc es de los pasos a pasos que vamos a seguir. Este otro que yo lo mismo del otro.
+
+01:00:09.000 --> 01:00:18.000
+Con la diferencia, que es un manual creado. Mí, ya, pero sin embargo, acá también les dejó la documentación final. Por eso les estoy poniendo.
+
+01:00:18.000 --> 01:00:26.000
+Punto 0, ya. Qué más? ¿cómo vamos a empezar todo esta parte que estamos hablando.
+
+01:00:26.000 --> 01:00:29.000
+La idea de ahora primero es crear el cluster.
+
+01:00:29.000 --> 01:00:37.000
+Vamos a ir explicando la forma cómo está compuesto ese cluster de los nódulos tipo de nodo, porque tengo que utilizarlo, entre otras cosas.
+
+01:00:37.000 --> 01:00:41.000
+Y luego de eso haremos H. D. F. S.
+
+01:00:41.000 --> 01:00:45.000
+En H, d. F, S. Ustedes, dentro de esa carpeta.
+
+01:00:45.000 --> 01:00:48.000
+The se ve algo como está. Una vez que lo descargue.
+
+01:00:48.000 --> 01:00:53.000
+Se ve algo como esta espérate. Así, entonces.
+
+01:00:53.000 --> 01:00:57.000
+En ese h d, f S. Yo te he puesto varias shell.
+
+01:00:57.000 --> 01:01:02.000
+Yeah, no te preocupes. Todavía puedes ir abriendo las puedes ir viéndolas.
+
+01:01:02.000 --> 01:01:04.000
+Pero vamos a empezar con ese que dice.
+
+01:01:04.000 --> 01:01:09.000
+Html, porque vamos a empezar con este fuiste aquí.
+
+01:01:09.000 --> 01:01:15.000
+Vamos a empezar con este, porque aquí están los comandos, los comandos que combinan.
+
+01:01:15.000 --> 01:01:20.000
+Li notes con la palabra H. D. F. Vamos a ir de a pocos, ya.
+
+01:01:20.000 --> 01:01:25.000
+Crear carpetas, dar permisos, entre otras cosas. Sigo acá.
+
+01:01:25.000 --> 01:01:34.000
+Aquí que más vamos a ver. Ya yanita, ya sé toda la parte, toda la parte que me estás diciendo donde te me fuiste aquí.
+
+01:01:34.000 --> 01:01:38.000
+La parte, que es la parte de crear carpeta, dar permisos.
+
+01:01:38.000 --> 01:01:44.000
+Bien, ahora Anita, vamos, ya. Para tragar carpetas, tener mi landing. Todo eso.
+
+01:01:44.000 --> 01:01:50.000
+Bien, entonces, lo mismo que estamos viendo. ¿qué cosa yo te he puesto dentro de un Ashle.
+
+01:01:50.000 --> 01:01:53.000
+¿por qué le puso dentro de una chel? Te voy a explicar ahorita por qué.
+
+01:01:53.000 --> 01:01:59.000
+Voy a abrir todo esto, abrir en subray. Ya está. Mira acá, entonces.
+
+01:01:59.000 --> 01:02:03.000
+En esta parte. La idea es que tú lo puedas optar.
+
+01:02:03.000 --> 01:02:10.000
+Automatizar. Es decir, si hoy quiero listar, si quiero crear carpetas, si quiero, no sé generar con parámetros.
+
+01:02:10.000 --> 01:02:14.000
+Etcétera. Yo tengo que. Automatizar. Entonces.
+
+01:02:14.000 --> 01:02:20.000
+En cada item, como has podido observar, ya va a haber una línea que dice: S. H.
+
+01:02:20.000 --> 01:02:25.000
+Que para poder correr la chel. S. H. Y el nombre.
+
+01:02:25.000 --> 01:02:34.000
+De la chel. De igual forma. Los demás que están acá. Ya te voy a enseñar también como correr la chel, cómo subir la chel y cada y cada línea per se.
+
+01:02:34.000 --> 01:02:41.000
+Yeah es la el segundo paso. Luego de eso, luego de eso, vamos para aquí.
+
+01:02:41.000 --> 01:02:50.000
+¿qué vamos a hacer para yo. Ya tiene mis carpetas en Hdfs. Voy a subir mis datos, que también lo vamos a hablar. Vamos a empezar a mover.
+
+01:02:50.000 --> 01:02:54.000
+De Linux, H. D. F. S. Y ahorita, te voy a explicar también.
+
+01:02:54.000 --> 01:03:02.000
+Una vez que hicimos todo eso. Vamos viendo cómo nos va el tiempo. Yo calculo que si nos va a alcanzar, pero igual puede salir dudas ya por eso le puse ya hace 4.
+
+01:03:02.000 --> 01:03:05.000
+Es poder. Y aquí lo va a poner así aitana bonito.
+
+01:03:05.000 --> 01:03:13.000
+Pasar luego a la parte de hive. Ya sea ni tan Hdfs, ya sea mi hive. Ahora hay que armar el Datalake.
+
+01:03:13.000 --> 01:03:22.000
+El data ley a nivel de comandos ya. Luego de toda esa parte que estamos diciendo. El cuarto paso será: ¿qué cosa hacer mi modelo.
+
+01:03:22.000 --> 01:03:25.000
+Para qué, para poder consumirlo.
+
+01:03:25.000 --> 01:03:31.000
+Yeah. Pregunta. Sé que han llevado Spark S. Q. L. Llegaron por casualidad enseñar.
+
+01:03:31.000 --> 01:03:37.000
+Es para e m. Me parece que no cierto, por lo que recuerdo.
+
+01:03:37.000 --> 01:03:47.000
+Es para con machine learning. Les enseñaron eso. Que yo recuerdo que los no bien perfecto. Entonces, si les va a servir lo que les he preparado. Excelente.
+
+01:03:47.000 --> 01:03:54.000
+Hasta ahí vamos. Bien, se va entendiendo para ya poder poder, como les puse por aquí.
+
+01:03:54.000 --> 01:04:01.000
+Al fin de tanto abre. Ahí está. Pavo poder codificar. Y estamos todos alguna pregunta antes de empezar.
+
+01:04:01.000 --> 01:04:08.000
+Estamos bien, ya. Entonces pregunta: ¿Yo les mandé. Yo les mandé en su momento en su momento.
+
+01:04:08.000 --> 01:04:18.000
+Para que se recuerden, se recuerden. Que trae en su cuenta, pero utilizando su Gmail, no, no el correo del Autech.
+
+01:04:18.000 --> 01:04:24.000
+Ya. ¿por qué? Porque tenemos ciertas restricciones con el tema del dominio, no nos permite modificarlo.
+
+01:04:24.000 --> 01:04:31.000
+Lo pudieron hacer, lograron hacerlo esa partecita. Si todos tienen cuenta.
+
+01:04:31.000 --> 01:04:36.000
+Si bien dicho todo esto. Vamos por acá.
+
+01:04:36.000 --> 01:04:42.000
+Entren a su consola porfa. Ending a su consola.
+
+01:04:42.000 --> 01:04:47.000
+And thing on su consola para poder empezar.
+
+01:04:47.000 --> 01:04:57.000
+Vamos a esperar un poquito para poder empezar.
+
+01:04:57.000 --> 01:05:02.000
+Esperar un minutito. Y empezamos.
+
+01:05:02.000 --> 01:05:07.000
+Entonces, mientras que ustedes van abriendo eso, yo les voy a mostrar lo siguiente.
+
+01:05:07.000 --> 01:05:15.000
+El link que les había puesto. Miren, acá.
+
+01:05:15.000 --> 01:05:23.000
+Mira acá espérate. Mira acá. Entonces, mientras que van abriendo su consola, les voy contando un poquito.
+
+01:05:23.000 --> 01:05:27.000
+Yeah, ustedes tienen 2 documentos. Si bien es cierto en Pakhi.
+
+01:05:27.000 --> 01:05:39.000
+En los documentos. Uno, un Pdf. Que hace como el resumen de de todo lo que está por acá. Ya ahí está un resumen con batallitas y otro así.
+
+01:05:39.000 --> 01:05:43.000
+Sin embargo, te voy a dar un tip importante.
+
+01:05:43.000 --> 01:05:47.000
+La idea es que tú puedas mayormente, pasa a lo siguiente.
+
+01:05:47.000 --> 01:05:55.000
+Y me lo han comentado algunos clientes cuando empezamos todo el tema, lo que es la nube en general, cualquier nube.
+
+01:05:55.000 --> 01:06:00.000
+Como Uy, no entiendo la documentación. Como que está un poco difícil.
+
+01:06:00.000 --> 01:06:11.000
+Etcétera. Sin embargo. Hay que, y eso pasa en cualquier nube. Ya pasa con la de Amazon. Pasa con la de Google drive con la de Ashur, y así.
+
+01:06:11.000 --> 01:06:17.000
+¿por qué? Porque al final es la forma como lo han redactado, pues no. Y acá les doy un tip.
+
+01:06:17.000 --> 01:06:24.000
+Primer punto: mi sugerencia. Si usted lo que están pensando a futuro cercano mediano.
+
+01:06:24.000 --> 01:06:28.000
+Sacar la certificación, ya sea de cualquier nube.
+
+01:06:28.000 --> 01:06:32.000
+Ya traten de leer siempre la documentación en inglés.
+
+01:06:32.000 --> 01:06:39.000
+Porque los exámenes son en inglés. Entonces en esta parte lo cambian y lo ponen en inglés.
+
+01:06:39.000 --> 01:06:47.000
+Yeah, primer punto: no, pues ni te quiero español. Sin embargo, es importante ¿qué cosa que vayas leyendo, la documentación ni ideas.
+
+01:06:47.000 --> 01:06:53.000
+Yeah, solamente de menciono esto. Vamos acá. Conduto es un cluster dataproc.
+
+01:06:53.000 --> 01:06:59.000
+Y, en general, cuando utiliza servicios. De la nube tiene varias formas de hacerlo.
+
+01:06:59.000 --> 01:07:07.000
+La primera de ellas. ¿qué cosa es. Que tú tengas y bajes el S. K.
+
+01:07:07.000 --> 01:07:09.000
+Yeah, SDK.
+
+01:07:09.000 --> 01:07:13.000
+Que es justamente la línea de comandos que te aparece acá carambas.
+
+01:07:13.000 --> 01:07:19.000
+Acá el de Out. Descargas. Dices a vas a buscar un segundo.
+
+01:07:19.000 --> 01:07:23.000
+Eso no lo vamos a hacer. Solamente estoy mostrándoles que lo que se puede hacer.
+
+01:07:23.000 --> 01:07:27.000
+Vamos para acá está tú? Dices: Bueno, Anita, Yo.
+
+01:07:27.000 --> 01:07:36.000
+No me voy a conectar a la nube. Quiero trabajar desde desde mi escritorio, ir mandando los comandos hacia la nube.
+
+01:07:36.000 --> 01:07:43.000
+Entonces la nube. Las nubes, mejor dicho, crea un concepto que se llama Sdk.
+
+01:07:43.000 --> 01:07:46.000
+S. S. D. K, que les acabo de pasar el link.
+
+01:07:46.000 --> 01:07:50.000
+Que lo que hace yo, dependiendo el sistema operativo.
+
+01:07:50.000 --> 01:07:57.000
+Contamos, tendré que cosa. Por ejemplo, si tengo Windows descargar esto que está acá y lo configuraré.
+
+01:07:57.000 --> 01:08:02.000
+Esa configuración que estamos diciendo, esa configuración que estamos diciendo.
+
+01:08:02.000 --> 01:08:08.000
+Tú tienes que loguearte con tu usuario. Te lo das con tu usuario. Todo eso y todo bien. Eso es una forma.
+
+01:08:08.000 --> 01:08:15.000
+Yeah, la otra forma. La otra forma para acá es que tú utilices ¿qué cosa? La misma consola.
+
+01:08:15.000 --> 01:08:20.000
+Significa que la que lo vamos a utilizar, nosotros vamos a ir a la consola. Vamos a ir.
+
+01:08:20.000 --> 01:08:26.000
+Paso a paso, ir creando el cluster. La otra forma. ¿cuál es.
+
+01:08:26.000 --> 01:08:32.000
+Utilizando el crowd. Mayormente, cuando tú empiezas en cualquier curso.
+
+01:08:32.000 --> 01:08:38.000
+De de de lo que es este cloud cloud computing no te empiezan enseñando código.
+
+01:08:38.000 --> 01:08:44.000
+¿por qué dicen: No te ponen el código para poder tener el data? Broke.
+
+01:08:44.000 --> 01:08:49.000
+Porque muchas veces pasa que la gente se asusta, dice: Uy, está difícil la nube.
+
+01:08:49.000 --> 01:08:55.000
+No. Entonces nos vamos a ir. Como que al revés vamos a ver la parte visual.
+
+01:08:55.000 --> 01:09:00.000
+Ya vamos a ver la parte visual. Vamos a cerrar esto. La parte visual.
+
+01:09:00.000 --> 01:09:03.000
+Y luego la parte visual nos va a generar un código.
+
+01:09:03.000 --> 01:09:11.000
+Y ese código es el que, si yo quisiera, ya soy fuera experto en todo esto, yo tendría que cosas a través de esta parte que hice acá.
+
+01:09:11.000 --> 01:09:18.000
+A través de todo esto, no poder crearlo. Sin embargo, nosotros vamos a ir a la parte visual para crearlo.
+
+01:09:18.000 --> 01:09:23.000
+También tienes otro lenguaje de programación, como puedes observar acá para también crear el cluster.
+
+01:09:23.000 --> 01:09:29.000
+Mira. Acá te acuerdas que en la primera, en la primera clase, aproximadamente.
+
+01:09:29.000 --> 01:09:35.000
+Primero, segunda: abramos sobre qué cosa hablábamos sobre formatos. Apache.
+
+01:09:35.000 --> 01:09:38.000
+Iceberg y mira, acá.
+
+01:09:38.000 --> 01:09:44.000
+Yeah, entonces todo tiene todo. Tiene como si esa correlación vamos a ir a pocos para ir para llegar a la meta.
+
+01:09:44.000 --> 01:09:54.000
+Dicho todo esto, ahora sí, empezamos. En la parte superior. Ya en la parte superior está todos en la consola. Me confirman porfa.
+
+01:09:54.000 --> 01:10:01.000
+You're saying en la consola. Si le va a pedir sus manitas para poder saber que están ahí.
+
+01:10:01.000 --> 01:10:05.000
+Gracias a Ibrahian, el resto. Hugo. Gracias. Gracias. Gracias.
+
+01:10:05.000 --> 01:10:12.000
+Espectacular. Seguimos entonces. En la parte del buscador. Tú vas a poner. Recuerda.
+
+01:10:12.000 --> 01:10:19.000
+Todos los servicios de Google Cloud. Por defecto, viene la Api.
+
+01:10:19.000 --> 01:10:25.000
+Su Api como tal viene desactivada. Y tú dices, Ah, como así.
+
+01:10:25.000 --> 01:10:31.000
+Significa que el primer paso que harás pondrás en el buscador a P. I.
+
+01:10:31.000 --> 01:10:39.000
+Y servicios ya. Apiservicios, porque porque tú vas a utilizar ahorita, vas a utilizar el dataproc.
+
+01:10:39.000 --> 01:10:42.000
+Necesitas tenerla Api hasta provocativa. Entonces.
+
+01:10:42.000 --> 01:10:47.000
+A P y servicios das clic acá. Ya esperar que te cargue.
+
+01:10:47.000 --> 01:10:51.000
+Y vamos a hacerlo así en conjunto, para que ustedes también lo puedan hacer.
+
+01:10:51.000 --> 01:10:54.000
+Una vez que tú estás en a P I, servicios.
+
+01:10:54.000 --> 01:11:00.000
+Das, donde dice enable app y servicios. Y vas a buscar ¿qué cosa data? Proc.
+
+01:11:00.000 --> 01:11:07.000
+Clic acá. Y allí buscarás data. Brock.
+
+01:11:07.000 --> 01:11:24.000
+Y le das enter. Entonces y me avisan cuando estemos ahí, os espera un poquito para que no se me atrase.
+
+01:11:24.000 --> 01:11:30.000
+Ya estamos en claro a P, I, S. E. R, V, I, C. I, o. S Dataproc.
+
+01:11:30.000 --> 01:11:35.000
+Sí.
+
+01:11:35.000 --> 01:11:41.000
+Vamos para acá. Entonces. Una vez que tú tienes eso, te dices, Oye, pero cual activo, anita.
+
+01:11:41.000 --> 01:11:45.000
+Tengo el resort manager. Tengo el control Data Program.
+
+01:11:45.000 --> 01:11:49.000
+Tú vas a activar ese que dice: Cloud Datapro, Api.
+
+01:11:49.000 --> 01:11:51.000
+Yeah. Tikka.
+
+01:11:51.000 --> 01:11:54.000
+¿por qué? Porque es lo que tú necesitas para poder juster.
+
+01:11:54.000 --> 01:12:03.000
+Muy posiblemente, por lo menos en mi caso, que yo estaba. Yo estaba ya jugando con la herramienta, no para poder reales en los laboratorios y todo eso. Yo lo tengo habilitado.
+
+01:12:03.000 --> 01:12:07.000
+Usted le saldrá un botón que dirá qué cosa enable.
+
+01:12:07.000 --> 01:12:16.000
+Le hacen clic en donde dice enable. Y ya está ya. Eso demora más o menos un minuto, minuto y medio, vayan haciéndolo por fases.
+
+01:12:16.000 --> 01:12:42.000
+Vayan haciéndolo para poder. Para poder seguir.
+
+01:12:42.000 --> 01:12:50.000
+Me avisan porfa. Vamos esperar un minutito más para poder continuar.
+
+01:12:50.000 --> 01:13:03.000
+Ya está.
+
+01:13:03.000 --> 01:13:12.000
+Yo tu recomendación también que les doy. Como a partir de ahora, la idea es que sea full laboratorios. Traten de tener 2 ventanitas.
+
+01:13:12.000 --> 01:13:17.000
+Como que una ventana donde estoy haciendo como el laboratorio igual, ustedes van a tener paso a paso, ya.
+
+01:13:17.000 --> 01:13:22.000
+Y otra, quizás donde van haciendo laboratorios para que les sea más sencillo también, y más rápido.
+
+01:13:22.000 --> 01:13:29.000
+Podemos. Así me funciona mucho a mí. Depende, como ustedes organice, hay otros que dividen la pantalla en 2 y también les va bien.
+
+01:13:29.000 --> 01:13:35.000
+Y activar un lápiz data. Broke.
+
+01:13:35.000 --> 01:13:41.000
+Perfecto. Seguimos, seguimos, seguimos. Entonces tú dices: ¿Qué hago ahora?
+
+01:13:41.000 --> 01:13:43.000
+Hasta allí donde dice en el logo de Google Shop.
+
+01:13:43.000 --> 01:13:48.000
+Gigaka ya está. Y así empezamos a tirar nuestro Dluster. De big data.
+
+01:13:48.000 --> 01:13:53.000
+Data broke en el primero que te sale clic, acá.
+
+01:13:53.000 --> 01:14:01.000
+Para que cargue ya está, ya que te doy un pequeño primero, un barrido. Ya antes de empezar, empezar todo toda la magia.
+
+01:14:01.000 --> 01:14:05.000
+Mira acá. Tú, cuando creas un cluster.
+
+01:14:05.000 --> 01:14:11.000
+De dataproc tiene 2 formas de hacerlo. Uno de ellas, 1 de ellos.
+
+01:14:11.000 --> 01:14:19.000
+Es que sea serverless. Que tu proceso, por ejemplo, de lo que es composer.
+
+01:14:19.000 --> 01:14:21.000
+Trail, cluster.
+
+01:14:21.000 --> 01:14:28.000
+¿cuál es el problema de esto. Inclusive inclusive hay otro servicio que yo para hacer e t l.
+
+01:14:28.000 --> 01:14:35.000
+Así como tengo data flow. Tengo datafuso. Si yo me pongo acá datafucio, se ve algo así como esto.
+
+01:14:35.000 --> 01:14:39.000
+Miren, imágenes. Algo así es como la Testation.
+
+01:14:39.000 --> 01:14:44.000
+De de De. I. B. M. Pero Data Fusion de Google, Shot.
+
+01:14:44.000 --> 01:14:49.000
+Yeah, esta cosa que está acá. Cuando yo implemento ata fusión.
+
+01:14:49.000 --> 01:14:57.000
+Para que esto corra internamente, me crea. Un cluster de dataproc de forma servless.
+
+01:14:57.000 --> 01:15:02.000
+Pero, ¿cuál es el problema de todo esto? El problema de esto es que.
+
+01:15:02.000 --> 01:15:08.000
+Al momento del cluster. Son 5 min. Mientras que inicia tu proceso.
+
+01:15:08.000 --> 01:15:14.000
+Más minutos y al final, tú. Tuve tele que querías que sea muy rápido. Se vuelve lento.
+
+01:15:14.000 --> 01:15:18.000
+Es por eso que va a ser depende. Depende, depende lo que tú quieras, tus cargas que tengas.
+
+01:15:18.000 --> 01:15:25.000
+Tú puedes rastrear un cluster previamente. Que es el que vamos a hacer nosotros ya. Otro punto importante.
+
+01:15:25.000 --> 01:15:30.000
+En esta parte, donde dicen: Vamos a ver para acá, para que se pueda entender, mira acá.
+
+01:15:30.000 --> 01:15:35.000
+Ahí estamos Aitap espectacular. Tú tienes un item que dice: Noteboots.
+
+01:15:35.000 --> 01:15:41.000
+Se acuerdan de bigquery? Bien. El bigquery que lo vimos al inicio de clases no.
+
+01:15:41.000 --> 01:15:45.000
+Qué cosa que cargamos? La tablet y todo eso.
+
+01:15:45.000 --> 01:15:50.000
+Tiene también la opción para yo. Usuario, poder trabajar.
+
+01:15:50.000 --> 01:15:52.000
+Bisquerie con.
+
+01:15:52.000 --> 01:15:59.000
+Es decir, yo me voy a Calvis. Query hace pasar un par de para que se pueda entender.
+
+01:15:59.000 --> 01:16:02.000
+Yeah. This query.
+
+01:16:02.000 --> 01:16:07.000
+Y digo, Bueno, yo no quiero dejar con tengo solamente un código que quiero que quiero ejecutar.
+
+01:16:07.000 --> 01:16:13.000
+Bien perfecto. Entonces, bueno, voy para acá. Voy a mí. Voy acá novo con Spark.
+
+01:16:13.000 --> 01:16:16.000
+Y ya está. Y esto mismo, tú lo vas a poder ver.
+
+01:16:16.000 --> 01:16:21.000
+En esta parte que dice Big Query Studio. Los words son maquinitas.
+
+01:16:21.000 --> 01:16:26.000
+Que tienen toda la capacidad. Poder empezar a hacer y ejecutar todo el tema de Spam.
+
+01:16:26.000 --> 01:16:31.000
+Sin embargo, sin embargo, es para que tú es una idea para trabajar.
+
+01:16:31.000 --> 01:16:34.000
+Así como si el Collab ya es el primer mando del colapso.
+
+01:16:34.000 --> 01:16:40.000
+Luego en tema cluster. Ojo pestañesa, acá.
+
+01:16:40.000 --> 01:16:47.000
+Al momento que tú creas un cluster. Mira desde que cargue.
+
+01:16:47.000 --> 01:16:52.000
+Tú tienes. Y aquí voy a borrar, porque para que no me genere.
+
+01:16:52.000 --> 01:16:59.000
+Basurita, ya está. Que es algo que ahí está para que esté igual que ustedes en la parte del cluster. Tiene 2 formas de hacerlo.
+
+01:16:59.000 --> 01:17:03.000
+La primera de ellas. ¿qué cosa? La primera de ellas.
+
+01:17:03.000 --> 01:17:08.000
+Tú vas a crear un cluster, por ejemplo, ya sea llamando.
+
+01:17:08.000 --> 01:17:13.000
+A máquinas virtuales. O ya sea, llamando a Kubernetes.
+
+01:17:13.000 --> 01:17:19.000
+Ahí lo vamos a ver ya. Cuando utilizo cada una.
+
+01:17:19.000 --> 01:17:24.000
+Cuando tu rol como tal. Es científico de datos.
+
+01:17:24.000 --> 01:17:29.000
+Mi recomendación es que tú te enfoques a crear un cluster.
+
+01:17:29.000 --> 01:17:33.000
+Que goza un cluster directo y no tenga que ver.
+
+01:17:33.000 --> 01:17:40.000
+Con cubernetes y que sea una máquina virtual, tal cual como nosotros vamos a crear bajo una máquina virtual.
+
+01:17:40.000 --> 01:17:42.000
+Cuando yo me voy a un tema de Kubernetes.
+
+01:17:42.000 --> 01:17:48.000
+You. You me voy de un virtual machine. A un kubernetes, a un contenedor.
+
+01:17:48.000 --> 01:17:52.000
+Cuando yo, y eso en general, aplica no solamente el tema de salud, ya.
+
+01:17:52.000 --> 01:17:57.000
+Cuando mi aplicación. Yo lo quiero modernizar.
+
+01:17:57.000 --> 01:18:03.000
+Con mi implicación de por sí es un R. P. Un hadoo. Lo que fuese está en una en una sola máquina virtual.
+
+01:18:03.000 --> 01:18:09.000
+Y lo quiero pasar a un concepto de contenedores, concepto de microservicios.
+
+01:18:09.000 --> 01:18:14.000
+Yo paso de máquinas virtuales. Lo paso para acá ya a cobernetes.
+
+01:18:14.000 --> 01:18:24.000
+Esa modernización es un poco compleja. Tanto. Así que la arquitectura, cobernetes, arquitectura.
+
+01:18:24.000 --> 01:18:34.000
+Miren, miren por acá. De toda arquitectura por detrás. Tiene un concepto de post, un concepto de lo que es el meta store, y así sucesivamente.
+
+01:18:34.000 --> 01:18:40.000
+Entonces es un poco más complejo, ya. Sigo acá. Luego tiene los jobs.
+
+01:18:40.000 --> 01:18:44.000
+Tú dices: Bueno. Mira, tengo yo.
+
+01:18:44.000 --> 01:18:52.000
+Un archivo, un punto p: y. Un un este, un archivo de un archivo, un archivo de spar.
+
+01:18:52.000 --> 01:18:57.000
+Que lo quiero ejecutar. Perfecto. Esa Mit job.
+
+01:18:57.000 --> 01:19:02.000
+Pones acá. Que con qué vas a hacerlo? Un archivo de payestar.
+
+01:19:02.000 --> 01:19:06.000
+El cluster con el que vas a ejecutar. Y lo ejecutas.
+
+01:19:06.000 --> 01:19:09.000
+Luego tiene 2 warfra. ¿y qué son los warflot.
+
+01:19:09.000 --> 01:19:12.000
+Los golfos son los que te van a permitir a ti. ¿qué cosa.
+
+01:19:12.000 --> 01:19:19.000
+They are tipo parecido. A qué cosa al apachefer.
+
+01:19:19.000 --> 01:19:24.000
+Con la diferencia que en esta parte de los warfs solamente vas a orquestar.
+
+01:19:24.000 --> 01:19:29.000
+Es para. Y el autoscaling police. ¿para qué es.
+
+01:19:29.000 --> 01:19:35.000
+Vamos a poner el caso hipotético del negocio. El negocio es un un retail.
+
+01:19:35.000 --> 01:19:43.000
+Que es actualmente trabajando, que estás trabajando actualmente. Y tiene datos. Unos 20 gigas.
+
+01:19:43.000 --> 01:19:48.000
+20 llegas, tú dices: Ah, bueno, voy a trabajar con la parte de toda la arquitectura de hadoo.
+
+01:19:48.000 --> 01:19:52.000
+A pesar que 20 gigas es muy poco para un cráter dejado.
+
+01:19:52.000 --> 01:19:54.000
+Yet hold on!
+
+01:19:54.000 --> 01:19:59.000
+Thisar con eso? Porque luego más adelante va a haber más datos perfecto.
+
+01:19:59.000 --> 01:20:08.000
+Y tú dices: Bueno, yo, como arquitecto. Tengo que hacer que ese data pro o ese cluster que yo he creado.
+
+01:20:08.000 --> 01:20:14.000
+Vaya creciendo conforme. La necesidad, entonces.
+
+01:20:14.000 --> 01:20:21.000
+Tú habilitas un autoescalamiento. Una política que te va a permitir a ti.
+
+01:20:21.000 --> 01:20:26.000
+Empezaste con un virtual C. P. U quizás puedes estresar hasta 8 virtual. C. P. U. No lo sé.
+
+01:20:26.000 --> 01:20:33.000
+Yeah, bien, es el tema de Cluster. Voy a Calcérvélez, el serverles, tienes ¿para qué?
+
+01:20:33.000 --> 01:20:36.000
+Para poder ejecutar tareas, batch.
+
+01:20:36.000 --> 01:20:46.000
+Sesiones interactivas. Recuerda que Spark, trabajé memoria. Quiero hacer el tracking Anita de todo el tema de las sesiones, que estoy corriendo perfecto.
+
+01:20:46.000 --> 01:20:48.000
+August para esas 2 cosas. Son esto.
+
+01:20:48.000 --> 01:20:56.000
+Yeah, luego que más. Que es el meta store. Y aquí me voy a detener un poco. Mira mis ojos y ceja acá.
+
+01:20:56.000 --> 01:21:00.000
+Donde te me fuiste aquí. ¿qué dice? Acá? Pregunta.
+
+01:21:00.000 --> 01:21:05.000
+Que a una tabla de Apache iceberg con metadatos de Birley.
+
+01:21:05.000 --> 01:21:08.000
+Metastore.
+
+01:21:08.000 --> 01:21:16.000
+En cristiano. ¿qué es esto? Significa? Que tú me mira y mira, te dice que abrirtes el apio. Vamos a mover. Entonces, para no habilitar la pipa que.
+
+01:21:16.000 --> 01:21:19.000
+Ahí está el meta store. Como tal. Voy a red.
+
+01:21:19.000 --> 01:21:22.000
+Retos, un poquito y acá acá me voy a quedar.
+
+01:21:22.000 --> 01:21:27.000
+El metastore como tal. Aquí voy a regresar. Experiencia.
+
+01:21:27.000 --> 01:21:31.000
+Data, pero es que no quiero habilitar la Api porque no la vamos a utilizar todavía.
+
+01:21:31.000 --> 01:21:36.000
+Ya está, va a estar igual que ustedes. Entonces el meta store es justamente esa parte que les comentaba.
+
+01:21:36.000 --> 01:21:44.000
+Les va a permitir a ustedes. Poder hacer para tus datos, que son Apache Hoodie, iceberg, entre otros.
+
+01:21:44.000 --> 01:21:46.000
+Guardar la metadata.
+
+01:21:46.000 --> 01:21:53.000
+No anita que mira. Sabes qué? Quiero hacer? Federación: ¿qué es una federación? Una federación es.
+
+01:21:53.000 --> 01:21:57.000
+Lo tienes en distintas fuentes. Fuente A, B, C, D, lo que fuese.
+
+01:21:57.000 --> 01:22:03.000
+Y dices, Bueno, quiero orquestarlo en 1 solo en un solo. Quiero hacer esa federación perfecto.
+
+01:22:03.000 --> 01:22:06.000
+Acá tienes el tema de lo que te estoy mencionando.
+
+01:22:06.000 --> 01:22:12.000
+El mismo concepto de federación viene ¿a qué. Cuando tienes un usuario de Microsoft, ya.
+
+01:22:12.000 --> 01:22:15.000
+Un usuario que tiene, por ejemplo, su directorio activo.
+
+01:22:15.000 --> 01:22:18.000
+Yeah.
+
+01:22:18.000 --> 01:22:21.000
+Y dice: Bueno, voy a tener toda la parte ofimática.
+
+01:22:21.000 --> 01:22:28.000
+Con Microsoft y toda la parte de la nube con Google Cloud o no sé con Amazon.
+
+01:22:28.000 --> 01:22:31.000
+Entonces lo que hace en el caso Google Cloud.
+
+01:22:31.000 --> 01:22:38.000
+Para que los usuarios. Que se crearon en el directorio activo de Microsoft.
+
+01:22:38.000 --> 01:22:42.000
+Puedas loguearte con el arroba outloo. Punto com, por ejemplo.
+
+01:22:42.000 --> 01:22:52.000
+Tú ya es un concepto de federación. Identidades, esa federación de identidades, esa federación de identidades te permite a ti poderlo guiarte.
+
+01:22:52.000 --> 01:22:55.000
+De tu Microsoft a Google Cloud.
+
+01:22:55.000 --> 01:23:03.000
+Yeah, y es el mismo concepto para la parte acá, no necesariamente para el tema. Lo veo, pero sí para poder tenerlo todo centralizado en 1 solo.
+
+01:23:03.000 --> 01:23:07.000
+Entonces este es el escenario de Microsoft con Google.
+
+01:23:07.000 --> 01:23:15.000
+I need to know. Mira, mi usuario tiene. Tiene Workspace, la parte ofimática de Googlecloud.
+
+01:23:15.000 --> 01:23:19.000
+Y quiere conectarse con la parte de lo que es todo lo que tú me dices Bien.
+
+01:23:19.000 --> 01:23:23.000
+Google Cloud te da un concepto que se llama el Cloud.
+
+01:23:23.000 --> 01:23:31.000
+Identity y 3 del trago Identity. Para poder, qué cosas poder hacer la herencia y conectarte.
+
+01:23:31.000 --> 01:23:34.000
+To Workspace con Google Cloud, ya.
+
+01:23:34.000 --> 01:23:38.000
+Acá está, y el otro. Si fuese que no fuese de Google Cloud.
+
+01:23:38.000 --> 01:23:46.000
+Se llama Federación de Identidades. Ya está, sigo acá, y luego tienes el tema. Este señor que está por acá.
+
+01:23:46.000 --> 01:23:52.000
+Esté acá que te permite hacer todo el tema. Lo que es este intercambios ya intercambios.
+
+01:23:52.000 --> 01:23:57.000
+Que son para poder ayudarte a todo tu proceso de.
+
+01:23:57.000 --> 01:24:00.000
+De Tl per se. Dicho todo esto ahora, sí.
+
+01:24:00.000 --> 01:24:06.000
+Vamos a darle el cluster. Entonces hagan clic en crear Cluster porfa.
+
+01:24:06.000 --> 01:24:14.000
+Hasta ahí. Vamos. Bien. Nadie se me perdió. Sí, todo bien.
+
+01:24:14.000 --> 01:24:18.000
+Vamos a dejar tirando el cluster. Y luego nos vamos a Break. Les parece.
+
+01:24:18.000 --> 01:24:20.000
+Para poder, porque demoró un poquito entrar el cluster.
+
+01:24:20.000 --> 01:24:32.000
+Entonces le sale la misma pantalla que a mí me confirman. Porfis.
+
+01:24:32.000 --> 01:24:34.000
+Sí. Bien. Bien. Entonces.
+
+01:24:34.000 --> 01:24:40.000
+Then click en el botoncito azul. En el botoncito azul. Ahí está.
+
+01:24:40.000 --> 01:24:44.000
+But they get ay, mimos. Ahí está que cargue ya.
+
+01:24:44.000 --> 01:24:49.000
+Y al otro lado, no espérame. Voy a ir explicando parte por parte.
+
+01:24:49.000 --> 01:24:53.000
+Yeah, ¿por qué? Porque es importante toda esta parte que estamos diciendo.
+
+01:24:53.000 --> 01:24:57.000
+Primero pones un nombre en un cluster. Vamos a ponerle cluster.
+
+01:24:57.000 --> 01:25:02.000
+Will take pones. Cualquier nombre ya. La región va a depender.
+
+01:25:02.000 --> 01:25:07.000
+Donde tú lo quieres, vamos a ponerlo. Y la vamos a dejar el lado central.
+
+01:25:07.000 --> 01:25:12.000
+Y qué cosa la zona. La zona. ¿qué cosa es? Y es importante? Acá.
+
+01:25:12.000 --> 01:25:18.000
+Una región como tal, en concepto de Cloud ya es la ubicación física. En algún lugar.
+
+01:25:18.000 --> 01:25:24.000
+Que yo estoy diciendo puede ser, no sé, Norteamérica, Sudamérica lo que fuese.
+
+01:25:24.000 --> 01:25:30.000
+Y la zona y la zona. ¿qué cosa es.
+
+01:25:30.000 --> 01:25:33.000
+Este es tu servidor. Vamos a poner. Ya está su servidor.
+
+01:25:33.000 --> 01:25:39.000
+La sonda es como la partecita lógica. Que vas teniendo.
+
+01:25:39.000 --> 01:25:46.000
+En cada una de las partes de que. De la parte de la región.
+
+01:25:46.000 --> 01:25:50.000
+Cada región como tal como buena práctica de cualquier.
+
+01:25:50.000 --> 01:25:55.000
+Te dice que debe tener mínimo. Zonas de disponibilidad.
+
+01:25:55.000 --> 01:25:59.000
+En el caso Google Cloud mayormente, vas a encontrar 4.
+
+01:25:59.000 --> 01:26:04.000
+No sé cuál son a poner Anita, pues lo dejas en y no hay ningún problema.
+
+01:26:04.000 --> 01:26:09.000
+Y lo que hace al momento de tirarlo. La zona que está más libre, te lo coloca.
+
+01:26:09.000 --> 01:26:14.000
+Yeah, y aquí. Porfa aquí. Si ojo pestañen esto.
+
+01:26:14.000 --> 01:26:17.000
+Lo que te estoy contando está lo mismo está donde.
+
+01:26:17.000 --> 01:26:24.000
+En la parte de la parte de los libros que te he colgado. Sin embargo, para poder reducir el tiempo de estudio.
+
+01:26:24.000 --> 01:26:33.000
+Te cuento, mira, acá. Cuando tú tienes de por sí un concepto que se llama lo siguiente.
+
+01:26:33.000 --> 01:26:37.000
+El nodo maestro. Y los esclavos.
+
+01:26:37.000 --> 01:26:40.000
+Yeah. El name node.
+
+01:26:40.000 --> 01:26:44.000
+Name node y acá lo que te lo voy a poner para que no te olvides.
+
+01:26:44.000 --> 01:26:47.000
+El Ney note y acá abajo.
+
+01:26:47.000 --> 01:26:55.000
+Los data node, recuerda. Cómo te has acordado que el name, la cabeza y los otros son los brazos? ¿por qué.
+
+01:26:55.000 --> 01:27:00.000
+Porque tiene la palabra data. Y aparte. Ellos son los workers.
+
+01:27:00.000 --> 01:27:05.000
+Significa eso? Son los esclavos los que realmente hacen la tarea.
+
+01:27:05.000 --> 01:27:10.000
+Si todo lo que estás diciendo, lo que necesitas dices, Ah, pues mira este.
+
+01:27:10.000 --> 01:27:16.000
+This don't cluster que tenga buen rendimiento que responda: Bien, tú no le vas a dar más capacidad al main note.
+
+01:27:16.000 --> 01:27:19.000
+No tú tendrás que crear.
+
+01:27:19.000 --> 01:27:21.000
+Otto Walker.
+
+01:27:21.000 --> 01:27:23.000
+Que pueda funcionar así.
+
+01:27:23.000 --> 01:27:29.000
+Yeah. Otro punto importante: mira acá. Tú tienes acá te dice.
+
+01:27:29.000 --> 01:27:35.000
+Tú puedes tener un cluster estándar. Un nodo maestro en networkers.
+
+01:27:35.000 --> 01:27:38.000
+O single node.
+
+01:27:38.000 --> 01:27:45.000
+Un maestro 0 workers. Entonces vamos para acá vamos a analizar cada cosa, cada escenario.
+
+01:27:45.000 --> 01:27:50.000
+Si yo creo esto. Estoy en todo momento.
+
+01:27:50.000 --> 01:27:55.000
+Rompiendo qué cosa. El concepto que se llama de alta disponibility.
+
+01:27:55.000 --> 01:27:57.000
+That.
+
+01:27:57.000 --> 01:28:02.000
+¿por qué? Porque yo necesito. Cuando estoy haciendo todo el tema de big data.
+
+01:28:02.000 --> 01:28:07.000
+Mi nuevo maestro. Y mínimo, 2 esclavos.
+
+01:28:07.000 --> 01:28:12.000
+Nunca tú vas a ver. Y decir, Ah, no, pues este show no quiero.
+
+01:28:12.000 --> 01:28:15.000
+Nunca vas a ver esto. Siempre es un nodo maestro.
+
+01:28:15.000 --> 01:28:18.000
+Y 2 esclavos diciendo esto.
+
+01:28:18.000 --> 01:28:23.000
+Yeah bien. Y desde el otro lado, el alta disfonibilidad.
+
+01:28:23.000 --> 01:28:29.000
+Punto importante acá. Cuando utilizo esto.
+
+01:28:29.000 --> 01:28:35.000
+Cuando tú sabes que son procesos sumamente críticos, como, por ejemplo, los procesos bancarios.
+
+01:28:35.000 --> 01:28:43.000
+Yeah que necesitan. No sé, no sea en ningún momento interrumpido. Entonces tú pones 3 maestros en networkers.
+
+01:28:43.000 --> 01:28:48.000
+En nuestro caso, en nuestro caso, que vamos a utilizar para no gastar dando nuestros créditos.
+
+01:28:48.000 --> 01:28:51.000
+Este que está por acá, ya este que está acá.
+
+01:28:51.000 --> 01:28:58.000
+Porque no lo donita porque no va a faltar recurso. Luego momento, utilizarlo. Ya utilicen el que dice single note.
+
+01:28:58.000 --> 01:29:08.000
+En el mundo, en el mundo real. Se utiliza este. Nosotros estamos utilizando el single note para que no nos dé un problema de recursos.
+
+01:29:08.000 --> 01:29:13.000
+Bajo aquí. Tú tienes. Qué cosa? El concepto que se llama.
+
+01:29:13.000 --> 01:29:19.000
+Imágenes configuradas o instaladas. ¿qué significa?
+
+01:29:19.000 --> 01:29:26.000
+Internamente, mira acá. Te está dando la imagen que dice debia. Dos, 2.
+
+01:29:26.000 --> 01:29:30.000
+Y el release bávara. Entonces? No, pues no me gusta.
+
+01:29:30.000 --> 01:29:35.000
+Lo cambias. E inclusive tú puedes haber creado una imagen.
+
+01:29:35.000 --> 01:29:40.000
+Esa imagen se comporta como que. Que cosa como tu imagen docker.
+
+01:29:40.000 --> 01:29:44.000
+Es decir, tú puedes saber contener izado tu imagen.
+
+01:29:44.000 --> 01:29:49.000
+Para poder utilizarlo, ya o simplemente decir: No sabes que voy a utilizar.
+
+01:29:49.000 --> 01:29:56.000
+Alguna otra versión de Spar. La 3 0, la 3, 5. Lo que fuese todo. Vas cambiando. Nosotros vamos a por defecto.
+
+01:29:56.000 --> 01:30:02.000
+No va bien. Hadoo 3, 3. Es parte. Cinco. Está súper bien.
+
+01:30:02.000 --> 01:30:05.000
+Yeah.
+
+01:30:05.000 --> 01:30:10.000
+Luego en esta parte, tú tienes Spark Performance en Start Performance.
+
+01:30:10.000 --> 01:30:14.000
+¿qué significa todo esto en todo esto que estamos diciendo? Acá.
+
+01:30:14.000 --> 01:30:19.000
+Tú vas a tener para que cuando se caiga, evitar que se caiga.
+
+01:30:19.000 --> 01:30:24.000
+Entonces, bueno, voy a evitar el caché. Para que me vaya almacenando todos los logs.
+
+01:30:24.000 --> 01:30:28.000
+Voy a almacenar esto para que me haga todo el tema que tenga que ver con.
+
+01:30:28.000 --> 01:30:33.000
+Con lo que es buena práctica, por ejemplo, del tema. Lo que es este mejora el performance.
+
+01:30:33.000 --> 01:30:35.000
+Y todo lo que tenga que ver con qué.
+
+01:30:35.000 --> 01:30:44.000
+Con los optimizaciones de ejecuciones. Cuando trabajas con Google Drive, siempre vas a ver esta cosita.
+
+01:30:44.000 --> 01:30:46.000
+Esta preguntita ya.
+
+01:30:46.000 --> 01:30:49.000
+Get. Si no llegas a entender que lo que pasa vas para acá.
+
+01:30:49.000 --> 01:30:54.000
+Das clic acá y acá te da el detalle de cada paso que necesitas.
+
+01:30:54.000 --> 01:31:00.000
+Yeah, por si acaso antes que me preguntes, no sé si.
+
+01:31:00.000 --> 01:31:08.000
+La consola. A mí me sale en inglés como lo cambio, haciendo un paréntesis van acá al lado al lado de su carita van acá.
+
+01:31:08.000 --> 01:31:14.000
+Tres puntos: preferencias. Idioma y región.
+
+01:31:14.000 --> 01:31:20.000
+Lenguaje y región, y lo cambia. ¿en qué cosa lo cambian en inglés, para quienes lo tengan, lo mismo que yo ya.
+
+01:31:20.000 --> 01:31:26.000
+Pueden ponerlo en español. No hay problema. Pero lo más que nada lo hago para que no se me pierda.
+
+01:31:26.000 --> 01:31:32.000
+Entonces hasta ahí, tú vas metiendo más o menos. ¿qué cosa más o menos tu traster.
+
+01:31:32.000 --> 01:31:36.000
+Todavía todavía no lo desea entrar todavía. Wait sigo acá.
+
+01:31:36.000 --> 01:31:42.000
+Baja un poquito mira, acá. Que te haya dicho yo de las V, P, C.
+
+01:31:42.000 --> 01:31:48.000
+Que era una V, P, C. Sí, pero está la chachi? P. T. ¿qué era una B, P, C.
+
+01:31:48.000 --> 01:31:51.000
+Se acuerdan que había un dibujito en a V, P, N, al costado una B, P, C. Se acuerda.
+
+01:31:51.000 --> 01:31:59.000
+Que hizo un dibujito. Todo. Todo, feíto. ¿se acuerdan de la Bbc, que era.
+
+01:31:59.000 --> 01:32:09.000
+Chicos. Que era una V, P. C. En la nube.
+
+01:32:09.000 --> 01:32:15.000
+Network privada exactamente exacto para que se pueda, para que exacto bien.
+
+01:32:15.000 --> 01:32:25.000
+Para que no se me olviden, ya. Como dice a veces, la imagen como se queda, se queda mejor en mejor. Nos recordamos más. Miren esto.
+
+01:32:25.000 --> 01:32:30.000
+Una de Pc va a ser siempre esto. Tú tienes y acá inclusive.
+
+01:32:30.000 --> 01:32:33.000
+El Google Nats. Y acá te voy a mostrar esto.
+
+01:32:33.000 --> 01:32:39.000
+Aquí. Este dibujito está bonito. Miren esto.
+
+01:32:39.000 --> 01:32:45.000
+Entonces. Está horrible. Carga!
+
+01:32:45.000 --> 01:32:52.000
+Copiar, dirección, imagen. Ahora, sí te las voy a pasar esto para que lo tenga y lo tengan sus apuntes.
+
+01:32:52.000 --> 01:32:59.000
+Miren, acá. Tienes esa red privada que está sumamente bien. Lo que ustedes comentaban ya.
+
+01:32:59.000 --> 01:33:05.000
+¿para qué? Para? Y vamos a otro color. Vamos a poner rosadito. Entonces, ¿para qué.
+
+01:33:05.000 --> 01:33:13.000
+Para que tu máquinas virtuales estén seguras. Bien, esa B, P, C. Como tal. Esa red privada que estamos diciendo.
+
+01:33:13.000 --> 01:33:18.000
+Tiene que tener salida Internet. Para yo descargar. Hacer cualquier cosa.
+
+01:33:18.000 --> 01:33:25.000
+E inclusive con usted, van a ser modelos. Ese modelo que se pone en Tom workbench ese wordbench se pone dentro de una V, P, C.
+
+01:33:25.000 --> 01:33:31.000
+Pero la forma segura, la forma segura para que el usuario como tal usuario final no descargue.
+
+01:33:31.000 --> 01:33:34.000
+Y no me genere virus. Yo pongo.
+
+01:33:34.000 --> 01:33:40.000
+Un drownut. Ese drownut que estamos mencionando te permite a ti.
+
+01:33:40.000 --> 01:33:45.000
+Poder. ¿qué cosa poder hacer toda esa parte que estamos diciendo de que toda esa parte.
+
+01:33:45.000 --> 01:33:48.000
+De poder salir de ese Internet de una manera segura.
+
+01:33:48.000 --> 01:33:53.000
+Tú con la V, P, C, con la V, P, C. Tienes un fireware.
+
+01:33:53.000 --> 01:33:57.000
+Así como cuando, por ejemplo, tienes tú de tu Internet, no de tu Internet.
+
+01:33:57.000 --> 01:34:05.000
+Hay puertos que están abiertos, puerto, 22, por ejemplo, otros, para que puedas poner y puedas poner tu página web.
+
+01:34:05.000 --> 01:34:08.000
+Lo mismo acá tú defines con qué puertos quieres salir.
+
+01:34:08.000 --> 01:34:13.000
+Yeah, dicho todo esto. Con tú creas un proyecto.
+
+01:34:13.000 --> 01:34:18.000
+The Ecp, o sea, si yo, por ejemplo, llega, acá y pongo un nuevo proyecto.
+
+01:34:18.000 --> 01:34:23.000
+Por defecto, por defecto, me viene la V, P. C.
+
+01:34:23.000 --> 01:34:31.000
+Por default. Ustedes revisen, acá, revisen, por ejemplo, revisen que dice Primary Network Default.
+
+01:34:31.000 --> 01:34:33.000
+Significa, si yo me voy a la B, P, C.
+
+01:34:33.000 --> 01:34:35.000
+Esto más que nada para que se pueda entender.
+
+01:34:35.000 --> 01:34:41.000
+Ya miren, acá. Esta E, P. C. Por default.
+
+01:34:41.000 --> 01:34:46.000
+Cuando tú vas en un proyecto ya real. Se sienta el ingeniero electrónico.
+
+01:34:46.000 --> 01:34:52.000
+No es que sí, pues el dinero electrónico se sienta. El sistema se siente.
+
+01:34:52.000 --> 01:34:58.000
+Todo el mundo y empiezan a definir. El Network, ese network que estamos diciendo.
+
+01:34:58.000 --> 01:35:03.000
+Yeah, primero que borran esto, la default la borran. Usted, no la borren a déjenmela y nomás, sino que.
+
+01:35:03.000 --> 01:35:09.000
+Estoy haciendo un proyecto real. La borra. Y empiezan a hacer el subneteo de redes, es decir.
+
+01:35:09.000 --> 01:35:14.000
+Awesome soneteo de ruedas. Esta parte. Imágenes.
+
+01:35:14.000 --> 01:35:17.000
+Como de todo esto, todo el tema es un heteo, ya.
+
+01:35:17.000 --> 01:35:22.000
+Yo no me voy a meter tanto esta parte, porque no es un curso.
+
+01:35:22.000 --> 01:35:33.000
+De lo que es la computing, sino de vida, para que puedan tener todo el panorama. Pero se sientan a hacer su meteo de redes, pues por este rango Ips, etcétera, etcétera.
+
+01:35:33.000 --> 01:35:38.000
+Entonces, entonces. Lo que se hace una es que tienes tú la V, P, C.
+
+01:35:38.000 --> 01:35:40.000
+The Zoomnet.
+
+01:35:40.000 --> 01:35:46.000
+Va a depender de va a depender de qué cosa. Por ejemplo, si yo quiero salir por central.
+
+01:35:46.000 --> 01:35:51.000
+By porcentral. Tengo ¿qué cosa. Tengo.
+
+01:35:51.000 --> 01:35:56.000
+Un rango de ips. Diez 128 para beber.
+
+01:35:56.000 --> 01:36:00.000
+En esta parte, en esto que estamos diciendo ya.
+
+01:36:00.000 --> 01:36:03.000
+Tú que lo que tienes. Tú. Tienes un gateway.
+
+01:36:03.000 --> 01:36:10.000
+Ese gateway que estamos mencionando, ya. Tú vas a tener qué cosa? Esta parte que está acá.
+
+01:36:10.000 --> 01:36:12.000
+Rebate Google, Access y.
+
+01:36:12.000 --> 01:36:23.000
+El tema, lo que es su net híbridas. Cuando 1 ya hace todo el tema de pasar de un premise al Cloud, tienes que tener mucho cuidado el tema del Sondeteo.
+
+01:36:23.000 --> 01:36:30.000
+Mucho cuidado. Tu post utiliza las Ips que están en un premise. La puedes utilizar en el tema, lo que es la sin ningún problema.
+
+01:36:30.000 --> 01:36:36.000
+Sin embargo, sin embargo, ya. Si en la parte de redes.
+
+01:36:36.000 --> 01:36:43.000
+No es tu fuerte. Te recomiendo dejarlo porque déjalo que llegue, inclusive con todas clic, en crear. Déjalo que sea de forma automática.
+
+01:36:43.000 --> 01:36:46.000
+Y luego ya empiezas a aprender todo el tema de redes.
+
+01:36:46.000 --> 01:36:49.000
+Ya, porque si es un poco complicado, la verdad.
+
+01:36:49.000 --> 01:36:58.000
+Dicho esto, entonces vamos para acá. Ustedes tienen. Estoy 100 segura que tienen una V Pc por Network, por default.
+
+01:36:58.000 --> 01:37:05.000
+¿cierto o no? ¿cierto? Tienen algo así como esto: revisen porfa.
+
+01:37:05.000 --> 01:37:10.000
+Si me confirman, porfa bien. Lo único que tienen que hacer ustedes. Eso sí.
+
+01:37:10.000 --> 01:37:17.000
+En carambas llega acá. Y eso que decía Su Network, déjenla que dice por default.
+
+01:37:17.000 --> 01:37:22.000
+Yeah por default la deja. Y tú? ¿qué tienes? Mira, acá.
+
+01:37:22.000 --> 01:37:26.000
+But again carambas. Perdón para que no te me confundas.
+
+01:37:26.000 --> 01:37:32.000
+Tiene lo siguiente: esa V, p. C, Tú dices: Oye. Pero como hiciste Anita, como hiciste para entender.
+
+01:37:32.000 --> 01:37:35.000
+Yo puse V, P, C. Y el Tip acá.
+
+01:37:35.000 --> 01:37:43.000
+Clic derecho en un nuevo tab. ¿por qué? Porque lo que yo no quiero es que se pierda mis configuraciones que voy haciendo, ¿no? Entonces de Pc.
+
+01:37:43.000 --> 01:37:50.000
+The. Y tú vas a poder ver. Vas a poder ver en la V. P. C, que te sale por defecto, que te que cargue esta cosa.
+
+01:37:50.000 --> 01:37:55.000
+La de default, y vamos a utilizar que goza la Sunet Lau central.
+
+01:37:55.000 --> 01:37:59.000
+Que también se llama por casualidad del de la vida. También se llama default.
+
+01:37:59.000 --> 01:38:05.000
+Perfecto, default. Ya está aquí. Voy a hacer un paréntesis.
+
+01:38:05.000 --> 01:38:08.000
+Tú tienes la otra opción que dice: Network Share.
+
+01:38:08.000 --> 01:38:10.000
+From host project.
+
+01:38:10.000 --> 01:38:15.000
+Que seas un cristiano.
+
+01:38:15.000 --> 01:38:24.000
+Mayormente, cuando tú vas a un proyecto. Real de cualquier cliente.
+
+01:38:24.000 --> 01:38:29.000
+¿cómo lo hacen? Tienen un proyecto solamente para redes.
+
+01:38:29.000 --> 01:38:34.000
+Que sí sí. Otro proyecto para la parte de datos.
+
+01:38:34.000 --> 01:38:41.000
+Otro proyecto para la parte de infra. ¿y por qué hacen eso? Porque son equipos multidisciplinarios.
+
+01:38:41.000 --> 01:38:47.000
+So hay un equipo de networking. Hay un equipo de infra, y así sucesivamente.
+
+01:38:47.000 --> 01:38:52.000
+Cuando tengas este escenario y quieras dividir esa parte que te estoy comentando.
+
+01:38:52.000 --> 01:38:56.000
+Y tú dices: Voy acá para que se pueda entender donde está mi lápiz.
+
+01:38:56.000 --> 01:39:00.000
+El lapicito acá está. Tengo acá el proyecto de redes.
+
+01:39:00.000 --> 01:39:05.000
+Ya tengo el proyecto de data voy a poner la de para que no se me olviden.
+
+01:39:05.000 --> 01:39:11.000
+Tengo el proyecto de inteligencia artificial. Bien, y tengo el proyecto por acá.
+
+01:39:11.000 --> 01:39:13.000
+De infraestructura.
+
+01:39:13.000 --> 01:39:18.000
+De todo el tema de máquinas virtuales. Y tú dices y dices: Bueno, acá.
+
+01:39:18.000 --> 01:39:21.000
+El proyecto de redes. Recuerden a R de redes.
+
+01:39:21.000 --> 01:39:25.000
+Y tú dices: Bueno, yo, si yo tengo una red.
+
+01:39:25.000 --> 01:39:31.000
+Una V, P, C, que fue creado. En este proyecto, en el proyecto de redes.
+
+01:39:31.000 --> 01:39:36.000
+Para que el proyecto de datos de inteligencia artificial, y así sucesivamente.
+
+01:39:36.000 --> 01:39:42.000
+Puedan verlo y pueda trabajarlo. Yo utilizaré qué cosa, un share.
+
+01:39:42.000 --> 01:39:44.000
+Vpc.
+
+01:39:44.000 --> 01:39:49.000
+Yeah, eso es importante mencionarlo. Nosotros no podemos fabricar eso, porque.
+
+01:39:49.000 --> 01:39:55.000
+Porque para yo aplicar un share V. P. C. Necesito que los proyectos estén.
+
+01:39:55.000 --> 01:40:00.000
+En una organización, cosa que no tenemos porque estamos en la capa gratuita.
+
+01:40:00.000 --> 01:40:05.000
+Yeah, entonces ya saben que ser V, P. C. Es cuando van a dividir los costos.
+
+01:40:05.000 --> 01:40:10.000
+Por acá el tema de redes. Y el resto va heredando, ya.
+
+01:40:10.000 --> 01:40:16.000
+Borro. Esto. Entonces baja acá.
+
+01:40:16.000 --> 01:40:18.000
+Luego tienes otro concepto que se llama los tag.
+
+01:40:18.000 --> 01:40:30.000
+¿qué son esos? Anita. Mayormente, cuando tú haces toda esa parte que estamos hablando de los fiward, por ejemplo, y que los fireworks y acá te pone un dibujo para que no te me olvides. Fireware acá.
+
+01:40:30.000 --> 01:40:38.000
+Él es el que va a poder como como como que va a ser como la política antes que antes que ingresa tu sistema.
+
+01:40:38.000 --> 01:40:42.000
+Ya como todos los puertos. Es como que. Mira acá.
+
+01:40:42.000 --> 01:40:51.000
+Mira, acá acá está tal Internet? Un fiwork por puertos, el puerto, 22, el puerto 73, 6, así sucesivamente.
+
+01:40:51.000 --> 01:40:58.000
+Ito, itosistema. Entonces ese firework que tú acabas tú de crear, que acabas de hacer, que son reglas.
+
+01:40:58.000 --> 01:41:02.000
+Esto que está acá tú podías haberle puesto un tag acá.
+
+01:41:02.000 --> 01:41:05.000
+Para que tengas un tema de administración. Nosotros lo vamos a dejar por defecto.
+
+01:41:05.000 --> 01:41:09.000
+No vamos a poner nada. Pero para eso sirve los tags de los networks.
+
+01:41:09.000 --> 01:41:17.000
+Yeah bajo. Hasta ahí que lo único que yo he hecho, lo único que he hecho por si acaso, porque no se me pierdan el puesto. El nombre.
+
+01:41:17.000 --> 01:41:21.000
+La región pueden poner cualquier región que ustedes quieran, ya.
+
+01:41:21.000 --> 01:41:24.000
+El tema de lo que es esta parte que está acá.
+
+01:41:24.000 --> 01:41:29.000
+Pónganle 0 worker o más conocido como zero data. Note.
+
+01:41:29.000 --> 01:41:37.000
+Bajo bajo bajo y bajo abajo abajo. Y acá dataprometastore. Lo voy a dejar.
+
+01:41:37.000 --> 01:41:41.000
+También vacío por ahora, ya. Y acá voy a bajar un poquito.
+
+01:41:41.000 --> 01:41:45.000
+Ojo, pestenices, acá. Mira esto.
+
+01:41:45.000 --> 01:41:48.000
+En esta parte, tú en esto.
+
+01:41:48.000 --> 01:41:52.000
+Va a achicar un poquito. Para que se pueda ver bien.
+
+01:41:52.000 --> 01:41:58.000
+Ahí está mejor. Me lapicito. Aquí estás mira, acá.
+
+01:41:58.000 --> 01:42:02.000
+Tú tienes 1 que se llama enable, component gateway. Tú dirás.
+
+01:42:02.000 --> 01:42:05.000
+Qué es eso? Eso es lo que te va a permitir a ti.
+
+01:42:05.000 --> 01:42:09.000
+Qué cosa para que tú puedas satiritar estos componentes.
+
+01:42:09.000 --> 01:42:15.000
+Necesariamente este check. Tienes que activa, tener activado? ¿para qué más te va a servir.
+
+01:42:15.000 --> 01:42:18.000
+Claro, porque si tú quieres tener un tipo Júpiter.
+
+01:42:18.000 --> 01:42:24.000
+Yeah, un Jupiter, el convencional que tipo para que hagas tu Python, tu Spart. Y todo eso.
+
+01:42:24.000 --> 01:42:26.000
+Tú dirás, yo quiero.
+
+01:42:26.000 --> 01:42:31.000
+Jupyter noteboot. No que quiero la interfaz de hive perfecto, hive.
+
+01:42:31.000 --> 01:42:34.000
+With a with cut.
+
+01:42:34.000 --> 01:42:40.000
+¿qué quiero? Yo Judy? Bien, harás el tema de que quiero trabajar con iceberg también delta de igual forma.
+
+01:42:40.000 --> 01:42:49.000
+Es un check que se activa, ya. Voy a borrar esto. En nuestro caso. Por ahora no necesitamos, no necesitamos habilitarlo.
+
+01:42:49.000 --> 01:42:54.000
+Yeah, cuando ya veamos. Cuando ya sigamos avanzando, yo le diré: Chicos.
+
+01:42:54.000 --> 01:43:03.000
+Modifiquen o corran este comando para que. Esto esto y esto lo tengo activado. En nuestro caso, no me voy a preocupar de eso. Lo voy a dejar así.
+
+01:43:03.000 --> 01:43:09.000
+Yeah, no. Lo voy a cambiar. Hasta ahí. Lo único que he puesto son los nombres.
+
+01:43:09.000 --> 01:43:17.000
+En nombre ¿qué cosa? La B, P, C. Y no he cambiado nada más a, y también cambié qué cosa? El tema del single.
+
+01:43:17.000 --> 01:43:23.000
+Not, ya luego. Punto importante, lo que tienen que tirar todavía.
+
+01:43:23.000 --> 01:43:29.000
+Vas a configurar los nodos. Ojo pestañesa acá, mira, mira esto.
+
+01:43:29.000 --> 01:43:31.000
+Tú en esto? ¿qué te había dicho yo del yar.
+
+01:43:31.000 --> 01:43:35.000
+Que te dije yo, el orquestador de recursos, ¿te acuerdas.
+
+01:43:35.000 --> 01:43:40.000
+Si yo me voy acá a la arquitectura. Vamos vía más o menos el yar.
+
+01:43:40.000 --> 01:43:44.000
+Ah, ya acá. El orquestador de recursos.
+
+01:43:44.000 --> 01:43:50.000
+Yeah, bien, tú dices. Aquí te vas a decir. En nuestro caso, no nos dice.
+
+01:43:50.000 --> 01:44:00.000
+Primero, para configurar el. Como se llama esto el nodo maestro y los esclavos. No 1 solo me sale para configurar.
+
+01:44:00.000 --> 01:44:05.000
+Si yo hubiera escogido, miren acá solamente para que se pueda entender si hubiera escogido esto.
+
+01:44:05.000 --> 01:44:10.000
+Por ejemplo, ahí está. Yo tendría que en la parte de los nodos.
+
+01:44:10.000 --> 01:44:15.000
+Miren, tendría todo esto. Pero yo solamente había escogido.
+
+01:44:15.000 --> 01:44:20.000
+Ese que dice, Acá el. Un nodo, un solo nodo.
+
+01:44:20.000 --> 01:44:22.000
+Entonces me voy nuevamente acá y que me sale.
+
+01:44:22.000 --> 01:44:27.000
+Miren esto. Me dice. Ok, tú vas a trabajar.
+
+01:44:27.000 --> 01:44:31.000
+¿qué tipo de máquina quieres. Y paréntesis, Acá.
+
+01:44:31.000 --> 01:44:36.000
+Cuando trabajas han estado trabajando con databilidades.
+
+01:44:36.000 --> 01:44:41.000
+Yeah, si bien es cierto antes, cuando apareció todo el tema, Tablis Community.
+
+01:44:41.000 --> 01:44:46.000
+Hace un tiempo atrás, ya sé, como más de 3 años, a 2 años y medio, aproximadamente.
+
+01:44:46.000 --> 01:44:51.000
+Tú tenías para poder utilizar el cluster data o el data jets per se.
+
+01:44:51.000 --> 01:44:54.000
+Tenías que crear un cluster.
+
+01:44:54.000 --> 01:45:00.000
+Adjuster no tenías que crear, y recién después de crear recién asignabas el notebook que utilizabas.
+
+01:45:00.000 --> 01:45:06.000
+Ahora, esa parte de creación del cluster ya no es como parte de.
+
+01:45:06.000 --> 01:45:12.000
+Yeah, ¿a qué me refiero eso? Que cuando ya utilizado tablets, community o databits per se.
+
+01:45:12.000 --> 01:45:18.000
+Y llamas al notebook y la siguen correr. Automáticamente.
+
+01:45:18.000 --> 01:45:20.000
+That they don't cluster.
+
+01:45:20.000 --> 01:45:25.000
+Is it just de la mano? La mano izquierda.
+
+01:45:25.000 --> 01:45:29.000
+Ahí sale la parte truster y te lo tira de forma automática.
+
+01:45:29.000 --> 01:45:34.000
+Yeah, muy parecido al mismo concepto. Acá. Y tú dices: Bueno.
+
+01:45:34.000 --> 01:45:46.000
+¿para qué estoy haciendo esto? Estoy haciéndolo. Quizás. Para aprender todo el tema de big data. Estoy haciendo quizás para el tema, lo que es hacer modelos deep learning. Por ejemplo, utilizaré un G, P. U.
+
+01:45:46.000 --> 01:45:51.000
+Cierto? O estoy haciendo para atajar con Spark. Utilizaré.
+
+01:45:51.000 --> 01:45:58.000
+Cosa, máquinas. Para el tema de memoria. ¿qué cosa optimizada.
+
+01:45:58.000 --> 01:46:04.000
+Sin embargo, sin embargo, nosotros. Como tal que vamos a utilizar.
+
+01:46:04.000 --> 01:46:08.000
+Pues no vamos a utilizar la primera nomás, no porque porque.
+
+01:46:08.000 --> 01:46:14.000
+Para propósito en general, ya. Entonces, ¿qué tipo voy a utilizar? Anita.
+
+01:46:14.000 --> 01:46:19.000
+Mi sugerencia. Déjalo con el que está el Ene 4 está súper bien.
+
+01:46:19.000 --> 01:46:26.000
+Yeah, y déjalo lo que dice. Así lo mismo que te decía. N: 4 estándar, 2. En otras palabras.
+
+01:46:26.000 --> 01:46:30.000
+En 2 virtuales de Perú y 8 gigas de R a M.
+
+01:46:30.000 --> 01:46:36.000
+Pero ahorita no nos alcanzará para todo eso. Sí, porque recuerda cosas ahorita con mandos. Lo que necesito es que vayas cogiendo.
+
+01:46:36.000 --> 01:46:49.000
+Como los comandos. Aprendiendo en todo esto ya. Y vaya en esa curva. Luego ya te haremos un poco más grande. La máquina para hacer recién el procesamiento del modelo.
+
+01:46:49.000 --> 01:46:53.000
+Entonces en tipo disco, déjalo en 100 déjalo sienta. Bien.
+
+01:46:53.000 --> 01:46:58.000
+Déjalo todo por defecto. Recuerda porfa. No te olvides en el 4, 2 000 Cpu.
+
+01:46:58.000 --> 01:47:03.000
+Ocho gigas de memoria bajo acá. Mira, acá, tú dices: Bueno.
+
+01:47:03.000 --> 01:47:06.000
+Yo en esta parte dice: Voy a habilitar esto.
+
+01:47:06.000 --> 01:47:12.000
+Para tener qué cosa? Para tener nodos físicos dedicados para mi procesamiento.
+
+01:47:12.000 --> 01:47:20.000
+No es importante, repito, porque estamos recién aprendiendo como crear un cluster, pero lo menciono por en caso, cuando quieran ustedes utilizarlo.
+
+01:47:20.000 --> 01:47:27.000
+Luego todo esto. Esto es más que nada para el seteo al momento de prender la máquina. ¿qué significa? Quiero monitorear.
+
+01:47:27.000 --> 01:47:32.000
+¿cómo está la máquina virtual background. Quiero yo tener un entorno seguro al momento de iniciar.
+
+01:47:32.000 --> 01:47:37.000
+Haces todos estos 2 que están acá arriba. Y luego pregunta.
+
+01:47:37.000 --> 01:47:42.000
+Para ver si están entendiendo. El diario. Había dicho que solo orquesta de recursos.
+
+01:47:42.000 --> 01:47:46.000
+Bien, yo he escogido una máquina de 2 virtual C, P. U.
+
+01:47:46.000 --> 01:47:50.000
+Y 8 gigas de memoria. Si yo voy abajo, 8.
+
+01:47:50.000 --> 01:47:54.000
+Beta, C. P. O yo digo, 2 virtual Cpu.
+
+01:47:54.000 --> 01:48:03.000
+Pero ¿dónde están mis 8? Mis 8 de memoria? ¿por qué me sale? Seis, 87? ¿por qué creen ustedes.
+
+01:48:03.000 --> 01:48:11.000
+Te equivocó la la la herramienta. O por qué? ¿por qué será.
+
+01:48:11.000 --> 01:48:20.000
+Que tengan ustedes. Porque ya sale 6, 87.
+
+01:48:20.000 --> 01:48:26.000
+Anita, no tengo ni idea bien. Mira acá.
+
+01:48:26.000 --> 01:48:33.000
+De por sí ya cada vez, como decía cada vez que ustedes tengan, como duda dice, hay una preguntita.
+
+01:48:33.000 --> 01:48:37.000
+Pero les cuento porque no sale 8 y porque sale 6, 87.
+
+01:48:37.000 --> 01:48:46.000
+What, el escenario que internamente el clase necesita. Exactamente como dice Jorge, dame un segundo. Te pongo tu nota. Jorge Palacios.
+
+01:48:46.000 --> 01:48:51.000
+Segundo, Jorge. Palacios.
+
+01:48:51.000 --> 01:48:59.000
+Palacios exacto, porque porque de una u otra forma necesita que goza el sistema. El sistema operativo.
+
+01:48:59.000 --> 01:49:02.000
+El I N o. S. El debian. Lo que he escogido ya bien.
+
+01:49:02.000 --> 01:49:06.000
+Voy al otro lado. Miren acá. Y luego tú dices.
+
+01:49:06.000 --> 01:49:11.000
+El tema de las I. P. Es: Ah, mira, yo quiero i, P. I P. Interna.
+
+01:49:11.000 --> 01:49:18.000
+Hoy pea externa. Todo lo puede dejar por defecto. Lo puede dejar así ya igual. Igual ahorita por la hora.
+
+01:49:18.000 --> 01:49:22.000
+No necesitamos hacer actualización de sistema. Por ahora.
+
+01:49:22.000 --> 01:49:28.000
+Yeah, lo dejan por defecto. Ahora todo lo que está por acá tiene que ver con qué cosas con optimización.
+
+01:49:28.000 --> 01:49:33.000
+Otro punto importante. En los testers de productivo.
+
+01:49:33.000 --> 01:49:38.000
+En los clústeres que están. Utilizándose.
+
+01:49:38.000 --> 01:49:44.000
+Lo que se tiene. ¿qué cosa es. ¿es esto el borrado, ya sea el borrado.
+
+01:49:44.000 --> 01:49:52.000
+Con un tiempo fijo. O el borrado, después de no sumitir ningún yop. Es como que tú te haces el trazo y dices.
+
+01:49:52.000 --> 01:49:58.000
+Pero no lo uso. Entonces, bórralo. ¿para qué? Para que no te genere como gastos innecesarios, ya.
+
+01:49:58.000 --> 01:50:01.000
+Es para eso. Luego tú dices, Oye, Mira, yo.
+
+01:50:01.000 --> 01:50:04.000
+Si bien es cierto, estoy creando un cluster.
+
+01:50:04.000 --> 01:50:10.000
+De big data, un cluster de hadoo. Bien. Pero quiero guardar.
+
+01:50:10.000 --> 01:50:16.000
+Mis archivos. En caso se borre el cluster. Perfecto es justamente para esto que está acá.
+
+01:50:16.000 --> 01:50:25.000
+Ya que hice claro storage, staging packets. Vengo dependencias. Tengo librerías que el servidor Anita está bloqueado.
+
+01:50:25.000 --> 01:50:30.000
+Está bloqueado porque está con Ip privada. No tiene pie pública. No puedo descargar nada.
+
+01:50:30.000 --> 01:50:36.000
+Pues no pasa nada. Descargas usar librerías. Lo pones en un trastorach.
+
+01:50:36.000 --> 01:50:39.000
+Y lo llevas. Acá todas las librerías que necesitas.
+
+01:50:39.000 --> 01:50:46.000
+Y al momento de importar tu spark. Archivo que vas a dar, correr lo llamas de esta forma con guión yar.
+
+01:50:46.000 --> 01:50:48.000
+Yeah.
+
+01:50:48.000 --> 01:50:53.000
+En el tema de seguridad. Se acuerdan que la parte de seguridad yo les decía que hay seguridad por parte.
+
+01:50:53.000 --> 01:51:00.000
+Del mismo cluster y por parte de que. De los de los de la data per se.
+
+01:51:00.000 --> 01:51:05.000
+Tú tienes. Aquí dices. Voy a inyectar dejo que Google enchipte.
+
+01:51:05.000 --> 01:51:12.000
+O lo hago a través del servicio kms. El Kms es la llave creada por el usuario.
+
+01:51:12.000 --> 01:51:15.000
+Este es este concepto de que Amé se aplica en cualquier nube.
+
+01:51:15.000 --> 01:51:21.000
+Ya es cuando el de seguridad. El experto seguridad dice no, pues yo no confío en las nubes.
+
+01:51:21.000 --> 01:51:25.000
+Yo voy a crear mi propio Kms. Mi propia llave de encriptación perfecto.
+
+01:51:25.000 --> 01:51:32.000
+Llamas para acá y llamas a tu cabeza. Nosotros lo vamos a dejar ahí. Nos vamos a complicar bajo.
+
+01:51:32.000 --> 01:51:42.000
+En el tema de autentificación. Tú dices: Yo quiero que solamente Juancito, yo me conecte bien, lo habilitas. Nosotros no nos preocupamos en eso.
+
+01:51:42.000 --> 01:51:46.000
+Quiero yo hacer, por ejemplo, el tema, lo que es múltiples usuarios.
+
+01:51:46.000 --> 01:51:52.000
+Que lo el mismo teatro lo utilice. Juan María, no sé, Mónica, y así sucesivamente.
+
+01:51:52.000 --> 01:51:57.000
+La habitación en esa parte. Quiero yo un concepto de kerberos.
+
+01:51:57.000 --> 01:52:02.000
+Guerreros, que tiene que ver todo el tema de autentificación, el tema, encriptación, etcétera.
+
+01:52:02.000 --> 01:52:05.000
+El mismo que utilizaba yo en On premise, por ejemplo.
+
+01:52:05.000 --> 01:52:09.000
+Habilidades en esta cosita. Ya le doy clic a entrar, espérate.
+
+01:52:09.000 --> 01:52:13.000
+Hasta ahí. Tú tienes tu clster ya configurado listo para ser utilizado.
+
+01:52:13.000 --> 01:52:17.000
+Antes de dar clic en crear mi sugerencia porfa.
+
+01:52:17.000 --> 01:52:22.000
+Tú tienes una pantalla más o menos como ésta.
+
+01:52:22.000 --> 01:52:24.000
+Al darle donde dice equivalent.
+
+01:52:24.000 --> 01:52:34.000
+Common Line. ¿por qué? Aquí, lo mismo que te explicado que me he morado. Paso por paso, porque necesito que se entienda bien cada aite.
+
+01:52:34.000 --> 01:52:36.000
+Acá está el código con eso. Tú creas. Significa.
+
+01:52:36.000 --> 01:52:41.000
+Se lo voy a poner yo en la parte del laboratorios para que lo tengan.
+
+01:52:41.000 --> 01:52:47.000
+Yeah acá para que lo tenga. Entonces aquí.
+
+01:52:47.000 --> 01:52:52.000
+Vamos a poner que Uds. Dicen: bueno, la Anita me dijo el sábado, tengo que tirar mi cluster.
+
+01:52:52.000 --> 01:52:54.000
+Pero yo lo borreó. Hice la tarea, lo borré.
+
+01:52:54.000 --> 01:52:58.000
+Y ahora, para tirar patear, paso por paso, se me olvidó de algo bien.
+
+01:52:58.000 --> 01:53:02.000
+Que lo que tú haces en el link que les compartí ya.
+
+01:53:02.000 --> 01:53:06.000
+El link que les compartí. Miren, acá. Que está acá por si acaso, que está aquí.
+
+01:53:06.000 --> 01:53:13.000
+Y aquí aquí. Miren. Igual se los voy a compartir para que lo tenga hasta ahorita el Url público para que usted lo puedan acceder.
+
+01:53:13.000 --> 01:53:23.000
+Miren para acá. Miren, acá, ¿qué es lo que ustedes cambiarían? Pregunta de todo este código? Pregunta.
+
+01:53:23.000 --> 01:53:31.000
+Les funcionará a ustedes o. Que tendrán que cambiar.
+
+01:53:31.000 --> 01:53:33.000
+Vamos a poner un poquito más chiquito. El proyecto. Bien, ¿quién lo dijo?
+
+01:53:33.000 --> 01:53:37.000
+El proyecto.
+
+01:53:37.000 --> 01:53:38.000
+Oh!
+
+01:53:38.000 --> 01:53:45.000
+Paul: ¿no? Paul: bien, vamos para acá Paul Sánchez. ¿está exacto el nombre.
+
+01:53:45.000 --> 01:53:50.000
+Pero puedes dejarlo igual. ¿no? O sea, no, no es como que sea tan que se te vaya a caer el proceso.
+
+01:53:50.000 --> 01:53:59.000
+Pero sí lo que se te va a caer. ¿qué cosa es este, señor que está? Acá? Vamos a poner un poquito más así para que se vea mejor.
+
+01:53:59.000 --> 01:54:07.000
+Así ahí está. Y así ya. Entonces, este proyecto que está por acá, tú lo vas a cambiar.
+
+01:54:07.000 --> 01:54:10.000
+Y cómo se acaba eso? Ah, ya acá, miren.
+
+01:54:10.000 --> 01:54:17.000
+Vas para acá. Copias de esta Id de proyecto, que tu aire y proyecto va a ser distinto al mío. No va a ser igual.
+
+01:54:17.000 --> 01:54:22.000
+Comienzas a i d. Y lo pones aquisito. Acá y lo reemplazas.
+
+01:54:22.000 --> 01:54:27.000
+Y Anita, y como loco corre, sería el día el día sábado. Cualquier día que estoy practicando bien como los a correr.
+
+01:54:27.000 --> 01:54:33.000
+Coges, todo lo que está por acá. Con todo el C cambiando todo este proyecto.
+
+01:54:33.000 --> 01:54:39.000
+Vas a tu consola. Ya. Abres el cloud shell vas para acá.
+
+01:54:39.000 --> 01:54:46.000
+Desde que cargue, se va a notificarse toda la historia, autorizar.
+
+01:54:46.000 --> 01:54:49.000
+Autorizas, te logueas.
+
+01:54:49.000 --> 01:54:57.000
+Practicar que todo salga verdecito. Ahí está Control B y pegas. ¿qué cosa el código para que se ejecute y se cree de forma automática.
+
+01:54:57.000 --> 01:55:02.000
+Ya. Esa es la forma como cuando tú tienes el código, ya listo.
+
+01:55:02.000 --> 01:55:08.000
+Entonces ahora sí. Esto lo va a hacer acá ahora, si por falta, tiene su cluster.
+
+01:55:08.000 --> 01:55:10.000
+Click, enter.
+
+01:55:10.000 --> 01:55:16.000
+Y me avisan por Fa hasta ahí alguna pregunta alguna duda antes de que poder mandarlos al.
+
+01:55:16.000 --> 01:55:18.000
+Al.
+
+01:55:18.000 --> 01:55:20.000
+I'll break.
+
+01:55:20.000 --> 01:55:21.000
+Adelante, Jorge: ¿cómo estás?
+
+01:55:21.000 --> 01:55:30.000
+Si una consulta. Veo que en la versión que tengo, o sea, cuando en la parte de configuración de nodos en el uso total de Yarn.
+
+01:55:30.000 --> 01:55:36.000
+No me sale en lugar de la cantidad de núcleos y memoria.
+
+01:55:36.000 --> 01:55:40.000
+A ver comparten tu pantallita, comparte tu pantallita. Comparte su pantallita.
+
+01:55:40.000 --> 01:55:42.000
+Alright.
+
+01:55:42.000 --> 01:55:50.000
+Poder ayudarte.
+
+01:55:50.000 --> 01:55:57.000
+Ah ya a ver a ver. Okay, and yeah, sube un poquito.
+
+01:55:57.000 --> 01:55:59.000
+Sube, un poquito sube, sube, sube.
+
+01:55:59.000 --> 01:56:04.000
+Al inicio. Yes, yes, yes, yes.
+
+01:56:04.000 --> 01:56:08.000
+Yeah, I'll actually, porfa.
+
+01:56:08.000 --> 01:56:11.000
+Configurar el cluster.
+
+01:56:11.000 --> 01:56:17.000
+Uh-huh, Yeah, baja un poquito bien baja baja. Vamos a ver. Estoy revisando más como que esté que esté como igual.
+
+01:56:17.000 --> 01:56:21.000
+Sigue bajando bien, muy bien.
+
+01:56:21.000 --> 01:56:23.000
+See, you see.
+
+01:56:23.000 --> 01:56:38.000
+Yeah, that perfecto regreso a configuración de nodos. Muévele, como quizás a veces se queda como pegadito. Mueve le no mueve el n 4. Muévelo, no se pesa un C, 4.
+
+01:56:38.000 --> 01:56:46.000
+Y luego nuevamente vuelven. Vuélvele al n 4. Ajá es bajarle un poquito.
+
+01:56:46.000 --> 01:56:53.000
+Un poquito ya no hay problema. Regresa a personalizar el cluster.
+
+01:56:53.000 --> 01:56:57.000
+No el el tercero, el que dice, personaliza el cluster. Eso ajá.
+
+01:56:57.000 --> 01:56:58.000
+Baja un poquito. Uh-huh. A veces.
+
+01:56:58.000 --> 01:57:02.000
+Like.
+
+01:57:02.000 --> 01:57:09.000
+Y eso pasa por la parte por la parte gratuita, ya como que hay tipo tipo algunos bag, pero igual, ya tienes configuración, que está bien.
+
+01:57:09.000 --> 01:57:13.000
+Hasta mi ser seguridad solamente para verificar un poquito.
+
+01:57:13.000 --> 01:57:21.000
+Uh-huh. Todo está perfecto. Bajarlo un poquito. Ajá eso nos cambió. Está súper bien, bien, está súper bien. No hay ningún problema.
+
+01:57:21.000 --> 01:57:27.000
+Copia esa línea de comandos a donde dice: línea de comandos equivalente de tu mano izquierda.
+
+01:57:27.000 --> 01:57:32.000
+Eso copia eso y ponen algún blog de notas para que lo tengas para el sábado. Eso.
+
+01:57:32.000 --> 01:57:36.000
+Ajá para que no tengas que estar haciendo sí, porque porque.
+
+01:57:36.000 --> 01:57:42.000
+Ajá copilo en un lado bien. Y ahora ciérralo y dale, click, entrar.
+
+01:57:42.000 --> 01:57:43.000
+Lo creamos, el problema.
+
+01:57:43.000 --> 01:57:45.000
+Ya está. Si si no hay problema, ajá. Me demora un poquito así que es. Así que no espérate. Wait allá, espérate.
+
+01:57:45.000 --> 01:57:50.000
+Yeah. This week.
+
+01:57:50.000 --> 01:57:55.000
+Espérate. Espérate. Ok. Al resto les ha salido lo mismo.
+
+01:57:55.000 --> 01:57:56.000
+A los falso, salió lo mismo.
+
+01:57:56.000 --> 01:57:57.000
+En mi caso, sigo al profesor.
+
+01:57:57.000 --> 01:57:59.000
+Yeah.
+
+01:57:59.000 --> 01:58:03.000
+Bien perfectos. Vamos a utilizar. Vamos a utilizar como tu cuenta.
+
+01:58:03.000 --> 01:58:07.000
+Para poder solucionarla. Ya no lo quiero. No lo cierres.
+
+01:58:07.000 --> 01:58:13.000
+Miren, como les hago a ustedes este tipo de cosas. A mí no me ha salido. No sé por qué, pero bueno.
+
+01:58:13.000 --> 01:58:17.000
+Vamos a solucionarlo en conjunto, ya para que el resto también tenga lo mismo.
+
+01:58:17.000 --> 01:58:20.000
+¿qué significa? Recuerden que el I a M.
+
+01:58:20.000 --> 01:58:22.000
+El identity, access management.
+
+01:58:22.000 --> 01:58:31.000
+Tiene ¿qué cosa tiene para que tú puedas dar permisos a usuarios? ¿se acuerdan que el día lunes, el día lunes. Digo la primera clase que fuimos y todo.
+
+01:58:31.000 --> 01:58:36.000
+Y les dije: Pásame sus correos. Y yo me metí al día. M: y les di permisos.
+
+01:58:36.000 --> 01:58:41.000
+Yeah. Entonces, así como existe esa parte, existe también lo que se llama.
+
+01:58:41.000 --> 01:58:45.000
+A los servicios, y esos servicios se llaman los service accounts.
+
+01:58:45.000 --> 01:58:51.000
+Y ahí está diciendo que ese service account. Como que no tiene permisos, hay que darle los permisos correspondientes.
+
+01:58:51.000 --> 01:58:59.000
+Copia del número 6 al que dice punto com por fa.
+
+01:58:59.000 --> 01:59:04.000
+Solamente eso.
+
+01:59:04.000 --> 01:59:10.000
+Copio, todo eso y. Es apto. No sirves esta pantalla en el buscador busca I a M.
+
+01:59:10.000 --> 01:59:15.000
+Abrir en una nueva ventana.
+
+01:59:15.000 --> 01:59:20.000
+Eso.
+
+01:59:20.000 --> 01:59:26.000
+Una nueva ventana exacto. Súper bien hagan por fuera, el resto hagan lo mismo.
+
+01:59:26.000 --> 01:59:30.000
+Ya entonces lo que el mensaje que te estaba saliendo.
+
+01:59:30.000 --> 01:59:36.000
+Porque era ya. Porfis ponle donde dice: Cierra esa ventanita que.
+
+01:59:36.000 --> 01:59:40.000
+Te aparece al costado derecho. Cierra la para que tengas más visión.
+
+01:59:40.000 --> 01:59:48.000
+Eso bien. Entonces ahí donde dice introducir y asignaciones a la llegan ese éxito.
+
+01:59:48.000 --> 01:59:56.000
+Eso bien. Entonces. Entonces entonces busca el servicio acá, aunque acabas de copiar porfa en dice filtro.
+
+01:59:56.000 --> 02:00:00.000
+Pega su service account, que creo que era la primera. Así que no estoy mal.
+
+02:00:00.000 --> 02:00:05.000
+A ver.
+
+02:00:05.000 --> 02:00:12.000
+Regresa el tema dataproc. Por favor. A ver.
+
+02:00:12.000 --> 02:00:18.000
+Regreso al tema ataproc al error de dataproc.
+
+02:00:18.000 --> 02:00:24.000
+Ajá a ver. Pues se cerró. Yep.
+
+02:00:24.000 --> 02:00:31.000
+Al de nuevamente tiene que enterar, porque quiero ver el error porfita.
+
+02:00:31.000 --> 02:00:36.000
+Ajá. Que te mand mande el error, porque quiero, le quiero leerlo. Un ratito.
+
+02:00:36.000 --> 02:00:42.000
+Ya está espérate.
+
+02:00:42.000 --> 02:00:50.000
+Okay, andalía. M.
+
+02:00:50.000 --> 02:00:58.000
+Bien ananda M. Profise. Eso. Entonces no te aparece. Tú dices, Oye, pero no me aparece. Anita: Bien, no pasa nada.
+
+02:00:58.000 --> 02:01:02.000
+Sube un poco, sube un poquito.
+
+02:01:02.000 --> 02:01:07.000
+Yeah, en donde dice: otorgar accesos. Hagan clic en otorgar acceso.
+
+02:01:07.000 --> 02:01:13.000
+Eso. Pégalo. Hay unas entidades nuevas. Pégalo ahí.
+
+02:01:13.000 --> 02:01:15.000
+Dale. Enter.
+
+02:01:15.000 --> 02:01:25.000
+Rol y no, no no way. Espérame, pérame lo que sí te voy a pedir por fish.
+
+02:01:25.000 --> 02:01:30.000
+Ayúdame poniendo la consola en inglés. ¿para qué? Para poder guiarte como el tema de los roles.
+
+02:01:30.000 --> 02:01:35.000
+The electricity and cancelar no más. Y hay que cambiarla. Al toque. La Consola.
+
+02:01:35.000 --> 02:01:40.000
+Ajá 3 puntitos. No, no 3 puntitos.
+
+02:01:40.000 --> 02:01:45.000
+Eso preferencias. Ajá. Eso. Y polen inglés.
+
+02:01:45.000 --> 02:01:48.000
+Pasa que, como si no se me se me.
+
+02:01:48.000 --> 02:01:54.000
+Ajá idioma y región. Eso. Y polen inglés. El cualquiera ajá bien.
+
+02:01:54.000 --> 02:02:01.000
+Muchas gracias. Entonces los permisos que te está diciendo en este caso.
+
+02:02:01.000 --> 02:02:12.000
+But in alum. F 5. Esa página. Eso.
+
+02:02:12.000 --> 02:02:16.000
+1 000: gracias. Ya ganastes nuevamente.
+
+02:02:16.000 --> 02:02:20.000
+Ese es hacer eso.
+
+02:02:20.000 --> 02:02:22.000
+Dale. Enter.
+
+02:02:22.000 --> 02:02:32.000
+Ajá. Entonces, ¿qué rol te está diciendo el error? Regresa al error para que vayamos para que vayamos mapeando y ustedes puedan, con esta déjala. Y nomás, te dice.
+
+02:02:32.000 --> 02:02:38.000
+El ser y sacado debe tener. El servicio que dice dataproker.
+
+02:02:38.000 --> 02:02:43.000
+No o todos los permisos que hereden de ese rol.
+
+02:02:43.000 --> 02:02:48.000
+Entonces andalía m.
+
+02:02:48.000 --> 02:02:54.000
+Alíame que la ventanita que estabas al costadito.
+
+02:02:54.000 --> 02:02:59.000
+Ahí está. No dice Seleccionar rol, busca data pro worker.
+
+02:02:59.000 --> 02:03:01.000
+Espacio worker.
+
+02:03:01.000 --> 02:03:06.000
+Data, Block.
+
+02:03:06.000 --> 02:03:09.000
+Siempre lo que va a ser datapro, espacio, worker.
+
+02:03:09.000 --> 02:03:14.000
+Eso. Ajá dale dale click.
+
+02:03:14.000 --> 02:03:18.000
+Adano de rol, porque vamos a utilizar más cosas todavía.
+
+02:03:18.000 --> 02:03:24.000
+Eso. Nuevamente, Pon Databrok.
+
+02:03:24.000 --> 02:03:30.000
+Y pon la tabla administrator. El primero.
+
+02:03:30.000 --> 02:03:40.000
+Estoy rizando. Acá ya. También porfa, porque al final necesito yo que los datos también se guarden entre Storage.
+
+02:03:40.000 --> 02:03:47.000
+Entonces, hablando de rol. Y antes que si antes antes que sigas, mira.
+
+02:03:47.000 --> 02:03:49.000
+Si bien es cierto, ustedes tienen varias opciones de poder.
+
+02:03:49.000 --> 02:03:55.000
+Poner los permisos o van a la documentación, como sería el error, y demandaron una documentación o lo buscan.
+
+02:03:55.000 --> 02:03:59.000
+Y le van poniendo. Yo, lo que sugiero mayormente.
+
+02:03:59.000 --> 02:04:06.000
+Es que si yo necesito saber un tema de lo que es un permiso de Storage, busco el servicio de Storage. ¿cómo hago eso?
+
+02:04:06.000 --> 02:04:10.000
+I was scroll en la parte. De ahí hago stroll eso.
+
+02:04:10.000 --> 02:04:12.000
+Y busca como crear storage.
+
+02:04:12.000 --> 02:04:17.000
+That por orden alfabético más abajito. Es un poquito más abajo.
+
+02:04:17.000 --> 02:04:21.000
+Sigue así. Poquito más.
+
+02:04:21.000 --> 02:04:25.000
+Nada más. Un poquito más. Poquito ya llega. Ahí está.
+
+02:04:25.000 --> 02:04:28.000
+Exacto. Entonces tú dices, Oye, pero ¿qué permiso le doy.
+
+02:04:28.000 --> 02:04:35.000
+Entonces, cuando 1 está aprendiendo qué cosas 1 va viendo? ¿no? Ya cuando ya sabes, ya como que los permisos.
+
+02:04:35.000 --> 02:04:38.000
+Los que son, en nuestro caso, le vamos a dar storage, and me.
+
+02:04:38.000 --> 02:04:45.000
+¿por qué? Porque voy a guardar datos y voy a consultar datos. Los necesito esto ahora. Chat: me.
+
+02:04:45.000 --> 02:04:47.000
+I'll let you. Guy: Yeah.
+
+02:04:47.000 --> 02:04:55.000
+Por último, por último, por último, por último, está Flow. Esto ya no nada más. Eso.
+
+02:04:55.000 --> 02:04:58.000
+Y eso porfa igual. El resto haga lo mismo. Y Dale click en guardar.
+
+02:04:58.000 --> 02:05:02.000
+Yeah.
+
+02:05:02.000 --> 02:05:06.000
+En propagarse como sale el mensaje abajito, demora unos minutitos.
+
+02:05:06.000 --> 02:05:11.000
+Ya es como un minuto, aproximadamente. Um unas 2 min como máximo.
+
+02:05:11.000 --> 02:05:14.000
+Antes que vayas a la otra página. El resto.
+
+02:05:14.000 --> 02:05:19.000
+Si se llega a entender esa parte que estaba explicando con la consola de su compañero.
+
+02:05:19.000 --> 02:05:26.000
+Sí. Alguno quedó con que se quedó por ahí.
+
+02:05:26.000 --> 02:05:31.000
+Me ayudan con su pulgar por fizo. Para saber que sí, que no sólo estamos con su compañero.
+
+02:05:31.000 --> 02:05:37.000
+See. Gracias. 1 000. Gracias. Regresa porfis al al cluster de dataproc.
+
+02:05:37.000 --> 02:05:40.000
+Eso cierro esa cosita, eso.
+
+02:05:40.000 --> 02:05:47.000
+Either click, entrar.
+
+02:05:47.000 --> 02:05:51.000
+Ya está espérate ahí. Ya está bien perfecto.
+
+02:05:51.000 --> 02:05:57.000
+Va a provisionar, ¿va a demorar un poquito en provisionar ya. Entonces vamos a un break de 1, 10 min.
+
+02:05:57.000 --> 02:06:04.000
+Perdón. Hay por robarles el break, pero era necesario para ya luego lo demás sigue sigue ya.
+
+02:06:04.000 --> 02:06:11.000
+Avanzando. Una vez que usted ya termine de crear esa parte, es importante que le den el permiso. Ya a mí no me dio porque quizás porque la.
+
+02:06:11.000 --> 02:06:19.000
+Como ya había dicho el laboratorio, todo este ya tenía servicio. Acá. Había creado no, pero siempre los errores como, y es bueno que salgan esos errores.
+
+02:06:19.000 --> 02:06:22.000
+Porque cuando usted se empieza a utilizar la cláusula por su cuenta.
+
+02:06:22.000 --> 02:06:24.000
+Van de frente, hace lo mismo y dice: Uy, ahora, ¿qué hago.
+
+02:06:24.000 --> 02:06:30.000
+No se acostumbra a trabajar con H. P. D. Porque, créanme, hay ciertos errores en como tal.
+
+02:06:30.000 --> 02:06:35.000
+Inclusive el mismo gemine. Ya entonces siempre utilizar la documentación oficial.
+
+02:06:35.000 --> 02:06:38.000
+Ya aparatoso, aparte, porque puede ser que se ha desactualizado todo eso.
+
+02:06:38.000 --> 02:06:44.000
+Entonces debería parecerles luego que tienen todo eso. Debería parecerles esta cuestión en verdecito.
+
+02:06:44.000 --> 02:06:47.000
+Pero para poder seguir, vamos a un para que.
+
+02:06:47.000 --> 02:06:55.000
+Espérate. El chat acá. No gracias a ti. Ya está, pues, hombre ya unos 10 minutitos para que puedan tomar un café y al baño, lo que fuese.
+
+02:06:55.000 --> 02:07:03.000
+Entonces volvemos, volvemos, volvemos a las 8, es decir, a las 9 y 22 les parece.
+
+02:07:03.000 --> 02:07:05.000
+Nueve y 22 p. M.
+
+02:07:05.000 --> 02:07:08.000
+Yeah, volvemos al ratito.
+
+02:07:08.000 --> 02:07:18.000
+Gracias. Nos va a poner música por si están por acá.
+
+02:07:18.000 --> 02:07:19.000
+Love, ya estamos no bien. Voy a volver a lavar.
+
+02:07:19.000 --> 02:07:21.000
+Okay. Item: just yes. Yes.
+
+02:07:21.000 --> 02:07:25.000
+Seguimos, seguimos bien. Seguimos entonces.
+
+02:07:25.000 --> 02:07:29.000
+And the Naria, por el tiempo que nos hemos ido como 10 minutitos.
+
+02:07:29.000 --> 02:07:35.000
+Ya deberían tener el cluster en verde. ¿cierto? Si todos.
+
+02:07:35.000 --> 02:07:39.000
+Tienen el tercer en verde a un refreshing. Debería estar en verde bien.
+
+02:07:39.000 --> 02:07:46.000
+Perfecto. Entonces hagan clic. Miren, y aquí voy a demorar: demorar un poquito para que se pueda entender.
+
+02:07:46.000 --> 02:07:53.000
+Voy a cerrar el resto. Y me vamos a enfocar. Acá. Miren si yo pongo computing.
+
+02:07:53.000 --> 02:08:00.000
+Yeah, click derecho en una nueva ventana. En un nuevo tap. Miren, acá.
+
+02:08:00.000 --> 02:08:03.000
+Okay, got it?
+
+02:08:03.000 --> 02:08:07.000
+Me va a aparecer en donde dice: Virtual instance.
+
+02:08:07.000 --> 02:08:16.000
+Que cargue cargo, cargó. Ay, mi Internet perdón ya está en virtual instance. ¿qué cosa van a poder observar.
+
+02:08:16.000 --> 02:08:22.000
+Que tiene. Miren, acá. Porfa, ya lo mismo que está acá.
+
+02:08:22.000 --> 02:08:27.000
+Pero pero. Hay algo en particular.
+
+02:08:27.000 --> 02:08:30.000
+Si bien es cierto, nosotros, lo que hemos hecho es crear.
+
+02:08:30.000 --> 02:08:32.000
+Un solo nudo.
+
+02:08:32.000 --> 02:08:34.000
+Yeah.
+
+02:08:34.000 --> 02:08:42.000
+Tiene el guión M: ¿y por qué guión? M pregunta.
+
+02:08:42.000 --> 02:08:51.000
+Bien, paula bien, bien, ajá. ¿por qué guión? M: Master: bien exacto? Y cuando ustedes tengan los esclavos.
+
+02:08:51.000 --> 02:08:57.000
+Tendrán, cluster. Yo ya w de worker.
+
+02:08:57.000 --> 02:09:02.000
+Yeah. Entonces. Es por eso mismo que desaparece eso perfecto.
+
+02:09:02.000 --> 02:09:07.000
+Ahora, como puedes observar. Cuando tienes una máquina virtual.
+
+02:09:07.000 --> 02:09:16.000
+Que en este caso lo que hemos creado nosotros. Pero con toda la configuración de lo que es hadoo, yo recuerdo hace tiempo, hace más de 10 años, cuando.
+
+02:09:16.000 --> 02:09:20.000
+Diez 12 años, cuando me contrataron, en contrataron para un freelance.
+
+02:09:20.000 --> 02:09:26.000
+Para poder. Crear un cluster dejado un cluster de vida dejado.
+
+02:09:26.000 --> 02:09:33.000
+En ese entonces era sumamente complicado demorar harto tiempo, la alta redundancia que los nodos se puedan ver.
+
+02:09:33.000 --> 02:09:39.000
+Que la red. Ahora, como han podido observar si 1 les hubiese explicado los edificios, llega acá.
+
+02:09:39.000 --> 02:09:42.000
+Cuando tiempos demorado, exagerando 5 min.
+
+02:09:42.000 --> 02:09:48.000
+Yeah. Entonces van cambiando. La forma como 1 va trabajando.
+
+02:09:48.000 --> 02:09:54.000
+En esa forma de relación. De por sí. Esto. Esto viene desde hace tiempo. Las máquinas virtuales.
+
+02:09:54.000 --> 02:09:58.000
+Como es el caso del láser que hemos creado. Te sale.
+
+02:09:58.000 --> 02:10:06.000
+Si yo doy clic aquí, mira el cluster. Que te que cargue en la parte que dice, Acá.
+
+02:10:06.000 --> 02:10:14.000
+Acá, ya que dice with interfaces interfaces web. Te sale el tema del Sch.
+
+02:10:14.000 --> 02:10:21.000
+La máquina como tal. Para que se pueda conectar y empiece a hacer todo lo que tenga que hacer.
+
+02:10:21.000 --> 02:10:27.000
+Yo salgo por el puerto. 22. Es decir, a través de sch.
+
+02:10:27.000 --> 02:10:37.000
+Yo puedo dar clic. Acá. O puedo también en la máquina virtual, poniendo en la parte de acá con build engine C derecho en un nuevo tap.
+
+02:10:37.000 --> 02:10:41.000
+También ingresa por este lado, a ambos me va a llevar al mismo camino.
+
+02:10:41.000 --> 02:10:47.000
+Yeah, vamos a hacer esto para que poder entender, vamos para acá. Ustedes estaban en esta parte.
+
+02:10:47.000 --> 02:10:54.000
+Ingresan al nombre me sale rarito. No es un tema no más de un front. No es el rol de la máquina.
+
+02:10:54.000 --> 02:11:00.000
+A central cluster que crearon. Y luego.
+
+02:11:00.000 --> 02:11:05.000
+Miren esto, esta parte. Okay. Saca dice insight.
+
+02:11:05.000 --> 02:11:07.000
+By Gemini.
+
+02:11:07.000 --> 02:11:14.000
+Y viene la pregunta hoy Anita, o sea que me.
+
+02:11:14.000 --> 02:11:18.000
+Tiene costo, no tiene 0 costo.
+
+02:11:18.000 --> 02:11:25.000
+Yeah. Y para que lo voy a utilizar a está casi para todos los servicios. Me va a empezar a dar sugerencias.
+
+02:11:25.000 --> 02:11:33.000
+Tipo como si fuera. No sé mi mejor amigo, mi mejor amiga, no de cómo tengo que yo poner las cosas dentro de él.
+
+02:11:33.000 --> 02:11:39.000
+Provider dentro del cloud. En este caso yo lo puedo hacer investigación, pero yo sé que al final.
+
+02:11:39.000 --> 02:11:47.000
+No ver nada performante, porque todavía estoy empezando. Pero donde aún no va actualizando. Te va diciendo en esta pestaña que dice monitoreo.
+
+02:11:47.000 --> 02:11:52.000
+Mira acá en la parte que tiene acá nuevamente el famoso yar.
+
+02:11:52.000 --> 02:11:55.000
+Y quiere hallar. Recuerda el orquestador de recursos.
+
+02:11:55.000 --> 02:12:00.000
+Yeah, el Hdfs tuvo saber también la capacidad. Hdfs.
+
+02:12:00.000 --> 02:12:08.000
+Y luego el uso del C, P. U. El network, que es parte también de todo esto. Y luego el tema también de lo que es el disco.
+
+02:12:08.000 --> 02:12:13.000
+Per se. Entonces tienes el disco. El network, el C, P, U.
+
+02:12:13.000 --> 02:12:15.000
+El Yar y el H. D. Fs.
+
+02:12:15.000 --> 02:12:17.000
+Yeah. See you again.
+
+02:12:17.000 --> 02:12:24.000
+Tiene los yots, que son los jots.
+
+02:12:24.000 --> 02:12:29.000
+Cuando tú ejecutas procesos, ya sea con H, h, Q, L.
+
+02:12:29.000 --> 02:12:33.000
+Vas a ir automáticamente. Va a ir armándose un job.
+
+02:12:33.000 --> 02:12:37.000
+Jehová dió 1, 2, 3, y así sucesivamente.
+
+02:12:37.000 --> 02:12:41.000
+En virtual instance, vas a ver las máquinas virtuales.
+
+02:12:41.000 --> 02:12:45.000
+Eso mismo es lo mismo que acá. Es otra forma de verlo.
+
+02:12:45.000 --> 02:12:54.000
+Yeah. Pero es lo mismo. En configuración. Tú vas a poder observar bajo un poquito. Vas a poder observar qué cosa.
+
+02:12:54.000 --> 02:12:59.000
+Todo esto, ya todo esto que está acá todas las configuraciones habidas y por haber que tú puedas modificar.
+
+02:12:59.000 --> 02:13:04.000
+Entonces, para poder acceder a lo que necesitamos, nosotros vamos a ir donde dice.
+
+02:13:04.000 --> 02:13:06.000
+Virtual instance.
+
+02:13:06.000 --> 02:13:09.000
+Y en la parte donde dice S. S. H.
+
+02:13:09.000 --> 02:13:18.000
+Hagan clic acá. Por favor. Nuevamente, ustedes estaban acá cierro. Esto nuevamente llegue en el cluster.
+
+02:13:18.000 --> 02:13:22.000
+Desde que cargue hace en el nombre del cluster.
+
+02:13:22.000 --> 02:13:24.000
+Virtual instance.
+
+02:13:24.000 --> 02:13:34.000
+Hasta llegue en Sch, ya. Y esperan que cargue un ratito.
+
+02:13:34.000 --> 02:13:44.000
+Les da al autorizar. Si autorizo.
+
+02:13:44.000 --> 02:13:50.000
+Ya tengo el trustre de qué. Y estoy dentro del cluster de hadoo.
+
+02:13:50.000 --> 02:13:59.000
+Si tú te das al Mr. Ya al Mr. De Lo, que es.
+
+02:13:59.000 --> 02:14:06.000
+Amazon, el Mrr. La parte visual ¿es esto. Te va a cargar algo así como esto.
+
+02:14:06.000 --> 02:14:08.000
+I've got the.
+
+02:14:08.000 --> 02:14:19.000
+Debió Interfaz. Hay como una interfaz que te carga como como como 1 que dice al inicio, Mrr.
+
+02:14:19.000 --> 02:14:25.000
+Ave dobles. Vamos a interfaz, nella enter.
+
+02:14:25.000 --> 02:14:31.000
+Last name.
+
+02:14:31.000 --> 02:14:37.000
+No en cuanto a la imagen. Pero obviamente, cuando te conectas al Mrr, te sale como la primera palabra que dice Mr.
+
+02:14:37.000 --> 02:14:43.000
+Y ya está ya, pero vamos para acá porque ya teníamos nosotros habernos conectado a esta parte.
+
+02:14:43.000 --> 02:14:47.000
+Said pudieron conectar. Y él le salió la pantalla negra para poder empezar.
+
+02:14:47.000 --> 02:15:00.000
+Sí. Todos.
+
+02:15:00.000 --> 02:15:08.000
+Sí. Bien. Entonces. Antes de empezar a codificar, quiero preguntarles con toda sinceridad: por favor, me van diciendo.
+
+02:15:08.000 --> 02:15:14.000
+Cuántos de ustedes. Ha trabajado.
+
+02:15:14.000 --> 02:15:19.000
+Con comandos. Comandos con cierta cosa.
+
+02:15:19.000 --> 02:15:22.000
+Commando.
+
+02:15:22.000 --> 02:15:28.000
+Recomiendo el papel comandos Linux. A qué me refiero con mandos Linux.
+
+02:15:28.000 --> 02:15:33.000
+L. M. Cádiz, Hmot, etcétera.
+
+02:15:33.000 --> 02:15:39.000
+And con eso antes. Si es que sí. Bien, Paul: Sí, el resto.
+
+02:15:39.000 --> 02:15:42.000
+Si es que no me venís con toda la confianza, ya porque.
+
+02:15:42.000 --> 02:15:44.000
+Porque la idea es que todos seamos iguales.
+
+02:15:44.000 --> 02:15:51.000
+But I no. Bien, gracias. Gracias. Sí, gracias. El resto.
+
+02:15:51.000 --> 02:16:00.000
+El resto, el resto hay como unos y unos como que no ya, pero más malos que si un recordatorio y a los que no vamos. Vamos para acá.
+
+02:16:00.000 --> 02:16:07.000
+Miren, acá. Entonces. La ventaja de la ventaja de los comandos H. D. F. S. Son los siguientes.
+
+02:16:07.000 --> 02:16:13.000
+Tú vas a combinar comandos. Y aquí te voy a mostrar acá.
+
+02:16:13.000 --> 02:16:19.000
+Comandos. Todo esto que está. Acá todo esto.
+
+02:16:19.000 --> 02:16:22.000
+Todo esto.
+
+02:16:22.000 --> 02:16:29.000
+Yeah. Hdfs: espacio? Dfs: Menos. Y luego todo lo que venga por acá.
+
+02:16:29.000 --> 02:16:33.000
+Son comandos. Linux. Por ejemplo, por ejemplo.
+
+02:16:33.000 --> 02:16:40.000
+Si yo quiero listar, Ok. Hdfs. Dfs: menos ls: Barrita.
+
+02:16:40.000 --> 02:16:45.000
+Estoy listando dentro de H. D. F, S. Miren, acá.
+
+02:16:45.000 --> 02:16:48.000
+Si yo hago esto, si yo hago lo siguiente.
+
+02:16:48.000 --> 02:16:52.000
+O pesañices. Acá. Yo pongo un Ls.
+
+02:16:52.000 --> 02:16:57.000
+Y le pongo así un ls: barrita. Tal cual le doy enter.
+
+02:16:57.000 --> 02:17:04.000
+Me sale todo lo que hay dentro. De Linux o de Debian. ¿vamos a poner así el sistema operativo.
+
+02:17:04.000 --> 02:17:10.000
+Yeah, pero si yo corro esto. Yo corro tal cual y dónde está sonita.
+
+02:17:10.000 --> 02:17:16.000
+A está en la parte en el archivo que se llama Hdfs. El punto Html.
+
+02:17:16.000 --> 02:17:22.000
+Yeah. Para empezar con html, ¿Vas. Son los comandos para que vas a ir copiando. Mira, acá.
+
+02:17:22.000 --> 02:17:30.000
+Yo corro eso y le doy enter.
+
+02:17:30.000 --> 02:17:34.000
+Mira. Las carpetas que son distintas no son iguales.
+
+02:17:34.000 --> 02:17:39.000
+Aquí tienes lo que hay en Linux. Y aquí tienen lo que hay en H. D, F, S.
+
+02:17:39.000 --> 02:17:45.000
+Yeah. Entonces. Hasta ahí vaca otro comando que hay que tomar en cuenta.
+
+02:17:45.000 --> 02:17:54.000
+El lso es de listar. El M. Kadir. El M. Kadir, por sí solo te va a permitir a ti crear carpetas.
+
+02:17:54.000 --> 02:17:57.000
+Yo lo que quiero que cosas. Y quiero crear una carpeta.
+
+02:17:57.000 --> 02:17:59.000
+Dentro de H, d, F. S. Yo, que haré.
+
+02:17:59.000 --> 02:18:03.000
+Add the Fs. Dfs, menos. M. Cádiz.
+
+02:18:03.000 --> 02:18:08.000
+Y toda la ruta que quiero. Yo. Hacer entonces.
+
+02:18:08.000 --> 02:18:14.000
+Vamos a ir haciendo eso. Vamos para acá, donde te me fuiste. Voy a copiar esto.
+
+02:18:14.000 --> 02:18:20.000
+Y voy a poner la pantalla acá. Me dice, cuando tenga la pantalla, igual que yo, para poder empezar por fiz.
+
+02:18:20.000 --> 02:18:25.000
+Sí están igual que yo. Con su pantalla negra, ya.
+
+02:18:25.000 --> 02:18:30.000
+Entonces, bien, vamos a crear. Dentro de h d, F, S.
+
+02:18:30.000 --> 02:18:33.000
+Este usuario. Yo les puse.
+
+02:18:33.000 --> 02:18:37.000
+M. Cádiz. El tema de user.
+
+02:18:37.000 --> 02:18:43.000
+Usuario, pon tu usuario, pon tu nombre, no pongan mi usuario para que sepas que esto es tuyo ya entonces, como sería eso.
+
+02:18:43.000 --> 02:18:48.000
+Vamos a hacer lo siguiente.
+
+02:18:48.000 --> 02:18:52.000
+Entonces Hdf: Se ve ahí. Lo está bien. La pantalla más grande.
+
+02:18:52.000 --> 02:18:58.000
+A poquito h d F, s. De fese, M, K, d.
+
+02:18:58.000 --> 02:19:00.000
+De qué cosa el tema, lo que es make.
+
+02:19:00.000 --> 02:19:05.000
+Directorio. Eso significa. El nombre de la carpeta User.
+
+02:19:05.000 --> 02:19:09.000
+Le pongo qué cosa mi nombre Anita.
+
+02:19:09.000 --> 02:19:11.000
+Get that? Yeah?
+
+02:19:11.000 --> 02:19:15.000
+Entonces. Vayan tirando por fal comando.
+
+02:19:15.000 --> 02:19:20.000
+Se lo va a pasar? Acá usted lo reemplazan con el suiba. Lo tienen ustedes en su Html. Así que.
+
+02:19:20.000 --> 02:19:29.000
+Pasando por si acaso. Voy a listar otro tipo importante que quizá lo conozcan, y quizás no.
+
+02:19:29.000 --> 02:19:37.000
+Mayormente, cuando tú trabajas en consola negra. Cuando quieras a ahorrar tiempos en desarrollo.
+
+02:19:37.000 --> 02:19:39.000
+Este huele como tu mejor aliado.
+
+02:19:39.000 --> 02:19:47.000
+Angelo. Puedes utilizar cloud formation en el caso de lo que es Amazon. Y en el caso de lo que es Google Cloud.
+
+02:19:47.000 --> 02:19:50.000
+La parte. Lo que es terra sirve para multicloud.
+
+02:19:50.000 --> 02:19:58.000
+Lo que es despliegue de código, ya. Entonces, en esa parte, cuando tú haces este código y todo eso.
+
+02:19:58.000 --> 02:20:03.000
+Tú utilizas ¿qué cosa tú utilizas. La consola negra.
+
+02:20:03.000 --> 02:20:11.000
+Esa consola. Hay comandos que ejecutaste. Esa fresita que tú tienes dentro del teclado.
+
+02:20:11.000 --> 02:20:16.000
+De arriba y abajo derecha a izquierda que utilizas para jugar, por ejemplo, ya.
+
+02:20:16.000 --> 02:20:21.000
+Viste. Si yo muevo. La flechita. Voy a poder.
+
+02:20:21.000 --> 02:20:26.000
+Mostrar o volver a ejecutar. Los comandos que corrí previamente.
+
+02:20:26.000 --> 02:20:29.000
+Entonces yo lo que yo tenía así no tenía nada.
+
+02:20:29.000 --> 02:20:34.000
+Entonces, como yo había ejecutado el L. S. Lo estoy invocando en la flechita, en la flechita del teclado.
+
+02:20:34.000 --> 02:20:44.000
+Que tiene arriba abajo, derecha e izquierda. Entonces le damos el S. Y qué cosa ya debería haberme tirado? ¿qué cosa debería haberme tirado.
+
+02:20:44.000 --> 02:20:48.000
+Dental user mi carpeta, Anita, ¿será verdad a ver.
+
+02:20:48.000 --> 02:20:55.000
+Vamos a poner, user. Vamos a poner así. Vamos a ver. Quería listarle la carpeta Anita: ¿cierto?
+
+02:20:55.000 --> 02:20:59.000
+Ahí está. No Anita. Ya miren, acá.
+
+02:20:59.000 --> 02:21:04.000
+So acuerdan que la arquitectura que yo les mostraba, que era esta cosa.
+
+02:21:04.000 --> 02:21:08.000
+Donde me fuiste arquitectura a que estás.
+
+02:21:08.000 --> 02:21:10.000
+And Bucky.
+
+02:21:10.000 --> 02:21:14.000
+No, está, no. Que está acá.
+
+02:21:14.000 --> 02:21:19.000
+Espéreme para. Mostrarles.
+
+02:21:19.000 --> 02:21:25.000
+Resumen, resumen, a que éstas. Miren, esto. Ya lo había cerrado. Ya.
+
+02:21:25.000 --> 02:21:30.000
+Se acuerdan de todos de todo, está esta arquitectura de todo esto?
+
+02:21:30.000 --> 02:21:33.000
+That big their high barbera: Yeah.
+
+02:21:33.000 --> 02:21:37.000
+Entonces todo esto en su carpeta.
+
+02:21:37.000 --> 02:21:42.000
+As raised Hdfs. High mal reduce pig. Barbara.
+
+02:21:42.000 --> 02:21:52.000
+Yeah, todo tiene relación. La teoría con la práctica. Entonces voy a limpiar pantalla para que no se vaya tan hasta abajo y poderse y poder seguir con los ejemplos como limpio, pantalla.
+
+02:21:52.000 --> 02:21:54.000
+3 years? Yeah.
+
+02:21:54.000 --> 02:22:00.000
+Esta forma como yo estoy como yo estoy haciendo comandos que son los primeros comandos.
+
+02:22:00.000 --> 02:22:06.000
+Nos van a servir también para que nos va a servir para la parte de que para la parte de lo que es.
+
+02:22:06.000 --> 02:22:11.000
+Cuando empecemos a desarrollar nuestro modelo ya en lo que es el gobernetes.
+
+02:22:11.000 --> 02:22:15.000
+Así que ya nos vamos familiarizando de una u otra manera.
+
+02:22:15.000 --> 02:22:23.000
+Entonces porfa. Cara ya en el archivo. Ustedes, aparte de todo eso, dentro de su portal, como tal.
+
+02:22:23.000 --> 02:22:29.000
+Ustedes tienen ustedes tienen una carpeta más o menos como ésta.
+
+02:22:29.000 --> 02:22:32.000
+Que se llama datasets.
+
+02:22:32.000 --> 02:22:40.000
+Yeah. Does It está en un empaquetado en porque no me permitía como que subir 1 por 1. Entonces un empaquetado.
+
+02:22:40.000 --> 02:22:45.000
+Que hice Data sets, me avisan porfa que esté subido que esté ahí.
+
+02:22:45.000 --> 02:22:49.000
+Por si no lo encuentran, me avisan igual. Se supone que si lo subí.
+
+02:22:49.000 --> 02:22:53.000
+Lo revise. Dame un segundo. Vamos por aquí.
+
+02:22:53.000 --> 02:22:58.000
+Es el módulos.
+
+02:22:58.000 --> 02:23:01.000
+Sí, ya está. Está en un punto raro, ya.
+
+02:23:01.000 --> 02:23:09.000
+Está acá. Mira aquí. Test los archivos que te haya hecho, que lo descargues, descárgalo y descomprímelo.
+
+02:23:09.000 --> 02:23:14.000
+¿qué archivo voy a utilizar? Anita: bien. Bautizar lo siguiente.
+
+02:23:14.000 --> 02:23:18.000
+Entonces ya está. Cómo sube el archivo a toda esta parte.
+
+02:23:18.000 --> 02:23:20.000
+Although file.
+
+02:23:20.000 --> 02:23:26.000
+Yeah a lot fine y suben su archivo. Archivo. Voy a subir anita el persona. Punto data.
+
+02:23:26.000 --> 02:23:34.000
+El persona vamos a revisar antes de subirlo. Persona. Punto data donde me fuiste a que estás.
+
+02:23:34.000 --> 02:23:37.000
+Audio en un sublime. ¿tiene todo esto.
+
+02:23:37.000 --> 02:23:41.000
+Id nombre, teléfono bárbara. Todo eso lo vamos a subir bien.
+
+02:23:41.000 --> 02:23:47.000
+Entonces Junta, mi mouse, aquí está. Olov File, vamos a subirlo.
+
+02:23:47.000 --> 02:23:51.000
+Data, set.
+
+02:23:51.000 --> 02:23:57.000
+Persona data. Y lo va a subir a lot fine. Yeah.
+
+02:23:57.000 --> 02:24:06.000
+Vayan subiéndolo, como sé que su vio anita, porque en la parte que está acá en esto debería parecernos un botoncito tipo tipo rojo que está subiendo los datos.
+
+02:24:06.000 --> 02:24:12.000
+¿qué puede haber pasado, que es muy normal. Mayormente. Por seguridad, la sesión se caduca.
+
+02:24:12.000 --> 02:24:18.000
+Cada 15 o 10 min, más o menos. Es más posible que si un Ls.
+
+02:24:18.000 --> 02:24:24.000
+No subió nada. Vuelvo a intentar nuevamente. Puede ser que la sesión se haya muerto. Ahí está viste.
+
+02:24:24.000 --> 02:24:30.000
+Mira. Y ese murió. Entonces que lo que hace es reintentas.
+
+02:24:30.000 --> 02:24:33.000
+Se vuelve a conectar, ya.
+
+02:24:33.000 --> 02:24:43.000
+So voy a conectar. Esperas un poquito. Es un tema de seguridad que tiene la misma máquina. Lo autorizas.
+
+02:24:43.000 --> 02:24:47.000
+Ya está, vuelve a hacer el mismo procedimiento. Load File.
+
+02:24:47.000 --> 02:24:50.000
+Esto que está acá cargo. El persona punto data.
+
+02:24:50.000 --> 02:24:57.000
+Lo abro, lo cargo. Ahí está.
+
+02:24:57.000 --> 02:25:00.000
+Y ahí está. Vieron. ¿tiene que aparecerle sí o sí.
+
+02:25:00.000 --> 02:25:05.000
+Esta partida que dicen verdecito, vayan subiendo sus datos porfa. Solamente el persona punto data.
+
+02:25:05.000 --> 02:25:12.000
+Esperamos un minutito para poder seguir. Hasta ahí se llega a entender. Hasta ahí nadie se me perdió.
+
+02:25:12.000 --> 02:25:17.000
+Todos estamos bien, hasta esa parte tipo recap. Qué hemos hecho? Hemos creado a ver qué cosa.
+
+02:25:17.000 --> 02:25:25.000
+El tras ser dejado ya. Hemos visto que los comandos de Hdfs son una combinación.
+
+02:25:25.000 --> 02:25:34.000
+De Linux, Comandos, Linux y Comandos. Adelante. Hdfs. De Fs menos y el Comando Linux per se.
+
+02:25:34.000 --> 02:25:41.000
+Yeah. Bien. Entonces. Otro mando para yo, poder visualizar.
+
+02:25:41.000 --> 02:25:48.000
+Los datos que tengo en el archivo. ¿cuál es Cats? Entonces.
+
+02:25:48.000 --> 02:25:50.000
+Primero pongo un Ls para ver si se subió.
+
+02:25:50.000 --> 02:25:56.000
+Le doy enter. Si se subió. Entonces pongo cat persona, data.
+
+02:25:56.000 --> 02:26:04.000
+Persona data. Le doy enter. Ya está ahí. También es ahí está lo pude visualizar bien.
+
+02:26:04.000 --> 02:26:06.000
+Le doy enter acá voy a cerrar un poquito.
+
+02:26:06.000 --> 02:26:11.000
+Ya le doy enter para que no me aparezca como que para un costado.
+
+02:26:11.000 --> 02:26:21.000
+Para que tengamos el orden. Voy a limpiar toda la pantalla. Es más que nada. Para que no se me vaya hasta abajo. Ustedes se les sea más sencillo el poder leerlo.
+
+02:26:21.000 --> 02:26:29.000
+Entonces te dice. Mira, Mira, Pepito, Mira, María, vamos a pasar.
+
+02:26:29.000 --> 02:26:35.000
+De datos que están en Linux. A h d, f S. Y tú dices.
+
+02:26:35.000 --> 02:26:40.000
+Ya como hago eso. Entonces el puto como tal.
+
+02:26:40.000 --> 02:26:45.000
+El concepto boot es poner de un lado para otro lado. Cierto.
+
+02:26:45.000 --> 02:26:49.000
+Entonces, ¿qué es lo que vamos a hacer? Tú harás.
+
+02:26:49.000 --> 02:26:54.000
+Primero, y aquí voy a poner un bro de notas para que se pueda entender.
+
+02:26:54.000 --> 02:26:58.000
+Ya vamos a poner primero el comando.
+
+02:26:58.000 --> 02:27:04.000
+Iba a explicarles esto antes de correr todo, ya porque funciona. Esta cosa funciona, pero hay que entender qué hace.
+
+02:27:04.000 --> 02:27:11.000
+Miren esto. El puto te permite mover de aquí.
+
+02:27:11.000 --> 02:27:16.000
+Vaya! Ya está! Pero tú estás moviendo de hacia Hdfs.
+
+02:27:16.000 --> 02:27:21.000
+Esta ruta que está acá esta ruta acá la primera: ¿qué cosa hacer.
+
+02:27:21.000 --> 02:27:25.000
+Va a ser ruta linux. Y la otra es la ruta.
+
+02:27:25.000 --> 02:27:32.000
+H d f s. Pasando de Linux Hdfs. Entonces.
+
+02:27:32.000 --> 02:27:40.000
+Yo. En este caso yo tengo directamente. No tengo la persona a punto. Data. No lo tengo dentro de la carpeta, archivos, ¿cierto?
+
+02:27:40.000 --> 02:27:49.000
+Pregunta. Si ustedes ya saben, los comandos. L es Spalistar M: Cadir es para crear como yo haría como yo haría.
+
+02:27:49.000 --> 02:27:55.000
+Yeah, o como quedaría la carpeta, archivos. Dígame el comando. ¿cómo sería.
+
+02:27:55.000 --> 02:28:02.000
+A ver y exacto, y Pv. Wd: también para poder saber dónde estoy ubicada. Actualmente.
+
+02:28:02.000 --> 02:28:07.000
+Y acá, antes de que responde la pregunta, miren, acá el Pvd me permite saber dónde está.
+
+02:28:07.000 --> 02:28:14.000
+Mi home actualmente, ya donde estoy ubicada en ese momento.
+
+02:28:14.000 --> 02:28:17.000
+¿cómo sería yo partiría la carpeta dentro de Linux.
+
+02:28:17.000 --> 02:28:23.000
+M Cadir, archivos. Tal cual así ya entonces.
+
+02:28:23.000 --> 02:28:27.000
+Quiero esto. Lo pongo por acá donde te me fuiste.
+
+02:28:27.000 --> 02:28:32.000
+Aquí. M: Cádiz. Archivos. Estoy creando.
+
+02:28:32.000 --> 02:28:37.000
+Si pongo un Ls: Estoy creando. El archivo ya.
+
+02:28:37.000 --> 02:28:46.000
+El archivo, el archivo. Digo la carpeta. Archivos dentro de esta ruta de la ruta.
+
+02:28:46.000 --> 02:28:51.000
+Que estoy ahorita. Y luego me dicen: a mí.
+
+02:28:51.000 --> 02:28:57.000
+Bueno, tus archivos. Estaban en Linux, ya que estaban en Linux.
+
+02:28:57.000 --> 02:29:04.000
+Necesito que dentro de la carpeta vamos a poner así carpeta archivos. Necesito.
+
+02:29:04.000 --> 02:29:09.000
+Que muevas ese archivo, que esta persona a punto data que si yo veo por acá.
+
+02:29:09.000 --> 02:29:15.000
+Tengo la carpeta: archivos. Y como sé que es una carpeta por los colores, ya.
+
+02:29:15.000 --> 02:29:20.000
+Azulito, y el otro es blanquito. Entonces este que está acá es un.
+
+02:29:20.000 --> 02:29:25.000
+Archivo per se, y es una carpeta. Bien, ¿qué hago? Luego?
+
+02:29:25.000 --> 02:29:30.000
+Entonces yo tengo que mover. Mi archivito, lo tengo que volver al otro lado.
+
+02:29:30.000 --> 02:29:34.000
+Tengo varios comandos para poder utilizar Put motor put.
+
+02:29:34.000 --> 02:29:39.000
+Persona, punto, data. Hacia la carpeta, carpeta, archivos.
+
+02:29:39.000 --> 02:29:43.000
+Yeah, I'll put it.
+
+02:29:43.000 --> 02:29:50.000
+Icopiate, pegar. Este mismo va a generar para mantener el orden. Lo pongo acá.
+
+02:29:50.000 --> 02:29:56.000
+Lo pongo. Acá le doy enter. Comandos no encontrados. ¿espera Mv: Entonces.
+
+02:29:56.000 --> 02:29:58.000
+And move them over. A Ver.
+
+02:29:58.000 --> 02:30:04.000
+A eso hay comandos que no lo soportan. Dependiendo la versión del Debian o de Linux, me ves de mover.
+
+02:30:04.000 --> 02:30:12.000
+Ahí está. Ya se movió ya otro comando. M. B de mover de move. Ya pasé.
+
+02:30:12.000 --> 02:30:18.000
+Aún el S nuevamente. Entonces, ¿qué cosa? Inclusive lo pasé mal.
+
+02:30:18.000 --> 02:30:23.000
+Lo tuve que crear lo M. B. Persona punto data a carpeta, archivos.
+
+02:30:23.000 --> 02:30:29.000
+Lo hice súper mal. Ya ¿por qué? Porque mi carpeta se llamaba ¿qué cosas se llamaba.
+
+02:30:29.000 --> 02:30:31.000
+Archivos y acá le puse como si fuera, ¿Qué cosa.
+
+02:30:31.000 --> 02:30:36.000
+Un archivo más sin ninguna extensión. Fue mi error ya porque debía haberle puesto.
+
+02:30:36.000 --> 02:30:41.000
+¿qué cosa? El nombre? La carpeta. Como sea mi carpeta, archivos.
+
+02:30:41.000 --> 02:30:44.000
+Yeah hagan eso, por favor, ustedes vayan haciendo eso.
+
+02:30:44.000 --> 02:30:49.000
+Y se lo va a pasar por acá para que lo puedan hacer.
+
+02:30:49.000 --> 02:30:55.000
+Ahí está. Vayan haciendo eso. Yo va a volver a subir el archivo para poder cargarlo.
+
+02:30:55.000 --> 02:31:00.000
+Mhm. Ya está. Vayan haciendo soportistas.
+
+02:31:00.000 --> 02:31:07.000
+Ya está. Y ahora, si vuelvo a correr lo mismo que ustedes para estar igualitos.
+
+02:31:07.000 --> 02:31:15.000
+L s. Ahí está entonces persona. Punto data hacia archivos. Bien.
+
+02:31:15.000 --> 02:31:21.000
+Ahora, si limpio el S ya está, pongo un Ls archivos.
+
+02:31:21.000 --> 02:31:28.000
+Ahí está mi persona a punto data. Ya. Haz esa parte se va entendiendo? Vamos bien, sí.
+
+02:31:28.000 --> 02:31:34.000
+Vamos bien, esa partecita. Nadie se perdió. Ya bien. Seguimos.
+
+02:31:34.000 --> 02:31:40.000
+Mira por acá. Entonces. Yo tengo que mover de Linux.
+
+02:31:40.000 --> 02:31:46.000
+A H. D. F. S. Entonces yo crea una carpeta que no me acuerdo. ¿dónde la carpeta que ahorita lo vamos a ver.
+
+02:31:46.000 --> 02:31:50.000
+Si no sé si Anita o Quevedo no recuerdo a ver HD para acá.
+
+02:31:50.000 --> 02:31:53.000
+Vamos a listar el comando H. D. F, que corría.
+
+02:31:53.000 --> 02:32:01.000
+Vamos a alistarlo, a correrlo. Porque no recuerdo cómo me cree la carpeta.
+
+02:32:01.000 --> 02:32:06.000
+Cuál era el comando para ver el nombre de mi carpeta que está en Hfs.
+
+02:32:06.000 --> 02:32:11.000
+Para que cargue. Ahí está. No Anita la llame. Yo anita ya.
+
+02:32:11.000 --> 02:32:14.000
+Que pasó también el comando para que tú no vayas a que también.
+
+02:32:14.000 --> 02:32:22.000
+Sufres de del olvido, como yo ya está. No todavía me anita bien.
+
+02:32:22.000 --> 02:32:28.000
+Entonces mi carpeta se llama mi usuario. Se llama Anita. En mi caso, entonces ya está.
+
+02:32:28.000 --> 02:32:36.000
+Ejecutó toda esta cuestión. Hay 3 veces menos put archivos. Persona data hacia el otro lado.
+
+02:32:36.000 --> 02:32:41.000
+Copio. Esto. Vamos para acá.
+
+02:32:41.000 --> 02:32:47.000
+Y le doy enter. Entonces, desde que mueva.
+
+02:32:47.000 --> 02:32:52.000
+Ya se movió a que sí vamos a revisar. Vamos a revisar, mira.
+
+02:32:52.000 --> 02:32:54.000
+A revisar acá.
+
+02:32:54.000 --> 02:33:00.000
+Anita dentro de la carpeta Anita, que se supone que yo ya lo moví. ¿cierto? Ya lo copié para allá.
+
+02:33:00.000 --> 02:33:06.000
+A ver. Ahí está mi archivo.
+
+02:33:06.000 --> 02:33:12.000
+Pregunta pregunta.
+
+02:33:12.000 --> 02:33:17.000
+Uds. Se acuerdan del permiso que inclusive sale como un meme, un meme.
+
+02:33:17.000 --> 02:33:24.000
+A veces que sale en Internet. Salen, no dice permisos. Siete, 77.
+
+02:33:24.000 --> 02:33:28.000
+Y and it intentaron a robar toda tu información.
+
+02:33:28.000 --> 02:33:34.000
+Ese permiso, 7. Y acá les voy a mostrar ese meme que les digo: Miren, acá.
+
+02:33:34.000 --> 02:33:37.000
+Meeting.
+
+02:33:37.000 --> 02:33:43.000
+Ahí está. Miren, mire, espérate que cargue imágenes. Ven para acá meeting.
+
+02:33:43.000 --> 02:33:47.000
+Does it? A veces, por ejemplo, la pasada me decía: un alumno. Me decía.
+
+02:33:47.000 --> 02:33:55.000
+Siete, 7, 7, que será el que señal de qué cosa no no es. 777 tiene que ver mucho con qué cosa.
+
+02:33:55.000 --> 02:33:59.000
+Con esta parte. Mira con esto que está acá.
+
+02:33:59.000 --> 02:34:04.000
+Ese 7, 7, 7. Kiko significa. Esto es.
+
+02:34:04.000 --> 02:34:08.000
+El primer, 7. Estos de acá, el otro 7.
+
+02:34:08.000 --> 02:34:14.000
+Y el otro que está por acá el otro 7, la cosa que en general, cuando tú das permiso para todo das.
+
+02:34:14.000 --> 02:34:21.000
+Siete, 7, 7, ya. Y cada 7 como tal significa una cosa. Ya te voy a mostrar.
+
+02:34:21.000 --> 02:34:26.000
+Mira acá. Y aquí te voy a mostrar esto. Espérate.
+
+02:34:26.000 --> 02:34:28.000
+Se llama así.
+
+02:34:28.000 --> 02:34:34.000
+John judds, John Judges. Made up.
+
+02:34:34.000 --> 02:34:37.000
+Nuestra no espérate.
+
+02:34:37.000 --> 02:34:40.000
+A comparative.
+
+02:34:40.000 --> 02:34:45.000
+Imágenes.
+
+02:34:45.000 --> 02:34:55.000
+Acá está, mira esto. Mira esto, mira esto, mira esto, copiar y copiar.
+
+02:34:55.000 --> 02:34:57.000
+Manka, mira esto.
+
+02:34:57.000 --> 02:34:59.000
+Jackie.
+
+02:34:59.000 --> 02:35:05.000
+Mira, ¿Te decía: ¿cierto? Ok. El primer 7 como tal.
+
+02:35:05.000 --> 02:35:10.000
+Son para los sounders. Yo ni pacheco.
+
+02:35:10.000 --> 02:35:13.000
+El otro para el grupo, para mi equipo ya está.
+
+02:35:13.000 --> 02:35:21.000
+Y el otro para los demás. Entonces y cuando tú tienes esos palitos, esas líneas.
+
+02:35:21.000 --> 02:35:26.000
+Están? ¿qué cosa en la parte binaria. Es por eso que se ve así.
+
+02:35:26.000 --> 02:35:30.000
+Entonces, por ejemplo, si tú pones todo esto que está acá el Rwx.
+
+02:35:30.000 --> 02:35:36.000
+Significa read, write, and execute el 7. En otras palabras, ya.
+
+02:35:36.000 --> 02:35:42.000
+Dicho esto, voy acá. Entonces, ya sabes por qué aparece esta cosita que está por acá.
+
+02:35:42.000 --> 02:35:47.000
+Seguimos, seguimos, seguimos. Mira por acá.
+
+02:35:47.000 --> 02:35:55.000
+Luego te dicen a ti, Mira, sabes qué? Me gustaría. Me gustaría.
+
+02:35:55.000 --> 02:35:59.000
+Te dice lo siguiente. Crear una estructura de carpetas.
+
+02:35:59.000 --> 02:36:04.000
+Que más o menos se vea algo como esto.
+
+02:36:04.000 --> 02:36:13.000
+Así te dicen: tiene una estructura que se ve algo como si tú dices, Oh, qué hago? Y tú te empieza. Bueno, la profe me dijo: Hdfs, Dfs.
+
+02:36:13.000 --> 02:36:17.000
+Menos se mecadir menos. M. Cádiz.
+
+02:36:17.000 --> 02:36:19.000
+No M. Cadir.
+
+02:36:19.000 --> 02:36:21.000
+Mi usuario.
+
+02:36:21.000 --> 02:36:27.000
+They Hdf, Sdf, y así te empiezas a llenar, a llenar, a llenar, de poner mi usuario.
+
+02:36:27.000 --> 02:36:32.000
+Usuario. Luego, dentro de usuario, la carpeta ejercicio, 1.
+
+02:36:32.000 --> 02:36:35.000
+Y así sucesivamente. Pero te tengo una buena noticia.
+
+02:36:35.000 --> 02:36:40.000
+Lo que hacer esto? ¿qué vas a utilizar. Mira acá para hacer.
+
+02:36:40.000 --> 02:36:48.000
+La carga de estructuras de carpetas recursivas. Que utilizas. Vas a hacer lo siguiente.
+
+02:36:48.000 --> 02:36:53.000
+Vas a utilizar el menos. P. Como así.
+
+02:36:53.000 --> 02:36:59.000
+Voy acá tienes Hdfs. De Fs: menos. M. Cádiz.
+
+02:36:59.000 --> 02:37:05.000
+Menos P de la parte recursiva, y será que no usuario mi usuario, que será anita.
+
+02:37:05.000 --> 02:37:12.000
+La carpeta, que será ejercicio, por ejemplo, no que será ejercicio carambas.
+
+02:37:12.000 --> 02:37:23.000
+Que se da ejercicios de carpeta. Uno. Carpeta, 1 para borrar todo esto para carpeta, 1 dentro carpeta 1 tendré subcarpeta.
+
+02:37:23.000 --> 02:37:26.000
+Y ya está. Entonces tú que lo que haces acá.
+
+02:37:26.000 --> 02:37:30.000
+Empecé dando H, F, S, H, F, s y h d f S.
+
+02:37:30.000 --> 02:37:33.000
+Ya sea en una sola línea. Se los voy a compartir.
+
+02:37:33.000 --> 02:37:39.000
+Yeah. Ahí. ¿está. Lo mismo que está también en el ejemplo. Sigo por acá.
+
+02:37:39.000 --> 02:37:41.000
+Entonces vamos a crearlo. Ven por aquí.
+
+02:37:41.000 --> 02:37:44.000
+Made up limpiar pantalla con trigger.
+
+02:37:44.000 --> 02:37:52.000
+Okay, goto a pantalla, le doy enter.
+
+02:37:52.000 --> 02:37:57.000
+Voy a verificar a ver si será tanta, tanta belleza. Será tan será verdad.
+
+02:37:57.000 --> 02:38:07.000
+Le doy un l S. Ahí está. No ahí. Me creó mi carpeta ejercicios. Y en esa carpeta ejercicios, yo veré la carpeta 1. Y así sucesivamente.
+
+02:38:07.000 --> 02:38:12.000
+Yeah, hasta ahí. Alguna pregunta hacia esa parte?
+
+02:38:12.000 --> 02:38:17.000
+Hasta ahí. Estamos bien. Hasta ahí, todo bien.
+
+02:38:17.000 --> 02:38:24.000
+Sí para saber que estamos bien. Que no se me han perdido.
+
+02:38:24.000 --> 02:38:29.000
+Para que no los veo. Si. Muchas gracias. Seguimos.
+
+02:38:29.000 --> 02:38:35.000
+Entonces así es como si se le M. Cádiz, el Pv. W. D. El L. S.
+
+02:38:35.000 --> 02:38:44.000
+También existe. ¿qué cosa para yo eliminar. Algo en específico. Vamos a poner que tú dices: Bueno, quiero eliminar el persona.
+
+02:38:44.000 --> 02:38:47.000
+Ya no lo quiero bien que lo que tú haces.
+
+02:38:47.000 --> 02:38:52.000
+Bueno, coges así ya te coges. Así. Ya te voy a explicar.
+
+02:38:52.000 --> 02:38:56.000
+Dices, HD. Veía como un poquito más grande. Ahí está.
+
+02:38:56.000 --> 02:39:01.000
+H d f s d f s. Menos. Rm: De remove.
+
+02:39:01.000 --> 02:39:10.000
+F de file y le pones la ruta. De la persona. Así del archivo que quieres borrar.
+
+02:39:10.000 --> 02:39:16.000
+Ahí está. Y le doy. Ya está así. Yo borro.
+
+02:39:16.000 --> 02:39:20.000
+Así, Yo estoy borrando. ¿qué cosa yo estoy borrando.
+
+02:39:20.000 --> 02:39:22.000
+Chivos. Yeah.
+
+02:39:22.000 --> 02:39:26.000
+Pero ¿qué pasa el caso hipotético que tú dices: No, pues mira.
+
+02:39:26.000 --> 02:39:31.000
+Quiero borrar toda la carpeta. Todo lo que haya dentro de la carpeta.
+
+02:39:31.000 --> 02:39:38.000
+Entonces, lo mismo que tienes acá arriba, la diferencia que le pones menos. R.
+
+02:39:38.000 --> 02:39:44.000
+R recursivo, como así se vería. Te voy a mostrar acá.
+
+02:39:44.000 --> 02:39:46.000
+Bonus, HDFS.
+
+02:39:46.000 --> 02:39:53.000
+De Fs menos. Rm: Menos R: recursivo, menos file y le pone la carpeta. Vamos a poner, por ejemplo.
+
+02:39:53.000 --> 02:40:00.000
+Hasta acá. El vamos a ahorrar todo lo que hay adentro. La carpeta Anita.
+
+02:40:00.000 --> 02:40:06.000
+Todo lo que hay dentro de la petanita. Yo verifico con el L. S. Vamos a ver un L S. A ver para que habrá acá.
+
+02:40:06.000 --> 02:40:11.000
+Lo, doy enter.
+
+02:40:11.000 --> 02:40:20.000
+Se borró por completo, vieron. Hasta ahí se entendió hasta ahí. Estamos bien.
+
+02:40:20.000 --> 02:40:24.000
+Sí, hasta ahí estamos bien, y no se me perdieron.
+
+02:40:24.000 --> 02:40:32.000
+Yeah, seguimos. Así como si de toda esta parte que estamos diciendo ya así consiste toda esa parte que estamos diciendo.
+
+02:40:32.000 --> 02:40:40.000
+También yo puedo dar permisos a mi archivo. ¿qué significa? Yo les había dicho que cosas del 777. ¿cierto? Bien.
+
+02:40:40.000 --> 02:40:45.000
+Pero yo no tengo ningún archivo. Así que voy a volver ya a la carpeta porque no tengo nada. Lo borré.
+
+02:40:45.000 --> 02:40:53.000
+Vamos a ver por acá control z.
+
+02:40:53.000 --> 02:40:57.000
+Para acá que tengo. Aquí vamos a poner esto.
+
+02:40:57.000 --> 02:41:01.000
+Voy a correr el comando que les pasé. Porque yo la había borrado.
+
+02:41:01.000 --> 02:41:06.000
+Vamos por aquí. Y vamos a volar ya la carpeta. Vamos a volar, crearla.
+
+02:41:06.000 --> 02:41:12.000
+Ya está. Ya vamos a voltearlo. Y tú dices: Bueno.
+
+02:41:12.000 --> 02:41:16.000
+Si yo le hago un Ls. Con él es este señor.
+
+02:41:16.000 --> 02:41:23.000
+Miren el permiso de que cargue. Entonces tiene este permiso.
+
+02:41:23.000 --> 02:41:27.000
+Ese permiso. Si yo accedo hasta que dice: Anita.
+
+02:41:27.000 --> 02:41:34.000
+Anita, Anita. Miren, acá no tengo el permiso. 777.
+
+02:41:34.000 --> 02:41:39.000
+Tengo? ¿qué cosa. Otro permiso, entonces.
+
+02:41:39.000 --> 02:41:46.000
+Entonces, si yo quiero dar permisos. De, ya sea a mi usuario.
+
+02:41:46.000 --> 02:41:49.000
+Al grupo y a otros que lo que yo voy a hacer.
+
+02:41:49.000 --> 02:41:52.000
+A toda la carpeta va a ser lo siguiente.
+
+02:41:52.000 --> 02:41:56.000
+¿qué te dije del R recursivo. Cierto, ya.
+
+02:41:56.000 --> 02:42:00.000
+Aquí vamos a aplicar. Vas a aplicar el R. También.
+
+02:42:00.000 --> 02:42:06.000
+H f s d f s. C, H, mod menos R. Pero la r mayúscula.
+
+02:42:06.000 --> 02:42:11.000
+Siete, 7, 7, y la opción la carpeta vamos a hacer para acá.
+
+02:42:11.000 --> 02:42:16.000
+Aquí a toda esa carpeta. Ir a center.
+
+02:42:16.000 --> 02:42:24.000
+Desde que cargue. ¿por qué está tan lento anita? Porque recuerdo que es un raster sumamente pequeño, muy, muy pequeño.
+
+02:42:24.000 --> 02:42:28.000
+Yeah, y otra ventaja que tiene todo el tema de lo que es. Debian.
+
+02:42:28.000 --> 02:42:32.000
+O linos, o todas esas versiones. Yo señalo esto.
+
+02:42:32.000 --> 02:42:37.000
+Ya se copió ya. Esa es otra de las ventajas que también bueno mencionarlo.
+
+02:42:37.000 --> 02:42:44.000
+Entonces yo ahora una venta de Fs. Vamos a revisarle a esta parte.
+
+02:42:44.000 --> 02:42:55.000
+Ahí está. Ya me cambió los permisos, ya. Entonces hasta ahí algunas preguntas, esa parte. Hasta ahí estamos bien.
+
+02:42:55.000 --> 02:42:58.000
+Hasta ahí alguna duda.
+
+02:42:58.000 --> 02:43:05.000
+Tortear esa partecita. Si me ayudan con un pulgar por fiz, ya está.
+
+02:43:05.000 --> 02:43:10.000
+Entonces, entonces, entonces. Vamos para acá, para ir cerrando.
+
+02:43:10.000 --> 02:43:15.000
+Qué es lo que hemos visto con lo que hemos visto.
+
+02:43:15.000 --> 02:43:20.000
+Ustedes acá en esta parte. Ustedes tienen el porqué Google filosofía de precios, el tema, lo que Data Center.
+
+02:43:20.000 --> 02:43:28.000
+Entre otras cosas, y acá está el link. Que pueden ustedes también practicar más ya qué cosa.
+
+02:43:28.000 --> 02:43:33.000
+Aquí igual. Nosotros vamos a ir avanzando, pero sin embargo, ustedes pueden ir practicando.
+
+02:43:33.000 --> 02:43:43.000
+Cómo hacía Anita, bajan las guías que les compartí que el sábado tenemos clases, no se olviden. Sé que es el día del amor y la amistad. Pero tenemos clase.
+
+02:43:43.000 --> 02:43:52.000
+Yeah, entonces, ese día, ¿qué vamos a hacer. Entonces voy a ir platicando. Voy a ir viendo como funciona. Esto.
+
+02:43:52.000 --> 02:43:58.000
+Y vos funciona así dices. Yo tengo mi caramba donde te fuiste. Aquí.
+
+02:43:58.000 --> 02:44:04.000
+Entonces yo tengo Michelle perfecto. Entonces todos, como pueden observar todos los comandos.
+
+02:44:04.000 --> 02:44:10.000
+Yo puedo haberlo ejecutado. Haber utilizado esto y haber ejecutado cierto.
+
+02:44:10.000 --> 02:44:16.000
+Bien. Sin embargo, sin embargo, tú también lo puedes hacer. ¿qué cosa de forma.
+
+02:44:16.000 --> 02:44:22.000
+Automatizada pregunta si yo lo corro hasta acá. Pregunta a pregunta.
+
+02:44:22.000 --> 02:44:31.000
+Se cae o no se cae. Y por qué debería mejorarlo.
+
+02:44:31.000 --> 02:44:36.000
+Para ver si se llega a entender. Que son los comandos que habíamos revisado.
+
+02:44:36.000 --> 02:44:44.000
+Se cae o no se cae.
+
+02:44:44.000 --> 02:44:52.000
+Chicos. Sacado no saca esa parte. No se cae porque porque.
+
+02:44:52.000 --> 02:45:02.000
+Exacto, porque tengo la carpeta user. Ya. ¿cuál es el siglo más performante? Quizás hubiese cogido realmente yo quiero mejorar ese y poner una sola línea.
+
+02:45:02.000 --> 02:45:07.000
+En vez de tener 2. Pongo así. Le Copio, carambas.
+
+02:45:07.000 --> 02:45:12.000
+Menos p. Y me quito toda esta parte.
+
+02:45:12.000 --> 02:45:19.000
+Y ya está ya entonces. Como repito, puedes hacerlo así o también, o también con el otra parte.
+
+02:45:19.000 --> 02:45:24.000
+Entonces aquí hay cambio un poquito. Aquí que te que te estoy poniendo yo hasta acá.
+
+02:45:24.000 --> 02:45:28.000
+Te estoy poniendo? ¿qué cosa te estoy poniendo la creación.
+
+02:45:28.000 --> 02:45:35.000
+De la carpeta, ya bien. Y te estoy mostrando acá una forma de utilizar parámetros.
+
+02:45:35.000 --> 02:45:46.000
+Pregunta: ¿Qué es un parámetro. O para qué me serviría un parámetro en desarrollo.
+
+02:45:46.000 --> 02:45:55.000
+¿para qué me sirve un parámetro en desarrollo.
+
+02:45:55.000 --> 02:45:59.000
+¿para qué me sirve? Chicos? Variable entorno? Bien, ya está.
+
+02:45:59.000 --> 02:46:04.000
+Es ¿para qué? Para que yo no tenga que repetir código ya una variable.
+
+02:46:04.000 --> 02:46:09.000
+Una variable que esa variable. Si yo estoy trabajando en el tema de Debian, que lo que hago primero es por.
+
+02:46:09.000 --> 02:46:14.000
+El nombre de la variable. Y el valor que tú le quieras poner.
+
+02:46:14.000 --> 02:46:21.000
+Eco para que tú lo imprimas. Así como en Python Sprint. Ya en este.
+
+02:46:21.000 --> 02:46:24.000
+En esta parte ¿es eco o hecho, no dólar.
+
+02:46:24.000 --> 02:46:29.000
+Y en corchetas, y luego para alistarlo, en vez de poner el nombre.
+
+02:46:29.000 --> 02:46:34.000
+Le Pongo la variable. Ya está de igual manera.
+
+02:46:34.000 --> 02:46:37.000
+Yo más carpetas, lo listo.
+
+02:46:37.000 --> 02:46:40.000
+Y empezó a tirar la estructura de carpetas como tal.
+
+02:46:40.000 --> 02:46:44.000
+Yo la carpeta todo. Y todo esto que está acá.
+
+02:46:44.000 --> 02:46:48.000
+Y acá empieza a hacer la validación de los archivos, pero no nos hagas hasta esta parte.
+
+02:46:48.000 --> 02:46:55.000
+Todo esto. Si yo quiero automatizarlo en vez de estar poniendo línea por línea, línea por línea, lo pongo un h l.
+
+02:46:55.000 --> 02:47:00.000
+S. H. L. Se sube. Igual. Vamos a ver y asado. Se sube, ya.
+
+02:47:00.000 --> 02:47:10.000
+Ir para correrla. Esa caramanza, S. H. Nombre Lachelle, y ya está y hace todo lo que está internamente.
+
+02:47:10.000 --> 02:47:14.000
+Entonces que permite la chel, como decía, automatizar tareas.
+
+02:47:14.000 --> 02:47:23.000
+En Windows. Si yo quiero que mi computadora se levante, se prenda a las 5 de la mañana, luego se apague todo eso. Yo también tengo tareas, programas para poder hacer esto.
+
+02:47:23.000 --> 02:47:30.000
+Pero de parte visual, cuando yo me voy al tema al sistema, a la Mac o a Linux o al sistema de.
+
+02:47:30.000 --> 02:47:35.000
+De pantalla que tiene la consola negra me permite automatizar de esta manera.
+
+02:47:35.000 --> 02:47:42.000
+Yeah. Entonces. Ustedes pueden ir avanzando el día el día sábado. Tenemos la clase. Pueden ir revisando el sábado que vamos a ver.
+
+02:47:42.000 --> 02:47:46.000
+Esa, vamos a ver lo restante. La parte Hdfs.
+
+02:47:46.000 --> 02:47:54.000
+La parte de Hyve, la parte sota Lake. Y luego va a haber va a haber un trabajo para que usted lo puedan hacer. Luego en su casa.
+
+02:47:54.000 --> 02:47:58.000
+Pero tienen el material para que para que vayan, vayan ahí practicando ya.
+
+02:47:58.000 --> 02:48:04.000
+Hasta ahí alguna pregunta alguna? Duda? Todo bien, todo claro.
+
+02:48:04.000 --> 02:48:08.000
+Incendio bien perfecto, un punto importante que se me bajen.
+
+02:48:08.000 --> 02:48:12.000
+El dataset. Esto lo cierra. Ya lo cierran. Chao.
+
+02:48:12.000 --> 02:48:19.000
+Y esta parte, esto también estos chau. Esto, pero cierro acá el cluster.
+
+02:48:19.000 --> 02:48:27.000
+Puedes hacer. Dos cosas. Vas al cluster y dices, no va a estar nuevamente creando y todo subiendo los datos.
+
+02:48:27.000 --> 02:48:34.000
+Detenlo, stop. Y ya está. No te va a hasta el sábado. Realmente no te va a cobrar casi nada.
+
+02:48:34.000 --> 02:48:40.000
+Yeah. A diferencia de mí, yo sí tengo yo. Sí, he viajado cosas corriendo para hacer testing.
+
+02:48:40.000 --> 02:48:54.000
+Todo tiene aproximadamente como 1 000 soles. Deberías tener. Por ahora, ya entonces detenlo nada más, tu cluster o la otra también. Si quieres practicar lo eliminas, lo vuelves a crear con los comandos que te decía.
+
+02:48:54.000 --> 02:49:00.000
+Y ya está ya eso alguna pregunta adicional? ¿estamos bien para ir cerrando la clase.
+
+02:49:00.000 --> 02:49:05.000
+Todavía. Sí, perfecto. Muchas gracias. Nos vemos el día sábado a las 8 de la mañana.
+
+02:49:05.000 --> 02:49:15.000
+Besito.
+

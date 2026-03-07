@@ -1,0 +1,9 @@
+{
+	"name": "TRANSACCION",
+	"type": "record",
+	"fields": [
+		{"name": "ID_PERSONA", "type": ["null", "string"], "default": null},
+		{"name": "ID_EMPRESA", "type": ["null", "string"], "default": null},
+		{"name": "MONTO", "type": ["null", "string"], "default": null}
+	]
+}
