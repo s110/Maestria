@@ -7,7 +7,7 @@
 ##########################################################################################################
 
 #COMANDO DE EJECUCION
-#sh Laboratorio_019_execute_all.sh "anitaquevedo"
+#bash Laboratorio_019_execute_all.sh "sebastian"
 
 ##########################################################################################################
 #
@@ -25,16 +25,24 @@ export PARAM_USERNAME=$1
 ##########################################################################################################
 
 echo "Ejecutando deploy de arbol de directorios..."
-source Laboratorio_014_deploy.sh "${PARAM_USERNAME}"
+. ./Laboratorio_014_deploy.sh "${PARAM_USERNAME}"
 
 echo "Desplegando landing_tmp..."
-beeline -u jdbc:hive2:// -f Laboratorio_015_deploy_database_landing_tmp.sql --hiveconf "PARAM_USERNAME=${PARAM_USERNAME}"
+sed "s/__PARAM_USERNAME__/${PARAM_USERNAME}/g" Laboratorio_015_deploy_database_landing_tmp.sql > /tmp/_015_tmp.sql
+beeline -u jdbc:hive2:// -f /tmp/_015_tmp.sql
+rm -f /tmp/_015_tmp.sql
 
 echo "Desplegando landing..."
-beeline -u jdbc:hive2:// -f Laboratorio_016_deploy_database_landing.sql --hiveconf "PARAM_USERNAME=${PARAM_USERNAME}"
+sed "s/__PARAM_USERNAME__/${PARAM_USERNAME}/g" Laboratorio_016_deploy_database_landing.sql > /tmp/_016_tmp.sql
+beeline -u jdbc:hive2:// -f /tmp/_016_tmp.sql
+rm -f /tmp/_016_tmp.sql
 
 echo "Desplegando universal..."
-beeline -u jdbc:hive2:// -f Laboratorio_017_deploy_database_universal.sql --hiveconf "PARAM_USERNAME=${PARAM_USERNAME}"
+sed "s/__PARAM_USERNAME__/${PARAM_USERNAME}/g" Laboratorio_017_deploy_database_universal.sql > /tmp/_017_tmp.sql
+beeline -u jdbc:hive2:// -f /tmp/_017_tmp.sql
+rm -f /tmp/_017_tmp.sql
 
 echo "Desplegando smart..."
-beeline -u jdbc:hive2:// -f Laboratorio_018_deploy_database_smart.sql --hiveconf "PARAM_USERNAME=${PARAM_USERNAME}"
+sed "s/__PARAM_USERNAME__/${PARAM_USERNAME}/g" Laboratorio_018_deploy_database_smart.sql > /tmp/_018_tmp.sql
+beeline -u jdbc:hive2:// -f /tmp/_018_tmp.sql
+rm -f /tmp/_018_tmp.sql

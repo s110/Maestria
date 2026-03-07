@@ -5,7 +5,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- COMANDO DE EJECUCION
--- beeline -u jdbc:hive2:// -f Laboratorio_016_deploy_database_landing.sql --hiveconf "PARAM_USERNAME=anitaquevedo"
+-- beeline -u jdbc:hive2:// -f Laboratorio_016_deploy_database_landing.sql --hivevar "PARAM_USERNAME=anitaquevedo"
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -23,7 +23,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- Eliminación de bases de datos
-DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING CASCADE;
+DROP DATABASE IF EXISTS __PARAM_USERNAME___LANDING CASCADE;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -32,8 +32,7 @@ DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING CASCADE;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de base de datos
-CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_LANDING LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING';
-
+CREATE DATABASE IF NOT EXISTS __PARAM_USERNAME___LANDING LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING';
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -56,22 +55,22 @@ SET hive.exec.dynamic.partition.mode=nonstrict;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA
+CREATE TABLE __PARAM_USERNAME___LANDING.PERSONA
 STORED AS AVRO
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING/persona'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING/persona'
 TBLPROPERTIES(
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1',
-    'avro.schema.url'='/user/${hiveconf:PARAM_USERNAME}/ejercicio2/schema/${hiveconf:PARAM_USERNAME}_LANDING/persona.avsc',
-	'avro.output.codec'='snappy'
+    'avro.schema.url'='/user/__PARAM_USERNAME__/ejercicio2/schema/__PARAM_USERNAME___LANDING/persona.avsc',
+    'avro.output.codec'='snappy'
 );
 
 -- Inserción de datos
-INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA
-SELECT * FROM  ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA;
+INSERT INTO TABLE __PARAM_USERNAME___LANDING.PERSONA
+SELECT * FROM  __PARAM_USERNAME___LANDING_TMP.PERSONA;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___LANDING.PERSONA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -80,22 +79,22 @@ SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA
+CREATE TABLE __PARAM_USERNAME___LANDING.EMPRESA
 STORED AS AVRO
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING/empresa'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING/empresa'
 TBLPROPERTIES(
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1',
-    'avro.schema.url'='/user/${hiveconf:PARAM_USERNAME}/ejercicio2/schema/${hiveconf:PARAM_USERNAME}_LANDING/empresa.avsc',
-	'avro.output.codec'='snappy'
+    'avro.schema.url'='/user/__PARAM_USERNAME__/ejercicio2/schema/__PARAM_USERNAME___LANDING/empresa.avsc',
+    'avro.output.codec'='snappy'
 );
 
 -- Inserción de datos
-INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA
-SELECT * FROM  ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA;  
+INSERT INTO TABLE __PARAM_USERNAME___LANDING.EMPRESA
+SELECT * FROM  __PARAM_USERNAME___LANDING_TMP.EMPRESA;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___LANDING.EMPRESA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -104,24 +103,24 @@ SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION
+CREATE TABLE __PARAM_USERNAME___LANDING.TRANSACCION
 PARTITIONED BY (FECHA STRING)
 STORED AS AVRO
-LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING/transaccion'
+LOCATION '/user/__PARAM_USERNAME__/ejercicio2/database/__PARAM_USERNAME___LANDING/transaccion'
 TBLPROPERTIES(
-    'store.charset'='ISO-8859-1', 
+    'store.charset'='ISO-8859-1',
     'retrieve.charset'='ISO-8859-1',
-    'avro.schema.url'='/user/${hiveconf:PARAM_USERNAME}/ejercicio2/schema/${hiveconf:PARAM_USERNAME}_LANDING/transaccion.avsc',
-	'avro.output.codec'='snappy'
+    'avro.schema.url'='/user/__PARAM_USERNAME__/ejercicio2/schema/__PARAM_USERNAME___LANDING/transaccion.avsc',
+    'avro.output.codec'='snappy'
 );
 
 -- Inserción de datos por particionamiento dinámico
-INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION
+INSERT INTO TABLE __PARAM_USERNAME___LANDING.TRANSACCION
 PARTITION(FECHA)
-SELECT * FROM  ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION;
+SELECT * FROM  __PARAM_USERNAME___LANDING_TMP.TRANSACCION;
 
 -- Impresión de datos
-SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION LIMIT 10;
+SELECT * FROM __PARAM_USERNAME___LANDING.TRANSACCION LIMIT 10;
 
 -- Verificamos las particiones
-SHOW PARTITIONS ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION;
+SHOW PARTITIONS __PARAM_USERNAME___LANDING.TRANSACCION;
