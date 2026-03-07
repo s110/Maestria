@@ -23,7 +23,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- Eliminación de bases de datos
-DROP DATABASE IF EXISTS anitaquevedo_LANDING_TMP CASCADE;
+DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING_TMP CASCADE;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -32,7 +32,7 @@ DROP DATABASE IF EXISTS anitaquevedo_LANDING_TMP CASCADE;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de base de datos
-CREATE DATABASE IF NOT EXISTS anitaquevedo_LANDING_TMP LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING_TMP';
+CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_LANDING_TMP LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP';
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -41,7 +41,7 @@ CREATE DATABASE IF NOT EXISTS anitaquevedo_LANDING_TMP LOCATION '/user/anitaquev
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE anitaquevedo_LANDING_TMP.PERSONA(
+CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA(
 	ID STRING,
 	NOMBRE STRING,
 	TELEFONO STRING,
@@ -55,7 +55,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING_TMP/persona'
+LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP/persona'
 TBLPROPERTIES(
     'skip.header.line.count'='1',
     'store.charset'='ISO-8859-1', 
@@ -64,10 +64,10 @@ TBLPROPERTIES(
 
 -- Subida de datos
 LOAD DATA LOCAL INPATH 'persona.data'
-INTO TABLE anitaquevedo_LANDING_TMP.PERSONA;
+INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA;
 
 -- Impresión de datos
-SELECT * FROM anitaquevedo_LANDING_TMP.PERSONA LIMIT 10;
+SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -76,7 +76,7 @@ SELECT * FROM anitaquevedo_LANDING_TMP.PERSONA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE anitaquevedo_LANDING_TMP.EMPRESA(
+CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA(
 	ID STRING,
 	NOMBRE STRING
 )
@@ -84,7 +84,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING_TMP/empresa'
+LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP/empresa'
 TBLPROPERTIES(
     'skip.header.line.count'='1',
     'store.charset'='ISO-8859-1', 
@@ -93,10 +93,10 @@ TBLPROPERTIES(
 
 -- Subida de datos
 LOAD DATA LOCAL INPATH 'empresa.data'
-INTO TABLE anitaquevedo_LANDING_TMP.EMPRESA;
+INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA;
 
 -- Impresión de datos
-SELECT * FROM anitaquevedo_LANDING_TMP.EMPRESA LIMIT 10;
+SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -105,7 +105,7 @@ SELECT * FROM anitaquevedo_LANDING_TMP.EMPRESA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE anitaquevedo_LANDING_TMP.TRANSACCION(
+CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION(
 	ID_PERSONA STRING,
 	ID_EMPRESA STRING,
 	MONTO STRING,
@@ -115,7 +115,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING_TMP/transaccion'
+LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING_TMP/transaccion'
 TBLPROPERTIES(
     'skip.header.line.count'='1',
     'store.charset'='ISO-8859-1', 
@@ -124,7 +124,7 @@ TBLPROPERTIES(
 
 -- Subida de datos
 LOAD DATA LOCAL INPATH 'transacciones.data'
-INTO TABLE anitaquevedo_LANDING_TMP.TRANSACCION;
+INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION;
 
 -- Impresión de datos
-SELECT * FROM anitaquevedo_LANDING_TMP.TRANSACCION LIMIT 10;
+SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION LIMIT 10;

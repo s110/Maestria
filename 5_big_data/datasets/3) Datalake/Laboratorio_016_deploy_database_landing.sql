@@ -23,7 +23,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- Eliminación de bases de datos
-DROP DATABASE IF EXISTS anitaquevedo_LANDING CASCADE;
+DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_LANDING CASCADE;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -32,7 +32,7 @@ DROP DATABASE IF EXISTS anitaquevedo_LANDING CASCADE;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de base de datos
-CREATE DATABASE IF NOT EXISTS anitaquevedo_LANDING LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING';
+CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_LANDING LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING';
 
 
 -- -------------------------------------------------------------------------------------------------------
@@ -56,22 +56,22 @@ SET hive.exec.dynamic.partition.mode=nonstrict;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE anitaquevedo_LANDING.PERSONA
+CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA
 STORED AS AVRO
-LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING/persona'
+LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING/persona'
 TBLPROPERTIES(
     'store.charset'='ISO-8859-1', 
     'retrieve.charset'='ISO-8859-1',
-    'avro.schema.url'='/user/anitaquevedo/ejercicio2/schema/anitaquevedo_LANDING/persona.avsc',
+    'avro.schema.url'='/user/${hiveconf:PARAM_USERNAME}/ejercicio2/schema/${hiveconf:PARAM_USERNAME}_LANDING/persona.avsc',
 	'avro.output.codec'='snappy'
 );
 
 -- Inserción de datos
-INSERT INTO TABLE anitaquevedo_LANDING.PERSONA
-SELECT * FROM  anitaquevedo_LANDING_TMP.PERSONA;
+INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA
+SELECT * FROM  ${hiveconf:PARAM_USERNAME}_LANDING_TMP.PERSONA;
 
 -- Impresión de datos
-SELECT * FROM anitaquevedo_LANDING.PERSONA LIMIT 10;
+SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.PERSONA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -80,22 +80,22 @@ SELECT * FROM anitaquevedo_LANDING.PERSONA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE anitaquevedo_LANDING.EMPRESA
+CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA
 STORED AS AVRO
-LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING/empresa'
+LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING/empresa'
 TBLPROPERTIES(
     'store.charset'='ISO-8859-1', 
     'retrieve.charset'='ISO-8859-1',
-    'avro.schema.url'='/user/anitaquevedo/ejercicio2/schema/anitaquevedo_LANDING/empresa.avsc',
+    'avro.schema.url'='/user/${hiveconf:PARAM_USERNAME}/ejercicio2/schema/${hiveconf:PARAM_USERNAME}_LANDING/empresa.avsc',
 	'avro.output.codec'='snappy'
 );
 
 -- Inserción de datos
-INSERT INTO TABLE anitaquevedo_LANDING.EMPRESA
-SELECT * FROM  anitaquevedo_LANDING_TMP.EMPRESA;  
+INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA
+SELECT * FROM  ${hiveconf:PARAM_USERNAME}_LANDING_TMP.EMPRESA;  
 
 -- Impresión de datos
-SELECT * FROM anitaquevedo_LANDING.EMPRESA LIMIT 10;
+SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.EMPRESA LIMIT 10;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -104,24 +104,24 @@ SELECT * FROM anitaquevedo_LANDING.EMPRESA LIMIT 10;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de tabla
-CREATE TABLE anitaquevedo_LANDING.TRANSACCION
+CREATE TABLE ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION
 PARTITIONED BY (FECHA STRING)
 STORED AS AVRO
-LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_LANDING/transaccion'
+LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_LANDING/transaccion'
 TBLPROPERTIES(
     'store.charset'='ISO-8859-1', 
     'retrieve.charset'='ISO-8859-1',
-    'avro.schema.url'='/user/anitaquevedo/ejercicio2/schema/anitaquevedo_LANDING/transaccion.avsc',
+    'avro.schema.url'='/user/${hiveconf:PARAM_USERNAME}/ejercicio2/schema/${hiveconf:PARAM_USERNAME}_LANDING/transaccion.avsc',
 	'avro.output.codec'='snappy'
 );
 
 -- Inserción de datos por particionamiento dinámico
-INSERT INTO TABLE anitaquevedo_LANDING.TRANSACCION
+INSERT INTO TABLE ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION
 PARTITION(FECHA)
-SELECT * FROM  anitaquevedo_LANDING_TMP.TRANSACCION;
+SELECT * FROM  ${hiveconf:PARAM_USERNAME}_LANDING_TMP.TRANSACCION;
 
 -- Impresión de datos
-SELECT * FROM anitaquevedo_LANDING.TRANSACCION LIMIT 10;
+SELECT * FROM ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION LIMIT 10;
 
 -- Verificamos las particiones
-SHOW PARTITIONS anitaquevedo_LANDING.TRANSACCION;
+SHOW PARTITIONS ${hiveconf:PARAM_USERNAME}_LANDING.TRANSACCION;

@@ -23,7 +23,7 @@
 -- -------------------------------------------------------------------------------------------------------
 
 -- Eliminación de bases de datos
-DROP DATABASE IF EXISTS anitaquevedo_SMART CASCADE;
+DROP DATABASE IF EXISTS ${hiveconf:PARAM_USERNAME}_SMART CASCADE;
 
 -- -------------------------------------------------------------------------------------------------------
 -- 
@@ -32,5 +32,5 @@ DROP DATABASE IF EXISTS anitaquevedo_SMART CASCADE;
 -- -------------------------------------------------------------------------------------------------------
 
 -- Creación de base de datos
-CREATE DATABASE IF NOT EXISTS anitaquevedo_SMART LOCATION '/user/anitaquevedo/ejercicio2/database/anitaquevedo_SMART';
+CREATE DATABASE IF NOT EXISTS ${hiveconf:PARAM_USERNAME}_SMART LOCATION '/user/${hiveconf:PARAM_USERNAME}/ejercicio2/database/${hiveconf:PARAM_USERNAME}_SMART';
 
