@@ -1,0 +1,8 @@
+{
+	"name": "EMPRESA",
+	"type": "record",
+	"fields": [
+		{"name": "ID", "type": ["null", "string"], "default": null},
+		{"name": "NOMBRE", "type": ["null", "string"], "default": null}
+	]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "EMPRESA_AVRO",
+  "type": "record",
+  "fields": [
+    {"name": "ID", "type": ["null", "int"], "default": null},
+    {"name": "NOMBRE", "type": ["null", "string"], "default": null}
+  ]
+}

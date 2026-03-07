@@ -1,0 +1,15 @@
+{
+  "namespace": "MIUSUARIO_TEST3",
+  "name": "PERSONA_AVRO_SNAPPY",
+  "type": "record",
+  "fields": [
+    {"name": "ID", "type": ["int", "null"]},
+    {"name": "NOMBRE", "type": ["string", "null"]},
+    {"name": "TELEFONO", "type": ["string", "null"]},
+    {"name": "CORREO", "type": ["string", "null"]},
+    {"name": "FECHA_INGRESO", "type": ["string", "null"]},
+    {"name": "EDAD", "type": ["int", "null"]},
+    {"name": "SALARIO", "type": ["double", "null"]},
+    {"name": "ID_EMPRESA", "type": ["string", "null"]}
+  ]
+}

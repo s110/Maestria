@@ -1,0 +1,4589 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.000
+Hola, buenos tardes.
+
+00:00:01.000 --> 00:00:03.000
+Instead of having to start at 3 tobian.
+
+00:00:03.000 --> 00:00:08.000
+Yeah. Oh, luck. Vamos em pesaria, vamos a compartiram.
+
+00:00:08.000 --> 00:00:14.000
+E me on segundito. Okay.
+
+00:00:14.000 --> 00:00:28.000
+Evoitamin… tenure at the mala participacion para el tema sus puntos. Temos segundito.
+
+00:00:28.000 --> 00:00:37.000
+Entonces comparto. Puraki, poraki…
+
+00:00:37.000 --> 00:00:52.000
+Your customs. Vamos empezar. Ya? Entonces. Queamos habre el diadoy. No sesiviero me el mensaje que les mande por la brataforma, se llegua aver.
+
+00:00:52.000 --> 00:00:56.000
+llega no revisar.
+
+00:00:56.000 --> 00:01:09.000
+Lo puvieron ver. tick off.
+
+00:01:09.000 --> 00:01:23.000
+El segundo laboratorio.
+
+00:01:23.000 --> 00:01:31.000
+Excelente. Entonces. Bueno. Hola com estas.
+
+00:01:31.000 --> 00:01:51.000
+Rosara. Internal service. Y enque consiste.
+
+00:01:51.000 --> 00:01:52.000
+Uh-uh.
+
+00:01:52.000 --> 00:02:06.000
+No que mas que nada. No, no, no, no, no, no, no, no, thank you, thank you. No, no, no, no, no. Si no que… see, si, no, no, thank you. Estabado si que vamos vamos vamos de apoquito. Dia as en estesen. Entonces no. Vamos a las recordan poquito. Yo es habioso enuncio.
+
+00:02:06.000 --> 00:02:28.000
+Ya mas que na para… Entonces, punta importante.
+
+00:02:28.000 --> 00:02:35.000
+El dia de hoy, les apostoyo vastante vamos a poner este material, ya.
+
+00:02:35.000 --> 00:02:50.000
+habia un archivo cargado que sia uno laboratorio. Solamente eso.
+
+00:02:50.000 --> 00:03:07.000
+no sebre recoupen. On the theme if we stayed on the… So when you start cusperemi.
+
+00:03:07.000 --> 00:03:18.000
+No se corgo perme. I don't partisita?
+
+00:03:18.000 --> 00:03:24.000
+Ossier.com. So only to the only two.
+
+00:03:24.000 --> 00:03:33.000
+Aloha.
+
+00:03:33.000 --> 00:03:57.000
+Inar la servica. Yeah.
+
+00:03:57.000 --> 00:04:08.000
+Y esta parte. Yeah, esta barteca la horite vamos a conversar tambien. Esto yo tambien lesobial dia… el dia deller.
+
+00:04:08.000 --> 00:04:23.000
+Solamente que lobolvia subir porque no se pronun estana razon el pedefe como que no habia la architectura. Entonces solamente vuel via ponder nuevamente la architectural el divisito, porque no sabia pego esta comun digujo con tipong eninto regasia.
+
+00:04:23.000 --> 00:04:53.000
+abrando con forme va pasando las trices. Entonces, despues mejoron documento que pasa que va diretamente al repository oficial, en esta parte de Meliodz and Google Cloud. O quedamos a ver luego. Ya, camembera que lobayan revisando.
+
+00:04:59.000 --> 00:05:14.000
+Entonces. Estes el desafio, usted van a presentar, toda viel otos semana.
+
+00:05:14.000 --> 00:05:40.000
+Entonces que es significa. Let me know determinar de esplicarto elaboratorio, porque las vena pasada se pasada mejor dicho, solamente vivos una partecita. Y ustedes para que vayan… Y bundo responder es elaboratorio per se post tien que haber resulto todo elaboratorio el primero elaboratorio bundo. Yeah? Tonesta logos lobamos a ver con de talle.
+
+00:05:40.000 --> 00:06:02.000
+Se lleg entenderez a parte, si? Endonces. Vamos a terminar primero la architectura, ya, end-to-end para la captura de datos. Es architectura servles. Si recordamos un poquito de que consistia estratega.
+
+00:06:02.000 --> 00:06:15.000
+Vamos habiraka, ya? En es sus papeles, como tal, la idea era poder digitalizarlo.
+
+00:06:15.000 --> 00:06:33.000
+Y falte visibilidad. esargo como esto.
+
+00:06:33.000 --> 00:06:52.000
+Donde que tu tenia sus archivos a automaticamente, los archivos al subirce, al trabo estoraj, se trabao estorach se va comportar comun tiger. E decir comun evento. En es evento, bad disparar un tram funcho, un tran funjo, queritamos a ver tambien cual de la differencia.
+
+00:06:52.000 --> 00:06:58.000
+En ese traum funcion, ya, se van y a dir.
+
+00:06:58.000 --> 00:07:10.000
+para que pueda llamar a la pi de documen yay. En esa a pi documentos reciene que cosas vano por realizar.
+
+00:07:10.000 --> 00:07:21.000
+Esta piteba generar? Velve amandar.
+
+00:07:21.000 --> 00:07:36.000
+Aje gutar esa funcion, ya y regista los datos en BigQuery. Mas o menos el resultado que tenemos que esperar ya es algo como esto. Donde van pear tod las sentidades. Yo tengo un pedefe y van pesar astar.
+
+00:07:36.000 --> 00:07:46.000
+Trada una las cosas que yo previamente en el documente hay e podido senhalar. Ya? Luego deso que yo ya tengo esta parte.
+
+00:07:46.000 --> 00:08:01.000
+Voy a yo, tener un pasap. En esse pazat, yo lo voya colocar para que, porque yo no es quiero me turning una logica, quiero tener ahi, los datos para puerse parar. Yojoca que pueser una pregunta. Tambien es el elaborado yo un tipocajud. Yeah?
+
+00:08:01.000 --> 00:08:17.000
+Entonces para que estena tentos. Podes una pregunta. E seats, como tal, va a pasar, los datos que le dataste auto transform, ya, para que recien la siguiente logica.
+
+00:08:17.000 --> 00:08:47.000
+Tien estu diracion. Essos dos, esos dos columnas son las que ustedes les va permitir que dento del reporte de Power BI, tablo o cualquier dashboard que este es quer an hacer lo puedan reportiar.
+
+00:08:49.000 --> 00:09:12.000
+Yeah? Entonces, eso hace tu reocoding. Reokodi lo que va ser es llamar a lapi de que… The Google Map. Solamente con el liberia deocoden y a lo vamos volveratocar, no se pro recovenci por es solvidaron, y logoba ingestar invigori. Todos este proceso es un proceso que cosa, es un proceso.
+
+00:09:12.000 --> 00:09:25.000
+Ser recordado lo que hemos latrasse pasada. Si? Para poder en pesar.
+
+00:09:25.000 --> 00:09:55.000
+Olivia? See? Perfecto. Adicionalmenta eso. Adicionalmenta eso, yo esu puesto aca tambien, que lego lo vamos a aponer, ya, lo vamos a realizar no juego. Mi parecido corpor… Pro coupe.
+
+00:10:03.000 --> 00:10:19.000
+Entonces. Vamos hacer un pegenho recordatorio de loquayamos revisado, yada lo quellamos treado para que no haya niguntema de meo vid, este todia no electricado, o entos las cosas. Entonces.
+
+00:10:19.000 --> 00:10:44.000
+Y as haemos largetura que vamos apreantiar. Y asa hemos tambien que lo que hemos aprender de todo esto. Entonces ahir recapitulando, porque llegamos hacer hasta, ya, hasta el punto maso menos, hasta el punto dos, hasta la terriad dos. Sigm veramos a un ricad, por ahi porque la memoria es fragile, vamos a car.
+
+00:10:44.000 --> 00:11:00.000
+Lo primero que hacer recuarden que cuando es un proyecto nuevo que esacia sabilitabelas a piece. Yeah. Recuerda quirines dos formats hacerlo, la primera dellas es que vallas a pizervicios y digas mira el yado hoy quiero dajar con victo.
+
+00:11:00.000 --> 00:11:13.000
+Perfecto. Pesque de cargue.
+
+00:11:13.000 --> 00:11:30.000
+Basaka, y buscas, big table. Entoncesito. Las estri per aca, y las que cosa habilitar. Yeah. Este siempre cuando abilita solamente los servicios que tu basa utilizar.
+
+00:11:30.000 --> 00:11:41.000
+No. Es mas que na para que tu valle es llevando un console de lo que vasa siento. Ya? Entonces.
+
+00:11:41.000 --> 00:11:46.000
+Vostas habitan las apis que sibamos recurando un poquito.
+
+00:11:46.000 --> 00:11:59.000
+Esos commandos recorden en el caso en las nuves, todos tien sucial. En el caso de good. Ya?
+
+00:11:59.000 --> 00:12:14.000
+HHL que va ser pregunta para versus recucuerdo. Quanto digas me permita mi el to bajar. Hasta cuantos lligas.
+
+00:12:14.000 --> 00:12:28.000
+Vamos a llamar. Hasta cinco, no bien hayamador damon segundo hecho del serdos. Onde estos aquistas oto puntittamas. Bien.
+
+00:12:28.000 --> 00:12:37.000
+Entonces. Vamos a dear tigrigue en authorizar, yeah? Adelante Juan.
+
+00:12:37.000 --> 00:12:38.000
+Thomas does.
+
+00:12:38.000 --> 00:12:44.000
+No.
+
+00:12:44.000 --> 00:13:06.000
+CCC, CCC. Solamento escendo promo el rica, todos… porfiz.
+
+00:13:06.000 --> 00:13:07.000
+Oh, okay.
+
+00:13:07.000 --> 00:13:21.000
+este decano. No? Salmente le poso nambre un nombre mas de tallado para que sepano. Pero si haciendo el uno, elaboratorio uno. Ya, como el entuenz.
+
+00:13:21.000 --> 00:13:31.000
+Aha! Entonces. Bien adelandi notorocupes. Entonces, entonces, entonces. Tamien les tambien tambien, ya, vamos for acao.
+
+00:13:31.000 --> 00:13:43.000
+estuvo y no pudo, no pudos hacer los pasos.
+
+00:13:43.000 --> 00:13:51.000
+Si es que si por favorice para poder guiar en es apartecita, si es que no me paso de frente a lot of punto.
+
+00:13:51.000 --> 00:14:01.000
+O sea me refiero esto.
+
+00:14:01.000 --> 00:14:10.000
+La habilitacion de lasapis. Cierto? Me a cono progarcita para se ver que si por fa?
+
+00:14:10.000 --> 00:14:26.000
+See? Lacias el resto.
+
+00:14:26.000 --> 00:14:32.000
+Yeah. Segundo paso calamos hecho tambien, en proceso. Yeah. Vamos por aca.
+
+00:14:32.000 --> 00:14:40.000
+Descarga por favorio, ya, voy ponindo tambien por aca las estos.
+
+00:14:40.000 --> 00:14:57.000
+Akka. Esta parte que estaca.
+
+00:14:57.000 --> 00:15:09.000
+Lo copiamos luego. Delorije a la carbeta que most treado.
+
+00:15:09.000 --> 00:15:19.000
+Esta partisita. Este segundo paso.
+
+00:15:19.000 --> 00:15:20.000
+irgo.
+
+00:15:20.000 --> 00:15:25.000
+So, no requirement of every choice, so…
+
+00:15:25.000 --> 00:15:38.000
+Yes. A ver cheque.
+
+00:15:38.000 --> 00:15:47.000
+Check in, check in. Checking is a part.
+
+00:15:47.000 --> 00:15:58.000
+No, nothing. Okay, okay, okay. Okay. Entonces. Hasta la parte la pici llegaron hacer. Lucerto, la parte lapi.
+
+00:15:58.000 --> 00:16:16.000
+Y corporations que el bien. Vamos porca.
+
+00:16:16.000 --> 00:16:24.000
+Para que no se… Esperme.
+
+00:16:24.000 --> 00:16:39.000
+Y esta. Entonces. Lo que vamos suer ahora y le vamos ahir que cosa, y tenemos la pita perfecta.
+
+00:16:39.000 --> 00:16:45.000
+Vamos hacer ahora el paso dos. E decir, este que izaca tareados, este que esta cada.
+
+00:16:45.000 --> 00:16:57.000
+Entonces. Entonces. En esotaria dos com otal, ya.
+
+00:16:57.000 --> 00:17:18.000
+ITA. Mero.
+
+00:17:18.000 --> 00:17:32.000
+haceles elaboratorio. Entonces? comando, por favor.
+
+00:17:32.000 --> 00:17:40.000
+Y vamos a copiar. eloto papuestricatles. Yeah.
+
+00:17:40.000 --> 00:17:45.000
+Estociero. Yes.
+
+00:17:45.000 --> 00:17:52.000
+View synthesis.
+
+00:17:52.000 --> 00:18:01.000
+Yeah. Bien ahoraca.
+
+00:18:01.000 --> 00:18:19.000
+Posiramente. Asia otro estorach, ya, ode un traba estorage. Asi a la carpeta, donde tu estas a 12mente, tu que asotirizar, yi laut, estoras sepe de copi, me no serre porque menocera pregunta.
+
+00:18:19.000 --> 00:18:23.000
+Que solobieron en la parte de la parte linus de dataproc.
+
+00:18:23.000 --> 00:18:24.000
+Intro to 0, 0 to 0.
+
+00:18:24.000 --> 00:18:49.000
+Recursivo, no? Entonces, en esta ruta que esta cada, ya, en esta ruta, esta lo caritamos utilizar.
+
+00:18:49.000 --> 00:18:50.000
+Continacion de los entencia.
+
+00:18:50.000 --> 00:19:07.000
+Este palito aca que yo tenguaca. Esartamente. Esarto. Entonces aquisto diciendo. Origen, ya, mi el sativo estan ahi, y lo voya pegar aqui mi destino. Yeah? Entonces eso por favorte, pegen lo aquisito, pegen en lacca, no?
+
+00:19:07.000 --> 00:19:21.000
+Sigo lobula copier.
+
+00:19:21.000 --> 00:19:26.000
+Yeah, good thing is.
+
+00:19:26.000 --> 00:19:32.000
+Mia san por favor seguir. Yeah?
+
+00:19:32.000 --> 00:19:46.000
+Vamos primero analizar que hace la funcion. Yeah. But under the empezar con el resto pasos. Entonces.
+
+00:19:46.000 --> 00:19:54.000
+Cuand ustedes quiere individual. El tema.
+
+00:19:54.000 --> 00:20:10.000
+del la parte visual con la parte. Yeah? En esta parte, que estamos comentando, pede que carge.
+
+00:20:10.000 --> 00:20:26.000
+Lo abres. Luego. Teos a liargo como esto. Protestadanita, pero sibo biendo tod la pantayaner. No. Aqui.
+
+00:20:26.000 --> 00:20:31.000
+Al costado derecho hay un la pisito. As es chicaca.
+
+00:20:31.000 --> 00:20:44.000
+poder continuar.
+
+00:20:44.000 --> 00:20:51.000
+Y esta, el resto. El Resto.
+
+00:20:51.000 --> 00:21:04.000
+Yeah, yes, yes. Entonces. Compues ver mas o menos la interfas que tavarez en la parte superior, se parece mucho a que cosa a to Visual Studio code. Cierto yasta. Entonces.
+
+00:21:04.000 --> 00:21:10.000
+En tommano yerda la parte superior hay no quedice Open Folder.
+
+00:21:10.000 --> 00:21:22.000
+Led astrigaqui. no que.
+
+00:21:22.000 --> 00:21:29.000
+Entonces, pede que de cargue. Yes. There is a welcome.
+
+00:21:29.000 --> 00:21:31.000
+Professor. open folder.
+
+00:21:31.000 --> 00:21:38.000
+Si perdo. Ah yeah yeah vamos fundament.
+
+00:21:38.000 --> 00:21:42.000
+Mila. again. Acquire open in your windows.
+
+00:21:42.000 --> 00:21:46.000
+See?
+
+00:21:46.000 --> 00:21:47.000
+T. See?
+
+00:21:47.000 --> 00:21:52.000
+Yeah, I'll let you kaki. para que te cargo un poquito?
+
+00:21:52.000 --> 00:22:00.000
+Open editor. Yeah. Yeah.
+
+00:22:00.000 --> 00:22:01.000
+See.
+
+00:22:01.000 --> 00:22:16.000
+Entonces, en la mano derecha ate no seite, si es que no hay trope en los fol dercitos, en estos cualdaditos de verie haber unboxisto que dice open folder. Omvotona azul.
+
+00:22:16.000 --> 00:22:32.000
+El quiero.
+
+00:22:32.000 --> 00:22:33.000
+Explorer.
+
+00:22:33.000 --> 00:22:42.000
+Dessalio? No, no, no, no. Tessal un potonsito y logo te carga como la radidon de to estas. Teza al eso?
+
+00:22:42.000 --> 00:22:43.000
+Ah, yes, sir.
+
+00:22:43.000 --> 00:22:52.000
+A ver compartment. solventamos rapido.
+
+00:22:52.000 --> 00:22:53.000
+Yeah, Aki.
+
+00:22:53.000 --> 00:23:04.000
+Entonces. As chiic en el en los fuel darcitos?
+
+00:23:04.000 --> 00:23:05.000
+Okay.
+
+00:23:05.000 --> 00:23:12.000
+Arriba La Lupa, esotica. Eso. Open folder.
+
+00:23:12.000 --> 00:23:13.000
+Ah, okay.
+
+00:23:13.000 --> 00:23:18.000
+Y darle ocho. Permita ma mi comparti.
+
+00:23:18.000 --> 00:23:28.000
+Okay. That's what's right.
+
+00:23:28.000 --> 00:23:33.000
+No pregunta edit.
+
+00:23:33.000 --> 00:23:40.000
+Studio.
+
+00:23:40.000 --> 00:23:56.000
+Mmm… lo que pasa que20 la viti. station.
+
+00:23:56.000 --> 00:24:02.000
+Es lo vamos hacer justamente en la sepero para responderte encorto.
+
+00:24:02.000 --> 00:24:18.000
+Pero si, se parece mucho eso, sien embargo, sin embargo, y hay um punte importante en eso para hacer un parentesis. Ya? Les cuento. Si bien sierto antigiti.
+
+00:24:18.000 --> 00:24:46.000
+Antidra, viti pricing. Si yo lo pongo a la parte cooperativa, ya, todia no esta entonces. Yue justamente algo que por lovesmana, ya para compartiles ahi, aca, en el ta bajo e locomentar a los de producto.
+
+00:24:46.000 --> 00:25:01.000
+Entonces. Porque les comento esto, porque es como que vamos a poner que esto tui ese los cargo para ser mi proyecto, para ser como una preya concerto supervien. No? Sigmaro cuando unolla va utilizar de forma corporativa.
+
+00:25:01.000 --> 00:25:17.000
+Esten en la parte corporativa. Porque esto ages como que yo me metre on Gmail, como que ello metro on Gmail, y yasta, todos el Gmail no…dos mio.
+
+00:25:17.000 --> 00:25:26.000
+Pero final como que no estoy en la capa y a tuitamos a llamarlo. No, no estoy en la parte cooperativa como como is Workspace. Entonces, lo que estan reccomendando.
+
+00:25:26.000 --> 00:25:32.000
+que las personas que quieren para sur organizacion. Pro pulsar, los identificatos quieran propulsar.
+
+00:25:32.000 --> 00:25:47.000
+Udilizar. Para so organizacion, agarante que en esta partecita, y se sustriba.
+
+00:25:47.000 --> 00:26:17.000
+para la parte corporativa. Yeah, sipong agas unombres, la meso compania, pues el correia. No para que apenas, ya tenga un a lot list como tal, puesan los primeros en que les puedandar. Pero si la interfaces muy parecido esa. Aha. Y viola todos semanos de mana vamos a haceria cosas con antigi.
+
+00:26:23.000 --> 00:26:41.000
+Pueden ir repasando con esse linkado. Que trio que el es vasribirpo. Yeah? Porque, no esolamente hacer pronouns. Hay vasante configuracion de por medio. Para puedo utilizarlo. Pero una es que lo configuras seguel eso perchebre. Ya?
+
+00:26:41.000 --> 00:26:46.000
+Tambien se puede unsar el skills. Yes.
+
+00:26:46.000 --> 00:26:51.000
+come a si, come a si.
+
+00:26:51.000 --> 00:26:58.000
+Oh.
+
+00:26:58.000 --> 00:27:03.000
+Ah, see, see, see, see, see.
+
+00:27:03.000 --> 00:27:28.000
+La parte lo que es el… La partes del sentimento per se, y a la temperatura. La temperatura, hay tode eso se es como que realmente bienlo como que… eldo que usted venian haciendos desarrollando, ya, pero va ser un poco mas.
+
+00:27:28.000 --> 00:27:43.000
+Rapido porque por ejembro, toda la parte que tui estoy respondo de esta forma, porque es mi estilo, por ejempro, yay oste mi estilo desarrolledor. En el plieme laboratorio de Senlin que ese pasado.
+
+00:27:43.000 --> 00:27:56.000
+voya comportiaca para que no… Nostem imaginandolo, si noca.
+
+00:27:56.000 --> 00:28:12.000
+Quiero con adeca, o quiero solo con lanchen, on con landraf.
+
+00:28:12.000 --> 00:28:29.000
+El tema lo que stringshot que posible mende tu dia soy mira quiero que estilo, este silo que este aca, como que… me permita se el desarrollo. Entonces de tebajo, todos es por so lesion, si bien ese artuan tirabiti.
+
+00:28:29.000 --> 00:28:47.000
+Les permite hacer el des arroyo la gente, ya, hay muchas configuraciones configuraciones que no son… no son dificiles, pero si importantes, hacer las dento de las decajita, de las cajitas que teza en la parte el mismaterid.
+
+00:28:47.000 --> 00:28:53.000
+Yessi? Yes. Yes or yes. Yeah, Monsar Esto, y estamos.
+
+00:28:53.000 --> 00:29:05.000
+Entonces, a verte alla, casta. Yeles ayo tambien la… So, dento de la carpeta, de veria ver algo como esto pueden revizar por favor.
+
+00:29:05.000 --> 00:29:17.000
+El sample, y el estrips. Me habizan porfis. Si, el resto.
+
+00:29:17.000 --> 00:29:37.000
+Resto, resto? Entonces. Vamos paraca. podamos verdan lubats.
+
+00:29:37.000 --> 00:29:53.000
+El manto, el banco, el banco que se mas symbol banque.
+
+00:29:53.000 --> 00:30:00.000
+El numero de cuenta, y asi suicamente, otositas mas. Bias. Entonces, ah la si.
+
+00:30:00.000 --> 00:30:04.000
+A partesa carpeta, tu tienes dos district. Y equi…
+
+00:30:04.000 --> 00:30:21.000
+A lo que hacen. Yeah, porque al finalespaito en la que estamos abrando.
+
+00:30:21.000 --> 00:30:29.000
+Entonces. La primera. Funcion. En esa funcion record en custes estan haciendo, venpaqui.
+
+00:30:29.000 --> 00:30:37.000
+me fustes. Estimera architectura, es decir?
+
+00:30:37.000 --> 00:30:52.000
+Entonces ir un poquito, primero para ver que tiene la funcion. Y poder entenderla.
+
+00:30:52.000 --> 00:31:11.000
+Meeting. Entonces. Tu condos as funciones, to tienes un achievivo ponto pellet cierto y un requirements. Teniendo encuenta que en el requirements tu tienes las dependencias de lo que vas utilizar.
+
+00:31:11.000 --> 00:31:23.000
+a citro que sino. En esa partistida meba y se importantito. Yeah? Entonos.
+
+00:31:23.000 --> 00:31:24.000
+Yeah, yeah. Thank you.
+
+00:31:24.000 --> 00:31:43.000
+hay. algundo comento per se.
+
+00:31:43.000 --> 00:31:50.000
+Poder ester esos, esos cosas que haydento de se pedefe para puerta vajarlo.
+
+00:31:50.000 --> 00:32:08.000
+Pero como dice? Entonces, vamos, vamos le voyadar antes de que vallan a tiar todo, y empeza explicarles, moyados pecunda pequinasplicacion. Qui caca un devotap.
+
+00:32:08.000 --> 00:32:17.000
+Ya? Este senor que estaca, y tienes dos formas.
+
+00:32:17.000 --> 00:32:24.000
+Una dellas es que tu vallas con utilizar los procesor que ll vienen importanto.
+
+00:32:24.000 --> 00:32:35.000
+Y la segundozion es que tudigas no yo viaad mi propio proceso, significa que esta tread tu propio modello. Yeah, sidochaca?
+
+00:32:35.000 --> 00:32:55.000
+En este custon processor. lo que tu aces que cosa es. Tu dices bueno. De todo los pedifes que yo tengo yo quiero por ejemro hacer resumenes.
+
+00:32:55.000 --> 00:33:11.000
+tambien. Internamente el document ellay en estos casos, tien prono todo tenga la palaber a generative AI.
+
+00:33:11.000 --> 00:33:25.000
+Es porque internamente tiene a lo que seleconoce como el modelos multimodal de Gemini. Yeah? En este caso, vamos a ponera, lo 2021 miren, vamos a ponera demo, testing.
+
+00:33:25.000 --> 00:33:35.000
+Caritamos ver. Yes, Aki, en este custon processor.
+
+00:33:35.000 --> 00:33:51.000
+Voya tener que yo de alguna otta forma. luego poder recien utilizarlo. Ya, que quiere decir.
+
+00:33:51.000 --> 00:34:13.000
+los documentos. Enzen al modelo y recien lo podilizar.
+
+00:34:13.000 --> 00:34:28.000
+a lo que va ser, lo que estan el documento que la se puesto. Ya, porque en este caso tus tienes que entenar al modelo. Es comos duices a mira voya hacer.
+
+00:34:28.000 --> 00:34:43.000
+Analysis Burface. que necitas para el consumo del modelo.
+
+00:34:43.000 --> 00:34:57.000
+Ponce proceso, es como esto. La diferencia, yeah, la diferencia de lo que me piden en el documento es que medic que yo tengo que escoger, ya, un proceso.
+
+00:34:57.000 --> 00:35:06.000
+Que significa en otos palabras. Queyo modar tiga la primera occion del botona azul.
+
+00:35:06.000 --> 00:35:14.000
+Y ustediene? Tendias per estabajar y identificar textos.
+
+00:35:14.000 --> 00:35:32.000
+Hay solo llama documengo ser. Bien, esto que estabraca.
+
+00:35:32.000 --> 00:35:42.000
+que tiene que vera. pasando un cheque evanco.
+
+00:35:42.000 --> 00:35:49.000
+Entonces possibente este. No, estoy pasando el temma no se de una facturtura.
+
+00:35:49.000 --> 00:36:02.000
+Posibremente. cada uno de estos, tenda, ya.
+
+00:36:02.000 --> 00:36:06.000
+Supropio es como que umo dello que hastalisto para hacer utilizado.
+
+00:36:06.000 --> 00:36:16.000
+Por ejempro, otos casos de uso que ustesian hacer, semocure. Tien una fuente, ya una fuente de datos.
+
+00:36:16.000 --> 00:36:25.000
+Compuros rostos. The Maria, de Jose, de Pepito, y asi suicament.
+
+00:36:25.000 --> 00:36:33.000
+Entonces, y tienendato sobrellos. Tesposian, lisanabi quieramente lo que ellos tandiciendo.
+
+00:36:33.000 --> 00:36:38.000
+con lo que yo tengo es verdad. Entonces, tu generas.
+
+00:36:38.000 --> 00:36:50.000
+Un proceso, de document, carambas. Y luego, que cosa lo comparas con tu base, ya, pueden hacer en ne cosa, porque estamos arando de documentos.
+
+00:36:50.000 --> 00:36:58.000
+Entonces. Entonces, por ejempro. En el documento usted van aver que les dice, ya que les dice.
+
+00:36:58.000 --> 00:37:28.000
+bando, from parcer. Yeah? Entonces, como tan civiliza esto. Soramente solo via para poder explicar esa parto quito no 100 toda via. Ya, tuta, ponerle, ti que entre… Mira la derecia con el antiro que estrplicado.
+
+00:37:30.000 --> 00:37:41.000
+Mos descargado.
+
+00:37:41.000 --> 00:37:55.000
+Y a tengo todo esto. Si fuera un solar pongo esportar lleso?
+
+00:37:55.000 --> 00:38:07.000
+Eso significa la tariaces que nos estan piediendo. Esta parte se lleg entender, si? Para puer continuor la parte lo que es el paito. Si?
+
+00:38:07.000 --> 00:38:13.000
+Sitaro, sir.
+
+00:38:13.000 --> 00:38:27.000
+Mm-hmm. podiamos utilizar quizas.
+
+00:38:27.000 --> 00:38:38.000
+Vamos a poneracca. Siendos argulandecito.
+
+00:38:38.000 --> 00:38:58.000
+Un caso de uso que. Microsoft. Este estabem que Microsoft que tiene.
+
+00:38:58.000 --> 00:39:11.000
+Power BI to doc, no? To PowerPoint, to Excel. Entonces lo que podian hacer assistan con esta solucion, por ejempro.
+
+00:39:11.000 --> 00:39:41.000
+A un tran funcion. Pero beza llamar al documente hay, llaman a que cosa podia llamar a una funcion primero que convierta, vamos a poner caso… Death cell. O the PowerPoint a pedefe.
+
+00:39:42.000 --> 00:39:57.000
+Engen mismo proceso, en el mimo proceso, ya, sinuardar, nuevamente al trabe usted ya maria, es como caca, primero, primero, convierten, con viertambas convertent a pedefe. Segundo.
+
+00:39:57.000 --> 00:40:17.000
+La Api de Gemini. No? Para que para que no tengan pues un problemas de quisas alguna funcion nos a reconos, que a lo que fuesto no comira pedefe, y logo usan la pida Gemini. O lapide jepe, cualque la piqueado de lo que fueste, no dan topic?
+
+00:40:17.000 --> 00:40:32.000
+solamente sopora por ahora esto que estan por a cano.
+
+00:40:32.000 --> 00:40:37.000
+Augusta. Intrusive. Aquin, qui ense paginas.
+
+00:40:37.000 --> 00:41:07.000
+limitante. utilizando dos processor, como asi, sacoran caca habia uno que sia custom splitter, ya, tu podia split hacerle split.
+
+00:41:09.000 --> 00:41:17.000
+Endoces para que recien cora el segundo proceso. Ya?
+
+00:41:17.000 --> 00:41:29.000
+Aha, esarte esarta. Uh-huh.
+
+00:41:29.000 --> 00:41:42.000
+para poder reducir. por document.
+
+00:41:42.000 --> 00:41:43.000
+I yet. Ah, yeah.
+
+00:41:43.000 --> 00:41:50.000
+tenegas.
+
+00:41:50.000 --> 00:42:04.000
+Ya? Lo que esa recomienda y lo que estos hemos reccomendado a nosotides.
+
+00:42:04.000 --> 00:42:34.000
+de uno triformas cierto tiempo. Hola ota, hola ota, es hacer un gusto procesor.
+
+00:42:34.000 --> 00:42:52.000
+sonario el primero que estoy comentando.
+
+00:42:52.000 --> 00:43:02.000
+ya. Pete que carge.
+
+00:43:02.000 --> 00:43:24.000
+No? Vamos a poner caso que quieras no sepues.
+
+00:43:24.000 --> 00:43:54.000
+car de esos archivos. Estas columnas. Entonces ahia y a utiza la paymena y todo ve esono. Esto seria lau tiamas rapida, la auto lo que te esa, pues no hacer un gusto en processor. Que de unos deforma de Mariempoquitomas. Aja. Aha, or asi para haber. Y en temas deformatos, si informato es pedefes y imagines cambia.
+
+00:43:56.000 --> 00:44:10.000
+muy buen punto lo que comentastes. Descuento. Mayormente cuando antes que haya toda la parte.
+
+00:44:10.000 --> 00:44:17.000
+Hyperdom. La parte… Generativa, yeah.
+
+00:44:17.000 --> 00:44:27.000
+Asi mijor. de los Pedefes.
+
+00:44:27.000 --> 00:44:53.000
+lo que fuesse. yay que se este casa.
+
+00:44:53.000 --> 00:45:09.000
+Automaticamente, automaticamente. Asice en el auto documento, el nombre este abajo, en el todo documento, el nombre este como pavun costadito, asigar Reves, yual loba interpretar, porque, porque requester.
+
+00:45:09.000 --> 00:45:24.000
+Internamente es llamina el que esta haciendo la taria. Ya, la diferencia de este documentar directamente la pidell Gemini, es el temer los tokens. Porque, porque mamos para aqui.
+
+00:45:24.000 --> 00:45:32.000
+Est el tema el precio. Porque una cosa es meeting.
+
+00:45:32.000 --> 00:45:43.000
+y tambien en el line de porque. Acacia.
+
+00:45:43.000 --> 00:46:02.000
+Y mi en por aca. cantia tokens.
+
+00:46:02.000 --> 00:46:14.000
+los processesamiento. Si yo tilizo.
+
+00:46:14.000 --> 00:46:31.000
+De uno, asin com millones de paginas mensualmente. Yo.
+
+00:46:31.000 --> 00:46:48.000
+Es el costo por cada paginita. Entonces. Esto lo bonito.
+
+00:46:48.000 --> 00:47:17.000
+Pepito de Maria, no este Lopez, no se lopez. Lopez Perez, todes… llamarlo asi.
+
+00:47:17.000 --> 00:47:32.000
+No. Yes. Hasta estamos bien, sentiende.
+
+00:47:32.000 --> 00:47:38.000
+Me confirman porfis el resto, y esta. Vamos paraca. Dicho estoyce habe docume hay, chebre.
+
+00:47:38.000 --> 00:47:52.000
+La parte estora, ustedia tambilo conocuerde que entado estoras hay tipo de storas. Sa cuerda, cual es. Solamente solamente para que ser recuerden, porque la memorial fragile, ya.
+
+00:47:52.000 --> 00:48:11.000
+que siempre vas utilizando. En esta parte de los vacuets, y equivalente.
+
+00:48:11.000 --> 00:48:31.000
+El estandar, el nirla, el corla llarcia. Cada uno de estos, ya cada uno de estos.
+
+00:48:31.000 --> 00:48:35.000
+Dependiendo el uso que tu le des niras bueno.
+
+00:48:35.000 --> 00:48:45.000
+Sera una desalmez. Ya? Yeah.
+
+00:48:45.000 --> 00:48:57.000
+Otopunto. Oto punto. Yo tenia nita, yo tenia, mi datata.
+
+00:48:57.000 --> 00:49:06.000
+En archiv, porque un backup. caso, no?
+
+00:49:06.000 --> 00:49:20.000
+No, porque tenia, pues tema owner a la vase datos.
+
+00:49:20.000 --> 00:49:35.000
+Necesito recuperar es hace, ya, porque de no de unota formamos a poner de uno traforma, desecito re vulber nuevamente a locaviantes. Yamos a poner que el vacat de todo el ano lo existes el ayer. Entonces, el diaoy.
+
+00:49:35.000 --> 00:49:47.000
+La 21 necesita la cia la recuperacion. como el die.
+
+00:49:47.000 --> 00:49:53.000
+Locopio, lobajo y a hi esta mi va cada, ya? Y el rapido. Dependarnesierto.
+
+00:49:53.000 --> 00:50:09.000
+Totes un tiempo de recuperacion. para recuperar.
+
+00:50:09.000 --> 00:50:27.000
+El o los archivos que tienes en estos tes. Cada no tiene su propio esce lea comatar. Ya, entonces a recordas uno es que se instantane. Yeah? Entonces porque no recuerdo bien el numerozarto de lo que te iza como se lad a tiempo recuperacion, pero se tienna.
+
+00:50:27.000 --> 00:50:34.000
+Yeah? Entonces aparte lo que te izaca. Luego que tienes, el famoso biscueri.
+
+00:50:34.000 --> 00:50:50.000
+conocimos en persona. Recorda que esa quidon tuas armar que cosa tu lajas. Y aqui un punto importante mega importante. Aqui las vamos elargo.
+
+00:50:50.000 --> 00:50:57.000
+Cuando ustedesarment sudata lake, ya? emparca esta.
+
+00:50:57.000 --> 00:51:06.000
+Recordar que tien que concierar datos estructurados. Yeah, datos no esturturados.
+
+00:51:06.000 --> 00:51:11.000
+Estotorados, y esta. Enos todos…
+
+00:51:11.000 --> 00:51:22.000
+Entonces. Entonces.
+
+00:51:22.000 --> 00:51:30.000
+Ambus, pued pasar que actualmente en negocio solamente estuvo trabajando con esto.
+
+00:51:30.000 --> 00:51:40.000
+es un ingenero de machine learning. own that engineer.
+
+00:51:40.000 --> 00:51:58.000
+Omarquite datatos. Re esociales audio imagines, etc.
+
+00:51:58.000 --> 00:52:05.000
+Entonces, cuando tu tenga, cuando tua veces architectura que tecommento consider a tambien eso. Es decir.
+
+00:52:05.000 --> 00:52:13.000
+En la parte a catenz, como enjesto, lotosuturados, como proceso y como luego almaceno.
+
+00:52:13.000 --> 00:52:26.000
+Lo mismoca. Posibremente baverramientas que se.
+
+00:52:26.000 --> 00:52:45.000
+Ya? O tables. Porque no estecho para eso.
+
+00:52:45.000 --> 00:52:54.000
+Entonces. Recuerdene sobien por favor, porque, porque justamente la espazada, ya la despazada.
+
+00:52:54.000 --> 00:53:10.000
+Este guillarme Milajas. Estoy considerando tirizar iceberg.
+
+00:53:10.000 --> 00:53:26.000
+Yeah.to, ya.
+
+00:53:26.000 --> 00:53:31.000
+Ah, si verdad. Y donde santor que textura. Anon esta.
+
+00:53:31.000 --> 00:53:48.000
+Porque el que yo prantidado solamente te permite que cosa.
+
+00:53:48.000 --> 00:54:01.000
+Solamente las vaseatos. de lo que fuese. Entonces.
+
+00:54:01.000 --> 00:54:18.000
+La no SQL de Amazon. Y asi socioamente. Entonces, es sumamente importante.
+
+00:54:18.000 --> 00:54:26.000
+Yeah, siempreber el bosque compreto, cuando ustes armenso arquitectura. Yeah? Tonces boro esto, yesta.
+
+00:54:26.000 --> 00:54:36.000
+BigQueryo diciendo es importante tambien definir si al final.
+
+00:54:36.000 --> 00:54:53.000
+Boy aurmar, esse concerto que loyama. Ya?
+
+00:54:53.000 --> 00:55:01.000
+Tenzia que tener… Por ejem provisqueri.
+
+00:55:01.000 --> 00:55:07.000
+Para que para pued a se processamiento los datos que ustedo requiriendo.
+
+00:55:07.000 --> 00:55:20.000
+Entonces, si esa fue scenario. Tome encuenta siempe el tipoedato. Ya, y que vamos agiriendo de apocos tambien conforme vamos a ir diciendo.
+
+00:55:20.000 --> 00:55:28.000
+Por ejempo, sisteban a tabajar com mode elos, como esu caso, y usted vanas hacer, lo que seleconose, como.
+
+00:55:28.000 --> 00:55:41.000
+Anita esta entreo estoras. Voya processar con biscuer.
+
+00:55:41.000 --> 00:55:56.000
+Ya? query.
+
+00:55:56.000 --> 00:56:20.000
+futuro centifico edatos. utilizando orese.
+
+00:56:20.000 --> 00:56:39.000
+Avro. Ya, entonces esto no so el viden por favor no so el viden, ya, que lo revisamos tambien en la trace pasada, trode vellamos la parte dar martu at the lake.
+
+00:56:39.000 --> 00:56:46.000
+Yeah. Es por eso mismo, hay a casa parte este abro mirro para por escuchar los un poquito.
+
+00:56:46.000 --> 00:57:06.000
+Yeah, entonces es eso. Odyssey. Asaka, vamos bien hastessa partecita, hasta y si, hasta alguna pregunta.
+
+00:57:06.000 --> 00:57:22.000
+Una consulta. Estagarpeta que he demonstriado en traushell editor tiene persistencia condo seramos seborra ya. No. No seborra. Se queday. Mientas que tu no labor, se queday. No hay ni umbrema. Y buena pregunta. Les cuento.
+
+00:57:22.000 --> 00:57:37.000
+Esta parte que estaca el trausel, como tal, espara todo el tema como que estos tuestajanuntu ento traves como que hoy semevor la funcion. No, si tundo las es liga que loborras, pues no seborras. Ya igualito el techer. Ya sinigumploreema. Aha!
+
+00:57:37.000 --> 00:57:51.000
+El tema del Patsup. Vamos por aga. Aqui voy explicar tamientes para cosa que a tien to el panorama compreto. Yeah.
+
+00:57:51.000 --> 00:57:53.000
+Sitar aguentamelo.
+
+00:57:53.000 --> 00:58:04.000
+See, in esta console es persistente para la cuente do soario.
+
+00:58:04.000 --> 00:58:05.000
+para todo la cuenta.
+
+00:58:05.000 --> 00:58:11.000
+Solamente para la cuenta. Esartoca… Si, cincoll igandamas.
+
+00:58:11.000 --> 00:58:17.000
+Y lo pudo ver comunestoras. Calistoras?
+
+00:58:17.000 --> 00:58:18.000
+What's the… Anya.
+
+00:58:18.000 --> 00:58:25.000
+did the job starts? No, no, no, no, no, no. Yeah. Esteca.
+
+00:58:25.000 --> 00:58:31.000
+Windows por ejemro, windows GCP. Oh. Aka?
+
+00:58:31.000 --> 00:58:32.000
+I did.
+
+00:58:32.000 --> 00:58:46.000
+Lo descaro guaca. installarlo.
+
+00:58:46.000 --> 00:58:48.000
+Supercutorio, yeah. Alright.
+
+00:58:48.000 --> 00:59:03.000
+Esartosor, es como que estoy promos todos siguiente, no? Entonces, usted. Perio tenia cosas en mi espacio te da ajo racial, ya.
+
+00:59:03.000 --> 00:59:14.000
+Namas. Pero si, seper solamente a traves del mimo correo, que le posistas. Aja, y esi.
+
+00:59:14.000 --> 00:59:24.000
+Yes. mas. Entonces, sigo.
+
+00:59:24.000 --> 00:59:39.000
+Vamos a poner, el casi potico que estoyce. Por ejemro, por ejemro nosot dos, ya, dento la accompania.
+
+00:59:39.000 --> 00:59:47.000
+Hay como varios request que hay que hay que hacer.
+
+00:59:47.000 --> 00:59:59.000
+Entonces, lo que se pro pulsa pare esos casos, obesos scenarios, vamos aporos scenario que ello.
+
+00:59:59.000 --> 01:00:18.000
+En eso Bore station.
+
+01:00:18.000 --> 01:00:39.000
+otrias el station per se. Esto, tete.
+
+01:00:39.000 --> 01:00:46.000
+Vas a la configuracion. In luego, alvor station per se.
+
+01:00:46.000 --> 01:01:02.000
+que carque. todeso. Yeah?
+
+01:01:02.000 --> 01:01:18.000
+Pueder tene los en el tema trau. De tu computador.
+
+01:01:18.000 --> 01:01:42.000
+As un tiemposidas. Entonces ustad pluramando, esta haciendo tod la architectura pues de ense tiempo, que estaba en la parte dobrese, ha si no todo laquite tuber a tode ver estabre demando, todo, porque la mi, lo mismo, veja la cel al computador.
+
+01:01:42.000 --> 01:01:56.000
+studio code. Code. llamas no prendio.
+
+01:01:56.000 --> 01:02:15.000
+del debajo. momentento.
+
+01:02:15.000 --> 01:02:18.000
+cuentamelo.
+
+01:02:18.000 --> 01:02:24.000
+Ide. Yeah.
+
+01:02:24.000 --> 01:02:28.000
+Okay. me.
+
+01:02:28.000 --> 01:02:35.000
+E it.
+
+01:02:35.000 --> 01:02:45.000
+terminaron de pluramar. cinco latar de un viernes.
+
+01:02:45.000 --> 01:03:00.000
+Y solbidaron. La mayor preocupacion don't virtuales porque la dejas tu prendida, tena coblar. No? En este caso.
+
+01:03:00.000 --> 01:03:17.000
+Mar pues. Yes. Uh-huh.
+
+01:03:17.000 --> 01:03:21.000
+He told us the world and storage, you know?
+
+01:03:21.000 --> 01:03:22.000
+Entonceso que. and it's done this.
+
+01:03:22.000 --> 01:03:32.000
+En el war station. Uh-huh.
+
+01:03:32.000 --> 01:03:36.000
+a stora.
+
+01:03:36.000 --> 01:03:45.000
+See? C C C, lepo. la configuracion.
+
+01:03:45.000 --> 01:03:46.000
+Mm-hmm.
+
+01:03:46.000 --> 01:04:06.000
+Aha, ok. Vamos por laqui, por laqui. Ah, yeah. Entonces, as aguia hemos visto document. Y hay walamos a hablar a tocar despues, pero y a sabem para que funciona.
+
+01:04:06.000 --> 01:04:20.000
+Vamos para la parte de patsap. Entonces. Brese.
+
+01:04:20.000 --> 01:04:28.000
+Yeah. Entonces. Por ejempro.
+
+01:04:28.000 --> 01:04:38.000
+Encada id comatan. La forma que captura los datos entiempo real, que los mantienes en esce momento, se llaman distintos.
+
+01:04:38.000 --> 01:04:48.000
+En el caso de lo que espues se llama WhatsApp como tal. El Patsap per se.
+
+01:04:48.000 --> 01:04:59.000
+Asi? Le pones la palarita. Ya.
+
+01:04:59.000 --> 01:05:07.000
+To dis alpats alight. pasad per se.
+
+01:05:07.000 --> 01:05:17.000
+No sayamarlo. Dos cosas importantes acarar.
+
+01:05:17.000 --> 01:05:23.000
+La primera dellas.
+
+01:05:23.000 --> 01:05:34.000
+topico. Yeah?
+
+01:05:34.000 --> 01:05:54.000
+Tutinas para que por deferion. un topico yo una substrizion.
+
+01:05:54.000 --> 01:06:08.000
+Topico y substrezia. Porso le pose ata lake.
+
+01:06:08.000 --> 01:06:19.000
+Y la subscribio. Porque hoyenbiaratos de personas, voy enviar datos dementas, voye mandar datos.
+
+01:06:19.000 --> 01:06:28.000
+The logistica y asi su decisivamente. Entonces. Un topico por solanita, si podia el solo.
+
+01:06:28.000 --> 01:06:34.000
+No. Siempre necesita un topico pa poder vivira. Yeah.
+
+01:06:34.000 --> 01:06:45.000
+Oda pregunta. Esta parte que esta ga que estamos abrando el paza vido vezo, retiene mensajes, si, si retiene mensajes.
+
+01:06:45.000 --> 01:06:56.000
+me fistes… I don't let the demo features.
+
+01:06:56.000 --> 01:07:16.000
+Enable also Augusta. Cuentamelo.
+
+01:07:16.000 --> 01:07:18.000
+Okay, so haciendo esto taming, orita.
+
+01:07:18.000 --> 01:07:30.000
+No, no, no, no, no, no, no, no. No, no, no. Tobi, no. Tobieno, tobieno. Aja, shorto esplicanda participit.
+
+01:07:30.000 --> 01:07:47.000
+Mm-hmm. Entonces. La ventas a tambien de esta parte, ya que cosa es. Yun es arquitectura ojo pesta sejen esto porque requerecer su tajo y a parte su proyecto. Ya, miraca.
+
+01:07:47.000 --> 01:07:52.000
+Puedesar otreconda pregunta que yo teaga, no lo ? No, mira.
+
+01:07:52.000 --> 01:08:01.000
+Aquioto soy poniendo, por ejempro. Um batzap?
+
+01:08:01.000 --> 01:08:05.000
+Um tram funcio, o tambien conocid un trabra unfuncio.
+
+01:08:05.000 --> 01:08:14.000
+query. Yeah. De un paza.
+
+01:08:14.000 --> 01:08:35.000
+Huh? Como asi. Entonces, miraca, si yo quito esto y me voyo donde estoy trano el topico mi eloquedice esportar mensajed datos a BigQuery.
+
+01:08:35.000 --> 01:08:50.000
+Y pasarlo directamente hacia biscueri porque tengo entos es yo una funcion aca, que tren ustedes.
+
+01:08:50.000 --> 01:08:56.000
+Para queseria.
+
+01:08:56.000 --> 01:09:00.000
+service para dalune process.
+
+01:09:00.000 --> 01:09:11.000
+Esato, esartamente. Esarto. Porque, porque lo que yo necesito, en este scenario, yeah, en este scenario, que cosa es necesito.
+
+01:09:11.000 --> 01:09:28.000
+Con usted verse scenario, ya, ustedes baner sioci algo intermedio. Antes de registara biscuer.
+
+01:09:28.000 --> 01:09:41.000
+Ja? Sir la libiarigas.
+
+01:09:41.000 --> 01:09:47.000
+Entonces.
+
+01:09:47.000 --> 01:09:48.000
+Hmm. Yeah.
+
+01:09:48.000 --> 01:09:53.000
+Una consulta y rapides. Logosientos.
+
+01:09:53.000 --> 01:10:02.000
+bien. Es para la captura dementos. Todo travesundo y muy bueno pregunta lo que tomizas.
+
+01:10:02.000 --> 01:10:07.000
+Si es?
+
+01:10:07.000 --> 01:10:16.000
+Maso menos. Vamos praca. Cono estas en architecturas.
+
+01:10:16.000 --> 01:10:27.000
+in real time siempre. Yeah, in real time. Yeah?
+
+01:10:27.000 --> 01:10:37.000
+Entonces. Estar quitatura realtime. O. Say near real time.
+
+01:10:37.000 --> 01:10:43.000
+Siempre sioci necesitan ustedes un WhatsApp. Siempre. Huh? Porque.
+
+01:10:43.000 --> 01:11:01.000
+Pued. OR?
+
+01:11:01.000 --> 01:11:11.000
+Or… yes. Un Kafka.
+
+01:11:11.000 --> 01:11:18.000
+Cough, cough, cough. Esto lo mismo.
+
+01:11:18.000 --> 01:11:32.000
+Porque. Ah, por el scenario que cuando un noce.
+
+01:11:32.000 --> 01:11:38.000
+El tema de injesta in real time or near real time, uno recibe.
+
+01:11:38.000 --> 01:11:49.000
+esos pontitos son solicitudes. Solicitudes que hace de request en vio de informacion.
+
+01:11:49.000 --> 01:12:09.000
+sigamente. Para que el producto que va recibir processarto a las cosas, no valla colazar porque no esta hecho pa eso tu necesitas vamos a llamalor terminos coloquiales una cola.
+
+01:12:09.000 --> 01:12:14.000
+En esa cola de mensajes, tu vas capturandolos para que vallas procesandolos.
+
+01:12:14.000 --> 01:12:31.000
+Esta forma que estaca en esa cola es conforme vallegando esse mensaje, ya, automaticamente, la colabas altru que lo llaman FIFO, y lo va pasar al sigiente estadillo. Al esta dio porjembre de un data flow. Para que haga algun truce elim piezo lo que fuze.
+
+01:12:31.000 --> 01:12:46.000
+Vamos a Amazon el Kinesis, ya, te vermite en ati en la captura deventos.
+
+01:12:46.000 --> 01:13:04.000
+Sayoto que se llama tambien este… Qui hace me fuel numberfrum.
+
+01:13:04.000 --> 01:13:10.000
+Yes. Uh-huh. See?
+
+01:13:10.000 --> 01:13:27.000
+Yeah, vamos por aqui. usted tienen que cosa, no tienos que cutaro nada, si que ar asi, vamos esplicar, ya. Tonces tutu tienes, vamos poraca.
+
+01:13:27.000 --> 01:13:42.000
+En ese procesamiento de la fartura que estamos nosotos mencionando, tu tendias libreas. En esa libreas que estamos mencionando.
+
+01:13:42.000 --> 01:14:00.000
+los pazones, no, las vejen de regularares. El tema por ejemro de la oz, el tema al assistem operativo, el y en eso que mos dice.
+
+01:14:00.000 --> 01:14:11.000
+Ja? Todo esto que esta por aqui, que cosa es.
+
+01:14:11.000 --> 01:14:17.000
+Libreas. Luego, pregunta, estos que son. Quesarian esos.
+
+01:14:17.000 --> 01:14:27.000
+vezo en Paoito.
+
+01:14:27.000 --> 01:14:38.000
+esa, es… Casta.
+
+01:14:38.000 --> 01:15:02.000
+Seder.
+
+01:15:02.000 --> 01:15:07.000
+10 to this 2. Yeah, peram.
+
+01:15:07.000 --> 01:15:13.000
+That is pretty young. Take copy. Yes, stop.
+
+01:15:13.000 --> 01:15:31.000
+abuardar tu… El proyeca ID la localizacion.
+
+01:15:31.000 --> 01:15:58.000
+El topico de pazapa. Lugo en esta parte que estamos abrando, tu vas ahir armando que cosa, basirama armando definicion de rutas, casa ir ta bajando, no? Aqui una lista.
+
+01:15:58.000 --> 01:16:12.000
+todo las variables per se. Yeah? En esta parte, bajo bajo, bajo, todo estos el eschema de que debij queeri.
+
+01:16:12.000 --> 01:16:21.000
+Luego, lo que haces, vamos por aca para puerten poco mas despacio, haysta.
+
+01:16:21.000 --> 01:16:45.000
+Este viculobatz? en es alista tu necesitas iterando, una uno para que para poder convertirlo en un tipo mappa para quenese maapa que estamos diciendo biscuerir le permitacer la enjesta desos datos que vamos nosotos a esta er.
+
+01:16:45.000 --> 01:16:53.000
+de la parte de la funcion que estamos diciendo. Ya? Lo que lo que tienes.
+
+01:16:53.000 --> 01:17:14.000
+document processor servicer tiente. Luego, el tiente storas, el tiente BigQuery, y el tiente depasa. Qui quiere decir eso, con dodad el tema de paito, y a con la parte de lo que espos lasapis de GCP.
+
+01:17:14.000 --> 01:17:22.000
+Estriente va permitir poder hacer la conecion que estamos requiriendo.
+
+01:17:22.000 --> 01:17:38.000
+processa la farturenci. lo que necesitas.
+
+01:17:38.000 --> 01:17:48.000
+El impo de paramentos, el atacet que sibar tu vase datos, el nombia tabla y la sentidades es decir cada columna que estajo.
+
+01:17:48.000 --> 01:17:54.000
+Entonces a parte tutu tienes. a todata set.
+
+01:17:54.000 --> 01:18:16.000
+Lo que lo que tuas escent todo esto. Estes sentidades, las copias, yase es un copi para no Danar lo que a tenias, y lo pondesone en Oda variabre. Esta variables para ester cada una de locaidento, de cada column.
+
+01:18:16.000 --> 01:18:20.000
+llivas a tener que goza el qui y el valve.
+
+01:18:20.000 --> 01:18:44.000
+el qui. Con lo que es el valo perce.
+
+01:18:44.000 --> 01:18:54.000
+una mos hayamarlo… Funcion ya de insercion.
+
+01:18:54.000 --> 01:19:08.000
+para que puedas incertar todos escentidades que preyuamente y a te que d'astes. Ya, el decir solamente vasa quedarte con el valor, mas no con laqui. Poros est todo que estamos diciendo.
+
+01:19:08.000 --> 01:19:22.000
+Vasa convertir la informato ieson. que estaca.
+
+01:19:22.000 --> 01:19:26.000
+Jason punto lobot, lo pones unretto Jason per se.
+
+01:19:26.000 --> 01:19:41.000
+El eschema que tras a superior. Uno de estos aparte que estamos diciendo, luego lo que haces, delimitas.
+
+01:19:41.000 --> 01:19:52.000
+En cada formato, en cada uno de las cosas que estamos diciendo, para que para que pueden empezar hacer utilizado. Ya.
+
+01:19:52.000 --> 01:20:00.000
+Estelle luego, una es quieren estodo eso, que tien es el formato el limitado, todo eso para puerta bajar, lo que haces que cosa.
+
+01:20:00.000 --> 01:20:09.000
+Yamas. Loatevo franjiso, llamas a lot jeto a la table de referencia, y lobo a la configuracion del job.
+
+01:20:09.000 --> 01:20:22.000
+hasta que se autocomprete. Una vez que esa autocampreta, ya, si por ejemme, hayar algun heror, imprimos el tema del error.
+
+01:20:22.000 --> 01:20:27.000
+Esta funcion como tal, esta funcion, bastivira se ha.
+
+01:20:27.000 --> 01:20:32.000
+Esta parte que esta casa funcion se llie en tender.
+
+01:20:32.000 --> 01:20:37.000
+See? Do you go?
+
+01:20:37.000 --> 01:21:07.000
+generar y todes. Yeah? Entonces voy paraca. Lauta funcion. La funcion de ester las letas.
+
+01:21:10.000 --> 01:21:24.000
+Vacia. voyaser unfor.
+
+01:21:24.000 --> 01:21:30.000
+En este 4 que estamos diciendo ban empezar recurre cada una las coordinadas.
+
+01:21:30.000 --> 01:21:46.000
+El documento, el ancho con el segmento. esto, primer indice.
+
+01:21:46.000 --> 01:22:03.000
+Para que te puester toda la palabra. Ya? Loformas que cosa, carambas. Os otoya porquier lleva tiempo que se va es con estar. Que cosa y lego ultema al mas daru respuesta, y lego violes a devolver.
+
+01:22:03.000 --> 01:22:15.000
+Vamos a la funcion que realmente baser, vamos llamarlo la el cerebre todo esto. Y la que es un poquito mas larguita en esta.
+
+01:22:15.000 --> 01:22:19.000
+Get in a Saka. En esta primera parte.
+
+01:22:19.000 --> 01:22:27.000
+It was Amanda 110 y el contesto. Significa que recuerda que estos hacion un architectura.
+
+01:22:27.000 --> 01:22:38.000
+evento y el contesto. En eso que estamos y siendo, donde de me fustas aca, tuas our mas primero el ur, y que seluri.
+
+01:22:38.000 --> 01:23:02.000
+25 a, como asi. Esto que estaca lo copias.
+
+01:23:02.000 --> 01:23:17.000
+Eso significa. Entonces, o tambien vaselmaca configuracion, aca tamien dice.
+
+01:23:17.000 --> 01:23:31.000
+esto que esta poca. Yeah. estas alliendo contexto.
+
+01:23:31.000 --> 01:23:42.000
+Vamos a chicaron poquito a nostabian si. Disses. Si elevento es un peo imagine un give.
+
+01:23:42.000 --> 01:23:51.000
+de Pedefe. O si elevento, es un imagen. De un tiff, entonces.
+
+01:23:51.000 --> 01:24:00.000
+As estod lo que esta porca. Todo que esta por aquito. Yeah? Caso contadario donde temo fustes.
+
+01:24:00.000 --> 01:24:17.000
+solo support estos. Enton funcion como del limitador.
+
+01:24:17.000 --> 01:24:26.000
+Yeta. esto.
+
+01:24:26.000 --> 01:24:36.000
+Mira. Miraca. Tienes. Eluri como tal.
+
+01:24:36.000 --> 01:24:51.000
+El tipo de contenido caidenzo del archivo. porqueo para que para que los lo voya a utilizar.
+
+01:24:51.000 --> 01:24:56.000
+Vamos por aqui. Lo que lo que tuaces.
+
+01:24:56.000 --> 01:25:03.000
+Request document AI types, document processor, Bash Processor, request.
+
+01:25:03.000 --> 01:25:09.000
+La forma como 12 final vasarmare es request que estamos diciendo.
+
+01:25:09.000 --> 01:25:21.000
+Tambien pues altern. O tambien la oza. Es que tutirizes.
+
+01:25:21.000 --> 01:25:26.000
+Que va haziraptamente. a la documentacion.
+
+01:25:26.000 --> 01:25:33.000
+Akastan. Pete que car.
+
+01:25:33.000 --> 01:25:49.000
+Por se aco. Gui atte de la guia de la api de documen yay porque ese saben que la llen general.
+
+01:25:49.000 --> 01:26:06.000
+es buena, pero todabia sig habiendo rores, ya, vamos llamas, horores, que pueser que afinal pul de no ofunciones. Entonces, para que se ha lo mas preciso posibre, lo que tu aces dices bueno, por favor.
+
+01:26:06.000 --> 01:26:25.000
+Giate de la guia oficial y redado link. Ata de Paito.
+
+01:26:25.000 --> 01:26:47.000
+Yeah? Are que esced. Vas hacer todo el tema que se llama la parte operacional para que pued para que puedas tuza car los datos de ser request per se.
+
+01:26:47.000 --> 01:26:53.000
+En este operacion, pued pasar el scenario que tu documentos tan rande.
+
+01:26:53.000 --> 01:27:08.000
+para esperar para que cabe el operacion. Luego, pregunta, esto.
+
+01:27:08.000 --> 01:27:18.000
+Empito.
+
+01:27:18.000 --> 01:27:28.000
+Es artamente, no? Esarto. Lo que tu tienes que armar.
+
+01:27:28.000 --> 01:27:44.000
+Luego, el prefijo, el prefijo digo, el output, y el prefijo.
+
+01:27:44.000 --> 01:27:56.000
+Porque, que significa esto, el output va ser la salida de como qui es que es que seguarde, y el prefijo es… El prefijo von de tem ejembro be emp aqui.
+
+01:27:56.000 --> 01:28:12.000
+su prefijose. para harmal prefijo per se.
+
+01:28:12.000 --> 01:28:22.000
+Lo que lo que tuase en esta parte vas obtener el nombie del vacuets, al fin alcabo, el vacuum que tas aquedar para muadar aitos archivos.
+
+01:28:22.000 --> 01:28:32.000
+cosa. Armar Yalistar los bro significa.
+
+01:28:32.000 --> 01:28:40.000
+storage. necesitas yterar.
+
+01:28:40.000 --> 01:28:50.000
+Para que en esa iteracion que estamos diciendo de permitati.
+
+01:28:50.000 --> 01:28:57.000
+resultados en Jason. Porque porque recura que tu tienes esta parte.
+
+01:28:57.000 --> 01:29:05.000
+Jason. Entonces, siu aca.
+
+01:29:05.000 --> 01:29:27.000
+Van pesar encontar y a estaer. cada uno de lo que haiento de la parte del documento descargarlo de forma momentania en esta linea que estaca.
+
+01:29:27.000 --> 01:29:40.000
+Y empezar a convertir, ese tipo de dat. para que recience pueda entender.
+
+01:29:40.000 --> 01:29:44.000
+Cas es contos aparte que estamos diciendo con todo lo que esta ca, en bias avalidar.
+
+01:29:44.000 --> 01:29:52.000
+Cada uno de las columnas que estaes en este pedefe se llaman entidades.
+
+01:29:52.000 --> 01:30:01.000
+Es por eso que en la parte que estaca loan los tanamando estacion dentidades y turia un dicionario.
+
+01:30:01.000 --> 01:30:17.000
+En la parte que estamos diciendo en esta archivo que van pesar.ididades para que vai abuardando, uno uno vasa ser unfor. Sierto, y esta. For de que… de las paganas queen documento, lo ponos la variable.
+
+01:30:17.000 --> 01:30:32.000
+En ese docamento, abra muchos campos, y lo compas empezar a validar. Que la fecha que por la invoice number que lo que esta por aca, y asi sucio amente. Es decir, si yo reviso.
+
+01:30:32.000 --> 01:30:45.000
+Esta parte que me estan amindicando. Yo de toda la farturan no mi interesa todos, solamente me entereza.
+
+01:30:45.000 --> 01:30:58.000
+Hando. Tata.
+
+01:30:58.000 --> 01:31:07.000
+Entonces es por eso que tu estas poniendo en esta parte. Todo que tu quias procesar.
+
+01:31:07.000 --> 01:31:19.000
+Luego, si turqui esa para esto, es para la parte que para que segar de todo documento, no, de todo que lo posiblemente, pues tengas todo documento.
+
+01:31:19.000 --> 01:31:31.000
+Vamos a poner el casi potetico quedo de su trabajo, ya, dento su trabajo, tediga que quisidas estaer.
+
+01:31:31.000 --> 01:31:50.000
+Al gumonto campo. Entonces que vamos apuno que te ident amirador el programa es que semos vido decirte que quiero estaeramos a poner que el campo, no pesque el campo… Unida costo.
+
+01:31:50.000 --> 01:31:55.000
+Esto, y esto quiero que lasagos. Entonces, pregunta.
+
+01:31:55.000 --> 01:32:08.000
+En esta parte, en que aparte desta lo que estamos revisando como loaria. Comos arrias a partecita.
+
+01:32:08.000 --> 01:32:23.000
+Jorge, com estas, com ana di… vamos a podemos podemos a quarter un poquito. Si tu qui sieras estader el rate, por ejemplo, el nuesta parte el rate.
+
+01:32:23.000 --> 01:32:41.000
+Enque line codigo, ten dias que consider lo de toda la parte que hemos espricado.
+
+01:32:41.000 --> 01:32:49.000
+No, no pasanada.
+
+01:32:49.000 --> 01:33:02.000
+A ver pierro. Piero como, como estarias tusi aqui tien estoygo, hasta londemos explicado, no, y te icen a ti, que todo se documento te gustaria esta aer el raid.
+
+01:33:02.000 --> 01:33:18.000
+En que parte durias modificar lo mas o menos.
+
+01:33:18.000 --> 01:33:19.000
+Asi no, como esta casierto.
+
+01:33:19.000 --> 01:33:22.000
+Uh-huh.
+
+01:33:22.000 --> 01:33:33.000
+bien esaart operate. Vi muy bien hay estamos. Entonces, elo modificas no. Adelan dejulito.
+
+01:33:33.000 --> 01:33:36.000
+Is there anything interesting? I don't know, so let me think in number coins here.
+
+01:33:36.000 --> 01:33:41.000
+No. Es apto.
+
+01:33:41.000 --> 01:33:47.000
+No.
+
+01:33:47.000 --> 01:33:55.000
+No, no. En este es como que yo ter el de invagina, si, si, sii. Uh-huh, sii.
+
+01:33:55.000 --> 01:34:08.000
+Por esos que vezas de mejor aveses, ya, llamo la piedemini no cuando estaer de talcosa, el invoice, o el su total esto. Como que al final sewerle como un mas vamos a ponerlo que el su total.
+
+01:34:08.000 --> 01:34:21.000
+No se pues haver. esta parte que esta cada, no.
+
+01:34:21.000 --> 01:34:29.000
+Aha, yes sir.
+
+01:34:29.000 --> 01:34:34.000
+invois, no?
+
+01:34:34.000 --> 01:34:43.000
+See? C C C C C C C C. Dios mio, a casper.
+
+01:34:43.000 --> 01:34:46.000
+get the view.
+
+01:34:46.000 --> 01:34:49.000
+Jeme.
+
+01:34:49.000 --> 01:35:03.000
+C. Si, pero, pero tenderencia von de tembois. Acasta. Mis o gerencia, ya, porque cual son como como mas de sentos fal que esaca.
+
+01:35:03.000 --> 01:35:13.000
+Yeah. Y misogerencia.
+
+01:35:13.000 --> 01:35:20.000
+Que mire. Si bien esierto.
+
+01:35:20.000 --> 01:35:25.000
+Hmm.
+
+01:35:25.000 --> 01:35:31.000
+Es uneto incomotal, ya, pero en el caso los invoice.
+
+01:35:31.000 --> 01:35:44.000
+The beating. Tedad que tienes que subilos datos. Para que lo puaz utilizar.
+
+01:35:44.000 --> 01:35:45.000
+Indeed.
+
+01:35:45.000 --> 01:36:05.000
+Posno. Uh-huh.
+
+01:36:05.000 --> 01:36:15.000
+Yeah, las farturas, hay dias mia. La farturas.
+
+01:36:15.000 --> 01:36:25.000
+No? Entonces seria que loses y lobo entene es el modeo lo en esta partecita del Losing Voice?
+
+01:36:25.000 --> 01:36:28.000
+Uh-hua, yes si. We've got a key.
+
+01:36:28.000 --> 01:36:35.000
+Yemesto me no si. se prostador.
+
+01:36:35.000 --> 01:36:36.000
+Hmm…
+
+01:36:36.000 --> 01:36:42.000
+aunto.
+
+01:36:42.000 --> 01:37:00.000
+meet up. Tienes. Entonces, para que tu puestener mayor precision y todo eso, se recomienda que ne eso sincuenta tipos de documentos distintos.
+
+01:37:00.000 --> 01:37:18.000
+Para que pue aprender. mejor precisio en normal.
+
+01:37:18.000 --> 01:37:32.000
+Dos suble los dos, y bien. Otos, cuandem solamente uno, como tal, ya, lo que te recomiendan la regia es que tu puedas.
+
+01:37:32.000 --> 01:37:43.000
+Para que tenga como una precision. Aha. I see. Yeah.
+
+01:37:43.000 --> 01:37:55.000
+Importante. Vamos por aqui.
+
+01:37:55.000 --> 01:38:14.000
+Vamos poraca, porca, porca, porca. Para que envisa de a tuva de codificar, no.
+
+01:38:14.000 --> 01:38:21.000
+Esto, este campo, si es sibar a la derecion, pon el mensaje, como que pon el mensaje desta forma.
+
+01:38:21.000 --> 01:38:34.000
+Luego, en esta parte recuer que lo que realmente tuen Patsa basa de codificar, llamos lo asi, es lairezion ese como que tu dijeras donde temo fistas biscuer. Se perdio.
+
+01:38:34.000 --> 01:38:45.000
+Tuas amandar de la direccion, perte que carque. Dastik Aki?
+
+01:38:45.000 --> 01:39:04.000
+que estabaca. Historial.
+
+01:39:04.000 --> 01:39:12.000
+Uh…
+
+01:39:12.000 --> 01:39:15.000
+Jerika…
+
+01:39:15.000 --> 01:39:40.000
+Entonces. Entonces, en esa parte que estamos diciendo, sierto qua tien estulm… vamos a bajar esto, chao. El tema tu, padsab. Ya? Temen el sentidades, hazas el… El public, el topico, llamas al topico.
+
+01:39:40.000 --> 01:39:46.000
+Luponas a Calpad. public en el topico.
+
+01:39:46.000 --> 01:39:57.000
+Lesas disintas direcciones.
+
+01:39:57.000 --> 01:40:11.000
+todo el proceso, lo pueda registar. Luego, luego, luego.
+
+01:40:11.000 --> 01:40:24.000
+deforma temporal. tu pues dear.
+
+01:40:24.000 --> 01:40:29.000
+temporales que se vallan al macenando dento de se contenador.
+
+01:40:29.000 --> 01:40:34.000
+Pero como lo que tu no quieres es generar quizas.
+
+01:40:34.000 --> 01:40:49.000
+Generar un tema de archivos que no esotericar, or archivos que no vas necesitar introsive podia por a los temporales. En este casamos porando lo que se general, los archivos temporales que se generaro enturado estoraj. Ya?
+
+01:40:49.000 --> 01:41:11.000
+Esto sebatar. Siempre cuando ayon evento. Comos, comos estaduce todo estuanita. Es decir, si yo me voya la funcion que lo vamos a ver, mien por aca.
+
+01:41:11.000 --> 01:41:19.000
+Augusta. Esto? Eso que esta cab.
+
+01:41:19.000 --> 01:41:24.000
+Para que para que. El Siger?
+
+01:41:24.000 --> 01:41:32.000
+cuando el archivo llega travestor. Pinalisa la triazio.
+
+01:41:32.000 --> 01:41:50.000
+Seba disparar. Y eso es esto. Ya? Y lugo el resto, como no term de hacerto las recusion en esta parte, la liminas.
+
+01:41:50.000 --> 01:42:05.000
+Il luego, despuedos de todo eso. No? Y el me… Qui a conoco imprimes para que tenas tipo un logo.
+
+01:42:05.000 --> 01:42:13.000
+Ya mas a tod el tema de que cosa lo que necitas, no? El vacuet, el tipo continuido pedefe.
+
+01:42:13.000 --> 01:42:43.000
+Pero cuando tuyen pieces en PSS. a processar lo per se vallamar al archivo que se haya ejecutados haya abuardado en esta parte. Asi que es apartone. Y a solamente como tipo, como lo llaman, como tipo ayuda para para la funcion per se.
+
+01:42:43.000 --> 01:42:49.000
+Entonces eso la primera funcion. Asesa parte se lleg entender, hastas a particular que estamos habrando.
+
+01:42:49.000 --> 01:42:56.000
+BigQuery.
+
+01:42:56.000 --> 01:43:01.000
+Tudatos como tal, o sabino.
+
+01:43:01.000 --> 01:43:08.000
+Bruto. como el responsado de la extracion.
+
+01:43:08.000 --> 01:43:10.000
+Amor repositorios estan en estoros. Oh, yeah.
+
+01:43:10.000 --> 01:43:22.000
+No. See? No, see, no. Entonces. Sello reviso vamos paraquivamos por aqui, para que no esta. Entonces tu archivo per se.
+
+01:43:22.000 --> 01:43:34.000
+Ustes tien. Y voyaca.
+
+01:43:34.000 --> 01:43:48.000
+Ah, estaba. Y esta. Entonces. Ustes tien que.
+
+01:43:48.000 --> 01:43:58.000
+Una carpeta, que se llama input invoice. En el impo de boys, yeah, en el input y bois baser.
+
+01:43:58.000 --> 01:44:15.000
+En input invoice en input invoice. llega la fartura y como seu eso en Ita, porque charo en la funcion.
+
+01:44:15.000 --> 01:44:25.000
+invois. Sing embargo, tu tienes.
+
+01:44:25.000 --> 01:44:42.000
+Vapazar est archivo, lo vapazar luego. Para que llevo ser control.
+
+01:44:42.000 --> 01:45:04.000
+Y ale paso. lo que vamos hacer, yo podia verdejado el diezon. Para que pasolizaro porque siyo voya cap donde me fistes. En estargetura, yeah, yo soy siendo que lleson vultra historache, pero yun el proceso estoy de eliminando.
+
+01:45:04.000 --> 01:45:17.000
+Entonces una vez que ya sucedio todo eso, que ya depor si en peso aqui.
+
+01:45:17.000 --> 01:45:41.000
+Entonces. a la parte en este caso todo los datos s insertaro a… BigQuery. Uh-huh, assist el proceso. Uh-huh. Here.
+
+01:45:41.000 --> 01:45:48.000
+a pregunta.
+
+01:45:48.000 --> 01:45:54.000
+bien, sigo braca. Entonces.
+
+01:45:54.000 --> 01:46:02.000
+Vamos a la auto. Yeah.
+
+01:46:02.000 --> 01:46:12.000
+Tarea. Tod la parte.
+
+01:46:12.000 --> 01:46:23.000
+Yase es un poquito mas corta que la oza.
+
+01:46:23.000 --> 01:46:28.000
+Entos vamos por aca. Tiene esto el tema que importantacion de liberias.
+
+01:46:28.000 --> 01:46:40.000
+El nombreto data set. El nombe tutu tabra, yeah, el nombre tu atacet, que se esto, que ibamos aterlo, el nombia tutabra, que va a ser esto.
+
+01:46:40.000 --> 01:46:48.000
+El eschema, un bun el eschema. Brando, los mentalatos.
+
+01:46:48.000 --> 01:46:58.000
+Para que lo puedas ver mejor. Then this defunciones.
+
+01:46:58.000 --> 01:47:05.000
+El righto BigQuery. process address y el estadgio info.
+
+01:47:05.000 --> 01:47:24.000
+Primera, que lo que tu haces.
+
+01:47:24.000 --> 01:47:32.000
+Al de la perdon de las columnas. para que… para que en piece hacer el registo.
+
+01:47:32.000 --> 01:47:39.000
+Convertas a lleso. llamas al eschema de la tara de biscueri.
+
+01:47:39.000 --> 01:47:52.000
+no se comprete. Aqui si cambia.
+
+01:47:52.000 --> 01:48:02.000
+para que tuca tures. El mensa tu tienes una que se llama.
+
+01:48:02.000 --> 01:48:15.000
+La decodification. decodificar en formato huechochocho.
+
+01:48:15.000 --> 01:48:30.000
+casa hacer. En esto tuvas estaer la direccion.
+
+01:48:30.000 --> 01:48:42.000
+Armas unicionario dementamente. El tipo de la diracion per se, ya?
+
+01:48:42.000 --> 01:48:53.000
+el pued hacer. Esta y enabaca. Pete que carrie.
+
+01:48:53.000 --> 01:49:05.000
+Yeah. Donne mega.
+
+01:49:05.000 --> 01:49:16.000
+Los es aparte que estamos est allendo, hasta hido da bien nuestas llamandoorjo coding per se, solamente estas esta alliendo, la diracion con la formato que estan necesitando.
+
+01:49:16.000 --> 01:49:29.000
+Eso estibes. Esta intidad, cas convertido, ese entitites esto.
+
+01:49:29.000 --> 01:49:42.000
+Any details. Yeah? Esto… Es como funcion en este caso Google Map.
+
+01:49:42.000 --> 01:50:03.000
+Para que se la mas precis. El 8 point.
+
+01:50:03.000 --> 01:50:09.000
+Lapi, estapi. Pregunta. Secueran que nosotos hallemos treado la.
+
+01:50:09.000 --> 01:50:17.000
+Lapi, no? Don des habia treado aqui. A pizarbicios, doitric aqui.
+
+01:50:17.000 --> 01:50:27.000
+But they get car again.
+
+01:50:27.000 --> 01:50:37.000
+a pi. solamente este delimitada para que para que haga.
+
+01:50:37.000 --> 01:50:47.000
+Yeah? Entonces. El cueriades.
+
+01:50:47.000 --> 01:50:53.000
+Yamulapi. Armo el parameto.
+
+01:50:53.000 --> 01:51:11.000
+esta correto. Ago se request, ya, imprimo estatos y posibremente, posibremente pueder que la direccion, que se registo, se ha incorrecta.
+
+01:51:11.000 --> 01:51:37.000
+y esta. Y luego, en esta parte en la parte el cicach no eccet, para que puerma mejal de ma lo que sa posible, la latitud, la lonjito, y todo eso.
+
+01:51:37.000 --> 01:51:56.000
+cadao. Pero adicionalmente.
+
+01:51:56.000 --> 01:52:07.000
+Google Map? Butts up, request para el tema laurele?
+
+01:52:07.000 --> 01:52:12.000
+Y esa parte lo que es BigQuery. Ya? Estado funciones se llega entender.
+
+01:52:12.000 --> 01:52:18.000
+Hasta ibamos via? See? Papar sehir?
+
+01:52:18.000 --> 01:52:26.000
+para que tambien puedan. Siquenta melo.
+
+01:52:26.000 --> 01:52:36.000
+cuanto la estancia. Exactly.
+
+01:52:36.000 --> 01:52:37.000
+Mmm. No, no, no.
+
+01:52:37.000 --> 01:52:43.000
+no simple.
+
+01:52:43.000 --> 01:52:45.000
+No lo separable. Roar.
+
+01:52:45.000 --> 01:52:50.000
+But in the statistico.
+
+01:52:50.000 --> 01:52:55.000
+estado entre lineas. Le indico.
+
+01:52:55.000 --> 01:53:00.000
+See?
+
+01:53:00.000 --> 01:53:01.000
+Esarto no I. No, no, no, no.
+
+01:53:01.000 --> 01:53:05.000
+Esacecion.
+
+01:53:05.000 --> 01:53:18.000
+En la parte la primera, yeah, en la parte de la primera, tu cuando aces el tema vamosa donde temistes aqui, tu tenes la direccion. Por mas que se ha como que la terlinas, mira?
+
+01:53:18.000 --> 01:53:42.000
+Vamos a ponerlo. Entonces, en esa parte, lo vuadar aca.
+
+01:53:42.000 --> 01:53:51.000
+Pued estar que este el separado. Lo que si no que si no pueda ver es que vamos a ponercaqui, en tus boleta diga, tu direciemos apone de avenida.
+
+01:53:51.000 --> 01:54:14.000
+Ya, pero momentas geste junto lo va sobretender. You'll all get accesso, en esto que estamos abrando, que primero vamos y por a cap para el tipo de dato ay esta, donde estas, a questad, voyaca.
+
+01:54:14.000 --> 01:54:25.000
+Tu vasa aer ente todo esto. llamar lo a si.
+
+01:54:25.000 --> 01:54:30.000
+La diracion formatada yada de informato… Correcta.
+
+01:54:30.000 --> 01:55:00.000
+Augusta. Sa que la latitudonito. Trado.
+
+01:55:01.000 --> 01:55:14.000
+cuando tu pies un tatzi de… No se pues de Uber.
+
+01:55:14.000 --> 01:55:33.000
+La verdad. Aha! Entonces. Hasta, vamos via. See?
+
+01:55:33.000 --> 01:55:51.000
+W. Perfecto. Vamos a umbre de unos diasminutos, ya para puer continuar, para esa el diplomito eso sa vol vemos, vol vemos… Yeah, vol vemos 5.
+
+01:55:51.000 --> 01:56:21.000
+Yes, yes.
+
+01:56:35.000 --> 01:56:41.000
+You were the shadow to my life. Did you feel us?
+
+01:56:41.000 --> 01:56:57.000
+Afraid our aim is out of sight. Say us.
+
+01:56:57.000 --> 01:57:02.000
+Where are you now?
+
+01:57:02.000 --> 01:57:16.000
+I am now.
+
+01:57:16.000 --> 01:57:25.000
+Jessie. Where are you now?
+
+01:57:25.000 --> 01:57:45.000
+I'm faded.
+
+01:57:45.000 --> 01:57:57.000
+The shallow water is never. Need Earth.
+
+01:57:57.000 --> 01:58:05.000
+eternal silence of the sea I'm breathing. # # #.
+
+01:58:05.000 --> 01:58:10.000
+Where are you now?
+
+01:58:10.000 --> 01:58:15.000
+Where are you now?
+
+01:58:15.000 --> 01:58:21.000
+You've sent my heart on. Well, I know?
+
+01:58:21.000 --> 01:58:26.000
+Where I love.
+
+01:58:26.000 --> 01:58:49.000
+Where are you now?
+
+01:58:49.000 --> 01:59:05.000
+Aye.
+
+01:59:05.000 --> 01:59:14.000
+Kiss me before you go. Summertime sadness.
+
+01:59:14.000 --> 01:59:21.000
+I just wanted you to know. Baby, you're the best.
+
+01:59:21.000 --> 01:59:32.000
+I got my red dress on.
+
+01:59:32.000 --> 01:59:39.000
+Real big beauty queen style.
+
+01:59:39.000 --> 01:59:51.000
+Oh, my God. I feel it in the air.
+
+01:59:51.000 --> 01:59:58.000
+I feel it everywhere.
+
+01:59:58.000 --> 02:00:06.000
+Kiss me hard before you go.
+
+02:00:06.000 --> 02:00:12.000
+I just want to.
+
+02:00:12.000 --> 02:00:20.000
+Maybe you're the best.
+
+02:00:20.000 --> 02:00:29.000
+Summer time, summertime.
+
+02:00:29.000 --> 02:00:36.000
+show. I'm feeling the electric tonight.
+
+02:00:36.000 --> 02:00:46.000
+Cruisin down the.
+
+02:00:46.000 --> 02:01:02.000
+I'm not happy tonight.
+
+02:01:02.000 --> 02:01:08.000
+I feel it everywhere.
+
+02:01:08.000 --> 02:01:22.000
+3, 4, kiss me off. Before you go.
+
+02:01:22.000 --> 02:01:28.000
+Baby, you remember.
+
+02:01:28.000 --> 02:01:40.000
+What if someone turns sadness?
+
+02:01:40.000 --> 02:02:10.000
+You can tell by the way She walks, she's my girl You can tell by the way she talks truths the world.
+
+02:02:10.000 --> 02:02:19.000
+She's my girl. My soul.
+
+02:02:19.000 --> 02:02:42.000
+But I'm a super girl. The super girls don't cry.
+
+02:02:42.000 --> 02:02:50.000
+Late last night, but I'm a Supergirl. And Supergirl just.
+
+02:02:50.000 --> 02:03:19.000
+It's lying.
+
+02:03:19.000 --> 02:03:29.000
+In your love.
+
+02:03:29.000 --> 02:03:36.000
+The night.
+
+02:03:36.000 --> 02:03:44.000
+Person of fear.
+
+02:03:44.000 --> 02:03:56.000
+It's okay I got lost and no way But I'm a super girl.
+
+02:03:56.000 --> 02:04:13.000
+And Supergirls don't cry. It's alright.
+
+02:04:13.000 --> 02:04:18.000
+The silver girls.
+
+02:04:18.000 --> 02:04:35.000
+But I'm a super girl.
+
+02:04:35.000 --> 02:04:52.000
+Jesus, Super Girl.
+
+02:04:52.000 --> 02:05:07.000
+She's a super girl.
+
+02:05:07.000 --> 02:05:14.000
+Got me 10 feet off the ground.
+
+02:05:14.000 --> 02:05:22.000
+I'm hearing what you say, but I just can't make sound.
+
+02:05:22.000 --> 02:05:31.000
+You tell me that you need.
+
+02:05:31.000 --> 02:05:49.000
+Tell me that she served. and say.
+
+02:05:49.000 --> 02:05:59.000
+the shade.
+
+02:05:59.000 --> 02:06:05.000
+Hello. I'm Poraka.
+
+02:06:05.000 --> 02:06:14.000
+and confirm and profess. Yes, yes. Entonces vamos aborrestos, perime.
+
+02:06:14.000 --> 02:06:18.000
+bearing me. Yes stuff.
+
+02:06:18.000 --> 02:06:32.000
+Ya? Porfis vamos aca.
+
+02:06:32.000 --> 02:06:47.000
+En auto pestana, en la pestana que tenia unstedes que estan en la parte Google Cloud en la parte superior van a buscar el servicio que se llama docmene hay.
+
+02:06:47.000 --> 02:07:03.000
+ustedes ban a tener que cosa, van a tener, comerse comentaba dos tipos. En nuestro caso vamos a realar con el buice explor el processor. Quica que.
+
+02:07:03.000 --> 02:07:15.000
+por favor.
+
+02:07:15.000 --> 02:07:21.000
+Estamos? Hola, cuenta me.
+
+02:07:21.000 --> 02:07:31.000
+What's up?
+
+02:07:31.000 --> 02:07:43.000
+other compartmento pantagita.
+
+02:07:43.000 --> 02:07:48.000
+Yeah. No que vasa que y buen punto que el sargasi.
+
+02:07:48.000 --> 02:08:00.000
+Siempre recuarden que se tantabajando vajon proyecto. En la parte superior passe que se como que se equito el proyecto. Entice eletion a proyecto alertrigue en esa partecita. Ay, es.
+
+02:08:00.000 --> 02:08:06.000
+Anand dice todos.
+
+02:08:06.000 --> 02:08:07.000
+Todos? todos conte.
+
+02:08:07.000 --> 02:08:10.000
+Knowledge.
+
+02:08:10.000 --> 02:08:11.000
+Okay.
+
+02:08:11.000 --> 02:08:19.000
+Uh-huh. Ah, yeah. Pero pareslar. Me para esa que se te apuesto en el con el corrego deutec.
+
+02:08:19.000 --> 02:08:30.000
+I'll let you can counselor. Uh-huh.
+
+02:08:30.000 --> 02:08:40.000
+Uh-huh. Uh-huh, eso. Ay punto trave.
+
+02:08:40.000 --> 02:08:44.000
+Azil?
+
+02:08:44.000 --> 02:08:52.000
+Ponto proyecto. pon document AI.
+
+02:08:52.000 --> 02:08:57.000
+Uh-huh. ESO?
+
+02:08:57.000 --> 02:09:11.000
+correo de melcer. Ah, yeah. Perfecto. Yeah, asi que es processor?
+
+02:09:11.000 --> 02:09:12.000
+Okay. Hi, yeah. Okay. Mucha gracias, sir.
+
+02:09:12.000 --> 02:09:26.000
+Uh-huh. Yeah. Aha. Entonces. Baja un poquito es enrollantaya, ya.
+
+02:09:26.000 --> 02:09:46.000
+form parser. En esta parte, por favor. Y el nombre, el nombre porque a final estamos utilizando el tema lo que son funciones, pon alo tar cual como es dice en esta partecita. Des voya pasaraca.
+
+02:09:46.000 --> 02:09:58.000
+como sacarlo.
+
+02:09:58.000 --> 02:10:12.000
+Yeah? dear.
+
+02:10:12.000 --> 02:10:21.000
+poder segir.
+
+02:10:21.000 --> 02:10:33.000
+Just that? Yeah. Entonces. Lo que si le espido por favor copien esa ID que esa parecido en esta parte. Penglo esta ide pon elo por ahi, pong aquisa es un prodenotas y pong an asino.
+
+02:10:33.000 --> 02:10:38.000
+Procesor ID. Para que no solvide nasi.
+
+02:10:38.000 --> 02:10:47.000
+Los siguiente. Aka, en esta parte.
+
+02:10:47.000 --> 02:10:55.000
+Jikaki?
+
+02:10:55.000 --> 02:11:05.000
+Ya? Yeah. Entonces entonces. Yeah.
+
+02:11:05.000 --> 02:11:17.000
+SAI ID projection, no.
+
+02:11:17.000 --> 02:11:18.000
+Okay, okay. Oh, yeah. Okay, that was up.
+
+02:11:18.000 --> 02:11:36.000
+Aja, y se lo copia. Eso. Aha. Okay. Endons. May I be some… me a visan porjo constemos ahi todos. Y acupieron su processor ID y su project ID. Yasos dosositas, mas esto, y me visa poder seguir.
+
+02:11:36.000 --> 02:11:49.000
+Yes, Tamos? See? Yeah. Endonces. Endonces andemos el procesadores. Bien.
+
+02:11:49.000 --> 02:11:57.000
+Ahora el segundo par bueno cuarto paso seria la terria cuatzo, vamos a crear los buckets yamos a treadar.
+
+02:11:57.000 --> 02:12:13.000
+El con junted atos dento de bijueri. Conjunto datos, tamos abrando el simil de la bacados. Entonces, voya acupier todo esto, ya.
+
+02:12:13.000 --> 02:12:26.000
+Por sa caso es copium malo algo. Thank you. And also until Carles, yeah?
+
+02:12:26.000 --> 02:12:35.000
+Este a cosa que esta. Yeah, meaning aqui.
+
+02:12:35.000 --> 02:12:47.000
+El proyga ID. Corporas obtener.
+
+02:12:47.000 --> 02:12:59.000
+El idea del proyecto en donde estaz orita. Esto que esta cada.
+
+02:12:59.000 --> 02:13:14.000
+Aqui? Entonces, CO si, yo estoy teniendo y poniendo leng una variable. Sigo algun eco, como la si con la parte el dataprogue sa cuerda.
+
+02:13:14.000 --> 02:13:21.000
+Y ponguesto dolar esto que estaca. Yeah? A esta.
+
+02:13:21.000 --> 02:13:28.000
+El proyecto en el que estoy orita. En este momento. Yeah? Si iguaca.
+
+02:13:28.000 --> 02:13:34.000
+Estelto para el tema de la localiza son edecil la region.
+
+02:13:34.000 --> 02:13:46.000
+Luego. Enizos de lineas, bueno esas de vamos no siga de lineas. En estas… indicaciones.
+
+02:13:46.000 --> 02:13:57.000
+Tienes. Jese util. Para que?
+
+02:13:57.000 --> 02:14:02.000
+caso para la parte lo que es las vacates.
+
+02:14:02.000 --> 02:14:14.000
+Menocele. Y todo que estaca, esta diciendo.
+
+02:14:14.000 --> 02:14:23.000
+Este bucket. Como aces, ia que es una bueno practica.
+
+02:14:23.000 --> 02:14:38.000
+Cierto. Pero que lo que pasa.
+
+02:14:38.000 --> 02:14:44.000
+Posibremente ota persona yateo es en hombre de bucket.
+
+02:14:44.000 --> 02:14:57.000
+input invoice. como que ello dijera.
+
+02:14:57.000 --> 02:15:15.000
+Mi projega ID. Yo, input, guillo invoices. Eso que hace que cuando Jorge, Piero, Paul, y todos ustedes, no, nosotros conremos, no notamos, no a ver nambia repetido. Porque tu prey aid, con el mios en distintos.
+
+02:15:15.000 --> 02:15:32.000
+Yeah. Lo minimo aces para el output invoice, y lo minmo para el arches invoice. Corrange su console. Y hayo lo be a correpremime error porque, porque hoya lo tengo. Masi que yet siste, pibo lo voya correr. Ustescorano porfita.
+
+02:15:32.000 --> 02:15:43.000
+Bayan Corrender.
+
+02:15:43.000 --> 02:15:53.000
+para por continar. Y espricarles.
+
+02:15:53.000 --> 02:16:03.000
+tu astrado recorda. buckets. Entrosci tu qui es verifices hacer a verdado lo que lo que esta es una si.
+
+02:16:03.000 --> 02:16:12.000
+Poyos habi el enconta pesanita, basal estoras, y vas y tensias que ver.
+
+02:16:12.000 --> 02:16:23.000
+El a dia proyecto, ya, el adie proyecto. invoice con el invoice, it cannot output invoice. Yeah.
+
+02:16:23.000 --> 02:16:42.000
+Marisa por continuar.
+
+02:16:42.000 --> 02:16:46.000
+Yes, Tom?
+
+02:16:46.000 --> 02:16:50.000
+las hemos.
+
+02:16:50.000 --> 02:17:03.000
+Entonces esto que hace. Sentenciono.
+
+02:17:03.000 --> 02:17:15.000
+See? poder tear un dataset.
+
+02:17:15.000 --> 02:17:38.000
+de unota forma. Entonces, pero que significa. Becu debiscueri. Menos, menos lo quejo, el deciba estar en la region de U.S.
+
+02:17:38.000 --> 02:17:45.000
+Menos de, ya, para que puedas tener la destrio es decir.
+
+02:17:45.000 --> 02:17:49.000
+Maso menos que se vea algo como estos mira.
+
+02:17:49.000 --> 02:17:58.000
+the tires. On the MFISTES… Akasta.
+
+02:17:58.000 --> 02:18:07.000
+Esta. Se formes a forma.
+
+02:18:07.000 --> 02:18:28.000
+Se las terrisco frown. El nom de la vacidatos, punto la tabra.
+
+02:18:28.000 --> 02:18:39.000
+En el caso la attracion de la attracion del loque es la seado so en la taces de biscueri es el idea proyecto dos puntos.
+
+02:18:39.000 --> 02:18:46.000
+El nombre de la… Yeah, bien. Adora.
+
+02:18:46.000 --> 02:18:56.000
+datatos, tu dataset. Que lo que te iesa siguiente. Sede.
+
+02:18:56.000 --> 02:19:05.000
+Sig yo me voyaca, y me voya a la shell.
+
+02:19:05.000 --> 02:19:20.000
+Estir como que yo bi era mas o menos. Cada una dellestinun eschema. Yeah. Es porso que te dice que va sin desar al eschema. Porque.
+
+02:19:20.000 --> 02:19:34.000
+Porque cono tuvas acear la tabra. Lo que qui es que salo mas rapio posibre.
+
+02:19:34.000 --> 02:19:55.000
+Un ieso un eschema. de tabra.
+
+02:19:55.000 --> 02:20:08.000
+de tutabra, como qui es que se llame, ya?
+
+02:20:08.000 --> 02:20:18.000
+Proyecto hidi dos puntos pasidatos. Y logo el eschema.
+
+02:20:18.000 --> 02:20:24.000
+En elo tolado que lo que tienes. La tabra.
+
+02:20:24.000 --> 02:20:29.000
+perdo en la tabla. El nombre la tabla.
+
+02:20:29.000 --> 02:20:38.000
+No? Regutello. It's a partes llegander a seal alguna pregunta.
+
+02:20:38.000 --> 02:20:43.000
+Hasta esta mal bien?
+
+02:20:43.000 --> 02:20:48.000
+Tikos? the endocyte?
+
+02:20:48.000 --> 02:20:59.000
+Yeah. Vamos con laude.
+
+02:20:59.000 --> 02:21:09.000
+mas.
+
+02:21:09.000 --> 02:21:14.000
+Y estamos?
+
+02:21:14.000 --> 02:21:27.000
+See, Miss Alberta?
+
+02:21:27.000 --> 02:21:43.000
+See? Yeah. Entonces. Segundo.
+
+02:21:43.000 --> 02:22:01.000
+storas. I quater ahora el batsap.
+
+02:22:01.000 --> 02:22:09.000
+Vamosporaca. Entonces. Es por?
+
+02:22:09.000 --> 02:22:15.000
+El nomble como qui es que se llame. Ayesta.
+
+02:22:15.000 --> 02:22:21.000
+Deepcloud. Butts up topicos.
+
+02:22:21.000 --> 02:22:34.000
+Eje cutenesso. para queden el topico e baza.
+
+02:22:34.000 --> 02:22:35.000
+Okay.
+
+02:22:35.000 --> 02:22:43.000
+tenga. No, no, no. No, pues copia a lot todo. Copias todo.
+
+02:22:43.000 --> 02:22:44.000
+Asi todo, porques aja todo y le pegas. Aha.
+
+02:22:44.000 --> 02:22:47.000
+Okay.
+
+02:22:47.000 --> 02:22:55.000
+pues en el proyeto. Bay angas hindo esoyapuestricales lo auto.
+
+02:22:55.000 --> 02:23:04.000
+pipeline demo, scripts tabosquema.
+
+02:23:04.000 --> 02:23:24.000
+Da independiente. Aja. Uh-hua.
+
+02:23:24.000 --> 02:23:27.000
+van confirmando. ticket.
+
+02:23:27.000 --> 02:23:38.000
+Anita. No?
+
+02:23:38.000 --> 02:23:39.000
+Uh-huh.
+
+02:23:39.000 --> 02:23:47.000
+I see. Si, esarto el esport que es este, cierto y logo que este es una linea compreta, y este esoto, no? Est el die un palitos, y podia, para aqui.
+
+02:23:47.000 --> 02:23:50.000
+Asi tambien, no? Asi. TCC.
+
+02:23:50.000 --> 02:23:57.000
+Ah, perfect.
+
+02:23:57.000 --> 02:23:58.000
+gcloud PubSub Topics Create?
+
+02:23:58.000 --> 02:24:12.000
+Y vamos por aca.
+
+02:24:12.000 --> 02:24:16.000
+Aha, si. Uh-huh.
+
+02:24:16.000 --> 02:24:28.000
+No, you would.
+
+02:24:28.000 --> 02:24:34.000
+Okay.
+
+02:24:34.000 --> 02:24:40.000
+Bakalong po kito.
+
+02:24:40.000 --> 02:24:52.000
+Entonces quita lo en todo o caso, aha, quita lo, porque esta un una sola linea, quita lesse palito?
+
+02:24:52.000 --> 02:25:00.000
+Calendar enter. Yes.
+
+02:25:00.000 --> 02:25:15.000
+Aja verbio. Entonces. Seguimos, seguimos. Vamos poracam.
+
+02:25:15.000 --> 02:25:25.000
+Yeah, meeting.
+
+02:25:25.000 --> 02:25:31.000
+Yeah.
+
+02:25:31.000 --> 02:25:42.000
+Recuerden que estamos ajar no conservicios. Y un servicio, como tal, cierto necesita service account.
+
+02:25:42.000 --> 02:25:54.000
+Entonces lo que estamos haciendo aqui es empezando aar algunos, algunos permisos hay so service account. Dig algunos, porquivaramos a tener que valver editarlo. Yeah? Entonces.
+
+02:25:54.000 --> 02:26:00.000
+En esta parte, en esto. tusas armando.
+
+02:26:00.000 --> 02:26:07.000
+El servicio or El Service account dece momento project ID.
+
+02:26:07.000 --> 02:26:20.000
+con esto obtienes el proyen number. Yeah? con esta parte que estamos habrando que se llama y trout y and service account create estreando este service account.
+
+02:26:20.000 --> 02:26:37.000
+Ikefinal? El nombre poised haya en esta service account, per que ten que esta yado estuaras service account. Esto mismo, es como sillyo me fuera.
+
+02:26:37.000 --> 02:26:42.000
+Aka.
+
+02:26:42.000 --> 02:26:50.000
+Click a key.
+
+02:26:50.000 --> 02:27:12.000
+enible visual. de publisher.
+
+02:27:12.000 --> 02:27:22.000
+Porque hace es es eso anita. abajando con pazza.
+
+02:27:22.000 --> 02:27:34.000
+Entonces, por necesitas el rode el publisher.
+
+02:27:34.000 --> 02:27:42.000
+Roll de suspector. enrolled the publisher. Significa que el the publisher el que va distributor.
+
+02:27:42.000 --> 02:27:50.000
+Los datos. Y el suspdor, com el minimo el mimo nambienologize, no, es el que se vaco netar.
+
+02:27:50.000 --> 02:27:55.000
+aloque el anterior el que el que estribio el que generero el dat.
+
+02:27:55.000 --> 02:28:04.000
+Es como que el vamos a poner con jutu. Y unuto algun video, seria yo, el publicador, no?
+
+02:28:04.000 --> 02:28:23.000
+seria los subscripto. Logos de que esaca porque, porque do not a forma necesito, como es un seriza cano, necesito que permita que en caso en caso me falte algun permiso, yo pueda y tengas a potesta de permita tread los toque.
+
+02:28:23.000 --> 02:28:37.000
+tambia. Ejecuteng esa.
+
+02:28:37.000 --> 02:28:42.000
+Recuteng es apart.
+
+02:28:42.000 --> 02:28:48.000
+Okay, good thing is.
+
+02:28:48.000 --> 02:28:57.000
+Vam. No que temos las los los los.
+
+02:28:57.000 --> 02:29:09.000
+La fences. Premio que cuten esta parte.
+
+02:29:09.000 --> 02:29:39.000
+Immedi apa por seguir.
+
+02:29:45.000 --> 02:29:51.000
+Y estamos, see?
+
+02:29:51.000 --> 02:30:02.000
+benefit. Endonces. En el pede que lesubi hay como parar algunos permisos mas. Pero esa partita nos vamos a saltario unitecar porque.
+
+02:30:02.000 --> 02:30:10.000
+O sea.
+
+02:30:10.000 --> 02:30:16.000
+que esta en la oja. The SECs.
+
+02:30:16.000 --> 02:30:29.000
+La que ese el se. Me fistes.
+
+02:30:29.000 --> 02:30:35.000
+Okay. Moy estricales esto. Mia copiaristo.
+
+02:30:35.000 --> 02:30:44.000
+It was Picard. La linea, linea, linea, linea. This is ace. This is ace.
+
+02:30:44.000 --> 02:30:45.000
+Yes.
+
+02:30:45.000 --> 02:31:08.000
+lo que fueseno? Si, pero toda bien nos, pero todos. Si? Lo puede irraciendo, pero todo… como quieran, como quieran, porquiual no se cambientad enzaparte. So, lo queeros que hate, se va sentiento, pereme un segundito.
+
+02:31:08.000 --> 02:31:24.000
+Entonces. Entonces, entonces. Mire en Aca. Ustedes, tien. Lue gostamos poniendo que cosa donde vestar.
+
+02:31:24.000 --> 02:31:31.000
+La funcion en la hucenta. Ya, bien. Y equine muya detener un poquiti.
+
+02:31:31.000 --> 02:31:45.000
+Yeah.
+
+02:31:45.000 --> 02:31:49.000
+Cloud Run, Cloud Run function.
+
+02:31:49.000 --> 02:31:59.000
+Mia. Cuanos despondem, pondem asi. Des hale dos.
+
+02:31:59.000 --> 02:32:13.000
+El traram por si solo. Vamos acao.ca.
+
+02:32:13.000 --> 02:32:19.000
+Miraka. Joe, Anita?
+
+02:32:19.000 --> 02:32:28.000
+Yeah? Yo. Estoy debajando con cont tenedores, conte.
+
+02:32:28.000 --> 02:32:38.000
+This es bueno, entonces. como clara.
+
+02:32:38.000 --> 02:32:57.000
+llaba, not. Ruby.
+
+02:32:57.000 --> 02:33:05.000
+Ibundo net. Y hasta. Mos una linguajes.
+
+02:33:05.000 --> 02:33:13.000
+De prioriamacion. Entonces, automaticamente tubas utilizar los.
+
+02:33:13.000 --> 02:33:19.000
+Yeah, bien. A parteza diferencia como tal.
+
+02:33:19.000 --> 02:33:29.000
+Tutinas un concepto que se llama que cosa. Los timeouts. Y equa tambien los tang carambas. Los timeout.
+
+02:33:29.000 --> 02:33:37.000
+Los timeout de un traora versus los time out de un trara unfunction son distintos.
+
+02:33:37.000 --> 02:33:44.000
+Como si. Sigo me voyaca por ejemplo casi politetico de pongo es sample.
+
+02:33:44.000 --> 02:33:59.000
+Y pongo paito yeah. On the day Mephist… Automatico.
+
+02:33:59.000 --> 02:34:03.000
+Voluminous… Augusta.
+
+02:34:03.000 --> 02:34:14.000
+Elt com otal, es el que treza. Cuanto la… cuanto un codigo pueso portar. A mira pueso portar no se pescoriendo, un ahora. Dos horas.
+
+02:34:14.000 --> 02:34:22.000
+Eso. En el caso de un trabra funcion, ya tu puedes.
+
+02:34:22.000 --> 02:34:30.000
+pasta del sendo segundos. Yeah, the mile se siento segundos.
+
+02:34:30.000 --> 02:34:49.000
+Damon segundo.
+
+02:34:49.000 --> 02:34:57.000
+Yeah, you will.
+
+02:34:57.000 --> 02:34:58.000
+Let me see.
+
+02:34:58.000 --> 02:35:05.000
+No, no. Also on the jug. No, me no choras.
+
+02:35:05.000 --> 02:35:06.000
+Ah, ah, yeah.
+
+02:35:06.000 --> 02:35:31.000
+CCC. Estein… Esto, y el es paso. Entonces como que uno is a no pun. Vamos a podo esta segund ense vista. Il haves es pasa, haves es pasa, ya, porque lo primerido que no de tem esta. Entonces lo permito que esale.
+
+02:35:31.000 --> 02:35:39.000
+Tui esas miras. default, sincominutos.
+
+02:35:39.000 --> 02:35:59.000
+Y tu is a no se sentaminutos. No. Entonces.
+
+02:35:59.000 --> 02:36:14.000
+Eh, gotta go. Todienso maximo de dies minutos.
+
+02:36:14.000 --> 02:36:25.000
+Hasta, siendones. Aca.
+
+02:36:25.000 --> 02:36:33.000
+Condo tu dices mira. Enterang, esta los continuedores.
+
+02:36:33.000 --> 02:36:42.000
+Y aden mas de eso, ademas con los contentedores tene igual que loto. Los sentam minutos. Ya?
+
+02:36:42.000 --> 02:36:54.000
+tambien a sus un container. Supporta hasta el numero que y al hemos visto, hasta cuanto.
+
+02:36:54.000 --> 02:37:05.000
+Contener de como de jobs, o de servicio. Aya.
+
+02:37:05.000 --> 02:37:16.000
+Entonceservicio, y cualque lo eloto. Se sentaminutos. En el caso el job haya entonces. No, ya sabe.
+
+02:37:16.000 --> 02:37:33.000
+hasta noeminutos. con todo esto.
+
+02:37:33.000 --> 02:37:49.000
+Era mucho menos a lo que ahora. El lando por ejempro, el similen el caso de obrece, yo que tener quinoaca. Notos aumentar un poquito quince, no esta bien hay la se amador.
+
+02:37:49.000 --> 02:37:56.000
+Entonces. En el caso pues de esto te da sentamindo parque tu processes.
+
+02:37:56.000 --> 02:38:02.000
+Cuedes se punto importanta que. sabes que tu proceso.
+
+02:38:02.000 --> 02:38:11.000
+E comprejo bademoraro. Ya?
+
+02:38:11.000 --> 02:38:32.000
+de una hora. Yeah, lo recomendar es que ya tengas herramientas de te ele perce. Como cuales. Data fucho?
+
+02:38:32.000 --> 02:38:43.000
+Dataflow, yeah? Yasi susiva mente. Oto punto para puerto mar encuenta en todos aparte que estamos diciendo.
+
+02:38:43.000 --> 02:38:51.000
+El da fosion com otal internamente. Pede es una pregunta que lesbien en la eso.
+
+02:38:51.000 --> 02:39:01.000
+Idatapro. Dataflow. Yeah? Autoppuntimportante.
+
+02:39:01.000 --> 02:39:08.000
+Cuando no hace todo el tema. De… vamos a poner el casa que tu quieresa, soy mira.
+
+02:39:08.000 --> 02:39:19.000
+I created anos. Vas hacer limpiecesa y Enrique simiento de datos. Yeah?
+
+02:39:19.000 --> 02:39:27.000
+Focha. cual en la ventas de cada uno.
+
+02:39:27.000 --> 02:39:33.000
+cuando yo so ata fucho es visual. And yeah, cuando yo so datasro?
+
+02:39:33.000 --> 02:39:41.000
+Es con codigo. Also este es mas barato mas.
+
+02:39:41.000 --> 02:39:49.000
+Este pagas. Licencia, licencia.
+
+02:39:49.000 --> 02:39:55.000
+de la Tafusho, mas? Math Dataproc.
+
+02:39:55.000 --> 02:40:02.000
+Entonces. Al final? Teuel em pocomas mas costoso.
+
+02:40:02.000 --> 02:40:20.000
+Altener un temata fucho. Hay algunas personas que s no mesas que yo lo mas rapido. Parte visual, y lago, mi tele que se parecel interencion services, por ejemplo. O hat stage. Entonces, van por la parte de data fucho. Yeah? Estos qui se no, yo me ayudo con lair, constuio todo el codi, baca.
+
+02:40:20.000 --> 02:40:38.000
+Yeah. Entonces, vamos para. Hasta estamos dear. Chief? Yeah. Oto punto.
+
+02:40:38.000 --> 02:40:46.000
+Et lafunction que nosotros vamos a desplegar, ya?
+
+02:40:46.000 --> 02:40:54.000
+Es unafuncion de primera generacion. La Focimera generacion so la medes a satereas del atrez de commandos.
+
+02:40:54.000 --> 02:41:05.000
+para puerte a la segunda generacion. a generacion.
+
+02:41:05.000 --> 02:41:17.000
+varios codigos. Denzo la primera generacion, lo necesitan utilizar.
+
+02:41:17.000 --> 02:41:39.000
+su funcion, esotilizando el noyens. la funcion por ejemro.
+
+02:41:39.000 --> 02:41:49.000
+En esta funcion, que esta funcion no esperate. En esta funcion, que donde tema foistes.
+
+02:41:49.000 --> 02:42:03.000
+Okay. En esta funcion sita. Aqui, ustedes en ingun momento. En ningun momento por ejempre en esta un typico punto pellet. No tengo me.
+
+02:42:03.000 --> 02:42:08.000
+Aka si tem meno, pero final. Yo no soy teniendo.
+
+02:42:08.000 --> 02:42:12.000
+No ago tipo una salida on tipo na programacion tipo fraso.
+
+02:42:12.000 --> 02:42:25.000
+La segunda generacion, COC cuando tilizo. Como asi mien aca.
+
+02:42:25.000 --> 02:42:32.000
+Para que sendienda. Boya voya casperate meeting.
+
+02:42:32.000 --> 02:42:37.000
+Ideal meal.
+
+02:42:37.000 --> 02:42:44.000
+Yeah. Defuncio? Funcion demo.
+
+02:42:44.000 --> 02:42:51.000
+Regional.
+
+02:42:51.000 --> 02:43:00.000
+I see. Haiti. Allow?
+
+02:43:00.000 --> 02:43:06.000
+El codio que me va generar, quiero que van la diferencia del COVIDo que nosotos estamos t abajando, miren aca.
+
+02:43:06.000 --> 02:43:16.000
+Esto cierro. But esto mas o menos que cosa es.
+
+02:43:16.000 --> 02:43:30.000
+E la forma como tabaja fras. Ya, cuando a central arroban fun, defined. Y so typical requirements. Ya, pero esto, necesariamente.
+
+02:43:30.000 --> 02:43:37.000
+en la generacion dos, yo tengo cotigizar fras para que se voce pueda dispondulizar.
+
+02:43:37.000 --> 02:43:49.000
+a diferencia delto de la pliemera que tenos otos hemoscreado. Porque es una funcion de paita. Entonces dicho esto, que tien se en esta commando, y trau, fun, deploy, el nom de la primera funcion.
+
+02:43:49.000 --> 02:43:53.000
+Te mera generacion. La region.
+
+02:43:53.000 --> 02:44:08.000
+El ente point que significa. Estipoi es esto. La funcion principal a la que yo. Como codigo, teboll llamar. Vamos a ponerca se llame.
+
+02:44:08.000 --> 02:44:15.000
+Yeah? En esto y autom que cambio el nombre, porque sinome bar un enroll. Ya?
+
+02:44:15.000 --> 02:44:25.000
+hemos llamado voye utilizar esta que estaca. Luego, el runta. El runta en el casa Python senta nueve.
+
+02:44:25.000 --> 02:44:47.000
+Editarlo. Yeah? Il luego que cosa donde esta micodigo a esta en la garpeta, tran funcion process invoice.
+
+02:44:47.000 --> 02:45:17.000
+Timeout.
+
+02:45:52.000 --> 02:46:00.000
+Yeah, yeah, we'll be. Entonces. En esta parte tu vasatidad la parte que la.
+
+02:46:00.000 --> 02:46:04.000
+variables o larchivo de barriabres con la que tu vas a leo reprar.
+
+02:46:04.000 --> 02:46:18.000
+El Tiger.tura. Il luego, elevento, con que vento biotirizar esto que estaca. Yeah?
+
+02:46:18.000 --> 02:46:23.000
+Hastaca, alguna pregunta con esto? Centennial, esa participitar?
+
+02:46:23.000 --> 02:46:26.000
+This is the flow right now, or plan surround function.
+
+02:46:26.000 --> 02:46:33.000
+Estesaran funto aca, vamos a… perdomgani que no la di hiji.
+
+02:46:33.000 --> 02:46:41.000
+Cuando salio al inicio habia supermarkado era. Jorang?
+
+02:46:41.000 --> 02:47:01.000
+Arambus. Iluego, logicionos de producto dejerano, lobos a poda tamiaca. Porque como esta ahi mismo en el misma interfaz, lobby ponder teara, y l to en funcio. Pero sin embargo cuando yo treo la funcion per se, si hoy amando y trout.
+
+02:47:01.000 --> 02:47:11.000
+En esa parte. Aha, eso. Sendendio? Esta porcita?
+
+02:47:11.000 --> 02:47:29.000
+La formas. Ciao. Acosta servicios.
+
+02:47:29.000 --> 02:47:48.000
+ir al trabro en la primera generacion. lo que estamos haciendo, de apis o deterefor. Aha!
+
+02:47:48.000 --> 02:48:02.000
+Yessi. Entonces esta participita sentendio, si?
+
+02:48:02.000 --> 02:48:18.000
+Copien todo eso.
+
+02:48:18.000 --> 02:48:27.000
+c. Tcc.
+
+02:48:27.000 --> 02:48:28.000
+CloudFunction. Oh, Claroom Naomas.
+
+02:48:28.000 --> 02:48:34.000
+Coma sino attendi.
+
+02:48:34.000 --> 02:48:36.000
+en que parte.
+
+02:48:36.000 --> 02:48:42.000
+Porque dijo que Cloud Run funes para.
+
+02:48:42.000 --> 02:48:46.000
+Uh-huh. No, no, no, I'll rebez. Tiencia dias.
+
+02:48:46.000 --> 02:48:54.000
+4 months.
+
+02:48:54.000 --> 02:48:58.000
+Y este el trarram funcion, ya, tiento segundos. Yapa yarra esa rebessaja, aha, ti, eso.
+
+02:48:58.000 --> 02:49:02.000
+Okay, okay, good.
+
+02:49:02.000 --> 02:49:08.000
+Si cuenta melo.
+
+02:49:08.000 --> 02:49:17.000
+Mm-hmm. La pun partie.
+
+02:49:17.000 --> 02:49:23.000
+Pero mes, mira.
+
+02:49:23.000 --> 02:49:36.000
+Web. Pos compartir.
+
+02:49:36.000 --> 02:49:37.000
+el permiso de Cloud Build.
+
+02:49:37.000 --> 02:49:41.000
+Comparto pantita.
+
+02:49:41.000 --> 02:49:43.000
+Y talamos a sinar. Aya, pole yes, ponle yes.
+
+02:49:43.000 --> 02:49:49.000
+Uh-huh, yes.
+
+02:49:49.000 --> 02:49:52.000
+Ponelles dal enter.
+
+02:49:52.000 --> 02:49:53.000
+Ah, yes, ma'am. Okay. Sorry, sorry, sorry.
+
+02:49:53.000 --> 02:50:11.000
+Yes. Namas. Entonces. Sobm poquito la pantalle como para que para que vayam viendo tambien el resto. Sobel un poquirito?
+
+02:50:11.000 --> 02:50:27.000
+Mire. Eso. Esto es un guarni.
+
+02:50:27.000 --> 02:50:40.000
+Les falter el permiso.
+
+02:50:40.000 --> 02:50:53.000
+cuanto. Yeah. Entonces quiero da si. Orient desado unroll porque pregunta. Porque tien que estando unrollarita.
+
+02:50:53.000 --> 02:51:01.000
+Yo tengos a service account. Pero porquete que da unroll.
+
+02:51:01.000 --> 02:51:06.000
+Alguno poray?
+
+02:51:06.000 --> 02:51:11.000
+Por los parmesos. Porque.
+
+02:51:11.000 --> 02:51:29.000
+O que lo hacinda. El apartion digo, llen uno operation funcidad los logjo.
+
+02:51:29.000 --> 02:51:45.000
+Entonces esta tatando y punte va mar narrero. Qui est hacenesos cas, porceles a cuan que cuando, yo estaboyendo permisos, y les dije vamos a tener que olber luego.
+
+02:51:45.000 --> 02:51:57.000
+que ustede necesita. mas.
+
+02:51:57.000 --> 02:52:02.000
+Toles. Uh-huh. So let's see.
+
+02:52:02.000 --> 02:52:15.000
+Aja. Bakalabandaita sa… eso mismo.
+
+02:52:15.000 --> 02:52:16.000
+Bye.
+
+02:52:16.000 --> 02:52:24.000
+Eso. Esta perfecto. Aha! En la parte superior vasa buscar y haeme.
+
+02:52:24.000 --> 02:52:34.000
+Esperme. qui derecho es un neva.
+
+02:52:34.000 --> 02:52:37.000
+Okay.
+
+02:52:37.000 --> 02:52:41.000
+Eso. Para que no pieran lo que esta haciendo por hay.
+
+02:52:41.000 --> 02:52:46.000
+Andar al yeme.
+
+02:52:46.000 --> 02:53:06.000
+Yeah. Aha. S.
+
+02:53:06.000 --> 02:53:14.000
+Bahalapanita. ASSO. Anda la parta riva y aime.
+
+02:53:14.000 --> 02:53:24.000
+Aha, eso.
+
+02:53:24.000 --> 02:53:38.000
+Yeah. I understand Google provides role dram. No, no, no. Yeah, bien. Bajo un poquito.
+
+02:53:38.000 --> 02:53:44.000
+I am.
+
+02:53:44.000 --> 02:53:57.000
+And on this filter, yeah? And if they enter property name or value, arrivitar que is a filter principal copia este service account que sen elastes.
+
+02:53:57.000 --> 02:54:04.000
+E sapto. Mm-hmm, talenter.
+
+02:54:04.000 --> 02:54:05.000
+Yes. A eso. Dal retriegan en la pisito.
+
+02:54:05.000 --> 02:54:13.000
+testing.
+
+02:54:13.000 --> 02:54:21.000
+Uh-huh, y esta. Donces que permision es fualta, justo es esta bien en su documento que les haya puesto, dia te digo. A que ponerle.
+
+02:54:21.000 --> 02:54:26.000
+BigQuery admin. BigQuery and me.
+
+02:54:26.000 --> 02:54:37.000
+Add another role. At another roy, eso.
+
+02:54:37.000 --> 02:54:41.000
+BigQuery admin. BigQuery.
+
+02:54:41.000 --> 02:54:43.000
+be…
+
+02:54:43.000 --> 02:54:59.000
+Admi. Espacio, el primero eso. Automas, BigQuery job user. Y tu miras vamos hacer eso. Recuado que lo temos ajar con biscueritos necesitamos que tena permisos el series account.
+
+02:54:59.000 --> 02:55:02.000
+Tonces BigQuery job user. Basio? Aha, Espacio job.
+
+02:55:02.000 --> 02:55:05.000
+Thank you. Yes.
+
+02:55:05.000 --> 02:55:11.000
+El primero eso, bien. Oto mas, baja.
+
+02:55:11.000 --> 02:55:20.000
+Ya la foto que esta… Yeah, Bahina?
+
+02:55:20.000 --> 02:55:33.000
+Ahora. Tran. Espacio rang?
+
+02:55:33.000 --> 02:55:43.000
+Uh-huh. Espacio, builder. Yeah? Bien.
+
+02:55:43.000 --> 02:55:44.000
+Mm-hmm.
+
+02:55:44.000 --> 02:55:54.000
+Ada no delay. Documente hay administrator.
+
+02:55:54.000 --> 02:55:57.000
+Oh… I'm sorry.
+
+02:55:57.000 --> 02:56:01.000
+No real opposite. Hora, aha, si. Hora… Doing a yay administrator.
+
+02:56:01.000 --> 02:56:05.000
+Okay. Welcome, man.
+
+02:56:05.000 --> 02:56:10.000
+Asi estabien. C.
+
+02:56:10.000 --> 02:56:22.000
+A little bit. Okay.
+
+02:56:22.000 --> 02:56:29.000
+Batsap, Anmi?
+
+02:56:29.000 --> 02:56:30.000
+Okay, Bob. Stop.
+
+02:56:30.000 --> 02:56:36.000
+No, but… ai.
+
+02:56:36.000 --> 02:56:43.000
+Uh-huh! Eso. Luego odomas a la no rollo.
+
+02:56:43.000 --> 02:56:53.000
+Estora espacio an mi. bien el primero.
+
+02:56:53.000 --> 02:56:58.000
+Add another role.
+
+02:56:58.000 --> 02:57:02.000
+Estoras audiot admin. Uh-huh, estoras ojetar. Hoytas picada diferencia.
+
+02:57:02.000 --> 02:57:07.000
+Okay.
+
+02:57:07.000 --> 02:57:08.000
+Object.
+
+02:57:08.000 --> 02:57:17.000
+Audit Espacio and me. Ada another role.
+
+02:57:17.000 --> 02:57:24.000
+Mm-hmm. Storage… Espacio object.
+
+02:57:24.000 --> 02:57:28.000
+Dr. Trujeto? Es apto.
+
+02:57:28.000 --> 02:57:32.000
+P2. Okay.
+
+02:57:32.000 --> 02:57:54.000
+Tirizando. Yeah, todos por favoren ponder porquival de lobamos seiter. Ahoya en este labor, pero despues.
+
+02:57:54.000 --> 02:58:08.000
+El resto no sillo, les pudo ponder sus permisos igual que igual que su companero?
+
+02:58:08.000 --> 02:58:09.000
+Yes.
+
+02:58:09.000 --> 02:58:26.000
+See? Bien. Entonces.
+
+02:58:26.000 --> 02:58:27.000
+Ah, you're welcome.
+
+02:58:27.000 --> 02:58:33.000
+Equestar abajo en el cento. Poquito sobile mas.
+
+02:58:33.000 --> 02:58:35.000
+Yeah.
+
+02:58:35.000 --> 02:58:46.000
+Limbia la Bantaya. Yep. Aurora.
+
+02:58:46.000 --> 02:58:59.000
+ustedes tien. ustes executaro pueden volver arosarlos, tridas pro como si.
+
+02:58:59.000 --> 02:59:11.000
+En el temos aribavajo de lesquierda. Siertos potoncitos. de arriba, por ejemro.
+
+02:59:11.000 --> 02:59:32.000
+Yeah, yeah, bear me. ustedes, las cosas qui esecutaro, si tu basi escambiando con arrives habajo, basiliriendo como ser cambiando los codigos, ya, los codigosidojecutando, quasa que ya no tienes que copiaramento lo mismo. Hora sidal enter.
+
+02:59:32.000 --> 02:59:36.000
+Mm-hmm.
+
+02:59:36.000 --> 02:59:52.000
+C. Uh-huh. por favor.
+
+02:59:52.000 --> 02:59:54.000
+permiso.
+
+02:59:54.000 --> 03:00:00.000
+See? Permita me compartir para por esenar otrada cosa que en caso el es sargas.
+
+03:00:00.000 --> 03:00:09.000
+Yeah. Brando. Muchas es pasa que tu pier esaion.
+
+03:00:09.000 --> 03:00:32.000
+Tu cuenta actualmente no fue selecionada. Coro esto. Entonces que hace eso me identifica nuevamente que soyo la que esta correndo.
+
+03:00:32.000 --> 03:00:38.000
+Yeah, cuando le sargasi en caso de. Entonces vamos a correesto, pun, y esta.
+
+03:00:38.000 --> 03:00:46.000
+Anita promesar el quijo dinor claro, yes, la lle, mes al unlim. As estiege en este link. Yeah?
+
+03:00:46.000 --> 03:00:53.000
+El correito. Continuar.
+
+03:00:53.000 --> 03:01:00.000
+permitir. Copio eso eso.
+
+03:01:00.000 --> 03:01:17.000
+y lo pego poca. Enter. Qui no… leg llamano solvidar.
+
+03:01:17.000 --> 03:01:45.000
+Entonces ahi. commando, commando.
+
+03:01:45.000 --> 03:01:50.000
+Y comando seperdio.
+
+03:01:50.000 --> 03:01:59.000
+Donne me fistas. Se.
+
+03:01:59.000 --> 03:02:10.000
+Esto es un guarni, no pasanada, luego lamos a cambiar a una version mas actualizada. Ya, lo que quierita que se des espiege el codigo per se.
+
+03:02:10.000 --> 03:02:19.000
+Pero hasta hi alguna pregunta. Astai estamos bien.
+
+03:02:19.000 --> 03:02:20.000
+Cuentamelo.
+
+03:02:20.000 --> 03:02:27.000
+Rosara. In the chat.
+
+03:02:27.000 --> 03:02:30.000
+Hey, you know, you know, kay sa edit. Uh, no, no.
+
+03:02:30.000 --> 03:02:42.000
+Simple lo que te dice, ya, aca apore ejemras perame, acale en la foto.
+
+03:02:42.000 --> 03:02:46.000
+Okay.
+
+03:02:46.000 --> 03:03:01.000
+Entonces en la foto que esta car, no, en esa no, en esta hay se mejor. En esta, esta viscorian ming yo user, blah blah blah.
+
+03:03:01.000 --> 03:03:13.000
+Ralmente no es buena practica. Ya, porso que en el casostericion no le pongas. Tampo estoy poniendo, y aqui parenthesis, tampo que estoy indicando este senor da.
+
+03:03:13.000 --> 03:03:14.000
+Oh.
+
+03:03:14.000 --> 03:03:22.000
+Porque, porque estamos en la generacion uno. Si fuera la generacion dos, you cannot yo necesariamente, necesito estabajar con el eventarque.
+
+03:03:22.000 --> 03:03:28.000
+Yo con la generacion uno, ya con la que estamos haciendo nosotos.
+
+03:03:28.000 --> 03:03:41.000
+ustedes, ya? Eventos, ya.
+
+03:03:41.000 --> 03:03:48.000
+En el caso de la generacion dos, daja con eventarca, como asi, aca tengo yun ejemro.
+
+03:03:48.000 --> 03:03:54.000
+buen eseniento. meeting Akka. Si umuel la funcion.
+
+03:03:54.000 --> 03:04:04.000
+And on the demo switches.
+
+03:04:04.000 --> 03:04:11.000
+Pakista en servicios. Porjemplo, yo tenguaca.
+
+03:04:11.000 --> 03:04:22.000
+En el caso de la generacion dos. Il estongo at ziger.
+
+03:04:22.000 --> 03:04:35.000
+Necesariamente medic, que cargue. El eventar trigger para que esto podfuncionar.
+
+03:04:35.000 --> 03:04:43.000
+Entonces. Entonces yo pongo eso, y le pongo misogar un error.
+
+03:04:43.000 --> 03:04:57.000
+Porque porque segunda generacion. Ya, no tostamos haciendo para la primera. Ya, es mas que na que tambi a la diferencia. Memor faciles que entoria de veriao como esto. Estatus attivo.
+
+03:04:57.000 --> 03:05:08.000
+Como lo reviso yonita, bien? As a… Vasa la parte servicios.
+
+03:05:08.000 --> 03:05:25.000
+Ir ataran funcion uno. Yeah, me vis a constemos aipa por continuar.
+
+03:05:25.000 --> 03:05:31.000
+Professor.
+
+03:05:31.000 --> 03:05:46.000
+Ah, yeah. La siguiente. Como tal, ya, e… Pemero. Oto punto.
+
+03:05:46.000 --> 03:05:56.000
+Os trigenitar.
+
+03:05:56.000 --> 03:06:05.000
+Boyaka. Yeah. Yo no tengo en la parte de don't.
+
+03:06:05.000 --> 03:06:11.000
+Yo no podo ser con event. Yo hago. Los eventos.
+
+03:06:11.000 --> 03:06:27.000
+O sea? final estora el paza finacion. A todos el todo tenga que ver con.
+
+03:06:27.000 --> 03:06:37.000
+Que se este. El aparte que estaca.
+
+03:06:37.000 --> 03:07:00.000
+So, cosas que es diferente. Namos llamarlo con… la funcion dos, que cosa mas?
+
+03:07:00.000 --> 03:07:07.000
+Ya. Yeah. Auto Automas?
+
+03:07:07.000 --> 03:07:17.000
+Se esta siendo la miracion a la funcion dos.
+
+03:07:17.000 --> 03:07:27.000
+La funcion dos necesariamente, odo punto tambien que es importante mencionar, que tu tienes un formato que trabaja bajo el concerto tipo fras.
+
+03:07:27.000 --> 03:07:48.000
+Yeah. Esteca. La funcion dos. A cambio la funcion uno tutajas ponte codigo Python, no normal, y justo. Aha, esa es como la diferencia. Pero vamos algun se estan utilizando. E la uno tres a unestato utilizando.
+
+03:07:48.000 --> 03:07:58.000
+Siguenta melo. See?
+
+03:07:58.000 --> 03:07:59.000
+Ah, yeah. ID?
+
+03:07:59.000 --> 03:08:03.000
+Anita. Kid is a copy. see the project.
+
+03:08:03.000 --> 03:08:11.000
+Uh, yeah, no, no, tobienoiendo no modificado el ID. Toya falta.
+
+03:08:11.000 --> 03:08:17.000
+Si, todo viendo. Toyendo. Solamente en el traba. Nadamas. Este traora.
+
+03:08:17.000 --> 03:08:19.000
+up at all. Then, no, no, you know. de permisos.
+
+03:08:19.000 --> 03:08:24.000
+Are you.
+
+03:08:24.000 --> 03:08:25.000
+Ah, ya los… yeah, yeah, yeah. Ah, yeah, yeah, yeah.
+
+03:08:25.000 --> 03:08:36.000
+Correcto? Estes que dice bill service account.
+
+03:08:36.000 --> 03:08:37.000
+No, no.
+
+03:08:37.000 --> 03:08:45.000
+Debiria decir algo como, pesa que refereas a la idea del processo. No, de veria ser algo como pedates, perate… Algo como como si, el arrobad developer, y service acan punto con. Aha!
+
+03:08:45.000 --> 03:08:47.000
+Aquito lo cambias. Uh-huh. C.
+
+03:08:47.000 --> 03:08:53.000
+I said, Araba. Projects diagonal project. Yeah.
+
+03:08:53.000 --> 03:09:11.000
+See? C. Min numero. Entonces, lo queas hacer en la parte liaamente cado de poder para que los pongas. Asas chica que is intrud.
+
+03:09:11.000 --> 03:09:16.000
+Mm-hmm.
+
+03:09:16.000 --> 03:09:21.000
+Oh.
+
+03:09:21.000 --> 03:09:22.000
+Yeah.
+
+03:09:22.000 --> 03:09:31.000
+Uh-huh. Laca, mire.
+
+03:09:31.000 --> 03:09:40.000
+No hayon is a Google Cloud. Bendeke Karage.
+
+03:09:40.000 --> 03:09:47.000
+till there is a view project detail. Saleh? Thank you, del project number.
+
+03:09:47.000 --> 03:09:54.000
+Yeah, it's a brilliant number. A part el project ID permit tambien es como que estuices a mira.
+
+03:09:54.000 --> 03:09:58.000
+Tu tienes tu project ID. Que la se unico.
+
+03:09:58.000 --> 03:10:05.000
+Un problem number. Entos de mayormente cuando al final.
+
+03:10:05.000 --> 03:10:14.000
+en Google Cloud. Cloud. Lo que te pien siempre es el project ID, y el project number. Siempre. Siempre.
+
+03:10:14.000 --> 03:10:25.000
+Chica quisito. Estan los. Yeah.
+
+03:10:25.000 --> 03:10:32.000
+Yes. But I yuncion?
+
+03:10:32.000 --> 03:10:44.000
+Yeah, value. El resto. Los guilla des play agaron su funcion, ya.
+
+03:10:44.000 --> 03:10:53.000
+113 Edit.
+
+03:10:53.000 --> 03:11:01.000
+Boecker. Donces estabanaka.
+
+03:11:01.000 --> 03:11:07.000
+Porje breasta? Click and edit.
+
+03:11:07.000 --> 03:11:18.000
+Bajal bajas. E que le cambios.
+
+03:11:18.000 --> 03:11:36.000
+Yeah. Maria. Ya?
+
+03:11:36.000 --> 03:11:37.000
+Entonces. Lo cami desa forma, ya tienes la te espos, no?
+
+03:11:37.000 --> 03:11:44.000
+Builder.
+
+03:11:44.000 --> 03:11:49.000
+por seguir.
+
+03:11:49.000 --> 03:11:59.000
+Mesias amador. Ah, see, see, see.
+
+03:11:59.000 --> 03:12:05.000
+Chicken edit. Baja dig a net.
+
+03:12:05.000 --> 03:12:18.000
+I can deploy.
+
+03:12:18.000 --> 03:12:23.000
+See?
+
+03:12:23.000 --> 03:12:42.000
+Okay, yeah. Calm. Esperme.
+
+03:12:42.000 --> 03:12:48.000
+Hi, Augusta.
+
+03:12:48.000 --> 03:12:53.000
+Entonces.
+
+03:12:53.000 --> 03:13:02.000
+Esto lo mimo que lto. Esto la segunda funcion. Yeah.
+
+03:13:02.000 --> 03:13:09.000
+Bien. No? No segundajenelacion.
+
+03:13:09.000 --> 03:13:16.000
+La regio el NZ Point, que relency point. Para que relency point?
+
+03:13:16.000 --> 03:13:19.000
+Oh, yeah.
+
+03:13:19.000 --> 03:13:24.000
+And… I don't…
+
+03:13:24.000 --> 03:13:36.000
+segundo. Segundito.
+
+03:13:36.000 --> 03:13:45.000
+Huang… Oh, oh, wow…
+
+03:13:45.000 --> 03:13:46.000
+Casa Vilka. Yeah. Get that.
+
+03:13:46.000 --> 03:13:49.000
+I mean, see.
+
+03:13:49.000 --> 03:13:59.000
+Entonces. Luego al runtime.
+
+03:13:59.000 --> 03:14:11.000
+El yal, estoydan ingo momento 19 most yal. Lo que vasa que esto, cuando yo pongo de esta forma, ya, vamos la bueno senia la funcion despregada hecho.
+
+03:14:11.000 --> 03:14:16.000
+Condole puedesa forma, tu les esasponiendo deforma indireta el yal.
+
+03:14:16.000 --> 03:14:33.000
+llenar. Yeah? Cierto, porque tu pazza. Si yo me voy paraca, y ve ol' architectura.
+
+03:14:33.000 --> 03:14:45.000
+Agui? Y el tiger se cosa el tra astoracha.
+
+03:14:45.000 --> 03:14:53.000
+Bie. Lo que terminar ojecut en la funcion por favorteen la tafuncion.
+
+03:14:53.000 --> 03:15:06.000
+La funucione la tafuncion. para que tenga.
+
+03:15:06.000 --> 03:15:16.000
+la segunda funcion. CEC.
+
+03:15:16.000 --> 03:15:25.000
+Funcion una. Has that got?
+
+03:15:25.000 --> 03:15:37.000
+Augusta.
+
+03:15:37.000 --> 03:15:56.000
+Recuerden, recording un punte importante. estos, o estos, se hayan perdido.
+
+03:15:56.000 --> 03:16:05.000
+Si es que si ese4 el caso tendias que idutar nuevamente, los espor.
+
+03:16:05.000 --> 03:16:15.000
+en el momento de jecucion. Ya, por se casa.
+
+03:16:15.000 --> 03:16:36.000
+porfa.
+
+03:16:36.000 --> 03:16:41.000
+Para puedeital las variables?
+
+03:16:41.000 --> 03:16:52.000
+kickoff? Y van a la parte que desias accord.
+
+03:16:52.000 --> 03:17:07.000
+a generacion. Editar la parte de las variables entorno.
+
+03:17:07.000 --> 03:17:08.000
+Yes, estabemera funcion?
+
+03:17:08.000 --> 03:17:13.000
+No.
+
+03:17:13.000 --> 03:17:17.000
+Compardo Pantayita. esta, compart.
+
+03:17:17.000 --> 03:17:24.000
+Hmm…
+
+03:17:24.000 --> 03:17:25.000
+Ah, yeah. Prebunta.
+
+03:17:25.000 --> 03:17:30.000
+Aylove. Uh…
+
+03:17:30.000 --> 03:17:36.000
+Sobm poquita. Ainamath.
+
+03:17:36.000 --> 03:17:42.000
+qualitema? Eloy inserto.
+
+03:17:42.000 --> 03:17:43.000
+See?
+
+03:17:43.000 --> 03:17:45.000
+Aja. Eso muy bien.
+
+03:17:45.000 --> 03:17:50.000
+Hello, yeah.
+
+03:17:50.000 --> 03:18:03.000
+No, terminos y condiciones. Also.
+
+03:18:03.000 --> 03:18:08.000
+Eso? Uh-huh.
+
+03:18:08.000 --> 03:18:11.000
+Okay, okay.
+
+03:18:11.000 --> 03:18:19.000
+Tigen continuo, bien. Baja.
+
+03:18:19.000 --> 03:18:25.000
+Hello? Uh-huh.
+
+03:18:25.000 --> 03:18:33.000
+Copy ISO.
+
+03:18:33.000 --> 03:18:39.000
+Mm-hmm. Da lenter.
+
+03:18:39.000 --> 03:18:43.000
+Yes, and soon.
+
+03:18:43.000 --> 03:18:55.000
+Ah, yeah, yeah, yeah, being… yeah. El ultima eso, dalen.
+
+03:18:55.000 --> 03:18:56.000
+Yes. Uh-huh. Yes. Uh-huh.
+
+03:18:56.000 --> 03:19:01.000
+Oh, let's see. Yes, I'm good.
+
+03:19:01.000 --> 03:19:11.000
+Okay. El resto, ya tiene sus la primera. Ya tiene susuncion pliemera, despiagado.
+
+03:19:11.000 --> 03:19:19.000
+Julio, Paul, Piero, Raul. Me eu un poradar.
+
+03:19:19.000 --> 03:19:23.000
+No, uh…
+
+03:19:23.000 --> 03:19:28.000
+Haber compartmento pantalla.
+
+03:19:28.000 --> 03:19:31.000
+llevi. Simresulta.
+
+03:19:31.000 --> 03:19:38.000
+available. Yeah. Qui es compartir para ayudarte?
+
+03:19:38.000 --> 03:19:40.000
+para segundo. There is.
+
+03:19:40.000 --> 03:19:44.000
+Maybe. Yeah, yeah, maybe comment us. Permit here.
+
+03:19:44.000 --> 03:19:50.000
+Yeah.
+
+03:19:50.000 --> 03:19:54.000
+Entonces. Entonces. How are you?
+
+03:19:54.000 --> 03:20:17.000
+Yeah. Es porque. Porque dento de la funcion, la vantium de iesa chi que en editar.
+
+03:20:17.000 --> 03:20:23.000
+Bahang un poquito. Chicken nets.
+
+03:20:23.000 --> 03:20:35.000
+Yeah. Entonces en el caso vamos ay por a cap para que segual costa.
+
+03:20:35.000 --> 03:20:43.000
+Chicken editor? Click on next. Entonces.
+
+03:20:43.000 --> 03:21:00.000
+Eso lo que esos lo que automaticamente. Alommento e poner esta linea esta linea, esta linea, esta linea.
+
+03:21:00.000 --> 03:21:06.000
+Yeah? yar.
+
+03:21:06.000 --> 03:21:18.000
+Entonces ahora querempresarlo. Conquer imprasanita. Parcel location en el documento mas o mendos en la oja que yate digo que no me acuerdo un segundo.
+
+03:21:18.000 --> 03:21:30.000
+Hello. Hello, it's… Die Ocho.
+
+03:21:30.000 --> 03:21:37.000
+Yes, ma'am. Hey.
+
+03:21:37.000 --> 03:21:45.000
+Augusta. Parce location. Donde tria se tu parcer.
+
+03:21:45.000 --> 03:21:51.000
+Encoregion namo cuadanita. basal processor.
+
+03:21:51.000 --> 03:21:57.000
+basal nombie de tu proceso. Trochetized.
+
+03:21:57.000 --> 03:22:06.000
+us. Entonces. En esta parte donde temi fiest Dios aca. Aqui le pones, yo es.
+
+03:22:06.000 --> 03:22:13.000
+Processor hoy Anita. Y copio esta ID.
+
+03:22:13.000 --> 03:22:19.000
+Yeah, gobius ID. Lo pego porca.
+
+03:22:19.000 --> 03:22:43.000
+Fijo de misalida. Tiamos.
+
+03:22:43.000 --> 03:22:52.000
+Yeah. poder seguir.
+
+03:22:52.000 --> 03:23:01.000
+launching and deploy. Una je cambiento esto, de antique and deploy, por favor.
+
+03:23:01.000 --> 03:23:04.000
+Electric and deprive.
+
+03:23:04.000 --> 03:23:12.000
+Esta siendo deploy.
+
+03:23:12.000 --> 03:23:24.000
+Uh, yeah, bro. Compartemento pantaya.
+
+03:23:24.000 --> 03:23:25.000
+Pero su medion no alguno.
+
+03:23:25.000 --> 03:23:35.000
+Yeah. Esperaspera. Amos primero con la primera. Retocide, aja, retosecedon poquito.
+
+03:23:35.000 --> 03:23:38.000
+Oh, okay.
+
+03:23:38.000 --> 03:23:42.000
+Uh-huh, yeah. I'll let you again, La Plumera, eso.
+
+03:23:42.000 --> 03:23:47.000
+Edit. ASO.
+
+03:23:47.000 --> 03:23:59.000
+Take a knit.
+
+03:23:59.000 --> 03:24:08.000
+Eno pantallita bosca document yay. La es a parte.
+
+03:24:08.000 --> 03:24:13.000
+Uh-huh. Ah, yeah, yeah.
+
+03:24:13.000 --> 03:24:14.000
+Yes. Aya.
+
+03:24:14.000 --> 03:24:18.000
+Yeah.
+
+03:24:18.000 --> 03:24:19.000
+Yeah. Ah, I don't know.
+
+03:24:19.000 --> 03:24:30.000
+Si. Si. Yes. Malemente bargano es pase eso taden de tejar con per file.
+
+03:24:30.000 --> 03:24:37.000
+As chi que en servicios nuevamente. Eso. Go to run.
+
+03:24:37.000 --> 03:24:43.000
+And.
+
+03:24:43.000 --> 03:24:47.000
+Mm-hmm. Mm-hmm.
+
+03:24:47.000 --> 03:24:51.000
+Eso. Hey, clicking Edit.
+
+03:24:51.000 --> 03:24:55.000
+IBM. Baha, click on it.
+
+03:24:55.000 --> 03:25:08.000
+pagina.
+
+03:25:08.000 --> 03:25:12.000
+Wow. existing? Oh, we have got a question now.
+
+03:25:12.000 --> 03:25:23.000
+Uh, yeah, yeah. Uh-hua. Yeah. Aha, porque loci. Peroceso.
+
+03:25:23.000 --> 03:25:27.000
+ASL. la funcion en no elotas.
+
+03:25:27.000 --> 03:25:33.000
+You listen to me.
+
+03:25:33.000 --> 03:25:37.000
+Boroto eso. No, no, no, pero horse. Hay pon, US. Es.
+
+03:25:37.000 --> 03:25:43.000
+Okay.
+
+03:25:43.000 --> 03:25:44.000
+Yeah.
+
+03:25:44.000 --> 03:25:48.000
+Yeah. Lo.
+
+03:25:48.000 --> 03:25:50.000
+No pumo de ployaca. Well, yeah, totally.
+
+03:25:50.000 --> 03:25:59.000
+Comos asto proceso. India segan al nobri la que dice.
+
+03:25:59.000 --> 03:26:03.000
+En el verdego en elasul eso. Uh-huh.
+
+03:26:03.000 --> 03:26:07.000
+Okay.
+
+03:26:07.000 --> 03:26:12.000
+SID? Est estu processor ID al que dice a genta bevera.
+
+03:26:12.000 --> 03:26:15.000
+Ace. Yeah, copyllo.
+
+03:26:15.000 --> 03:26:18.000
+Hmm. See?
+
+03:26:18.000 --> 03:26:23.000
+Andalotolado. Aja, muy bien.
+
+03:26:23.000 --> 03:26:27.000
+Ah, hmm, ah, yeah. How beautiful.
+
+03:26:27.000 --> 03:26:38.000
+Y chi can deploy. Lo mismo agar en el resto. Yeah?
+
+03:26:38.000 --> 03:26:42.000
+Si el a segunda funcion, lla que estas ahi.
+
+03:26:42.000 --> 03:26:53.000
+Sepa. Mm-hmm.
+
+03:26:53.000 --> 03:26:59.000
+Aisel, click on edit.
+
+03:26:59.000 --> 03:27:02.000
+Hmm. Mm-hmm. Yeah.
+
+03:27:02.000 --> 03:27:04.000
+Alright, give me PDRP.
+
+03:27:04.000 --> 03:27:14.000
+eso. Yeah.
+
+03:27:14.000 --> 03:27:15.000
+See?
+
+03:27:15.000 --> 03:27:19.000
+Yeah. No pasanada. Buenosamente api y servicios.
+
+03:27:19.000 --> 03:27:25.000
+Okay.
+
+03:27:25.000 --> 03:27:26.000
+Okay.
+
+03:27:26.000 --> 03:27:30.000
+Uh-huh, e pong api y servicios.
+
+03:27:30.000 --> 03:27:31.000
+Hmm.
+
+03:27:31.000 --> 03:27:40.000
+El restaurantada. Sebuelenumente a pi servicios. Electric eye. Uh-huh.
+
+03:27:40.000 --> 03:27:41.000
+No, no, I love a lot. Uh-huh. See, thank you. Thank you, Laita. S. Uh-huh.
+
+03:27:41.000 --> 03:27:47.000
+No, no, no. I mean…
+
+03:27:47.000 --> 03:27:54.000
+Yes, that ensenciales.
+
+03:27:54.000 --> 03:27:55.000
+Okay, sir.
+
+03:27:55.000 --> 03:28:06.000
+Mm-hmm. Yeah. Yeah, asperate. Deja compartir, vasamosa dejara compartir de lado derecho que y se hecho qui.
+
+03:28:06.000 --> 03:28:12.000
+Allergy donisce choki y copiolo. Y lo rem prazas, ya en la funcion, asigo de sai repezas. Aja.
+
+03:28:12.000 --> 03:28:21.000
+Mm-hmm. Mm-hmm.
+
+03:28:21.000 --> 03:28:22.000
+Okay.
+
+03:28:22.000 --> 03:28:26.000
+Mm-hmm.
+
+03:28:26.000 --> 03:28:27.000
+Yeah. Yes. Wisdom.
+
+03:28:27.000 --> 03:28:39.000
+Yes. Yeah. Yeah. El resto Dali. El resto como va.
+
+03:28:39.000 --> 03:28:46.000
+Yeah. Miri empor aca. Un punto importante para que puan probaresto.
+
+03:28:46.000 --> 03:29:01.000
+Yeah. Comparte me tu pantaya por favor. para porta que say para que siguel que tu es companeros, comportement tu planta ejonsito por favor los. Y esto.
+
+03:29:01.000 --> 03:29:10.000
+I think I got it. Yeah. funciones de plumera generacion.
+
+03:29:10.000 --> 03:29:17.000
+Uh-huh. Yes. Electric and noise processing boys.
+
+03:29:17.000 --> 03:29:22.000
+Mm-hmm. Hastriz.
+
+03:29:22.000 --> 03:29:30.000
+details. Arbita eso. Mire. Entonces. Ustens aqui, tien.
+
+03:29:30.000 --> 03:29:48.000
+service accounts. Nosotos podiemos haber pues en mimo codio que util serizao la misma para que no tengamos reponer, los mismos permisos en el todolado. Porque lo que realmente, lo que realmente.
+
+03:29:48.000 --> 03:30:01.000
+El service account. Donces. Copia del project?
+
+03:30:01.000 --> 03:30:08.000
+Hastel Punto con. Copia es bien.
+
+03:30:08.000 --> 03:30:15.000
+Que lo tienza el costa. Yes.
+
+03:30:15.000 --> 03:30:23.000
+Eso? Mm-hmm. Yes.
+
+03:30:23.000 --> 03:30:40.000
+mejor. Yes. Uh-huh. Sobm poquito?
+
+03:30:40.000 --> 03:30:52.000
+La pantaya donde esta tu los permisos yo. Uh-huh. Eso, bien. Bora esa es e filter, bora lo.
+
+03:30:52.000 --> 03:30:58.000
+Contolve. Talentor.
+
+03:30:58.000 --> 03:31:20.000
+En el pedefe. En laj aqui enseten dos service account.
+
+03:31:20.000 --> 03:31:28.000
+Bajo poquito mas.
+
+03:31:28.000 --> 03:31:54.000
+Tiene doservice account. los estos.
+
+03:31:54.000 --> 03:32:03.000
+Entonces re esa tuya aime por favor. Que estabamos.
+
+03:32:03.000 --> 03:32:10.000
+Eso. Yan at ces? Bien.
+
+03:32:10.000 --> 03:32:18.000
+Botona azul. Botangasulis by principles.
+
+03:32:18.000 --> 03:32:31.000
+1970 principles, copiello. Es da lenter.
+
+03:32:31.000 --> 03:32:37.000
+Yes. As el tema el role? Ba campoquito.
+
+03:32:37.000 --> 03:32:47.000
+busca, BigQuery admin.
+
+03:32:47.000 --> 03:33:10.000
+Baja. Document y hay administrator.
+
+03:33:10.000 --> 03:33:20.000
+Yeah. Col masi vamos, este… no. No, no, no.
+
+03:33:20.000 --> 03:33:26.000
+Butts up?
+
+03:33:26.000 --> 03:33:41.000
+Eso adano de role. But some budget publisher.
+
+03:33:41.000 --> 03:33:52.000
+Yes, the add another role. So that is account token generator.
+
+03:33:52.000 --> 03:34:01.000
+Quita laese. account. Salomimo que les paseo por el sum account, talking.
+
+03:34:01.000 --> 03:34:07.000
+talking. Eso.
+
+03:34:07.000 --> 03:34:26.000
+Estora charming?
+
+03:34:26.000 --> 03:34:37.000
+storage object admin. Y elutimo storage object creator.
+
+03:34:37.000 --> 03:34:43.000
+Estora object? theater.
+
+03:34:43.000 --> 03:34:56.000
+Mm-hmm. Yes.
+
+03:34:56.000 --> 03:35:07.000
+Entonces. y con estobamos acabando, perime.
+
+03:35:07.000 --> 03:35:20.000
+Si? I'll say you almost here?
+
+03:35:20.000 --> 03:35:33.000
+Entonces, la pregunta es como prevo. En el paso siete en el ataria siete acate pong un codigo paquet tu prebes. Como asi.
+
+03:35:33.000 --> 03:35:42.000
+Mira or meeting. Lao.
+
+03:35:42.000 --> 03:35:48.000
+La vamos a pon de la shell. They were el proye guid.
+
+03:35:48.000 --> 03:35:56.000
+Jese util, se pede copy. E so que esaca que esta mis archivos, los tuy pasando.
+
+03:35:56.000 --> 03:36:09.000
+Porque tearo. Porque recuerda que si yo me voy al chiguer cual es mi tiger. Esteba que cierto sa tiesir que vallegar.
+
+03:36:09.000 --> 03:36:15.000
+Meeting. Let's just broke it on. Let's this. Vallegar, los archivos.
+
+03:36:15.000 --> 03:36:27.000
+Alimput y lobajecutar tolo de mas. A voce la preba.
+
+03:36:27.000 --> 03:36:32.000
+B query. Yeah. Mos hacer un dilide a tabra.
+
+03:36:32.000 --> 03:36:40.000
+Para que que va sia. Parce las prevas.
+
+03:36:40.000 --> 03:36:48.000
+Open aka. Asarundi leads.
+
+03:36:48.000 --> 03:36:53.000
+lead from.
+
+03:36:53.000 --> 03:36:59.000
+Just stop.
+
+03:36:59.000 --> 03:37:10.000
+Good. Yes. Por el auto.
+
+03:37:10.000 --> 03:37:20.000
+el processo enjesta.
+
+03:37:20.000 --> 03:37:50.000
+Aqui te ayuda. Naidatos, mamos a revizar.
+
+03:37:51.000 --> 03:38:02.000
+Preview, noidatos haberica. Noidatos. Bien. Ahora con eso, usted van que cosa. Cojen esto.
+
+03:38:02.000 --> 03:38:07.000
+Pan nejeguta esto. Y lo van a corre.
+
+03:38:07.000 --> 03:38:11.000
+Y van a probar que realmente a sore qui detura servles funcion.
+
+03:38:11.000 --> 03:38:22.000
+PACA. Enter.
+
+03:38:22.000 --> 03:38:32.000
+Ultra storage. Donde debir estar mi fartura. En input on archive.
+
+03:38:32.000 --> 03:38:39.000
+Y porque.
+
+03:38:39.000 --> 03:38:46.000
+a cabamos.
+
+03:38:46.000 --> 03:38:54.000
+ASAP. No aiesta. Entonces vamos nuemente porca.
+
+03:38:54.000 --> 03:39:06.000
+Vamos a result tran fun. I said, no, ciao. Ya lo perdia, tenamente drown.
+
+03:39:06.000 --> 03:39:12.000
+Bembaka. Okay.
+
+03:39:12.000 --> 03:39:21.000
+Italo italo. tua pellido por favor?
+
+03:39:21.000 --> 03:39:26.000
+Para puertaca. list. Yeah.
+
+03:39:26.000 --> 03:39:33.000
+Tonces vasa casa servicio.
+
+03:39:33.000 --> 03:39:41.000
+Vasar la funcion? Apaki?
+
+03:39:41.000 --> 03:39:50.000
+basalonde dice log aqueta.
+
+03:39:50.000 --> 03:40:00.000
+Write into esta, ya, revisamos en biscueri, vamos poca haber, aqui.
+
+03:40:00.000 --> 03:40:05.000
+Refresh contents. Mapoca.
+
+03:40:05.000 --> 03:40:12.000
+preview. Hallesta. You know?
+
+03:40:12.000 --> 03:40:17.000
+Refresh. Preview. I don't know.
+
+03:40:17.000 --> 03:40:28.000
+No elimin.
+
+03:40:28.000 --> 03:40:38.000
+Yeah, preben. No serbien poner de los permisos, no. Endonces parise rando.
+
+03:40:38.000 --> 03:40:51.000
+que lo que hemos visto. He mosion un poco mas un poco un poquitamas lento, para que se puede tender, ya, e… aquistadas.
+
+03:40:51.000 --> 03:41:05.000
+Entonces. end-to-end respect.
+
+03:41:05.000 --> 03:41:18.000
+Due altema Patsap. Oto punto con todo esto.
+
+03:41:18.000 --> 03:41:28.000
+ustedes, pueden ir abanzando, y a pun irajo. modolos.
+
+03:41:28.000 --> 03:41:35.000
+Mirenaka. El desafio. Vamos paraca.
+
+03:41:35.000 --> 03:41:50.000
+Imprementa un alerta de Ror. total.
+
+03:41:50.000 --> 03:42:00.000
+una condicionar en el archivo me, punto pella. Yeah?
+
+03:42:00.000 --> 03:42:09.000
+Mamos con esto. processador en document.
+
+03:42:09.000 --> 03:42:19.000
+If there is a deep invoice, parser, especializado. del process ID. Yeah.
+
+03:42:19.000 --> 03:42:29.000
+Para que pues practicar sobreso. investigativo, no.
+
+03:42:29.000 --> 03:42:42.000
+para que puedas ver. guiaro.
+
+03:42:42.000 --> 03:42:47.000
+Magita.
+
+03:42:47.000 --> 03:43:04.000
+Entonces tuas a real un reportote. No reporte no no este… No, no tan comprejo, no? Asi, lo mas basico, no te ve esa complicicar que si hubi los color es eliceno, no.
+
+03:43:04.000 --> 03:43:09.000
+Lo mas vasico. Conatasar conjote datos, el quemos esta ajando.
+
+03:43:09.000 --> 03:43:18.000
+dashboard. Que esta el tema de latitude longito. Yeah.
+
+03:43:18.000 --> 03:43:28.000
+De la parte del Super. Para hacer eso, I que de la parte la fartura.
+
+03:43:28.000 --> 03:43:35.000
+Ya. Entonces, esos son para que te abajen.
+
+03:43:35.000 --> 03:43:46.000
+ya. E lo envian.
+
+03:43:46.000 --> 03:44:12.000
+en la trace que viene. Reviso lo en drupo, revision, ya, y lugo vamos llamar a uno e cada rupo, sobre esta partecita. Que oppustede sobre por ejembro, porque… porque el rodehia fu necesario torgar el para la funcion, treble.
+
+03:44:12.000 --> 03:44:22.000
+Entonces. Hasta hi, alguna preguntas aza partecita, hasta estamos voya.
+
+03:44:22.000 --> 03:44:27.000
+Sendiende.
+
+03:44:27.000 --> 03:44:47.000
+See? Any other. Entonces pues muchasias y disconed a la de tempo, pero try super necesario para poder cabar estardividad. Yeah? Higuala se estoya tiene los archivos para que hoyan revisando, asi que… hasta cuando la terreia.
+
+03:44:47.000 --> 03:45:02.000
+Compared to Pantaya amador, hasta cuando la terreia hasta dejaminos segundo confirm.
+
+03:45:02.000 --> 03:45:12.000
+Compared to Panta Experimentes. Peremes perme.
+
+03:45:12.000 --> 03:45:20.000
+Lexos permisos al service acao. compartment de talles.
+
+03:45:20.000 --> 03:45:25.000
+The taillas?
+
+03:45:25.000 --> 03:45:38.000
+no se cuanto. El primero copied.
+
+03:45:38.000 --> 03:45:43.000
+Analieme.
+
+03:45:43.000 --> 03:45:47.000
+Okay.
+
+03:45:47.000 --> 03:45:53.000
+Yeah. Si por siem poquito mane que no que toy un poco se halla no vebo.
+
+03:45:53.000 --> 03:46:03.000
+Esperme. Here's better me.
+
+03:46:03.000 --> 03:46:15.000
+Yeah. Patsa.
+
+03:46:15.000 --> 03:46:25.000
+Aha, ahi camel. Se perdio.
+
+03:46:25.000 --> 03:46:32.000
+esta perfecto, modifica el arbiva. Y pon la iPadsup?
+
+03:46:32.000 --> 03:46:39.000
+That's up. Admin, no?
+
+03:46:39.000 --> 03:46:43.000
+Baha, baha. Ayesta.
+
+03:46:43.000 --> 03:46:58.000
+Queen. Peneme.
+
+03:46:58.000 --> 03:47:07.000
+El tenta dos. Esau?
+
+03:47:07.000 --> 03:47:11.000
+ese yamitos permisos. Consolve, eso.
+
+03:47:11.000 --> 03:47:31.000
+Bien. administrator.
+
+03:47:31.000 --> 03:47:48.000
+Esta perfecto. Uh-huh. Mm-hmm.
+
+03:47:48.000 --> 03:48:04.000
+Qui memoranda los logjo? Aha!
+
+03:48:04.000 --> 03:48:12.000
+They'll… they'll, uh… No, and a los los de la funcion. Que estabia commentado.
+
+03:48:12.000 --> 03:48:13.000
+Como andro.
+
+03:48:13.000 --> 03:48:19.000
+Uh-huh.
+
+03:48:19.000 --> 03:48:23.000
+And the Hillcote.
+
+03:48:23.000 --> 03:48:29.000
+And, uh, permisos. No, perdo melojo. Hello? Esau?
+
+03:48:29.000 --> 03:48:46.000
+Yes, there is… Along e5 tuesto.
+
+03:48:46.000 --> 03:48:54.000
+Esa. And, uh, aloch?
+
+03:48:54.000 --> 03:49:01.000
+Yes. Eso son de la demas tempano baja.
+
+03:49:01.000 --> 03:49:09.000
+Perate te salh. Mira.
+
+03:49:09.000 --> 03:49:17.000
+Ah, yeah. I've taken editor. And so?
+
+03:49:17.000 --> 03:49:25.000
+Sigiente.
+
+03:49:25.000 --> 03:49:41.000
+Aberd us. lado, del… Conceso de tu proceso, to processor ID.
+
+03:49:41.000 --> 03:49:42.000
+And just, uh, okay.
+
+03:49:42.000 --> 03:49:47.000
+Uh-huh.
+
+03:49:47.000 --> 03:49:58.000
+por favor. Uh-huh.
+
+03:49:58.000 --> 03:50:03.000
+that it's taken tomato. in my processor.
+
+03:50:03.000 --> 03:50:10.000
+Uh-huh. Copy as ID.
+
+03:50:10.000 --> 03:50:20.000
+Conto lefe. Yeah, sista. Okay, processor, your code. Okay.
+
+03:50:20.000 --> 03:50:33.000
+As you cancel. Amos a lotto lado.
+
+03:50:33.000 --> 03:50:38.000
+La funcion, tambien quiero revisarlo. Also, funcion?
+
+03:50:38.000 --> 03:50:45.000
+unnecesso. Mm-hmm. And yes, sir.
+
+03:50:45.000 --> 03:50:50.000
+Nits. Uh-huh. Yes. Okay. Perate.
+
+03:50:50.000 --> 03:50:55.000
+Quiero raisar una cosa.
+
+03:50:55.000 --> 03:51:00.000
+I wonder… Wow.
+
+03:51:00.000 --> 03:51:06.000
+Red is a toda funcion.
+
+03:51:06.000 --> 03:51:14.000
+See? And I'll digger.
+
+03:51:14.000 --> 03:51:25.000
+Yeah? Okay, and uh… inputs, okay.
+
+03:51:25.000 --> 03:51:37.000
+segundito. Okay, okay.
+
+03:51:37.000 --> 03:51:45.000
+Mm-hmm. Anatique en la mente.
+
+03:51:45.000 --> 03:51:59.000
+And Allah. Sorb.
+
+03:51:59.000 --> 03:52:05.000
+Sobet? Survey.
+
+03:52:05.000 --> 03:52:12.000
+So what?
+
+03:52:12.000 --> 03:52:21.000
+mucho, mucho. Cho baja. ella.
+
+03:52:21.000 --> 03:52:31.000
+After you eliminse. Okay. Baja?
+
+03:52:31.000 --> 03:52:40.000
+Baha. Okay, Baja?
+
+03:52:40.000 --> 03:52:47.000
+SAE. Mm-hmm.
+
+03:52:47.000 --> 03:52:56.000
+And the two service accounts. con algae.
+
+03:52:56.000 --> 03:53:09.000
+Eso? Aha! accountant.
+
+03:53:09.000 --> 03:53:10.000
+Oh, yeah, okay.
+
+03:53:10.000 --> 03:53:21.000
+a tof primera funcion. Uh-huh. And that, yes.
+
+03:53:21.000 --> 03:53:44.000
+Y lo pongo.
+
+03:53:44.000 --> 03:53:53.000
+You must.
+
+03:53:53.000 --> 03:54:23.000
+Garcias.
+
+03:54:27.000 --> 03:54:28.000
+That is in.
+
+03:54:28.000 --> 03:54:30.000
+Hola.
+
+03:54:30.000 --> 03:54:33.000
+Yeah, there's no challenge.
+
+03:54:33.000 --> 03:54:35.000
+you know.
+
+03:54:35.000 --> 03:54:38.000
+back in the. Yeah, you know, John.
+
+03:54:38.000 --> 03:54:42.000
+No, nothing.
+
+03:54:42.000 --> 03:54:50.000
+Odyssey?
+
+03:54:50.000 --> 03:54:59.000
+Hold on…
+
+03:54:59.000 --> 03:55:09.000
+essence. Esperate.
+
+03:55:09.000 --> 03:55:15.000
+Once I wonder… I'm going to take quite some.
+
+03:55:15.000 --> 03:55:23.000
+Yasperate. It's not the project, project, project.
+
+03:55:23.000 --> 03:55:28.000
+Oh. Yeah. Yeah, lots of.
+
+03:55:28.000 --> 03:55:40.000
+Hora co per segundo por favor. ense bundo service account.
+
+03:55:40.000 --> 03:55:44.000
+No, no, no. Else uno servicando la mima funcion.
+
+03:55:44.000 --> 03:56:03.000
+Uh-huh. Yes. Pole, pole… Trigue en la pissi pon editor.
+
+03:56:03.000 --> 03:56:04.000
+Okay.
+
+03:56:04.000 --> 03:56:21.000
+See? No, no, no. Baja y poliditor.
+
+03:56:21.000 --> 03:56:27.000
+Uh-huh. Click and save. Yes, sir.
+
+03:56:27.000 --> 03:56:39.000
+I think tomar el cambio. Vanessa to historians.
+
+03:56:39.000 --> 03:56:46.000
+and address storage.
+
+03:56:46.000 --> 03:56:50.000
+Uh-huh, and just address storage. Yvon archivo por favor.
+
+03:56:50.000 --> 03:56:55.000
+Travel storage.
+
+03:56:55.000 --> 03:57:02.000
+Mm-hmm. buckets.
+
+03:57:02.000 --> 03:57:13.000
+um… L input and an input.
+
+03:57:13.000 --> 03:57:21.000
+Okay.
+
+03:57:21.000 --> 03:57:22.000
+Okay.
+
+03:57:22.000 --> 03:57:26.000
+input. La palabra input. Uh-huh, in the assessment?
+
+03:57:26.000 --> 03:57:29.000
+Including voice is okay.
+
+03:57:29.000 --> 03:57:37.000
+Uh-huh. Boralo.
+
+03:57:37.000 --> 03:57:42.000
+No, no. Hastigue en el cuadito, if you can delete.
+
+03:57:42.000 --> 03:57:50.000
+is. Uh-huh. Yes. Alo mismo para la parte del loque es el archive.
+
+03:57:50.000 --> 03:57:57.000
+Yes, sir.
+
+03:57:57.000 --> 03:58:07.000
+Taberfecto. automamente recuta por fotoproceso.
+
+03:58:07.000 --> 03:58:17.000
+momento. Siere se proviso.
+
+03:58:17.000 --> 03:58:23.000
+Uh-huh.
+
+03:58:23.000 --> 03:58:35.000
+credential?
+
+03:58:35.000 --> 03:58:44.000
+See, the perfectto. Dalinter.
+
+03:58:44.000 --> 03:58:59.000
+Yeah. And por favor. Mm-hmm.
+
+03:58:59.000 --> 03:59:09.000
+Uh-huh.
+
+03:59:09.000 --> 03:59:24.000
+solve it. Yes, I saw.
+
+03:59:24.000 --> 03:59:29.000
+Not instanti says, no.
+
+03:59:29.000 --> 03:59:58.000
+Sorry.
+
+03:59:58.000 --> 04:00:03.000
+Yeah, let's go out there.
+
+04:00:03.000 --> 04:00:10.000
+Amy.
+
+04:00:10.000 --> 04:00:18.000
+Resalia de me por favor. Yatae.
+
+04:00:18.000 --> 04:00:26.000
+Busca esto.
+
+04:00:26.000 --> 04:00:31.000
+Yes, Taka. Esseka.
+
+04:00:31.000 --> 04:00:37.000
+Esse por favor. filter concearaba que te paso.
+
+04:00:37.000 --> 04:00:48.000
+Pauline Truth.
+
+04:00:48.000 --> 04:00:57.000
+Modifica ese borfa. Ada another role.
+
+04:00:57.000 --> 04:01:07.000
+Uh-huh. Only WhatsApp editor. Butts up editor.
+
+04:01:07.000 --> 04:01:24.000
+Mm-hmm. Baha. floor service account token creator. No, no, no, no, no. Add another role. Series account token creators.
+
+04:01:24.000 --> 04:01:37.000
+Token creator de aposistas. Uh-huh, y los estoras han.
+
+04:01:37.000 --> 04:01:47.000
+estoresive eso. Ayster?
+
+04:01:47.000 --> 04:01:56.000
+Please charge on me. Uh-huh.
+
+04:01:56.000 --> 04:02:00.000
+Let's see one line.
+
+04:02:00.000 --> 04:02:15.000
+Mm-hmm. Yes.
+
+04:02:15.000 --> 04:02:19.000
+Um…
+
+04:02:19.000 --> 04:02:28.000
+Uh-huh. I think the draster is an input.
+
+04:02:28.000 --> 04:02:34.000
+Mm-hmm.
+
+04:02:34.000 --> 04:02:44.000
+Borreso. I didn't mean a lot.
+
+04:02:44.000 --> 04:02:53.000
+Yeah.
+
+04:02:53.000 --> 04:03:00.000
+Uh-huh. Dalinter.
+
+04:03:00.000 --> 04:03:10.000
+Sobm poco, la… Oh, yeah.
+
+04:03:10.000 --> 04:03:31.000
+ice. Take a look.
+
+04:03:31.000 --> 04:03:40.000
+Baja. Uh-huh.
+
+04:03:40.000 --> 04:03:54.000
+En des a tuition. Ale un e5agina.
+
+04:03:54.000 --> 04:04:02.000
+No? Uh-huh. Yes, ISO, and I saw.
+
+04:04:02.000 --> 04:04:21.000
+preview. Look at that wearing a lotta.
+
+04:04:21.000 --> 04:04:28.000
+Esta service account.
+
+04:04:28.000 --> 04:04:33.000
+I'm not the name.
+
+04:04:33.000 --> 04:04:52.000
+Huh? No, no… la robo developer.
+
+04:04:52.000 --> 04:04:53.000
+Ah, yeah. Okay.
+
+04:04:53.000 --> 04:04:57.000
+Uh-huh.
+
+04:04:57.000 --> 04:05:11.000
+Valentor? Uh-hua.
+
+04:05:11.000 --> 04:05:17.000
+Only. barely.
+
+04:05:17.000 --> 04:05:23.000
+Yoto servicio? Uh-huh, payroll.
+
+04:05:23.000 --> 04:05:31.000
+Y solamente para verificar. Esta roba tambien por favor.
+
+04:05:31.000 --> 04:05:37.000
+Pegas a roba.
+
+04:05:37.000 --> 04:05:49.000
+the lentil. There is a content creators.
+
+04:05:49.000 --> 04:05:54.000
+Yes, Takustaka. Reset Castle.
+
+04:05:54.000 --> 04:06:05.000
+ECME tambien por favor antes que sigas. Ti es el biscuerian mi.
+
+04:06:05.000 --> 04:06:19.000
+Document administrator. service account token creator. Yeah.
+
+04:06:19.000 --> 04:06:27.000
+Puedar.
+
+04:06:27.000 --> 04:06:36.000
+Okay. Enter?
+
+04:06:36.000 --> 04:07:02.000
+at Palisa.
+
+04:07:02.000 --> 04:07:15.000
+casa. Estremento codigo del process pin bois hastric and source.
+
+04:07:15.000 --> 04:07:26.000
+Uh-huh.
+
+04:07:26.000 --> 04:07:27.000
+No, I know.
+
+04:07:27.000 --> 04:07:35.000
+Let's put up there. Yeah.
+
+04:07:35.000 --> 04:07:41.000
+Yeah.
+
+04:07:41.000 --> 04:07:46.000
+Spiderman…
+
+04:07:46.000 --> 04:07:55.000
+Hando 97. Barriz.
+
+04:07:55.000 --> 04:07:56.000
+You know?
+
+04:07:56.000 --> 04:08:01.000
+Ah, sure, sure, sure. Okay. made aha. Re esa tusor?
+
+04:08:01.000 --> 04:08:13.000
+Also? Yaki, okay. Ashley can edit. I think not any edit Arriba. Edit a river edit.
+
+04:08:13.000 --> 04:08:16.000
+Okay, so…
+
+04:08:16.000 --> 04:08:30.000
+Yeah. And no, no, no, no, no, no. runtime build en el tiangulito.
+
+04:08:30.000 --> 04:08:42.000
+Hitabajito, Abajo. El parcel location pane US.
+
+04:08:42.000 --> 04:08:48.000
+I apologisor ID. Uh-huh.
+
+04:08:48.000 --> 04:08:51.000
+Well, I got a little mistake going…
+
+04:08:51.000 --> 04:08:57.000
+En el document yay. Uh-huh.
+
+04:08:57.000 --> 04:09:03.000
+See? Yes.
+
+04:09:03.000 --> 04:09:13.000
+Pega lohi.
+
+04:09:13.000 --> 04:09:30.000
+us. but also ID y nos faltosa vej cosar cre tambien esta en el documente en la es dije, me lo pase, a legal GCP project.
+
+04:09:30.000 --> 04:09:40.000
+Aja, hay puenicip projects. Asi como interopoce, y un bajo project.
+
+04:09:40.000 --> 04:09:51.000
+Uh-huh. No, no, no. Uh-huh. Eso isa calivir que esta riva.
+
+04:09:51.000 --> 04:10:03.000
+in my first period. Hey, solemente esarto todeso.
+
+04:10:03.000 --> 04:10:04.000
+Perfect.
+
+04:10:04.000 --> 04:10:05.000
+Baha.
+
+04:10:05.000 --> 04:10:12.000
+Si, porqua faltaba esot. Esta el documento pase net aha.
+
+04:10:12.000 --> 04:10:16.000
+take a net or acidic and deploy. Esau.
+
+04:10:16.000 --> 04:10:17.000
+Thanks, I love that.
+
+04:10:17.000 --> 04:10:23.000
+Yeah. a lot, a lotto.
+
+04:10:23.000 --> 04:10:33.000
+Esta. Now when they're clicking Edit.
+
+04:10:33.000 --> 04:10:48.000
+Castle. Bakala cocosito?
+
+04:10:48.000 --> 04:10:51.000
+La llabe de la piqui. little to love.
+
+04:10:51.000 --> 04:10:52.000
+Bueno.
+
+04:10:52.000 --> 04:11:04.000
+Mm-hmm. A bi servicios cedencial.
+
+04:11:04.000 --> 04:11:09.000
+Hey, Lisa. Huh?
+
+04:11:09.000 --> 04:11:18.000
+See, that defe compartir. Lao.
+
+04:11:18.000 --> 04:11:26.000
+elasticand deploy.
+
+04:11:26.000 --> 04:11:27.000
+Yeah.
+
+04:11:27.000 --> 04:11:30.000
+Pero.
+
+04:11:30.000 --> 04:11:36.000
+Hey guys, are you aware? Yeah, eat chicken nets. Pm.
+
+04:11:36.000 --> 04:11:46.000
+deploy. Honestly.
+
+04:11:46.000 --> 04:12:02.000
+I do say?
+
+04:12:02.000 --> 04:12:03.000
+Oh, but I have too simply out.
+
+04:12:03.000 --> 04:12:16.000
+Alunefeco.
+
+04:12:16.000 --> 04:12:18.000
+Data in the server is closed.
+
+04:12:18.000 --> 04:12:32.000
+Mm-hmm. Yes.
+
+04:12:32.000 --> 04:12:43.000
+no solvien, no?
+
+04:12:43.000 --> 04:12:44.000
+I was just asking me.
+
+04:12:44.000 --> 04:12:48.000
+Mm-hmm. say eliminate.
+
+04:12:48.000 --> 04:12:49.000
+Probably good.
+
+04:12:49.000 --> 04:12:57.000
+Yeah. Andalo Turnall. eliminal law.
+
+04:12:57.000 --> 04:13:06.000
+Mm-hmm. Uh-huh.
+
+04:13:06.000 --> 04:13:17.000
+I'll enter.
+
+04:13:17.000 --> 04:13:24.000
+No se porque no estoy viendo to esto, vebo, pero noces terminoto que occio.
+
+04:13:24.000 --> 04:13:31.000
+Asi. Bo la corre la porna loves copiado. Bueno las ecutar por favor.
+
+04:13:31.000 --> 04:13:35.000
+Um, Arden?
+
+04:13:35.000 --> 04:13:38.000
+the password code you.
+
+04:13:38.000 --> 04:13:40.000
+That's my hero, right?
+
+04:13:40.000 --> 04:13:52.000
+No, no, no. Anosi, CCC. Uh-huh. Uh-huh.
+
+04:13:52.000 --> 04:13:57.000
+Pontier. Uh-huh.
+
+04:13:57.000 --> 04:14:07.000
+Ha, talenter? Basil.
+
+04:14:07.000 --> 04:14:17.000
+Yes, Arasi Baja. Mm-hmm.
+
+04:14:17.000 --> 04:14:25.000
+Baha'll ask. Warning, warning, warning, no.
+
+04:14:25.000 --> 04:14:36.000
+Well, printing, baha? Mano de recha, torquita torquita.
+
+04:14:36.000 --> 04:14:41.000
+Yes, sir?
+
+04:14:41.000 --> 04:14:54.000
+Yes. Yeah. Okay, and the profile archivado.
+
+04:14:54.000 --> 04:15:04.000
+Query. and the query.
+
+04:15:04.000 --> 04:15:12.000
+Eso. Yeah, and then he occurred.
+
+04:15:12.000 --> 04:15:16.000
+Perkita.
+
+04:15:16.000 --> 04:15:34.000
+Yes. Peresta, entonces, serando, entonces que lo que an hecho, prestos cero veles, como tal, en la mas que nada era, por el tema que faltada sinad las variabres.
+
+04:15:34.000 --> 04:15:56.000
+Y eso. Entonces no vemos elotrase. Vaya resando por favorte material, y aqui alo tien todo eso, y asi fuel cosa puestamos atentos. Deja meo segundo porquillor reco que liga juanjo, ya, pero no recordo cuando le dijes.
+
+04:15:56.000 --> 04:16:11.000
+Marco. Hasta y de marso.
+
+04:16:11.000 --> 04:16:26.000
+Yeah.
+

@@ -1,0 +1,186 @@
+​
+​
+
+​
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+PROPUESTA INICIAL DE DATA PRODUCT
+(Versión Asesores)
+1.​ Nombre tentativo del Data Product
+Breve, representativo y orientado a la decisión o valor que genera
+Corporate Knowledge LLM: Comparación de arquitecturas RAG vs. Fine-Tuning para la
+optimización de asistencia técnica corporativa
+
+2.​ Oportunidad detectada
+●​ ¿Qué necesidad real, ineficiencia u oportunidad se ha identificado en un
+contexto?
+En empresas de ingeniería, estudios de abogados, organizaciones gubernamentales , existe
+un vasto conocimiento acumulado en documentos históricos (manuales, diseños anteriores,
+especificaciones, reportes de fallos). Actualmente, este conocimiento es "silencioso"; los
+ingenieros o agentes de ventas pierden horas buscando información en carpetas
+compartidas o repiten diseños que ya existían porque el LLM genérico no conoce su
+propiedad intelectual. Esta ineficiencia puede representar pérdidas de productividad
+equivalentes a decenas de horas mensuales por trabajador, impactando directamente en
+costos operativos, time-to-market y calidad de decisiones técnicas.
+●​ ¿Por qué es relevante abordar este problema desde una perspectiva basada
+en datos?
+Un LLM estándar alucina cuando se le pregunta sobre datos específicos de la empresa o se
+le da un contexto muy extenso. Abordar esto mediante datos permite transformar un archivo
+documental pasivo en un activo interactivo, reduciendo tiempos de diseño y soporte
+técnico.
+
+3.​ Stakeholders
+¿Quiénes tendrán interacción con el producto de datos? Identificar stakeholders
+principales y otros.
+Principal: Ingenieros de Diseño / Soporte Técnico (quienes consultan la información).
+Secundarios:
+Gerente de Ingeniería/CTO (interesados en la eficiencia y costos de cómputo).
+Equipo de IT/Seguridad (interesados en que los datos no salgan a una nube pública insegura).
+
+4.​Descripción general del Data Product propuesto
+●​ ¿Qué entregará el producto? (ej.: dashboard, visualización, modelo predictivo,
+sistema de alertas, recomendador)
+Se desarrollará un prototipo funcional de Asistente Conversacional Técnico que operará bajo
+tres modalidades para evaluación:
+
+​
+​
+
+​
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+Baseline: LLM Genérico (ej. Llama 3, Deepseek , GPT-4 base).
+RAG System: LLM conectado a una base de datos vectorial con la documentación de la
+empresa.
+Fine-Tuned Model: LLM re-entrenado específicamente con el corpus de texto de la ingeniería.
+El producto final incluirá un Dashboard de Comparación que muestre cuál método responde
+mejor y es más eficiente en costos.
+●​ ¿Cómo se espera que el stakeholder lo use?
+El ingeniero escribirá una consulta técnica compleja (ej. "¿Cuál fue el torque máximo aplicado
+en el proyecto X del 2019?") y el sistema entregará la respuesta citando la fuente (en el caso
+de RAG) o basado en su entrenamiento (FT), permitiendo validar la veracidad.
+
+5.​ Fuentes de datos
+●​ ¿Qué fuentes de datos se requerirían?
+Documentación técnica histórica no estructurada (PDFs de especificaciones, manuales de
+usuario, wikis internas, correos técnicos, descripciones de productos).
+●​ ¿Existen datos disponibles o simulables?
+Se utilizará un dataset interno de la empresa (anonimizado si es necesario). Si hay bloqueo
+por confidencialidad para la tesis, se pueden simular los datos utilizando datasets públicos
+de ingeniería (ej. expediente técnicos del gobierno) para probar la arquitectura.
+
+6.​ KPIs esperados
+¿Cuáles son los KPIs clave?
+Precisión de Respuesta (Faithfulness/Answer Relevance): Medido mediante métricas como
+RAGAS score (usando un LLM juez para evaluar si la respuesta es correcta según el contexto).
+Reducción del tiempo de resolución de consultas técnicas (%): Mide el porcentaje de
+disminución del tiempo necesario para resolver consultas técnicas mediante el uso del
+sistema basado en LLM.
+Retorno de inversión (ROI) del sistema: Evalúa la relación entre los beneficios económicos
+obtenidos por el uso del sistema y los costos totales de implementación y operación.
+Tasa de Alucinación: Porcentaje de respuestas donde el modelo inventa datos inexistentes
+en los documentos.
+Latencia (Tiempo de respuesta): Comparación de segundos que tarda el sistema RAG vs. el
+modelo Fine-tuned.
+Coste Computacional/Entrenamiento: Coste de indexar vectores (RAG) vs. Coste de horas de
+GPU para entrenar (Fine-tuning).
+
+​
+​
+
+​
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+7.​ Use Case del Stakeholder Principal
+Bloque
+
+Contenido esperado
+
+Stakeholder principal
+
+Ingeniero de Diseño / Especialista de Producto.
+
+User Story
+
+Como ingeniero de diseño o especialista técnico, quiero
+realizar consultas complejas sobre documentación técnica
+histórica de la empresa (manuales, especificaciones y
+reportes), obteniendo respuestas precisas y trazables, para
+reducir tiempos de resolución, evitar retrabajos y mejorar la
+calidad de las decisiones técnicas.
+
+Problema / Dolor
+
+El "Olvido Corporativo": La información existe pero es
+inencontrable. Los LLMs normales (ChatGPT) no saben nada
+de los productos internos y los buscadores por palabras
+clave (Ctrl+F) son ineficientes para preguntas complejas.
+
+Datos requeridos
+
+Repositorio de documentos (PDF, Docx, TXT) conteniendo
+manuales técnicos, hojas de datos y reportes de proyectos
+pasados.
+
+Tipo de output
+
+Chat que entrega: 1. La respuesta técnica. 2. La referencia al
+documento original (especialmente en RAG). 3. Una métrica
+de confianza de la respuesta.
+
+Indicadores clave (KPIs)
+
+Reducción del tiempo de búsqueda de información (de horas
+a minutos). Precisión de la respuesta técnica (vs. el manual
+original).
+
+Componentes del Data
+Product
+
+1. Pipeline de Ingesta (PDF a Texto).
+2. Base de Datos Vectorial (ej. ChromaDB/Pinecone).
+3. Módulo de Fine-Tuning (ej. LoRA/QLoRA).
+4. Interfaz de usuario (Streamlit/Gradio).
+
+Mecanismo de entrega
+
+Aplicación Web interna (Intranet) o API consumible por otros
+sistemas de la empresa.
+
+

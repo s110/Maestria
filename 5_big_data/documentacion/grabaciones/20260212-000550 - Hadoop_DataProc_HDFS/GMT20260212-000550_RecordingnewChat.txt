@@ -1,0 +1,52 @@
+00:15:22	Anita Quevedo:	okas
+00:17:18	Anita Quevedo:	Empezamos en 1 min (7:08)
+00:28:22	MAXIMO AGUILAR:	no
+00:28:23	Brajan Nieto:	No
+00:28:24	Raul Pari:	no
+00:28:28	Paúl Sánchez:	no
+00:28:29	Eder Basurto:	No
+00:28:30	Kelvin Palomino Huallanca:	No
+00:28:30	Hugo V.:	no
+00:28:32	Aldo Angeles:	Nop
+00:28:32	Jorge Luis Palacios Chilo:	No
+00:28:54	Paúl Sánchez:	un archivo .sh dice ?
+00:49:18	Amador Zuñiga:	una forma de consumir un servicio
+00:50:19	Anita Quevedo:	https://cloud.google.com/apigee?hl=es-419
+00:50:46	Amador Zuñiga:	apigee es como el servicio apim de azure?
+00:53:57	Paúl Sánchez:	almacenamiento en buckets en GCP}
+00:54:16	Amador Zuñiga:	datos no estructurados
+00:54:22	Eder Basurto:	Es el almacenamiento en la nube
+01:00:24	Anita Quevedo:	https://www.astronomer.io/
+01:18:54	Jorge Luis Palacios Chilo:	No
+01:18:55	Paúl Sánchez:	no
+01:18:56	Kelvin Palomino Huallanca:	no
+01:18:59	Brajan Nieto:	No
+01:19:45	Amador Zuñiga:	sip
+01:22:42	Anita Quevedo:	https://docs.cloud.google.com/sdk/docs/install-sdk?hl=es
+01:38:50	Anita Quevedo:	https://cloud.google.com/identity?hl=es
+01:47:19	Amador Zuñiga:	network privada
+01:47:23	Jorge Luis Palacios Chilo:	Red privada virtual
+01:48:03	Anita Quevedo:	https://storage.googleapis.com/gweb-cloudblog-publish/images/cloud_NAT1.max-800x800.png
+01:52:20	Amador Zuñiga:	sí
+02:03:50	Jorge Luis Palacios Chilo:	Lo demás esta consumido por el sistema
+02:08:26	Anita Quevedo:	https://docs.google.com/document/d/1EKXegu07wcAxnRf8epcKBXxo-RinepKc0YqqfyrwdDQ/edit?tab=t.0
+02:08:45	Kelvin Palomino Huallanca:	el nombre del cluster
+02:13:12	Amador Zuñiga:	sí
+02:21:20	Jorge Luis Palacios Chilo:	Gracias
+02:32:01	Jorge Luis Palacios Chilo:	Si
+02:33:26	Kelvin Palomino Huallanca:	master
+02:40:21	Kelvin Palomino Huallanca:	no
+02:40:25	Amador Zuñiga:	sí
+02:44:01	Anita Quevedo:	hdfs dfs -mkdir /user/anita
+02:52:35	Paúl Sánchez:	pwd
+02:55:30	Anita Quevedo:	mkdir carpetaarchivosmv persona.data archivos
+02:56:54	Anita Quevedo:	hdfs dfs -ls /user
+03:02:15	Anita Quevedo:	hdfs dfs -mkdir -p /user/anita/ejercicio1/carpeta1/subcarpeta1
+03:04:03	Anita Quevedo:	hdfs dfs -rm -f /user/anita/persona.data
+03:07:06	Anita Quevedo:	hdfs dfs -chmod -R 777  /user/anita
+03:09:31	Kelvin Palomino Huallanca:	no
+03:09:35	Amador Zuñiga:	todo bien
+03:09:37	Eder Basurto:	no se cae
+03:10:36	Amador Zuñiga:	variable de entorno
+03:13:52	Jorge Luis Palacios Chilo:	Gracias
+03:13:53	Kelvin Palomino Huallanca:	gracias

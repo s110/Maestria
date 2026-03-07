@@ -1,0 +1,56 @@
+00:32:47	Amador Zuñiga:	5
+00:33:43	Anita Quevedo:	https://utec.instructure.com/courses/20112/files/4273959?module_item_id=2096787
+00:34:59	Javier Alejandro Zarate Donayre:	En proceso
+00:35:13	Anita Quevedo:	gcloud services enable documentai.googleapis.com      gcloud services enable cloudfunctions.googleapis.com  gcloud services enable cloudbuild.googleapis.com    gcloud services enable geocoding-backend.googleapis.com
+00:35:55	Anita Quevedo:	mkdir ./documentai-pipeline-demogcloud storage cp -r \  gs://spls/gsp927/documentai-pipeline-demo/* \  ~/documentai-pipeline-demo/
+00:36:16	Amador Zuñiga:	nop, no lo tengo
+00:36:59	Anita Quevedo:	https://docs.google.com/document/d/1vuLsX26CKs4XTokd6c4k0BHOYf0nCttgfOofG6tQx3Q/edit?usp=sharing
+00:44:39	Anita Quevedo:	https://codelabs.developers.google.com/?hl=es-419&text=antigravity
+01:01:47	Jorge Luis Palacios Chilo:	partimos el documento
+01:02:39	Javier Alejandro Zarate Donayre:	Y en temas de formato, si el formato de los pdf, imágenes cambia, necesitaría 1 modelo para cada caso, o esos modelos son generales? (Asumiendo que todas sean facturas)
+01:06:06	Anita Quevedo:	https://cloud.google.com/document-ai/pricing
+01:06:21	Anita Quevedo:	https://docs.google.com/document/d/1EKXegu07wcAxnRf8epcKBXxo-RinepKc0YqqfyrwdDQ/edit?tab=t.0
+01:17:35	Javier Alejandro Zarate Donayre:	Una consulta, esta carpeta que hemos creado en cloud shell editor tiene persistencia o cuando lo cerremos se borra?
+01:34:55	Paúl Sánchez:	parámetros
+01:35:03	Adnner:	Variables de entorno
+01:35:06	Eder Basurto:	definir varialbes
+01:35:33	Adnner:	Esperilla Ruiz
+01:46:32	Anita Quevedo:	https://docs.cloud.google.com/document-ai/docs/setup?hl=es-419
+01:47:48	Paúl Sánchez:	re
+01:48:08	Paúl Sánchez:	patrones
+01:56:37	Anita Quevedo:	https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/documentai/snippets/process_document_sample.py
+02:30:20	Anita Quevedo:	form-processor
+02:32:43	Anita Quevedo:	export PROJECT_ID=$(gcloud config get-value core/project)export BUCKET_LOCATION="us-central1"gsutil mb -c standard -l ${BUCKET_LOCATION} -b on \  gs://${PROJECT_ID}-input-invoicesgsutil mb -c standard -l ${BUCKET_LOCATION} -b on \  gs://${PROJECT_ID}-output-invoicesgsutil mb -c standard -l ${BUCKET_LOCATION} -b on \  gs://${PROJECT_ID}-archived-invoices
+02:32:49	Anita Quevedo:	https://docs.google.com/document/d/1vuLsX26CKs4XTokd6c4k0BHOYf0nCttgfOofG6tQx3Q/edit?tab=t.0
+02:36:21	Anita Quevedo:	bq --location="US" mk  -d \    --description "Form Parser Results" \    ${PROJECT_ID}:invoice_parser_resultscd ~/documentai-pipeline-demo/scripts/table-schema/bq mk --table \  invoice_parser_results.doc_ai_extracted_entities \  doc_ai_extracted_entities.jsonbq mk --table \  invoice_parser_results.geocode_details \  geocode_details.json
+02:41:30	Anita Quevedo:	export GEO_CODE_REQUEST_PUBSUB_TOPIC=geocode_requestgcloud pubsub topics \  create ${GEO_CODE_REQUEST_PUBSUB_TOPIC}
+02:46:01	Anita Quevedo:	gcloud storage service-agent --project=$PROJECT_IDPROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")gcloud iam service-accounts create "service-$PROJECT_NUMBER" \  --display-name "Cloud Storage Service Account" || truegcloud projects add-iam-policy-binding $PROJECT_ID \  --member="serviceAccount:service-$PROJECT_NUMBER@gs-project-accounts.iam.gserviceaccount.com" \  --role="roles/pubsub.publisher"gcloud projects add-iam-policy-binding $PROJECT_ID \  --member="serviceAccount:service-$PROJECT_NUMBER@gs-project-accounts.iam.gserviceaccount.com" \  --role="roles/iam.serviceAccountTokenCreator"
+02:51:09	Anita Quevedo:	cd ~/documentai-pipeline-demo/scripts  export CLOUD_FUNCTION_LOCATION="us-central1"  gcloud functions deploy process-invoices \  --no-gen2 \  --region=${CLOUD_FUNCTION_LOCATION} \  --entry-point=process_invoice \  --runtime=python39 \  --source=cloud-functions/process-invoices \  --timeout=400 \  --env-vars-file=cloud-functions/process-invoices/.env.yaml \  --trigger-resource=gs://${PROJECT_ID}-input-invoices \  --trigger-event=google.storage.object.finalize
+02:51:18	Anita Quevedo:	https://docs.google.com/document/d/1vuLsX26CKs4XTokd6c4k0BHOYf0nCttgfOofG6tQx3Q/edit?tab=t.0
+02:55:46	Anita Quevedo:	https://docs.cloud.google.com/run/docs/configuring/task-timeout
+02:58:15	Amador Zuñiga:	15
+03:10:03	Brajan Nieto:	me sale lo mismo que juan
+03:15:52	Anita Quevedo:	BigQuery AdminBigQuery Job UserCloud Run BuilderDataproc AdministratorDataproc WorkerDocument AI Administrator (Beta)EditorEventarc Event ReceiverPub/Sub AdminStorage AdminStorage Object AdminStorage Object Creator
+03:29:24	Anita Quevedo:	@developer.gserviceaccount.com
+03:29:43	Juan Casavilca:	Reacted to "@developer.gservicea..." with 👍
+03:35:23	Anita Quevedo:	cd ~/documentai-pipeline-demo/scripts  gcloud functions deploy geocode-addresses \  --no-gen2 \  --region=${CLOUD_FUNCTION_LOCATION} \  --entry-point=process_address \  --runtime=python39 \  --source=cloud-functions/geocode-addresses \  --timeout=60 \  --env-vars-file=cloud-functions/geocode-addresses/.env.yaml \  --trigger-topic=${GEO_CODE_REQUEST_PUBSUB_TOPIC}
+03:38:04	Amador Zuñiga:	login
+03:39:50	Brajan Nieto:	laa segunda tambien cambiamos a python3.10 cierto?
+03:52:26	Anita Quevedo:	BigQuery AdminDocument AI Administrator (Beta)Pub/Sub AdminPub/Sub PublisherService Account Token CreatorStorage AdminStorage Object AdminStorage Object Creator
+03:55:47	Juan Casavilca:	Reacted to "laa segunda tambien ..." with 👍
+03:58:35	Anita Quevedo:	export PROJECT_ID=$(gcloud config get-value core/project)gsutil cp gs://spls/gsp927/documentai-pipeline-demo/sample-files/* gs://${PROJECT_ID}-input-invoices/
+03:59:13	Eder Basurto:	archive
+03:59:16	Eder Basurto:	¡?
+03:59:20	Italo:	archive
+03:59:53	Italo:	Italo flores
+04:03:25	Anita Quevedo:	https://docs.cloud.google.com/looker/docs/studio/visualize-bigquery-geography-polygons-with-looker-studio?hl=es-419
+04:05:13	Eder Basurto:	hasta cuando es la tarea prof ?¡
+04:05:15	Amador Zuñiga:	Sí, pero en los logs me salió un par de errores
+04:20:59	Anita Quevedo:	@gcp-sa-pubsub.iam.gserviceaccount.com
+04:21:56	Anita Quevedo:	Cloud Pub/Sub Service AgentPub/Sub EditorService Account Token CreatorStorage Admin
+04:24:56	Anita Quevedo:	@gs-project-accounts.iam.gserviceaccount.com
+04:25:18	Anita Quevedo:	@developer.gserviceaccount.com
+04:25:37	Anita Quevedo:	Eventarc Event Receiver
+04:26:02	Anita Quevedo:	@gcp-sa-pubsub.iam.gserviceaccount.com
+04:26:25	Anita Quevedo:	@appspot.gserviceaccount.com
+04:30:04	Anita Quevedo:	GCP_PROJECT

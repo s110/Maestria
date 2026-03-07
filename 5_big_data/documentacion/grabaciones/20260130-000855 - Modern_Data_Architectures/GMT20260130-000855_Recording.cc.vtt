@@ -1,0 +1,3872 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.000
+Yeah, see, see, see, okay. Javar?
+
+00:00:02.000 --> 00:00:07.000
+Yes. Hola con todos muy buena noches, pero que esten superbien.
+
+00:00:07.000 --> 00:00:16.000
+E vamos a continuar con la chase, ya. vamos a ver, la architecturas modernas.
+
+00:00:16.000 --> 00:00:33.000
+vimeo la terminologia. Concertos su momente. architectural medallion, el tema de cuando es cojer parquet, oresse abro.
+
+00:00:33.000 --> 00:00:39.000
+E tipos delta ente otos. A parte, poder.
+
+00:00:39.000 --> 00:00:50.000
+y conceptos y caso de uso del architecturadatos. que tienen que ver un architectura.
+
+00:00:50.000 --> 00:00:56.000
+Y lo implementar un laboratorio per se, que vamos ahir a conversar junzamente con ustedes. Ya?
+
+00:00:56.000 --> 00:01:04.000
+But a eso solamente ser un parentheses. ustedes tienen orita ya dento prata forma.
+
+00:01:04.000 --> 00:01:11.000
+They'll take the hemo segundo. Les paselos siguiente.
+
+00:01:11.000 --> 00:01:20.000
+Es pose esto. como una 2 semanas poras.
+
+00:01:20.000 --> 00:01:29.000
+Y les dijent todavia que inclusive. gotta be on paper, on paper de todo esto, yeah.
+
+00:01:29.000 --> 00:01:44.000
+en la parte en diza fuera. E justamente porque el porque los proyectos para casa, y la ideas gustes puedan responder pues con… cuale su punto de visa cado nosta.
+
+00:01:44.000 --> 00:01:55.000
+Para que pues para que se pueda general esas inergio per se. Ya, compeo en observar pues el documento que el se su vido es de formes, asi que tro que sumente util pareza participita, para responderlo.
+
+00:01:55.000 --> 00:02:08.000
+Pero todo todo se pones. No es de la tenologia si no son de la parte cultural de las personas per se.
+
+00:02:08.000 --> 00:02:17.000
+Yeah, para gusto lo cuando marin cuenta. que lo que vamos a revisa.
+
+00:02:17.000 --> 00:02:23.000
+Y a parte, aparte parte que lobos habiar luego al final que ya.
+
+00:02:23.000 --> 00:02:29.000
+Ya. para mal architectura de lo que le banco.
+
+00:02:29.000 --> 00:02:35.000
+la parte lo que es Esmar Mobili, decir la casa intelligente.
+
+00:02:35.000 --> 00:02:45.000
+Yo la ciudad inteligente. el temo procesamiento.
+
+00:02:45.000 --> 00:02:51.000
+El tema lo que es. modelos que van aplicar entonces cosas.
+
+00:02:51.000 --> 00:03:03.000
+un archivo mas. Ya, un archivo, que vamos a… mas, ese documento que estaca.
+
+00:03:03.000 --> 00:03:06.000
+Para que si quiento man al punte su cosa puel esto.
+
+00:03:06.000 --> 00:03:14.000
+Yeah. Entonces. Hasta de alguna preguntas a parte.
+
+00:03:14.000 --> 00:03:17.000
+See? Perfecto, lo que si los via pedir por fa, yeah.
+
+00:03:17.000 --> 00:03:32.000
+iendo, o hay algo por. por explica. Yeah? Please. Gracias, operaca.
+
+00:03:32.000 --> 00:03:38.000
+Entonces. La idea, como vimos dicho, es primero definir que eso una que detur a moderna.
+
+00:03:38.000 --> 00:03:44.000
+Yeah, ustedes como maestia asiencia datos, ustedes van laborar un arquitectura.
+
+00:03:44.000 --> 00:03:49.000
+No solamente artitura que tenga que ver con ingenere datos, sino, que tenga que ver.
+
+00:03:49.000 --> 00:03:55.000
+Contamien la parte de lo que la parte modelado de lo que los datos, y.
+
+00:03:55.000 --> 00:04:00.000
+hacer el modelo per se. Y hace modelo machine learning, uno de Learning, o mode generativo.
+
+00:04:00.000 --> 00:04:10.000
+El decir. mas la parte lo que melos.
+
+00:04:10.000 --> 00:04:19.000
+Moderna porque. Plumero, bundar que to a moderas a considera porque esta lanube.
+
+00:04:19.000 --> 00:04:31.000
+Independientemente la nueve gustes escologan que podia hacer a dobrese, Azure este… Google Cloud, la introsiva alivaba ente otos la cosa que esta nuve.
+
+00:04:31.000 --> 00:04:40.000
+Porque por la escalabilida y limitada. utilizando me van coverlando. Ya?
+
+00:04:40.000 --> 00:04:48.000
+A parte, como le decia. empezar quizas.
+
+00:04:48.000 --> 00:04:54.000
+llegas. asi su siamente.
+
+00:04:54.000 --> 00:05:01.000
+Que mas mayormente cuando un empiesa a diadamar o hacer larquitectertura de datos, ya.
+
+00:05:01.000 --> 00:05:06.000
+Enton esundarama fisico.
+
+00:05:06.000 --> 00:05:12.000
+Ah, on segundito. pasado.
+
+00:05:12.000 --> 00:05:20.000
+la foto del sun despues. tomar eso.
+
+00:05:20.000 --> 00:05:26.000
+Okay.
+
+00:05:26.000 --> 00:05:36.000
+Entonces, seguimos paraqui. Les decia. es un disenologico y fisico, que significa esto.
+
+00:05:36.000 --> 00:05:47.000
+poner cajitas. Tenologia que tenga que ver.
+
+00:05:47.000 --> 00:05:55.000
+como hace el tema a la transformaciones, como hace el modelo, como hacer la governabilidad.
+
+00:05:55.000 --> 00:06:03.000
+Y como maneja las seguridad. Ya. lo que tiene que tomar encuenta son capas.
+
+00:06:03.000 --> 00:06:13.000
+Capas de que, sa corner la primera. Cada nuve vamos llamarlo asi, lo llama distinto. Uno de ellos lo puede llamar bronze, por ejempro.
+
+00:06:13.000 --> 00:06:24.000
+Y lo todo lo puedayamar. O introsiva el mismo ajur.
+
+00:06:24.000 --> 00:06:34.000
+y la parte analytica. negocio que tule digas.
+
+00:06:34.000 --> 00:06:40.000
+quiere que tu pues llaman lo independenientemente cualquier nombre, sin embargo C OC tener que tener.
+
+00:06:40.000 --> 00:06:53.000
+Ya. Y porque minimotes y porque no dos, uno donde ser el control se y control el veto datos. Elton tuvas a transformarlo, y el tercero, porque.
+
+00:06:53.000 --> 00:06:59.000
+Por caso tener que hacer cruises. para del resulto de la ultimatabra.
+
+00:06:59.000 --> 00:07:06.000
+Luego, el tema frezibilidad. Significa recuerda. Tosa debajar con datos.
+
+00:07:06.000 --> 00:07:12.000
+Estuturados, por ejempro unoje calculo. lo que fuece.
+
+00:07:12.000 --> 00:07:17.000
+Dato se misforturados como quien, como eso, como quizimele.
+
+00:07:17.000 --> 00:07:25.000
+Y datos no estruturados en su forma original. que significa esto. Data que esta en de resociales.
+
+00:07:25.000 --> 00:07:30.000
+Data que esta en debideos, de audios, de texto de locustenga.
+
+00:07:30.000 --> 00:07:37.000
+Un ponto importante con um vezamos abrar todo esta parte lo que son los datos, que cosa en la nueva practica.
+
+00:07:37.000 --> 00:07:46.000
+Para eso, ustedian que cosa, hemos viendo el valor del dato, la forma como dimensiono hogues modelado de datos.
+
+00:07:46.000 --> 00:07:49.000
+Y lozo, lo que se le conoce como datamos.
+
+00:07:49.000 --> 00:07:56.000
+Recordando que el concept, hemos justamente pregunta en una de la sesiones de la primera, no.
+
+00:07:56.000 --> 00:08:08.000
+Y qua tender dominos. etc. Yeah?
+
+00:08:08.000 --> 00:08:14.000
+Entonces de cho esto. Otto punti importante.
+
+00:08:14.000 --> 00:08:24.000
+que significa esto. La idea escribing mar tu caja.
+
+00:08:24.000 --> 00:08:34.000
+que eso tener en esto, la capa seguridad. mascarado si no un dato encryptado.
+
+00:08:34.000 --> 00:08:38.000
+Yeah, que vamos ser cuando, llamos el temaya de la nueve, pues vamos hacer es aparte.
+
+00:08:38.000 --> 00:08:45.000
+Un enfo que en el valor. Significa que los gitivo todo esto que cosa es poder que.
+
+00:08:45.000 --> 00:08:50.000
+La lata que nosotos hacedamos, la data que nosotos vamos empezar analyzer.
+
+00:08:50.000 --> 00:08:55.000
+Permita ese toma decisiones de madera opuna. Que pasa con los sistemas comenzionales.
+
+00:08:55.000 --> 00:09:06.000
+implementar en inclusive que esta como el reto dento de cada una de las… de las tenologias que estamos emencionando.
+
+00:09:06.000 --> 00:09:10.000
+La debanca, la retailer y la de lo que son ciudades intelligentes.
+
+00:09:10.000 --> 00:09:16.000
+Tienen tambien poder armar un architectura. Quesporte tanto batch como real time.
+
+00:09:16.000 --> 00:09:20.000
+Y el en realtar ence cono se comer concepto ese.
+
+00:09:20.000 --> 00:09:24.000
+Yeah? Diot esto, vamos veraca.
+
+00:09:24.000 --> 00:09:36.000
+pero como evociono todesto. Teniendo encuentar relo data warehouse, era.
+
+00:09:36.000 --> 00:09:46.000
+La estuturada ponerlo en un repositorio. lo queer a datamas.
+
+00:09:46.000 --> 00:09:55.000
+Y todo esto formada los lo que los ele conocia como que como data warejos.
+
+00:09:55.000 --> 00:10:01.000
+You know, la gente lo que su mia. los reportes, etc.
+
+00:10:01.000 --> 00:10:07.000
+Um pond importante en esta parte que estacao tien es un concepto que lo que lo llaman etele.
+
+00:10:07.000 --> 00:10:11.000
+Otos dirano, no es un entele hay cacer um le.
+
+00:10:11.000 --> 00:10:20.000
+Esta eigo cargo y transforma. Bai pender mucho la necesidal negocio, lo que mayormente se hace para poder.
+
+00:10:20.000 --> 00:10:24.000
+tener un tema lo que es un architecturar que se escalabre.
+
+00:10:24.000 --> 00:10:30.000
+Es un le te. Ya?
+
+00:10:30.000 --> 00:10:36.000
+Cualen el deventaja de todo esto. La de ventajas que de un o da forma.
+
+00:10:36.000 --> 00:10:41.000
+Tenias regides en que… En que si mas del ante, por ejemplo.
+
+00:10:41.000 --> 00:10:48.000
+El data decinos. un modelado de 5 campos, bien.
+
+00:10:48.000 --> 00:10:54.000
+Bien el qui el se esto certimo y otabo campo se maloro todo a que volvera remodelar.
+
+00:10:54.000 --> 00:11:05.000
+Larguitura para que pueda supportar. Yo to ponde todo esto es un esquema como estamos diciendo, estripto a parte llega ser mucha veces costoso.
+
+00:11:05.000 --> 00:11:14.000
+como que fija. De pasar de Data Warehouse, pasamos alconcerto de la segunda generacion.
+
+00:11:14.000 --> 00:11:21.000
+Establimera parte vamos vie?
+
+00:11:21.000 --> 00:11:25.000
+Perfecto. Lacias, unra. Entonces. Tio aqui.
+
+00:11:25.000 --> 00:11:31.000
+La segunda parte tenemos que goza, tenemos los data lake.
+
+00:11:31.000 --> 00:11:39.000
+Si bien cierto, nosotros empezamos a poder hacer todo el tema lo que se refereno solamente estamos habrando.
+
+00:11:39.000 --> 00:11:44.000
+Dia sulturado. Si no, el aparte que en la parte.
+
+00:11:44.000 --> 00:11:55.000
+De lo que son datos ya, nuestroad. y lo vamos a juntar los dos.
+
+00:11:55.000 --> 00:12:07.000
+Yeah, no se bro pegnorita del laboratorio per se, porque la idea, es que podemos entender todlo que vamos hacer y luegores elaboratorio. Yar, como la mayora, que nos quedas.
+
+00:12:07.000 --> 00:12:14.000
+Asi que nocemen pro cuemor eso. Entonces. Estadale que estamos diciendo, yando va incorporar solamente la at astuturado.
+
+00:12:14.000 --> 00:12:22.000
+Estamos haberando da. De un concepto de… Much efe esse.
+
+00:12:22.000 --> 00:12:36.000
+El sistema deficieros dejado. Yeah? Don de loso tener datos, par que… Y bien de la pregunta. Cuando via utilizar que cada unita.
+
+00:12:36.000 --> 00:12:47.000
+Vamos a ver un laboratorio ya realmente eso laboratorio para costes van, no solamente lo que dice la peoria, sino lo que ices la practica, cuando realmente van utilizar en cada no destos.
+
+00:12:47.000 --> 00:12:57.000
+Quote quieran por ejemplo, que tengan un tema dema de Velocidad institutura o… ya.
+
+00:12:57.000 --> 00:13:05.000
+Entonces, hay semperio. consumido mediante la analyse BI.
+
+00:13:05.000 --> 00:13:11.000
+processos interactivos realtai, batch. Y processo data science.
+
+00:13:11.000 --> 00:13:16.000
+Esto importante. Esta practica de implementacion como respongo por aca.
+
+00:13:16.000 --> 00:13:25.000
+El sistema eficheros dejado. Esesteema officer dejado con como se pone el si mild con las nuve.
+
+00:13:25.000 --> 00:13:33.000
+Que conocen. Ah. quienita bajando.
+
+00:13:33.000 --> 00:13:37.000
+El proceso estrave, hay quito no haces como eloto.
+
+00:13:37.000 --> 00:13:43.000
+El estra esa formasicargas, haces el. Elete. Estaigo cargo y transformo.
+
+00:13:43.000 --> 00:13:49.000
+Cuando losurios lo votilizar, la ideas poder hacer es atale.
+
+00:13:49.000 --> 00:14:00.000
+con ingesta maciba. Ingesta cabinir daoty. De los los por ejemplo, los los todas las cosa que generamos en el computador, generos.
+
+00:14:00.000 --> 00:14:08.000
+Re esociales, como por ejemro TikTok, lending, YouTube. Facebook ente autotos.
+
+00:14:08.000 --> 00:14:14.000
+Equipos para los incident datos. Qued asi importantissimo, porque usted van aplicar todos un modelos que han aprendido.
+
+00:14:14.000 --> 00:14:18.000
+Para poder tener dento telescope de la parte lo que.
+
+00:14:18.000 --> 00:14:28.000
+Su modelado argued tonico. la diferencia de esto es que tuvas a tender que goza un tema regions como esto.
+
+00:14:28.000 --> 00:14:35.000
+Tendas un poco mas de flexibilidadan en el escaema. Ya, porque se converte en una vasa to no ese cuele.
+
+00:14:35.000 --> 00:14:44.000
+Y ase cuel. Lo mismo, sin otos hacemos un simil de lo que mo sido mencionando de los productos de Google Cloud, ya.
+
+00:14:44.000 --> 00:14:52.000
+No se preocupan sin los nombres. Y hayo se que paso dose manas de que nos vimos.
+
+00:14:52.000 --> 00:14:59.000
+But ahi fisicamente y lotto este virtualmente, no seme pro cupe. Yeah?
+
+00:14:59.000 --> 00:15:04.000
+Que mas, la idias gustes puedan tener. Obernanza, pero no tanton nivel, todaviano.
+
+00:15:04.000 --> 00:15:10.000
+Basta niendo gobancia un poco. Pasa sal siguiente, al siguiente step, yeah.
+
+00:15:10.000 --> 00:15:20.000
+pasamos a legehouse. Jung Leigh house, voyet tener algo mas diferente.
+
+00:15:20.000 --> 00:15:26.000
+Comasi. Muite de lo mismo que la anterior. Cola diferencia que yo voy a incorporar.
+
+00:15:26.000 --> 00:15:31.000
+Archibos que son abiertos. que significa civos abiertos.
+
+00:15:31.000 --> 00:15:36.000
+Archivos Delta Lake.
+
+00:15:36.000 --> 00:15:40.000
+Senifica que estos archivos que estamos diciendo son open formatos.
+
+00:15:40.000 --> 00:15:50.000
+Cualquier da formata. tipod archivos.
+
+00:15:50.000 --> 00:15:55.000
+Cuala la ventajeto esto. La ventaja de estos que incorpora.
+
+00:15:55.000 --> 00:16:03.000
+Que cosa propidades a sid. que la biamos mesionado.
+
+00:16:03.000 --> 00:16:12.000
+atomizidad. La por ejemplo, ya, tiene que ver la se con consistencia todo nada.
+
+00:16:12.000 --> 00:16:17.000
+El tema, no isolio, y la tema de durability.
+
+00:16:17.000 --> 00:16:29.000
+Recuerda que esit. Como tala donde tu lo vasa tener, lo vasa tener cuando justamente tuase todas la parte lo que es basecionales.
+
+00:16:29.000 --> 00:16:35.000
+Si embargo cono tu… Ya temites a la parte deformar un lighthouse.
+
+00:16:35.000 --> 00:16:46.000
+De un auto forma estas haciendo. Oh, obligando a los formatos que esta tuboniendo que tenan y consider en esa parte acid.
+
+00:16:46.000 --> 00:16:53.000
+Yeah? Otto ponti importante, aparte todesto.
+
+00:16:53.000 --> 00:16:59.000
+Para que… para que puedas luego compartir los con los equipos que necesitas.
+
+00:16:59.000 --> 00:17:05.000
+Aqui cuando voy utilizar el conse. El conceptojos de utilizar.
+
+00:17:05.000 --> 00:17:11.000
+de nos tomedio comotal lo tilisa. E su dia.
+
+00:17:11.000 --> 00:17:18.000
+empecaron con esto lo con puede inmediara esto.
+
+00:17:18.000 --> 00:17:23.000
+yesta. Y luego cuale la diferenciacion con lo anterior.
+
+00:17:23.000 --> 00:17:31.000
+Cuando quiero tender un tema de calidados. Y ademas de todo eso que sea.
+
+00:17:31.000 --> 00:17:37.000
+Escalabre y ademas frezibre yo si yo si. Propulsare un lejos.
+
+00:17:37.000 --> 00:17:43.000
+Porque recuerden, un lejas comotal ba tener la capa de governana.
+
+00:17:43.000 --> 00:17:49.000
+para que nos ten llamando, un segundo, y esta.
+
+00:17:49.000 --> 00:17:59.000
+Entonces. Ento esto que estamos abrando es que dependiendo el caso con el que yo voy utilizar utilizare el uno lotto.
+
+00:17:59.000 --> 00:18:05.000
+Yeah, vamos a lotto.
+
+00:18:05.000 --> 00:18:13.000
+Parents a chicos un segundo ya. O se porque no…
+
+00:18:13.000 --> 00:18:23.000
+Entonces. El ultimo. El tema de data mes. Un ponto importante en esto que las architecturas que estamos buscando realmente lo que ba tender.
+
+00:18:23.000 --> 00:18:31.000
+que cosa es. es la evolucion de cada una de estas. Pero esto que cosa es.
+
+00:18:31.000 --> 00:18:35.000
+tutendas una capadicional lo cabramos en la primera trase.
+
+00:18:35.000 --> 00:18:45.000
+La kapa que, la capa? del domino de tu organizacion. Ca para recursos humanos, capa de riesgo, capa de ventas.
+
+00:18:45.000 --> 00:18:54.000
+De no se de facturacion lo que fue. Y luego cual es el punto importante cuando yo veplicar esto quizas ver sus esto.
+
+00:18:54.000 --> 00:19:00.000
+Condo yo tengaro, quienes van hacer a los datos, quien es un particip.
+
+00:19:00.000 --> 00:19:06.000
+Decada una las areas y que vas responsabre de cada Domino que estamos requireiendo.
+
+00:19:06.000 --> 00:19:16.000
+como les pongo por aca. Cuando van utilizarlo, por ejemplo, con companes y comprejas.
+
+00:19:16.000 --> 00:19:28.000
+del ministre o transporte. empresarande. Entonces… quizaso esto.
+
+00:19:28.000 --> 00:19:36.000
+mishe. Que mas com multiresunier de negocio.
+
+00:19:36.000 --> 00:19:48.000
+Ya, solo tuviera, solamente, una unida organiz… No se cuel estu nombre, pero lo pesa la hi, no ete.
+
+00:19:48.000 --> 00:19:55.000
+Este no levana proponer proponer por eje pro console investigiva, tan poco le banda propona. Ta mesh, si no seria.
+
+00:19:55.000 --> 00:20:01.000
+El ejos, Elante, pero name.
+
+00:20:01.000 --> 00:20:08.000
+Si, comestas.
+
+00:20:08.000 --> 00:20:09.000
+Thank you, thank you.
+
+00:20:09.000 --> 00:20:13.000
+Querios haber justamente.
+
+00:20:13.000 --> 00:20:32.000
+como que convenias del estado. utilizando, porque bueno. Secono se 9 estado que… que tala mucho en implementer estos nos modelos de… De adultos entonces.
+
+00:20:32.000 --> 00:20:42.000
+mayoria de… Diamos… instituciones de esta.
+
+00:20:42.000 --> 00:20:43.000
+So, ethnicism?
+
+00:20:43.000 --> 00:20:49.000
+See, they went… CCC. Te cuento. El mi experiencia cuando tenido que verar con ellos.
+
+00:20:49.000 --> 00:20:55.000
+E la mayoria, la mayoria de los estados como por ejemplo ence.
+
+00:20:55.000 --> 00:21:02.000
+La sunedo. La sontodos.
+
+00:21:02.000 --> 00:21:07.000
+Gracien estan haciendo este que estaca. Data link.
+
+00:21:07.000 --> 00:21:13.000
+Y lo que estan buscando ellos. Para que pueda modernizarse es el tema de la governabilidad del dat.
+
+00:21:13.000 --> 00:21:24.000
+ellos en sus momento, ya. porque se tusas tu tienes tu tipico at a warehouse.
+
+00:21:24.000 --> 00:21:29.000
+Bien. Porque no pasos al siguiente este que seria yar martu ata.
+
+00:21:29.000 --> 00:21:36.000
+Uno de ellos primero de ciade que no porque la data de la resociales como que no a confiebre y no tenien unave.
+
+00:21:36.000 --> 00:21:43.000
+Para puer unirla, yeah. Es un momento.
+
+00:21:43.000 --> 00:21:49.000
+Yor cuando sacamos como que la habe porque afinal todos enemos una voya digital dento del Trout.
+
+00:21:49.000 --> 00:21:56.000
+Y a dente vamos a llamarlo asi. empezar almar sudata lake.
+
+00:21:56.000 --> 00:22:00.000
+Yeah, sin embargo, instituciones como por ejema astas que lesia.
+
+00:22:00.000 --> 00:22:17.000
+quiera loben. Porque dicen que tobiano algunos argumentan tobiando necesario, no tengo personal para eso, hayudas empresas que sien empezado con toda la parte de armarzo atale.
+
+00:22:17.000 --> 00:22:24.000
+Pero como su predajas. Pero como es un proceso que al final tiene involotrarse various areas.
+
+00:22:24.000 --> 00:22:36.000
+Y estoy bien. Como luego.
+
+00:22:36.000 --> 00:22:44.000
+No, pero hay todo realmente, en problemo sen peru en la parte lo que es la parte publica hay todo.
+
+00:22:44.000 --> 00:22:49.000
+El tema de que san quedad con Data Lake. Yeah.
+
+00:22:49.000 --> 00:22:59.000
+jos. que tenemos, estan con la parte a mesh.
+
+00:22:59.000 --> 00:23:19.000
+por la parte ha maso. en salud, digo en… en la parte publica peru como no es asi… y todos conicidiamos en lo mismo.
+
+00:23:19.000 --> 00:23:26.000
+En que realmente pole menos emperuto. El concepto a dame en la parte publica todavieno esta muy bien definito.
+
+00:23:26.000 --> 00:23:35.000
+si bien a cierto, eso. Nos es a ici tiene alguna pregunta.
+
+00:23:35.000 --> 00:23:39.000
+Hasta ibamos bien. See?
+
+00:23:39.000 --> 00:23:48.000
+Perfecto sigo porque. Entonces, mim. Odo pondante, recuerden. Ostes tienen el directorio.
+
+00:23:48.000 --> 00:23:55.000
+que significa esto. Nosotros como tala, nosotros. um sido.
+
+00:23:55.000 --> 00:24:10.000
+una cerencia datos. que el van pesar a poder como… que este buscando.
+
+00:24:10.000 --> 00:24:19.000
+Un area de gobierno. Yun area de generiadatos.
+
+00:24:19.000 --> 00:24:32.000
+No destalaria de sienciados. pero recuerden que ahorita ahorita todavi estamosiendo.
+
+00:24:32.000 --> 00:24:42.000
+standby. ajerencia datos.
+
+00:24:42.000 --> 00:24:49.000
+Batener soorte. Y esa Genencia general.
+
+00:24:49.000 --> 00:25:01.000
+su area commercial dos y asi sociamente. Iba nos ser ellos, los interlocutores, como los llamas datasuar.
+
+00:25:01.000 --> 00:25:05.000
+Cierto. Para que envi es en hablar en del negocio.
+
+00:25:05.000 --> 00:25:13.000
+Ya hay que empeiesen a pasar. que cosa esas alimacion de mensaje de cosas que necesita negocio.
+
+00:25:13.000 --> 00:25:27.000
+como el negocio me dijo que al final, yo para poder un prestamo necesito que las personas tenganios como que el sue lo sea mayora al solo vasico.
+
+00:25:27.000 --> 00:25:38.000
+Entonces… Esas cosas que usted ponden como reala de negocio, va ver un este that estuar.
+
+00:25:38.000 --> 00:25:44.000
+que hacer como el intermediario para todesto. Ya, y a cabo un parentes.
+
+00:25:44.000 --> 00:25:52.000
+Ba ver oportunidades, va ver empresas, ya. experiencia experiencia.
+
+00:25:52.000 --> 00:25:57.000
+que el sidio vadar muchas veces oportunidades a que.
+
+00:25:57.000 --> 00:26:01.000
+A que area de gobierno edatos, el area architectura.
+
+00:26:01.000 --> 00:26:06.000
+Sustente antell directorio. Yeah, y bien la pregunta.
+
+00:26:06.000 --> 00:26:19.000
+Si cuazo no questa. Tosay cambi la conversacion de como parentier una architectura de datos modern.
+
+00:26:19.000 --> 00:26:24.000
+directorio que tu tienes que susntar la per se.
+
+00:26:24.000 --> 00:26:36.000
+Ya, queamos sir abrando con tambien es apart. Ya, la dias que podamos armar un data mesh nosotros.
+
+00:26:36.000 --> 00:26:41.000
+Entonces, vamos a divirlo. Ent des capitas.
+
+00:26:41.000 --> 00:26:49.000
+La capita que tiene que tender el estate? El mas o menos como que el tessico y el ternico.
+
+00:26:49.000 --> 00:26:54.000
+El tennico per se. Yeah? Logo.
+
+00:26:54.000 --> 00:26:57.000
+Yo que tengo que tener en toso que estamos diciendo.
+
+00:26:57.000 --> 00:27:05.000
+Yo tengo que tener el domino. A que me referero.
+
+00:27:05.000 --> 00:27:12.000
+Saber queen san compuestos, saber tambien la parte operacional, mi ting operacional.
+
+00:27:12.000 --> 00:27:19.000
+Saber el contesto todsta parte, luego. Que mas. Yo tengo que buscar la data como product.
+
+00:27:19.000 --> 00:27:25.000
+Yo no voy a ser como que medan el caso de uso mas omenos como esta.
+
+00:27:25.000 --> 00:27:31.000
+Yeah, me en el caso de uso, y yo de frente empezara empezar se las cajitas. No.
+
+00:27:31.000 --> 00:27:35.000
+No funcion asi. Yo tengo que cosa, tengo que empezar.
+
+00:27:35.000 --> 00:27:43.000
+Bueno, con el stakeholder a. Este holder se.
+
+00:27:43.000 --> 00:27:47.000
+Perfecto. Que mas temo ca ser. A serge gosa?
+
+00:27:47.000 --> 00:28:02.000
+quienes van a liderar todos tema… del producto que estamos nosotos moviendo. Vamos a poner, el… no se… modelo para… gente no van carizada. Yeah?
+
+00:28:02.000 --> 00:28:08.000
+Y luego disenar interfaces. Interfazo de que. Y estos muy bueno porque.
+
+00:28:08.000 --> 00:28:11.000
+Porque si bien ciertos ter van garman una architectura.
+
+00:28:11.000 --> 00:28:16.000
+lo que fuece. Are you in front?
+
+00:28:16.000 --> 00:28:27.000
+y el font. El banking todas las cosas que el final tiene que sueder para que en el flon se pueda visualizar lo que estamos diciendo.
+
+00:28:27.000 --> 00:28:38.000
+estamo diciendo que puede ser crep nose. un boton que diga sub.
+
+00:28:38.000 --> 00:28:46.000
+Por ejemplo. Entonces storytellinga que tuz hacerficos eso momente importante.
+
+00:28:46.000 --> 00:28:51.000
+Que mas, recuerda. Honar qui del Tura.
+
+00:28:51.000 --> 00:28:53.000
+En lo que te dicen, tiene que ser amnostica.
+
+00:28:53.000 --> 00:29:01.000
+Yeah, agnostica significa que posiberemente torita debas una que tetura, que oritas en amazon?
+
+00:29:01.000 --> 00:29:05.000
+Y lo mas adelante es architectura va pasar pesa donde, pues a Google Trout.
+
+00:29:05.000 --> 00:29:16.000
+Tiene que sera nostica. ando, que cosa que vamos sir conversando.
+
+00:29:16.000 --> 00:29:24.000
+Banga sa productos este. Open. A que me refero a pace.
+
+00:29:24.000 --> 00:29:32.000
+Entonces produc… Que mas.
+
+00:29:32.000 --> 00:29:41.000
+estamos diciendo poder marto a mesh. Tenemos que de finir el.
+
+00:29:41.000 --> 00:29:51.000
+El tin de los datos. Ed decir mira. Tengo dosingeniridatos, tengo de calidad.
+
+00:29:51.000 --> 00:30:02.000
+Tengo uno de no sepues architecto, etc. estamos deciendo, tenemos que definir que la prata forma se auto servicio.
+
+00:30:02.000 --> 00:30:12.000
+para que por ejemplo 5 manana se connecte, y este.
+
+00:30:12.000 --> 00:30:24.000
+Arquitectura. No. para el despregue de codigo.
+
+00:30:24.000 --> 00:30:34.000
+vamos a meternos. que van hacer des prigues.
+
+00:30:34.000 --> 00:30:41.000
+A nivel de commandos comotal, yeah? Y luego, un bonde como lobi hacer la federacion.
+
+00:30:41.000 --> 00:30:46.000
+que significa la federacion. Por ejemplo, tu puedes tener, ya?
+
+00:30:46.000 --> 00:30:55.000
+to directori activo comaitrose? No? Y con Amazon, con Amazon, el director activo tiene que federarse.
+
+00:30:55.000 --> 00:31:04.000
+Significa que con Amazon susurios. Entori haya la practica deberia ser el concerto de federacion.
+
+00:31:04.000 --> 00:31:15.000
+El decir de enercion que va a pas. Para la parte Amazon, lo mismo pasara cuando tuase en el caso de Google. Ya de Google Trout.
+
+00:31:15.000 --> 00:31:28.000
+No. Bien un concerto de federacion. Otto punto.
+
+00:31:28.000 --> 00:31:36.000
+Tenemos que tambien, a todo esta roma que estamos diciento, por eso a una tarria mas compreja de lo mundo comencional del Data Lake.
+
+00:31:36.000 --> 00:31:42.000
+Yeah, es que hacer una mapping. que significa.
+
+00:31:42.000 --> 00:31:51.000
+Un el catalogo tengo sientabras. Perfecto. hacer lo que selegonce.
+
+00:31:51.000 --> 00:31:57.000
+Como primero leda por ejemplo, en la dans respiratory ver datatos empezare a definir.
+
+00:31:57.000 --> 00:32:10.000
+llevar a cabo, lo que estamos diciendo. Esos el mundo tecional.
+
+00:32:10.000 --> 00:32:17.000
+Yakamos agrbiendo como semos ese mapo de como hace el compartimiento de la informacion.
+
+00:32:17.000 --> 00:32:22.000
+De una manera federada, una manera mante areas, etc.
+
+00:32:22.000 --> 00:32:26.000
+Entonces, le ocasa parte como el mapping, tu visas a di bujar, bueno.
+
+00:32:26.000 --> 00:32:39.000
+y el equipoce. Y luego, depueda ser todo eso, hacer el mapio, tutenes que automaticizar.
+
+00:32:39.000 --> 00:32:49.000
+provisionarse de decir. Para que juan pueda verdada de ventas, Maria que pueda ver la data de logistica y asi sosivamente.
+
+00:32:49.000 --> 00:33:02.000
+Yeah, hasta alguna preguntas a parte. hasta estamos vie.
+
+00:33:02.000 --> 00:33:07.000
+Yep, mama paraki. Entonces. Tipo resume. Yeah?
+
+00:33:07.000 --> 00:33:12.000
+El a parte que estacao tomos herman los testipos, asi que no sermen pro cupe, vamos arman los testipos.
+
+00:33:12.000 --> 00:33:22.000
+de la tratase. Vamos armar le un datos, y le alguna tame.
+
+00:33:22.000 --> 00:33:31.000
+Agui para que se puedender la diferencia. de datos.
+
+00:33:31.000 --> 00:33:40.000
+y porquehouse, toces. tomar encuenta. Ya?
+
+00:33:40.000 --> 00:33:47.000
+Entonces. Algo que sios que tomar encuenta es el tema, por ejemplo real time. Yo conda verjos no puedo ser un real time.
+
+00:33:47.000 --> 00:33:52.000
+Aquisi y lo to si. Yeah, auto punto que tambien es importante.
+
+00:33:52.000 --> 00:34:03.000
+Tos, deposit. Tiene seguridad. Ya? Estamaduras aplicar a politicas, tengo aplicar de una forma politicas de seguridadas.
+
+00:34:03.000 --> 00:34:08.000
+Sing embargo si yo que tener con tol compreto de la seguridad.
+
+00:34:08.000 --> 00:34:13.000
+data mes. O da bunto. El tiempo es arroyo.
+
+00:34:13.000 --> 00:34:23.000
+Yeah, si bien essierto. tiempo es aroyo.
+
+00:34:23.000 --> 00:34:31.000
+Trace. En el caso en el caso que todamos vamos a postare que estamos diciendo.
+
+00:34:31.000 --> 00:34:44.000
+para poder empezar. ya.
+
+00:34:44.000 --> 00:34:54.000
+Y nos as tro que sios. Introsivos tenos sega digamos abrar sobel la guerra nuve, no se… llegamos arame parece que si no recuerdo.
+
+00:34:54.000 --> 00:35:02.000
+Ya. Entos todos anos.
+
+00:35:02.000 --> 00:35:11.000
+A. al inicio en la primerace.
+
+00:35:11.000 --> 00:35:23.000
+os. Porque por el hecho de todas infrastructura de intelligens artificial. Ya, por a llevia una alumno que mecio y como despiego yo.
+
+00:35:23.000 --> 00:35:31.000
+Simpla masoludamentana. Yeah, como es pluego en una aplicacion. Como luego mi modelo en unaplicacion.
+
+00:35:31.000 --> 00:35:39.000
+voya compartir tambien un documento en el break, ya.
+
+00:35:39.000 --> 00:35:46.000
+Don de permite saber como tienes. O como puesto, simplerman absolutamente una linea code digo.
+
+00:35:46.000 --> 00:35:55.000
+Y ponder la en una aplicacion. pasa paraca. Ya.
+
+00:35:55.000 --> 00:36:05.000
+porque esta un poquito mala. Entos, y estamos. Oto pond importante.
+
+00:36:05.000 --> 00:36:08.000
+Que masi tienes que tomar en cuenta la flexibilid.
+
+00:36:08.000 --> 00:36:19.000
+como un consulte. tu propio empresa.
+
+00:36:19.000 --> 00:36:27.000
+de consultoria. O de un partner. Entonces lo que tienes que tener lo que tienes que tener vastantaro es saber.
+
+00:36:27.000 --> 00:36:32.000
+Cuando utilizarca cosa. Y auto puntante.
+
+00:36:32.000 --> 00:36:39.000
+que le procupa mucho. CIO que lo llama, yeah.
+
+00:36:39.000 --> 00:36:51.000
+Es el tema, y el tema la escalabilidad. Cuando no hace se puede ser y empeza decir hoy el tribiente tenia on premises, vamos a ponder el caso, no, y quere pasar salout.
+
+00:36:51.000 --> 00:36:58.000
+Lo que hace manda dento del que con no se empiesa solitar unfe.
+
+00:36:58.000 --> 00:37:05.000
+Esse refe com hotal se presentar a oracor, se presentara ave dobrese, se presentar a guitado, se presentara.
+
+00:37:05.000 --> 00:37:11.000
+Otempresam. Cada una dellas comotal.
+
+00:37:11.000 --> 00:37:23.000
+del porque llevarcer. Pero lo que tienes que tomar en cuenta, cuando tuvas es unfe, y cuando ya sustentas este mismo.
+
+00:37:23.000 --> 00:37:26.000
+A lo que si o si tienes que considerar.
+
+00:37:26.000 --> 00:37:34.000
+E ser tem al rendimiento. escalabilida y frezilacion cosa distintas.
+
+00:37:34.000 --> 00:37:44.000
+S yo pongo uncor. Popo nermas adelante 5 ser downtown al sistema.
+
+00:37:44.000 --> 00:37:51.000
+Y la flexibilidades.
+
+00:37:51.000 --> 00:38:00.000
+Mas a elante puede ser 20 columnas. Y as a flexibilidad de poder adaptarse.
+
+00:38:00.000 --> 00:38:02.000
+A que masa el ante tu puesta ajar con datos.
+
+00:38:02.000 --> 00:38:07.000
+Pero necesitas ponder lo dento de la Tabra. Ya?
+
+00:38:07.000 --> 00:38:13.000
+Yo to punte importante que tambien es… Valido para puerde sidir esas tipo oftas.
+
+00:38:13.000 --> 00:38:18.000
+es el costo. I empresas introsive que compare.
+
+00:38:18.000 --> 00:38:22.000
+query no tume cuesta 50, ese me cuesta 20, ese me cuesta venta.
+
+00:38:22.000 --> 00:38:26.000
+Pero noven el beneficio del resto de cosas que puede pasar.
+
+00:38:26.000 --> 00:38:33.000
+que la vidad la flexibilidad. Y el costo.
+
+00:38:33.000 --> 00:38:43.000
+como que super, supertiticas. Hasta alguna pregunta, estas a particita.
+
+00:38:43.000 --> 00:39:10.000
+Ascend. See? Teo baraka.
+
+00:39:10.000 --> 00:39:13.000
+parte los datos. A lo que tienes que tu estabrecer.
+
+00:39:13.000 --> 00:39:20.000
+estabra. por vasa.
+
+00:39:20.000 --> 00:39:25.000
+bien todo, si?
+
+00:39:25.000 --> 00:39:31.000
+Olivia? Entonces, le segue contando.
+
+00:39:31.000 --> 00:39:41.000
+Um ponto importante para por decidir y ver como lo van hacer, y a hay lo mismo guste van a poder establecer de entonces que van hacer ya.
+
+00:39:41.000 --> 00:39:46.000
+Preuntantes de hacendo parentes. son como mas debente alumnos.
+
+00:39:46.000 --> 00:39:52.000
+Mauremente repos de cuanto saem.
+
+00:39:52.000 --> 00:39:57.000
+Decuato de cinco. De dos, de uno.
+
+00:39:57.000 --> 00:40:03.000
+Javier de cinco. Okay, coto de los somas o menos.
+
+00:40:03.000 --> 00:40:08.000
+Porque sis formamos de 5 me quito mi… My birthday.
+
+00:40:08.000 --> 00:40:17.000
+Asin cuentonces. Perfecto su reposierto.
+
+00:40:17.000 --> 00:40:28.000
+See? Perfecto. Entonces, y hace saben organizadar.
+
+00:40:28.000 --> 00:40:35.000
+con quien hace en el rupo. Y tobaca. Entonces.
+
+00:40:35.000 --> 00:40:51.000
+Vamos por aqui. Porque de mencion no esto, porque la dies costo es puede antagar con gente que ya este sanapatigamente mas no son primer citro, ni cosa pulestilo, no ya… luego vamos hablar justamente tambien del proyecto.
+
+00:40:51.000 --> 00:40:55.000
+Yeah? Una parte el proyecto. Tu vaso tener que e finir tus datos.
+
+00:40:55.000 --> 00:41:00.000
+Por ejempro, aque me refiero. Abirlas aca.
+
+00:41:00.000 --> 00:41:10.000
+No, di al bueno midado si estoy abrando por ejemploza la data administrientes, la data la sensaciones, la data de no se.
+
+00:41:10.000 --> 00:41:17.000
+os. Sigma para puer continua.
+
+00:41:17.000 --> 00:41:21.000
+Yeah. Entonces. Yes, tamos.
+
+00:41:21.000 --> 00:41:25.000
+Es datos gestamos diciendo. Si va ser.
+
+00:41:25.000 --> 00:41:33.000
+significa que esta tener tanto batch. Como estimi. Yeah?
+
+00:41:33.000 --> 00:41:38.000
+Teni encuenta que la parte streaming. Hay un punte importante. En estimi.
+
+00:41:38.000 --> 00:41:43.000
+It's muy la realmente es muy debativir con losartepto de datos, ya.
+
+00:41:43.000 --> 00:41:49.000
+Nos hemos debatido bastante en es aparte. Por uno dicen que es real tay.
+
+00:41:49.000 --> 00:41:53.000
+Pero… pero hay un dile de maso menos algunos milent.
+
+00:41:53.000 --> 00:42:01.000
+pues no estan realta in que digamos. Yeah? Entonces importante en tender.
+
+00:42:01.000 --> 00:42:09.000
+que mientas que tengas unos iles de diferencia. En el caso lo que se refier este algunos millisegos.
+
+00:42:09.000 --> 00:42:19.000
+Ya? el tema de los datos.
+
+00:42:19.000 --> 00:42:24.000
+Hay empresas, hay empresas y me apasado por experiencia.
+
+00:42:24.000 --> 00:42:30.000
+cosas que les permite subir ala nube y otas no.
+
+00:42:30.000 --> 00:42:41.000
+blah blah blah. Pero por lineamiento no pueden subir al trout.
+
+00:42:41.000 --> 00:42:47.000
+Yeah? Porso tienes que preguntara Sante bien, los tipo contata de datos que usto estiene.
+
+00:42:47.000 --> 00:42:56.000
+A parte el presidentamiento esquemas. estamos uscando.
+
+00:42:56.000 --> 00:43:03.000
+mira. Como que no secure la fuente final.
+
+00:43:03.000 --> 00:43:07.000
+Piso que se esta es la ota, pues no loce.
+
+00:43:07.000 --> 00:43:11.000
+Entonces importante denerdamient. El ventamiento de la esquema.
+
+00:43:11.000 --> 00:43:15.000
+O temprez. que significa.
+
+00:43:15.000 --> 00:43:24.000
+por ejembro noces ustedes en el modulo de ingeneria les llegaron ensenar la parte espar, me parece que megieron que.
+
+00:43:24.000 --> 00:43:32.000
+Mesa recordar por favor? La parte es parles llegaron a ensenar.
+
+00:43:32.000 --> 00:43:39.000
+Tino.
+
+00:43:39.000 --> 00:43:48.000
+hablando solita.
+
+00:43:48.000 --> 00:43:53.000
+la parte espar?
+
+00:43:53.000 --> 00:43:59.000
+ya para que. Hola comestas.
+
+00:43:59.000 --> 00:44:04.000
+No como code.
+
+00:44:04.000 --> 00:44:05.000
+Ah, yeah.
+
+00:44:05.000 --> 00:44:14.000
+quiero que sibimos si utilizamos este… Esequi.
+
+00:44:14.000 --> 00:44:19.000
+Yeah? Ah, yeah, yeah, me, yeah, perfecto. Vacam muchas.
+
+00:44:19.000 --> 00:44:25.000
+Entonces. Porque las mencion no esto. Mayormente cono tu aprendes vidata, yeah.
+
+00:44:25.000 --> 00:44:33.000
+Introsive si ustedes pong hace llevarian como… Una specializacion envied data.
+
+00:44:33.000 --> 00:44:38.000
+On a las cosas a uno los puntos ustedes v, son patones.
+
+00:44:38.000 --> 00:44:46.000
+de senor que tonic. Uno de los patones que tonico tiene que ver mucho con la parte tambien da patchespar.
+
+00:44:46.000 --> 00:44:49.000
+Porque a pachespar denzo todo el mundo de Victa.
+
+00:44:49.000 --> 00:44:53.000
+Devido que seguro que la santicho, pero sago record.
+
+00:44:53.000 --> 00:45:02.000
+Aba che memoria. Sego el valento.
+
+00:45:02.000 --> 00:45:11.000
+Ya? apace par comotal.
+
+00:45:11.000 --> 00:45:16.000
+y tu puestar en todo el tema de todata.
+
+00:45:16.000 --> 00:45:24.000
+big data espa? Y sale justo el tema de la utilizacion de la patcha para.
+
+00:45:24.000 --> 00:45:34.000
+Espar comotar para que usto es buoyan sacar el proveo de apace par, igualomos a ver en los laboratorios y los voyages laboratorios para que pratic, en para que puedan.
+
+00:45:34.000 --> 00:45:40.000
+Para que puedan hacer tambien, ya. Este… para queza que en pro hecho.
+
+00:45:40.000 --> 00:45:47.000
+par. Puesa apace par el escuel.
+
+00:45:47.000 --> 00:45:53.000
+Yeah, esta vas picar los pregue los conta. Puesta car lo con pito.
+
+00:45:53.000 --> 00:46:01.000
+puestajarlo con llaba. Puesta bajarlo com… Gong escala, yeah.
+
+00:46:01.000 --> 00:46:09.000
+Yep. El enue kernel despar.
+
+00:46:09.000 --> 00:46:17.000
+Como tal escala. Yeah, significantar el performance de scala.
+
+00:46:17.000 --> 00:46:23.000
+se cuel. El escala dando la tall.
+
+00:46:23.000 --> 00:46:28.000
+Sigo quiero serlo es paargon escala, escala siega gano.
+
+00:46:28.000 --> 00:46:35.000
+Sin embargo, si yo. Se que voy a ser procesos en real time.
+
+00:46:35.000 --> 00:46:43.000
+utilizare ya va con espar. sin embargo. Sin embargo, les da ego noticia.
+
+00:46:43.000 --> 00:46:49.000
+Las empresas, las empresas de datos, tod esta parte que estamos diciendo.
+
+00:46:49.000 --> 00:46:54.000
+Odilisang. Como algo requisito.
+
+00:46:54.000 --> 00:47:01.000
+Intrusive. El paesar comotal, tiene su modulo des parmel.
+
+00:47:01.000 --> 00:47:05.000
+Que deba permitir hacer modelos de Machine Learning con.
+
+00:47:05.000 --> 00:47:12.000
+Espar. Oto pundi importante. Tienes la parte que la parte de tu es cue.
+
+00:47:12.000 --> 00:47:20.000
+Ya call espongo un parentes. Si bien essierto es par si cuales sumamente bueno, sin embargo, sin embargo, si quien sa car.
+
+00:47:20.000 --> 00:47:27.000
+Toda la potencia de apace par. Serian cualquieras hostes. Menos es pare se cuel.
+
+00:47:27.000 --> 00:47:33.000
+Para aprender, bien. Pero para proyectos que vamosir viendo de Big Data en el caso de Big Data.
+
+00:47:33.000 --> 00:47:39.000
+Y2 eso. Pos na pasanada, podi es tener.
+
+00:47:39.000 --> 00:47:44.000
+Y logo pasar ese godido. Yeah?
+
+00:47:44.000 --> 00:47:50.000
+Bien. Seguimos paraca. Ya tien estus datos. Ahora vamos a la prata forma.
+
+00:47:50.000 --> 00:47:53.000
+No possanita que el negocio dicho que tenemos cultivizar avedores.
+
+00:47:53.000 --> 00:48:00.000
+No personita que temo utilizar GCP. Perfecto. La cosa queries que el coger una nove.
+
+00:48:00.000 --> 00:48:06.000
+Una nove quellas definido previamente. Yeah, que mas tienes que seguir estandares, porque.
+
+00:48:06.000 --> 00:48:11.000
+por ejemplio queer con estander. Sitosa cancer un proceso.
+
+00:48:11.000 --> 00:48:19.000
+ponte no se de desarrollo de… de solvar, ya, desarrollo de Soduar.
+
+00:48:19.000 --> 00:48:27.000
+por ejemplo una maquina de no se… The tantoramo, de tanto disco, vasodarle.
+
+00:48:27.000 --> 00:48:33.000
+formatos masadar le ambientes para que pueda trabajar esa pleura macion que mundo estaboscando.
+
+00:48:33.000 --> 00:48:40.000
+de desarrollo. Calidad y produzion.
+
+00:48:40.000 --> 00:48:48.000
+importante con esto. No necesariamente. Todos ambientes tienen el mismo.
+
+00:48:48.000 --> 00:48:53.000
+que se tiado de capacitad. A pasado en empresas.
+
+00:48:53.000 --> 00:49:00.000
+tambien, pero de por si. Que muchas vez estoy se va que la pruecalidad.
+
+00:49:00.000 --> 00:49:08.000
+Trout. Pasas de desarrollo, bien.
+
+00:49:08.000 --> 00:49:13.000
+que la area calidad is. tiene que validar dos anos.
+
+00:49:13.000 --> 00:49:22.000
+dos mes. Entonces, con ustedes van a validar datos de por si.
+
+00:49:22.000 --> 00:49:30.000
+Tiene que estar la misma cantidados, la misma forma para que larier galidad al pasara producio.
+
+00:49:30.000 --> 00:49:39.000
+No sarga conroes. Me a pasado en su momento que a veces, por quere ahorar costos.
+
+00:49:39.000 --> 00:49:50.000
+Esto es arroyo y cua. Y para frenta produccion. Y habido roles.
+
+00:49:50.000 --> 00:49:56.000
+estan desarrollando, van a esto. A todo su proceso, ya?
+
+00:49:56.000 --> 00:50:07.000
+Pero no servament de servar una parte. Y esa parte tiene que interlarse con el resto cosas, y a todos importantissimo.
+
+00:50:07.000 --> 00:50:15.000
+que se aga los desambientes. Luego que mas hay que labrar el catalu.
+
+00:50:15.000 --> 00:50:20.000
+La ventaja de estar en el mundo actual los an este 202.
+
+00:50:20.000 --> 00:50:25.000
+Yeah, es que yo me voy apoyar. por ejemplo, herramientas.
+
+00:50:25.000 --> 00:50:31.000
+que permitan hacer la catalogacion de los datos de manera automatica.
+
+00:50:31.000 --> 00:50:40.000
+Hay servicios, como por ejemplo, el data. the Google, el… El atas de auto, no?
+
+00:50:40.000 --> 00:50:45.000
+Este que debir vita ser todo el tema lo que es catalogacion de datos.
+
+00:50:45.000 --> 00:50:50.000
+Otto. Haya mas importante.
+
+00:50:50.000 --> 00:50:57.000
+tu prata forma, tu prata forma como total. Tiene que estar que goza segura.
+
+00:50:57.000 --> 00:51:06.000
+Porque, porque si no al final todo mundo va investar, que apasa veces, y me le paso a justamenta un 30.
+
+00:51:06.000 --> 00:51:11.000
+Yeah, levanta la qui na virtual. Travis que tu vas aprender teout.
+
+00:51:11.000 --> 00:51:21.000
+que tencen perdo es compute. La mas unavirtuales. Bia.
+
+00:51:21.000 --> 00:51:29.000
+It's all quienas virtuales muchas veces. Lo pondeng impe publico.
+
+00:51:29.000 --> 00:51:35.000
+que pas aconer y pe publico. Reconda mal, porque.
+
+00:51:35.000 --> 00:51:43.000
+Recuerden cal final, tenemos la interneoscura. El dar… eldar web.
+
+00:51:43.000 --> 00:51:52.000
+E cedar webt, como tal. Yeah, son como roboticitos que vanda empeza a cojertuipe, y van de empezara.
+
+00:51:52.000 --> 00:52:00.000
+amandales barrio request, hasta que toma. Moira. Y un punto importante como abo para eso, voy a tener.
+
+00:52:00.000 --> 00:52:08.000
+que me permitan a mi tener un entorno seguro.
+
+00:52:08.000 --> 00:52:16.000
+Recuer entambien a llamos abrado que todo los permisos tienen que ver con y aime o el identity.
+
+00:52:16.000 --> 00:52:26.000
+Asthma management, yeah. que cosa es el… El controller.
+
+00:52:26.000 --> 00:52:33.000
+El decir que tu vasadar. si el a persono solamente vaientar a bis query.
+
+00:52:33.000 --> 00:52:41.000
+Levaso a solamente query. Ya, la vie entre a con su corredo de tech.
+
+00:52:41.000 --> 00:52:46.000
+Y lo tetenia ciertas resticciones, y lejabo espace me ustedes os correros, y blah blah blah.
+
+00:52:46.000 --> 00:52:54.000
+Y lesar llegami a mi proyecto. darle los permisos justos necesarios, le diafrente.
+
+00:52:54.000 --> 00:53:00.000
+Solamente les pues comedito.
+
+00:53:00.000 --> 00:53:13.000
+No es buena pratica. Yeah? Vamos sir viendo, como vamos hacer mireen aca usted van a ser.
+
+00:53:13.000 --> 00:53:18.000
+Y la parte pues de retail? Alphenyltoes.
+
+00:53:18.000 --> 00:53:24.000
+La cedula o el deni para… no para car somos de a car de Peru, no.
+
+00:53:24.000 --> 00:53:30.000
+Pero final que cosa? do so.
+
+00:53:30.000 --> 00:53:35.000
+Y luevo en la parte… de organizacion.
+
+00:53:35.000 --> 00:53:39.000
+Cole es el punto importante. Aqui importantissima.
+
+00:53:39.000 --> 00:53:45.000
+puesta. Una cosa es el presupuesto.
+
+00:53:45.000 --> 00:53:52.000
+De cuanto me cobere el partner imprementarlo. y cuanto del presu puesto.
+
+00:53:52.000 --> 00:53:58.000
+De el de que goza del consumo en el tra son dos presuestos.
+
+00:53:58.000 --> 00:54:02.000
+No posanita que mi equipo aceto esta parte aqua al pre supuesto.
+
+00:54:02.000 --> 00:54:08.000
+Perfecto. Entonces, esteba? Y teque a solamente con este que esta porca.
+
+00:54:08.000 --> 00:54:13.000
+Yep. Al mas. Tienes que hacer unorizonte mayor a 96.
+
+00:54:13.000 --> 00:54:24.000
+Intrusive ellosgaria que cono todas es un architectura. No solamente para que funcionerita.
+
+00:54:24.000 --> 00:54:32.000
+Si no tiene es carmar un architectura compretamente escalabre y que te vermita ti poder avantar.
+
+00:54:32.000 --> 00:54:36.000
+No se, des a 55 anos. Yeah, auto punto!
+
+00:54:36.000 --> 00:54:45.000
+tener tu sido. Toda estuar ente otos.
+
+00:54:45.000 --> 00:54:56.000
+Lo roles, ya que es importante. Me apasado etao en empresas, ya que te contataan por identificationados y terminos haciendo de todo.
+
+00:54:56.000 --> 00:55:03.000
+E dos importante definilos roles. Porque, porque vamos a boner que ustedes los contactan por significa datos.
+
+00:55:03.000 --> 00:55:12.000
+Ya corregada. para pued empezar hacer el modelo.
+
+00:55:12.000 --> 00:55:18.000
+forecasting, random forens, lo queues. Estan asi pensado desperande todes.
+
+00:55:18.000 --> 00:55:30.000
+etc, etc. Y ademas, un ponto importante, saber que tipo deformato de dato.
+
+00:55:30.000 --> 00:55:37.000
+Voyotilizar para que realmente sea esto escala. Yeah, hasta urguna preguntas aparte.
+
+00:55:37.000 --> 00:55:46.000
+Hasta estamos. Si?
+
+00:55:46.000 --> 00:55:51.000
+Yes. Almost por aqui.
+
+00:55:51.000 --> 00:55:57.000
+Entonces. Au porca. El buenas practicas. Yeah?
+
+00:55:57.000 --> 00:56:02.000
+Oto pundi importanteca. Recuerda que tuva sermar tu capa medallion.
+
+00:56:02.000 --> 00:56:11.000
+llamen por no se… Bronce prata. Bien, pero cosa que deskermar.
+
+00:56:11.000 --> 00:56:22.000
+Sinifica por capas. Yeah? Dono eso tener que cosa persones vas optimizar, basar han y a importante.
+
+00:56:22.000 --> 00:56:32.000
+Aca, tu vasa definir. Los nombres la no menia que la noc la no menya tura de cada step, de cada cosa que tuvas hacer.
+
+00:56:32.000 --> 00:56:39.000
+Quemas vaca definir el modelo de datos. Ese model datos, que estamos diciendo, tendas varias versiones.
+
+00:56:39.000 --> 00:56:46.000
+Bercio, version 12 versions. Es aqui donde tuvas a tener y vaza concer.
+
+00:56:46.000 --> 00:56:49.000
+Un que cosa el cosoto que se llama se.
+
+00:56:49.000 --> 00:57:00.000
+E continua. Que mas vas evolutionales quema, empezaras con la parte de no se… detal parte.
+
+00:57:00.000 --> 00:57:05.000
+Y luego y luego. esas que mira evolociono.
+
+00:57:05.000 --> 00:57:12.000
+Contratos, porque contratos. Quando teracao notote vas una.
+
+00:57:12.000 --> 00:57:17.000
+una millacion al trout. Por ejembro, yeah.
+
+00:57:17.000 --> 00:57:28.000
+Un comid de un ano de tez anos. Lo que muchas veces ese tipo escuento.
+
+00:57:28.000 --> 00:57:34.000
+Ace que de un hoto forma debaj empresa. Otop ponti importantaca.
+
+00:57:34.000 --> 00:57:42.000
+El concerto del que cosa de la House. Esequertar los formatos abiertos, que formatos.
+
+00:57:42.000 --> 00:57:49.000
+delta enteus. El acid, como tall.
+
+00:57:49.000 --> 00:57:52.000
+Recuerden que cosa que la carte disica de la tocecule.
+
+00:57:52.000 --> 00:57:58.000
+Tiene que soportar. que permita esto. Que mas.
+
+00:57:58.000 --> 00:58:07.000
+Recorda tambien que teni vas? La parte govierno, lo que deciamos el inage, la abolacion del Ries de go vamos iriendo tambien los tipores que hay.
+
+00:58:07.000 --> 00:58:15.000
+con la calidadas. Luckily, that's lea y lesleo.
+
+00:58:15.000 --> 00:58:22.000
+Yeah. Esta parte que estamos diciendo. Esto que estamos au comentando aca, aplica.
+
+00:58:22.000 --> 00:58:30.000
+Al concerto del ejos. Pero sido quiro repicar. en el mino logistica, lo que fuece.
+
+00:58:30.000 --> 00:58:35.000
+Yo llamarel concerto de data. Miss? Yeah.
+
+00:58:35.000 --> 00:58:42.000
+Hasta estamos esta alguna preguntas a partita. See?
+
+00:58:42.000 --> 00:58:48.000
+of paragu.
+
+00:58:48.000 --> 00:58:55.000
+Yasta. Otto ponti importante.
+
+00:58:55.000 --> 00:59:04.000
+estamos diciendo. Yeah. Hay uno concept uncepto que se dice en el trao seroton.
+
+00:59:04.000 --> 00:59:17.000
+Significa, que significa todo esto, el minimo privilege. Solamente se cuele.
+
+00:59:17.000 --> 00:59:22.000
+Que mas delinage, ya. Yoto ponto importante.
+
+00:59:22.000 --> 00:59:27.000
+concerto de immutability. que significa eso.
+
+00:59:27.000 --> 00:59:34.000
+La mutabilidad comotal es decir vaca tener. te bienen en el orige.
+
+00:59:34.000 --> 00:59:42.000
+No, donde tu vas a poder. que estamos diciendo. Esto que va a ser.
+
+00:59:42.000 --> 00:59:47.000
+Bautimizar el consumo. Cal final, vamos empezar.
+
+00:59:47.000 --> 00:59:52.000
+Yo para cabo. Yeah? Otop punt importante que mas.
+
+00:59:52.000 --> 00:59:57.000
+De ento todo esto tu tienes. Un jal. Que es un jal.
+
+00:59:57.000 --> 01:00:05.000
+es mayormente cuando no trabaja en elite. To tienes una forma de poder.
+
+01:00:05.000 --> 01:00:12.000
+que vasa… que vasa definir.
+
+01:00:12.000 --> 01:00:18.000
+En donde lobregar. por ejempro naturiz.
+
+01:00:18.000 --> 01:00:26.000
+en unaware. It's este conato ese punto yal.
+
+01:00:26.000 --> 01:00:32.000
+But me vo servir. Para porne secar lo estamos diciendo.
+
+01:00:32.000 --> 01:00:36.000
+Introsive el yal no solamente para tema de datos.
+
+01:00:36.000 --> 01:00:43.000
+Para marto lejos. Sino tambi a veces muchas veces para mar el tema en lo que el reproymento model.
+
+01:00:43.000 --> 01:00:54.000
+Yeah, auto recordaca, ti es una palabra muy interesante, muy importante, se de… que se llama GitHad.
+
+01:00:54.000 --> 01:01:03.000
+Gilut, yeah? y lo puedan hacer es aparte que estamos diciendo.
+
+01:01:03.000 --> 01:01:08.000
+The nam luego el repositorio decodigo. que hace el repositorio de codigo.
+
+01:01:08.000 --> 01:01:13.000
+El repositorio de code digo permite poder que cosa.
+
+01:01:13.000 --> 01:01:22.000
+Poner todo el tema, lo que estamos diciendo. Para poder tener un versionamiento el coyo que estamos requiring.
+
+01:01:22.000 --> 01:01:26.000
+Entonces. por ejemro.
+
+01:01:26.000 --> 01:01:33.000
+Ya tienes un ejempro de ventas. en la Tabra Silver que estamos requiendo.
+
+01:01:33.000 --> 01:01:40.000
+El todar le ventas. negativo.
+
+01:01:40.000 --> 01:01:46.000
+Datos que seventolizar la socio la manana. Hay esta la manana.
+
+01:01:46.000 --> 01:01:53.000
+Entonces estuvas a definir. de que.
+
+01:01:53.000 --> 01:02:01.000
+Desi contrato que estamos requiendo. por ejemplo, la version.
+
+01:02:01.000 --> 01:02:09.000
+version 2, versions. Yes, a mente.
+
+01:02:09.000 --> 01:02:17.000
+El esquema que estamos reciriendo tender nombre es tienda tipedatos, tienda es obligatorio, no obligatorio utilizar.
+
+01:02:17.000 --> 01:02:25.000
+Ya mas tenda el tipo de. de Calaida.
+
+01:02:25.000 --> 01:02:31.000
+Y luego tambien la seguridad y la. Governance. Yeah?
+
+01:02:31.000 --> 01:02:40.000
+Vamos poraca. importante el decir esto que cosa es.
+
+01:02:40.000 --> 01:02:50.000
+El sel tema de un dataset. Por capa. Y el data producto que el tiene que ver con la parte de datamos.
+
+01:02:50.000 --> 01:02:54.000
+pour la parte armar por capas. Por capas de que.
+
+01:02:54.000 --> 01:02:58.000
+la capa que el decia. No se… Bronce.
+
+01:02:58.000 --> 01:03:05.000
+Silver E gold, por ejemplo, no hor. Entonces. En esta parte.
+
+01:03:05.000 --> 01:03:07.000
+Atante hobby. Hola, mustas.
+
+01:03:07.000 --> 01:03:16.000
+luso contrato. esa parte.
+
+01:03:16.000 --> 01:03:21.000
+El conta todo comotal, el yar que estamos diciendo, ya.
+
+01:03:21.000 --> 01:03:26.000
+Pasta finir todo lo que esta paraca. Voya vora esto.
+
+01:03:26.000 --> 01:03:37.000
+Todo que saca. Vasinir la version, version unoversion dos version, es como que… lo que vasa cargar. En este caso.
+
+01:03:37.000 --> 01:03:41.000
+Es al tema de las ventas di areas. En que solvental.
+
+01:03:41.000 --> 01:03:51.000
+utilizar el eskema. Por ejemplo la 3vent de la fecha la sus cruzal.
+
+01:03:51.000 --> 01:03:56.000
+etc. y eslo.
+
+01:03:56.000 --> 01:04:05.000
+No permitire nullos.
+
+01:04:05.000 --> 01:04:14.000
+como que tu de fines. tipo de cosas lo que vasa construir.
+
+01:04:14.000 --> 01:04:23.000
+como el contato que tuase de unota forma. resumida, no?
+
+01:04:23.000 --> 01:04:27.000
+Yo son loca, o sa en el that mismo es…
+
+01:04:27.000 --> 01:04:35.000
+No, no, no, no, no. Eso lo tienes con… lo tienes con la finalidad para que, con la finalidad de que al momento que tu vas imprementar, porque que.
+
+01:04:35.000 --> 01:04:45.000
+el descentifico. Cuales, que frente va el niggio la todos, deferente va program.
+
+01:04:45.000 --> 01:04:57.000
+quiere pensar como la mejor a solution. Tiene que volver a cambier el codio, volver a ser lo pontar a llevi na ChatGPT para que lo aga.
+
+01:04:57.000 --> 01:05:11.000
+lo que fuece. que mado eso la forma que vasa tener la seguride los datos, hacer detad al forma.
+
+01:05:11.000 --> 01:05:17.000
+A hayante juan.
+
+01:05:17.000 --> 01:05:32.000
+Este contrato entiendo que es con una especi de… antes que usted antes de implementarlas, antes de codificar.
+
+01:05:32.000 --> 01:05:33.000
+Exacto.
+
+01:05:33.000 --> 01:05:44.000
+No. Okay, esto the cano pue ayudar por ejemplo, no se posi que van pliar, llamos este… por ejemplo cambiar el escaema.
+
+01:05:44.000 --> 01:05:53.000
+por no se… No, y tambien su bo que se importante tambien para que otros lo… Regina, no.
+
+01:05:53.000 --> 01:06:04.000
+por y buen punto lo que se juan, porque… lo digo por espencia propia.
+
+01:06:04.000 --> 01:06:14.000
+ingenira de atos, yeah. pun lesaroyava.
+
+01:06:14.000 --> 01:06:19.000
+Yeah? No se a mi jefe ol negocio negoci mesia.
+
+01:06:19.000 --> 01:06:28.000
+ando chino. No? Entonces mucho mejor para ustedes puedan hablar el mismo idioma el negocio.
+
+01:06:28.000 --> 01:06:41.000
+lo que fuece, no? De que eso ser, bueno yo va mir a la ventas, la tocilizacion de la traba Cert al cosa, la version que tengo rita va ser esto.
+
+01:06:41.000 --> 01:06:53.000
+mucho mejor, mas rapido tambi. Aja. No se que um estaro, siamos vie.
+
+01:06:53.000 --> 01:06:58.000
+Perfect. Vamos por aqui. No, aki.
+
+01:06:58.000 --> 01:07:08.000
+Por capas, ya? O por producto.
+
+01:07:08.000 --> 01:07:15.000
+Ambas un validas. Super, super validas. Contos por capas, lo que tienes que tomar encuentas el esquema.
+
+01:07:15.000 --> 01:07:29.000
+una columna mas, lo que fue. Pues tambien hacer el tema lo que se refere analcias de tutat.
+
+01:07:29.000 --> 01:07:35.000
+hay duplicados. El naje.
+
+01:07:35.000 --> 01:07:42.000
+luego paraca, lego paraca. Yeah, go… mammoth tenendos un poquito el tema de particion.
+
+01:07:42.000 --> 01:07:50.000
+vamos a ver luego no idea, pero notaria. de cuanto nos demoramos enjeutar.
+
+01:07:50.000 --> 01:08:00.000
+alert.
+
+01:08:00.000 --> 01:08:01.000
+Asi tanquilo.
+
+01:08:01.000 --> 01:08:06.000
+El contrato, como. ecto masomenos.
+
+01:08:06.000 --> 01:08:12.000
+E sartamente. Esato. que el idioma que vabra el negocio.
+
+01:08:12.000 --> 01:08:22.000
+Y tu al antes de imprementarlo. Y ayudar en los proyectos antes de que nos pongamos aporar, y pueser que no se… Quego mo ingener datos digo nosimera.
+
+01:08:22.000 --> 01:08:27.000
+La fission duit sur nola. pero negocio mice no si.
+
+01:08:27.000 --> 01:08:36.000
+tubas definiendo como en terminos simpres. la idea de la parte funcion.
+
+01:08:36.000 --> 01:08:46.000
+lo que esta haciendo. como.
+
+01:08:46.000 --> 01:08:47.000
+Essip.
+
+01:08:47.000 --> 01:08:56.000
+El se le, uh…
+
+01:08:56.000 --> 01:08:57.000
+que significa.
+
+01:08:57.000 --> 01:09:04.000
+Con nosotos hablamos todas el tema lo que se refere… el tema drought.
+
+01:09:04.000 --> 01:09:12.000
+Yeah, o el tema… concerto realmente.
+
+01:09:12.000 --> 01:09:18.000
+Ti es el concepto de es ela. SLA SLO, sin hambar que supanosolamente de dos.
+
+01:09:18.000 --> 01:09:23.000
+Pero que cose el es elia. Esse la acuerdo que tupones.
+
+01:09:23.000 --> 01:09:26.000
+como con el provedor. A que me refiero, el contotto legal.
+
+01:09:26.000 --> 01:09:34.000
+que de todo la ano. 5 incominutos.
+
+01:09:34.000 --> 01:09:46.000
+la cuero. Buenos y falla, por ejempro, bueno te voy a regalar queitos.
+
+01:09:46.000 --> 01:09:50.000
+Yeah, estoya. Bien elo un poquito mas arriba.
+
+01:09:50.000 --> 01:09:55.000
+queen el tema el SLO. El eso tiene queer con la parte como lojito.
+
+01:09:55.000 --> 01:10:04.000
+ese servicio que deboyadar. Puede ser que sea mas o menos bueno.
+
+01:10:04.000 --> 01:10:13.000
+como que… como que vueno, super bueno, esto como que los gitivo mismo que tuvas equilibriar ente el tiendo este feliz.
+
+01:10:13.000 --> 01:10:16.000
+Y que el equipo de producto no seguelva como que ha.
+
+01:10:16.000 --> 01:10:22.000
+Tambieno cosas imposibles, tambiendo que no se… que teito por disanos en interes.
+
+01:10:22.000 --> 01:10:28.000
+hay cana. y es ela.
+
+01:10:28.000 --> 01:10:39.000
+Pero eso, pero eso, ya porque eso termino que tambien encontar ustedes dento esta parte lo que se referea, ya, es el concepto.
+
+01:10:39.000 --> 01:10:43.000
+El SLA es el que va medir como la Mexica, per se.
+
+01:10:43.000 --> 01:10:50.000
+La mitiga que te bueno. Um… Todo tarda en restauro.
+
+01:10:50.000 --> 01:10:55.000
+Bueno tarda quince minutos. Okay, tu mejisa que tiene un contradato.
+
+01:10:55.000 --> 01:11:03.000
+que el servicio comotal. um… No se de la verda forma.
+
+01:11:03.000 --> 01:11:13.000
+Esa meselia. entail medio del yo como trigente.
+
+01:11:13.000 --> 01:11:21.000
+Perfecto no hay ningo un problema. Quanto tiempo me dice tu.
+
+01:11:21.000 --> 01:11:33.000
+indicador de como tuvas a mer todo esto. Un restaurante. Meirmente cuandoce chistes le dice hoy dime cual es tu es lea.
+
+01:11:33.000 --> 01:11:45.000
+El pretomenti Minutos. pues leo.
+
+01:11:45.000 --> 01:11:52.000
+Y a indicador, ya que pasite lo paso, si pasa los 20 minutos, y a regal prato.
+
+01:11:52.000 --> 01:11:58.000
+Es significan en el tema escele. Nos es intendio. Si?
+
+01:11:58.000 --> 01:12:02.000
+How old are you?
+
+01:12:02.000 --> 01:12:15.000
+Esta. estamos ah. Entonces, segimos para que.
+
+01:12:15.000 --> 01:12:24.000
+Okay. Aqui la partico. Y aqui me voya demorar un poquito encontarles.
+
+01:12:24.000 --> 01:12:29.000
+Un ponti importante. Cuando estes van a trabajar.
+
+01:12:29.000 --> 01:12:35.000
+Estan haciendo, modelos, ya, mayormente cuando se modelos y empiesa.
+
+01:12:35.000 --> 01:12:47.000
+Tedanos pequenos. Porque porque es como que es parter de. Yeah, sin embargo con dode frentes en tu dia.
+
+01:12:47.000 --> 01:12:53.000
+Conto enfrenta sento en todo lo que hace. Tamos abrando de Teras.
+
+01:12:53.000 --> 01:12:58.000
+informacion. Yeah.
+
+01:12:58.000 --> 01:13:02.000
+Y lo cuando para que se a lo mas optimo posibre.
+
+01:13:02.000 --> 01:13:08.000
+Tienen que particionar. El dato. Significa que si tu tienes.
+
+01:13:08.000 --> 01:13:17.000
+50 anos historia. 202 y asi sociivamente.
+
+01:13:17.000 --> 01:13:27.000
+y nosolamente eso, tendas que dividir muy posibriamente. hasta por dia.
+
+01:13:27.000 --> 01:13:31.000
+La particio que lo quarreamos en la primerace vapender tambien.
+
+01:13:31.000 --> 01:13:39.000
+Como es la cantidados que tienes. Porque si tu por dia, tiene solamente 5cziones, no te particionado por dia.
+
+01:13:39.000 --> 01:13:46.000
+Ya, toces importante, aparte, esa compartacion que todesos de los datos.
+
+01:13:46.000 --> 01:13:51.000
+Mayormente cono tutrajas, y dice, vamos a ponder los que antenido windows.
+
+01:13:51.000 --> 01:13:57.000
+Yeah, se que una mas, por los cantanidos windows en algun momento si el mimo Mac.
+
+01:13:57.000 --> 01:14:06.000
+De lo paso. mucho.
+
+01:14:06.000 --> 01:14:09.000
+Sier todo la pues en muit en un rar.
+
+01:14:09.000 --> 01:14:20.000
+En um si lo complims. Esa compartacion, lo llevos tambien cuando tu hace todo el tema los datos.
+
+01:14:20.000 --> 01:14:26.000
+Como setuceso en el concepto datos, por ejemo en parquet, el formato es nappy.
+
+01:14:26.000 --> 01:14:34.000
+Yeah, esas el mas conocido no es el unico yremos abrando mas de todo estoy espacao ponder. No es nupe snappy.
+
+01:14:34.000 --> 01:14:42.000
+Yeah. Otopunto. cosas, cosa.
+
+01:14:42.000 --> 01:14:48.000
+Ela tamasqui. Significa. Tienes el a cedola.
+
+01:14:48.000 --> 01:14:56.000
+cual. des que mascarlo. Dento la nube, dento la nuve quamos abrar nosotos que vamos sir viendo.
+
+01:14:56.000 --> 01:15:00.000
+tiene el temar que se la cono se como data los prevention.
+
+01:15:00.000 --> 01:15:08.000
+que esta donde dento del sensitidata protein. A parte, y casta lo que el decia, un dashboard.
+
+01:15:08.000 --> 01:15:14.000
+con los esleo y las alertas. Recordando que los esleo que cosa es.
+
+01:15:14.000 --> 01:15:24.000
+poscandos a perfecion saluta. Yeah? Entonces.
+
+01:15:24.000 --> 01:15:36.000
+tambienbienbien. ustedes van aber en la parte lo servicios, ya, en la parte lo servicios.
+
+01:15:36.000 --> 01:15:46.000
+que estao querese tema los label. Esole me permit a mi poder decir o que, yo como gobierno datos, voy a definir.
+
+01:15:46.000 --> 01:15:52.000
+single labels. El primero va ser. Outdoor la llabe va ser outdoor.
+
+01:15:52.000 --> 01:16:00.000
+para que lo Trea. Eso que dan permitira ti.
+
+01:16:00.000 --> 01:16:04.000
+que son label, o eso sta. Almentoserto el filto.
+
+01:16:04.000 --> 01:16:12.000
+Sea, lo mas rapio posibre. Introsive en el tema del billing, ya, en el tema el billing hay on dashboard.
+
+01:16:12.000 --> 01:16:21.000
+para visualizar los costos que lo tiene el mismo, el mismo… Par que vem.
+
+01:16:21.000 --> 01:16:26.000
+Meeting Anki? Su y se hoy, pero yo como visor el temo los costos.
+
+01:16:26.000 --> 01:16:34.000
+En el caso de lo que es Google. menos como esto.
+
+01:16:34.000 --> 01:16:42.000
+Now, tuasa danerca costo. virtuales de lo que de tala fecha, del tema lo que es.
+
+01:16:42.000 --> 01:16:54.000
+de sea. son etiquetas custe es de finem para decir bueno, yo… En un solo proyecto todo.
+
+01:16:54.000 --> 01:17:03.000
+Tengo producio, tengo desarrollo tengo acua. me banda permitir a mi poder filtar como va.
+
+01:17:03.000 --> 01:17:10.000
+La situacion. Yeah? Entonces, sigo por aca.
+
+01:17:10.000 --> 01:17:17.000
+El data mes. En diferencia que lotto.
+
+01:17:17.000 --> 01:17:27.000
+tienes que e finir el owner. Si hacer venta.
+
+01:17:27.000 --> 01:17:35.000
+El nerde las ventas. Elone de logistica. Requirimientos aceptados, y es aqui.
+
+01:17:35.000 --> 01:17:42.000
+Don de la parte de este senor que estamos abrando encego, porque tu vasa interactar con el negocio.
+
+01:17:42.000 --> 01:17:47.000
+verifi. Todi es que darle el linguajes en s nego.
+
+01:17:47.000 --> 01:17:50.000
+Ayo da forma tambien estos no esta fu yan.
+
+01:17:50.000 --> 01:17:59.000
+Ayota forma tambien de presentar esta parte. Ya?
+
+01:17:59.000 --> 01:18:08.000
+Puedem presentar cualquiera de ambos. Puede ser este, o dia me processos, cual por lo menos es el que yo visto mas yo por lo meso utilizado es este que estaca.
+
+01:18:08.000 --> 01:18:18.000
+Y decir, y esplicar esa forma. Al final de la forma comonto lo presentas. Otto.
+
+01:18:18.000 --> 01:18:24.000
+El temare que lo que le decia. Nuevamente, tu esquema.
+
+01:18:24.000 --> 01:18:31.000
+Yo boy. hacer para elaria de ventos.
+
+01:18:31.000 --> 01:18:40.000
+bueno que me voya de morar. Unos 20 dias.
+
+01:18:40.000 --> 01:18:47.000
+Yo como es a ruedor. Ca loseria.
+
+01:18:47.000 --> 01:18:55.000
+Good that we had tener el 50%. Y asi so sivamente.
+
+01:18:55.000 --> 01:19:01.000
+Y aos el como que… es como que la cordo que tu llegas en mismo y la contaparte.
+
+01:19:01.000 --> 01:19:06.000
+Yeah, luego, aqui. Tu vasa finir.
+
+01:19:06.000 --> 01:19:13.000
+como se pointalo como el punto final. De como varazier los datos.
+
+01:19:13.000 --> 01:19:19.000
+Por ejemo, que puede ser. que es unawarele.
+
+01:19:19.000 --> 01:19:28.000
+Mediante quizas en no sepues una report. Lo usted defina.
+
+01:19:28.000 --> 01:19:35.000
+Luego, importante el catalos recuer estas abrando de que de la partata mesh, tienes que tener de un da formun catalogo.
+
+01:19:35.000 --> 01:19:42.000
+Y luego el tema de. que lo que a desarrollado.
+
+01:19:42.000 --> 01:19:51.000
+pasal tambien es un momento. Desaroy una cosa y se pasa y que es parte del cor.
+
+01:19:51.000 --> 01:19:59.000
+lo demas yando funcion. Ya, pero destres que lo llama llama.
+
+01:19:59.000 --> 01:20:07.000
+Y luggo, la politica retencion. Como tusas haciendo un concepto.
+
+01:20:07.000 --> 01:20:17.000
+Yo, como nube. Y como esa realador teofresco que hue retener los datos por 5 anos.
+
+01:20:17.000 --> 01:20:21.000
+O porce anos. Y lo desolo vie ahora porque no le necesito.
+
+01:20:21.000 --> 01:20:27.000
+Me passado en su momento en algun momento que cuando no sistia al tema a la nube, yeah.
+
+01:20:27.000 --> 01:20:35.000
+Des habia comentado, no? que cuando tenias caselos vacaps y todo vezo, lo ha siamos en sintas.
+
+01:20:35.000 --> 01:20:46.000
+istente va seros. Y regoro que para ser los va cats tenia que generar que cosa.
+
+01:20:46.000 --> 01:20:54.000
+como era 3 anos masomos. Y regorden queries anos nos donamente se eso.
+
+01:20:54.000 --> 01:21:09.000
+lo que fuece. Hay emprezas que por ejemplo suicales Microsoft, la parte Azure, y tienen los Vacats en Amazon.
+
+01:21:09.000 --> 01:21:17.000
+Yeah? Y ademas de que cosa la sensibilidad. Qui en Acede a cada cosa.
+
+01:21:17.000 --> 01:21:24.000
+Hasta y alguna preguntas esa parte. Hasta estamos.
+
+01:21:24.000 --> 01:21:32.000
+No vamos a umbrec, yeah, no vamos umbre de nos 15 minutosamos a la 64.
+
+01:21:32.000 --> 01:21:43.000
+No vemos en rotito.
+
+01:21:43.000 --> 01:22:13.000
+Of course, you're going to inquire me open. Yes, leveratito. Yasias!
+
+01:23:37.000 --> 01:24:07.000
+One, two, three!
+
+01:24:11.000 --> 01:24:41.000
+It was like a whirlwind scatters like.
+
+01:26:28.000 --> 01:26:39.000
+This ice cream, young man.
+
+01:26:39.000 --> 01:27:09.000
+Is this a place that I have.
+
+01:29:07.000 --> 01:29:37.000
+Oh my god.
+
+01:31:26.000 --> 01:31:56.000
+I'm letting go. I'm breathing.
+
+01:37:02.000 --> 01:37:09.000
+Yes, stop. No. Yeah, well, we are… yeah, say proper continua?
+
+01:37:09.000 --> 01:37:16.000
+See? Tao cracka? Perfecto. asi que y estamos.
+
+01:37:16.000 --> 01:37:23.000
+Entonces. Vamos por aqui para porce qui. Ya? Comociamos contamilapis a que esta.
+
+01:37:23.000 --> 01:37:31.000
+Tenemos que goza requisitos iguanas practicas.
+
+01:37:31.000 --> 01:37:34.000
+Como sa se con esto, como hace con aquello, no.
+
+01:37:34.000 --> 01:37:39.000
+Y en la parte que tenemos que procuparnos bastante. Yeah.
+
+01:37:39.000 --> 01:37:46.000
+que de porcitine queretica. Yao medallion, vamos a ponder la si.
+
+01:37:46.000 --> 01:37:59.000
+y eso lo sebor que… mimo VC.
+
+01:37:59.000 --> 01:38:06.000
+Loya tambien distinto las capas. Entonces, hay un pundo importante que sios y tiene minimo des capitas.
+
+01:38:06.000 --> 01:38:12.000
+Yeah, auto ponde. Que masiguente pregunta.
+
+01:38:12.000 --> 01:38:19.000
+Y vamos ale en conjunto. Tiene mesas horas en tu casa del lago que no seguro de calingo.
+
+01:38:19.000 --> 01:38:24.000
+que significa mesas duradas. Recuada tultima cappa.
+
+01:38:24.000 --> 01:38:30.000
+Cuales el mayor programa de las empresas cuando tu compartes datos. Noncesita pasado, pero mien su momento me paso.
+
+01:38:30.000 --> 01:38:41.000
+los sada uno losada. La personas de con esta su Power BI, pero sabiamos irarmente lo saba, uno losaba esa reporte.
+
+01:38:41.000 --> 01:38:48.000
+Reporter. lo us ao.
+
+01:38:48.000 --> 01:38:52.000
+oda pregunta. alguna vezos debatido.
+
+01:38:52.000 --> 01:38:58.000
+si algo de brece. En brata, o en oro?
+
+01:38:58.000 --> 01:39:04.000
+U en la parte bronze. Yeah, so desa que pensar bien esta participita, yeah.
+
+01:39:04.000 --> 01:39:10.000
+Aria voy utilizar. Si ose que son datos cal final me vermite a mi hacer la analytica.
+
+01:39:10.000 --> 01:39:17.000
+Si son como algo como cargo mas operati, algo de tru se si eso.
+
+01:39:17.000 --> 01:39:25.000
+Ya? Entonces.
+
+01:39:25.000 --> 01:39:29.000
+Tendel la parte que cosa. Alor las traves.
+
+01:39:29.000 --> 01:39:38.000
+Mauremente con nosotos venimos del mundo relacional, del mundo de las basedatos deloracol del secuel entonces cosas, del mundo relacional.
+
+01:39:38.000 --> 01:39:43.000
+Adite dice, o nos dicen. que tener encuenta los primaque.
+
+01:39:43.000 --> 01:39:50.000
+Y los forrianiqui. Ques eso, la lleva estimarias y las yaves.
+
+01:39:50.000 --> 01:39:57.000
+Este for anas. vamos aponer la si.
+
+01:39:57.000 --> 01:40:11.000
+Perfecto, voya definir. el primari que.
+
+01:40:11.000 --> 01:40:14.000
+Y for an aqui comotales cuando yo no esotabra.
+
+01:40:14.000 --> 01:40:19.000
+Lo uno con ototabra. Y pasa, esta llabe que estabaca?
+
+01:40:19.000 --> 01:40:23.000
+Pasa para esto da. Y se converten lla beforeania.
+
+01:40:23.000 --> 01:40:28.000
+noticia. Cuando tu yan vizas a trabajar.
+
+01:40:28.000 --> 01:40:33.000
+en la parte del mucho mas lo que vamos viriendo.
+
+01:40:33.000 --> 01:40:40.000
+en lo que es la viguer. La parte saber de definita vez.
+
+01:40:40.000 --> 01:40:48.000
+Tol vidas por compreto. Yeah, haymos a definir tambien comos pueden identificar que es a fila, que estamos diciendo pues a unica.
+
+01:40:48.000 --> 01:40:57.000
+Yeah, autopunto, el temazibleutos. Tiene que ver mucho las columnas que tupungas.
+
+01:40:57.000 --> 01:41:04.000
+La columna uno doses lo que fue. Los tipos de datos. Y equerentes.
+
+01:41:04.000 --> 01:41:14.000
+Mayormente, cuando, por lo menos cuando yo empese conso este tema todas estoy en la universidad.
+
+01:41:14.000 --> 01:41:30.000
+quizasa decimal. puedecir de… de los datamark.
+
+01:41:30.000 --> 01:41:35.000
+Or was that data lake. El tipo da juega.
+
+01:41:35.000 --> 01:41:39.000
+Muy retico en esto. porque es muy diferente poner un dato.
+
+01:41:39.000 --> 01:41:46.000
+Otipo decimal por ejemplo. Versus un tipo de ato tipo.
+
+01:41:46.000 --> 01:41:52.000
+Porque. El decimal confruto como que se parecem, sin embargo cada no pesa distinto.
+
+01:41:52.000 --> 01:41:56.000
+Al momento tude diadlamar. A momento que tuvas hacer.
+
+01:41:56.000 --> 01:42:10.000
+Tienes que oscarlo mas costofficient. Yeah, esos pequenos sino de bro, serito nos escort que cuemo si yo decimal Frobat.
+
+01:42:10.000 --> 01:42:20.000
+mencionando para que lo toome se encuenta. Odo la relaciones.
+
+01:42:20.000 --> 01:42:37.000
+Interatuar las tabras. Y auto punto, y auto que saltion.
+
+01:42:37.000 --> 01:42:42.000
+Tu pues de finir hasta cuanto hacer tu limite de resolverzaistica.
+
+01:42:42.000 --> 01:42:47.000
+Puede ser que tuca negocio sea como que mas obenos como tefista.
+
+01:42:47.000 --> 01:42:59.000
+Como todo lo quere decia por aqui. Y asi sesivamente.
+
+01:42:59.000 --> 01:43:05.000
+Yeah, tobas y definiendo. Como quir ha sir avanzando. Si voica?
+
+01:43:05.000 --> 01:43:13.000
+sentienda esto. ustedes tien, la capra medallion.
+
+01:43:13.000 --> 01:43:19.000
+Yeah, la quemos habria estar canccia. To bronze to silver.
+
+01:43:19.000 --> 01:43:29.000
+Itu capauro. certificaciones de Data Brits.
+
+01:43:29.000 --> 01:43:41.000
+y a si ocidamente. Hay muchas preguntas?
+
+01:43:41.000 --> 01:43:48.000
+Decentipodato del data lake. No, te pregunta.
+
+01:43:48.000 --> 01:43:58.000
+El tipo da leique que diferencia ente el tipo da iceberg, quece que un tipo daudi, que vamos irablando se me pro cupe.
+
+01:43:58.000 --> 01:44:02.000
+Yeah, pero que quieron que llem con esto, que tu vasa tener.
+
+01:44:02.000 --> 01:44:07.000
+Queza vasa tener. Esa concertos a una bratica que dependiendo.
+
+01:44:07.000 --> 01:44:20.000
+Lo necesidad. El caso negocio, el caso que te van a dar como… Como futuro datos, como futuro scientificatos todos cojeras cualquier tipeda.
+
+01:44:20.000 --> 01:44:24.000
+Yeah, y avamos abrar dicado no de estos. Vamos para cas.
+
+01:44:24.000 --> 01:44:30.000
+Considerando de apocos. Vamos con la capa bronze. la caparu.
+
+01:44:30.000 --> 01:44:37.000
+Yeah, acarice. Preservamos la verdapura. Cadabite?
+
+01:44:37.000 --> 01:44:48.000
+cada de tallie. Te aparmitir que cosa, ver… Ya, es como recorda, esa el console.
+
+01:44:48.000 --> 01:44:53.000
+Introsive. Introsive. Puesercetorije.
+
+01:44:53.000 --> 01:45:01.000
+El flondo de tustas teniendo los datos. diferente pueda.
+
+01:45:01.000 --> 01:45:11.000
+Estab lo que fuece. que se recomenda codo tu pasas el tema route.
+
+01:45:11.000 --> 01:45:21.000
+que cualo utilizo. tipo barchar, o tipo esti.
+
+01:45:21.000 --> 01:45:33.000
+Y lasiguiente capa, y en la capa siguiente. transformaciones de los datos.
+
+01:45:33.000 --> 01:45:40.000
+Yeah? Autos que te dicciono. O por el simil de barchar, el sin.
+
+01:45:40.000 --> 01:45:48.000
+el similar a ensa bruto el froz. Pero cuel es el problema veces, y esta complado. Yeah?
+
+01:45:48.000 --> 01:45:54.000
+Hay sistemas que aqui por ejemro tutienes nueve decimales.
+
+01:45:54.000 --> 01:45:58.000
+Jeca del redondio a 7. Porque el solvar terlo permit ha si.
+
+01:45:58.000 --> 01:46:08.000
+Y apericido de simales, y el para contabre dodecimales que se bien dondar a 5 megar a 5 pones fal siguiente.
+
+01:46:08.000 --> 01:46:19.000
+No es suficiente. Entonces su momente importante ense caso pasar to estin es mucho basilo, cuando ya la tostel la nueve.
+
+01:46:19.000 --> 01:46:23.000
+Es mucho mas sensido armar. Do it daily, yeah?
+
+01:46:23.000 --> 01:46:29.000
+Hastaller una preguntas a participita? Tigo brecca.
+
+01:46:29.000 --> 01:46:31.000
+Entonces. Sitrano.
+
+01:46:31.000 --> 01:46:38.000
+ales.
+
+01:46:38.000 --> 01:46:49.000
+Lo que se recomienda en el capo en el caso de Bronce para que no tenga explores en el… En elumento basar la primera capa, por le todos estima.
+
+01:46:49.000 --> 01:46:57.000
+Entonces, sin embargo. Y asi sociivamente.
+
+01:46:57.000 --> 01:47:06.000
+Yes. cosas que puede ser que tu la capo es abuardar.
+
+01:47:06.000 --> 01:47:14.000
+Pasemo toeste. El mas recomendabre. Y resin hacientes capitas en la capaca.
+
+01:47:14.000 --> 01:47:24.000
+con el formato correpo. porque me apasado, ya.
+
+01:47:24.000 --> 01:47:29.000
+en el caso lo que es BigQuery por ejemo.
+
+01:47:29.000 --> 01:47:38.000
+Yeah, hay ciertos datos que lo corta. Locorta. Entonces parhita eso, pas a lotas en la sigente capa.
+
+01:47:38.000 --> 01:47:39.000
+Uh-huh. Yes. See.
+
+01:47:39.000 --> 01:47:43.000
+Ah, perfect.
+
+01:47:43.000 --> 01:47:49.000
+Tambien, tambien. Y logo, porque, porque inclusive los casos, ya.
+
+01:47:49.000 --> 01:47:55.000
+ingenir datos. E justo hacer transformaciones con fechas.
+
+01:47:55.000 --> 01:48:00.000
+Porque eso saben que formato de fechas. Dia mes ano.
+
+01:48:00.000 --> 01:48:06.000
+Hay difentes tipo informatos, el formato de estos unidos, el formato a que permu, y esiceamente.
+
+01:48:06.000 --> 01:48:15.000
+algo como bien cabotico. convertimos.
+
+01:48:15.000 --> 01:48:23.000
+Yes. Super. Vamos para que. Entonces. Asayer una pregunta, tamos via, si?
+
+01:48:23.000 --> 01:48:29.000
+Entonces. La replicacion.
+
+01:48:29.000 --> 01:48:32.000
+Cuando tu dice bueno via replicar una sola vez.
+
+01:48:32.000 --> 01:48:37.000
+Boya carrar. El historico una solo vez.
+
+01:48:37.000 --> 01:48:42.000
+que lo llaman los delta. Yeah. Aki?
+
+01:48:42.000 --> 01:48:48.000
+Okay, say, one-to-one replication. Tu en focate en que cosa.
+
+01:48:48.000 --> 01:48:56.000
+La historica. Tu caso de uso vamos a pander que tuca soosuticas buenos nita yo es Afim, porque usted vanes cojer con cual quierenta bajarlo, ya.
+
+01:48:56.000 --> 01:49:09.000
+final tajo retail. para que tambien en caso aquier hacer es aparte.
+
+01:49:09.000 --> 01:49:18.000
+y trabos auto caso de buso. Y a priorita tengo de banka, tengo de transporte y de retail.
+
+01:49:18.000 --> 01:49:24.000
+Yeah. Malcope. Entosis. Vosa ponder que sembue nita yo tengo mi retail.
+
+01:49:24.000 --> 01:49:33.000
+este no sepues. El tema la clenzum ministo, etc.
+
+01:49:33.000 --> 01:49:38.000
+Y tenemos inquanos historia. Entonces. Tu architectura.
+
+01:49:38.000 --> 01:49:47.000
+Yeah, como se vida architectura. Con ustedes van a sustentar y van empezara decir… como banda mira los datos.
+
+01:49:47.000 --> 01:49:51.000
+As el tema trout. Tienen que tener dos tipo architectura.
+
+01:49:51.000 --> 01:49:57.000
+Largitura. La decar inicial. Una sola replicacion.
+
+01:49:57.000 --> 01:50:04.000
+Y la carga que avacer los delta. Yeah, muchas veces esa carga de ingesta inicial.
+
+01:50:04.000 --> 01:50:14.000
+carga esta mill. Maine says.
+
+01:50:14.000 --> 01:50:18.000
+Mi del cual seria, el dia de hoy, si hurt.
+
+01:50:18.000 --> 01:50:23.000
+Yes si. Esse delta, muchas veces con la architectura historica.
+
+01:50:23.000 --> 01:50:28.000
+Cambia, o d fir en algunas cosas, y es normal, no se broken en eso.
+
+01:50:28.000 --> 01:50:34.000
+Introsive con de por ejempro, yo converso comistrientes les digo ya mira.
+
+01:50:34.000 --> 01:50:40.000
+La biomeira para forma como pasamos dos datos. En un punto.
+
+01:50:40.000 --> 01:50:47.000
+ustedes y mucho mas situa. The on-premise a route.
+
+01:50:47.000 --> 01:50:52.000
+Tienes quear esa rit. Esaregura.
+
+01:50:52.000 --> 01:50:59.000
+estamos abrando puede ser una vein. Podia ser, un parner interconnect.
+
+01:50:59.000 --> 01:51:04.000
+O podia ser un interconnect. cualba depender cada una.
+
+01:51:04.000 --> 01:51:15.000
+Interconet sola. porque no tenemos… que es aga interconnect.
+
+01:51:15.000 --> 01:51:21.000
+pues en Peru. pero pa… si pod dello con de dar aun tercero.
+
+01:51:21.000 --> 01:51:29.000
+servicio de partner interconnect. Para puer hacer la conececion.
+
+01:51:29.000 --> 01:51:35.000
+Es una forma. Lauda forma ya cuando eu tengo, por ejemplo 5 de informacion.
+
+01:51:35.000 --> 01:51:44.000
+Sera para que los 5… No?
+
+01:51:44.000 --> 01:51:49.000
+Entonces tu pasas al siguiente estado. Cada novel llama distinto.
+
+01:51:49.000 --> 01:52:02.000
+dispositivo mas una tipo un ese. Yeah, que te pero se vegano por asi, mas ovenos, no tambenos un telefono.
+
+01:52:02.000 --> 01:52:11.000
+ese positivo. Para que el suva se conatus datos.
+
+01:52:11.000 --> 01:52:21.000
+velocidad sumamente rapida. Y que menos de una semana a 2 semanas te pueda subir esa informacion alta.
+
+01:52:21.000 --> 01:52:28.000
+Yeah? Es auta forma. Vare pender mucho cuanto datos tienes, positenos un llega, un quiento llegas.
+
+01:52:28.000 --> 01:52:36.000
+por ejemo. O cuantos terabais, o cuantos peta vais.
+
+01:52:36.000 --> 01:52:41.000
+Vamos a la siguiente capa. Tina lagapa.
+
+01:52:41.000 --> 01:52:46.000
+Tin la capa silver. console.
+
+01:52:46.000 --> 01:52:52.000
+estima. Bas a la sigiente capita. La capaciler.
+
+01:52:52.000 --> 01:53:00.000
+En esta capa como tal… yeah. Tuas hacer vas a ser algunas informaciones. En la bronse.
+
+01:53:00.000 --> 01:53:07.000
+formaciones. Para que formaciones como que.
+
+01:53:07.000 --> 01:53:10.000
+For ejempo, no se. Cuando nosotros haciamos.
+
+01:53:10.000 --> 01:53:20.000
+cuele, un oraco. Ya?
+
+01:53:20.000 --> 01:53:26.000
+Tesanaba y tecan. A 50 formas de poder pasar.
+
+01:53:26.000 --> 01:53:36.000
+Prime la forma normal. Segunda forma normal, tercela forma normal. Y teque en esta parte que estaca. Y qui si es una tercer a forma.
+
+01:53:36.000 --> 01:53:43.000
+Eliminar edundancia, mantenia la intereidad, optimizacion y un tema de lo que optimizacion tambien destroyas.
+
+01:53:43.000 --> 01:53:53.000
+Sin embargo, esta parte que quizas algunos por ah y lo llegaron aver en alguna sucarea porque esto aca est el typico del lo que tensellan, con estidasi generia, ya.
+
+01:53:53.000 --> 01:54:03.000
+porque, porque estamos abrando dato, nuestorturado. Ba verdatos que van a tener esta forma.
+
+01:54:03.000 --> 01:54:16.000
+Otos que seran punto jotape, y asi socibamente. Esto selimina.
+
+01:54:16.000 --> 01:54:23.000
+Yeah, pero caso lo que son base relacionales. Oto pontito.
+
+01:54:23.000 --> 01:54:28.000
+La parte que, la parte que tuvas armar lo que es las transformacion.
+
+01:54:28.000 --> 01:54:33.000
+Tien su datas. que miras en una vaseatos.
+
+01:54:33.000 --> 01:54:41.000
+tabraces. Siguaca.
+
+01:54:41.000 --> 01:54:45.000
+Aqui cuales el punto que tamarin cuenta para esta parte.
+
+01:54:45.000 --> 01:54:50.000
+Aki, primero? Quendificar?
+
+01:54:50.000 --> 01:54:55.000
+Como lo voya ma pier. Recura que tu en esta en el primero.
+
+01:54:55.000 --> 01:55:05.000
+estabras. el activites.
+
+01:55:05.000 --> 01:55:10.000
+Pero la idea es que una siguiente capa, si tuvas armar la dimension 3.
+
+01:55:10.000 --> 01:55:23.000
+Tienes que definir cual estus entidades. Tegomiente. Medienta producto, mientidad eventas, mientidades direcciones y asi suicamente.
+
+01:55:23.000 --> 01:55:32.000
+Que mas, tienes que identificar tambien ya ve. Que si bien escerto en bi juere, no es que se objigatorio, pero para otros sistemas.
+
+01:55:32.000 --> 01:55:38.000
+Si es, porque, porque comentificas que realmenteentes unico. Por ejemplo.
+
+01:55:38.000 --> 01:55:45.000
+un correlativo. Tiamas.
+
+01:55:45.000 --> 01:55:51.000
+En entamas dibutos. you tengo que definir que attributo es el que yo vi utilizer.
+
+01:55:51.000 --> 01:55:56.000
+Rego definir tambien. Los tipuedato.
+
+01:55:56.000 --> 01:56:04.000
+todo scene aquino. Aqui ya me pro cubo por el tipuedato.
+
+01:56:04.000 --> 01:56:10.000
+tengo que procuparme. Queti puedatos el mas performante.
+
+01:56:10.000 --> 01:56:20.000
+Y que realmente respondo lo que estamos diciendo. Yeah, que mas… Como se van a reliconar, y luego tambien un limite que podia que podia pasar.
+
+01:56:20.000 --> 01:56:30.000
+en la capa en la capa bronze. Y que la capa silvera necesario.
+
+01:56:30.000 --> 01:56:36.000
+ya pasado veces. Hayce cuando no hico la miracion de la las ventas.
+
+01:56:36.000 --> 01:56:43.000
+Y dice hoy solamente. Ten contabra un tabalte la tabra detalaria.
+
+01:56:43.000 --> 01:56:51.000
+Uno la consider en esta milacion. porso sumamente importante.
+
+01:56:51.000 --> 01:56:56.000
+Lo que le decia por aca. Esteca, como buena productica. Yeah.
+
+01:56:56.000 --> 01:57:02.000
+Aquiento siben este yar, yo, lo que solo ponder tambien tablas dependentes.
+
+01:57:02.000 --> 01:57:11.000
+que tengo que a ver carga. Eliente los productos las direcione de los trientes, etc.
+
+01:57:11.000 --> 01:57:16.000
+Yeah, mama poraki. Entonces. A esta.
+
+01:57:16.000 --> 01:57:22.000
+Recuerda. Lo lay house. Segun a una exiplina.
+
+01:57:22.000 --> 01:57:36.000
+la ciplina es poder central los datos. Al mas, que cosa, generar el concerto de data estuturada que tu pueda seatar con la misma.
+
+01:57:36.000 --> 01:57:44.000
+suturado. una combinacion su momente potente.
+
+01:57:44.000 --> 01:57:48.000
+Entonces, aga las presento. Etesenure.
+
+01:57:48.000 --> 01:57:55.000
+that about? Yeah. El es el quemento senor debit.
+
+01:57:55.000 --> 01:57:59.000
+En los anos 20, y mento la metologia de Data Bolt.
+
+01:57:59.000 --> 01:58:04.000
+Pero que cosaso, para que mi va servir lo que estamos dicciendo en la tables.
+
+01:58:04.000 --> 01:58:09.000
+To tienes, tus datos. Yeah, mile de datos que bundo va generando.
+
+01:58:09.000 --> 01:58:18.000
+de ba cedatos. De lo que fuece comient input.
+
+01:58:18.000 --> 01:58:27.000
+Quecaturados quizas por el ajur. Por la Amazon por traba estoras, por Oracle, por Kafka por la parte steaming.
+
+01:58:27.000 --> 01:58:33.000
+Tosa que la parteci mi. la parte Microsoft.
+
+01:58:33.000 --> 01:58:38.000
+That's senor el elevenjas que de la parte de Aurora.
+
+01:58:38.000 --> 01:58:42.000
+Entonces culturo datos. En simbres palabras.
+
+01:58:42.000 --> 01:58:50.000
+Yo que genero que lo que tengo que yo hacer en la table. Que significa yo tego que hacer un dato que se a robusto.
+
+01:58:50.000 --> 01:58:57.000
+que me permita mi auditarlo. que escalabre, que se a frezibre y ademas resiliente.
+
+01:58:57.000 --> 01:59:05.000
+Yeah, para que. para podermar, lo que se le conoce como… data warehouse moderno.
+
+01:59:05.000 --> 01:59:15.000
+A todo esto que estamos diciendo. Sa cuanda.
+
+01:59:15.000 --> 01:59:27.000
+No. Profesionales que sepan… oh.
+
+01:59:27.000 --> 01:59:31.000
+Que se pang utilizar formatos archivos del de lake.
+
+01:59:31.000 --> 01:59:40.000
+Entonces estuvas a donuta forma. a saber.
+
+01:59:40.000 --> 01:59:45.000
+Como dividar esos archivos, ya? A auto punto.
+
+01:59:45.000 --> 01:59:51.000
+A parto varias cosas, no? Fue habilito a captro reflexivira los datos.
+
+01:59:51.000 --> 01:59:59.000
+o puede modificarse. ecosistema que estamos sino de los valor de datos.
+
+01:59:59.000 --> 02:00:06.000
+Y asi sociamente y otras cosas. frujo.
+
+02:00:06.000 --> 02:00:13.000
+quizas demander y nata. Not that abode.
+
+02:00:13.000 --> 02:00:25.000
+son nombres que es el esta. Depor si de forma en el mercado, yeah. Proceso de data le, ya.
+
+02:00:25.000 --> 02:00:31.000
+El mismo solamente que como esta palabra. Vamos por aqui out.
+
+02:00:31.000 --> 02:00:39.000
+Entonces, antesir haste alguna pregunta estamol bien.
+
+02:00:39.000 --> 02:00:44.000
+E sato. Y buen punto lo que mecionas.
+
+02:00:44.000 --> 02:00:51.000
+Si bien a cierto. El curso comotal, esta enfocado utilizar la consola group chat.
+
+02:00:51.000 --> 02:01:03.000
+Yeah, sin embargo sido es empos miracistemas evidata va ser estoy tod, y el final todo foucamos solamente al tema de lo que es habar de los productos de guitra.
+
+02:01:03.000 --> 02:01:16.000
+queremos ustedan compretos, el decir que independentamentemente. El poder, el poder llevar a cabo su big data.
+
+02:01:16.000 --> 02:01:22.000
+Yeah? Oso argus modern, ustedes puedan decidir. Como es el proceso. El proceso hacer a.
+
+02:01:22.000 --> 02:01:32.000
+Entonces importante esa participa. Lo como lo plantiamos, como lo plantiamos a esto, en gizi pi sera talcosa.
+
+02:01:32.000 --> 02:01:40.000
+Esto cosa que esta en gi sera esto. Ya esos agnosticos le llama patron de diceeno.
+
+02:01:40.000 --> 02:01:47.000
+Y buen ponto lo que commentastas. Aha. hacer alguna preguntos bien a separtita?
+
+02:01:47.000 --> 02:01:54.000
+Sitavelante.
+
+02:01:54.000 --> 02:01:55.000
+Maybe they… characteristic o que propidad.
+
+02:01:55.000 --> 02:02:01.000
+Plus.
+
+02:02:01.000 --> 02:02:05.000
+Descuche su permal per dona. Sierra, Sierra C.
+
+02:02:05.000 --> 02:02:13.000
+Yeah, I just… tanta diagnostic.
+
+02:02:13.000 --> 02:02:14.000
+Ah yeah, that's. que estoy mecredando.
+
+02:02:14.000 --> 02:02:20.000
+He's looking for…
+
+02:02:20.000 --> 02:02:25.000
+deltae. It's very hardy.
+
+02:02:25.000 --> 02:02:26.000
+Ah, yeah, yeah, dandy pero nami. Yeah, bien les cuento. Buemos a lantaron un poquito.
+
+02:02:26.000 --> 02:02:30.000
+Concel valoren si…
+
+02:02:30.000 --> 02:02:36.000
+Con ustedes tiene proyectos, digo, tienen archivo datos, ponte un severe.
+
+02:02:36.000 --> 02:02:41.000
+Un parquet, un abro. O uno reci, yeah.
+
+02:02:41.000 --> 02:02:46.000
+E… cuala es el problem, el problemas que si yo cambio el dat.
+
+02:02:46.000 --> 02:02:54.000
+Y quiero actualizarlo, muchas el performance. es un pocolento, no me toma el ultimo archivo, tiengo que tener boralos los.
+
+02:02:54.000 --> 02:03:01.000
+Y muchas cosa pued estilo. Y a parte que hay por mas que se han archivos.
+
+02:03:01.000 --> 02:03:09.000
+Se puer tipo, yeah. como que no soportan, por ejempio horse.
+
+02:03:09.000 --> 02:03:17.000
+La Maria le abro, la Maria le parquet, la Maria le… por ejemplo, pero no lego race.
+
+02:03:17.000 --> 02:03:25.000
+Entonces lo que hace tipo archivos el le talite, e que si utilizo por ejemro da Britz.
+
+02:03:25.000 --> 02:03:39.000
+premis en dona. A parte, para que me sir esos tipoedatos.
+
+02:03:39.000 --> 02:03:44.000
+por ejemplo, quiero ser yo que tenga no solamente que registo.
+
+02:03:44.000 --> 02:03:49.000
+Si no que tenga tambien el concepto acid. que tenga com interidad.
+
+02:03:49.000 --> 02:03:57.000
+Al tema consistena. Per se. Eso tipueda lo support.
+
+02:03:57.000 --> 02:04:02.000
+Entonces, como que se vuel mas amnostico, y haces que tu architectura, ya.
+
+02:04:02.000 --> 02:04:13.000
+No solamente se casse con una teologues. Ti no que se independiente con la… con la teologia que tu como… como consultor una propo.
+
+02:04:13.000 --> 02:04:20.000
+Yes, hay muchos beneficios mas, que vamos irabrano, pero en general, son esos.
+
+02:04:20.000 --> 02:04:27.000
+Entonces.
+
+02:04:27.000 --> 02:04:35.000
+Yeah, stop. Entonces, vamos por aqui.
+
+02:04:35.000 --> 02:04:40.000
+Quiz el modela de datos? Y que de veriamos importantos. Importareto esto.
+
+02:04:40.000 --> 02:04:49.000
+Primero de porcid el modelado a todos lo que tiene que importar mas como modelado de datos que cosa es ela metadata de sus datos.
+
+02:04:49.000 --> 02:04:58.000
+Pue amida una civo. Pero sino medan como la distriction de la colugumna, no medan como quizas el nombie de la columna.
+
+02:04:58.000 --> 02:05:04.000
+significa… El haen negocio lo que fue.
+
+02:05:04.000 --> 02:05:10.000
+Yafi. Yetos importante saber. La parte negocio. Yeah?
+
+02:05:10.000 --> 02:05:16.000
+El tema de que cosa, el tema de. Como san internacionadas.
+
+02:05:16.000 --> 02:05:23.000
+Me a pasado veces, que le digo por ejeme los parnes 38os miramos a ser la talale.
+
+02:05:23.000 --> 02:05:30.000
+Y me puede pasar como estar enacionos sustras. You know, no tienen como el esquema de comos relacion.
+
+02:05:30.000 --> 02:05:37.000
+No, pero puede pasar que la que la tablea uno con la tabra dos.
+
+02:05:37.000 --> 02:05:48.000
+Ya? Quito punto, tambien.
+
+02:05:48.000 --> 02:05:58.000
+por ejemplo de Google, como. Tu pues ponerlo, e incorporarlo.
+
+02:05:58.000 --> 02:06:02.000
+En el caso que estamos llevando de BigQuery se puede analyzar.
+
+02:06:02.000 --> 02:06:08.000
+sin problema. Yeah? Entonces. Vamos por aqui.
+
+02:06:08.000 --> 02:06:14.000
+que vamos a ser.
+
+02:06:14.000 --> 02:06:19.000
+So, Wonder? Save me.
+
+02:06:19.000 --> 02:06:24.000
+Semibricio.
+
+02:06:24.000 --> 02:06:29.000
+No puedo ala picito nasta la pisito. Yes, esta la visito.
+
+02:06:29.000 --> 02:06:35.000
+Entonces ser punto. Tenologia sigo garnanza de archivos open.
+
+02:06:35.000 --> 02:06:48.000
+companero, yeah? Entiendo, por lo que me dijeron, y por lo que pregunte ustestin encuenta data breach. Certo.
+
+02:06:48.000 --> 02:06:50.000
+See? Tienen cuenta tablets?
+
+02:06:50.000 --> 02:06:56.000
+The routing of this, the route was the closest.
+
+02:06:56.000 --> 02:07:01.000
+llegar hon acedar por sa caso este que esta.
+
+02:07:01.000 --> 02:07:06.000
+community?
+
+02:07:06.000 --> 02:07:09.000
+Second commute.
+
+02:07:09.000 --> 02:07:14.000
+Silo siguent teniendo. No, no este provocoupe. No sien teniendo. Asi que vamos via.
+
+02:07:14.000 --> 02:07:21.000
+Yeah, de perdistas aqui te peristema. Entonces, Africa.
+
+02:07:21.000 --> 02:07:28.000
+vamos porca.
+
+02:07:28.000 --> 02:07:33.000
+Asa parte que estamos diciendo. La parte lo que los los tabras.
+
+02:07:33.000 --> 02:07:39.000
+O los formatos, lo llaman. Open table format, o los OTFE.
+
+02:07:39.000 --> 02:07:44.000
+Yeah, eso te comoto. Comesiamos, vamosir.
+
+02:07:44.000 --> 02:07:58.000
+Legiendo por parte siemos y explicando cada hay. datamar, un data warehouse, un data lake.
+
+02:07:58.000 --> 02:08:04.000
+Al concerto del ejos, porque estoy haciendo la parte de la metadata sa cuerda.
+
+02:08:04.000 --> 02:08:14.000
+Pero como tenemos, la governanza y lo que bien de la respuesta.
+
+02:08:14.000 --> 02:08:18.000
+La responses de los formatos habiertos. Open table formats.
+
+02:08:18.000 --> 02:08:29.000
+el mito preguntar. Quipas a cuando yo quiero a mirajas.
+
+02:08:29.000 --> 02:08:34.000
+Yeah, altipico at a warehouse. Satoli saladata.
+
+02:08:34.000 --> 02:08:43.000
+Que pasar. Sigo tolizo archivo. Al mundo comencional yo tenguesto por ejemplo, ya, y a actualizo larcivo.
+
+02:08:43.000 --> 02:08:55.000
+la ultimatozacion. un dat lake.
+
+02:08:55.000 --> 02:09:05.000
+Sin embargo. Cuando yung empieso mar. El Datalie House y empiez utilizar formatos que son open como el que estan vamos a verhurita.
+
+02:09:05.000 --> 02:09:13.000
+por la misma capacidad que tiene. To tienes este formato que se llama acid.
+
+02:09:13.000 --> 02:09:21.000
+Significa, que yo podo veritalizacion del dat. artillicela.
+
+02:09:21.000 --> 02:09:29.000
+Sin embargo sigo quiero saber. No de fe. Hoya de TikTok, no?
+
+02:09:29.000 --> 02:09:42.000
+Esto simile soltera. Esto civil divorciad. Tir qui lober, el… Como vase frujo, como vase frujo, no, y en que momento cambio.
+
+02:09:42.000 --> 02:09:54.000
+De casado a divorciado obese, no? Entonces… It's a historia de los datos la unica forma de poder lo yarlo es justamente con los datos.
+
+02:09:54.000 --> 02:10:09.000
+Yeah? Luego. Vamos por aca. A quit vamos es donia preguntita.
+
+02:10:09.000 --> 02:10:12.000
+Because the nuclear specter. In that the latency does not linear acid.
+
+02:10:12.000 --> 02:10:21.000
+Cheap data.
+
+02:10:21.000 --> 02:10:26.000
+Salvo, salvo, salvo, que en el acid que estamos diciendo.
+
+02:10:26.000 --> 02:10:32.000
+Yeah, tu tenas el tipodato que podia ser este.
+
+02:10:32.000 --> 02:10:38.000
+O podia ser este? tu dat.
+
+02:10:38.000 --> 02:10:45.000
+sinigumere. pero la mayur de los Data Lake, la mayurio de Ata Lake.
+
+02:10:45.000 --> 02:10:50.000
+abrorese. O teguiste.
+
+02:10:50.000 --> 02:10:57.000
+con el Delta lake. instituciones.
+
+02:10:57.000 --> 02:11:04.000
+Yeah, empresas que tienden…
+
+02:11:04.000 --> 02:11:12.000
+Estesaben quesos dos como tal. de los cloutes.
+
+02:11:12.000 --> 02:11:24.000
+Se valve. Entonces servicios cuando saliron todo mercado, yo… Propulsaba idaman la idea de normal el typico datala.
+
+02:11:24.000 --> 02:11:36.000
+Sino dat conformatos de tipo de ato haierto. Utiliza muchas este dipoato delta Lake comotal.
+
+02:11:36.000 --> 02:11:45.000
+Uh-huh, yes.
+
+02:11:45.000 --> 02:11:46.000
+Sure.
+
+02:11:46.000 --> 02:11:51.000
+See? Un lejos, yeah? talai per se.
+
+02:11:51.000 --> 02:11:54.000
+Mm-hmm.
+
+02:11:54.000 --> 02:12:08.000
+de la capacidad de gobarnaza los metados. Contios… tuy estas organizando o administando… tu capa el metados.
+
+02:12:08.000 --> 02:12:13.000
+Estademuta forma sindhoi a tuljos. Aja!
+
+02:12:13.000 --> 02:12:19.000
+nativos ale. Mas no end that alle.
+
+02:12:19.000 --> 02:12:24.000
+E sardamente, et sarta. Uh-huh.
+
+02:12:24.000 --> 02:12:31.000
+Entonces, ayo. Siguendo se senario, ya sabemos que cosa.
+
+02:12:31.000 --> 02:12:41.000
+del tall lake. tablets.
+
+02:12:41.000 --> 02:12:48.000
+Si uno. Se recuerda?
+
+02:12:48.000 --> 02:12:56.000
+Not yet. Ya tanto datables como en… GCP.
+
+02:12:56.000 --> 02:13:02.000
+Entonces. Mien porca. como que estamos diciendo.
+
+02:13:02.000 --> 02:13:09.000
+Ofrece un acit. como se cuel.
+
+02:13:09.000 --> 02:13:21.000
+Si bien esciorto es tipo delta Lake. Yeah, pero tu los agorad tipo un parquet, por eso los commandos que van a ver.
+
+02:13:21.000 --> 02:13:27.000
+Del Delta Lei dice tipodato. Parque. Formato del Talik.
+
+02:13:27.000 --> 02:13:32.000
+ira ver. Depor sien esta parte, como tambien dice porca.
+
+02:13:32.000 --> 02:13:37.000
+permite que cosa? El habzer.
+
+02:13:37.000 --> 02:13:43.000
+Actualizar o insertados. que significa esto.
+
+02:13:43.000 --> 02:13:50.000
+por ejemplo con bisquer.
+
+02:13:50.000 --> 02:13:57.000
+No. Es prefereado y luego recien.
+
+02:13:57.000 --> 02:14:01.000
+In, in searches. Estado que se buscando.
+
+02:14:01.000 --> 02:14:07.000
+con un tipo parquet convenion. Ontipo habro convencional.
+
+02:14:07.000 --> 02:14:16.000
+Pero contuestauntema del delta Lake. Yes, and this query ya sea database, ya sea doncrier y de.
+
+02:14:16.000 --> 02:14:21.000
+Yeah? De aberida tieno solamente hacer le insercion de datos.
+
+02:14:21.000 --> 02:14:26.000
+Sino naturalizacion dona manera automatica. Y ademas de guarda historia.
+
+02:14:26.000 --> 02:14:31.000
+Yeah, vamos para ca. A lotipo. Apache Iceberg.
+
+02:14:31.000 --> 02:14:37.000
+todo el mundo. quizar la mayoria.
+
+02:14:37.000 --> 02:14:44.000
+nefi? Sierto y esta.
+
+02:14:44.000 --> 02:14:49.000
+Netfis, como tal desarrollste formatto. El formato iceberg.
+
+02:14:49.000 --> 02:14:55.000
+Este proyecto, este proyecto, este proyectos, alimentosario Netfiz, y logo automotomo.
+
+02:14:55.000 --> 02:15:03.000
+Esta fundacion. Cole es la diferencia con lotto. Recorem ustedes, ustedes net 5 no solamente unsuario.
+
+02:15:03.000 --> 02:15:09.000
+mision. En amigones usarios.
+
+02:15:09.000 --> 02:15:14.000
+que lo que vaca eligible. Mo foucar en confiabilidad.
+
+02:15:14.000 --> 02:15:25.000
+alta congruencia. Eso que habermiteir, y miraca, el viajen el tiempo.
+
+02:15:25.000 --> 02:15:32.000
+En otas palabras. Poder consultar. En el momento specifico.
+
+02:15:32.000 --> 02:15:38.000
+El dado specifico. Si bien a certoy yo con delo, puedo ser, pero mas lento.
+
+02:15:38.000 --> 02:15:48.000
+vamos a poner que estengan no sepues. que hace diversion Peru. Yeah?
+
+02:15:48.000 --> 02:16:04.000
+los noventa. Entonces a busca como fuel el cambio quizado del personaje, nosa ponder lo narro di Capio.
+
+02:16:04.000 --> 02:16:19.000
+cualquier accuser les guste, no? Como fue volocidando conforme no se la forma como en las escenas.
+
+02:16:19.000 --> 02:16:27.000
+is tallie de la linea de tiempo. de ados que son sumamente de muchos tiempos.
+
+02:16:27.000 --> 02:16:35.000
+Es mejor lo en iceberg. Yep, para que sea, realmente laumento obtener el dado se lo mas rapido.
+
+02:16:35.000 --> 02:16:39.000
+Introsive, hay otos arguitos que te dice no mi lasabes que.
+
+02:16:39.000 --> 02:16:45.000
+Si tu dicas que vaseder. Ponte a document alloy.
+
+02:16:45.000 --> 02:16:50.000
+A documentos, no. Tu tendias que tear una va a cedatos.
+
+02:16:50.000 --> 02:17:00.000
+De documentos, como cual, MongoDB? Por ejemro, ya, o no se… O dinamo divide de Amazon.
+
+02:17:00.000 --> 02:17:05.000
+Va depender mucho como quieres como estas masado cudados.
+
+02:17:05.000 --> 02:17:10.000
+Yora con todo el tema de lo que es inteligencia generativa.
+
+02:17:10.000 --> 02:17:15.000
+Ah, lados. Yeah?
+
+02:17:15.000 --> 02:17:22.000
+Entonces, no necesariamente, no necesariamente todos tipuedatos para que tu puedas ver el punto del historia.
+
+02:17:22.000 --> 02:17:32.000
+para la parte de integeras generativa. por ejemo.
+
+02:17:32.000 --> 02:17:37.000
+Yeah? Obace atos tipo raja. Logo, para que son truciales.
+
+02:17:37.000 --> 02:17:43.000
+Para poder armar un dat lake? Que de permita poder tener.
+
+02:17:43.000 --> 02:17:49.000
+El tema de la te dos atrifices la parte la relacion.
+
+02:17:49.000 --> 02:17:55.000
+Il afraidzibilidad y lo mas importante el vajokos. Porque si o consulto a cadrato.
+
+02:17:55.000 --> 02:18:02.000
+Cosas que yo se que el pasado sucedido para puer hacer en analysis, y no lobio ponder un parquet.
+
+02:18:02.000 --> 02:18:10.000
+buscando, entonces cosas. Yep. Haste vamos bien.
+
+02:18:10.000 --> 02:18:14.000
+Hasta el una pregunta. Yeah.
+
+02:18:14.000 --> 02:18:18.000
+And doncas. Aquila odefe.
+
+02:18:18.000 --> 02:18:23.000
+Entonces, tienes iceber. opinion is hoodie.
+
+02:18:23.000 --> 02:18:29.000
+Delta Lake. Yes, sir. Ahre presento otosenor mas.
+
+02:18:29.000 --> 02:18:37.000
+lo mismo. como tal.
+
+02:18:37.000 --> 02:18:45.000
+Tu foquito desto. Bueno, va ser transaciones a cit.
+
+02:18:45.000 --> 02:18:49.000
+Ademas via que se en el tiempo, el tema de auditoria.
+
+02:18:49.000 --> 02:18:55.000
+Yeah, inga pache hudi. cual los uterizar a pace hudi.
+
+02:18:55.000 --> 02:19:01.000
+Es cuando tuas hacer serse. El chen dataco.
+
+02:19:01.000 --> 02:19:05.000
+El decir cosas en real time. Il este una noticia.
+
+02:19:05.000 --> 02:19:14.000
+Si bien a cierto, vamos dizarataviits. hacer change dataco.
+
+02:19:14.000 --> 02:19:19.000
+Yeah? Entonces. de lo que son las insirciones.
+
+02:19:19.000 --> 02:19:26.000
+Boyaka el de lake. Entonces. En el tema de la Ta Lake comotal.
+
+02:19:26.000 --> 02:19:31.000
+Yeah, Malapatica. D.
+
+02:19:31.000 --> 02:19:42.000
+mas video raffia. profundizar el tema delay.
+
+02:19:42.000 --> 02:19:53.000
+El tema tambien lo que es la taberjos. una preguntate de pasar a la parte practica.
+
+02:19:53.000 --> 02:20:03.000
+Hasta estamos bien. Sitaro, cuentamilo.
+
+02:20:03.000 --> 02:20:04.000
+Yeah, paral. Bien proferto.
+
+02:20:04.000 --> 02:20:08.000
+I told the token waste. The work of the internet.
+
+02:20:08.000 --> 02:20:09.000
+Although.
+
+02:20:09.000 --> 02:20:15.000
+Bien perfect. Perfecta perfecto. Si yo de por siquiero ser para moselos.
+
+02:20:15.000 --> 02:20:19.000
+Modelos que voy a ser… que voy a consumermente una.
+
+02:20:19.000 --> 02:20:23.000
+Yeah, tosto que estaca. para teme modelos.
+
+02:20:23.000 --> 02:20:31.000
+Par el consumo de apis, que significa esto. picos.
+
+02:20:31.000 --> 02:20:38.000
+Media poraca. Bye.
+
+02:20:38.000 --> 02:20:39.000
+Yes.
+
+02:20:39.000 --> 02:20:44.000
+Mien por a car. Cuzas aayo.
+
+02:20:44.000 --> 02:20:52.000
+Cuzas empente que carrier.
+
+02:20:52.000 --> 02:21:01.000
+Costas en unappi. La pi mayermente hace en un traboran, ya au un traba en funcion. Una pibelo comunavore final va pasar algo.
+
+02:21:01.000 --> 02:21:14.000
+Esos datos comotal. La mayoria la mayoria porque porque hay no estos, casi el noventa portiento de las nuevas a piso del recipe que tu haces.
+
+02:21:14.000 --> 02:21:24.000
+Lo ponden informato jaison. Para que responda ponce forma tollos.
+
+02:21:24.000 --> 02:21:32.000
+Dio la mayoria, porque hay otas. Y cuando su momento, cuando hace como cuato 5 anos aproximamente.
+
+02:21:32.000 --> 02:21:41.000
+podia ser consultarias, no? consultorias y el estado.
+
+02:21:41.000 --> 02:21:52.000
+El estado nias os apis, sus apirez, sus socket, vamos a llaman lo asi.
+
+02:21:52.000 --> 02:22:05.000
+No es lo mas performante realmente, ya ayo tambien que salio nevo formato de los… de los Jason para… pero lee.
+
+02:22:05.000 --> 02:22:13.000
+para los procesos de los LLM. Esta comprobado en el caso por lo menos de Google, ya.
+
+02:22:13.000 --> 02:22:20.000
+utilizal nue formato de… de los ye eso.
+
+02:22:20.000 --> 02:22:29.000
+como lo convenional. Porso que la mayoria de la mayoria de los… el leme.
+
+02:22:29.000 --> 02:22:34.000
+Ola mayor los modelos apuestan por utilizar sus apis.
+
+02:22:34.000 --> 02:22:41.000
+Para que el consumo sea con… Con y eso. Luego, eso para la parte de.
+
+02:22:41.000 --> 02:22:47.000
+Este… el consumo. Pero que pasa para el concepto lo que es el model.
+
+02:22:47.000 --> 02:22:54.000
+Como tilizo model yanita. Una division, mire en este dujito.
+
+02:22:54.000 --> 02:23:02.000
+Miri en esta. Imagenes, esta la que mas gusto. Mire en esto.
+
+02:23:02.000 --> 02:23:09.000
+mire. ustedes vanos a cojer un dato.
+
+02:23:09.000 --> 02:23:15.000
+y a lo dejo, y esta en la capacil, y esta en la capa.
+
+02:23:15.000 --> 02:23:20.000
+estaba serotizado. Entonces. Y en el a pregunta.
+
+02:23:20.000 --> 02:23:29.000
+que utilizo. Y aca de la respuesta. Dependiendo como vas entenar tu modelos y tu lo que esta buscandos que se a rapido.
+
+02:23:29.000 --> 02:23:38.000
+un parquet. No ka nonca.
+
+02:23:38.000 --> 02:23:45.000
+um te quiste. porque lo vuel el archivo mas pesado.
+
+02:23:45.000 --> 02:23:52.000
+Es recomendare con do tuvas es modelos con este van empezars modelos un random 4 es un equ.
+
+02:23:52.000 --> 02:23:58.000
+Que sea tipo parquet. Entro sibe con dostes a baja.
+
+02:23:58.000 --> 02:24:04.000
+la parte de los… de esta cosa que estaca de los Delta Lake.
+
+02:24:04.000 --> 02:24:14.000
+El ti puedato. Estipuedato sala parquet. que usted van utiliza pal desarrollo models.
+
+02:24:14.000 --> 02:24:21.000
+Tiene que ser parquet. Ante porque no abro. perdeo.
+
+02:24:21.000 --> 02:24:27.000
+I'll get the… sigo estoy buscando. Y quiero hora que sea.
+
+02:24:27.000 --> 02:24:33.000
+estimilo mas rapid utilizare abrore. Cole ser tema de la bra.
+
+02:24:33.000 --> 02:24:39.000
+hablo, porque. En abro, los artivos abro, tu lo dives.
+
+02:24:39.000 --> 02:24:47.000
+abro, y. El de tallie las columnas.
+
+02:24:47.000 --> 02:24:52.000
+Entonces para puerler. Seule mas complicado. Entonces mejor.
+
+02:24:52.000 --> 02:24:58.000
+Es mejor la mayor de vez que yo hecho modelos y cal final a como lectura e preferido.
+
+02:24:58.000 --> 02:25:07.000
+Pasar lo toda parquet como tal. Yep, yes. Aha. Entonces, provo de pender mucho, vapender mucho, lo que estan haciendo.
+
+02:25:07.000 --> 02:25:16.000
+par que. Le sente an ustedes.
+
+02:25:16.000 --> 02:25:20.000
+Porque a pasado en algunas empresas con algunos 10.
+
+02:25:20.000 --> 02:25:28.000
+todavia 9. chicos aven que?
+
+02:25:28.000 --> 02:25:38.000
+modelo. A seno la capa la copa la capa, a la capa bronze.
+
+02:25:38.000 --> 02:25:42.000
+Se con estan a la capa bronze. Y que cosa, tien su tipudatos.
+
+02:25:42.000 --> 02:25:49.000
+Tipo asi no, severe. Yep. Alert al cual.
+
+02:25:49.000 --> 02:25:54.000
+Y pon espeandas, no pede puntorice y la estor archivo.
+
+02:25:54.000 --> 02:26:02.000
+Tiene es un archivos per… para que se pued ser lido.
+
+02:26:02.000 --> 02:26:07.000
+He says, oy, se mato la sesion. Voyada le mas capacidad mas rang.
+
+02:26:07.000 --> 02:26:14.000
+Nosas automizando costas. Ni tiempo. Entonces que es regomiendas, si te direon archivos se vez.
+
+02:26:14.000 --> 02:26:23.000
+Perfecto, tu converte le en parquet. Ya, no se como se lo convertiem parcel commando, y te lo converte, o introsive.
+
+02:26:23.000 --> 02:26:30.000
+me voy a colabaca. Maybe, we are going up.
+
+02:26:30.000 --> 02:26:43.000
+But they could cut again.
+
+02:26:43.000 --> 02:26:52.000
+Quiero nuevo, per enceivo. Tiene llevi naativado.
+
+02:26:52.000 --> 02:26:57.000
+No, take it. Okay, he says no.
+
+02:26:57.000 --> 02:27:03.000
+Convierte. Un seve a formato parce.
+
+02:27:03.000 --> 02:27:12.000
+Ya? Yes. Hasta hi vamos bien hasta y alguna pregunda esta estamos ready, si.
+
+02:27:12.000 --> 02:27:13.000
+Pabo empezar.
+
+02:27:13.000 --> 02:27:19.000
+is… eso… Tipopico, no?
+
+02:27:19.000 --> 02:27:25.000
+Y buen punto, y vamos… vamos a ib para que… vamos para esa partecita.
+
+02:27:25.000 --> 02:27:31.000
+un poquito. Porque estas tienen muchas dudas en esa parte.
+
+02:27:31.000 --> 02:27:38.000
+para puede responded eso. Pereme pica.
+
+02:27:38.000 --> 02:27:43.000
+jempre, yeah? pero se un dito donde fistes.
+
+02:27:43.000 --> 02:27:53.000
+Mm-hmm. I'm alerts… un ejempro de justo… Conso que dite. Yeah?
+
+02:27:53.000 --> 02:27:58.000
+Esperme. Model uno.
+
+02:27:58.000 --> 02:28:03.000
+It's been… Miriaka.
+
+02:28:03.000 --> 02:28:08.000
+Rebecca. momento. Yeah?
+
+02:28:08.000 --> 02:28:16.000
+Entonces un pique el. Yeah, un pique cosa es el empaquetado tome.
+
+02:28:16.000 --> 02:28:23.000
+podia hacer no sepues un punto ache cinco. Um ponto pique el un punto yo lip.
+
+02:28:23.000 --> 02:28:27.000
+Cualquiera que fues. La cosa que tu empaquetas tu modelo.
+
+02:28:27.000 --> 02:28:37.000
+Esbros palabras es como que todo tomo de lo que hacia de hacion que standard, no se minimo maximo, lo que fue toda formulaatica, lo encazulas.
+
+02:28:37.000 --> 02:28:41.000
+En un archivo. En un pique el en un jobli, en uce cinco.
+
+02:28:41.000 --> 02:28:50.000
+Ya, inclusiveles el mas antiguo. Es el mas antigu. Entonces.
+
+02:28:50.000 --> 02:28:55.000
+2 NGCP o en cualquiero de anove, por ejemro si fuera.
+
+02:28:55.000 --> 02:29:02.000
+lambda. Yeah, en el caso de Google tutdes un trauma.
+
+02:29:02.000 --> 02:29:06.000
+Untaran que significacio pongo aca. Queza unaplicacion.
+
+02:29:06.000 --> 02:29:16.000
+A ministada que es comprentamente cerebeles. No me preocupo enfre sutura.
+
+02:29:16.000 --> 02:29:23.000
+Mirien por aca. Maso venos asi. Que seguro.
+
+02:29:23.000 --> 02:29:37.000
+como memeo. para por responde la pregunta.
+
+02:29:37.000 --> 02:29:43.000
+que lo cos tiene. pico.
+
+02:29:43.000 --> 02:29:51.000
+El modelo y el modelo que y el modelo de lo que es descalamiento de la conversacion de las variables.
+
+02:29:51.000 --> 02:29:57.000
+En este caso, lo mas comun. En este caso es que tutilises fras.
+
+02:29:57.000 --> 02:30:00.000
+Este senor que estaca. No es el unico, ya?
+
+02:30:00.000 --> 02:30:06.000
+Ayodo que se llama faz happy. First up, yeah?
+
+02:30:06.000 --> 02:30:18.000
+Entonces, voy aqui. Como todos as haciendo um unapi, recuerda, recuerda cuando a vamos a volver a verlo en no el mismojem, sino otto, no.
+
+02:30:18.000 --> 02:30:28.000
+Chrono tosas… el meto delete, el meto etc.
+
+02:30:28.000 --> 02:30:34.000
+En este caso, como al final yo tengo que enviar algo, es decir, estoyamando mi modelo.
+
+02:30:34.000 --> 02:30:44.000
+No unacificacion. Yo tengo que enviar le algo, y el modelo me va de volver algo.
+
+02:30:44.000 --> 02:30:49.000
+Esa funcion sita, eso que estamos diciendo, como sea male metro, se ha mel methodo.
+
+02:30:49.000 --> 02:30:56.000
+es el que pareseca. Y tulareces cuala ser ruta para esta parte.
+
+02:30:56.000 --> 02:31:02.000
+Okay, basela Ruta model. Significa que con esta linea esta linea que estamos diciendo.
+
+02:31:02.000 --> 02:31:16.000
+to the fines, tu sender varias rutas. Model atrolizacion, barita ota funcion que digano se pues busqueda lo que fuece.
+
+02:31:16.000 --> 02:31:21.000
+escao se mas model. Aquito una funcion. Na funcion le manas todos datos.
+
+02:31:21.000 --> 02:31:28.000
+Yeah, llamas al tema lo que es la convertir tu modelo, tu modeo de lo atres y faire, como puedo severca.
+
+02:31:28.000 --> 02:31:34.000
+La probabilidad convirtes tus datos que estas enviandolo del salario que en este caso.
+
+02:31:34.000 --> 02:31:41.000
+E lo primes, re todas la impresion. La problemidad de que si la persona tiene de 50 anos y gane soles.
+
+02:31:41.000 --> 02:31:46.000
+El decero punto. Yeah?
+
+02:31:46.000 --> 02:31:52.000
+Entonces otopunto. Y luego! Una funcion que cosa el me.
+
+02:31:52.000 --> 02:32:01.000
+quiero que sarga portal puerto. cuando tulos de proyas.
+
+02:32:01.000 --> 02:32:07.000
+y por cualquier puerto. Y tu para que para que hacer tema del debaja.
+
+02:32:07.000 --> 02:32:17.000
+Yeah, esto un pequeno ejemplo la forma como tu constuyes apis en el caso el consumo en este caso consumpre.
+
+02:32:17.000 --> 02:32:27.000
+Muy parecido sera en concepto elanda. Pero le de acesa, le di es que to tengo es un pique el leascon lambda, ya con lambda funcion de habe doberece.
+
+02:32:27.000 --> 02:32:31.000
+Y esta. Lo mismo sera con el concento de lo que sacur yualit.
+
+02:32:31.000 --> 02:32:41.000
+Yeah, sending you, si, mejoramos bien. Ya esta.
+
+02:32:41.000 --> 02:32:49.000
+Entonces di chuesto, ahorasi. Ostes tienen en la partecita que esta por aca, ya, antes hacer elaboratorio.
+
+02:32:49.000 --> 02:32:58.000
+porque se yo si ago me aculpas la despido esculpa sino no con la decid no estado bien de salud, pero son memoron porquito el mateal, eso los sobi me verc antager.
+
+02:32:58.000 --> 02:33:11.000
+para que lo puan le, puedan revizar. Pueso que la parte laboratorio vamos ajaron poquito para puesplica los taller es primer. Yeah? Entonces.
+
+02:33:11.000 --> 02:33:19.000
+voya requer ustedes. Por favor, yeah, es que escoja.
+
+02:33:19.000 --> 02:33:23.000
+Uno esas architecturas. Cualquiera costes lesaga.
+
+02:33:23.000 --> 02:33:29.000
+por ejem. Mira ka.
+
+02:33:29.000 --> 02:33:41.000
+La mismide. Yeah, que estoy period. Esolamos y resolviendo a lo largo de todo el curso.
+
+02:33:41.000 --> 02:33:49.000
+Ja? En la ultimatidase comotal.
+
+02:33:49.000 --> 02:33:55.000
+que sus tendar contu rupo. Quea consistire en esto.
+
+02:33:55.000 --> 02:34:03.000
+Por ejempro, que te dice. Nue millones.
+
+02:34:03.000 --> 02:34:09.000
+They present a lot desafios. dispersion de trigentes.
+
+02:34:09.000 --> 02:34:18.000
+Y asi suicidamente. NSFU, que mas… Lo toda la vicio que vision tiene.
+
+02:34:18.000 --> 02:34:30.000
+como parte todo retail necesito, sir. Y tote va se pensando y preso.
+
+02:34:30.000 --> 02:34:36.000
+quizas aprendido con tos profes con la parte que estaca.
+
+02:34:36.000 --> 02:34:41.000
+yeah? El mudo negocio.
+
+02:34:41.000 --> 02:34:46.000
+Tienes dos modelos negocio. La primera. On front, una pagina.
+
+02:34:46.000 --> 02:35:00.000
+universidades, en otos institut… El fronde com hotal, ya el front.
+
+02:35:00.000 --> 02:35:10.000
+Pero que tenga funcionalida. Yeah, so it's super importante. Vi todo eso.
+
+02:35:10.000 --> 02:35:17.000
+guste espion practica. Esta parteca, el back.
+
+02:35:17.000 --> 02:35:25.000
+Yeah? En esto, en esto que estamos mencionando, vamos utilizar code digo hierto.
+
+02:35:25.000 --> 02:35:34.000
+Ya. I want sidabrando. Luego.
+
+02:35:34.000 --> 02:35:42.000
+Plumero? tiempo real.
+
+02:35:42.000 --> 02:35:53.000
+que cosa el tema de predicion. como que masomi, y no, la parte modelos.
+
+02:35:53.000 --> 02:35:59.000
+No debro cope. Tambiene la solutions. que vamos irleblar.
+
+02:35:59.000 --> 02:36:06.000
+miracca. Enton partecita.
+
+02:36:06.000 --> 02:36:10.000
+MLE models. tu modelito.
+
+02:36:10.000 --> 02:36:22.000
+I can press continue. asycacion lo queues.
+
+02:36:22.000 --> 02:36:34.000
+Luego, el dem analytico. que cosa.
+
+02:36:34.000 --> 02:36:42.000
+un e da tamar. mucho mejor seria un concerto da mas.
+
+02:36:42.000 --> 02:36:48.000
+Pero, la cosa que sea un repository datos que permita poder a cert toda la parte como la parte match.
+
+02:36:48.000 --> 02:36:59.000
+Yeah, sigo poraco. Y lago! I got amaz. Y lo tema telea. Guer decir que estoy diciendo que cosa, que anita, pero que sui recircir que voy a complar o sea.
+
+02:36:59.000 --> 02:37:05.000
+IoT? No. Recuerda que lo que tupagas entomestia eso no mas. No temstes.
+
+02:37:05.000 --> 02:37:12.000
+partecita. Depositan que nosotros podemos uterizar datos simulados.
+
+02:37:12.000 --> 02:37:17.000
+Entonces, que lo que vos utilizar aca rando. que si mule en eso dele.
+
+02:37:17.000 --> 02:37:24.000
+Yeah, para que para usted vegan el tema de real t en que estamos diciendo. El decirando datos en tiempo real.
+
+02:37:24.000 --> 02:37:32.000
+Se captura en este caso con PapSap, no? que es la parte de transformacion del dato.
+
+02:37:32.000 --> 02:37:40.000
+Y pasa para aboardar en tipos… Yeah. Cuales latare.
+
+02:37:40.000 --> 02:37:52.000
+dehora de estoy comentando. Entonces. Primero!
+
+02:37:52.000 --> 02:37:57.000
+que tenga que ver justamente con la parte retail.
+
+02:37:57.000 --> 02:38:11.000
+No hay ningo un problema or clar datos. que lo lla mandatos dami. Yeah?
+
+02:38:11.000 --> 02:38:22.000
+La enjesta. Tendidades que hacer tambi la parte ingesta. Considerando… considerando estimi y bacio.
+
+02:38:22.000 --> 02:38:31.000
+El prosusamiento, tambien concierando batch y estima. Alma senarlo. Anita, voy alma senar con Apache hoodie.
+
+02:38:31.000 --> 02:38:37.000
+Baca. Tenologia. Okay, the sum of proposals que estamos diciendo, que se hai code digo hierto.
+
+02:38:37.000 --> 02:38:45.000
+Los protos camosiendo nosotos. Como apace… como conse data flow.
+
+02:38:45.000 --> 02:38:50.000
+BigQuery… Data Fusho en deutos.
+
+02:38:50.000 --> 02:39:04.000
+de esto que estamos diciento. Pero cosa que escord digo hierto, per se.
+
+02:39:04.000 --> 02:39:10.000
+mi moda tablets. con la parte GCP. Luego!
+
+02:39:10.000 --> 02:39:18.000
+cual es son los futios de Volacion. Simero? Es un caso de uso que praticamente es un proyecto.
+
+02:39:18.000 --> 02:39:26.000
+De todo el curso. Yeah. escalabilidad, importante.
+
+02:39:26.000 --> 02:39:33.000
+fiabilidad, que vas asi pasifaya. interoperabilidad, como se pondengas a pis.
+
+02:39:33.000 --> 02:39:39.000
+Yo soy podiendo mi ultima cajitanita es que se va con estara Power BI. Vacam.
+
+02:39:39.000 --> 02:39:54.000
+porque, tu consumes. Looker Power BI tableau costes de fina.
+
+02:39:54.000 --> 02:40:03.000
+Reporteor. Lego justificacion de costos.
+
+02:40:03.000 --> 02:40:09.000
+Por ejempro, ustedesaban que yo de por si cuando normal architectura, posturiz.
+
+02:40:09.000 --> 02:40:14.000
+Obe, posturiza para regime conicerase. Data fullo, verso da fro.
+
+02:40:14.000 --> 02:40:26.000
+Anito de lice afro porque es open. porque mas de eso es completamente serveles, a participar las estimaciones, no se preocument, porque tamiento unida, de solamente estimacion.
+
+02:40:26.000 --> 02:40:35.000
+Yeah, mas paraca, vasi pi calculator. Y otavoy ensenar a calcular. Yao se apor ejemplosite diciendo.
+
+02:40:35.000 --> 02:40:40.000
+Your ensenare cuando veamos esta parte. Cuala diferencient el trasi el prime.
+
+02:40:40.000 --> 02:40:48.000
+este numero que estaca, esta cantien nodos tensenere. Gala hay tenga pued estimar.
+
+02:40:48.000 --> 02:40:55.000
+Yeah, sigo porque. que estamos diciendo.
+
+02:40:55.000 --> 02:41:00.000
+Po solar architectura la implementas abandon las justiferention noologica, implementacion.
+
+02:41:00.000 --> 02:41:06.000
+Yeah, implementacio. mano.
+
+02:41:06.000 --> 02:41:13.000
+implementacia. Yeah, alguna pregunta con eso.
+
+02:41:13.000 --> 02:41:23.000
+que no sepos. que nos se me pro cupe.
+
+02:41:23.000 --> 02:41:27.000
+Estacan. Peremi.
+
+02:41:27.000 --> 02:41:34.000
+Porque si nomec si noanitayo no esta… implementacion.
+
+02:41:34.000 --> 02:41:41.000
+Estamos bien se entendio. por ejemro, ya, por ejembro.
+
+02:41:41.000 --> 02:41:52.000
+Veremos la parte como vamos dijestar es Jimmy. Okay. Entonces, vamos a ser.
+
+02:41:52.000 --> 02:42:04.000
+como se la parte. perferto.
+
+02:42:04.000 --> 02:42:12.000
+verdados. el, voy a car.
+
+02:42:12.000 --> 02:42:27.000
+Y busco vanco, pete que carje. Teconertas, te con estas con tu corrio.
+
+02:42:27.000 --> 02:42:44.000
+como que tan poco feos, va poduca. Ya, lo mismo por ejemo paritelia, si sivamente. Abiceme por fasci pueden rezar entoria de bienresar con el inquerese puesto.
+
+02:42:44.000 --> 02:42:47.000
+pose. See?
+
+02:42:47.000 --> 02:42:51.000
+Maybe some porfa ser ugundo no puede?
+
+02:42:51.000 --> 02:42:53.000
+Take care of. Hello.
+
+02:42:53.000 --> 02:42:58.000
+promo robots.
+
+02:42:58.000 --> 02:43:05.000
+Well done. C.
+
+02:43:05.000 --> 02:43:12.000
+Um, you're recording.
+
+02:43:12.000 --> 02:43:17.000
+el esto.
+
+02:43:17.000 --> 02:43:19.000
+Caesar.
+
+02:43:19.000 --> 02:43:20.000
+See…
+
+02:43:20.000 --> 02:43:28.000
+Let me see what that…
+
+02:43:28.000 --> 02:43:42.000
+Ya? comunique lo… Al Juanca para que espua tambien ayudar. Ya?
+
+02:43:42.000 --> 02:43:55.000
+Entonces que males. Oto punto. Um… En el tambien en la parte que estaca, yo eso subivion archivo que se llama, que se llama compara formartos archivos.
+
+02:43:55.000 --> 02:44:05.000
+Entonces. Descarg en lo. Civito.
+
+02:44:05.000 --> 02:44:10.000
+Esa partito. See?
+
+02:44:10.000 --> 02:44:11.000
+I thought we'll see.
+
+02:44:11.000 --> 02:44:18.000
+Ah, yeah. So once you achieve it.
+
+02:44:18.000 --> 02:44:34.000
+haciendo eso. Justo el comentaba, um… I think, yeah, al equipo, um… porque voy a estar.
+
+02:44:34.000 --> 02:44:39.000
+En las Vegas. Ya por una capacitacion que nos iban en apreza.
+
+02:44:39.000 --> 02:44:47.000
+Y es como que las cuato de casayan como las cuatos mias de en las Vegas, que tengo la capacitacion y la 7 de ustedes.
+
+02:44:47.000 --> 02:44:56.000
+Entonces les decia, ya los chicos. para ustedes puedan decidir que dia vamos a llevar del dia cinco.
+
+02:44:56.000 --> 02:45:02.000
+El decirio los veria a ustedes deje megundo. Estement.
+
+02:45:02.000 --> 02:45:09.000
+Yo los veri el dia. LDLD.
+
+02:45:09.000 --> 02:45:17.000
+Yeah, le confirmo. I've been… febrio.
+
+02:45:17.000 --> 02:45:29.000
+Yeah, entonces, sin embargo, sin embargo. Well, yeah, will you… will ya liberar antes de mi viaje, antes de que valla y a la tias el dia donse.
+
+02:45:29.000 --> 02:45:41.000
+de streaming comotal. Yeah, el cinco favor mandar en la parte que aparezaca.
+
+02:45:41.000 --> 02:45:52.000
+En esta partecita donde dican igual me voy a podar con el juanqui para que me permitas en la encuesta que dia… que diales biene mejor ustedes, ya.
+
+02:45:52.000 --> 02:46:03.000
+esta mi pueda. Yeah, but a que marque en el dia y el dia que est pueda. Ese dia como tal novace presencer.
+
+02:46:03.000 --> 02:46:14.000
+lado. una pregiento.
+
+02:46:14.000 --> 02:46:16.000
+Si ahorasi, ahorasi.
+
+02:46:16.000 --> 02:46:21.000
+estoynto dando entrara le banco, pero no… Moindra.
+
+02:46:21.000 --> 02:46:29.000
+A ver? Okay.
+
+02:46:29.000 --> 02:46:41.000
+permit me. Capaz cope mal… ato.
+
+02:46:41.000 --> 02:46:49.000
+Y me confirmas porfia. Tham dito.
+
+02:46:49.000 --> 02:46:54.000
+Peter.
+
+02:46:54.000 --> 02:47:07.000
+Love. erlo.
+
+02:47:07.000 --> 02:47:11.000
+Simple, see?
+
+02:47:11.000 --> 02:47:13.000
+Estacaragando, pero croque, si.
+
+02:47:13.000 --> 02:47:28.000
+Yeah, okay, whatever. Back on, back on. tambien les valu nota.
+
+02:47:28.000 --> 02:47:35.000
+mime parece que esto no es asi, porque al cosa.
+
+02:47:35.000 --> 02:47:42.000
+Ya para que podan respondiendo. De acuerdo a lo que este.
+
+02:47:42.000 --> 02:47:54.000
+Pues, no? Eso. Yeah. Entonces, enters, entonces, no se juan cas paraca.
+
+02:47:54.000 --> 02:47:55.000
+See, Professor.
+
+02:47:55.000 --> 02:48:01.000
+Chicos, un favor enorme. Lo que basa que si bien es cierto.
+
+02:48:01.000 --> 02:48:12.000
+la tercera. como que no tanto, no? Yo to si.
+
+02:48:12.000 --> 02:48:20.000
+para saber que cosas vamos, si vamos bien que pues que queremos que quieren ver.
+
+02:48:20.000 --> 02:48:25.000
+Si esta muy el nivel muy sensillos, y quieren un poco mas dificil, no.
+
+02:48:25.000 --> 02:48:35.000
+para puer ver que cosas vamos en esas parte, yo tambien poder… proveo en el corso pues, no.
+
+02:48:35.000 --> 02:48:47.000
+Entonces y importante… poder por part 2 es para que me podan la encuestas poros a residio bastante.
+
+02:48:47.000 --> 02:48:55.000
+Milcios.
+
+02:48:55.000 --> 02:48:56.000
+Yeah.
+
+02:48:56.000 --> 02:49:01.000
+Ma po.
+
+02:49:01.000 --> 02:49:03.000
+Judy.
+
+02:49:03.000 --> 02:49:12.000
+No sesidual tode commentar, pero. Um, por la encuesta serianmas.
+
+02:49:12.000 --> 02:49:17.000
+Si lo pues comentar tambien. No hay problem.
+
+02:49:17.000 --> 02:49:27.000
+Uh, yeah, please. parte melee op.
+
+02:49:27.000 --> 02:49:38.000
+mas de ese temple. iza parte.
+
+02:49:38.000 --> 02:49:39.000
+Yeah, me encanta.
+
+02:49:39.000 --> 02:49:47.000
+Yes, that's… yes, como que la parte final, porque al final es como vasa… como hacer me comuniento.
+
+02:49:47.000 --> 02:49:49.000
+Excepto. Yeah.
+
+02:49:49.000 --> 02:49:52.000
+Does it seem mas informaciones.
+
+02:49:52.000 --> 02:50:02.000
+Yeah, bien encanta, mentanta, como de mayermenteermente siempre sudocurso, pero lo opongo, lo pongo y sacamos algunos temas vamos poniendo si como.
+
+02:50:02.000 --> 02:50:14.000
+Aja, prosi. per valido.
+
+02:50:14.000 --> 02:50:15.000
+Oh, no savvia. Yeah, yeah, yeah. Yeah, no terra cupes.
+
+02:50:15.000 --> 02:50:20.000
+See? See, big data.
+
+02:50:20.000 --> 02:50:33.000
+camiamos la mayo un poquito. un poquito, y… Para quitar algunas cosas para poder poner este la parte presentiza la parte melets.
+
+02:50:33.000 --> 02:50:42.000
+porque si pues no nos habia que no ti… yo pensa que tiengan concur la guarda. Porque vamiente siempre tienen como un curso parte meloz. Pero nolo ponemos lobamos doning priora.
+
+02:50:42.000 --> 02:50:47.000
+tambien es media diasi que no te progress. Tomo tomo.
+
+02:50:47.000 --> 02:50:53.000
+mucho eco.
+
+02:50:53.000 --> 02:51:05.000
+lo que es masin Learning. E… como que mecian, coristas el modelo.
+
+02:51:05.000 --> 02:51:18.000
+como la internacion continua, como agua la calibracion, oce… eso fuel como el 12 masomenos, no?
+
+02:51:18.000 --> 02:51:27.000
+Y cuando y abre con coliga, como que… como es media, diata tambien.
+
+02:51:27.000 --> 02:51:31.000
+Pero si, validomo. Super. Eso chicos, no resati.
+
+02:51:31.000 --> 02:51:33.000
+Bless you.
+
+02:51:33.000 --> 02:51:45.000
+No se tien alguna pregunta duda. por lo mimos que estoy comentando.
+
+02:51:45.000 --> 02:51:56.000
+Yeah, mas que mas. y hasta como el martes masomenos. Ya de la siguiente.
+
+02:51:56.000 --> 02:52:01.000
+Yep. Yes.
+
+02:52:01.000 --> 02:52:04.000
+el grupo de cuanto hace. Rito.
+
+02:52:04.000 --> 02:52:13.000
+enteces y cinco. Puede minimo undo.
+
+02:52:13.000 --> 02:52:23.000
+No? Matimo cinco. Yeah, para que lo pango, sir. Yo mi sujerencialmente es que lo aganda dos, pero al final depende mucho ustedes.
+
+02:52:23.000 --> 02:52:40.000
+el que hace las dodatos el otro como que hace la limpiesa, y el otro como que… depende mucho comos de es organiza. Ya mi experiencia que tenido de los macias que ya llevado rupo.
+
+02:52:40.000 --> 02:52:43.000
+Hemos hecho de cuazo porque como que ya no tanto.
+
+02:52:43.000 --> 02:52:59.000
+Pero depende cado, depende cado. De 5mos, osi. Yep. Yeah, so…
+
+02:52:59.000 --> 02:53:10.000
+Entonces. Novemos e… ya.
+
+02:53:10.000 --> 02:53:15.000
+Y wal vamos validando la auto a parte del… recuperamos es atres el cinco. Yeah?
+
+02:53:15.000 --> 02:53:25.000
+Eso, muchas
+
