@@ -5,7 +5,7 @@
 # 1. Secretos y archivos de entorno
 # ¡NUNCA subir secretos al repositorio!
 *.env
-
+*.env.*
 
 # 2. Python (uv y entornos virtuales)
 .venv/
