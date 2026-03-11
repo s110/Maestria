@@ -1,0 +1,21 @@
+# ─── Core GCP libraries ───────────────────────────────────────────────────────
+google-cloud-pubsub==2.21.4
+google-cloud-storage==2.16.0
+google-cloud-bigquery==3.20.1
+google-cloud-bigquery-storage==2.25.0
+
+# ─── Apache Beam (Dataflow) ───────────────────────────────────────────────────
+apache-beam[gcp]==2.56.0
+
+# ─── PySpark (Dataproc) ───────────────────────────────────────────────────────
+# Nota: En Dataproc, PySpark ya está instalado en el cluster.
+# Solo necesario para pruebas locales.
+pyspark==3.5.1
+
+# ─── Data processing ─────────────────────────────────────────────────────────
+pandas==2.2.1
+pyarrow==16.0.0
+
+# ─── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+tqdm==4.66.2

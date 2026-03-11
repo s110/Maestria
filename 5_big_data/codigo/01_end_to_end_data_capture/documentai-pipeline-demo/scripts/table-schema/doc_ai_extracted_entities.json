@@ -1,0 +1,53 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "input_file_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "date",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "address",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "supplier",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "invoice_number",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "purchase_order",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "due_date",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "subtotal",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tax",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total",
+    "type": "STRING"
+  }
+  
+]

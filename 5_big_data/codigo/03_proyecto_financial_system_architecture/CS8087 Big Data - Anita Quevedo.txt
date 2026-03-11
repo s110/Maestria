@@ -1,0 +1,379 @@
+Maestría de
+Ciencia de Datos e
+Inteligencia Artificial
+Big Data
+2.5 CRÉDITOS
+
+ÍNDICE
+
+1. DATOS GENERALES
+2. SUMILLA
+3. OBJETIVOS
+4. COMPETENCIAS Y RESULTADOS DE APRENDIZAJE
+5. TEMAS
+6. METODOLOGÍA
+7. SISTEMA DE EVALUACIÓN
+8. REFERENCIAS BIBLIOGRÁFICAS
+
+SILABO 2025-2
+1. DATOS GENERALES
+
+CURSO
+
+CS8087 - Big Data
+
+CICLO
+
+5
+
+CRÉDITOS
+
+DURACIÓN
+DEL PERIODO
+
+15 semanas
+
+TIPO
+CURSO
+
+MODALIDAD
+
+Híbrido
+
+2.5
+DEL
+
+REQUISITOS
+
+HT
+
+20
+
+HL
+
+40
+
+Obligatorio
+CS8079 - Machine Learning
+CS8083 - Data Engineering
+
+2. INTRODUCCIÓN AL CURSO
+El curso de Big data es de naturaleza teórica-práctico y tiene como objetivo que los
+estudiantes analicen los fundamentos del big data haciendo uso del pensamiento
+crítico, mediante la resolución de casos y los recursos disponibles. Los principales
+contenidos que se desarrollarán son: los fundamentos del big data, volumen, variedad,
+velocidad y veracidad de los datos; las arquitecturas de sistemas de big data, como
+Hadoop y Spark, y se introducirán técnicas y herramientas para el procesamiento y
+almacenamiento distribuido de datos, entre otros temas.
+
+3. OBJETIVOS
+Objetivo 1:
+Desarrollar la capacidad de analizar, diseñar e implementar soluciones de Big Data,
+integrando fundamentos teóricos, arquitecturas modernas y marcos de
+procesamiento distribuido para abordar retos empresariales complejos en entornos de
+datos masivos y heterogéneos.
+Objetivo 2:
+Fomentar el pensamiento crítico y estratégico en la gestión del ciclo de vida de los
+datos, promoviendo el uso ético, seguro y responsable de herramientas y prácticas de
+gobierno de datos, calidad, DataOps y MLOps en escenarios reales y simulados.
+
+4. COMPETENCIAS Y RESULTADOS DE APRENDIZAJE
+Cód.
+
+Competencia
+
+Cód.
+
+Resultados de aprendizaje
+
+CD01
+
+Analiza y evalúa de manera crítica RA1
+los
+problemas
+y
+desafíos
+relacionados con su área de
+especialización,
+identiﬁcando
+supuestos,
+evidencias,
+implicaciones
+y
+posibles
+soluciones y aplicando enfoques
+de pensamiento crítico para
+tomar
+decisiones
+fundamentadas
+y
+resolver
+problemas complejos (nivel 5)
+
+Analizar y evaluar arquitecturas y
+sistemas de Big Data para
+procesar grandes volúmenes de
+datos en entornos distribuidos.
+
+CD02
+
+Genera ideas originales, propone RA2
+soluciones novedosas y fomenta
+la creatividad en el ámbito de la
+gestión de su especialización
+(nivel 5)
+
+Diseñar
+e
+implementar
+soluciones de Big Data utilizando
+herramientas modernas como
+Hadoop y Spark.
+
+CD03
+
+Planiﬁca, organiza y controla RA3
+proyectos, teniendo en cuenta
+los recursos disponibles, los
+plazos
+establecidos
+y
+los
+resultados esperados (nivel 5)
+
+Optimizar procesos de análisis y
+almacenamiento de datos para
+garantizar
+eficiencia,
+escalabilidad y precisión.
+
+CD04
+
+Identiﬁca, formula y resuelve RA4
+problemas
+de
+manera
+innovadora, utilizando enfoques
+basados en datos y evidencia
+computacional (nivel 5)
+
+Planificar y gestionar proyectos
+de Big Data asegurando el
+cumplimiento
+de
+principios
+éticos y de seguridad.
+
+5. TEMAS
+
+Unidad 1: Fundamentos, Estrategia y Almacenamiento Distribuido
+1.
+2.
+3.
+
+4.
+
+Teoría Académica: Definición, importancia y alineamiento con la estrategia de
+negocio. Diferencias entre Big Data y datos tradicionales.
+Sistemas de Big Data: El ecosistema Hadoop (HDFS, MapReduce y YARN).
+Implementación en GCP:
+3.1.
+Migración de HDFS a Cloud Storage y BigQuery Storage.
+3.2.
+Gestión de clusters Spark/Hadoop gestionados con Cloud Dataproc.
+3.3.
+Uso de Big Lake como motor de almacenamiento unificado para
+Iceberg/Delta.
+Workshop Práctico: Despliegue de un Data Lakehouse distribuido y auditoría
+de toma de decisiones empresariales basada en datos.
+
+Unidad 2: Arquitectura de Datos y Procesamiento Moderno
+Teoría Académica: Introducción a arquitecturas de datos y patrones de
+implementación. Marcos de procesamiento distribuido (Hadoop y Spark).
+Calidad y DataOps: Marcos de calidad de datos y flujo de DataOps.
+Implementación en GCP:
+3.1.
+Cloud Dataflow (Apache Beam): Procesamiento unificado de Batch y
+Streaming.
+3.2.
+Dataform: Transformación de datos masivos mediante SQLX (DataOps
+en la nube).
+3.3.
+Pub/Sub: Ingesta de eventos a escala global para velocidad de datos.
+Workshop Práctico: Construcción de un pipeline ETL distribuido con
+validación automática de calidad.
+
+1.
+2.
+3.
+
+4.
+
+Unidad 3: Arquitecturas ML/IA y la Era Agéntica
+●
+●
+●
+
+●
+
+Teoría Académica: Introducción a MLOps. Implementación de RAG (RetrievalAugmented Generation) y Prompting para Data Management.
+La Era Agéntica: Conceptos y evolución hacia agentes inteligentes.
+Despliegue de Modelos en GCP:
+○ Vertex AI: Entrenamiento y despliegue de modelos fundacionales.
+○ BigQuery Gemini Pro: Ejecución de modelos LLM (Gemini) directamente
+en SQL para análisis masivo.
+○ Agent Engine SDK: Programación de agentes que razonan sobre Big
+Data.
+○ Document AI: Extracción de datos de documentos no estructurados
+para alimentar modelos.
+Workshop Práctico: Despliegue de un Agente de IA que consulta el Data
+Warehouse y genera respuestas contextuales mediante RAG.
+
+Unidad 4: Gobierno, Ética y Orquestación
+1. Teoría Académica: Principios de Gobierno de Datos, roles y responsabilidades.
+Ética, Privacidad y Seguridad de Datos.
+2. Implementación en GCP:
+2.1.
+Cloud Composer (Apache Airflow): Orquestación de flujos de trabajo
+complejos de Big Data y ML.
+2.2.
+Dataplex: Herramienta de implementación para gobierno de datos,
+linaje y seguridad centralizada.
+2.3.
+Cloud Run: Despliegue de microservicios para interactuar con la
+arquitectura agéntica.
+
+Unidad 5: Workshop Práctico:
+1.
+
+Automatización de un ciclo de vida completo de datos (Ingesta -> Proc -> ML
+-> Agente) asegurando principios éticos.
+
+6. METODOLOGÍA
+En el curso de Big Data, se aplicará la metodología de Aprendizaje Basado en Proyectos
+(ABP) para fortalecer el desarrollo de competencias prácticas en contextos reales. A
+través del ABP, los estudiantes planificarán, gestionarán y ejecutarán proyectos
+vinculados a la ciencia de datos e inteligencia artificial, enfrentando desafíos
+concretos como la implementación de iniciativas de analítica avanzada, la gestión de
+proyectos de transformación digital o la coordinación de equipos multidisciplinarios
+en entornos tecnológicos. Esta metodología fomenta la autonomía, el liderazgo, la
+gestión de la incertidumbre, el análisis crítico y la innovación, competencias esenciales
+para profesionales de posgrado en ciencia de datos y tecnología aplicada, en
+alineación con el modelo educativo de posgrado de UTEC.
+
+Esta metodología se centra en la ejecución de un Proyecto Integrador de Arquitectura
+Agéntica, donde el estudiante asume el rol de Principal Data Architect. El curso se
+divide en tres capas de aprendizaje:
+
+1. El Reto de Gestión y Planificación
+●
+
+●
+
+Gestión de la Incertidumbre: Se presentarán datasets "sucios" y masivos (logs
+reales, documentos PDF sin estructura) donde el alumno deberá decidir el
+stack óptimo (ej: ¿Dataproc para legacy o Dataflow para modernización?).
+Alineamiento con OKRs: Cada decisión técnica en GCP deberá estar justificada
+por un impacto en el negocio, simulando una transformación digital real.
+
+2. Ejecución Técnica con "Modern Data Stack" (GCP)
+
+La parte práctica se desarrolla mediante Sprints Técnicos donde los
+estudiantes aplicarán:
+●
+●
+
+●
+
+Arquitecturas de Procesamiento Distribuido: Implementación real de clusters
+de Hadoop/Spark en Dataproc y pipelines serverless en Dataflow.
+Despliegue de IA y Era Agéntica: Los estudiantes no solo entrenan modelos,
+sino que deberán desplegar agentes inteligentes utilizando el Agent Engine
+SDK, integrando búsqueda vectorial y RAG para resolver el desafío planteado.
+DataOps y Automatización: Uso de Dataform y Cloud Composer para gestionar
+el ciclo de vida de los datos, fomentando la autonomía en la coordinación de
+flujos tecnológicos complejos.
+
+3. Dinámica de Trabajo en el Aula
+●
+●
+
+●
+
+Semanas 1-4 (Cimentación): Workshops intensivos de arquitectura y
+almacenamiento masivo. El alumno planifica su infraestructura en GCP.
+Semanas 5-10 (Construcción): Ejecución de pipelines de datos masivos. Aquí
+se enfrenta la gestión de desafíos concretos como la latencia y el costo de
+cómputo.
+Semanas 11-15 (Inteligencia y Orquestación): Los estudiantes integran la capa
+de AI Agents y orquestan todo el sistema, demostrando liderazgo técnico e
+innovación.
+
+7. SISTEMA DE EVALUACIÓN
+DETALLE
+
+CALIFICACIÓN
+
+Evaluación - Caso de Estudio: Diseño de la
+arquitectura Big Data y alineamiento
+estratégico (E1)
+Proyecto 1 (Entregable I): Implementación del
+pipeline de ingesta y procesamiento
+distribuido (Dataflow/Spark) (P1)
+Proyecto 2 (Entregable II): Despliegue del
+modelo de IA/ML y arquitectura RAG en Vertex
+AI. (P2)
+Proyecto 3 (Entregable III): Entrega final del
+Agente Inteligente orquestado y gobernado.
+(P3)
+TOTAL
+
+25%
+
+25%
+
+25%
+
+25%
+
+100%
+
+8. REFERENCIAS BIBLIOGRÁFICAS
+●
+
+Mike Rollings & Andrew White (2018). Build a Data-Driven Enterprise. Gartner.
+
+Recuperado de:
+https://www.gartner.com/smarterwithgartner/build-a-data-driven-organization
+●
+
+John Doerr (2018). Measure What Matters: How Google, Bono, and the Gates
+Foundation Rock the World with OKRs (1st ed.). Portfolio.
+
+●
+
+Hilary Mason & DJ Patil (2015). Data Driven: Creating a Data Culture (1st ed.). O’Reilly
+Media, Inc. Recuperado de:
+https://www.oreilly.com/library/view/data-driven/9781491925454/
+
+●
+
+Ted Malaska & Jonathan Seidman (2018). Foundations for Architecting Data Solutions
+(1st ed.). O’Reilly Media, Inc.
+
+●
+
+Pethuru Raj, Anupama Raman & Harihara Subramanian (2017). Architectural Patterns
+(1st ed.). Packt Publishing.
+
+●
+
+Richard Lawrence & Paul Rayner (2017). Behavior Driven Development with Cucumber:
+Better Collaboration for Better Software (1st ed.). Addison-Wesley.
+
+●
+
+Google. Guía de arquitectura de aplicaciones de Google Cloud. Recuperado de:
+https://cloud.google.com/architecture?hl=es-419
+
+
