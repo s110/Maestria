@@ -1,0 +1,3522 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:13.429
+Victor Flores Benites: Pero vamos a entrar a detalle cuando lleguemos el el ames. Por ahora recibimos vectores. B. Entonces recibe los vectores, lo va este analizar este, ya saben todos contra todos. Este mecanismo a 0 atención.
+
+2
+00:00:13.450 --> 00:00:27.520
+Victor Flores Benites: Cada 1 de los emails va a entenderse sobre ese contexto no es como si leyeran una obra literaria. No le leyen si leen un libro, no este cada 1 de los personajes al inicio. Son solamente nombres, no
+
+3
+00:00:28.620 --> 00:00:30.480
+Victor Flores Benites: por ejemplo, este
+
+4
+00:00:30.630 --> 00:00:37.470
+Victor Flores Benites: Jon Snow, digamos al inicio, simplemente es un nombre ¿no? Y de hecho es curioso llamarse Alient Snow.
+
+5
+00:00:37.980 --> 00:00:53.730
+Victor Flores Benites: Luego de leerte todo el libro, dices, ah, ya se llame Snow, porque es un bastardo de invernalia. Bueno, los que han ex los que han visto la serie. Lo han leído. El libro ya saben de qué me refiero, que es el Este y todas las historias. ¿no? Entonces, después de todo, el procesamiento.
+
+6
+00:00:53.730 --> 00:01:12.680
+Victor Flores Benites: el vector que corresponde a Jon Snow ya tiene toda esa carga literaria, digamos, de todo ese contexto. Entonces, el al inicio de Jon Snow simplemente era la unión de 2 palabras, Jon Snow: nada más. Pero después de todo, el procesamiento ya se convierte en un vector mucho más complejo que justamente tiene toda su
+
+7
+00:01:12.770 --> 00:01:27.669
+Victor Flores Benites: todo su contexto: No, ¿Quién es el personaje. ¿cómo actúa? Este? ¿tiene su familia, cosas así? ¿no? Ok. Entonces eso es lo que va a hacer el transformer, va a relacionar todos los tanques para que mejoren su comprensión. Ok: Sí, Julián.
+
+8
+00:01:28.450 --> 00:01:36.529
+Ing. Julio Salgado: Este Víctor. Entonces, en ese caso, el transformer siempre siempre está presente tanto en el lanzamiento como a la diferencia.
+
+9
+00:01:36.770 --> 00:01:37.680
+Ing. Julio Salgado: Así es.
+
+10
+00:01:38.170 --> 00:01:57.799
+Victor Flores Benites: El transformer va a estar en entrenamiento de inferencia. Claro, el el modelo que va a trabajar en el L. M O, bueno, en la mayoría de modelos actuales, por detrás se transformer no todo, o sea, toda esa matemática que estamos viendo, todo ese funcionamiento que estamos viendo justamente lo está haciendo. Este modelo en el transformer.
+
+11
+00:01:57.950 --> 00:02:01.939
+Ing. Julio Salgado: En la parte de la decodificación para la diferencia.
+
+12
+00:02:02.500 --> 00:02:07.419
+Victor Flores Benites: Si no, no sé si te estoy entendiendo muy bien a ver
+
+13
+00:02:07.550 --> 00:02:14.489
+Victor Flores Benites: todo esto que estoy viendo, vamos viendo. Acá es de la arquitectura de Transformer que justamente lo que está aquí resaltando de color verde.
+
+14
+00:02:14.490 --> 00:02:18.260
+Ing. Julio Salgado: Esto, claro. Se va a entrenar en entrenamiento.
+
+15
+00:02:18.740 --> 00:02:23.359
+Victor Flores Benites: Este y en diferencia, se van a utilizar los pesos que ya he sido entrenados, no
+
+16
+00:02:23.560 --> 00:02:34.449
+Victor Flores Benites: igual. Esta Esta memoria que estamos mencionando aquí, que es una enorme tabla. Se va a entrenar en entrenamiento y luego, en diferencia, simplemente la vamos a utilizar. Ok.
+
+17
+00:02:34.930 --> 00:02:38.310
+Victor Flores Benites: o no sé exactamente a qué te refieres.
+
+18
+00:02:39.300 --> 00:02:42.789
+Ing. Julio Salgado: Anda. Sí, es que, como tú hablabas de un the coder
+
+19
+00:02:43.250 --> 00:02:49.659
+Ing. Julio Salgado: la parte de la inferencia, porque también tiene que trabajar con la misma arquitectura de lectores. No.
+
+20
+00:02:49.890 --> 00:03:02.740
+Victor Flores Benites: Sí, Sí, Sí, sí, Ese es el encoder, y eso es el de cover claro, y durante la ejecución también es utilizarse el coder the code solamente que el decoder va a tener un funcionamiento distinto que justo es lo que íbamos a llegar al final. No.
+
+21
+00:03:02.740 --> 00:03:03.149
+Ing. Julio Salgado: Ya, pero.
+
+22
+00:03:03.150 --> 00:03:09.089
+Victor Flores Benites: Esa parte. Ok, Elencoder si tal cual no es de tener un funcionamiento este
+
+23
+00:03:09.240 --> 00:03:22.139
+Victor Flores Benites: todos los pesos los vamos a utilizar. Bueno, una vez que hemos, tenemos el contexto de toda la secuencias. Digamos que queremos hacer una traducción y, de hecho, el Temper original Attention Visual Unit es de traducción de texto.
+
+24
+00:03:22.190 --> 00:03:34.609
+Victor Flores Benites: Lo que tenemos es varios vectores diciendo, ah, mira una conversión profunda de cada una de las palabras. No, eso lo vamos a utilizar para generar palabra por palabra introducción. Recuerden que eso está funcionando como del autorregresivo.
+
+25
+00:03:34.610 --> 00:03:45.599
+Victor Flores Benites: Entonces vamos a tener un Mode, un toque de entrada, que es un estar, no que no solamente es una señal De entrada, va a generar la primera palabra, el primer toque se va a generar
+
+26
+00:03:45.730 --> 00:03:53.380
+Victor Flores Benites: y va a decir: ah, mira, la primera palabra debe ser como que no sé él o una frase de inicio. No voy a buscar
+
+27
+00:03:53.550 --> 00:03:57.049
+Victor Flores Benites: en el contexto o en la el idioma original.
+
+28
+00:03:57.270 --> 00:03:59.810
+Victor Flores Benites: este ¿cuál es la palabra de inicio. ¿cómo se.
+
+29
+00:03:59.810 --> 00:04:01.000
+Eder Basurto: Podría iniciar.
+
+30
+00:04:01.300 --> 00:04:05.870
+Victor Flores Benites: Entonces para eso vamos a utilizar este crossatention sear
+
+31
+00:04:09.050 --> 00:04:10.500
+Victor Flores Benites: año.
+
+32
+00:04:10.500 --> 00:04:24.439
+Ing. Julio Salgado: Sin querer lo activo, hay una consulta rápida ahí. Este Víctor. La cuestión de los idiomas ya se ha superado. Actualmente no no hay ningún problema con Google respecto a los lenguajes o si todavía lees y cualquier otro.
+
+33
+00:04:24.620 --> 00:04:33.080
+Victor Flores Benites: Eso es un tema bastante interesante. Bueno, les comento rápido a ver. Una cosa es la traducción directa.
+
+34
+00:04:33.240 --> 00:04:52.570
+Victor Flores Benites: Ok, este o sea, frases tal cual que lo traduces. Y ya es de eso, está resuelto. Y no hay problema. Pero cuando ustedes quieren transcribir un libro o este, una obra literaria o algo un poco más complejo, que no solamente es traducción y ya sino es interpretación.
+
+35
+00:04:52.980 --> 00:05:02.120
+Victor Flores Benites: Dependiendo mucho del idioma. Ciertas cosas se dicen de s de forma coloquial. Y si tú le haces una traducción directa, este no pierde el sentido. No.
+
+36
+00:05:02.230 --> 00:05:21.190
+Victor Flores Benites: no se me ocurre ningún ejemplo, por ejemp, digamos, alguna jerga o algún este tipo de muletilla que funcione en español, pero si lo traduces deja de tener sentido o este. Ay, ya sé. Bueno, eso se se. No sé por qué hay una música de de Taylor, Swift, Este
+
+37
+00:05:21.320 --> 00:05:26.759
+Victor Flores Benites: y que le están haciendo mucho este muchos memes de que el karma es un gato.
+
+38
+00:05:27.690 --> 00:05:39.639
+Victor Flores Benites: esa frase en inglés parece que sí tiene sentido. Y de hecho, es como que muy metafórico, pero tú, cuando le haces una traducción directa como traducción, tipo L, L, M
+
+39
+00:05:40.030 --> 00:05:49.020
+Victor Flores Benites: Línea básica pierde el sentido o de la metáfora. Bueno, se entiende la metáfora decir como que es un gato que es libre, que no sé que salta, No sé,
+
+40
+00:05:49.280 --> 00:05:53.610
+Victor Flores Benites: pero pierde mucho el sentido. Entonces, este
+
+41
+00:05:54.430 --> 00:06:08.690
+Victor Flores Benites: traducción literal, tal cual este todavía funciona y está como se parece que está superado. Pero la traducción en sí mismo es no es solamente una transcripción tal cual, sino también es una interpretación.
+
+42
+00:06:08.690 --> 00:06:21.559
+Victor Flores Benites: porque muchas cosas en una cultura se puede ver de una forma, y cuando lo transcribes, se puede ver de otra forma. De hecho, suele haber mucha polémica, sobre todo cuando traducen este obras literarias diciendo: ah, mira, pero esto en realidad se extrae, traduce de esa forma.
+
+43
+00:06:21.820 --> 00:06:31.759
+Victor Flores Benites: O sea, sí, Pero si tú quieres expresar lo que el al autor quiere decir es lo tienes que decir otras palabras, en este otro idioma. Y bueno, eso sucede mucho y la serie lemes
+
+44
+00:06:32.020 --> 00:06:34.200
+Victor Flores Benites: todavía sufren con eso.
+
+45
+00:06:34.430 --> 00:06:41.990
+Victor Flores Benites: Entonces no es que todavía reemplacemos esa traducción de textos de, literalmente de este
+
+46
+00:06:42.490 --> 00:06:59.079
+Victor Flores Benites: con L. L. M: Está bien. Estamos traductores. De hecho, necesitamos profesionales que sepan como funcionar. Esto no que se pueden acompañar con estas herramientas, aunque, eso sí, tareas, tipo traducción de papers, sí te lo puede hacer sin problema perdón. Creo que no se hicieron.
+
+47
+00:06:59.250 --> 00:07:03.050
+Ing. Julio Salgado: Si este en ese caso, entonces se puede decir que para
+
+48
+00:07:03.560 --> 00:07:10.339
+Ing. Julio Salgado: un mejor resultado respecto a la salida, sería mejor y recomendable usar el inglés.
+
+49
+00:07:11.760 --> 00:07:16.549
+Victor Flores Benites: Depende o a qué te refieres. Este.
+
+50
+00:07:16.850 --> 00:07:24.300
+Ing. Julio Salgado: Lo que pasa que, como como son modelos americanos y bueno, inicialmente, pues
+
+51
+00:07:24.440 --> 00:07:36.119
+Ing. Julio Salgado: se usó el inglés, se ha perfeccionado con este idioma y posteriormente captaron las traducciones porque algo de escuché hoy en la tarde justamente sobre el idioma, no que los resultados
+
+52
+00:07:36.230 --> 00:07:40.399
+Ing. Julio Salgado: podrían darse en inglés. ¿eran mejores algo así? No sé.
+
+53
+00:07:40.400 --> 00:07:52.540
+Victor Flores Benites: Si hay hay un degradado de desempeño cuando cambias de idioma. O sea, como están muy entre están entrenados, inglés, tienen funcionar mejor. El inglés. Sin embargo, para aplicaciones más
+
+54
+00:07:52.800 --> 00:08:05.529
+Victor Flores Benites: cotidianas, digamos, o sea, es si ustedes quieren hacer su aplicación. Por ejemplo, estaba mencionando idioma del enseñanza y matemáticas. Creo que mencionas algo de enseñanza. Este no hay problema en esas aplicaciones.
+
+55
+00:08:05.930 --> 00:08:09.450
+Victor Flores Benites: Es indistinguible las diferencias entre español e inglés.
+
+56
+00:08:09.710 --> 00:08:17.200
+Victor Flores Benites: Si te vas a temas más avanzados, o sea, tipo esos problemas frontera que estábamos viendo ese momento en los benchmarks
+
+57
+00:08:17.450 --> 00:08:25.880
+Victor Flores Benites: ahí sí. Tal vez te convendría trabajar matemáticas. Entonces, este para aplicaciones normales, digamos, cotidianas o de empresas.
+
+58
+00:08:26.050 --> 00:08:27.140
+Victor Flores Benites: Realmente.
+
+59
+00:08:27.370 --> 00:08:41.750
+Victor Flores Benites: actualmente esos modelos grandes no tienen mucha diferencia, tal vez en modelos pequeños. En ciertas situaciones, podrían tener un degradado. Lo que les recomendaría es este: probar simplemente probar qué tal funciona
+
+60
+00:08:41.750 --> 00:08:48.850
+Victor Flores Benites: y ver si hay una diferencia notoria, Si hay una diferencia notoria, ahí sí valdría la pena, porque si no tendrían ustedes que.
+
+61
+00:08:49.040 --> 00:09:00.150
+Victor Flores Benites: o o sea, primero recibir el texto en español, traducirlo al inglés que lo procesó inglés y luego traducirlo otra vez a español, lo cual es un tiempo de diferencia mucho más largo, ¿no? Y también más costoso, porque son varios llamados: el A, B, L
+
+62
+00:09:00.560 --> 00:09:01.750
+Victor Flores Benites: y.
+
+63
+00:09:01.750 --> 00:09:02.810
+Ing. Julio Salgado: Avisado. Gracias.
+
+64
+00:09:03.620 --> 00:09:05.390
+Victor Flores Benites: Sí. Gracias a ti.
+
+65
+00:09:06.010 --> 00:09:08.080
+Victor Flores Benites: Bueno, entonces
+
+66
+00:09:08.110 --> 00:09:17.609
+Victor Flores Benites: lo que les mencionaba no Ese es el encoder entendimiento del de la entrada. Aquí el decoder. Vamos a generar este token por token, No, a partir de todo el contexto que tenemos aquí.
+
+67
+00:09:17.610 --> 00:09:28.129
+Victor Flores Benites: Eso va a funcionar con el multihead self atention este todo eso con este, con el producto punto que, bueno, ya hemos estudiado en la clase pasada. No.
+
+68
+00:09:28.220 --> 00:09:31.670
+Victor Flores Benites: Aquí vamos a definir las señales.
+
+69
+00:09:31.840 --> 00:09:34.110
+Victor Flores Benites: Kiko Elevalue Okay.
+
+70
+00:09:34.270 --> 00:09:48.230
+Victor Flores Benites: Lo que sucede es que por cada 1 de estos tokens como yo les había mencionado. Lo que queremos es mejorar, digamos, la interpretación o la información que contiene cada unos tokens, no porque al inicio los tokens son básicos, no
+
+71
+00:09:48.600 --> 00:09:57.589
+Victor Flores Benites: como Michael. Este es simplemente una palabra. Entonces corresponde un nombre y nada más, pero no sabemos el contexto que es un director y que, bueno.
+
+72
+00:09:58.670 --> 00:10:07.519
+Victor Flores Benites: hacer películas más. Este mainz, digamos, es entonces todo ese contexto. No lo tiene. Si es que solamente tenemos la palabra Michael.
+
+73
+00:10:07.810 --> 00:10:21.589
+Victor Flores Benites: comprendemos ese contexto Una vez que hemos relacionado con todo su contorno, Es como cuando digo leer una obra literaria al inicio, no sabemos de nadie, ni de los personajes, pero a partir del contexto que vamos leyendo poco a poco vamos interpretando cuál es su contenido.
+
+74
+00:10:21.910 --> 00:10:33.960
+Victor Flores Benites: Ok. Entonces, para buscar información, Para que Michael la palabra Michael tenga más contexto. Lo que vamos a hacer es petición de información. Vamos a ser muy bueno. Pedir esta información no necesita información de tal cosa no
+
+75
+00:10:34.080 --> 00:10:50.639
+Victor Flores Benites: relacionado a Michael, claro está, no. Entonces vamos a hacer un poli. Ahora, todos los demás tokens, incluido el sí mismo, se llama mecanismos Elpha Tention van a tener unas señales de Key, entonces el Key va a ser una especie de descripción del contenido que tiene cada 1 de esos de esos tokens.
+
+76
+00:10:50.640 --> 00:10:55.549
+Victor Flores Benites: Entonces, si el Ki y el query hacen Match, que eso va a ser con producto. Punto.
+
+77
+00:10:55.570 --> 00:11:04.489
+Victor Flores Benites: Y hablando de eso, vieron los vídeos que les compartí Ahora, si pudieron ver los vídeos que les compartí, espero que hayan podido ver. Es ahí, estaba bastante visual.
+
+78
+00:11:04.860 --> 00:11:10.760
+Victor Flores Benites: Y de hecho, me han hecho recordar que no les he compartir los otros videos que son un poco más matemáticos.
+
+79
+00:11:11.240 --> 00:11:21.110
+Victor Flores Benites: Vale, Proat, lo voy a Compart.
+
+80
+00:11:21.300 --> 00:11:23.890
+Victor Flores Benites: Estoy contento para compartirles antes que me olvide.
+
+81
+00:11:23.990 --> 00:11:37.479
+Victor Flores Benites: Bueno. Entonces, si es que hay Match, esa información base significa que relevante y, por lo tanto, el value de ese toque de particular va a participar más, No, por ejemplo, Michael Bay, ese
+
+82
+00:11:37.590 --> 00:11:55.090
+Victor Flores Benites: Michael Bay. Si se pronuncia no este esas 2 palabras son importantes como para describir esa palabra porque, bueno, es un nombre completo así y también que es un director, ¿no? Entonces esos 3 tokens son relevantes y su valor va va a participar más en esa representación final.
+
+83
+00:11:55.580 --> 00:12:09.430
+Victor Flores Benites: Ok, Y bueno, que le estaba dando unos ejemplos. También es interesante ver el tema de los Heads, o sea, cada head Lo que va a hacer es analizar de diferente forma. Este la secuencia en cada gel va a tener su Kiwi val Ok.
+
+84
+00:12:10.340 --> 00:12:26.279
+Victor Flores Benites: Bueno, es el encoder este. Recuerden que este primero es la primera, la primera fase de Multiheadher Atentation que compara cada 1 de los tokens. Luego tenemos la fase del fit forward que lo que va a hacer es mejorar las representaciones.
+
+85
+00:12:26.280 --> 00:12:34.960
+Victor Flores Benites: A Ver Recordarán que el Multihealthalf Vation, todo el proceso que les he escrito hace un momento que es bastante interesante, relaciona este diferente tipo de representaciones, y todo eso.
+
+86
+00:12:35.040 --> 00:12:42.580
+Victor Flores Benites: sin embargo, es un proceso puramente lineal. La el procesamiento no lineal, lo que le da complejidad a las representaciones va a ser el pitform.
+
+87
+00:12:42.700 --> 00:12:43.370
+Victor Flores Benites: Sí,
+
+88
+00:12:44.200 --> 00:13:02.649
+Victor Flores Benites: Bueno, aquí también. Esta explicación más directa sobre el mecanismo de atención. Eso es lo que vimos la clase pasada. Esto lo podemos este, convertir a matrices, y de hecho, la forma usual es trabajarlo con matrices. No, Aquí es bueno. Y por Ki transpuesta, no dicho que impacta siempre poner la transpuesta.
+
+89
+00:13:02.650 --> 00:13:13.550
+Victor Flores Benites: Bueno, aparte de ese producto. Este tenemos en la atención que te voy a decir ¿Qué tan relevante es cada 1 de los tokens con respecto a cada 1, no por ahí. Preguntaban si esa matriz podía ser simétrica
+
+90
+00:13:13.550 --> 00:13:25.960
+Victor Flores Benites: y no va a ser simétrica, No necesariamente va a ser simétrica, no, porque lo que es importante para ti no implica que sea importante para la el La otra persona. Suena un poco triste, eso. Pero bueno, así
+
+91
+00:13:26.070 --> 00:13:44.389
+Victor Flores Benites: también sucede en los tokens. Bueno, luego de definir este los valores de importancia, lo convertía sobre valores de importancia. Vamos a seleccionar qué tokens este o qué valores vamos a utilizarlo para generar representación final? ¿no? Y eso básicamente lo hacemos con un producto. Y al final teníamos esta ecuación, ¿no? Este el Kick.
+
+92
+00:13:44.730 --> 00:13:50.970
+Victor Flores Benites: el cuadriquí transpuesta sobre raíz. Bueno, tal tal ecuación de de de tensión ¿no? Okay.
+
+93
+00:13:51.160 --> 00:13:54.870
+Victor Flores Benites: Bueno, aquí hablamos un poco de
+
+94
+00:13:55.120 --> 00:14:14.739
+Victor Flores Benites: de los espacios. ¿no? Bueno, hablamos un poco del la clase pasada. Luego vimos que este cada 1 de esos procesos hacemos en jets independientes, ¿no? Y al final lo que vamos a hacer es con combinar todos esos jets. No digo una sola respuesta y bueno para eso lo concatinamos. Hacemos una proyección mediante una ml. P. Ya está. ¿no?
+
+95
+00:14:14.740 --> 00:14:16.819
+Victor Flores Benites: Todo. Eso es el mecanismo de atención.
+
+96
+00:14:16.850 --> 00:14:18.280
+Victor Flores Benites: ¿qué está aquí?
+
+97
+00:14:18.390 --> 00:14:33.080
+Victor Flores Benites: Bueno, en el paper original. Luego de eso, este, bueno, siempre vamos a utilizar este las scriptonation o las conexiones residuales, no esas conexiones que tenemos aquí justamente para afrontar el problema del bannishing que así tener rayas más profundas. ¿no?
+
+98
+00:14:33.300 --> 00:14:46.430
+Victor Flores Benites: Y bueno, el aquí utilizamos la hierba normalization para, bueno, para normalizar las activaciones del restan, no en el móvil original era así. Sin embargo, luego se dieron cuenta que eran con más conveniente colocarlo aquí en la entrada.
+
+99
+00:14:46.790 --> 00:14:53.069
+Victor Flores Benites: Eso implica que vamos a normalizar las activaciones antes de explicar el producto, punto, lo cual es mucho más conveniente.
+
+100
+00:14:53.310 --> 00:15:02.660
+Victor Flores Benites: Bueno, el Fit for que le he comentado. El positional encoding, que es otro factor bastante importante que también vamos a hablar un poco de eso En un momento.
+
+101
+00:15:02.660 --> 00:15:15.429
+Victor Flores Benites: lo que sucede es que un gran, este, un val, un gran valor, un un gran aspecto. Este, una gran calidad que tiene los transformers es su procesamiento paralelo.
+
+102
+00:15:15.580 --> 00:15:26.309
+Victor Flores Benites: Y, bueno, son mucho más óptimos que las L. C. P. M. ¿es que recuerdan que eran modelos este recursivos. Y los la G. P. U, no es muy conveniente trabajar con con recurrencias. No
+
+103
+00:15:26.370 --> 00:15:40.750
+Victor Flores Benites: es muy poco óptimo Las que todos estamos preparadas para hacer un procesamiento en paralelo que todos estén procesando exactamente lo mismo. Y bueno, Este, al ser los informes paralelos, digamos, este
+
+104
+00:15:40.750 --> 00:15:54.029
+Victor Flores Benites: es muy, se optimiza mucho mejor en Gpu: Sin embargo, el nosotros ahí perdemos la noción de orden, porque no importa el orden con lo que co coloquemos los tokens, el producto, punto Com
+
+105
+00:15:54.860 --> 00:16:01.590
+Victor Flores Benites: este va a ser el mismo. No, no importa el orden de los factores, como recordarán, no entonces
+
+106
+00:16:02.570 --> 00:16:15.150
+Victor Flores Benites: nosotros vamos a necesitar esa información de posición, porque nosotros entendemos el texto a partir del orden, como aparece en cada una de las palabras. Si cambiamos el orden de las palabras y lo entreveramos. Ya no tiene sentido el texto, no.
+
+107
+00:16:15.150 --> 00:16:26.730
+Victor Flores Benites: entonces necesitamos darle alguna forma. Necesitamos alguna forma, insertar esa información del orden para que una de las palabras y para eso utilizamos el posicional en codi, no el positional en código original era señales de senos y cosenos
+
+108
+00:16:26.900 --> 00:16:28.850
+Victor Flores Benites: es que.
+
+109
+00:16:29.000 --> 00:16:38.050
+Victor Flores Benites: bueno, algunos modelos todavía utilizan este esquema de escenas y cosas que es bastante simple, pero actualmente se utiliza mucho rock que lo vamos a ver en unos minutos.
+
+110
+00:16:40.980 --> 00:16:47.879
+Victor Flores Benites: Bueno, luego hablamos justamente del decoderm, y ahora estoy entrando en la parte final.
+
+111
+00:16:47.970 --> 00:17:03.000
+Victor Flores Benites: Bueno, todo el mecanismo de atención que hemos descrito está aquí, no el posicionar en Codi, Por cierto, está aquí que se insertaba en ese tiempo simplemente con una suma a 1 de los factores sumaba de posición en coding, no luego el serft atention, que ya saben, con relación de puros toques.
+
+112
+00:17:03.000 --> 00:17:10.150
+Victor Flores Benites: Luego seguiría el fit formal que lo que hacía era mejorar las representaciones, no una operación puramente sobre los canales.
+
+113
+00:17:10.220 --> 00:17:15.009
+Victor Flores Benites: Todo eso. Bueno, con varios bloques en Overblock, transformer
+
+114
+00:17:15.560 --> 00:17:30.120
+Victor Flores Benites: esos resultados pasaban al decoder, no lo que les mencionaba aquí. Lo que vamos a generar esto que importa. No recuerden que eso no funciona Con modelo auto regresivo, generamos palabra por palabra, ¿no? Por eso ustedes cuando utilicen este
+
+115
+00:17:30.500 --> 00:17:35.849
+Victor Flores Benites: Piti o a ver justo hace un rato hablé en Cuba. Nunca he usado Google.
+
+116
+00:17:36.110 --> 00:17:41.380
+Victor Flores Benites: Voy a preguntar cualquier cosa. No es Transformers
+
+117
+00:17:42.190 --> 00:17:45.759
+Victor Flores Benites: Me piden registrarme. No me diga que me registraron.
+
+118
+00:17:46.160 --> 00:17:51.220
+Victor Flores Benites: no. ¿por qué me hicieron esto, ¿Por qué me mandaron a otra pantalla, y
+
+119
+00:17:52.830 --> 00:17:58.169
+Victor Flores Benites: de hecho, eso está funcionando de modo razonador. Pueden ver que primero salió una frase.
+
+120
+00:17:58.960 --> 00:18:06.950
+Victor Flores Benites: es en español y luego se puso a buscar en Internet. No sé por qué había puesto rápido.
+
+121
+00:18:08.440 --> 00:18:16.019
+Victor Flores Benites: Mira que es leyendo fuentes, está buscando mucha información sobre Transformers
+
+122
+00:18:19.810 --> 00:18:24.280
+Victor Flores Benites: Por cierto, aquí pueden ver cómo es el este.
+
+123
+00:18:24.580 --> 00:18:36.690
+Victor Flores Benites: Consideren ese Queen Spanish pueden ver cómo es el proceso de de pensamiento este con con las L Ms: Por cierto, pueden ver aquí que está generando Token por Token, no
+
+124
+00:18:36.880 --> 00:18:42.970
+Victor Flores Benites: que bueno, ustedes ya lo conoce muy bien que eso funciona de esa forma permanecer desbloqueado.
+
+125
+00:18:43.760 --> 00:18:47.530
+Victor Flores Benites: Mira generó frases en China en China. Perdón.
+
+126
+00:18:49.050 --> 00:18:56.480
+Victor Flores Benites: ¡qué curioso nunca había usado Google como les he mencionado aquí. Pueden ver el el el razonamiento. Por cierto.
+
+127
+00:18:56.640 --> 00:19:01.340
+Victor Flores Benites: cabarets responsadores. ¿no?
+
+128
+00:19:01.900 --> 00:19:06.219
+Victor Flores Benites: Mira, han hecho aquí varios varios pasos.
+
+129
+00:19:06.600 --> 00:19:11.640
+Victor Flores Benites: Entender primero traten de entenderme a mí. Luego trato de entender a la query.
+
+130
+00:19:12.400 --> 00:19:15.030
+Victor Flores Benites: y luego te s comienza a ejecutar.
+
+131
+00:19:15.480 --> 00:19:20.349
+Victor Flores Benites: busca en Internet, recopilar información están analizando, sintetizando
+
+132
+00:19:20.810 --> 00:19:27.869
+Victor Flores Benites: es que ha estado completamente como un ejemplo presentar un respuesta clara. Acá Están todos los pasos que curioso.
+
+133
+00:19:28.480 --> 00:19:29.150
+Victor Flores Benites: Mhm.
+
+134
+00:19:29.440 --> 00:19:45.659
+Victor Flores Benites: primera vez que utilizo Google, lo más probable que preguntes que es otra forma es que depende el contexto. No es inteligencia artificial que lo más probable que preguntes, Bueno, habla de todas formas de cultura popular. También habla de los juguetes, serie animada en las películas.
+
+135
+00:19:46.260 --> 00:19:51.019
+Victor Flores Benites: curioso, visión transformers. Entonces lo vamos a ver en un momento.
+
+136
+00:19:52.400 --> 00:20:08.989
+Victor Flores Benites: Pero bueno, este lo que quería mostrarles no esperaba que pasara todo esto, que vieron que iba a generar Token portátil. No sé la palabra. Es como que no se despliega todo de golpe, sino que genera o palabra, y justamente ese comportamiento es por el comportamiento autorregresivo. Si Julio.
+
+137
+00:20:09.640 --> 00:20:18.030
+Ing. Julio Salgado: Si este Víctor actualmente se mantiene esa arquitectura donde todas las palabras de un texto o de un corpus
+
+138
+00:20:18.140 --> 00:20:25.050
+Ing. Julio Salgado: se contextualizan todos contra todos. ¿se mantiene esa arquitectura o se ha mejorado nuestro. Existe otro mecanismo.
+
+139
+00:20:25.050 --> 00:20:35.080
+Victor Flores Benites: Sí vamos a ver algunas mejoras. De hecho, en un momento este sí, eso es una muy buena pregunta. De hecho, se trataba de ver
+
+140
+00:20:36.410 --> 00:20:54.270
+Victor Flores Benites: a ver. Hay muchos caminos de mejora. Uno son optimizaciones en hardware. Otro es mejoras de guardar en caché Por ejemplo, esas secuencias son grandes, Se van a documentar como están viendo. Y entonces podemos cortar de las secuencias anteriores. Suskywalus.
+
+141
+00:20:54.350 --> 00:21:10.480
+Victor Flores Benites: Hay muchas optimización de este tipo. Hay otras optimizaciones a nivel arquitectura que justamente es lo que vamos a ver en unos momentos, básicamente, es no hacer atención sobre todo el contexto gigante, sino reducirlo en un subcontexto, por ejemplo.
+
+142
+00:21:10.570 --> 00:21:15.519
+Victor Flores Benites: otros. Lo que hacen es tratar de que no trabajar directamente sobre esa matriz gigante.
+
+143
+00:21:15.690 --> 00:21:22.979
+Victor Flores Benites: E eso lo vamos en unos minutos y de por sí. Voy a resaltar bastante Tipsy porque Deep sí, saca muy buenas cosas.
+
+144
+00:21:23.420 --> 00:21:27.850
+Victor Flores Benites: Y lo como lo vamos a discutir en un momento Okay.
+
+145
+00:21:28.970 --> 00:21:34.050
+Victor Flores Benites: Bueno, les les quería mostrar sobre ese comportamiento progresivo de la generación de Tokens.
+
+146
+00:21:34.130 --> 00:21:51.170
+Victor Flores Benites: Bueno, entonces en la primera generación, o sea, para el primer toque, recuerden que cuando es un modelo otro regresivo. Lo que está tiene partir es un toque de entrada, no un toque de estar perdón, entonces el toque de star va a decir. Ah, mira, debo comenzar a funcionar. No, no tengo ningún otro contexto a
+
+147
+00:21:51.170 --> 00:22:01.500
+Victor Flores Benites: lo que voy a hacer es pedir información de la codificación del texto. No pueden ver. Acá viene la flechita diciendo con que inicia. Mira lo que debo de iniciar es con frases esta
+
+148
+00:22:03.640 --> 00:22:08.189
+Victor Flores Benites: a ver qué con qué comenzó, qué es transformer haciendo? ¿qué es la pregunta Como
+
+149
+00:22:08.950 --> 00:22:15.409
+Victor Flores Benites: rebobinando lo que me ha dicho el usuario, no que digamos que sea el primer token, o bueno, el signo de pregunta
+
+150
+00:22:15.410 --> 00:22:30.650
+Victor Flores Benites: que no Ah, mira, esa es la primera palabra. Es bueno, vas viendo más el contexto como refinándolo. Y al final dice: ah, mira, la clasificación de la primera palabra es que no. Ahora ese error retroalimenta y viene por acá otra vez. Ahora tengo la palabra. Este que
+
+151
+00:22:31.060 --> 00:22:45.629
+Victor Flores Benites: luego sigue es Ok, bueno, diciendo, ahora tengo que que es colocar otra palabra que tenga sentido en español, ¿no? Entonces, este que que tiene sentido. ¿qué es lo que quería decir en la frase. Entonces, otra vez busca
+
+152
+00:22:45.630 --> 00:23:04.719
+Victor Flores Benites: el buscar aquí. Es producto. Punto. No selecciones. Ah, mira, lo más probable que sea. Es es no retroalimenta y otra vez. Así no va generando todo que importa. Que así va generando ese transformer. Ok. Ese es el comportamiento del decode. Ahora, este cada una de las frases que va generando este, digamos.
+
+153
+00:23:04.720 --> 00:23:15.350
+Victor Flores Benites: cada secuencia, por ejemplo, que hacemos en la primera fase que diga que es Transformers. Todo eso al inicio. Lo va a procesar este mediante esa atención como para entender qué es lo que ha generado hasta ahora no a
+
+154
+00:23:15.360 --> 00:23:21.080
+Victor Flores Benites: luego va a hacer el proceso de Closettation Crossaption que va a decir, mira, voy a pedir información
+
+155
+00:23:21.100 --> 00:23:37.299
+Victor Flores Benites: de qué es lo que necesito para complementar la respuesta, ¿no? O cuál es el token siguiente, no procesa. Y bueno, genera el siguiente token no va a generar el siguiente Token luego otra vez, yendo hasta ahora, ¿Cuál es la secuencia? ¿cuál es el sentido de la secuencia que hay procesado o no.
+
+156
+00:23:37.300 --> 00:23:48.850
+Victor Flores Benites: Ah, mira, se ha regenerado esto. Ahora voy otra vez ver el contexto o para irme refinando. Cuál es la siguiente palabra que debo generar, ¿no? Y así no es el proceso de decode.
+
+157
+00:23:50.090 --> 00:24:02.099
+Victor Flores Benites: Y bueno, como les mencionaba, todo esto es un proceso auto regresivo. Sin embargo, este los transformers son procesos muy paralizables. Son este
+
+158
+00:24:02.220 --> 00:24:10.689
+Victor Flores Benites: redes pa muy que procesan todo en paralelo, no otras secuencia en paralelo. Y bueno, eso puede generar un problema, ya que.
+
+159
+00:24:10.880 --> 00:24:22.549
+Victor Flores Benites: como han visto con el ejemplo que les he dado, este es una posibilidad de modelo este de forma auto regresiva. Solamente podemos ver los tokens que son del pasado lo que hemos generado hasta ahora. No podemos ver los tokens futuros.
+
+160
+00:24:22.590 --> 00:24:28.509
+Victor Flores Benites: Y si lo entrenamos tal cual este como funciona de transformer, se considerando todos los toques
+
+161
+00:24:28.510 --> 00:24:43.139
+Victor Flores Benites: cuando queremos hacer la predicción de la primera palabra. ¿es posible ver otros lados que siguen hacia adelante? ¿no? Ok, porque, a fin de cuentas, producto punto todos contra todos. Entonces, para evitar ese problema vamos a hacer algo sobre la matriz de atención sobre
+
+162
+00:24:43.850 --> 00:24:45.729
+Victor Flores Benites: sobre la atención showman, ¿no?
+
+163
+00:24:46.080 --> 00:24:54.519
+Victor Flores Benites: Ok, para la primera palabra, solamente podemos ver la primera palabra porque no podemos ver los sobres anteriores, no los demás. Los vamos a mantener apagados
+
+164
+00:24:54.520 --> 00:25:16.669
+Victor Flores Benites: para la segunda palabra, solamente podemos ver la primera palabra. Los demás nos mantenemos apagados. Y así no. Por ejemplo, la cuarta palabra: solamente podemos poner la palabra 1, 2 y 3, y los demás son incógnitas, ¿no? Entonces, con esto estamos haciendo de que el transformer aprenda a resolver el problema solamente viendo la información pasada, lo cual es una un modelo causal, no
+
+165
+00:25:16.670 --> 00:25:30.039
+Victor Flores Benites: algo algo coherente como funciona el modelo. Este auto regresivo. Bueno, eso es el más. Bueno, es eso. Se utiliza solamente entrenamiento en diferencia. Vamos a utilizar todos los tonos que tenemos no porque son generando un toque importante.
+
+166
+00:25:30.530 --> 00:25:36.569
+Victor Flores Benites: Bueno, este también es el mecanismo de Cross, atención, que justamente es lo que les estaba mencionando hace un momento
+
+167
+00:25:36.700 --> 00:25:44.939
+Victor Flores Benites: que este gráfico este me parece interesante que justamente aquí está comparando.
+
+168
+00:25:46.730 --> 00:25:53.729
+Victor Flores Benites: no, sí, estoy grabando. Me Me asusté por un momento de que no estaba grabando la clase. Nada más. Estamos grabando.
+
+169
+00:25:55.410 --> 00:25:56.830
+Victor Flores Benites: Okay.
+
+170
+00:25:57.490 --> 00:26:02.740
+Victor Flores Benites: Bueno, eso es en el que llevo de Closetta Patium, un pequeño paro cardíaco
+
+171
+00:26:02.770 --> 00:26:18.650
+Victor Flores Benites: en cada interacción. Vamos a ir generando, como digo, Token por Token. Y lo que vamos a decir, necesito información Para generar ese nuevo toque, no vamos a generar un queery, el que tiene la información del contexto global va a ser justamente el de Cover, no el ecoder perdón
+
+172
+00:26:18.650 --> 00:26:23.189
+Victor Flores Benites: que viene del de la otra entrada por la imagen.
+
+173
+00:26:23.480 --> 00:26:24.980
+Victor Flores Benites: Aquí están, de hecho
+
+174
+00:26:25.990 --> 00:26:30.799
+Victor Flores Benites: toda la información de la secuencia de entrada está aquí, ¿no? Entonces voy a decir, voy a buscar información aquí
+
+175
+00:26:30.840 --> 00:26:48.919
+Victor Flores Benites: Y bueno, Co: lo que va a tener. Cada 1 de esos va a ser un valor de King, no por diciendo, Mira cada ese token tiene esta información y el valor que puede reconocer es el valor que tenemos aquí. ¿no? Y bueno, vamos a ser justamente producto, punto como ya hemos visto en el mecanismo de atención. Y con eso vamos a seleccionar el value que corresponde a ese contexto.
+
+176
+00:26:49.050 --> 00:26:51.120
+Victor Flores Benites: Ok, eso es cosa de hecho.
+
+177
+00:26:51.280 --> 00:26:55.369
+Victor Flores Benites: Y bueno, eso termina funcionando con modelos auto progresivos.
+
+178
+00:26:58.160 --> 00:27:00.470
+Victor Flores Benites: Bueno, este eso fue un
+
+179
+00:27:00.580 --> 00:27:06.209
+Victor Flores Benites: un pequeño, tal vez un poco lo largo. Este repaso de lo que hemos hecho la clase pasada
+
+180
+00:27:06.900 --> 00:27:10.850
+Victor Flores Benites: y, de todos modos, lo lo creo, bastante conveniente, porque
+
+181
+00:27:11.090 --> 00:27:15.510
+Victor Flores Benites: muchas cosas que vamos a ver más adelante se basan en transformers
+
+182
+00:27:15.910 --> 00:27:20.259
+Victor Flores Benites: y voy a asumir que se entiende muy bien por esta parte.
+
+183
+00:27:20.800 --> 00:27:30.760
+Victor Flores Benites: En Por cierto, aquí pueden ver el model comportamiento represivos? No, Bueno.
+
+184
+00:27:31.620 --> 00:27:37.539
+Victor Flores Benites: al final tenemos esta arquitectura, esa arquitectura que es el la arquitectura de todos los transformers.
+
+185
+00:27:37.630 --> 00:27:50.949
+Victor Flores Benites: pero como les mencionaba. Han habido varias mejoras. Voy a ir desgratus analizando parte por parte para ver cómo se ha actualizado cada 1 de los elementos, qué versiones hay?
+
+186
+00:27:51.040 --> 00:28:07.310
+Victor Flores Benites: Evidentemente, no voy a colocar todas las variaciones que existen. Voy a colocar, como es el, digamos, puntos hitos importantes de cada 1. De hecho, este cada 1 que les voy a mencionar ha evolucionado también a otras cosas, pero
+
+187
+00:28:07.510 --> 00:28:23.370
+Victor Flores Benites: o como para que tengan una referencia. No vamos a comenzar, de hecho con positional encoding que de por sí tiene una larga larga historia, ¿Cómo es que cómo es insertar este la información de posición no es tan trivial.
+
+188
+00:28:23.630 --> 00:28:24.840
+Victor Flores Benites: En
+
+189
+00:28:27.690 --> 00:28:40.280
+Victor Flores Benites: hasta ahora, el método que hemos visto ha sido el método sinusoidal. No les mencionaba que son ondas de senos psicosenos. Ese método de acá. Entonces lo que estamos haciendo es que cada token
+
+190
+00:28:43.510 --> 00:28:50.179
+Victor Flores Benites: perdón, este cada toque va va a tener una asignación de I D, digamos, de posición. Digamos que
+
+191
+00:28:50.260 --> 00:29:00.429
+Victor Flores Benites: la primera palabra es el toque en 0. Y vamos a recibir el I D 0, toquen 1, 2, 3, 4, y así no. Cada 1 va a tener una posición fija. Ok.
+
+192
+00:29:00.430 --> 00:29:14.960
+Victor Flores Benites: Entonces una una palabra, por ejemplo, eso que decía la palabra 20 no Okay. Y si esas palabras se compara este con esta para otra palabra de acá que seríamos en la posición 50 veces. Mira la palabra 20 palabra de posición 50. No los tengo que comparar.
+
+193
+00:29:15.020 --> 00:29:18.930
+Victor Flores Benites: Ok, Eso se llama este posicionamiento absoluto.
+
+194
+00:29:19.040 --> 00:29:26.259
+Victor Flores Benites: ¿qué que es el método original? Y de hecho, también son es un procesamiento absoluto entrenable.
+
+195
+00:29:26.400 --> 00:29:29.359
+Victor Flores Benites: porque, bueno, básicamente son funciones.
+
+196
+00:29:29.430 --> 00:29:39.359
+Victor Flores Benites: Sin embargo, más adelante se dieron cuenta que era más valioso para el transformer decirle las posiciones de manera relativa.
+
+197
+00:29:39.360 --> 00:29:49.459
+Victor Flores Benites: ¿qué quiere decir esto? A ver? Como les mencionaba aquí, vamos a relacionar la palabra diferentes con la palabra en Bedding. Solo le estaba diciendo, por ejemplo, que esa será posición 20 y es a la 50 no
+
+198
+00:29:49.460 --> 00:29:57.479
+Victor Flores Benites: okay. Entonces, al comparar el transformer o al hacer producto, punto o bueno, es el el producto. Punto, no.
+
+199
+00:29:57.550 --> 00:30:06.759
+Victor Flores Benites: Lo que está haciendo es relacionar el concepto, pero también diciendo este a ver. Esto está en la posición 20 y el otro está en la posición 50, no
+
+200
+00:30:06.920 --> 00:30:25.710
+Victor Flores Benites: a partir de esa información que 1 es 20 y el otro 50 tiene que de algún modo descubrir cuál es la distancia. Es decir, ah, mira, 50, 20 está muy lejos. Tal vez no es muy relacionado conmigo mismo conmigo. Este, a a menos que este la relación sea alta, no por ejemplo, por decir algo
+
+201
+00:30:25.940 --> 00:30:27.360
+Victor Flores Benites: este.
+
+202
+00:30:28.550 --> 00:30:37.490
+Victor Flores Benites: Pero esa operación de darse cuenta cuanta distancia está es algo muy complicado, digamos, para solamente un producto. Punto.
+
+203
+00:30:37.500 --> 00:30:54.590
+Victor Flores Benites: Entonces este bueno por ahí en la proyección del del que hay para los cuales y los kiss Este pueden servir bastante para hacer ese ese tipo de análisis. Pero igual es una operación muy difícil o muy pesada para para el posicionar el covid De esa forma.
+
+204
+00:30:54.800 --> 00:31:00.890
+Victor Flores Benites: Es mucho más fácil para el transformer tenerlo ya todo masticadito que te diga, Ah, mira.
+
+205
+00:31:01.300 --> 00:31:06.460
+Victor Flores Benites: estoy en diferentes y 30 posiciones. Después está en benings ok.
+
+206
+00:31:07.410 --> 00:31:16.630
+Victor Flores Benites: tre 30 posiciones, adelante y, bueno, y pasado. Está 4 posiciones atrás en la posición menos 4, aquí, 30 y aquí la posición, 4,
+
+207
+00:31:16.630 --> 00:31:31.800
+Victor Flores Benites: ahí, tú directamente le estás diciendo no a qué posición está cada 1, sino a cualquier distancia. Están 1 con respecto al otro, y eso es una información ya más directa, no que la red no va a tener que aprender a hacer una diferencia una resta entre las posiciones.
+
+208
+00:31:32.020 --> 00:31:40.229
+Victor Flores Benites: Eso se llama Relative Positionaling Cobey, que de hecho es un método que se ha explorado con varias este varias arquitecturas
+
+209
+00:31:40.490 --> 00:31:53.540
+Victor Flores Benites: para relatis posición del Coudi. Hay muchas. Hay, digamos, 2 subgrupos, los entrenables y los entrenables, ¿no? Y justo ese el el Plot que les colocaba aquí.
+
+210
+00:31:53.710 --> 00:32:02.920
+Victor Flores Benites: Tenemos los entrenables, los entrenables, no los absolutos y los relativos. En los absolutos. Tenemos la signo celular que le hemos mencionado hace un momento.
+
+211
+00:32:03.580 --> 00:32:13.000
+Victor Flores Benites: los entrenables. Este tiempo se sale meding este relativo y absoluto que para poner ese sencillo, lo que se hacía era aprender
+
+212
+00:32:13.470 --> 00:32:23.690
+Victor Flores Benites: una matriz igual a la matriz que les mencionaba hace un rato de la matriz de acá. Ok, una matriz que eso se viene, de hecho, con n punto embeding
+
+213
+00:32:25.160 --> 00:32:26.100
+Victor Flores Benites: de un
+
+214
+00:32:26.710 --> 00:32:34.690
+Victor Flores Benites: Eso es el código donde vamos a colocar diferentes vectores diferentes vectores que van a corresponder a diferentes posiciones.
+
+215
+00:32:34.940 --> 00:32:40.230
+Victor Flores Benites: Okay, Este, digamos posición a que no
+
+216
+00:32:40.910 --> 00:32:53.369
+Victor Flores Benites: posición 0, 1, 2, 3, 4, 5, no. Eso es como que la distancia. ¿a qué posición corresponde? ¿no? Entonces, por cada una de las bocinas vamos a tener un vector establecido.
+
+217
+00:32:53.830 --> 00:33:09.649
+Victor Flores Benites: Vale, eso es el posicionable. Podemos aprender vectores de posicionamiento, No, el relatisposicionales. Beding va a ser exactamente lo mismo solamente que va a ser como les mencionaba relativo. No está el centro 0, menos 1, menos 2 así.
+
+218
+00:33:09.650 --> 00:33:18.069
+Victor Flores Benites: Y por aquí, 1, 2, 3. Y así no. Ok. Entonces vamos a decir que está la misma posición está para atrás atrás de mí o adelante de mí, ¿no?
+
+219
+00:33:18.110 --> 00:33:18.970
+Victor Flores Benites: Okay.
+
+220
+00:33:20.300 --> 00:33:35.779
+Victor Flores Benites: Bueno, estos de acá van a necesitar matrices que son entrenables que cuando aprobación se van a actualizar. Por otro lado, tenemos los no entrenables no que son funciones estáticas. Aquí el más popular. De hecho, lo que se suele utilizar es rope
+
+221
+00:33:35.940 --> 00:33:37.990
+Victor Flores Benites: y variaciones de rock también.
+
+222
+00:33:38.180 --> 00:33:45.290
+Victor Flores Benites: Muchas variación. Desde luego que justamente ese método es lo que vamos a explicar por aquí.
+
+223
+00:33:46.410 --> 00:33:59.430
+Victor Flores Benites: Se basa en rotaciones, como dice su nombre, No, pues si se en vez de ese posicionamiento de rotación no basados en rotación.
+
+224
+00:33:59.570 --> 00:34:01.750
+Victor Flores Benites: El a ver
+
+225
+00:34:02.360 --> 00:34:09.869
+Victor Flores Benites: es un planteamiento bastante curioso. Les voy a explicar más o menos cómo funciona. Lo va a manejar como si fueran este
+
+226
+00:34:10.000 --> 00:34:13.719
+Victor Flores Benites: números complejos. Se acuerdan números completos, no de de pregrado.
+
+227
+00:34:13.860 --> 00:34:19.179
+Victor Flores Benites: Los números complejos, a fin de cuentas son varios ordenados. ¿no? Entonces lo que estamos definiendo son vectores
+
+228
+00:34:19.320 --> 00:34:26.000
+Victor Flores Benites: a ver ahora cómo es que todo un vector que es un inventario se convierte, ya no es completo. O sea, lo que sucede, es esto
+
+229
+00:34:26.110 --> 00:34:41.280
+Victor Flores Benites: todo esto Lo que pueden ver de aquí hasta aquí son todos los valores. El invedí del Kiwi. Vale. Este son vectores, no de tamaño. 64 128 y casualmente simple potencia de 2.
+
+230
+00:34:41.389 --> 00:34:49.960
+Victor Flores Benites: Lo que vamos a hacer es de todo ese vector agruparlos de 2 en 2, Como pueden ver aquí en los colores, no de 2 en 2. Vamos a ver agrupaciones de 2 en 2 como pares.
+
+231
+00:34:50.090 --> 00:34:58.020
+Victor Flores Benites: Esos pares van a ser numeritos, no digamos 1 coma 2 por poner un valor, ¿no? De hecho, te colocar 2 coma. Uno
+
+232
+00:34:59.170 --> 00:35:03.910
+Victor Flores Benites: Entonces este vector es la posición 2, 1. Ok. Entonces.
+
+233
+00:35:04.540 --> 00:35:21.359
+Victor Flores Benites: como si fuera un número complejo o bueno como para un reinado, tal vez un poco más sencillo de verlo es la posición 2 1. Y así vamos a hacerlo para todos los pares de dentro de esos es de esos vectores. Ok. Ahora, cada 1 de esos pares. Lo que vamos a hacer es rotarlo.
+
+234
+00:35:21.680 --> 00:35:27.939
+Victor Flores Benites: Vamos a rotarlo en un ángulo, proporcionar a la posición en la que se encuentra.
+
+235
+00:35:28.150 --> 00:35:43.859
+Victor Flores Benites: Vale, entonces este, si estamos en la posición 0, digamos la primera palabra no rota nada, y estamos en la posición 1 rotamos un poquito si estamos en la posición 50, rotamos más y la posición, 100 el doble, la 200 mucho más, y así no.
+
+236
+00:35:43.860 --> 00:35:51.579
+Victor Flores Benites: Dependiendo de la posición. Vamos a rotar más y más. Ok, Justamente aquí pueden ver como que una escala de rotación, Ok, Ahí
+
+237
+00:35:51.740 --> 00:35:54.250
+Victor Flores Benites: eso lo vamos a hacer para
+
+238
+00:35:54.420 --> 00:36:10.860
+Victor Flores Benites: este, para aquí y para el cuento. Ahora, algo que también se dieron cuenta que notaron más adelante que justamente que el valor del positial en coding va a ser en el mecanismo de atención. El mecanismo de 0 atención
+
+239
+00:36:10.900 --> 00:36:18.140
+Victor Flores Benites: en el barrio no es tan relevante, porque, al fin de cuentas, el barrio es como una definición o bueno información en sí misma, no.
+
+240
+00:36:18.320 --> 00:36:28.239
+Victor Flores Benites: En cambio, en el producto. Punto. Sí, es importante decir, ah, mira, me relaciono con este, pero tal vez es en la posición en 2 en 200 en adelante 200 atrás. Tal vez no es tan importante, ¿no?
+
+241
+00:36:28.320 --> 00:36:48.120
+Victor Flores Benites: Y entonces el producto punto es donde es importante el posicionarmeding Entonces aquí el posicion se aplica sobre los key y los querys justo cuando se aplica el mecanismo de atención Okay. Y bueno, sobre eso es lo que vamos a hacer esas rotaciones. Ok, rotaciones dependiendo del ángulo ahora
+
+242
+00:36:48.870 --> 00:37:02.949
+Victor Flores Benites: en esa aplicación. Les estoy mencionando de que la rotación depende de la posición, no de manera proporcional. Y eso hace pensar que se puede ver como si fuera un po un absolute position en coding con un movimiento absoluto, no como hizo hace un momento.
+
+243
+00:37:02.950 --> 00:37:10.399
+Victor Flores Benites: Sin embargo, de hecho, aquí está la explicación sobre eso y también esa ese ángulo de rotación. Este también depende del
+
+244
+00:37:10.690 --> 00:37:16.049
+Victor Flores Benites: está muy similar al a lo que teníamos por aquí con esa misma ecuación.
+
+245
+00:37:17.850 --> 00:37:29.079
+Victor Flores Benites: Pero, bueno, este, Sin embargo, por cierto, la la transformación de rotación son esas matrices que pueden ver que son rotaciones entre pares entre pares de vectores.
+
+246
+00:37:29.190 --> 00:37:34.099
+Victor Flores Benites: Este bueno lo que le pensaba. Sin embargo, este
+
+247
+00:37:34.190 --> 00:37:52.569
+Victor Flores Benites: el resultado del mecanismo de de la rotación que pueden ver que va a ser el el cu sombrerito, el k Sombrerito, el el cuer y el Kiko. Les mencionabas sobre donde importa el posicionar el coding Ok, cuando lo hacemos en producto. Punto que es lo que hacemos en el mecanismo de de atención es.
+
+248
+00:37:53.450 --> 00:37:54.630
+Victor Flores Benites: y
+
+249
+00:37:55.880 --> 00:38:04.269
+Victor Flores Benites: cuando lo combinamos, es han dado resultados. El resultado va a ser dependiente de la diferencia de los ángulos
+
+250
+00:38:04.400 --> 00:38:08.259
+Victor Flores Benites: Okay, o sea, el resultado de ese producto punto
+
+251
+00:38:08.830 --> 00:38:14.590
+Victor Flores Benites: va a ser dependiente de la diferencia de los ángulos Okay.
+
+252
+00:38:14.920 --> 00:38:25.809
+Victor Flores Benites: Y justamente es el porque está diseñado de esa forma tan curiosa. Todo este meganipo de posición de Meding que pueden ver que lo están manejando por pares y luego matices de rotación. Y todo eso.
+
+253
+00:38:26.010 --> 00:38:33.890
+Victor Flores Benites: Todo esto es porque, al fin de cuentas, cuando multiplicamos este hacemos el producto. Este punto aquí es este
+
+254
+00:38:34.000 --> 00:38:50.540
+Victor Flores Benites: Q por R este y K, por R transpuesta. No, eso se convertirse en K, R transpuesta por Kango. Algo así, ¿no? Ahora, aquí estamos operando conjunto de las rotaciones, ¿no? Y Bueno, aquí lo que va a terminar siendo no
+
+255
+00:38:50.740 --> 00:38:58.550
+Victor Flores Benites: es este, ah, bueno protección de Y el del Quinmeu
+
+256
+00:38:59.360 --> 00:39:11.149
+Victor Flores Benites: Okay este en esa, al combinarlo de esta forma. Lo que al fin de cuentas vas a hacer es una resta entre los 2 posicionamientos, entonces el resultado efectivo luego de aplicar el mecanismo de atención.
+
+257
+00:39:11.170 --> 00:39:20.200
+Victor Flores Benites: Es más una relación de distancia entre las 2 posiciones. Entonces, si 1 está, digamos, el juery está aquí
+
+258
+00:39:21.140 --> 00:39:29.319
+Victor Flores Benites: y el el que está aquí, no el Ok, lo que va a recibir como información. El
+
+259
+00:39:29.740 --> 00:39:44.119
+Victor Flores Benites: El mecanismo de atención va a ser el ángulo de diferencia, No, este ángulo que tenemos aquí. Ok. Por eso se llama esto un poste. Es un relativo en Medio, porque justamente de manera efectiva podemos la distancia entre los de las posiciones.
+
+260
+00:39:44.160 --> 00:39:51.249
+Victor Flores Benites: Ok. Bueno, ese mecanismo rode o este posicionamiento medio in The Road es actualmente
+
+261
+00:39:51.400 --> 00:39:56.630
+Victor Flores Benites: este con sus variantes. Dicho cierto, este
+
+262
+00:39:56.750 --> 00:40:03.940
+Victor Flores Benites: es el más utilizado: actualmente, la mayoría de métodos utiliza R o B o alguna variante de rogue. Entonces este
+
+263
+00:40:04.110 --> 00:40:07.950
+Victor Flores Benites: todo esto va a estar basado en rotaciones. Ok.
+
+264
+00:40:08.020 --> 00:40:11.190
+Victor Flores Benites: Entonces repasando, sé que es bastante matemática por ahí
+
+265
+00:40:11.200 --> 00:40:29.179
+Victor Flores Benites: cada 1 de los vectores lo vamos a dividir en pequeños pares, cada una de sus pares. Lo vamos a ver como aparece ordenados, no cada 1 de esos, vamos a rotarlos, rotarlos Dependiendo de cuál es la posición, el ángulo o la velocidad de rotación. Este que es W, Va a depender este de la posición y todo eso. Pero bueno.
+
+266
+00:40:29.180 --> 00:40:34.709
+Victor Flores Benites: importante que es proporcionar a la posición en donde encontremos ahora cuando hacemos el producto. Punto.
+
+267
+00:40:34.800 --> 00:40:44.880
+Victor Flores Benites: este el resultado va a ser dependiente de la de la Resta de las 2 posiciones, y por eso eso se llama la relativósil en Code.
+
+268
+00:40:45.130 --> 00:40:57.350
+Victor Flores Benites: Bueno, este algo que mucho se está explorando ahora que puedes haber notado, de hecho, ya es una normalidad, No es, no es una novedad de trabajar con contextos muy grandes. ¿no?
+
+269
+00:40:57.350 --> 00:41:10.719
+Victor Flores Benites: Entonces, algo interesante de Rob es que puede escalar muy bien cuando trabajamos con posiciones mucho más largas, no este extrapolar a longitudes mayores de las que está en entrenamiento.
+
+270
+00:41:10.720 --> 00:41:19.470
+Victor Flores Benites: y de hecho, es algo que se suele usar para eso. ¿vamos a utilizar este algún tipo de escalas justamente sobre el ángulo. ¿no?
+
+271
+00:41:19.470 --> 00:41:23.630
+Victor Flores Benites: Entonces digamos que se ha entrenado sobre una escala relativa, digamos, hasta
+
+272
+00:41:25.070 --> 00:41:47.200
+Victor Flores Benites: no sé, 20 k posiciones, digamos, 20 000 posiciones, y nosotros queremos utilizarlo luego a 60 000 posiciones, ¿no? Y para eso simplemente lo que hacemos es. Recuerden que tenemos como una velocidad angular, es, digamos, hacer la velocidad más corta no quiere decir que el cambio por posición sea más chiquito, no como para que entren más posiciones en toda esa circunferencia. No
+
+273
+00:41:47.200 --> 00:41:49.320
+Victor Flores Benites: tienes cómo funcionan las capacidades? No.
+
+274
+00:41:49.530 --> 00:42:02.509
+Victor Flores Benites: Bueno, la forma más fácil es directamente dividirlo, no mediante un factor de escala, diciendo que este, como que entre más posiciones, no el otro. Es este.
+
+275
+00:42:03.630 --> 00:42:11.740
+Victor Flores Benites: justamente hacer que las primeras posiciones, ¿Cómo decirlo este L,
+
+276
+00:42:12.960 --> 00:42:22.619
+Victor Flores Benites: Lo que sucede es que las este, las posiciones más cercanas, o sea que la diferencia de posiciones más cercanas es mucho más importantes que las posiciones más Lejanas
+
+277
+00:42:22.620 --> 00:42:33.990
+Victor Flores Benites: Okay. Es como decir, este cuando estabas leyendo un libro, lo que está contenido en el párrafo en el libro párrafos de Ozores y en el texto es más relevante, digamos como para ver en qué posición está cada 1
+
+278
+00:42:34.180 --> 00:42:52.749
+Victor Flores Benites: que ver la posición de la palabra. No sé que está en 100 páginas más adelante. ¿no? Entonces necesitamos como que mayor nitidez en esa parte que estamos leyendo que con respecto al texto en general, no entonces podemos dar como que diferentes tipos de de escalas, dependiendo de la
+
+279
+00:42:52.750 --> 00:43:11.309
+Victor Flores Benites: de la lejanía, ¿no? Ok, entonces esa regla de descarga lo podemos definir de manera general, o tal vez este 1 más suave diciendo que no sé en una parte, Lo tengo como cara lineal y otro que ya se comporta como ustedes. Bueno, entonces Rob se utiliza mucho justo para extrapolar con contextos mucho más grandes.
+
+280
+00:43:11.430 --> 00:43:18.380
+Victor Flores Benites: Y bueno es lo que muchos más se utiliza actualmente con el L. M. S: Ahora, Tú,
+
+281
+00:43:18.770 --> 00:43:24.570
+Victor Flores Benites: otra cosa que se ha actualizado mucho es de es la normalización.
+
+282
+00:43:24.770 --> 00:43:32.160
+Victor Flores Benites: Recuerden que no le he puesto ahí el dibujo de perdón.
+
+283
+00:43:32.800 --> 00:43:50.849
+Victor Flores Benites: O sea, ahora hemos hablado este como el de acá Ahora vamos a hablar de ese con el de acá. De normalización. Ok, Lo que hemos usado hasta ahora ha sido la normalization, que es justamente lo que tenemos aquí. ¿no? Bueno, aquí estoy haciendo también una distinción con base normalization.
+
+284
+00:43:52.080 --> 00:44:08.370
+Victor Flores Benites: El Vals organization era lo que se se solía utilizar las primeras implementaciones del de las C. N. N s okay Aquí Lo que hacíamos era calcular estadísticos. Este, bueno, la Edad media y la apariencia de las de drogas, minibaches, no.
+
+285
+00:44:08.370 --> 00:44:14.749
+Victor Flores Benites: Y para inferencia, tenemos que hacer una estimación global de cuál es la media desviación de todo el conjunto de datos.
+
+286
+00:44:15.760 --> 00:44:20.589
+Victor Flores Benites: Entonces dependía de una tipo de un estimador sobre la media de inspiración.
+
+287
+00:44:21.890 --> 00:44:25.710
+Victor Flores Benites: Sin embargo, este luego trabajábamos. Bueno.
+
+288
+00:44:26.010 --> 00:44:36.640
+Victor Flores Benites: lo reemplazamos todo eso por Ley de Normalization, que ya no dependía del Bach. Si nos hacíamos una normalización directamente sobre el los canales. Ok.
+
+289
+00:44:36.820 --> 00:44:50.409
+Victor Flores Benites: entonces te ponemos la media de los canales, la variación de los canales. Y con eso normalizamos, ¿no? Y bueno, lo bueno, este bueno, también este esa media desviación, nosotros este, necesitamos este
+
+290
+00:44:51.030 --> 00:44:55.720
+Victor Flores Benites: calcular una media común una vez una
+
+291
+00:44:56.590 --> 00:45:01.019
+Victor Flores Benites: una media de una desviación común de lo de las activaciones de los canales
+
+292
+00:45:01.210 --> 00:45:05.040
+Victor Flores Benites: durante el entrenamiento para utilizar la diferencia? ¿no? Ok.
+
+293
+00:45:06.700 --> 00:45:14.080
+Victor Flores Benites: Bueno, luego este reemplazando todas esas técnicas, el método que se volvió más común fue R. M. C, Nor
+
+294
+00:45:14.270 --> 00:45:33.089
+Victor Flores Benites: Ok, que es otro tipo de normalización que, a diferencia de R E. D, el ayer normalization, que es lo que se utilizaba en el paper original. Lo único que hace es dividirlo entre el R. M. C, El R. M. C es simplemente, como pueden ver aquí, el plasmatoria de las activaciones al cuadrado. Y luego se trata la raíz cuadrada. Ok.
+
+295
+00:45:33.510 --> 00:45:38.379
+Victor Flores Benites: Bueno, esa técnica funciona muy bien en transformers
+
+296
+00:45:38.850 --> 00:45:49.779
+Victor Flores Benites: si lo utilizan S. N. N no funciona nada bien. No termina siendo un nuevo funcionamiento. No es el mejor funcionamiento para la C. N. No es el más adecuado para hacer en para Transformers, Sí.
+
+297
+00:45:50.260 --> 00:45:51.450
+Victor Flores Benites: Y
+
+298
+00:45:52.040 --> 00:46:04.529
+Victor Flores Benites: lo bueno de R. M. C. No es que no tenemos que hacer una estimación de la media ni la desviación. Por lo tanto, necesitamos hacer un cálculo, este hacer un cálculo en entrenamiento para luego utilizarlo en este
+
+299
+00:46:04.540 --> 00:46:18.939
+Victor Flores Benites: y diferencia. Entonces tenemos ahí un unos pesos, menos una, unos valores menos que tenemos que actualizar. Ok, que tampoco debemos ser un estimador sobre eso. Y bueno, eso termina siendo muy conveniente en los transformers. Vale.
+
+300
+00:46:19.360 --> 00:46:30.509
+Victor Flores Benites: Pero como les digo en la C. N, N: Sí, este es conveniente ese esa, esa resta de la media de la desviación. Ahí sí es lo importante. No lo voy a reemplazar ahí en la remesa del Norte.
+
+301
+00:46:30.740 --> 00:46:44.250
+Victor Flores Benites: Bueno, R. M. C. No se volvió el estándar a partir del 2 021, 2 000. 22 No sé seguro cuál de esos 2 años, entonces todos los mecanismos de de Transformer han estado utilizando. R. M. C, No.
+
+302
+00:46:44.780 --> 00:46:51.270
+Victor Flores Benites: Bueno, Mhm Perdone.
+
+303
+00:46:51.510 --> 00:47:05.240
+Victor Flores Benites: Sin embargo, en el año pasado nos han salido unos papers que son bastante interesantes. Okay, Como pueden ver aquí, lo que estamos haciendo son normalizaciones, ¿no? Entonces sobre todo las el todas las activaciones han
+
+304
+00:47:05.240 --> 00:47:14.420
+Victor Flores Benites: Tenemos que calcular un valor promedio, y todo eso no, lo cual es un un gasto computacional adicional que no termina siendo este conveniente.
+
+305
+00:47:14.460 --> 00:47:19.660
+Victor Flores Benites: El año pasado salió deat, que es dinamitar gente hiperbólica
+
+306
+00:47:19.760 --> 00:47:26.330
+Victor Flores Benites: que en un paper que se llama transformer Wit Out Normalization transformers sin normalización.
+
+307
+00:47:26.700 --> 00:47:31.570
+Victor Flores Benites: Lo que notaron era que nosotros podíamos
+
+308
+00:47:33.330 --> 00:47:41.349
+Victor Flores Benites: Nosotros podríamos prescindir de justamente esa etapa de normalización y directamente utilizar tangente, tangente hiperbólica.
+
+309
+00:47:41.510 --> 00:47:46.699
+Victor Flores Benites: la gente hidroerbólica Okay. Y eso sucede porque la mayoría de
+
+310
+00:47:47.710 --> 00:47:57.959
+Victor Flores Benites: digamos que la mayoría de valores termina funcionando. O sea, eso se vio empíricamente. Termina funcionando como una con un comportamiento bastante lineal
+
+311
+00:47:58.310 --> 00:48:15.570
+Victor Flores Benites: que se comporta como es con un tangente hiperbólico. Entonces, si comporta esta normalización, perdón, esa normalización como al fin de cuentas, o sea, el resultado de de toda esa activación de esa formalización como un tejido hiperbólica. ¿por qué no usar directamente gente hiperbólica? No.
+
+312
+00:48:15.570 --> 00:48:19.299
+Victor Flores Benites: Y es justamente lo que utilizaron es lo que propusieron el año pasado
+
+313
+00:48:19.600 --> 00:48:30.270
+Victor Flores Benites: y notaron que hubo una una mejora en el desempeño. Y de hecho, también hay una diferencia mucho más rápida porque no tienes calcular una media y una desviación
+
+314
+00:48:30.270 --> 00:48:40.160
+Victor Flores Benites: para cada una de las bueno, no tienes que calcular una métrica con Rvc Nor sobre todas las activaciones, sino que directamente van a pasar de manera paralela.
+
+315
+00:48:40.380 --> 00:48:51.269
+Victor Flores Benites: Este porcentaje de hiperbólico, ok, eso es deet y es bastante interesante es que todavía no ha sido como que absorbido, digamos sobre
+
+316
+00:48:51.400 --> 00:49:09.360
+Victor Flores Benites: l todos los modelos, pero se ve bastante prometedor de este como para mencionarlo. Y luego, también en diciembre del año pasado salió Darth, que bueno, aquí funciona con tarjeta hiperbólica. Aquí hicieron un análisis, como pueden ver, exhaustivo entre muchas funciones de
+
+317
+00:49:09.780 --> 00:49:17.709
+Victor Flores Benites: de activación para ver qué tipo de normalización podría ser el más adecuado y se dieron cuenta que es el más adecuado. Es: R. F,
+
+318
+00:49:17.870 --> 00:49:22.259
+Victor Flores Benites: R. F, ¿Se acuerdan? Que es la la función de error? Bueno.
+
+319
+00:49:22.460 --> 00:49:27.600
+Victor Flores Benites: la función de rock, claro es la integral de la gausiana que utilizamos para la definición de la gel.
+
+320
+00:49:28.010 --> 00:49:28.970
+Victor Flores Benites: Bueno.
+
+321
+00:49:29.050 --> 00:49:38.429
+Victor Flores Benites: utilizando Drf, o sea, utilizando esta función. Nosotros tenemos un mejor desempeño y no necesitamos ningún tipo de normalización.
+
+322
+00:49:38.430 --> 00:49:47.609
+Victor Flores Benites: Entonces, actualmente estamos ahí. Por el lado de normalización, El canon, digamos lo lo más utilizado es E, R, M, C, No.
+
+323
+00:49:47.610 --> 00:49:58.480
+Victor Flores Benites: Okay. Entonces se utiliza más esto. Actualmente investigación. Tenemos esas 2 que nos están qui ya diciendo que tal vez no sea tan necesario la normal, la Ca: La etapa de normalización en los transformers.
+
+324
+00:49:58.880 --> 00:50:04.309
+Victor Flores Benites: Ok, Bueno, este les parece. Si hacemos una pausa de 10 min.
+
+325
+00:50:05.700 --> 00:50:11.040
+Victor Flores Benites: Creo que ya estamos en la mitad de sí, son ceremitas. Y
+
+326
+00:50:11.690 --> 00:50:29.330
+Victor Flores Benites: si vi vi que un momento hubo un pico de 24 conectados. Luego bajó a 21. Siento que ya están un poco cansados. Así que pasamos 10 min y regresamos a las 8 y 37.
+
+327
+00:50:29.440 --> 00:50:30.510
+Victor Flores Benites: Claro.
+
+328
+01:02:49.930 --> 01:02:51.440
+Victor Flores Benites: bueno, vamos a continuar.
+
+329
+01:02:51.740 --> 01:02:54.129
+Victor Flores Benites: Nos hemos quedado en
+
+330
+01:03:00.760 --> 01:03:02.559
+Victor Flores Benites: aquí, nos habíamos quedado
+
+331
+01:03:06.830 --> 01:03:07.750
+Victor Flores Benites: algo por aquí.
+
+332
+01:03:09.500 --> 01:03:13.549
+Victor Flores Benites: El sábado. Tenemos clase no más clase presencial
+
+333
+01:03:13.900 --> 01:03:16.379
+Victor Flores Benites: tempranito a las 8 de la mañana.
+
+334
+01:03:17.300 --> 01:03:20.230
+Ing. Julio Salgado: No era virtual escritor. Creo que es virtual.
+
+335
+01:03:20.930 --> 01:03:22.820
+Victor Flores Benites: Ay desvirtual.
+
+336
+01:03:23.170 --> 01:03:30.189
+Victor Flores Benites: Bueno, yo te voy a tener que ir presencial, porque inmediatamente después tengo una clase presencial. Entonces tengo que estar allá.
+
+337
+01:03:32.210 --> 01:03:34.919
+Victor Flores Benites: Tengo que pedir que se para el salón
+
+338
+01:03:35.040 --> 01:03:39.620
+Victor Flores Benites: menos mal que me he fijado este
+
+339
+01:03:45.620 --> 01:03:46.390
+Victor Flores Benites: y tú.
+
+340
+01:03:47.290 --> 01:03:47.780
+Raul Pari: Mejor.
+
+341
+01:03:47.780 --> 01:03:49.470
+Victor Flores Benites: Okay! Sínteme.
+
+342
+01:03:49.690 --> 01:03:58.079
+Raul Pari: Una consulta. Este sábado tenemos clase, pero el siguiente creo que es la presentación del del.
+
+343
+01:03:58.280 --> 01:03:59.630
+Victor Flores Benites: Sí, Sí, Sí, Sí.
+
+344
+01:04:00.280 --> 01:04:06.530
+Raul Pari: A ver, tal vez podría dar algún detalle adicional de qué es lo que se espera y.
+
+345
+01:04:07.080 --> 01:04:10.300
+Victor Flores Benites: Sí, hay que ser una base de datos o algo no
+
+346
+01:04:12.120 --> 01:04:19.610
+Victor Flores Benites: a ver. Dame un minuto. ¿cierto? No le has enviado el base de datos. No ahorita. Lo soluciono
+
+347
+01:04:19.750 --> 01:04:23.420
+Victor Flores Benites: Primero les quiero mostrar.
+
+348
+01:04:29.520 --> 01:04:30.980
+Victor Flores Benites: Y
+
+349
+01:04:46.370 --> 01:04:49.069
+Victor Flores Benites: antes que nada, es la
+
+350
+01:04:51.270 --> 01:04:57.680
+Victor Flores Benites: eso. Es. Esa es la es la selección de Papers. Imagino que todos han seleccionado
+
+351
+01:04:57.930 --> 01:05:03.600
+Victor Flores Benites: excepto un grupo, y veo que julio está solito.
+
+352
+01:05:04.780 --> 01:05:15.629
+Victor Flores Benites: Qué momento pasó eso si todos tienen grupo tienen de 3 de hecho. Bueno al grupo 10.
+
+353
+01:05:16.160 --> 01:05:19.629
+Victor Flores Benites: No No sé por qué han dejado de estar en blanco, Pero, bueno.
+
+354
+01:05:19.910 --> 01:05:27.500
+Victor Flores Benites: al grupo 10, por favor, este seleccionan 1 de los de los este de los papers que quedan libres. Ok.
+
+355
+01:05:27.910 --> 01:05:30.529
+Victor Flores Benites: La idea es esta a ver.
+
+356
+01:05:30.850 --> 01:05:40.909
+Victor Flores Benites: Por ejemplo, alguien ha usado, ha seleccionado, Hay Hay transformer que este es una X, el P. D. F.
+
+357
+01:05:42.180 --> 01:05:55.080
+Victor Flores Benites: Aquí pueden ver la implementación, No, Lo que ustedes tienen que hacer es primero, leer y entender este cómo cómo funciona este. ¿cuál es el propósito de este Paper, no luego lo que tienen que hacer es implementarlo
+
+358
+01:05:55.190 --> 01:05:59.120
+Victor Flores Benites: y hacer una implementación, ese fran Scratch, o sea, no
+
+359
+01:05:59.310 --> 01:06:06.199
+Victor Flores Benites: no utilizar una implementación que tal vez tenga este este código, sino hacer ustedes mismos su implementación.
+
+360
+01:06:06.300 --> 01:06:10.779
+Victor Flores Benites: Yo voy a ver su código. Es de lo que
+
+361
+01:06:11.050 --> 01:06:23.559
+Victor Flores Benites: lo que van a presentar es justamente: Comparten el código Ok. Van a entender muy bien cómo funciona todo esto. Este entiende a a nivel como si ustedes fueran los autores.
+
+362
+01:06:24.140 --> 01:06:32.440
+Victor Flores Benites: Y este, luego de eso, como les mencionaba, van a tener que imple implementarlo y también van a tener que ejecutarlo en un
+
+363
+01:06:33.040 --> 01:06:34.659
+Victor Flores Benites: una base de datos.
+
+364
+01:06:35.010 --> 01:06:37.339
+Victor Flores Benites: A ver, déjame un minuto, por favor.
+
+365
+01:06:41.960 --> 01:06:43.070
+Victor Flores Benites: No, No.
+
+366
+01:06:50.710 --> 01:06:51.529
+Victor Flores Benites: sí que es como
+
+367
+01:07:45.200 --> 01:07:46.400
+Victor Flores Benites: la verdad es que no
+
+368
+01:07:46.940 --> 01:07:56.320
+Victor Flores Benites: le les voy a compartir este terminando la clase. Si no me voy a demorar un rato, también lo veo, les voy a compartir este este template
+
+369
+01:07:57.210 --> 01:08:06.029
+Victor Flores Benites: a ver lo que ustedes van a tener son 2. Este son 2 bases de datos, entonces lo que aquí van a hacer es una estimación de series de tiempo
+
+370
+01:08:06.380 --> 01:08:17.870
+Victor Flores Benites: justo todos sus los papers que han estado listados ahí son justamente este series de tiempo. Y bueno, tienen que hacer es estimar el el siguiente, no el
+
+371
+01:08:18.069 --> 01:08:31.380
+Victor Flores Benites: digamos que tienes hasta la posición 100, digamos, y lo que van es, en general, las 101, las 102, y así no dependiendo mucho del horizonte. Este van a tener diferentes tipos de resultados
+
+372
+01:08:32.600 --> 01:08:35.549
+Victor Flores Benites: en a ver deme un minuto.
+
+373
+01:08:48.069 --> 01:08:49.420
+Victor Flores Benites: De hecho.
+
+374
+01:08:53.510 --> 01:08:56.399
+Victor Flores Benites: estaba yo preparando una
+
+375
+01:09:00.090 --> 01:09:03.530
+Victor Flores Benites: un template de esto. Aquí está. Si lo hacemos.
+
+376
+01:09:04.069 --> 01:09:10.160
+Victor Flores Benites: lo que tiene que bajar es esta base de datos. Este aquí adentro tienen
+
+377
+01:09:10.430 --> 01:09:15.769
+Victor Flores Benites: varios archivos, ¿no? Este y cada 1 de estos son, como le mencionaba. Son de transformadores.
+
+378
+01:09:15.899 --> 01:09:22.720
+Victor Flores Benites: Y bueno, su tarea justamente vas a trabajar sobre esa base de datos. Ok, preparamos estos archivos que están acá
+
+379
+01:09:23.689 --> 01:09:35.439
+Victor Flores Benites: ¿vale? Luego de eso. Lo que tienen que hacer en un split, este tienen que hacer este, configurar ventanas, no toda esa configuración. De hecho, yo la he avanzado por aquí un poco. Ok
+
+380
+01:09:35.910 --> 01:09:41.610
+Victor Flores Benites: Aq: Aquí, lo que se están haciendo es iterar sobre esa base de datos, no
+
+381
+01:09:41.760 --> 01:09:48.450
+Victor Flores Benites: que justamente aquí están con los 2 archivos, no solamente que puedes usar solamente 2 archivos.
+
+382
+01:09:49.479 --> 01:10:05.340
+Victor Flores Benites: Bueno, sobre todo eso, como les mencionaba, vamos a seleccionar como que una secuencia larga que recordó que le puse 96, claro, una longitud de entrada a 96. Y luego lo que ustedes tienen que hacer es hacer predicciones de las secuencias
+
+383
+01:10:05.370 --> 01:10:15.499
+Victor Flores Benites: de longitudes, 24 significa que tra se quedan hasta el frame. Perdón. Es la muestra. 96, luego vuelve 97 98, y así.
+
+384
+01:10:15.640 --> 01:10:25.429
+Victor Flores Benites: 94 números. Ok, haces esa estimación y vamos a ver cuál es el desempeño. Luego haz lo mismo para un horizonte más grande, no 48 96 92, Y así,
+
+385
+01:10:25.460 --> 01:10:37.249
+Victor Flores Benites: eso, más que nada para ver que también, pues responde el modelo es para Longitudes. Este para el horizon horizonte grande. No
+
+386
+01:10:37.430 --> 01:10:43.990
+Victor Flores Benites: vale. Bueno, eso les voy a enviar en unos minutos terminando la clase.
+
+387
+01:10:57.250 --> 01:10:59.569
+Victor Flores Benites: y eso le subieron unos minutos.
+
+388
+01:11:00.260 --> 01:11:16.520
+Victor Flores Benites: Bueno, entonces cuando ustedes, bueno, primero, como le mencionaba, tienen que leer el paper entenderlo. Es implementarlo. Este probarlo bajo esa base de datos. Y lo que quiero es que ustedes hagan una breve presentación
+
+389
+01:11:16.630 --> 01:11:18.250
+Victor Flores Benites: y
+
+390
+01:11:18.560 --> 01:11:28.019
+Victor Flores Benites: hacen un vídeo, no tienen que ser este un vídeo con alta producción. Sé que algunos se preocupan de hacer el vídeo del mejor desempeño posible
+
+391
+01:11:28.470 --> 01:11:41.970
+Victor Flores Benites: explicando el paper primero y teniendo este, ¿qué es lo que, ¿cuál es la propuesta del paper y luego este, mostrando resultados? ¿no? ¿cómo se ¿Cómo se ha implementado. Eso también va a estar dentro del del este
+
+392
+01:11:43.150 --> 01:11:48.970
+Victor Flores Benites: de documento. Aquí es lo que le estaba mencionando. No, ahí está un poco más. Es es explicado a detalle.
+
+393
+01:11:49.150 --> 01:11:51.990
+Victor Flores Benites: Luego, el sábado.
+
+394
+01:11:52.470 --> 01:12:04.090
+Victor Flores Benites: Recuerdo que les habían dicho hoy. Les voy a poner bien las fechas, el sábado.
+
+395
+01:12:09.250 --> 01:12:12.690
+Ing. Julio Salgado: Víctor sería entonces solamente el el collark.
+
+396
+01:12:12.690 --> 01:12:13.280
+Victor Flores Benites: Deportes.
+
+397
+01:12:13.850 --> 01:12:14.899
+Ing. Julio Salgado: Y el vídeo.
+
+398
+01:12:15.600 --> 01:12:24.690
+Victor Flores Benites: S sí. O sea, lo que tendría que mandar es el el código que puede ser por Git Hack o colab. Y este y el video, claro.
+
+399
+01:12:24.810 --> 01:12:25.310
+Victor Flores Benites: ¿qué es.
+
+400
+01:12:25.310 --> 01:12:27.700
+Ing. Julio Salgado: Más o menos de cuánto tiempo.
+
+401
+01:12:28.420 --> 01:12:32.760
+Victor Flores Benites: Dieciocho minutos como máximo estaría bien.
+
+402
+01:12:33.290 --> 01:12:43.629
+Ing. Julio Salgado: Hay que explicar básicamente el contenido del paper más el desarrollo y con la diferentes partes implicancias y también mostrar las las pruebas.
+
+403
+01:12:43.630 --> 01:12:48.910
+Victor Flores Benites: Ajá, sí, o sea, explicar el paper como si ustedes fueran los autores.
+
+404
+01:12:48.910 --> 01:13:13.719
+Victor Flores Benites: luego mostrar el resultado, no explicar un poco ¿Cómo lo han implementado? No no leer el código en línea con línea, sino decir: ah, mira, hemos hecho esto. Este, no sé, lo hemos implementado con tal cosa. Encontramos este problema algo muy simple, porque, a fin de cuentas, voy a verlo en el código, no como lo hemos inventado. Luego, hacer una discusión sobre resultados. No diciendo mira aquí en este método, ha salido bien para horizontes pequeños
+
+405
+01:13:13.720 --> 01:13:20.139
+Victor Flores Benites: pero vigentes largos. Tal vez hubo una mayor dispersión, cosas así que eso lo presentan hasta el 13.
+
+406
+01:13:20.430 --> 01:13:29.450
+Victor Flores Benites: El claro. Ese día tenemos a las clases a las 8 uy, entonces
+
+407
+01:13:30.770 --> 01:13:39.790
+Victor Flores Benites: no puede ser el 13. El tema es que yo tengo que ver todos sus vídeos para poder hacerles preguntas porque el don el sábado Catorce.
+
+408
+01:13:40.020 --> 01:13:43.559
+Victor Flores Benites: Yo les voy a hacer preguntas justamente sobre lo que ustedes han trabajado
+
+409
+01:13:43.900 --> 01:13:51.109
+Victor Flores Benites: y si me lo presentan el 13 hasta medianoche. Voy a tener que verlo de madrugada y
+
+410
+01:13:51.670 --> 01:13:58.629
+Victor Flores Benites: no quiero estar agradecido, porque da igual tener este varias horas de clase. Entonces sería hasta el jueves.
+
+411
+01:13:58.950 --> 01:14:08.669
+Victor Flores Benites: Entiendo que la mañana está de trabajo. Entonces no les convendría, es decir, lo hasta el viernes al mediodía, por ejemplo. Entonces hasta el jueves, digamos hasta medianoche, hasta las 12
+
+412
+01:14:08.930 --> 01:14:14.000
+Victor Flores Benites: me envían eso. Y el sábado yo les hago las preguntas, y con eso se completaría la nota.
+
+413
+01:14:14.240 --> 01:14:22.140
+Ing. Julio Salgado: Ya Víctor Este, el el aula virtual está listo para recibir. Bueno, si es un video, puede ser un poquito cargado si está preparado para ello.
+
+414
+01:14:22.610 --> 01:14:26.259
+Victor Flores Benites: No, O sea, me lo volvían como links a ver. Les voy a enseñar.
+
+415
+01:14:26.260 --> 01:14:28.099
+Ing. Julio Salgado: Perfecto. Sí, el Drive ya está.
+
+416
+01:14:28.100 --> 01:14:32.359
+Victor Flores Benites: No, no me lo tienen. Que cargar un vídeo tal cual no sea.
+
+417
+01:14:32.510 --> 01:14:51.120
+Victor Flores Benites: me envían un link que puede ser del drive. O puedes si quieres, lo pueden subir a Youtube en en modo este no cifrado y no cifrado, perdón, no el listado, y es suficiente. El tema es que lo pueda ver. Lo que eso sí les voy a pedir es que ustedes lo puedan compartir entre todos los del todo el salón.
+
+418
+01:14:51.120 --> 01:15:03.749
+Victor Flores Benites: Eso es completamente opcional. Por ejemplo, el método del Transformer tal vez esté al al resto del grupo les interesa. Entonces les les interesaría tal vez ver el vídeo de cómo lo explican y todo eso como lo limitado.
+
+419
+01:15:03.750 --> 01:15:13.359
+Victor Flores Benites: Entonces, dentro del formulario que les voy a compartir. Va a haber un una pregunta que dice: ¿está de acuerdo con compartir el video. Si le ponen sí. Entonces voy a compartir ahora los términos
+
+420
+01:15:13.430 --> 01:15:14.250
+Victor Flores Benites: a ti.
+
+421
+01:15:15.680 --> 01:15:16.640
+Victor Flores Benites: Vale.
+
+422
+01:15:20.190 --> 01:15:22.180
+Victor Flores Benites: Vamos a terminar.
+
+423
+01:15:22.740 --> 01:15:28.809
+Ing. Julio Salgado: Ya en en el documento que nos haya visto. ¿están todos los datos? No sí. Todos los.
+
+424
+01:15:28.970 --> 01:15:33.539
+Victor Flores Benites: Sí, Sí, Sí, es es una tasa de por sí bastante pequeña. Son. C, C, V: Eso no.
+
+425
+01:15:33.860 --> 01:15:34.990
+Ing. Julio Salgado: Ya gracias.
+
+426
+01:15:38.110 --> 01:15:41.380
+Victor Flores Benites: Okay Scott: Sí,
+
+427
+01:15:46.630 --> 01:15:53.239
+Victor Flores Benites: Okay. Vamos a terminar y con transformers
+
+428
+01:15:56.830 --> 01:16:11.650
+Victor Flores Benites: a ver. Ju: justo. Es en esta última parte. Lo que estamos viendo son algunas mejoras sobre el transformer original. No habíamos visto hasta ahora unas mejoras sobre exposición al email. Hemos visto una mejora sobre la normalización, que tal vez
+
+429
+01:16:11.810 --> 01:16:12.720
+Victor Flores Benites: ajá,
+
+430
+01:16:12.760 --> 01:16:26.799
+Victor Flores Benites: no puedan parecer menos importantes este, pero también son bastante interesantes a lo que se pueden hacer. Ok, Como lo mencionaba. Imposition and coding Este hay toda una historia de evolución de cómo han sido actualizándose en los años.
+
+431
+01:16:26.830 --> 01:16:40.960
+Victor Flores Benites: Yo les he puesto lo más importante y bueno, al fin de cuentas, lo que más se utiliza es rope Ok, en normalización hay algo que parece que puede evolucionar hacia adelante el Este condit, que le estaba mencionado hace un momento.
+
+432
+01:16:41.350 --> 01:16:56.649
+Victor Flores Benites: Ahora le vamos a ver algunas mejoras sobre el la la etapa de multifertention, que justamente es el me etapa de atención que hemos estado discutiendo hace un rato, y la P etapa de Fiatform que justamente ahí está los mois. Perdón. Este julio.
+
+433
+01:16:56.790 --> 01:17:08.729
+Ing. Julio Salgado: Sí, Víctor. Esta información que tú nos estás acercando, se puede encontrar en Internet más o menos para tener una idea relativa de la arquitectura y de las mejoras de cara Este. El elemento no.
+
+434
+01:17:09.480 --> 01:17:15.269
+Victor Flores Benites: Sí. De hecho, aquí abajo pueden ver las fuentes abajo. Siempre coloco los papers.
+
+435
+01:17:17.370 --> 01:17:18.639
+Ing. Julio Salgado: Ya perfecto. Gracias.
+
+436
+01:17:19.330 --> 01:17:20.680
+Victor Flores Benites: Sí.
+
+437
+01:17:20.920 --> 01:17:33.009
+Victor Flores Benites: Entonas diapositivas, procuro colocarle en la parte de abajo los papers, que son la fuente de toda esa información, en algunos casos, Por ejemplo, aquí, que es una información mucho más pública, digamos.
+
+438
+01:17:33.010 --> 01:17:44.070
+Victor Flores Benites: no le he puesto. Tal vez debería haber puesto la el paper teléfono. Pero bueno que era un resumen, ¿no? R Merced Norm, que es nuevo, si le he puesto, y así no cada 1 de esos de acá
+
+439
+01:17:44.860 --> 01:18:02.039
+Victor Flores Benites: es así con todas las diapositivas que les he compartido. Por cierto, bueno, ahora vamos a continuar con unas mejoras con el de multi gesto. Aquí está el mecanismo de atención propiamente dicho: no donde estamos relacionando este los los topes, no para ver cómo
+
+440
+01:18:02.170 --> 01:18:06.830
+Victor Flores Benites: cómo mejorar a partir del contexto cada una de las representaciones vale.
+
+441
+01:18:06.980 --> 01:18:13.150
+Victor Flores Benites: Y bueno, ese es el mecanismo de acceso. Atención. No, este bueno puede ser atención. Puede ser clossa. Tention
+
+442
+01:18:13.390 --> 01:18:26.490
+Victor Flores Benites: El producto que es muy importante de todo este mecanismo es justamente el mecanismo de atenci el mapa de atención, no que justamente va a decir qué tan relevante es cada 1 de los tokens para generar la siguiente secuencia, ¿no?
+
+443
+01:18:27.950 --> 01:18:45.530
+Victor Flores Benites: Ok. Ahora, como ya hemos estado discutiendo este mecanismo tal cual, como como está presentado aquí, tiene algunos problemas. Primero, es que el costo computacional es bastante grande. Justamente esas matrices son n cuadrado que justo le estoy colocando la memoria.
+
+444
+01:18:45.720 --> 01:18:55.330
+Victor Flores Benites: El costo de memoria se ha declarado. No, Si tenemos 1 una este secuencias de un 1 000 000 por un 1 000 000 va a ser una matriz de un 1 000 000 por 1 000 000 no.
+
+445
+01:18:55.390 --> 01:19:10.219
+Victor Flores Benites: y también para calcular esa matriz tenemos que hacer productos, puntos, no productos, puntos entre vectores, no de tamaños. Des Por lo tanto, el costo computacional va a ser n cuadrado por B, y eso es bastante. No. Cuando tenemos secuencias largas de de muchos tipos de entradas.
+
+446
+01:19:10.330 --> 01:19:26.549
+Victor Flores Benites: El costo computacional va a ser alto y el costo de memoria va a ser alto, ¿no? Y eso va a ser prohibitivo para utilizar en muchos tipos de de dispositivos, No, Si tenemos clases de computadoras, tal vez podemos aprovecharlos, pero en situaciones más cotidianas no lo vamos a poder aprovechar muy bien, ¿no?
+
+447
+01:19:26.550 --> 01:19:33.720
+Victor Flores Benites: Y bueno, esa es una gran limitación que tenían los transformers, y es por eso de que no se utilizaba.
+
+448
+01:19:34.070 --> 01:19:48.100
+Victor Flores Benites: Digamos que los primeros años era muy prohibitivo. No sé si les había comentado de que, bueno, yo, cuando estudié la maestría. Los 2 018 aquellos años lejanos de 2 018, no se como pasó el tiempo.
+
+449
+01:19:48.270 --> 01:19:49.570
+Victor Flores Benites: y
+
+450
+01:19:49.610 --> 01:20:09.409
+Victor Flores Benites: en aquellos años existían ya los Transformers, pero era algo que se escuchaba como que de lejos era como que una arquitectura que era interesante, ya se está escuchando, pero necesitabas mucho cómputo. Así que realmente no nos enseñaban. Tampoco era que discutíamos. Solamente era algo que conversábamos por ahí no.
+
+451
+01:20:09.640 --> 01:20:16.589
+Victor Flores Benites: y justamente era por el costo computacional, como están viendo. Esto es muy pesado y estamos este un plazo de computadora para hacer algo así? ¿no?
+
+452
+01:20:16.700 --> 01:20:29.299
+Victor Flores Benites: Ok. Y bueno, lo que sucedió, sobre todo en el 2 020, fue buscar formas de optimizar bueno. En realidad es de antes. Solamente que el 2 020 salieron varias técnicas que son bastante interesantes.
+
+453
+01:20:30.160 --> 01:20:43.749
+Victor Flores Benites: Bueno, se trata de ver cómo optimizar, y también a nivel hardware ¿Cómo trabajar sobre estas matrices gigantes? Bueno, otro gran problema es que justamente el mecanismo de atención.
+
+454
+01:20:44.290 --> 01:21:02.800
+Victor Flores Benites: Bueno, pues les mencionaba lo que hace es una búsqueda sobre todos los toques. No, O sea, puede ser un texto de puede ser todo un libro, por ejemplo, y por cada toque lo que va a hacer es una búsqueda de información, sobre todo el libro. Ok. Entonces, si tenemos la palabra. No sé, por ejemplo, mar.
+
+455
+01:21:02.890 --> 01:21:11.310
+Victor Flores Benites: digamos, mar, este que estamos leyendo el libro, y en la parte hay una palabra que dice: mar va a buscar el significado de mar o vamos a tratar de interpretar el concepto de mar.
+
+456
+01:21:11.680 --> 01:21:24.800
+Victor Flores Benites: sobre todo los toppings, sobre todo el libro se dan cuenta que eso termina siendo muy, muy poco eficiente, no porque al fin de cuentas, no necesitamos todo el libro para entender el mar bajo un contexto muy establecido, ¿no?
+
+457
+01:21:25.110 --> 01:21:31.730
+Victor Flores Benites: Ok. Entonces no hay una explotación sobre el espectro local de la información.
+
+458
+01:21:31.740 --> 01:21:45.390
+Victor Flores Benites: y este eso es dejarlo completamente libre a las relaciones que pueden haber. Y posiblemente podemos encontrar falsas correlaciones. Ok, o sea, correlaciones que no
+
+459
+01:21:45.500 --> 01:21:52.459
+Victor Flores Benites: me entiendes? No sé, correlaciones falsas, ¿no? Y bueno, por otro lado, viendo ya por el lado de las imágenes.
+
+460
+01:21:53.630 --> 01:22:00.770
+Victor Flores Benites: ya hemos visto una arquitectura, tal vez de Transformers, las C. N. N. S, que justamente tenían una
+
+461
+01:22:01.080 --> 01:22:10.320
+Victor Flores Benites: una arquitectura que explotaba mucho esa relación local. No recuerdan que trabajábamos con matrices, no matrices que eran 3 por 3 eran matrices pequeñas.
+
+462
+01:22:10.320 --> 01:22:25.899
+Victor Flores Benites: entonces todo lo demás de la imagen estaba como que incierto, me refiere en una sola capa de procesamiento. Ya saben, que esta múltiple capa ser campo receptivo es más grande y así. Pero si analizamos solamente una capa, su entrada y salida. Lo único que analiza es esa matriz 3 por 3.
+
+463
+01:22:26.440 --> 01:22:38.290
+Victor Flores Benites: Considerando que el canon se podría estar. Entonces este estamos explotando la información local. Ok, en cambio, los transformers. Lo que hacen es ver todo todo el tiempo, ¿no?
+
+464
+01:22:38.340 --> 01:22:47.889
+Victor Flores Benites: Y lo cual es completamente este ineficiente. Y también, como les mencionaba, nos puede llevar a encontrar este falsas correlaciones. Bueno.
+
+465
+01:22:48.010 --> 01:23:02.049
+Victor Flores Benites: este comportamiento de eso, de tener un sesgo, hacia buscar una información, ya sea local o algo de un tipo, co como decir, sesgar hacia un tipo de comportamiento de un tipo de modelamiento que va a tener el el
+
+466
+01:23:02.050 --> 01:23:13.640
+Victor Flores Benites: La arquitectura se llama sesgo inductivo, en este caso en la C. N. N. S. El sesgo inductivo es muy fuerte porque de por sí lo único que está analizando es esa pequeña ventana, no que suele ser 3 por 3 okay
+
+467
+01:23:13.720 --> 01:23:18.990
+Victor Flores Benites: y bueno. Se ha visto que el cerebro, o sea, como un este.
+
+468
+01:23:19.090 --> 01:23:26.179
+Victor Flores Benites: un organismo que bueno, un órgano perdón, este que nosotros solemos imitar, no porque funciona bastante bien
+
+469
+01:23:26.220 --> 01:23:41.549
+Victor Flores Benites: El El cerebro no hace como un proceso de atención de todos contra todos, sino que selecciona pequeñas regiones. No trabaja con un subconjunto Okay, entonces es una exploración local. Aprovecha la estructura local de los datos.
+
+470
+01:23:41.640 --> 01:23:56.940
+Victor Flores Benites: Y bueno, eso nos está aprovechando de directamente con el mecanismo de atención a los transformers Ok, entonces posiblemente la respuesta de nuestro a nuestros problemas sea explotar la localidad de los datos.
+
+471
+01:23:57.680 --> 01:24:04.850
+Victor Flores Benites: Y justamente es lo que va a hacer este Sparth a Pension o, bueno, los me los métodos de
+
+472
+01:24:05.190 --> 01:24:09.180
+Victor Flores Benites: de procesamiento local, digamos, 1 de ellos se llama lonformer.
+
+473
+01:24:09.350 --> 01:24:28.939
+Victor Flores Benites: Una vez más, recuerden que aquí les voy a mostrar cómo que algunos puntos son los hitos. Sin embargo, estas técnicas es muy explorado en varias propuestas, Ok, mostrándolo en formar, pero hay varios. Por ejemplo, El primero de estos era sparks Transformer. Tienes una idea bastante similar.
+
+474
+01:24:28.990 --> 01:24:37.429
+Victor Flores Benites: Ok, Aquí lo que hacen es explorar diferentes tipos de hacer técnicas de hacer ventaneo, por ejemplo, aquí,
+
+475
+01:24:37.920 --> 01:24:39.250
+Victor Flores Benites: pero sí
+
+476
+01:24:39.540 --> 01:24:47.169
+Victor Flores Benites: ¿cierto? No puedo dibujar cuando lo tengo así, pero ni modo ya esté cada 1 de esos puntos son este topes, ¿no?
+
+477
+01:24:47.340 --> 01:24:57.759
+Victor Flores Benites: Ok, ese es el token, 1, 2, 3. Y así no todos nosotros. Y aquí solo tocan correlaciones, no 1, 2, 3. Y así, con todos los zombis, ¿no? Ok.
+
+478
+01:24:57.960 --> 01:25:04.579
+Victor Flores Benites: Si fuera el transformer original, lo que haríamos es que el token 1 se relaciona con todos los tokens.
+
+479
+01:25:04.730 --> 01:25:13.470
+Victor Flores Benites: Ok, lo que va a hacer el oformers es no trabajar directamente con todos los tokens, sino trabajar con una pequeña ventana, No.
+
+480
+01:25:14.340 --> 01:25:20.010
+Victor Flores Benites: como pueden ver ahí ese tamaño. Este Bueno, son 3 toques más adelante, no que en total son 4.
+
+481
+01:25:20.280 --> 01:25:26.850
+Victor Flores Benites: Vale ahora igual una posición de acá. Digamos que ese es el toque
+
+482
+01:25:27.360 --> 01:25:35.170
+Victor Flores Benites: que sería el Token 9, tal vez, digamos, 9. Ok, ese token 9, no está relacionándose con todos los tokens.
+
+483
+01:25:35.440 --> 01:25:36.750
+Victor Flores Benites: sino que
+
+484
+01:25:36.900 --> 01:25:50.739
+Victor Flores Benites: está relacionándose solamente con los que están en su vecindad. No 3 toques arriba y toque 3 toques a bancos sobre esa vecindad es donde se está haciendo el producto, punto, no sobre todo solamente sobre ese pequeño tracción. Okay.
+
+485
+01:25:50.860 --> 01:26:01.550
+Victor Flores Benites: Y bueno, esto de hecho, es deman de cierto modo similar a cómo se comportaban las C. N N's. No recuerden que no estamos prestando tal imagen, sino pequeñas ventanas de 3 por 3, no
+
+486
+01:26:01.570 --> 01:26:20.210
+Victor Flores Benites: en. Y bueno, lo que descubrimos se acordarán en D G es que podíamos combinar diferentes tipos de ventanas, o sea, en cascada no y tener campos receptivos más grandes, No, la misma idea se explora aquí. Ok, recuerde que vamos a tener varias etapas de Transformers, No, por ejemplo, que se transformers unos con otros
+
+487
+01:26:20.240 --> 01:26:24.270
+Victor Flores Benites: para cada 1, digamos con con un transformer. Acá
+
+488
+01:26:24.940 --> 01:26:28.590
+Victor Flores Benites: Aquí tenemos un token, un token que ve este.
+
+489
+01:26:28.900 --> 01:26:29.960
+Victor Flores Benites: No me acuerdo. Así
+
+490
+01:26:30.790 --> 01:26:40.210
+Victor Flores Benites: que ve 1 atrás, perdón, 1 atrás y 1 adelante. Ok. Entonces el resultado de aquí de este Token de acá lo que está viendo es
+
+491
+01:26:40.560 --> 01:26:46.820
+Victor Flores Benites: un 1 atrás y 1 adelante, ¿no? Ahora, si colocamos aquí
+
+492
+01:26:47.360 --> 01:26:51.789
+Victor Flores Benites: otro más, otra capa más como lo que hacíamos en las este en
+
+493
+01:26:52.520 --> 01:27:10.450
+Victor Flores Benites: la virgine psicoanálisis. Nos damos cuenta que este token que hemos analizado para tener este de acá es el resultado de operar este y este no. Ok. Y este Token es el resultado para este este. Y este no significa que viene desde menos 2 a 2, no la
+
+494
+01:27:10.450 --> 01:27:23.099
+Victor Flores Benites: Ok. Entonces, a fin de cuentas, este resultado es el resultado de este Token. Para esta representación es el resultado, debe operar toda esa secuencia de Tokens, no un campo receptivo mucho más grande, ¿no?
+
+495
+01:27:23.100 --> 01:27:33.219
+Victor Flores Benites: En este caso, visto como secuencias. Ok, la misma idea que teníamos en la Cnns, ahora explorada en otras formas. Ok, es la idea que exploró don forment
+
+496
+01:27:33.220 --> 01:27:44.210
+Victor Flores Benites: y también utilizó algo que era muy similar, que es lo que habíamos visto también en C. N. N. S, que son este ventanas dilatadas. No se acuerdan convulsiones dilatadas
+
+497
+01:27:46.530 --> 01:27:50.659
+Victor Flores Benites: en la estaba buscando por aquí,
+
+498
+01:27:55.220 --> 01:27:59.809
+Victor Flores Benites: hablábamos de convulsiones dilatadas aquí
+
+499
+01:28:03.240 --> 01:28:07.180
+Victor Flores Benites: y no, no
+
+500
+01:28:08.880 --> 01:28:21.289
+Victor Flores Benites: se ponen de esto, ¿no? O sea, ese carnet ha sido ampliado como para tener un campo receptivo más grande, no con menos parámetros de De la misma forma, aquí podríamos ampliar este campo receptivo.
+
+501
+01:28:21.800 --> 01:28:25.539
+Victor Flores Benites: Es decir, efectivamente, lo que está haciendo es seleccionar
+
+502
+01:28:25.580 --> 01:28:39.700
+Victor Flores Benites: de 3 adelante y 3 atrás, pero el campo receptivo, pues combinado va a ser un campo receptivo mucho más amplio, ¿no? Entonces este esas son las ideas que he explorado conforme justamente basado un poco en cómo se trabajaba con la C. D. N. S.
+
+503
+01:28:39.700 --> 01:28:45.860
+Victor Flores Benites: Y pueden ver que aquí reducimos mucho el tamaño de esas ventanas de atención. No.
+
+504
+01:28:45.900 --> 01:28:48.430
+Victor Flores Benites: sí, eso es una gran idea.
+
+505
+01:28:48.500 --> 01:28:53.489
+Victor Flores Benites: Otro enfoque, Ok, recuerden que esto de acá. Es el informe
+
+506
+01:28:53.740 --> 01:29:11.269
+Victor Flores Benites: pertenece lo forma y pertenece a toda una gran familia de modelos, digamos, de ideas, de justamente, trabajar solo en una ventana mucho más reducida. ¿no? Entonces debes de trabajar con todos los tokens trabajar solamente con un subgrupos, ¿no? Y bueno, ahí, combinando con diferentes este capas. No.
+
+507
+01:29:11.380 --> 01:29:15.659
+Victor Flores Benites: otra idea es este la presentada en informe.
+
+508
+01:29:15.800 --> 01:29:17.060
+Victor Flores Benites: Este?
+
+509
+01:29:17.430 --> 01:29:23.170
+Victor Flores Benites: Bueno, por cierto, en esos años salió lon former informer y reformar
+
+510
+01:29:23.530 --> 01:29:39.780
+Victor Flores Benites: Son ideas diferentes. Por eso, por cierto, esta reforma es una idea bastante interesante donde lo que hacían era a ver el mecanismo de atención se basa en un producto, punto luego aplicar un Sogmatz y luego publicar con la matriz, V. No.
+
+511
+01:29:40.010 --> 01:29:42.490
+Victor Flores Benites: Esa de acá no. Justamente esta ecuación de acá
+
+512
+01:29:43.500 --> 01:29:52.740
+Victor Flores Benites: Okay. Y el gran problema es que esto de acá genera una matriz que es n por n ok. Entonces lo que propone Don Former.
+
+513
+01:29:52.880 --> 01:30:04.600
+Victor Flores Benites: una bueno, es una n por n que multiplica que es una n por B Ok. Lo que propone el informe se reformer que les mencionó así un poco. Este por encima
+
+514
+01:30:04.600 --> 01:30:21.100
+Victor Flores Benites: es no hacer esa operación de este tipo, o sea, no trabajar directamente en que trabajar. Este calcular directamente esa matriz de atención, sino hacer un estimador de toda esta operación para directamente, trabajar sobre una matriz n por D, que es mucho más reducido, no.
+
+515
+01:30:21.110 --> 01:30:27.390
+Victor Flores Benites: Y para eso utiliza este Random Fighter Bichos.
+
+516
+01:30:28.910 --> 01:30:35.189
+Victor Flores Benites: Bueno, utilizan una una teoría de proyección. Básicamente es un es un diseñador basado en proyecciones aleatorias
+
+517
+01:30:35.340 --> 01:30:52.289
+Victor Flores Benites: funciona bastante bien. El tema es que es un estimador, así que depende mucho de ese muestreo y todo lo demás. No, Bueno, eso es otra técnica. Otra forma de trabajarlo es eso que se llama el informe. Ahora, ¿en qué consiste el informe?
+
+518
+01:30:52.340 --> 01:30:57.190
+Victor Flores Benites: Conocen que las matrices de bajo rango. Creo que alguna vez les he preguntado eso.
+
+519
+01:31:00.250 --> 01:31:06.650
+Victor Flores Benites: Low Round Matrix: ¿Han escuchado eso? ¿se acuerdan?
+
+520
+01:31:08.890 --> 01:31:10.870
+Victor Flores Benites: ¿qué es el rango de una matriz.
+
+521
+01:31:14.020 --> 01:31:16.120
+Ing. Julio Salgado: No era este tamaño de las mismas.
+
+522
+01:31:17.280 --> 01:31:18.530
+Ing. Julio Salgado: Lunes: las.
+
+523
+01:31:18.860 --> 01:31:22.660
+Victor Flores Benites: No necesariamente es el tamaño de las muestras del rango.
+
+524
+01:31:25.590 --> 01:31:26.680
+Victor Flores Benites: ¿se acuerdan?
+
+525
+01:31:28.580 --> 01:31:37.199
+Victor Flores Benites: Bueno, de hecho, eso se suele definir para sistemas ecuaciones, por ejemplo, si tienen signo variables, cuántas ecuaciones necesitan
+
+526
+01:31:37.440 --> 01:31:43.700
+Victor Flores Benites: filas diferentes? Bueno, diferentes, no, no exactamente.
+
+527
+01:31:45.200 --> 01:31:52.199
+Victor Flores Benites: O sea, cambiaría la palabra. Diferentes. Por he leí linealmente independientes. Exacto.
+
+528
+01:31:52.340 --> 01:32:08.320
+Victor Flores Benites: Lo que estamos buscando es cuántas filas son linealmente independientes? Ok, por ejemplo, lo que mencionabas. No creo que les dije 6. Si tenemos 6, Este variables, necesitamos 6 ecuaciones, no 6 ecuaciones que sean linealmente dependientes. Si la ecuación 3
+
+529
+01:32:08.320 --> 01:32:13.609
+Victor Flores Benites: se obtiene a partir de la una y 2, o sea, sumando la N Dos, significa que la 3 es como si no estuviera, ¿no?
+
+530
+01:32:13.640 --> 01:32:32.079
+Victor Flores Benites: Y bueno, justamente para expresar esa cantidad efectiva de ecuaciones, definimos el factor de rango, ¿no? Por ejemplo, si tenemos 6 ecuaciones y la y la 3 se obtiene de la 1 y 2. Significa que de forma efectiva tenemos solamente 5: el rango es 5, ese rango de la matriz.
+
+531
+01:32:32.230 --> 01:32:48.570
+Victor Flores Benites: También lo podemos ver como que el espacio en realidad está reducido a una dimensión menor, no a 5 dimensiones, ¿no? Y bueno. Algo que se dieron cuenta es que a ver. Nosotros estamos trabajando con diferentes tops, no diferentes toques de palabras.
+
+532
+01:32:48.750 --> 01:32:55.500
+Victor Flores Benites: Cada token son diferentes vectores, pero se dieron cuenta que justamente esos vectores, Ok.
+
+533
+01:32:55.610 --> 01:33:10.130
+Victor Flores Benites: están en bajo rango. Significa que lo podemos expresar con muchas menos dimensiones. Ok, Si si hemos descubierto empíricamente que son de bajo rango, ¿qué tal si debes de hacer el trabajo en esas todas esas dimensiones
+
+534
+01:33:10.270 --> 01:33:14.520
+Victor Flores Benites: de de, no sé de los 1 000 tokens. Lo reducimos a un rango mucho más
+
+535
+01:33:15.000 --> 01:33:22.739
+Victor Flores Benites: reducido. No es de un rango efectivo equivalente al rango de efectivo. ¿no? Ok. Y es justamente la idea del informe. Ok.
+
+536
+01:33:22.970 --> 01:33:27.230
+Victor Flores Benites: Entonces teníamos, digamos, 100 Tokens Okay.
+
+537
+01:33:27.400 --> 01:33:40.819
+Victor Flores Benites: pero por teoría, este directamente. Nos hemos dado cuenta que esos 100 tokens en realidad se pueden representar con muchos menos toques, no que no son toques reales, Pero son tokens, digamos, equivalentes, digamos, en un espacio reducido.
+
+538
+01:33:40.920 --> 01:33:43.930
+Victor Flores Benites: Okay en un logro, digamos, en
+
+539
+01:33:44.350 --> 01:33:52.890
+Victor Flores Benites: en 10. Ok. Entonces cuando hacemos el proceso de atención. No vamos a hacer una mu una matriz de 100 por 100 Si vamos a tener una matriz de 10 por 10.
+
+540
+01:33:53.030 --> 01:33:59.270
+Victor Flores Benites: Esa es la gran idea del informe. Justamente es es aprovechar el el ahorrando Okay.
+
+541
+01:33:59.590 --> 01:34:04.380
+Victor Flores Benites: Bueno, este más adelante vamos a ver otra forma que
+
+542
+01:34:04.610 --> 01:34:08.460
+Victor Flores Benites: en un ratito vamos a verlo, que justamente es la propuesta de Dipzik.
+
+543
+01:34:08.600 --> 01:34:18.229
+Victor Flores Benites: Para este reducir el el el costo computacional Ok, que de hecho, se se relaciona un poco a esto de aquí.
+
+544
+01:34:18.400 --> 01:34:21.749
+Victor Flores Benites: Ahora vamos a ver.
+
+545
+01:34:22.650 --> 01:34:27.210
+Victor Flores Benites: Bueno, por otro lado, otra gran imitación. Otro gran problema que teníamos
+
+546
+01:34:28.240 --> 01:34:43.929
+Victor Flores Benites: era el tema de los heads a ver. Los Heads. Son muy buenos en sentido de que tenemos muchas formas de analizar la secuencia. El gran problema es que por cada hed vamos a tener una matriz de atención, ¿no? Entonces, si tenemos este 16, Heads
+
+547
+01:34:44.330 --> 01:34:54.030
+Victor Flores Benites: significa que vamos a aplicar por 16 el número de matrices de atención? ¿no? Y bueno, por cada 1 tenemos que calcular su Ki cualquiera, lo cual es un costo convencional también alto
+
+548
+01:34:54.220 --> 01:35:07.499
+Victor Flores Benites: y bueno. S: Justamente como queremos nosotros, optimizar el número de parámetros y la velocidad de procesamiento. Se exploró este reducir o, bueno, simplificar esas presiones entre los heats.
+
+549
+01:35:07.730 --> 01:35:15.199
+Victor Flores Benites: Y bueno, aquí habían 2 variantes, los los los cuales agrupados y los multicolores, Ok.
+
+550
+01:35:15.590 --> 01:35:21.329
+Victor Flores Benites: los coches agrupados. Lo que dice es que, como pueden ver aquí en la imagen.
+
+551
+01:35:21.740 --> 01:35:36.560
+Victor Flores Benites: vamos a compartir este, los mismos kiss y valores entre diferentes heats. A ver, podemos partir por por el caso base. No tenemos aquí perdón.
+
+552
+01:35:37.520 --> 01:35:56.239
+Victor Flores Benites: el Head, 1. Heat: 2, G 3, este, 4, 5, 6, 7, 8. No Heat, 8 Ok por cada 1 de los heats. Pueden ver que tenemos nuestro key cuer y Barne no como toda la vida. Ok, En en los cueres agrupados. Lo que vamos a hacer es agrupar, por ejemplo.
+
+553
+01:35:56.320 --> 01:36:01.150
+Victor Flores Benites: eso es un hiper parámetro de 2 en 2. Ok. Eso implica que.
+
+554
+01:36:01.440 --> 01:36:07.289
+Victor Flores Benites: claro que cada Hedge va a tener su propio juego. Ok, Eso sí se va a mantener C:
+
+555
+01:36:08.330 --> 01:36:24.460
+Victor Flores Benites: este. Pero L, por ejemplo, los hets Unidos van a compartir el mismo ki. Eso va a ser el kit para un y 2. Entonces va a ser el kit para 3 y 4, el ki para 5 y 6. Y bueno, Ki, para 7 y 8 igual para el bar. No me bueno, me entiende la idea, ¿no?
+
+556
+01:36:26.010 --> 01:36:35.809
+Victor Flores Benites: Okay es y bueno, el Lo bueno de eso es que estamos calculando mucho menos Keys y vales. No, Eso significa mucho el costo computacional.
+
+557
+01:36:35.900 --> 01:36:47.620
+Victor Flores Benites: Vale, este. Por otro lado, tenemos el multi query, que sería la versión más extrema de todo eso. No solamente vamos a calcular un ki y un valve para todos los Heads.
+
+558
+01:36:47.680 --> 01:36:57.740
+Victor Flores Benites: Ok. Entonces cada 1 de los tokens van a tener solamente un kit y un valor, y cada 1 de los que es lo que van a hacer diferentes códigos por diferentes consultas. Ok. Entonces.
+
+559
+01:36:57.950 --> 01:37:09.559
+Victor Flores Benites: bueno, evidentemente esto va a degradar este en cierto modo el desempeño, porque es una versión es extrema. Esto termina siendo por lo general algo más conveniente en muchos casos.
+
+560
+01:37:09.970 --> 01:37:17.940
+Victor Flores Benites: Ok, Siguiendo esta Este son métodos de de optimización.
+
+561
+01:37:18.260 --> 01:37:20.010
+Victor Flores Benites: Bueno, el
+
+562
+01:37:20.490 --> 01:37:34.829
+Victor Flores Benites: el anterior pasado, pero bueno, se volvió popular a inicios del año pasado. Los me los modelos de deepsic deepsic versión, 2 finales de 2 024. Fue por esa propuesta. Luego salió el dipsi versión, 3,
+
+563
+01:37:35.120 --> 01:37:44.719
+Victor Flores Benites: pero en esa versión presentaron una innovación que es bastante interesante, que es el multi multihead latten atentation Ok.
+
+564
+01:37:49.700 --> 01:38:07.659
+Victor Flores Benites: Varios de los métodos de este. Los modelos chinos van a utilizar esta arquitectura, el multihel la tenegation, porque de hecho funciona bastante bien y significa mucho el en las operaciones que necesitamos el número, el costo comercial se reduce bastante.
+
+565
+01:38:07.910 --> 01:38:10.879
+Victor Flores Benites: Vale, Lo que vamos a hacer
+
+566
+01:38:11.340 --> 01:38:26.320
+Victor Flores Benites: es trabajar sobre un espacio latente. Vamos a reducir el número, el de universidades. A ver. Lo voy a explicar en un momento en otro gráfico, pero quiero que vean aquí todo el esquema que bueno, de hecho se parece, se ve bastante complejo, no
+
+567
+01:38:26.450 --> 01:38:34.829
+Victor Flores Benites: a ver. Recuerde que nosotros, al inicio, como entrada tenemos este la representación de cada 1 de los toques. No, cada una de esas bolitas son diferentes topes No.
+
+568
+01:38:35.640 --> 01:38:49.549
+Victor Flores Benites: a partir de esos toques. Vamos a generar 2 latentes que 2 latentes significa como espacios intermedios no que suelen ser de menor dimensionalidad, algo similar a lo que teníamos en el bote Net de la de la red. No
+
+569
+01:38:49.640 --> 01:39:08.159
+Victor Flores Benites: que eso sería el espacio latente de menos dimensiones, ok, para el qudi, 1 para el cuello, y el otro para el que el valve. No recuerden, el quady es la información que buscamos. Y el Key Valverde es la información que podemos aportar, no por lo general, como habrás notado también que los key vale, siempre están juntitos, no unos con otros.
+
+570
+01:39:08.320 --> 01:39:16.229
+Victor Flores Benites: Vale. Y bueno, a partir de este latente vamos a obtener los fuellies que latente es el el
+
+571
+01:39:16.430 --> 01:39:23.899
+Victor Flores Benites: del código. Vamos a generarlo. Bueno, los quaris y el po latente es el Kit. Vale, vamos a generar? Bueno, el Kirk vale.
+
+572
+01:39:24.160 --> 01:39:31.620
+Victor Flores Benites: Entonces esto lo que va a hacer es generar como un cuello de botella, igual que la
+
+573
+01:39:31.790 --> 01:39:34.589
+Victor Flores Benites: que la red con el bote desde la red, No, tú
+
+574
+01:39:39.960 --> 01:39:58.639
+Victor Flores Benites: perdona este, pero también van a ser un juego bastante interesante con el cómo se llama esto. Con el positial email se acordarán hace un momento. Estamos hablando de rogue, que es el positional en beding de los Este, que se utiliza por defecto, no en la serie mensual actualmente
+
+575
+01:39:58.690 --> 01:40:01.360
+Victor Flores Benites: les mencionaba que
+
+576
+01:40:02.030 --> 01:40:13.720
+Victor Flores Benites: el valor de esa exposición en Coding es de posición de meding perdón. Es en la operación del Ki y el query, no el el query, punto punto con el Ki.
+
+577
+01:40:13.840 --> 01:40:18.749
+Victor Flores Benites: Y mientras que con el baile no es necesario, y justamente aquí pueden ver que las 2 está picando el rock, no
+
+578
+01:40:19.970 --> 01:40:21.740
+Victor Flores Benites: a ver alejarme.
+
+579
+01:40:22.440 --> 01:40:25.579
+Victor Flores Benites: Aquí hice un dibujo un poco más.
+
+580
+01:40:25.930 --> 01:40:28.580
+Victor Flores Benites: Me parece digerible. Con respecto a esto.
+
+581
+01:40:28.720 --> 01:40:29.660
+Victor Flores Benites: A ver.
+
+582
+01:40:31.300 --> 01:40:48.100
+Victor Flores Benites: pueden ver que estamos generando diferentes tipos de señales, No, Lo que vamos a hacer, producto punto es entre el entre el key y el cuerin. No. Luego puedes ver lo que está acá ahora. Lo otro que que pueden notar aquí en ese dibujo es que vamos a tener 2 tipos de Querys.
+
+583
+01:40:48.100 --> 01:40:59.650
+Victor Flores Benites: Un quary con posición en beding significa con esas rotaciones. Y un quory con puro puro vector no pura información. Bueno, algo que se dieron cuenta los de Deep Six low. Nuestros amigos chinos
+
+584
+01:40:59.780 --> 01:41:12.630
+Victor Flores Benites: fue que justamente es más provechoso tener un una parte de las dimensiones que sean de puramente información, y el otro que sea información combinada con la información de posición con el Roth en este caso.
+
+585
+01:41:12.780 --> 01:41:25.909
+Victor Flores Benites: Y bueno, si hacemos eso con el query, también tenemos que hacerlo con el kit, No, el Ki. Va a tener este un kit que va a ser puro de pura información y un kit que este va a tener con el positional in Bay
+
+586
+01:41:25.910 --> 01:41:40.100
+Victor Flores Benites: Okay, que justamente está aplicando el rode Ahora, noten también que este este que ese kit, que está con rode no viene del de latente, sino viene de la información pura. ¿no? Entonces no no tiene el bote que le estaba describiendo
+
+587
+01:41:40.280 --> 01:41:54.289
+Victor Flores Benites: experimentalmente. Se dieron cuenta que al hacer que esto a ver si nos un pero que que esto provenga también de la misma fuente. El desempeño se degradaba bastante. Es como que el
+
+588
+01:41:54.750 --> 01:42:04.259
+Victor Flores Benites: la arquitectura, bueno, el la red es muy sensible cuando se aplica un bote nec en esta en ese componente. No corresponde para aquí.
+
+589
+01:42:04.750 --> 01:42:08.320
+Victor Flores Benites: Entonces, para para solucionar este problema, simplemente lo
+
+590
+01:42:08.500 --> 01:42:14.169
+Victor Flores Benites: lo que hicieron fuera de esa proyección, no de esa proyección latente ¿Vale?
+
+591
+01:42:14.290 --> 01:42:18.070
+Victor Flores Benites: Y bueno, claro.
+
+592
+01:42:19.490 --> 01:42:36.450
+Victor Flores Benites: al fin de cuentas vamos a tener este este kit compuesto, no este con ese producto. Punto entre esos 2 no donde se basa ese producto. Punto entre los que tienen rotación en forma correspondiente, que ya saben que, al fin de Cuentas ese producto. Punto, lo que va a hacer es calcular una diferencia entre las 2 posiciones.
+
+593
+01:42:36.720 --> 01:42:49.259
+Victor Flores Benites: Y también va a comparar información pura. Ok. Y bueno, también tenemos el vale, no el valor que si lo obtenemos directamente de de latente. Ahora, el barrio, como les mencionaba. No es necesario tener el posicionado en
+
+594
+01:42:50.120 --> 01:42:55.770
+Victor Flores Benites: Ok, Bueno, eso es la propuesta de Dipsey utilizar una representación latente.
+
+595
+01:42:56.240 --> 01:43:02.550
+Victor Flores Benites: Eso fue una muy buena idea. Este mejoró bastante el desempeño, aquella versión
+
+596
+01:43:02.850 --> 01:43:21.079
+Victor Flores Benites: y bueno. También a fines del año pasado, en el 2 000. 25 El año pasado salió también una nueva innovación de Deep Sic que se llama Deepsic Sparks Atention. Y justamente eso lo voy a conectar un poco con el es el informe al que le hicimos hace un rato, que es un método de Sparks atention
+
+597
+01:43:21.300 --> 01:43:27.669
+Victor Flores Benites: que lo que vamos a hacer es una selección de que Tokens vamos a aplicar el mecanismo de atención.
+
+598
+01:43:27.720 --> 01:43:40.439
+Victor Flores Benites: Les mencionaba. No podemos tener muchos tokens pueden ser un 1 000 000 de tokens. Pero no todos los tokens pueden ser relevantes. Les daba el ejemplo de la palabra mar, no diciendo la palabra mar este que aparece en la parte del libro.
+
+599
+01:43:40.490 --> 01:43:56.449
+Victor Flores Benites: No voy a ponerme a compararme con la historia de John Snow, que le estaba mencionando hace un momento con la palabra mar, porque tal vez no tiene nada que ver. ¿no? Entonces, este compararse con todos los Donkers no no es muy relevante. Entonces, algo que propusieron en el 2 025.
+
+600
+01:43:56.660 --> 01:44:02.129
+Victor Flores Benites: Y lo he visto utilizado en otras arquitecturas de modelos chinos. Por cierto, este
+
+601
+01:44:02.440 --> 01:44:13.849
+Victor Flores Benites: hablo del modelo chino, porque son los que somos personas. Y puedo ver qué arquitectura. No, no sé qué están haciendo los de Open. Y hay, o los de Grow o los de Jamine. ¿cómo serán sus estructuras? No, no podemos saberlo.
+
+602
+01:44:14.060 --> 01:44:23.230
+Victor Flores Benites: Pero bueno, y con otras arquitecturas también ha importado. Este es para esta tendencia. Entonces que están haciendo aquí. Lo que vamos a hacer es una clasificación.
+
+603
+01:44:24.050 --> 01:44:35.389
+Victor Flores Benites: Vamos a clasificar de todos los tokens, cuáles parecen tener relevancia. Ok. Entonces para eso vamos a hacer una red. Bastante
+
+604
+01:44:35.450 --> 01:44:51.539
+Victor Flores Benites: Bueno, un lighting, un lighting dexar lighting, porque esa red, de hecho, va a ser una red pequeña. Y también este lo podemos reducir la precisión a F: P: Ocho, lo usamos. Su número de 8 bits.
+
+605
+01:44:51.650 --> 01:45:00.770
+Victor Flores Benites: entonces va a ser algo bastante ligero y bueno. Pepsic trata de optimizar bastante justamente por sus limitaciones de hardware y también de dinero.
+
+606
+01:45:01.190 --> 01:45:07.440
+Victor Flores Benites: Bueno, entonces lo que vamos a hacer es esto: Vamos a hacer una proyección. Ok.
+
+607
+01:45:07.450 --> 01:45:29.260
+Victor Flores Benites: Aquí otra vez, trabajando con el latente. Recuerden que estamos este basándonos también con arquitectura, no multi geck lateng atation. Entonces, aquí está latente del Query, ya que es el latente del que, igual no aparte de latente del Query, vamos a hacer una proyección que es el el quary In Dexar Ok, que básicamente va a decir como una descripción de qué información necesita no.
+
+608
+01:45:29.260 --> 01:45:39.230
+Victor Flores Benites: O sea, este, por ejemplo, la palabra mar no mar. Tal vez no importa lo que está alrededor en el contexto geográfico o que tiene que ver con cosas de mares en ese universo, por ejemplo.
+
+609
+01:45:39.410 --> 01:45:59.050
+Victor Flores Benites: ahora también vamos a hacer un king dexer. Ok, que va a ser un pequeño vector que va a describir cuál es la información de cada una de las posiciones. ¿no? Entonces aquí va a ser como una especie de pro pequeño producto, punto, Ok, que no vamos a hacer el producto, punto todos contra todos, sino vamos a hacer un primer cálculo
+
+610
+01:45:59.620 --> 01:46:16.949
+Victor Flores Benites: que va a ser compartido para todos los heads. A diferencia de los otros métodos que lo que el que las otras formas del co. Bueno, cómo funciona el Multihealth patencio que calculamos. Hacemos un producto a punto diferente por cada head, este producto punto que estamos viendo aquí va a ser compartido para todos los heads.
+
+611
+01:46:16.950 --> 01:46:20.889
+Victor Flores Benites: Y bueno, eso es lo que nos va a decir es que tanto se relaciona
+
+612
+01:46:21.220 --> 01:46:31.769
+Victor Flores Benites: un token con otro toque. Entonces aquí vamos a asumir que termina siendo bidireccional, entonces siendo la palabra mar con no se con la par con este ciudad. No sé cosas por el estilo.
+
+613
+01:46:31.790 --> 01:46:42.619
+Victor Flores Benites: se relacionan o no se relacionan no o con el concepto. Este lobo no. El lobo Warho se relaciona, no tiene nada que ver. Entonces esto no me importa, ¿no?
+
+614
+01:46:42.620 --> 01:46:58.720
+Victor Flores Benites: Entonces va a ser un producto punto que lo va a comparar con una. Bueno, lo va a operar con una matriz de pesos. No se va a ponderar esa forma. Esto va a generar un score como decir qué tan relevante o qué tan probablemente que sea relevante esta este token o esta relación de tokens ok.
+
+615
+01:46:59.210 --> 01:47:08.839
+Victor Flores Benites: entonces luego esto va a generar un Score. Lo que vamos a hacer es una selección de topcat. Los que tienen mayores core son los que van a ser procesados.
+
+616
+01:47:08.910 --> 01:47:23.759
+Victor Flores Benites: Ok. Entonces este debes de trabajar sobre el 1 000 000 de tokens Luego de hacer este procesamiento simple, vamos a trabajar, por ejemplo, con solamente 100 tokens sobre esos 100 toques. ¿vamos a utilizar pues, el multihensel atención.
+
+617
+01:47:23.760 --> 01:47:36.120
+Victor Flores Benites: O bueno, el Multihead Latin Nathantion de Deepy, Ok. Entonces ahí estamos reduciendo mucho el número de operaciones y también el material de atención es mucho más pequeño Okay. Bueno.
+
+618
+01:47:37.280 --> 01:47:52.119
+Victor Flores Benites: de hecho, este Paper no lo había leído el Dipsic 3, 2, y yo lo leí. Más bien porque vi el paper de Q Wayne y el baby de cue in justamente utiliza Tipsic, que es falsa. Pension. Y bueno, me pareció bastante interesante.
+
+619
+01:47:52.120 --> 01:48:01.450
+Victor Flores Benites: Ok, Y bueno, Entonces, Resumiendo, nuestros amigos chinos presentaron 2 muy buenas ideas. Uno es trabajar sobre un espacio latente que es muy similar al
+
+620
+01:48:02.080 --> 01:48:17.840
+Victor Flores Benites: al Botes Net que teníamos en La Resnet. Y también ese mecanismo de spartation, no donde vamos a hacer una especie de clasificación de que toquen son más relevantes. Y solamente sobre esos toques relevantes, como un pequeño pre cálculo con una red lighting.
+
+621
+01:48:18.000 --> 01:48:20.110
+Victor Flores Benites: ¿cuál mencionaba por acá de 8 bits
+
+622
+01:48:20.260 --> 01:48:26.130
+Victor Flores Benites: sobre s, sobre esos 2 que solamente sobre esos 2, que vamos a aplicar el mecanismo de atención
+
+623
+01:48:26.890 --> 01:48:46.749
+Victor Flores Benites: y como les mencionaba, también es compartido, sobre todo los hits. Ok, bueno, continuando este. Esas son las mejoras, Algunas mejoras para que es un resumen. Algunas mejores noticias, Por el lado de Fit Forwar, también hay unas muchas mejoras que son bastantes bastante interesantes
+
+624
+01:48:47.600 --> 01:48:48.780
+Victor Flores Benites: En
+
+625
+01:48:51.140 --> 01:48:59.040
+Victor Flores Benites: a Ver Fitform. Se acuerdan que lo que hacíamos era cuando, al inicio al inicio teníamos varios tokens, no
+
+626
+01:48:59.270 --> 01:49:00.989
+Victor Flores Benites: tokens tokens tokens
+
+627
+01:49:01.020 --> 01:49:16.659
+Victor Flores Benites: que cada 1 tenía una cantit cierta cantidad de dimensiones, no digamos 64, no 64 dimensiones, por ejemplo, no lo que va a hacer el Fit Forward, como les mencionaba antes es este procesar en la dimensión de dimensiones
+
+628
+01:49:16.660 --> 01:49:28.320
+Victor Flores Benites: de la dimensión de los canales. Ok. Entonces acá. Podemos tener 100 tokens pero En este caso, este procesamiento va a ser cada token de manera independiente. Ok, entonces vamos a tener.
+
+629
+01:49:28.330 --> 01:49:34.549
+Victor Flores Benites: Puede dibujar así de forma extendida. Los 64 dimensiones. Ok, esto se recuerden, para un solo toquen
+
+630
+01:49:35.530 --> 01:49:41.619
+Victor Flores Benites: solo toque ok. Luego lo que vamos a hacer es expandir las dimensiones.
+
+631
+01:49:42.410 --> 01:49:45.600
+Victor Flores Benites: Perdone, estoy dibujando.
+
+632
+01:49:46.480 --> 01:49:50.340
+Victor Flores Benites: ¿por qué se está deslizando mi?
+
+633
+01:49:50.940 --> 01:49:52.689
+Victor Flores Benites: Bueno, tengo mi.
+
+634
+01:49:58.230 --> 01:50:05.629
+Victor Flores Benites: bueno, vamos a expandir el número de dimensiones. Por lo general se multiplica por 4 a ver 64 por 4. Es 256, no
+
+635
+01:50:05.910 --> 01:50:09.840
+Victor Flores Benites: 256 dimensiones, y luego lo que vamos a hacer es comprimir.
+
+636
+01:50:10.010 --> 01:50:12.579
+Victor Flores Benites: Ok, Otra vez. 64 dimensiones.
+
+637
+01:50:12.990 --> 01:50:16.299
+Victor Flores Benites: Es así como funciona normalmente el equipo Forwar
+
+638
+01:50:16.390 --> 01:50:33.800
+Victor Flores Benites: a ver el El objetivo de hacer esto es como analizar en diferentes perspectivas Este, los canales, como buscar muchas, co muchas relaciones, muchos patrones dentro de los canales. No una es como una búsqueda exhaustiva en la información que hemos recopilado de la capa anterior.
+
+639
+01:50:34.510 --> 01:50:41.850
+Victor Flores Benites: Bueno, en el bloque de multicelsa patention Vale, es el objetivo de Philfa algo.
+
+640
+01:50:42.890 --> 01:50:56.160
+Victor Flores Benites: Eso va a terminar funcionando como un mecanismo con como unas activaciones. Esparce Eso implica que, como estamos en un análisis persuativo, no todos los canales se van a activar, no es como decir.
+
+641
+01:50:56.190 --> 01:51:06.380
+Victor Flores Benites: por ejemplo, el la palabra mar no es de tal vez en ese análisis, lascivos has hagan como como esa red. Lo que hace es analizar todo tipo de Token.
+
+642
+01:51:06.430 --> 01:51:12.020
+Victor Flores Benites: Hay algunos este y canales que vean las relaciones de parentesco, digamos.
+
+643
+01:51:12.080 --> 01:51:21.260
+Victor Flores Benites: en el mar, no hay ni una relación de parentesco. No, entonces ese canal no tiene ningún sentido, no que, a fin de cuentas, esas dimensiones, que son mucho más ampliadas de 256
+
+644
+01:51:21.380 --> 01:51:34.820
+Victor Flores Benites: van a ser un esparces, como le digo, algunas activaciones no son relevantes, ¿no? Y luego se van a comprimir otra vez. Y otra vez vamos a tener como que un vector más compacto y donde está toda la sustancia, por así decirlo.
+
+645
+01:51:34.960 --> 01:51:36.980
+Victor Flores Benites: Vale Mhm.
+
+646
+01:51:37.550 --> 01:51:53.729
+Victor Flores Benites: bueno como se darán cuenta con lo que le estoy mencionando es que no todos los todos los canales van a ser relevantes. No podemos dejar que la misma red este seleccione. Qué? Qué canales son más relevantes o no, mediante el mecanismo de mediante la función de activación.
+
+647
+01:51:53.790 --> 01:51:58.840
+Victor Flores Benites: pero también podría ser mucho más interesante utilizar un mecanismo de compuerta.
+
+648
+01:51:59.360 --> 01:52:07.120
+Victor Flores Benites: mecanismo que comporta que hemos visto antes con el L. S. Pn: No, que de hecho se parece mucho al mecanismo de Channel Atention
+
+649
+01:52:07.250 --> 01:52:20.460
+Victor Flores Benites: Ok. Entonces aquí tenemos muchas dimensiones que probablemente no todas las dimensiones van a ser relevantes. ¿no sería más interesante hacer una selección de qué dimensiones son. Van a ser la más importantes. Ok, entonces
+
+650
+01:52:21.050 --> 01:52:26.060
+Victor Flores Benites: el el glú, el club. Lo que va a proponer es
+
+651
+01:52:26.250 --> 01:52:42.119
+Victor Flores Benites: este, además de ese vector grande que lo estoy mencionando, hacer otro vector que lo que va a hacer es seleccionar qué qué dimensiones van a ser relevantes este para para la siguiente etapa, ¿no? Okay me tal cual como el mecanismo de este
+
+652
+01:52:42.160 --> 01:52:47.610
+Victor Flores Benites: te echan el Atenge. Ok, entonces lo que estamos haciendo es una clasificación con una Simon Okay.
+
+653
+01:52:47.680 --> 01:53:02.830
+Victor Flores Benites: Bueno, este club, que es fue la idea inicial. Luego fue perfeccionado con la glue que se dieron cuenta que funcionaba mejor este si es que cambiamos esas imágenes por una gelu la que lo este, la fuse de activación que hemos discutido bastante, ¿no?
+
+654
+01:53:03.270 --> 01:53:12.899
+Victor Flores Benites: Y bueno. De hecho, hay una mejor versión que la que Iglú, que es la esquiglu, que es simplemente cambiar la gelu por la una función es wish.
+
+655
+01:53:13.040 --> 01:53:16.900
+Victor Flores Benites: Ok. Ahora, ¿qué es? Switch Switch?
+
+656
+01:53:17.170 --> 01:53:24.489
+Victor Flores Benites: Es esta función de acá? Que es básicamente una le pasa a mí.
+
+657
+01:53:24.940 --> 01:53:36.880
+Victor Flores Benites: Bueno, es es básicamente X multiplicado por es una función sin molde, no que de por sí se asemeja mucho al comportamiento de una Feed
+
+658
+01:53:37.410 --> 01:53:46.619
+Victor Flores Benites: Ignacio France Hill sí está lindo. Ese día es un Phomshow.
+
+659
+01:53:47.960 --> 01:53:58.040
+Victor Flores Benites: Es ajeno, Ok, pueden ver que las gráficas son muy similares. Ok, La diferencia es justamente ese parámetro beta Okay, ese parámetro beta que es entrenable.
+
+660
+01:53:58.670 --> 01:54:10.880
+Victor Flores Benites: Ese beta, Lo que va a decir es cómo va a ser inclinación de esta recta de acá si va a ser más inclinada o más inclinada, ¿no? Ok. Entonces, como un parámetro de entrenamiento, vamos a ver qué tan inclinado va a ser?
+
+661
+01:54:11.280 --> 01:54:31.110
+Victor Flores Benites: Vale. Y Y bueno, van a ver este, si ustedes van a ver este varias implementaciones, Este de transformers les va a decir si están utilizando o dentro de suscripción, van a decir qué tipo de van utilizando, si es una normal, lo colocan o una ml. P, o le colocan que están utilizando. Una es Wiglu.
+
+662
+01:54:31.310 --> 01:54:46.249
+Victor Flores Benites: no donde he visto más. Es que utilizan una es weglo en arquitectura, tal vez más adelante que cuando veamos este otras arquitecturas les enseñen como lo lo muestran. Ok, Bueno, este tal vez lo que están esperando
+
+663
+01:54:46.370 --> 01:54:54.920
+Victor Flores Benites: justamente en ese mecanismo de Fit Forwar es donde se insertan las moes, el misil of experts. Ok.
+
+664
+01:54:55.080 --> 01:54:59.219
+Victor Flores Benites: Bueno, volviendo al gráfico que teníamos aquí, les mencionaba que
+
+665
+01:55:01.090 --> 01:55:13.550
+Victor Flores Benites: aquí lo que queremos encontrar son diferentes patrones. No es como analizar la entrada de diferentes formas. No, También está dando un ejemplo de que, bueno, algunos canales podrían estar enfocados, digamos, a
+
+666
+01:55:13.840 --> 01:55:26.170
+Victor Flores Benites: encontrar relaciones de parentesco, ¿no? Y como les mencionaba. Tal vez la relación de cómo se muestra Stone para la palabra mar no tiene ningún sentido la relación de parentesco. No.
+
+667
+01:55:26.170 --> 01:55:35.790
+Victor Flores Benites: Eso implica que ese procesamiento no es el más indicado para amar, pero tal vez deberíamos aprovechar para hacer otro tipo de búsqueda, otro tipo de relaciones. ¿no
+
+668
+01:55:35.970 --> 01:55:40.960
+Victor Flores Benites: sería más interesante que tengamos algún tipo de proyección así grande? Tal vez.
+
+669
+01:55:41.060 --> 01:55:43.980
+Victor Flores Benites: Y Pero este
+
+670
+01:55:44.410 --> 01:56:00.379
+Victor Flores Benites: enfocado más a ese toque en específico. ¿no? Ok, que no sea un una proyección genérica para todas las palabras, para todos los toques, perdón, sino que sea una específica para este contexto en particular. Okay. Y justamente es lo que hacen las modas.
+
+671
+01:56:00.440 --> 01:56:08.050
+Victor Flores Benites: Ok, vamos a tener diferentes tipos diferentes: Feed Forwards que van a enfocarse para tareas distintas.
+
+672
+01:56:08.140 --> 01:56:18.240
+Victor Flores Benites: Y bueno, aquí el ejemplo clásico es este: compararlo con tareas de Lemes, por ejemplo, una una Mo. O, bueno, un Fit Forward.
+
+673
+01:56:18.440 --> 01:56:26.300
+Victor Flores Benites: Este, un procesamiento que está enfocado a generar códigos, nuevos relaciones entre entre códigos. Digamos, entre
+
+674
+01:56:28.640 --> 01:56:40.029
+Victor Flores Benites: bueno que entienda cómo cómo se comporta la estructura de un código de programación. Este otro, que está especializado en matemáticas, otro que está relacionado en
+
+675
+01:56:41.530 --> 01:56:46.879
+Victor Flores Benites: en ser como terapeuta. Este Muchos han utilizado las series con terapeuta.
+
+676
+01:56:47.210 --> 01:57:05.649
+Victor Flores Benites: lo cual no es muy recomendable, puede ser un acompañamiento este momentáneo, pero sale en forma de encendido. No es muy recomendable. Pero bueno, también este no sé alguien de historia, no un un experto en historia, entonces cada 1 de los de los expertos va a estar enfocado en algo en particular.
+
+677
+01:57:05.650 --> 01:57:17.729
+Victor Flores Benites: entonces no estamos siendo como que una proyección genérica que trata de colgar todo lo posible, sino vamos a tener como que proyecciones muy específicas para cada caso. Ok, Y eso es justamente el lo interesante de ese enfoque.
+
+678
+01:57:17.750 --> 01:57:29.960
+Victor Flores Benites: Ok. Entonces lo que vamos a hacer es para ver qué experto experto se va este ejecutar. Vamos a hacer un router que lo que va a hacer es básicamente clasificar, ¿no? Es decir.
+
+679
+01:57:29.960 --> 01:57:43.270
+Victor Flores Benites: ah, mira de todos los expertos ahorita. Lo que me está preguntando es que me genere el código, no un código. Entonces va a seleccionar el experto correspondiente código ¿no? O tal vez ahora me está preguntando este.
+
+680
+01:57:43.610 --> 01:58:02.019
+Victor Flores Benites: No sé sobre los mayas. Entonces el el experto de historia es el que me debería ejecutar. Okay es la idea de expers. Y, de hecho, la gran mayoría de modelos, no todos, pero la gran mayoría este trabajan con modelo de inicio experts. Y
+
+681
+01:58:02.680 --> 01:58:04.389
+Victor Flores Benites: habrás notado
+
+682
+01:58:04.590 --> 01:58:14.960
+Victor Flores Benites: de que esos modelos tienen, como, digamos, una misma versión 1 del mismo tamaño, tienen diferentes tamaños. A ver. Me explico. Por ejemplo.
+
+683
+01:58:15.130 --> 01:58:22.490
+Victor Flores Benites: yo no me acuerdo ni 1, pero digamos el llama, ves Supongo.
+
+684
+01:58:23.280 --> 01:58:27.360
+Victor Flores Benites: porque se me ha olvidado. Ya llama 4 de 408 billones.
+
+685
+01:58:27.980 --> 01:58:36.800
+Victor Flores Benites: o sea, muchas veces decían. Ese es el tamaño del modelo, pero en diferencia, es, no sé, 100 100, 20 billones.
+
+686
+01:58:37.460 --> 01:58:39.080
+Victor Flores Benites: Y
+
+687
+01:58:39.940 --> 01:58:47.110
+Victor Flores Benites: y bueno, este varios se quedan confundidos. ¿no? ¿cómo es que pesa 400 billones, pero en diferencia de 120. ¿cómo es menor.
+
+688
+01:58:47.140 --> 01:58:54.609
+Victor Flores Benites: Lo que sucede es que si tú consideras todos los expertos lo que va a pesar es 408 000 000.
+
+689
+01:58:54.610 --> 01:59:09.029
+Victor Flores Benites: Sin embargo, tú en experiencia, vas a seleccionar un subconjunto de expertos. No vas a seleccionarlo todos. Entonces vas a bajar a 120 000 000 de expertos de parámetros. Okay es un subgrupo, un sapsa de todo eso.
+
+690
+01:59:09.090 --> 01:59:25.819
+Victor Flores Benites: Ahora, este esos expertos van a enfocándose en diferentes tareas, claro está. Pero, evidentemente, si lo reduces bueno aquí te debería decir cuántos expertos utilizando, no digamos con 16 expertos, en realidad tenías 32, y estás usando solamente 16
+
+691
+01:59:25.820 --> 01:59:34.890
+Victor Flores Benites: por darnos un ejemplo. No podemos nosotros este aparte de código, reducirlo tal vez a 4 expertos, no como para que consuma mucho menos este v rap.
+
+692
+01:59:35.010 --> 01:59:43.210
+Victor Flores Benites: O incluso ojalá, un solo experto, o sea, va a seguir funcionando, porque el el L M siempre va a ser una atracción, pero el desempeño va a bajar. Ok.
+
+693
+01:59:43.690 --> 01:59:57.169
+Victor Flores Benites: es algo que se puede hacer. Este jugar un poco con el número de expertos que vas a estar ejecutando. Y bueno, con eso puedes tener este mucho menos este mu, mucho menos este uso de memoria.
+
+694
+01:59:58.850 --> 02:00:10.829
+Victor Flores Benites: Ahora, este es el el funcionamiento clásico de los de los del de los expertos okay. Lo que hacemos era una clasificación de este.
+
+695
+02:00:10.860 --> 02:00:26.720
+Victor Flores Benites: de cuál es el experto más sinónimo para hacer la pregunta. Ahora, volviendo al ejemplo, no por ejemplo, este. Imagínense que les están pidiendo este una respuesta de tipo código diciendo a ver, por ejemplo, implementanme I transformer, no.
+
+696
+02:00:26.990 --> 02:00:34.120
+Victor Flores Benites: Por ejemplo, le Pides simplemente me transformer. Y la otra pregunta era este. Háblame de los mayas. Creo que les dije no
+
+697
+02:00:34.420 --> 02:00:43.669
+Victor Flores Benites: a ver. Son 2 tipos de preguntas que ustedes pueden intuir, de qué trans, de qué expertos deben este procesar o no. Uno es el experto de código y el otro experto de esta historia.
+
+698
+02:00:43.840 --> 02:00:55.930
+Victor Flores Benites: Sin embargo, ambas preguntas tienen que saber muy bien cómo interpretar el texto, porque la persona podría escribirlo mal Este, tal vez en un tono este tal vez que no es
+
+699
+02:00:56.170 --> 02:01:06.759
+Victor Flores Benites: que nos caliente, que nos estándar. No sé cosas así. ¿no? Entonces, ambos expertos, de veces, solamente ser expertos de un una cosa en específica, ¿sí? O sí, tienen que aprender
+
+700
+02:01:06.760 --> 02:01:16.599
+Victor Flores Benites: a hacer cosas genéricas, como interpretar, como les mencionó este la pregunta, no interpretar este la pregunta. Yo sé de historia o de de código, ¿no? Entonces
+
+701
+02:01:16.800 --> 02:01:29.670
+Victor Flores Benites: el experto no está siendo muy experto, probablemente enfocado en una cosa, sino que debe enfocarse en esas cosas, pero también aprender cosas genéricas. Y Bueno, así funcionaba
+
+702
+02:01:29.690 --> 02:01:45.799
+Victor Flores Benites: hasta que otra vez nuestros amigos de Gimpsy presentaron una gran idea. ¿qué tal si? Bueno, seguimos trabajando en múltiples expertos, pero dejamos unos expertos que siempre estén activos. Okay, los expertos compartidos Shart sport.
+
+703
+02:01:46.140 --> 02:01:56.400
+Victor Flores Benites: Esos expertos compartidos siempre van a estar activos y justamente esos expertos compartidos Este van a ver esas cosas genéricas? No, por ejemplo, comprender el lenguaje del habla y todo eso.
+
+704
+02:01:56.570 --> 02:02:04.999
+Victor Flores Benites: Pero además, vamos a tener unos expertos, unos expertos que van a ser retirados, que van a ser seleccionados mediante la planificación que le he mencionado hace un un momento, ¿no?
+
+705
+02:02:05.090 --> 02:02:24.949
+Victor Flores Benites: Entonces ahí sí el experto. Digamos mundo que sea, digamos, la historia, solamente va a saber información de historia, ¿no? O bueno, va a poder hacer informaciones de historia. Solamente eso, porque la información de comprensión del habla está en los expertos compartidos, entonces ese espacio que justamente es proyectado en cada 1 de estos expertos.
+
+706
+02:02:24.950 --> 02:02:35.020
+Victor Flores Benites: va a estar enfocado justamente en el tópico que le corresponde. Entonces Esta fue una otra gran idea de nuestros amigos chinos.
+
+707
+02:02:35.210 --> 02:02:44.410
+Victor Flores Benites: Y, bueno, también es utilizada en varias cosas. ¿no? Entonces se ha notado que son 3 cosas salidas o 3 innovaciones presentadas por nuestros amigos chinos.
+
+708
+02:02:44.610 --> 02:02:50.710
+Victor Flores Benites: Ok, Bueno, hasta aquí nos quedamos con y
+
+709
+02:02:52.440 --> 02:03:05.110
+Victor Flores Benites: este con los transformers ahora en adelante lo vamos a utilizar. L. El siguiente paso, de hecho, es ver un poco sobre atención en visión.
+
+710
+02:03:07.940 --> 02:03:14.329
+Victor Flores Benites: y eso sería L: El última capa de arquitectura pura que vamos a ver luego? Bueno.
+
+711
+02:03:14.910 --> 02:03:32.920
+Victor Flores Benites: el curso siempre se compone con la primera parte es explicar las arquitecturas como para que lo podamos utilizar después. Las siguientes etapas ya pueden ser utilizadas estas arquitecturas que ya ya lo comprenden en diferentes dominios. No vamos a ver diferentes aplicaciones, Pero antes de eso, tienes alguna pregunta hasta este punto?
+
+712
+02:03:37.000 --> 02:03:40.520
+Ing. Julio Salgado: Sí, Víctor, Me escuchas.
+
+713
+02:03:40.780 --> 02:03:42.380
+Victor Flores Benites: Sí, Sí, julio.
+
+714
+02:03:42.740 --> 02:03:47.610
+Ing. Julio Salgado: En el caso de Rock Dime también se está entrenando
+
+715
+02:03:47.770 --> 02:03:56.169
+Ing. Julio Salgado: esa porción de base de conocimiento propia A, aparte del modelo fundacional salen los de este tema.
+
+716
+02:03:56.170 --> 02:03:59.690
+Victor Flores Benites: No. De hecho, el Raj es un.
+
+717
+02:03:59.890 --> 02:04:05.990
+Victor Flores Benites: digamos, es un com, un componente a de acompañamiento a
+
+718
+02:04:06.720 --> 02:04:09.370
+Victor Flores Benites: a ver. Lo que pasa es que.
+
+719
+02:04:09.550 --> 02:04:13.379
+Ing. Julio Salgado: Entonces, ahí no hay entrenamiento, digamos, sólo en Benings. No.
+
+720
+02:04:14.570 --> 02:04:15.660
+Victor Flores Benites: Mhm.
+
+721
+02:04:16.120 --> 02:04:23.070
+Victor Flores Benites: Sí, a a ver, depende mucho de a qué es, a cómo se dirige tu pregunta. A ver claro.
+
+722
+02:04:23.070 --> 02:04:40.040
+Victor Flores Benites: este aquí vamos a tener un embebe. Ok, que lo que va a hacer es una codificación vectorial. ¿no? Ahora, no todos los ras van a funcionarios de codificación vectorial, ahorita. Les explico un poco de eso a ver. Por ejemplo, ustedes hacen una consulta no diciendo a ver. Yo quiero saber
+
+723
+02:04:40.290 --> 02:04:57.490
+Victor Flores Benites: el la, no sé. El quieres hacer una postulación a un un fondo concursable sobre este, o sea, quieres hacer un proyecto de autómatas, Digamos entonces diciendo qué en qué fondos están activos actualmente
+
+724
+02:04:57.490 --> 02:05:13.929
+Victor Flores Benites: y cuáles podrían aprovechar tal cosa ¿no? Entonces le el me va a querer generar una respuesta, porque el lema siempre genera una respuesta. No es una máquina que genera toques no que sean correctos o no. No importa, ¿no? Pero usted las pueden configurar con algo que se llama System Bronx.
+
+725
+02:05:13.930 --> 02:05:22.169
+Victor Flores Benites: que lo vamos a ver más adelante para que tengan cierto comportamiento, por ejemplo, de que solicite información a una base de datos. Ok.
+
+726
+02:05:22.520 --> 02:05:38.420
+Victor Flores Benites: como lo vamos a ver más adelante. Hay muchas formas de hacer esto. Una es que simplemente esta quary directamente pase al a la búsqueda, digamos, a la secuencia de búsqueda, ¿O es que la L M diga, Ah, mira, y lo que me está pidiendo el usuario?
+
+727
+02:05:38.420 --> 02:05:42.750
+Victor Flores Benites: No lo puedo responder directamente. Si no necesito pedir información.
+
+728
+02:05:42.750 --> 02:05:53.680
+Victor Flores Benites: Entonces voy a generar una quary adecuada. Esta cuerda adecuada va a pasar a dependiendo si es una búsqueda vectorial, o voy a hacer una.
+
+729
+02:05:53.690 --> 02:06:02.750
+Victor Flores Benites: Este, un código tipo? Json: Por ejemplo, un Json diciendo, Ah, mira, yo estoy buscando este.
+
+730
+02:06:03.600 --> 02:06:16.409
+Victor Flores Benites: no sé la postulación tal y tal no por dar un ejemplo, no, entonces lo que va a buscar es directamente el documento o las las reglas. Este la documentación de esa de esa postulación? No.
+
+731
+02:06:16.450 --> 02:06:36.329
+Victor Flores Benites: no, no todo se tiene que resolver de forma vectorial. También se puede resolver por Json: Y eso, de hecho, Jason es mucho más rápido. Mucha optimización con eso. Pero bueno, el tema es que haces una búsqueda en la base de datos. Ok. Ahora, si me preguntas si eso se tiene que entrenar. Claro, eso se puede entrenar. ¿no? De hecho, nosotros vamos a utilizar este algunas
+
+732
+02:06:36.430 --> 02:06:44.740
+Victor Flores Benites: a nuevos inventos. Son adecuados para hacer búsquedas. Ok. Luego de eso, vamos a retornar una respuesta a
+
+733
+02:06:45.010 --> 02:06:53.040
+Victor Flores Benites: una respuesta que va a complementar a la información del Lm. Eso va a adjuntarse como una especie de contexto. Ok.
+
+734
+02:06:53.040 --> 02:07:06.720
+Victor Flores Benites: Ahora, ustedes, como menciona muy bien Braham. Ustedes pueden hacer fighting para que éste maneje muy bien este contexto este y que venga una una respuesta que ustedes esperan, no.
+
+735
+02:07:06.900 --> 02:07:10.980
+Victor Flores Benites: En este caso tendrían que hacer este.
+
+736
+02:07:11.430 --> 02:07:26.000
+Victor Flores Benites: Tal vez podría funcionar bien con con informe Learning, Meet Human Beedback. Este E quiere decir que con diferentes usuarios vamos a ir probando diferentes respuestas, cosas así. No podemos hacer un fighting como para que
+
+737
+02:07:26.000 --> 02:07:34.979
+Victor Flores Benites: sea más coherente su resultado. Sin embargo, en esas tareas tal vez podrían ser este muy costoso hacer todo este procesamiento de Fair fighting
+
+738
+02:07:34.980 --> 02:07:39.200
+Victor Flores Benites: y por lo general, eso se resuelve simplemente con pronting
+
+739
+02:07:39.530 --> 02:07:51.939
+Victor Flores Benites: en el system pront. Nosotros vamos a configurar para que tenga cierto tipo de comportamiento más adelante. Vamos a ver técnicas avanzadas de pronting como para darle ese condicionamiento y funcione como ustedes esperen, no
+
+740
+02:07:52.060 --> 02:08:01.779
+Victor Flores Benites: que el L M reciba la re la pregunta del usuario. Tome una decisión. Tal vez una L. M. Chiquita toma una decisión diciendo: ah, mira esa respuesta, esa pregunta la puedes responder.
+
+741
+02:08:01.970 --> 02:08:17.200
+Victor Flores Benites: Solamente me ha dicho hola, y yo le digo, solamente hola, cómo estás suficiente. Pero ahora, si me está preguntando algo, ahora Sí, necesito información. Entonces voy a buscar la base de datos. Voy a esperar que reciba, y voy a darle una respuesta mucho más más completa. ¿no? Y pueden ver, de hecho.
+
+742
+02:08:17.850 --> 02:08:32.760
+Victor Flores Benites: aunque aquí no me parece un un buen ejemplo, porque cuando pregunté Transformers se puso a buscar en Internet, y lo cual me parece completamente innecesario. Pero, por ejemplo, la decisión de irse.
+
+743
+02:08:32.760 --> 02:08:46.539
+Victor Flores Benites: esa pregunta es ¿lo puedo responder así nomás o tengo que buscar Internet, ¿no? Entonces algo así se lo pueden configurar. No, Yo intuyo que en chat y Piti tienen un modelo, chiquito que toma esa decisión.
+
+744
+02:08:46.660 --> 02:08:57.569
+Victor Flores Benites: Pero, bueno, ustedes lo pueden entrenar, o en todo caso, utilizar este una solución por pronting, no una L M que lea tome la decisión y siga el proceso.
+
+745
+02:08:57.800 --> 02:09:03.539
+Victor Flores Benites: Ok. ¿es así como se suele trabajar con ese sistema con Rac y con agentes y todo lo demás.
+
+746
+02:09:04.030 --> 02:09:06.440
+Victor Flores Benites: Eso lo vamos a ver más adelante con el Elents.
+
+747
+02:09:07.740 --> 02:09:15.280
+Ing. Julio Salgado: O sea, básicamente sería la arquitectura que estás mostrado netamente con el génesis, porque la gente ya involucraría
+
+748
+02:09:15.470 --> 02:09:20.920
+Ing. Julio Salgado: tomar una decisión, o sea, aprovechando ya el el L M. ¿no es cierto.
+
+749
+02:09:21.210 --> 02:09:27.209
+Victor Flores Benites: Sí. Lo que se suele hacer es así, no que la ley me tome la decisión. Eso se suele hacer de esa forma.
+
+750
+02:09:27.630 --> 02:09:37.229
+Victor Flores Benites: Pero, claro, podías directamente con la pregunta, hacer una búsqueda y que que entre directamente como contexto, ¿no? Entonces esto se comportaría algo así
+
+751
+02:09:37.450 --> 02:09:41.970
+Victor Flores Benites: en el acuario. ¿va sí o sí a la base de datos.
+
+752
+02:09:43.050 --> 02:09:46.710
+Victor Flores Benites: La respuesta a la base de datos recién vale el L. M.
+
+753
+02:09:48.000 --> 02:09:55.159
+Victor Flores Benites: Ok. Pero esto implica que cualquier cosa que tú le preguntas al al al sistema?
+
+754
+02:09:55.210 --> 02:10:09.019
+Victor Flores Benites: Sí, o sí, vamos de la base de datos, y tú le preguntas el simplemente le dices. Hola, ¿cómo estás va a hacer una búsqueda como la cómo estás en la base de datos, no le le le me interpretará diciendo: ah, mira ese contexto que me estás dando la base de datos, No me importa.
+
+755
+02:10:09.210 --> 02:10:18.810
+Victor Flores Benites: no pasa nada, pero es es un caso innecesario, entonces lo más adecuado es tener algún tipo de decisión. ¿no? Es decir, Ah, mira, necesito.
+
+756
+02:10:18.930 --> 02:10:20.680
+Victor Flores Benites: necesita información
+
+757
+02:10:21.240 --> 02:10:27.680
+Victor Flores Benites: si necesita información. Claro, voy a la base de datos, sino este directamente. Voy al L, M. ¿no?
+
+758
+02:10:29.550 --> 02:10:36.399
+Victor Flores Benites: Y claro, como les menciono este eso lo pueden re resolver directamente, comprando o tener una pequeña red global que una clasificación.
+
+759
+02:10:37.180 --> 02:10:43.810
+Ing. Julio Salgado: Y y tiene este Víctor para yo activar las funciones agénticas, tengo que usar algún tipo de mecanismo.
+
+760
+02:10:45.120 --> 02:10:53.529
+Victor Flores Benites: No realmente, aunque claro este. Si ustedes quieren hacerlo de manera, digamos amigable.
+
+761
+02:10:57.480 --> 02:11:01.080
+Victor Flores Benites: y a ver dónde lo tengo. Eso
+
+762
+02:11:02.440 --> 02:11:05.890
+Victor Flores Benites: hace unos minutos que tengo aquí, las ventanas de Zoom.
+
+763
+02:11:10.120 --> 02:11:12.420
+Victor Flores Benites: Genial.
+
+764
+02:11:14.370 --> 02:11:21.589
+Victor Flores Benites: O Tex tiene el que bota del te. Lo veo muy rápido.
+
+765
+02:11:22.600 --> 02:11:28.170
+Victor Flores Benites: Mhm: eso es lo vimos.
+
+766
+02:11:28.510 --> 02:11:29.200
+Victor Flores Benites: Mhm.
+
+767
+02:11:32.270 --> 02:11:50.900
+Victor Flores Benites: O sea, ustedes los pueden hacer directamente con la Lm. Sería simplemente con llamadas de B I, pero también herramientas que te ayuden a hacer a utilizar con facilidad a los agentes. Por ejemplo, pueden usar Lanchain este? No creo.
+
+768
+02:11:50.900 --> 02:11:52.030
+Ing. Julio Salgado: O Lahnkraf.
+
+769
+02:11:54.440 --> 02:11:56.280
+Victor Flores Benites: Si
+
+770
+02:11:56.820 --> 02:12:05.950
+Victor Flores Benites: a que salgan Shane. De hecho, han salido muchas cosas que lo hacen muy de manera mucho más simple. El clásico N Ocho. N no
+
+771
+02:12:07.740 --> 02:12:11.400
+Victor Flores Benites: costo que ayuda a una configuración super simple de los agentes.
+
+772
+02:12:12.370 --> 02:12:15.540
+Victor Flores Benites: Y aquí yo tomen decisiones. Y todo eso? ¿no? Okay.
+
+773
+02:12:15.960 --> 02:12:21.729
+Victor Flores Benites: Y bueno, pueden tener cosas como así o cosas como así. ¿no? Un sistema mucho más completo.
+
+774
+02:12:21.820 --> 02:12:38.750
+Victor Flores Benites: claro. Y bueno, actualmente se está trabajando de mucho de esa forma. Entonces tú llamas a un modelo nano que nano, o sea, un modelo súper chiquito supereconómico que tome la decisión de que. Ah mira esta pregunta: Necesito información de la de la base de datos, sí o no, por ejemplo.
+
+775
+02:12:39.660 --> 02:12:46.340
+Victor Flores Benites: antes. De hecho, este cuando yo quería jugar con un poco de código. Así que usas en Change.
+
+776
+02:12:46.720 --> 02:12:53.969
+Victor Flores Benites: pero como les digo, también pueden ser 8 N de Ot, N Ocho. N. No creo que es la forma más práctica.
+
+777
+02:12:57.120 --> 02:13:00.859
+Victor Flores Benites: Aquí pueden contar conectar también su base de datos. Como pueden ver.
+
+778
+02:13:04.020 --> 02:13:10.770
+Victor Flores Benites: músculo por ahí. Lo que no sé cómo podríamos hacer.
+
+779
+02:13:10.960 --> 02:13:25.590
+Victor Flores Benites: porque no tenemos una un acceso libre, digamos a una A, T I, Sí, o sí tendríamos que pagar. Y la forma como yo lo resolví justamente era correrlo en colab para que todos tengan el mismo acceso
+
+780
+02:13:25.840 --> 02:13:30.060
+Victor Flores Benites: y bueno, todo se resolvía que con lanche y no.
+
+781
+02:13:30.710 --> 02:13:35.230
+Victor Flores Benites: Sin embargo, actualmente se utiliza mucho N 8. N, No sé si se puede
+
+782
+02:13:35.810 --> 02:13:38.739
+Victor Flores Benites: correr en colgar. Eso es en lo que he visto.
+
+783
+02:13:41.660 --> 02:13:46.940
+Victor Flores Benites: Y the fluent collab.
+
+784
+02:13:47.420 --> 02:13:52.740
+Victor Flores Benites: Bueno, no importa, entonces este la forma común.
+
+785
+02:13:52.920 --> 02:14:01.820
+Victor Flores Benites: Bueno, la la forma que dices abriendo sale de trabajar con eso es utilizar n 8 n o utilizar algún tipo de
+
+786
+02:14:01.970 --> 02:14:06.590
+Victor Flores Benites: de equivalente, No, porque hay versiones de eso, de Open. Y hay, o de Gemine.
+
+787
+02:14:07.020 --> 02:14:10.820
+Victor Flores Benites: Otro es hacerlo en forma de código, como lo estamos haciendo aquí.
+
+788
+02:14:15.160 --> 02:14:21.380
+Ing. Julio Salgado: Entonces, si lo quisiera hacerlo propiamente, tendría que usar este lanchain o el andraft.
+
+789
+02:14:21.970 --> 02:14:27.869
+Victor Flores Benites: Que S Sí. Bueno, yo te recomendaría. Bueno, depende mucho de tus recursos. ¿qué recursos tienes.
+
+790
+02:14:29.510 --> 02:14:32.249
+Ing. Julio Salgado: Bueno, yo tengo 128 gigas de memoria.
+
+791
+02:14:33.300 --> 02:14:34.060
+Victor Flores Benites: 120.
+
+792
+02:14:34.060 --> 02:14:34.880
+Ing. Julio Salgado: Adiós.
+
+793
+02:14:34.880 --> 02:14:35.610
+Victor Flores Benites: Ya.
+
+794
+02:14:35.610 --> 02:14:37.980
+Ing. Julio Salgado: Diga si tengo una buena restricción.
+
+795
+02:14:38.280 --> 02:14:41.790
+Victor Flores Benites: 100. 28 gigas de memoria R A, M O. S. R. A, M.
+
+796
+02:14:42.020 --> 02:14:43.139
+Ing. Julio Salgado: R, A, M.
+
+797
+02:14:43.800 --> 02:14:46.760
+Victor Flores Benites: Ram y de Google, Ram.
+
+798
+02:14:47.930 --> 02:14:51.990
+Ing. Julio Salgado: De W. Ram: Tengo 8, sí, pero
+
+799
+02:14:52.360 --> 02:14:55.749
+Ing. Julio Salgado: pero no responde. Todavía faltan los controladores. Bueno, no existen.
+
+800
+02:14:56.350 --> 02:15:03.420
+Victor Flores Benites: Claro si es 8. De hecho, con 8. Si puedes correr este código, que este modelo que tengo acá
+
+801
+02:15:03.920 --> 02:15:09.649
+Victor Flores Benites: que pesa, si mal no recuerdo 6, punto, 5 que va a entrar ahí apenas.
+
+802
+02:15:09.910 --> 02:15:13.170
+Victor Flores Benites: aunque no sé con cuántos tokens puedo poder procesar con este.
+
+803
+02:15:13.810 --> 02:15:18.879
+Victor Flores Benites: Entonces podrías cargar esto y conectarlo con el n 8 N.
+
+804
+02:15:20.580 --> 02:15:26.810
+Ing. Julio Salgado: Y ahí en ese código, este Víctor, como yo fijo este la ventana de contexto.
+
+805
+02:15:27.880 --> 02:15:30.250
+Victor Flores Benites: Y el tamaño de la salida.
+
+806
+02:15:30.440 --> 02:15:31.560
+Ing. Julio Salgado: ¿cuál es.
+
+807
+02:15:31.590 --> 02:15:36.380
+Victor Flores Benites: El el qué es el número de tokens que puedes trabajar.
+
+808
+02:15:38.240 --> 02:15:39.949
+Ing. Julio Salgado: Es el comentario de contexto.
+
+809
+02:15:40.640 --> 02:15:42.460
+Victor Flores Benites: Para la memoria.
+
+810
+02:15:43.260 --> 02:15:50.359
+Victor Flores Benites: Sí, o sea, con eso vas a parar el espacio de memoria como para tener este matriz de atención de ese tamaño, no
+
+811
+02:15:51.090 --> 02:15:51.870
+Victor Flores Benites: de.
+
+812
+02:15:52.280 --> 02:15:56.439
+Ing. Julio Salgado: Y la salida sí la que tiene el sistema, No, eso no lo puedes controlar. O sí.
+
+813
+02:15:56.710 --> 02:15:58.940
+Victor Flores Benites: No. Sí, aquí está Max Newtokens.
+
+814
+02:16:00.060 --> 02:16:04.539
+Victor Flores Benites: Justamente eso es lo que estás configurando, no cuando toques de salida. Vas a generar
+
+815
+02:16:09.430 --> 02:16:17.220
+Victor Flores Benites: en sí. No sé si habías compartido este código. Bueno, compartiría tal vez el don.
+
+816
+02:16:17.960 --> 02:16:24.810
+Victor Flores Benites: Eso es algo también que vamos a ver mucho más adelante. Por eso tal vez este no. No lo hemos visto tanto así,
+
+817
+02:16:25.110 --> 02:16:33.129
+Victor Flores Benites: pero eso sí. Eso es una forma de ejecutar ese modelo chiquito, aunque ya he visto que ya salió en la 3, 5 de 8 000 000.
+
+818
+02:16:34.490 --> 02:16:45.150
+Victor Flores Benites: No, No lo he probado, que estos días he estado muy ocupado, claro. Ya salió de 0, 8 000 000.
+
+819
+02:16:45.879 --> 02:16:49.829
+Victor Flores Benites: Cero, punto, 8, o está mal. Esto
+
+820
+02:16:50.350 --> 02:16:52.639
+Victor Flores Benites: 0, punto 8, es muy chico
+
+821
+02:16:57.100 --> 02:16:59.170
+Victor Flores Benites: sí es 0, punto 8.
+
+822
+02:16:59.510 --> 02:17:05.319
+Victor Flores Benites: ¡qué curioso, Por ejemplo, eso te puede interesar Si tienes un par de cosas. No sé.
+
+823
+02:17:05.320 --> 02:17:05.660
+Ing. Julio Salgado: En el.
+
+824
+02:17:05.660 --> 02:17:08.269
+Victor Flores Benites: También me había preguntado de eso.
+
+825
+02:17:08.650 --> 02:17:13.129
+Ing. Julio Salgado: Tal vez éste hayan conseguido un tipo mecanismo de protetizar. No sé.
+
+826
+02:17:13.780 --> 02:17:26.019
+Victor Flores Benites: Mire, aquí hay de 4 billones de por sí. Ya estamos hablando de 8 000 000, pero cuantizado aquí directamente. Podemos usar este de 4 billones. Hay de 1, 7 de 2 000 000 de
+
+827
+02:17:26.740 --> 02:17:31.990
+Victor Flores Benites: y de 0, 8, que es el más chiquito interesante.
+
+828
+02:17:34.270 --> 02:17:47.759
+Victor Flores Benites: por ejemplo, lo que le mencionaba de esa decisión de utilizar este, llamar a la base de datos o no llamar a la base de datos. Esa decisión lo podrías tomar con este modelo de 0 punto, 8 000 000, no es un modelo mucho más reducido.
+
+829
+02:17:49.900 --> 02:17:52.860
+Ing. Julio Salgado: Y Dime Víctor. Tú ya has trabajado también con Skills.
+
+830
+02:17:53.639 --> 02:17:58.729
+Victor Flores Benites: Con Skills. No, no he, no he usado, no he logrado utilizar Skills todavía.
+
+831
+02:17:59.089 --> 02:18:07.169
+Victor Flores Benites: que de hecho se utiliza bastante en este en Código Skills. Este
+
+832
+02:18:08.109 --> 02:18:11.169
+Victor Flores Benites: yo no creo que por cloud utilizo bastantes Kills no.
+
+833
+02:18:11.410 --> 02:18:12.639
+Ing. Julio Salgado: Sí. Ethec Club.
+
+834
+02:18:14.200 --> 02:18:18.840
+Victor Flores Benites: Sí, no lo he utilizado tal cual.
+
+835
+02:18:20.700 --> 02:18:30.090
+Victor Flores Benites: Bueno, técnicamente es como una conexión de agentes, ¿no? Bueno, una conexión con otros tipos de servicios.
+
+836
+02:18:30.760 --> 02:18:31.600
+Victor Flores Benites: A ver
+
+837
+02:18:31.870 --> 02:18:37.819
+Victor Flores Benites: de qué estamos hablando de esto, y sé que no nos va a alcanzar mucho más tiempo para hablar el siguiente tema.
+
+838
+02:18:38.410 --> 02:18:51.770
+Victor Flores Benites: Así que que a ver, voy a abrir cerca irnos directo a agentes.
+
+839
+02:18:52.110 --> 02:19:07.889
+Victor Flores Benites: o sea, los agentes terminan siendo algo de ese tipo, ¿no? O sea, vas a interactuar con el entorno. Pero para tener una interacción es necesitas aplicaciones, los tools necesitas tools, no. Justamente los Skills tienen como que
+
+840
+02:19:07.900 --> 02:19:12.129
+Victor Flores Benites: conexión puñada, digamos, hacia, ciertos tipos de
+
+841
+02:19:12.870 --> 02:19:16.500
+Victor Flores Benites: aplicaciones, no o sea tools Como que ya
+
+842
+02:19:16.780 --> 02:19:22.920
+Victor Flores Benites: preconfigurados, digamos, hay justamente configuración con motion.
+
+843
+02:19:23.160 --> 02:19:26.540
+Victor Flores Benites: De hecho, este Algo interesante podría ser de que
+
+844
+02:19:26.760 --> 02:19:35.189
+Victor Flores Benites: no sé que todos los días, dicho eso, podrías usar con opencloud opencloud Coprancloud este
+
+845
+02:19:35.350 --> 02:19:53.330
+Victor Flores Benites: configurarlo para que todas las mañanas te revise papers clasifique lo arranque y se lo ve relevante este un paper que lo toma una decisión. Hago un resumen en notion y tú te levantas y ves el resumen en doution de los papers que tú quieres algo así es bastante divertido.
+
+846
+02:19:53.420 --> 02:20:07.659
+Victor Flores Benites: aunque claro, po podríamos dejar algo así. El tema es que no todos tienen acceso a Haití, lo cual lo delimita mucho. No necesitamos con modelos que que estén en un recurso compartido tipo con la entonces este por ahí no
+
+847
+02:20:09.320 --> 02:20:15.010
+Victor Flores Benites: es una gran limitación. Necesito encontrar una forma de saltarnos de limitaciones para hacer aplicaciones de este tipo.
+
+848
+02:20:15.230 --> 02:20:25.829
+Victor Flores Benites: Ahora conectamos con el M. C, P, de de notion. Por cierto. M. C, P. Es un protocolo, digamos de comunicación, justamente con otros, con herramientas.
+
+849
+02:20:26.150 --> 02:20:27.350
+Victor Flores Benites: y
+
+850
+02:20:28.330 --> 02:20:35.340
+Victor Flores Benites: no lo he intentado. Así que recuerdo que algunos casos eran limitados, o sea, tenías que pagar o algo así.
+
+851
+02:20:36.370 --> 02:20:41.309
+Victor Flores Benites: Yo quería configurarlo. De hecho, con mi drive, pero veía que tenía que
+
+852
+02:20:41.870 --> 02:20:49.619
+Victor Flores Benites: configurar muchas cosas. Entonces al final No, no lo hice, pero bueno, eso vamos a discutirlo más adelante cuando lleguemos el Elens
+
+853
+02:20:50.170 --> 02:20:57.400
+Victor Flores Benites: tiene alguna pregunta hasta ese punto de este de transformers o para cerrar esta parte.
+
+854
+02:21:02.300 --> 02:21:03.160
+Victor Flores Benites: No.
+
+855
+02:21:03.270 --> 02:21:07.249
+Ing. Julio Salgado: Víctor, un favor. Si si pudiera subir esas diapositivas.
+
+856
+02:21:07.510 --> 02:21:08.130
+Victor Flores Benites: Y.
+
+857
+02:21:08.130 --> 02:21:10.040
+Ing. Julio Salgado: Nuevas y etiquetas actualizarlas.
+
+858
+02:21:10.220 --> 02:21:14.530
+Ing. Julio Salgado: Me he buscado en o la sube.
+
+859
+02:21:14.890 --> 02:21:17.960
+Victor Flores Benites: Les he convertido estas, no les he convertido. No me acuerdo.
+
+860
+02:21:20.620 --> 02:21:23.499
+Ing. Julio Salgado: O las otras del L G que tenías para.
+
+861
+02:21:23.500 --> 02:21:25.220
+Victor Flores Benites: A las de L. L. M. S.
+
+862
+02:21:25.630 --> 02:21:26.340
+Ing. Julio Salgado: Sí.
+
+863
+02:21:27.020 --> 02:21:29.920
+Victor Flores Benites: ¡ah, Okay, Eso lo voy a subir en el en el grupo.
+
+864
+02:21:30.390 --> 02:21:31.669
+Ing. Julio Salgado: Ya está. Gracias.
+
+865
+02:21:32.080 --> 02:21:41.280
+Victor Flores Benites: Ya Okay. De todos modos, también lo voy a mejorar un poco esas diapositivas, porque veo que son, tiene bastantes ideas justamente con el L. M. X.
+
+866
+02:21:42.100 --> 02:21:50.639
+Victor Flores Benites: Entonces vamos a continuar el sábado sé que va a ser un poco temprano. Espero que puedan conectarse
+
+867
+02:21:50.770 --> 02:21:58.310
+Victor Flores Benites: a las 8 más que nada para avanzar. Los temas que siguen ahí con visor atention
+
+868
+02:21:58.620 --> 02:22:01.780
+Victor Flores Benites: Me preocupa un poco que nos podamos atrasar
+
+869
+02:22:01.970 --> 02:22:11.069
+Victor Flores Benites: porque el 14 van a ser las presentaciones. Bueno, vamos a hacer clase el jueves de 7 a 10, no por ahí. Tengo un calendario.
+
+870
+02:22:11.330 --> 02:22:14.970
+Victor Flores Benites: Sí, voy a tener cuidado con los tiempos, porque ahí se nos está comprimiendo.
+
+871
+02:22:15.360 --> 02:22:27.249
+Victor Flores Benites: Tal vez lo que veamos más adelante que de por sí es un poco teórico. Tal vez podría este compactarlo. Tal vez presentarlo Lo más importante, y este volver un poco más. Por el lado aplicativo.
+
+872
+02:22:28.480 --> 02:22:30.830
+Victor Flores Benites: Bueno, eso vamos a ver las siguientes clases.
+
+873
+02:22:31.840 --> 02:22:37.089
+Victor Flores Benites: Entonces continuamos el sábado con menos que tengan otra pregunta.
+
+874
+02:22:39.460 --> 02:22:56.029
+Victor Flores Benites: Sí, bueno, Les voy a subir las instrucciones ahora mismo. Les voy a compartir primero por este por el Whatsapp para que lo tengan, y también le voy a pedir a este Juan que lo suba al sistema, pero como eso va a demorar mejor. Les comparto directamente Okay Deme unos minutos y le y les comparto todo eso.
+
+875
+02:22:56.170 --> 02:22:59.849
+Victor Flores Benites: Bueno, tengan muy buenas noches hasta el sábado.
+
+876
+02:23:00.550 --> 02:23:02.149
+Ing. Julio Salgado: Ya ahorita. Muchas gracias. Bye.
+
+877
+02:23:02.150 --> 02:23:03.870
+Victor Flores Benites: Hasta luego chao Chao!
+
+878
+02:23:04.160 --> 02:23:07.110
+Victor Flores Benites: Tengo que parar aquí distintos.
+
+879
+02:23:07.350 --> 02:23:08.660
+Victor Flores Benites: Sí, grabándose.
+
+880
+02:23:11.110 --> 02:23:12.230
+Victor Flores Benites: Sí. Sí.
+

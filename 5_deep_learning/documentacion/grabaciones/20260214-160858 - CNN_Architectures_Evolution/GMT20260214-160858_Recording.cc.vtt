@@ -1,0 +1,4940 @@
+WEBVTT
+
+00:00:02.000 --> 00:00:03.000
+de clase.
+
+00:00:03.000 --> 00:00:11.000
+Ocho.
+
+00:00:11.000 --> 00:00:12.000
+Um… espezado, este enso el curso.
+
+00:00:12.000 --> 00:00:25.000
+big data.
+
+00:00:25.000 --> 00:00:28.000
+Ah, principalmente ven como commandos, no.
+
+00:00:28.000 --> 00:00:35.000
+respecto al ultima klece.
+
+00:00:35.000 --> 00:00:42.000
+diasias.
+
+00:00:42.000 --> 00:00:47.000
+See, um… restores de clase…
+
+00:00:47.000 --> 00:00:58.000
+Machine Learning.
+
+00:00:58.000 --> 00:01:03.000
+19 is 3…
+
+00:01:03.000 --> 00:01:07.000
+bueno, odia vamos a continuar con…
+
+00:01:07.000 --> 00:01:19.000
+Consumisto, este con senienes, estuvimos viendo la senienes la cena pasado, no?
+
+00:01:19.000 --> 00:01:25.000
+entrenamiento en el curso prebio.
+
+00:01:25.000 --> 00:01:36.000
+almost comentren los coleces lupendrenamiente, todo eso, cierto.
+
+00:01:36.000 --> 00:01:37.000
+Jatin and Clarissa Parade.
+
+00:01:37.000 --> 00:01:40.000
+Steve Bilson.
+
+00:01:40.000 --> 00:01:43.000
+Vale por ibamos a serva ser un poco.
+
+00:01:43.000 --> 00:01:49.000
+como acer codigo.
+
+00:01:49.000 --> 00:01:58.000
+Okay.
+
+00:01:58.000 --> 00:02:03.000
+Eastern. Okay.
+
+00:02:03.000 --> 00:02:08.000
+Buenos, pero que tendien, vamos a continuar lo que vas a la place pasa.
+
+00:02:08.000 --> 00:02:14.000
+Comesamos con rez convolucionales.
+
+00:02:14.000 --> 00:02:21.000
+visto, um…
+
+00:02:21.000 --> 00:02:25.000
+in computer vision.
+
+00:02:25.000 --> 00:02:30.000
+And we've got to stop going.
+
+00:02:30.000 --> 00:02:35.000
+I didn't mean to talk to her any son or less.
+
+00:02:35.000 --> 00:02:38.000
+the Zoom? Oh, this one.
+
+00:02:38.000 --> 00:02:43.000
+y esa en que…
+
+00:02:43.000 --> 00:02:48.000
+lo que esta siento es un procesifrado, not?
+
+00:02:48.000 --> 00:02:53.000
+es como discerniro.
+
+00:02:53.000 --> 00:02:58.000
+Seleccionar parte de la informacion que vine de algun tipo de fuente, no?
+
+00:02:58.000 --> 00:03:03.000
+When, like, there will be este petro de Senales de este…
+
+00:03:03.000 --> 00:03:06.000
+imaginos, no?
+
+00:03:06.000 --> 00:03:12.000
+Lo que serecionan es parte las frecuencias de la simagenes del imagin original, no?
+
+00:03:12.000 --> 00:03:15.000
+promote, como segmentar, no?
+
+00:03:15.000 --> 00:03:20.000
+como presentacion de mattress.
+
+00:03:20.000 --> 00:03:27.000
+Esto de convolucion o de filtros de por si sextiende aguultier domino, este…
+
+00:03:27.000 --> 00:03:32.000
+Cualquiero minho de…
+
+00:03:32.000 --> 00:03:38.000
+Okay, so I still este… cualquier tipo deato, no? De hecho esteem…
+
+00:03:38.000 --> 00:03:45.000
+de una dimensional.
+
+00:03:45.000 --> 00:03:50.000
+Ez…
+
+00:03:50.000 --> 00:03:57.000
+Okay, por ejemplos, yo seros cinemos en a senal, este que se ha…
+
+00:03:57.000 --> 00:04:04.000
+de haber uno.
+
+00:04:04.000 --> 00:04:09.000
+Esasinales este son facilmente part turbadas aquista.
+
+00:04:09.000 --> 00:04:15.000
+Eh, con el interno. Por ejemplo, la senor de electricidad que hay esta las paredes, no?
+
+00:04:15.000 --> 00:04:20.000
+Eso federon que compo electromagnetico, que justamente lo valir noso sensor, que usandible, no?
+
+00:04:20.000 --> 00:04:25.000
+tipo, no? Con mucho rido.
+
+00:04:25.000 --> 00:04:31.000
+I don't know. Entonces lo que queremos hacer es eleccionar solamente las vercuencias que son de lo que nosotros nos interes.
+
+00:04:31.000 --> 00:04:37.000
+Y bueno para sus tenemos vazantes filtros, no?
+
+00:04:37.000 --> 00:04:42.000
+Pasados, pasabajos, pasabanda, esto bandes, y todo eso, no?
+
+00:04:42.000 --> 00:04:47.000
+Hora este passabajos, bueno, este tosos filtos.
+
+00:04:47.000 --> 00:04:53.000
+son kernels, no kernels, eh…
+
+00:04:53.000 --> 00:05:02.000
+El fin de cuenta son un especia de caso un dimension unospectores con algundo numeritos van lo que se convolucionar. Hora temos que esenar esos numeritos.
+
+00:05:02.000 --> 00:05:06.000
+Para eso hay varias tecnicas.
+
+00:05:06.000 --> 00:05:12.000
+tambien ahi, este…
+
+00:05:12.000 --> 00:05:21.000
+es que justamente.
+
+00:05:21.000 --> 00:05:25.000
+seleccionar seruntipo informacion.
+
+00:05:25.000 --> 00:05:34.000
+Y sobre todo que el luego de hacerce filtrado este no ya mucha historcion. Porque siempre que procesamos algo, siempre ade tener un custo, no va a ver este…
+
+00:05:34.000 --> 00:05:37.000
+Algo sin, algun tipo de peria.
+
+00:05:37.000 --> 00:05:49.000
+When the SA3 lan visto en computer vision, este no lamos a…
+
+00:05:49.000 --> 00:05:55.000
+Um… poriemplo esteem…
+
+00:05:55.000 --> 00:05:58.000
+Pero ejemplo, plaro…
+
+00:05:58.000 --> 00:06:03.000
+Bueno filtro clasico de por si ese filtro que se esteem.
+
+00:06:03.000 --> 00:06:09.000
+Deblur, lo que hace eliminar los detalles, no?
+
+00:06:09.000 --> 00:06:13.000
+ET que es con imag…
+
+00:06:13.000 --> 00:06:16.000
+filtro aga ocean.
+
+00:06:16.000 --> 00:06:23.000
+quiro seleccioner.
+
+00:06:23.000 --> 00:06:26.000
+Marvel filter.
+
+00:06:26.000 --> 00:06:29.000
+Classico. Clasico.
+
+00:06:29.000 --> 00:06:36.000
+que pue encontrado que nuestros ojos, buenos ojos de los animales en general.
+
+00:06:36.000 --> 00:06:38.000
+Dealing is the ensu…
+
+00:06:38.000 --> 00:06:42.000
+se filtro.
+
+00:06:42.000 --> 00:06:45.000
+Entonces este eunaselicion de direcciones.
+
+00:06:45.000 --> 00:06:54.000
+Okay, A1.es de cambio de limaco.
+
+00:06:54.000 --> 00:07:04.000
+Vale, es comuna seleccion de bordes con diferentes tipos de orientaciones. Y al final de todo eso, lo puedes combinar todos los 5os que abor como a partener una mejor niquies, no.
+
+00:07:04.000 --> 00:07:10.000
+Entonces de acar some filters, e que pueden vero este filtro causiano de legabor, este…
+
+00:07:10.000 --> 00:07:13.000
+Con diferentes, um…
+
+00:07:13.000 --> 00:07:19.000
+diferencos harmonicos que tiuna seabor.
+
+00:07:19.000 --> 00:07:26.000
+Hay mucho segaur. Bueno, eso tambien es donuteria de como di seniardo esta deano.
+
+00:07:26.000 --> 00:07:31.000
+Esto lo que se sole hacer en computer vision, tenia es una amalgama de filtros,
+
+00:07:31.000 --> 00:07:36.000
+Computer Vision.
+
+00:07:36.000 --> 00:07:44.000
+ado de NVAI.
+
+00:07:44.000 --> 00:07:52.000
+adiab Learning.
+
+00:07:52.000 --> 00:07:54.000
+Este trizabuchas os indices.
+
+00:07:54.000 --> 00:07:57.000
+que estos indices de vegetacion.
+
+00:07:57.000 --> 00:08:05.000
+el ot.
+
+00:08:05.000 --> 00:08:09.000
+I mean, I mean, this is the hour.
+
+00:08:09.000 --> 00:08:11.000
+Quiera con bedole.
+
+00:08:11.000 --> 00:08:17.000
+You can see I have a very important, this is que ca a 15 de 20 sera combinaciones entre canales. Era aquesta, miene.
+
+00:08:17.000 --> 00:08:21.000
+Yarrojo este cercando versus errojo.
+
+00:08:21.000 --> 00:08:23.000
+Es una comunacion entreas canales.
+
+00:08:23.000 --> 00:08:30.000
+imagenes multispectrales que venan de satelites que son libres.
+
+00:08:30.000 --> 00:08:38.000
+computer vision las primeros ano, lo que seamos era…
+
+00:08:38.000 --> 00:08:41.000
+hacer esta form de forma manual.
+
+00:08:41.000 --> 00:08:46.000
+Pero con las res convolucionales estambio completamente el paradigm.
+
+00:08:46.000 --> 00:08:50.000
+comentando la clase pasada.
+
+00:08:50.000 --> 00:08:52.000
+And…
+
+00:08:52.000 --> 00:08:59.000
+Uno que va a ser extrater de characteristicas,
+
+00:08:59.000 --> 00:09:04.000
+Okay, they have a surface detection. O sea lo que va a ser es intendar la imagen.
+
+00:09:04.000 --> 00:09:11.000
+Okay? son unresionales, no?
+
+00:09:11.000 --> 00:09:20.000
+Luego este vamos a terro una parte classificacion, o bueno, lo que queramos ober comart resultado, no?
+
+00:09:20.000 --> 00:09:28.000
+Esclassificacion, y sie a classificacion no podria seguir es uneta pada de segmentacion, una pada de object detection, yes, you know.
+
+00:09:28.000 --> 00:09:31.000
+Pero siempre va a ser una primer etapate inte.
+
+00:09:31.000 --> 00:09:33.000
+O entendre los datos.
+
+00:09:33.000 --> 00:09:41.000
+puede ser texo, por ejemplo, vamos a tener una red que lo que va a ser esto a intender continuido dese techo.
+
+00:09:41.000 --> 00:09:44.000
+Eso se vaya Marce encoder, okay? An encoder, trata decodific.
+
+00:09:44.000 --> 00:09:46.000
+When Sutarias codificar.
+
+00:09:46.000 --> 00:09:50.000
+La entrada, en este caso imagenes con por es convolucionales,
+
+00:09:50.000 --> 00:09:56.000
+Y luego es entendimino de comprendcion que pastar dentro de intensor en un a representacion.
+
+00:09:56.000 --> 00:10:02.000
+Es el lo vamos a processar para quinierra resultado final sepoyamar un decoder.
+
+00:10:02.000 --> 00:10:07.000
+el termino de codermas utiliza como.
+
+00:10:07.000 --> 00:10:18.000
+dimajen como resultado, algun tipo de texto que la generos no?
+
+00:10:18.000 --> 00:10:30.000
+Pero tambien podemos que denializa del concepto del decoder como para cualquier tipo de salida, y apoy ser como clases ya siento.
+
+00:10:30.000 --> 00:10:32.000
+Um, it's a…
+
+00:10:32.000 --> 00:10:38.000
+dese comentario porque algunos libros.
+
+00:10:38.000 --> 00:10:43.000
+Les van a decir que son exclusivos de modelos generativos, pero…
+
+00:10:43.000 --> 00:10:51.000
+muchos masimos domins.
+
+00:10:51.000 --> 00:11:02.000
+Bueno, este tambien subimos repaando un poco de eso, no tambien algo que bien vista en computer vision, es tenemos tres canales entrada.
+
+00:11:02.000 --> 00:11:07.000
+Para obtener una solo este canal de salida, un solo activation map.
+
+00:11:07.000 --> 00:11:13.000
+Entonces cada que…
+
+00:11:13.000 --> 00:11:16.000
+Unca.
+
+00:11:16.000 --> 00:11:19.000
+Un carnal porqueza una las entrajadas, no?
+
+00:11:19.000 --> 00:11:31.000
+Okay, entonces, primer carne va processesarse solamente a lo ser.izados enervres, no?
+
+00:11:31.000 --> 00:11:36.000
+El segundo a grilling est verde. Verde.
+
+00:11:36.000 --> 00:11:40.000
+y el ultimo en buo los asole. Canada lores.
+
+00:11:40.000 --> 00:11:45.000
+No?
+
+00:11:45.000 --> 00:11:52.000
+estan explando sobre el imagen.
+
+00:11:52.000 --> 00:11:57.000
+Okay, y luego losot cominar y se apener en el…
+
+00:11:57.000 --> 00:12:07.000
+In a feature map the resultado, no? O activation map tambemis po yamarno. Activation map porque son activaciones, no, para esta characteristic en particular.
+
+00:12:07.000 --> 00:12:11.000
+I justlo este ahi que hablamos de muchos terminos terminos.
+
+00:12:11.000 --> 00:12:18.000
+terminos que podemos trilizarremen.
+
+00:12:18.000 --> 00:12:23.000
+generar.
+
+00:12:23.000 --> 00:12:30.000
+Y masa el ante vamos utilizar muchas terminos, como terminos conjunes, asi que es importante que lo nosca.
+
+00:12:30.000 --> 00:12:38.000
+Okay? Primero tenemos feature, no? El la characteristica, que en ese caso va a ser…
+
+00:12:38.000 --> 00:12:43.000
+Este una posicion de todos este tensor. No, este tensor es un para el epipo, no?
+
+00:12:43.000 --> 00:12:46.000
+tiene tres dimensiones, okay?
+
+00:12:46.000 --> 00:12:51.000
+the case, Sony mapping. Este temos osimensiones espaciales, sin eminencion de profundidad, no?
+
+00:12:51.000 --> 00:12:55.000
+Este direcion de profondidad son todos canales que nosotros disponemos, no?
+
+00:12:55.000 --> 00:13:00.000
+como que una… un espacio mas grande donde vamos a represental informacion, no?
+
+00:13:00.000 --> 00:13:08.000
+y podencialmente podiamos abstero cosas mas complejas, no?
+
+00:13:08.000 --> 00:13:12.000
+Um, una posicion donde de todas esteem…
+
+00:13:12.000 --> 00:13:19.000
+una sola posicion tambien del imagen vase ser un feature.
+
+00:13:19.000 --> 00:13:24.000
+Okay? Es como umbalor especifico para un position.
+
+00:13:24.000 --> 00:13:26.000
+Eh, bueno, tambien podiamos ver…
+
+00:13:26.000 --> 00:13:28.000
+emissiones, no?
+
+00:13:28.000 --> 00:13:35.000
+son dimensiones de caracteristicas, no?
+
+00:13:35.000 --> 00:13:38.000
+So you serecenamos una solo posicion espacion.
+
+00:13:38.000 --> 00:13:40.000
+Todo el vector que sa detras?
+
+00:13:40.000 --> 00:13:43.000
+Okay, back corresponder a la description.
+
+00:13:43.000 --> 00:13:47.000
+de esta posicion in particular, no? E solo se mara fixture vector.
+
+00:13:47.000 --> 00:13:54.000
+ado al un tipo informacion, no?
+
+00:13:54.000 --> 00:14:01.000
+este al informacion de vegetacion.
+
+00:14:01.000 --> 00:14:05.000
+They plant us. Entonces, podemos obtener,
+
+00:14:05.000 --> 00:14:10.000
+planta.
+
+00:14:10.000 --> 00:14:17.000
+espacialmente somos localizando donde desactivado ese canalin especifico.
+
+00:14:17.000 --> 00:14:20.000
+Okay?
+
+00:14:20.000 --> 00:14:25.000
+Okay? Bueno. Dejaro disclaimer, ka, um…
+
+00:14:25.000 --> 00:14:29.000
+Y les digo que…
+
+00:14:29.000 --> 00:14:34.000
+ejemplo que corresponde a un concepto in specifico.
+
+00:14:34.000 --> 00:14:40.000
+lo vamos a mandijar haciendos ejemplos, pero mas hailande vamos a ver que no estano asi.
+
+00:14:40.000 --> 00:14:44.000
+Elidad, los canales tienden a star muyan realad.
+
+00:14:44.000 --> 00:14:54.000
+lo que crecies que, por ejemplo el concepto de planta, vastar en el canal 5 y el canal Dies, en canal 20, el canal 20. Estar como disregado.
+
+00:14:54.000 --> 00:14:59.000
+Pero tambien sus canales el canal cinco puede estar tamer la senado con el concept, no 70 animales.
+
+00:14:59.000 --> 00:15:05.000
+You can at least 10 di escal tipo de textura. Entonces…
+
+00:15:05.000 --> 00:15:11.000
+Unos canales que van estar… bueno, los canales van estar este incontenizados so varias cuestos a la vez.
+
+00:15:11.000 --> 00:15:14.000
+Es lo que siamma enrido de representaciones, no?
+
+00:15:14.000 --> 00:15:19.000
+esas evenciones.
+
+00:15:19.000 --> 00:15:25.000
+Porque queremos de cierto control. Uno pued ser por esplainabilit, como paradecir a mira.
+
+00:15:25.000 --> 00:15:35.000
+Quiero saber exactamente que ha reconocido la retnell, y entonces.
+
+00:15:35.000 --> 00:15:38.000
+O Thambien is the Damascus.
+
+00:15:38.000 --> 00:15:42.000
+modulos generativos.
+
+00:15:42.000 --> 00:15:47.000
+Um…
+
+00:15:47.000 --> 00:15:52.000
+Por ejemplo, queremos generar este la cara de un rostero.
+
+00:15:52.000 --> 00:16:01.000
+Pero queremos contra la le dat. Entonces, si tenemos este una dimension que se exclusivamente that, si lo subimos aumento le dad, si los bajamos reduceridad, no?
+
+00:16:01.000 --> 00:16:03.000
+Entos es con un esteem.
+
+00:16:03.000 --> 00:16:09.000
+sin problemos, no?
+
+00:16:09.000 --> 00:16:12.000
+Porque el conception realado.
+
+00:16:12.000 --> 00:16:18.000
+pero realmente la renderonal va…
+
+00:16:18.000 --> 00:16:20.000
+Palmist careless causes.
+
+00:16:20.000 --> 00:16:26.000
+cada canal correspondio en concept en particul.
+
+00:16:26.000 --> 00:16:35.000
+Okay. Bueno, continuando este hablamos de encoli este embedino, este, um…
+
+00:16:35.000 --> 00:16:44.000
+El invading bastar mas relacionado a elementos y discretos, no? Esa isudal me suitoriza en discretos.
+
+00:16:44.000 --> 00:16:49.000
+utilizarse en algunos este representaciones.
+
+00:16:49.000 --> 00:16:51.000
+Eh, continuous.
+
+00:16:51.000 --> 00:16:56.000
+llaman visaal embeddin.
+
+00:16:56.000 --> 00:17:03.000
+reco correcto, porque no escreto.
+
+00:17:03.000 --> 00:17:09.000
+Pero sindra cambia mucho los terminos. Es muy…
+
+00:17:09.000 --> 00:17:15.000
+No estan cerrado el como se…
+
+00:17:15.000 --> 00:17:18.000
+Como se manejo los conceptos en deep learning.
+
+00:17:18.000 --> 00:17:20.000
+Okay, um…
+
+00:17:20.000 --> 00:17:27.000
+when el terminosi que va a ser mucho mas generar queero que declaro ser concepto representacion, no?
+
+00:17:27.000 --> 00:17:35.000
+obtener. No serramante como resultado final del procesamiento,
+
+00:17:35.000 --> 00:17:39.000
+Si no tambien como este la set pas intermedias.
+
+00:17:39.000 --> 00:17:45.000
+la rendo Ronaldo.
+
+00:17:45.000 --> 00:17:50.000
+Eh, como una serie de…
+
+00:17:50.000 --> 00:17:56.000
+E de transformaciones, okay, cada cada convolucional baseion network formacion, transformacion, transformacion.
+
+00:17:56.000 --> 00:18:00.000
+representaciones, no, es comuno.
+
+00:18:00.000 --> 00:18:06.000
+aquista.
+
+00:18:06.000 --> 00:18:08.000
+Es como si.
+
+00:18:08.000 --> 00:18:13.000
+Okay, so…
+
+00:18:13.000 --> 00:18:22.000
+Entonces, eh…
+
+00:18:22.000 --> 00:18:24.000
+Yeah, so…
+
+00:18:24.000 --> 00:18:33.000
+Entonces, luego de presensal imagin aqui vamos a tener algun tipo a representacion.
+
+00:18:33.000 --> 00:18:37.000
+Y asi, you know?
+
+00:18:37.000 --> 00:18:40.000
+Pueden ver que es una…
+
+00:18:40.000 --> 00:18:42.000
+con junto de pasos, no?
+
+00:18:42.000 --> 00:18:44.000
+de transformaciones, no?
+
+00:18:44.000 --> 00:18:48.000
+Es como si la red neuronal poco a poco pallir moldiendo mildando.
+
+00:18:48.000 --> 00:18:52.000
+El espacio, los 5…
+
+00:18:52.000 --> 00:18:56.000
+Haste llegar a la representacion final, no? Okay?
+
+00:18:56.000 --> 00:19:02.000
+que sel set no se…
+
+00:19:02.000 --> 00:19:04.000
+Entonces, le imagen…
+
+00:19:04.000 --> 00:19:07.000
+Poco poco se ver transformando.
+
+00:19:07.000 --> 00:19:10.000
+Moldiendo este paso paso,
+
+00:19:10.000 --> 00:19:15.000
+As the URSA representacion final que lo que va a ser es lo que.
+
+00:19:15.000 --> 00:19:25.000
+Sendria el objetivo es que se una abstraction del contenido del imagin original una abstraction compleja que lo vamos utilizar para diferentes dominos, no?
+
+00:19:25.000 --> 00:19:31.000
+representaciones, no estamos un boco de el passio la tente.
+
+00:19:31.000 --> 00:19:35.000
+Viamos visto que depo si el…
+
+00:19:35.000 --> 00:19:38.000
+Ayunos conceptos de localidad.
+
+00:19:38.000 --> 00:19:41.000
+Este sobre es espacia la dente, no.
+
+00:19:41.000 --> 00:19:44.000
+Los cosas comunes van estender estar juntes, no?
+
+00:19:44.000 --> 00:19:56.000
+conceptos de direccion, no? E como en esa direccion estar concepto de hombre pora que este concerte de mujeda, que el concept de son rice, y asi.
+
+00:19:56.000 --> 00:20:01.000
+se podian comper, no?
+
+00:20:01.000 --> 00:20:06.000
+Okay? Y buenesso se podia estabular y crendes ominos.
+
+00:20:06.000 --> 00:20:12.000
+Yes, a propias encontrado este en various indiferentes lovinos.
+
+00:20:12.000 --> 00:20:20.000
+es espacio de representacion.
+
+00:20:20.000 --> 00:20:22.000
+Okay.
+
+00:20:22.000 --> 00:20:31.000
+Bueno, entonces, lo que vase la renderonal y hacia consine en estrasformers, va a ser conas seria de transformaciones.
+
+00:20:31.000 --> 00:20:38.000
+espacio latente con las propiedades que les estar enaciona.
+
+00:20:38.000 --> 00:20:43.000
+Okay? This is… that seems combined by functionality.
+
+00:20:43.000 --> 00:20:51.000
+el concepto este…
+
+00:20:51.000 --> 00:20:53.000
+El coseto di campo receptivo?
+
+00:20:53.000 --> 00:21:01.000
+Okay? donde provienda el informacion, no?
+
+00:21:01.000 --> 00:21:03.000
+The Cole la fuente de la informacion.
+
+00:21:03.000 --> 00:21:08.000
+Por ejemplo, esta posicion de aqui esta resultado de procesar todo estaria, no?
+
+00:21:08.000 --> 00:21:14.000
+acando.
+
+00:21:14.000 --> 00:21:18.000
+la posicion, no?
+
+00:21:18.000 --> 00:21:23.000
+Y que es lo que en esta posicion se esta representando o que se esta codificando, no?
+
+00:21:23.000 --> 00:21:29.000
+se esta codificando todo este contenido, no? Okay.
+
+00:21:29.000 --> 00:21:35.000
+Pero esta posicion corresponde a una region dentro delimajo, no?
+
+00:21:35.000 --> 00:21:38.000
+Once I see por aca ay yung…
+
+00:21:38.000 --> 00:21:45.000
+ungo.
+
+00:21:45.000 --> 00:21:54.000
+y todo esoto.
+
+00:21:54.000 --> 00:21:58.000
+U miendras que si por a cano se…
+
+00:21:58.000 --> 00:22:05.000
+ayuna medusa.
+
+00:22:05.000 --> 00:22:16.000
+Este informacion estaria codificado por acando, okay? Entonces, ese vector conida informacion de also este de aca el la codificacion de medosa, no que son disjundos, no?
+
+00:22:16.000 --> 00:22:20.000
+Okay? Mundo en este caso disjuntos, um…
+
+00:22:20.000 --> 00:22:31.000
+Vamos a ver que tambien se van a tender a relacionar como parentender lecena, porque no solemente quirimos decir que es unoso que esta ais, sino que queremos ader que unoso que esteng un contextoado, no?
+
+00:22:31.000 --> 00:22:36.000
+But anyway, esta posicion lo que esta centrado esa ver que hay ay unoso.
+
+00:22:36.000 --> 00:22:41.000
+What is the Israel Concepto de relacionar internal contexto es alo que vamos parar…
+
+00:22:41.000 --> 00:22:47.000
+Comas for centrasformers. Vamos a dolo problem.
+
+00:22:47.000 --> 00:22:53.000
+Eh, luego este las operaciones, no, este las por la oferesiones.
+
+00:22:53.000 --> 00:22:58.000
+los artos que va a ver la…
+
+00:22:58.000 --> 00:23:12.000
+principalmente eso es el objetivo, no exclucidamente eso, pero principalmente.
+
+00:23:12.000 --> 00:23:22.000
+principalmente est seguramente veran visto dible en computer vision.
+
+00:23:22.000 --> 00:23:26.000
+amplia del campo receptivo receptivo.
+
+00:23:26.000 --> 00:23:29.000
+parameters.
+
+00:23:29.000 --> 00:23:33.000
+Elgunas aplicaciones donde el informacion ese esparz.
+
+00:23:33.000 --> 00:23:36.000
+Tambien podras valer hacer algo.
+
+00:23:36.000 --> 00:23:40.000
+Por ejemplo haciendos anos…
+
+00:23:40.000 --> 00:23:45.000
+ellosa por yando un…
+
+00:23:45.000 --> 00:23:47.000
+whom that this is de Maestria.
+
+00:23:47.000 --> 00:23:50.000
+This is the…
+
+00:23:50.000 --> 00:23:56.000
+de COVID.
+
+00:23:56.000 --> 00:24:05.000
+Entonces, este los adene, bueno, adenes una cadena, no? Esa cadena este procesarlo como es muy grande es facante complic.
+
+00:24:05.000 --> 00:24:07.000
+In those cases, the problem with various causes.
+
+00:24:07.000 --> 00:24:12.000
+E… algo que se le courio al final ya que se por sustenter,
+
+00:24:12.000 --> 00:24:15.000
+utilizar una jodificacion que era…
+
+00:24:15.000 --> 00:24:20.000
+el veto.
+
+00:24:20.000 --> 00:24:25.000
+de cudere y representa,
+
+00:24:25.000 --> 00:24:27.000
+el continuido de ese ready.
+
+00:24:27.000 --> 00:24:34.000
+Okay? Y bueno, hay es de por si esa qualificaciente el informacion de la rene no solamente un puedecin.
+
+00:24:34.000 --> 00:24:43.000
+como para ver si se puedes general se pas peligrosas. Estein…
+
+00:24:43.000 --> 00:24:50.000
+It is so relatius, it's not precir la generacion de sepas pedigros.
+
+00:24:50.000 --> 00:24:55.000
+Entonces. Cuare del una forma.
+
+00:24:55.000 --> 00:24:58.000
+Even Otilizando is the same anesth.
+
+00:24:58.000 --> 00:25:02.000
+Senes.
+
+00:25:02.000 --> 00:25:09.000
+Em podia ser poco practico porque era muy esparz la informacion. Significa que si haberabas un filtro de entries por tres,
+
+00:25:09.000 --> 00:25:13.000
+o todo negro todo blanco.
+
+00:25:13.000 --> 00:25:17.000
+crevacion.
+
+00:25:17.000 --> 00:25:20.000
+negra.
+
+00:25:20.000 --> 00:25:27.000
+entonces eso limitaba mucho la capacidad de la rendernal otra, aumentar el tambien el que arnel pro yo hacer esteem.
+
+00:25:27.000 --> 00:25:34.000
+mas costoso. Entonces una solucion fue ampliar el campo acceptivo, no, por convolucion diratada.
+
+00:25:34.000 --> 00:25:41.000
+Okay?
+
+00:25:41.000 --> 00:25:47.000
+este solo creatividad defendiendo del problema.
+
+00:25:47.000 --> 00:25:55.000
+Bueno, luego hablamos de pooling, les comentado que estoya no se suelle utilizar antesera este.
+
+00:25:55.000 --> 00:26:07.000
+Elsender, okay?
+
+00:26:07.000 --> 00:26:12.000
+regiones donde calculo, no?
+
+00:26:12.000 --> 00:26:20.000
+Okay? El lo que como les mencia, lo que tambientes sequeliza en es Strat. Strite sobre el cadaquil mas conversiones.
+
+00:26:20.000 --> 00:26:26.000
+Bueno, um… tambien.
+
+00:26:26.000 --> 00:26:30.000
+representecion.
+
+00:26:30.000 --> 00:26:38.000
+conceptos mas y masoplegos, no?
+
+00:26:38.000 --> 00:26:43.000
+las primaries estaparo que vargano ser tallas de asinos.
+
+00:26:43.000 --> 00:26:54.000
+Cuero que les comparti este…
+
+00:26:54.000 --> 00:27:02.000
+Y creo que comenzamos con architecturas, no?
+
+00:27:02.000 --> 00:27:06.000
+Tierto.
+
+00:27:06.000 --> 00:27:10.000
+Well, eh…
+
+00:27:10.000 --> 00:27:17.000
+vivibivos no en…
+
+00:27:17.000 --> 00:27:28.000
+de como se comportale at cortes a visual y tambien entender la hierarchia de interprecisamiendo, no?
+
+00:27:28.000 --> 00:27:31.000
+no.
+
+00:27:31.000 --> 00:27:36.000
+los pores animales.
+
+00:27:36.000 --> 00:27:45.000
+como para medir la respuesta del cerebro, en esos anos no via tantos a serramientas, no.
+
+00:27:45.000 --> 00:27:49.000
+invasivos como que ellos anos.
+
+00:27:49.000 --> 00:27:55.000
+Bueno, a partir de se comprencion de la como responde las neuronas en la porteza visuals y en el se timer model, no?
+
+00:27:55.000 --> 00:28:01.000
+cocin es algo…
+
+00:28:01.000 --> 00:28:03.000
+A good company, you know?
+
+00:28:03.000 --> 00:28:07.000
+limit limitations.
+
+00:28:07.000 --> 00:28:11.000
+El luego anos despues, me parece que son mi.
+
+00:28:11.000 --> 00:28:20.000
+is the simplifico mucho esto y trajo con convolucionales, no?
+
+00:28:20.000 --> 00:28:25.000
+implementar esto deca, no.
+
+00:28:25.000 --> 00:28:39.000
+Um…
+
+00:28:39.000 --> 00:28:49.000
+Um… I…
+
+00:28:49.000 --> 00:28:54.000
+perdo.
+
+00:28:54.000 --> 00:29:00.000
+los codivos. Okay?
+
+00:29:00.000 --> 00:29:10.000
+Entonces, todos que gamos en clase, lo va a encontrar aqui.
+
+00:29:10.000 --> 00:29:15.000
+Entonces, cualquier codivo que gamos lo van a encontar aqui.
+
+00:29:15.000 --> 00:29:21.000
+Bueno, podia ver veces que es increo creo otra carpeta, pero de tosmos siempre lo via colocar aqui.
+
+00:29:21.000 --> 00:29:25.000
+Okay?
+
+00:29:25.000 --> 00:29:29.000
+Bonus.
+
+00:29:29.000 --> 00:29:34.000
+Well, if los codigos, y buenoirama puedo.
+
+00:29:34.000 --> 00:29:40.000
+Okay, um…
+
+00:29:40.000 --> 00:29:44.000
+Okay, nosotros podemos definir las resonales.
+
+00:29:44.000 --> 00:29:47.000
+lo que vamos otivisar.
+
+00:29:47.000 --> 00:29:59.000
+PyTresh TensorFlow.
+
+00:29:59.000 --> 00:30:12.000
+Kiosaro.
+
+00:30:12.000 --> 00:30:23.000
+Except what I?
+
+00:30:23.000 --> 00:30:26.000
+papers in Yellow.
+
+00:30:26.000 --> 00:30:30.000
+Okay, does I see yes time from the source competitors, no?
+
+00:30:30.000 --> 00:30:36.000
+directo, no? Este…
+
+00:30:36.000 --> 00:30:42.000
+las rez.
+
+00:30:42.000 --> 00:30:47.000
+to do those forums, no un utilizando sequencia que nos los creiamos una lista de
+
+00:30:47.000 --> 00:30:52.000
+de las componentes, no?
+
+00:30:52.000 --> 00:31:00.000
+Okay? Nelepe de solamente dos capas, no? No?
+
+00:31:00.000 --> 00:31:04.000
+Luego usamosilizando una funcienda activacion un relo.
+
+00:31:04.000 --> 00:31:08.000
+este ahora.
+
+00:31:08.000 --> 00:31:14.000
+Iran is the sigmoid, is the surfax, y…
+
+00:31:14.000 --> 00:31:19.000
+Laurel.
+
+00:31:19.000 --> 00:31:23.000
+Literally, it's a squadron, no?
+
+00:31:23.000 --> 00:31:28.000
+Cuando solos implementamos esto, este dependiendo mucho de coris la funcion activacion, no todas.
+
+00:31:28.000 --> 00:31:34.000
+variantes de relu.
+
+00:31:34.000 --> 00:31:38.000
+Vamos a poder colocareece factor que seama in place through.
+
+00:31:38.000 --> 00:31:43.000
+Okay? Looking to say de esqueen.
+
+00:31:43.000 --> 00:31:45.000
+I don't know what's pretty important.
+
+00:31:45.000 --> 00:31:52.000
+espacios de memoria tantos entrada o como salida.
+
+00:31:52.000 --> 00:32:07.000
+memoria se van connectaros unas con otros, no van a ser como poneros, no?
+
+00:32:07.000 --> 00:32:16.000
+I said, uh…
+
+00:32:16.000 --> 00:32:22.000
+Okay. Entonces, por ejemplo, si demos una capa convolucional.
+
+00:32:22.000 --> 00:32:26.000
+Okay?
+
+00:32:26.000 --> 00:32:30.000
+On the input, young output, no?
+
+00:32:30.000 --> 00:32:36.000
+Okay? Luego is the input-output se puede con entar con otra elemento, no? Que puede ser, no se la rello.
+
+00:32:36.000 --> 00:32:42.000
+Okay?
+
+00:32:42.000 --> 00:32:46.000
+Eh, que seam…
+
+00:32:46.000 --> 00:32:54.000
+Okay? Entonces, simple vamos estar separando asi espacios de memoria,
+
+00:32:54.000 --> 00:32:57.000
+Tentrade is a leader, okay?
+
+00:32:57.000 --> 00:33:00.000
+Bueno, el problema es que…
+
+00:33:00.000 --> 00:33:02.000
+No tranqu…
+
+00:33:02.000 --> 00:33:04.000
+Noso solamenteos utilizar.
+
+00:33:04.000 --> 00:33:09.000
+en el procesamiento, la salida de la relo, no, que en ese caso es 83.
+
+00:33:09.000 --> 00:33:16.000
+El existencia de heche 2, not 109 sentido, no? Porque al fin de cuenta novo futrizar de he invar propagand vamos a tririzar.
+
+00:33:16.000 --> 00:33:18.000
+No ache dos.
+
+00:33:18.000 --> 00:33:21.000
+Entonces, les existencia decendos, realmente.
+
+00:33:21.000 --> 00:33:30.000
+es mejor prescindir de eso, no, porque vamos a gastar incarceramente memoria.
+
+00:33:30.000 --> 00:33:33.000
+Entonces, se lo que podemos hacer es que…
+
+00:33:33.000 --> 00:33:37.000
+PyTorch is the utilise la espacio memoria de hacheos.
+
+00:33:37.000 --> 00:33:39.000
+Eh…
+
+00:33:39.000 --> 00:33:45.000
+hace dos…
+
+00:33:45.000 --> 00:33:47.000
+trade room, okay?
+
+00:33:47.000 --> 00:33:51.000
+Yes, este resultado, se vas a escribir sobre hache 2. Okay?
+
+00:33:51.000 --> 00:33:55.000
+com.
+
+00:33:55.000 --> 00:34:02.000
+Okay? Entonces, lo que somos haciendo esoro memoria sobre escribiendo, sobre decimo espacio de memoria.
+
+00:34:02.000 --> 00:34:11.000
+Okay, um, hijosamente para que se asi es colocar ese flacre si ma en place. In place, you are true.
+
+00:34:11.000 --> 00:34:15.000
+las funciones activacion tiene ese…
+
+00:34:15.000 --> 00:34:28.000
+mencionado.
+
+00:34:28.000 --> 00:34:31.000
+Eh, no tienen ese…
+
+00:34:31.000 --> 00:34:34.000
+Esa funcion que des mecionado, no? Okay.
+
+00:34:34.000 --> 00:34:42.000
+nothing in place, porque aqui si a hace baba propagation la…
+
+00:34:42.000 --> 00:34:49.000
+La gradiente, este va depender de cual la senia decando. Esias este representative y la salida.
+
+00:34:49.000 --> 00:34:54.000
+Okay? And really no important entonces colocamos in place y tos felicios.
+
+00:34:54.000 --> 00:35:04.000
+usamos mucho menos esteemoglia, okay? Bueno, endos, la primera forma de implementar paser por sequencia enquiasa en que simplemente generar unalista de todos los componentes,
+
+00:35:04.000 --> 00:35:07.000
+utilizar esteem.
+
+00:35:07.000 --> 00:35:14.000
+Okay, en el punto model. Y el forward.
+
+00:35:14.000 --> 00:35:22.000
+pero.
+
+00:35:22.000 --> 00:35:35.000
+cuales son las capas que vamos estar entro estan, right?
+
+00:35:35.000 --> 00:35:40.000
+Okay, entonces las capas que tiene es son las.
+
+00:35:40.000 --> 00:35:48.000
+por ejemplo esteem…
+
+00:35:48.000 --> 00:35:57.000
+y luego simplemente llamarlo en el forward.
+
+00:35:57.000 --> 00:36:06.000
+el funciona.
+
+00:36:06.000 --> 00:36:12.000
+Jose importa es de functional,
+
+00:36:12.000 --> 00:36:15.000
+I don't open the next step.
+
+00:36:15.000 --> 00:36:18.000
+Seeing in borders…
+
+00:36:18.000 --> 00:36:20.000
+Cisco or symptomatic NFA.
+
+00:36:20.000 --> 00:36:23.000
+Y de veces defino carriba.
+
+00:36:23.000 --> 00:36:26.000
+Simplemente por loca, este.
+
+00:36:26.000 --> 00:36:29.000
+APC, well, uh, eFundo.
+
+00:36:29.000 --> 00:36:40.000
+Okay? Entonces, some utiliz, aqui estamos dej llamando directamente la funucion al implementacion de PyTorch para este…
+
+00:36:40.000 --> 00:36:44.000
+But a concussion, okay?
+
+00:36:44.000 --> 00:36:48.000
+La diferencia de esos dos es que ustedes y…
+
+00:36:48.000 --> 00:36:59.000
+como se todos los modulos, no?
+
+00:36:59.000 --> 00:37:07.000
+un nombre como elbiamos heo invinciblementa aqui.
+
+00:37:07.000 --> 00:37:10.000
+Los mudos que lo definamos esta formula.
+
+00:37:10.000 --> 00:37:13.000
+No se van origister dentro dice.
+
+00:37:13.000 --> 00:37:15.000
+This is a graph, bueno decesrupled.
+
+00:37:15.000 --> 00:37:19.000
+Entonces, si queremos hacer un tipo de seguimiento a la estructura estructura.
+
+00:37:19.000 --> 00:37:22.000
+lo mas practico.
+
+00:37:22.000 --> 00:37:26.000
+Pero…
+
+00:37:26.000 --> 00:37:30.000
+Great, it's about depende mucho de como se esta.
+
+00:37:30.000 --> 00:37:35.000
+They're awesome.io para que se van como.
+
+00:37:35.000 --> 00:37:38.000
+Mmm…
+
+00:37:38.000 --> 00:37:49.000
+Yes. Well, is the abajo tenemos que corroquar la transportno, que usted al ponos.
+
+00:37:49.000 --> 00:37:55.000
+el casso.
+
+00:37:55.000 --> 00:38:00.000
+En este caso, lo que vamos hacer caso de dijembro, no, vamos a trajar con Meniz,
+
+00:38:00.000 --> 00:38:09.000
+datos di potenzor, no.
+
+00:38:09.000 --> 00:38:11.000
+O cueto se tipo tenso.
+
+00:38:11.000 --> 00:38:17.000
+originalmente los datos como cargar esteemenice, datoset escal.
+
+00:38:17.000 --> 00:38:20.000
+ti lo que esta ha siendo.
+
+00:38:20.000 --> 00:38:22.000
+this field to Tensor.
+
+00:38:22.000 --> 00:38:30.000
+Okay? Esteutensor de buen funcionar para nampe. Si ustes tienen una leveria tipo opens, por ejemplo.
+
+00:38:30.000 --> 00:38:41.000
+Este que lo traja conformato nambi, mo se siglemete colocon al contenso y automaticamento reconoces, si.
+
+00:38:41.000 --> 00:38:55.000
+Okay, entonces, este es importante que esten el formarto te este piters, okay? Luego si una normalizacion, no recoraran que es importante normalizar los datos, y parajo carlo poco se escala, no?
+
+00:38:55.000 --> 00:39:00.000
+una normalizacion de…
+
+00:39:00.000 --> 00:39:05.000
+Este considerando una media 0.
+
+00:39:05.000 --> 00:39:09.000
+Recording a key saving in those tools, there's no…
+
+00:39:09.000 --> 00:39:13.000
+than Amelia?
+
+00:39:13.000 --> 00:39:16.000
+you know, this, yes, you're…
+
+00:39:16.000 --> 00:39:18.000
+It's standard, no? Okay?
+
+00:39:18.000 --> 00:39:24.000
+En este caso selemente tenemos un canal, entonces vamos a definir solamente numero por cada uno de esos.
+
+00:39:24.000 --> 00:39:31.000
+Okay, cuando trabajamos con… con ImageNet, por ejemplo, cuando se hacemos al un tipo de…
+
+00:39:31.000 --> 00:39:36.000
+importacion de modelo con ImageNet, tenemos tambien utilizar su transformacion que te risen para image, no?
+
+00:39:36.000 --> 00:39:40.000
+medias.
+
+00:39:40.000 --> 00:39:46.000
+estandar para regeve.
+
+00:39:46.000 --> 00:39:50.000
+Okay?
+
+00:39:50.000 --> 00:39:54.000
+Moscato is there.
+
+00:39:54.000 --> 00:39:57.000
+You mentioned it.
+
+00:39:57.000 --> 00:40:05.000
+Pakistan.
+
+00:40:05.000 --> 00:40:10.000
+Aliem preguntaba porque est oficialmentes utiliza.
+
+00:40:10.000 --> 00:40:15.000
+eloquino.
+
+00:40:15.000 --> 00:40:20.000
+Okay, como standard esta mediar, y este espeacion standard.
+
+00:40:20.000 --> 00:40:26.000
+Joseamente es porque es calculado partir de image, no?
+
+00:40:26.000 --> 00:40:37.000
+lo mencion.
+
+00:40:37.000 --> 00:40:45.000
+eso para que lo sepan.
+
+00:40:45.000 --> 00:40:49.000
+Dope.
+
+00:40:49.000 --> 00:40:54.000
+Bueno, este procierdon todos creo que nosotros hemos…
+
+00:40:54.000 --> 00:40:56.000
+Crecido hemos estado en el…
+
+00:40:56.000 --> 00:41:07.000
+El estapa donde en los anos donde estabo overflow era muy relevant.
+
+00:41:07.000 --> 00:41:14.000
+Porque la forma como nosotros ahrasimos preguntas o interactamos con la informacion de COVID eso.
+
+00:41:14.000 --> 00:41:20.000
+overflow, esperamos que no responda.
+
+00:41:20.000 --> 00:41:22.000
+Alguien del Gunda buena manera.
+
+00:41:22.000 --> 00:41:33.000
+como pueduntarezo.
+
+00:41:33.000 --> 00:41:40.000
+mucho tiempo era lo standard.
+
+00:41:40.000 --> 00:41:43.000
+si aparecia algo que…
+
+00:41:43.000 --> 00:41:51.000
+Y bueno, lle gocha GPT se como todo esta porro.
+
+00:41:51.000 --> 00:41:59.000
+Um… todo bien.
+
+00:41:59.000 --> 00:42:03.000
+aquias con rankings, no, podiumer como.
+
+00:42:03.000 --> 00:42:08.000
+titios.
+
+00:42:08.000 --> 00:42:12.000
+comunidad de estaburro.
+
+00:42:12.000 --> 00:42:18.000
+renada.
+
+00:42:18.000 --> 00:42:24.000
+We can say quality and normalize incoutines, no, porque el dia que normalizar exactamente como odos.
+
+00:42:24.000 --> 00:42:29.000
+normalizado, como lo normalizaron en la…
+
+00:42:29.000 --> 00:42:38.000
+Okay?
+
+00:42:38.000 --> 00:42:42.000
+Recuera en siempre enviar la retro.
+
+00:42:42.000 --> 00:42:45.000
+I'll… at least positivo que se much utilizando, no?
+
+00:42:45.000 --> 00:42:50.000
+in normalmente nosotros vamos a trajar en queu.
+
+00:42:50.000 --> 00:42:58.000
+Okay? Muy raro que trabe hemos en sepeo, cuando esteemos uno reposios muy limitados, pero me te va a serge people.
+
+00:42:58.000 --> 00:43:06.000
+memoria parte, ni estamos es plazar digamos fisicamente o bueno.
+
+00:43:06.000 --> 00:43:08.000
+Es plaza re informacion de la ram…
+
+00:43:08.000 --> 00:43:11.000
+De la CPU a la ram de la CP.
+
+00:43:11.000 --> 00:43:21.000
+Y buenos solo logramos con two device, no? Device is…
+
+00:43:21.000 --> 00:43:26.000
+Okay, um, bueno, por cierto, esteel…
+
+00:43:26.000 --> 00:43:29.000
+La gran mayoria de modulos, o como ebulacionado deep learning,
+
+00:43:29.000 --> 00:43:34.000
+Esto muyer elacionado con esteem…
+
+00:43:34.000 --> 00:43:40.000
+Entonces, la gran mayoria de implementaciones, optimizaciones y todo eso, estan conclude.
+
+00:43:40.000 --> 00:43:44.000
+unopolies.
+
+00:43:44.000 --> 00:43:57.000
+Si bien cierto mejorar la compatibilidad con max
+
+00:43:57.000 --> 00:44:02.000
+Um… the handle is available.
+
+00:44:02.000 --> 00:44:04.000
+And…
+
+00:44:04.000 --> 00:44:08.000
+una compra para deep learning.
+
+00:44:08.000 --> 00:44:16.000
+video.
+
+00:44:16.000 --> 00:44:21.000
+optimizado mucho para LLMes.
+
+00:44:21.000 --> 00:44:25.000
+So repeto porque el mercado Norte americano que eso losien.
+
+00:44:25.000 --> 00:44:29.000
+en casa.
+
+00:44:29.000 --> 00:44:35.000
+Entonces, ten…
+
+00:44:35.000 --> 00:44:44.000
+Por aproche son kinderando como romintas que se inclusivas de mas, no. Pero si, vamos como un Marco mucho mas general de tip learning.
+
+00:44:44.000 --> 00:44:49.000
+la recomeiento trabajar con inevit.
+
+00:44:49.000 --> 00:44:53.000
+crocentro, pino.
+
+00:44:53.000 --> 00:45:00.000
+growth entropy laws. Crossentropy is recreate que seiza para controjamos con multiclace.
+
+00:45:00.000 --> 00:45:08.000
+vientemente.
+
+00:45:08.000 --> 00:45:11.000
+Okay? Alvo muy importante que deben recordar.
+
+00:45:11.000 --> 00:45:14.000
+computer vision, no? Este…
+
+00:45:14.000 --> 00:45:20.000
+entropy y tambien vinar y cross-entropy,
+
+00:45:20.000 --> 00:45:25.000
+internetmente ya tiene la funcion de activacion os sigmode, oss.
+
+00:45:25.000 --> 00:45:29.000
+Okay? Por rotando. Si estoya tienez sigmodeo softens.
+
+00:45:29.000 --> 00:45:33.000
+aqui no lo deben con colocar.
+
+00:45:33.000 --> 00:45:35.000
+Okay, then there are retro en cuocaro.
+
+00:45:35.000 --> 00:45:44.000
+Okay, it was a starving mu bien que se pues, parcele de clasificacion, al final deven colocaron Sormax por como preca la classificacion.
+
+00:45:44.000 --> 00:45:47.000
+no?
+
+00:45:47.000 --> 00:45:53.000
+Esto esa asi, porque pitros o optimizo este…
+
+00:45:53.000 --> 00:46:05.000
+dos…
+
+00:46:05.000 --> 00:46:10.000
+Por acceleracion de procesamiento, lo que vamos a ser es optimizacion, no?
+
+00:46:10.000 --> 00:46:13.000
+igual con el…
+
+00:46:13.000 --> 00:46:16.000
+con el otro, con el sigmode.
+
+00:46:16.000 --> 00:46:19.000
+Soamente para que los sepa.
+
+00:46:19.000 --> 00:46:29.000
+Bueno, en el love dendra namitos eja tenante tener lo tambien claro, eh…
+
+00:46:29.000 --> 00:46:36.000
+paraida.
+
+00:46:36.000 --> 00:46:39.000
+propagio, no?
+
+00:46:39.000 --> 00:46:43.000
+Y bueno nunca servideen utilizarre este serograt, no?
+
+00:46:43.000 --> 00:46:48.000
+Recordaran que como funciona Bytors.
+
+00:46:48.000 --> 00:46:51.000
+que tiene espaso de memoria para las gradientes.
+
+00:46:51.000 --> 00:46:57.000
+memoria o como sectorice espacio memoria siempre es cono. Tad vez que hace es un back propagation.
+
+00:46:57.000 --> 00:47:01.000
+is the Basumar resultidado de la gradiente.
+
+00:47:01.000 --> 00:47:06.000
+Este sobre esaspacio demonia. Siempre va a serum, sumar. Entonces lobar, chancan.
+
+00:47:06.000 --> 00:47:10.000
+lo que haya dente, okay?
+
+00:47:10.000 --> 00:47:16.000
+cremos que se combini.
+
+00:47:16.000 --> 00:47:24.000
+Okay? Por esos que esta ha sie implementado este PyTorch, pero, cuando solamente decimociones sol exipusion.
+
+00:47:24.000 --> 00:47:31.000
+es espacion memoria que se han cumulando la grandiende, y siempre estamos humando,
+
+00:47:31.000 --> 00:47:33.000
+Tiamos que retornarlo casel. Entonces…
+
+00:47:33.000 --> 00:47:44.000
+propagio.
+
+00:47:44.000 --> 00:47:49.000
+cierto.
+
+00:47:49.000 --> 00:47:58.000
+No queremos que se manten que este valor, no, la reente previento, lo otra ejo, hemos hacer y otras lo colocamos esta gradiente y unusim.
+
+00:47:58.000 --> 00:48:03.000
+Okay, asias como estar fusilande, recording siempre sera y esa empra que sir, you know?
+
+00:48:03.000 --> 00:48:12.000
+Even though optimizeramenteos que a visan el optimizan que apaso un estepp, recorden que Adam at yadan BW este utilizan
+
+00:48:12.000 --> 00:48:19.000
+momento. No hi tenemos que avizar optimizador que se tienen…
+
+00:48:19.000 --> 00:48:22.000
+que pasar un lube titracion sobre esos.
+
+00:48:22.000 --> 00:48:24.000
+de esos momentos, okay?
+
+00:48:24.000 --> 00:48:33.000
+podamos hacer o los gradientes.
+
+00:48:33.000 --> 00:48:38.000
+Eh, bueno, esos para entrenamiento para la veridacion.
+
+00:48:38.000 --> 00:48:42.000
+And I said about him, he said no esto.
+
+00:48:42.000 --> 00:48:46.000
+porque se esto, pero…
+
+00:48:46.000 --> 00:48:50.000
+la red punto train.
+
+00:48:50.000 --> 00:48:53.000
+La red punto e ponder. Okay?
+
+00:48:53.000 --> 00:48:57.000
+como buena practica.
+
+00:48:57.000 --> 00:49:00.000
+para que no solvre.
+
+00:49:00.000 --> 00:49:06.000
+Empero el realuso es que algunas capas algunos elementos de la rende regional.
+
+00:49:06.000 --> 00:49:13.000
+Este van a responter de muiferente manera o van aten diferentes modos si estan enrinamiento o estan en validacion.
+
+00:49:13.000 --> 00:49:23.000
+Okay? Por ejemplo, a dropout, no? Ponces entre enamamento va a pagar autopjeleaturamente este algunas de urones.
+
+00:49:23.000 --> 00:49:31.000
+ico.
+
+00:49:31.000 --> 00:49:34.000
+The case escambiando de inrerenamiente violacion, no?
+
+00:49:34.000 --> 00:49:43.000
+tambien temos vast normalization. El bational is entrenamiento, este, what, of conventionalization.
+
+00:49:43.000 --> 00:49:52.000
+Pero vamos tart tambien obtenido segos de los datos, no como que cuales la media promio de los datos o puede la dispie a standard promio de los datos no.
+
+00:49:52.000 --> 00:50:00.000
+media especion standard.
+
+00:50:00.000 --> 00:50:07.000
+donde vamos utilizar es estimacion de…
+
+00:50:07.000 --> 00:50:11.000
+KCSI for Remedia mode.
+
+00:50:11.000 --> 00:50:14.000
+Okay, bueno. Luego de todo eso hacerdo.
+
+00:50:14.000 --> 00:50:20.000
+bueno, record en simpresso de colocar mod train, modo y Bol,
+
+00:50:20.000 --> 00:50:25.000
+torsion of grat, okay?
+
+00:50:25.000 --> 00:50:30.000
+Porque, por defecto, este la retroinal,
+
+00:50:30.000 --> 00:50:34.000
+Vas a para un espacia de memoria para esteem…
+
+00:50:34.000 --> 00:50:37.000
+Pero des gradientes, okay?
+
+00:50:37.000 --> 00:50:42.000
+banger algastar la memorial.
+
+00:50:42.000 --> 00:50:51.000
+Porque automatic necesito separament, no? Okay? Yo, el seust utilizan una rendereranal este…
+
+00:50:51.000 --> 00:50:58.000
+entrenal namas.
+
+00:50:58.000 --> 00:51:03.000
+algun tipo de datato,
+
+00:51:03.000 --> 00:51:06.000
+No quinierre los pasos de memorias de gradientes.
+
+00:51:06.000 --> 00:51:11.000
+Si lo dejan sin esque torso gran en cuando haz en inferencia.
+
+00:51:11.000 --> 00:51:23.000
+pero es foible que este no entre tu red
+
+00:51:23.000 --> 00:51:27.000
+hablos de los demas.
+
+00:51:27.000 --> 00:51:32.000
+Por ejemplo, este… esto problema vasante como, y…
+
+00:51:32.000 --> 00:51:37.000
+el proyecto de bueno lateses con COVID.
+
+00:51:37.000 --> 00:51:43.000
+E recordo que el…
+
+00:51:43.000 --> 00:51:46.000
+See Francisco este…
+
+00:51:46.000 --> 00:51:50.000
+Al inicio estabutrizeno directo me colo que retes otrizando.
+
+00:51:50.000 --> 00:51:58.000
+Ah, era…
+
+00:51:58.000 --> 00:52:04.000
+mucha memoria, no? Entonces blacia este alto memory.
+
+00:52:04.000 --> 00:52:13.000
+dos puntos ya.
+
+00:52:13.000 --> 00:52:20.000
+corriendo, okay?
+
+00:52:20.000 --> 00:52:23.000
+Okay?
+
+00:52:23.000 --> 00:52:32.000
+bueno, aqui sentrenor, y bueno aqui estanados corvas no entre entrenamiente, buenasio. Recueron que con el entrenamiento, nosotros estamos minimizanto, no, y es normal que…
+
+00:52:32.000 --> 00:52:35.000
+Este tengamos un eror mucho mas pequeno.
+
+00:52:35.000 --> 00:52:45.000
+Es el comportamento o suel.
+
+00:52:45.000 --> 00:52:48.000
+Hello? When?
+
+00:52:48.000 --> 00:52:58.000
+Haste tienen alguna pregunta?
+
+00:52:58.000 --> 00:53:00.000
+Mmm, no?
+
+00:53:00.000 --> 00:53:04.000
+El video preguntarles algo.
+
+00:53:04.000 --> 00:53:23.000
+o qu quieren dos pauses.
+
+00:53:23.000 --> 00:53:25.000
+Those pauses.
+
+00:53:25.000 --> 00:53:33.000
+Okay, sientonces seria una pavo se cada horrend.
+
+00:53:33.000 --> 00:53:44.000
+Entonces, les parece una posa de 10 minutos y continuamos.
+
+00:53:44.000 --> 00:53:47.000
+Okay, see, creo que decimista la posa, no?
+
+00:53:47.000 --> 00:53:48.000
+Valento se regresamos en 10 minuteo. 2 seres.
+
+00:53:48.000 --> 00:54:18.000
+Yeah.
+
+01:04:28.000 --> 01:04:35.000
+And…
+
+01:04:35.000 --> 01:04:38.000
+Bueno, mintros quizaban conectando tambien…
+
+01:04:38.000 --> 01:04:41.000
+Roycendos espacio.
+
+01:04:41.000 --> 01:04:51.000
+esta semana han salido dos modelos.
+
+01:04:51.000 --> 01:05:01.000
+Recordo que la clase pasada, me estan preguntando sobre que module utilizar este cual era mas comeniente para este trado con el EMS.
+
+01:05:01.000 --> 01:05:07.000
+para model de los open source.
+
+01:05:07.000 --> 01:05:10.000
+Los moderchinos,
+
+01:05:10.000 --> 01:05:15.000
+open source estandando, okay?
+
+01:05:15.000 --> 01:05:20.000
+Esta semana ha salido dos modellos. Uno eschele me 5.
+
+01:05:20.000 --> 01:05:26.000
+mucho a los modelos este…
+
+01:05:26.000 --> 01:05:30.000
+Commerciales, pueden ver que los numero estamos por aina.
+
+01:05:30.000 --> 01:05:37.000
+Okay? Buenokisama sabajo, pero contuls queere ser que utilizar este paito en cosa de signo.
+
+01:05:37.000 --> 01:05:49.000
+Si queremos como el modelo purito, pueden ver que estamas abajo que losotros, no, pero esta cerca, no?
+
+01:05:49.000 --> 01:05:57.000
+Gemini, pero debajo de openidad, you know?
+
+01:05:57.000 --> 01:06:01.000
+Y bueno esteem…
+
+01:06:01.000 --> 01:06:05.000
+Pueden ver que este modelo esta…
+
+01:06:05.000 --> 01:06:10.000
+casos este…
+
+01:06:10.000 --> 01:06:15.000
+anterior que el 4 p.
+
+01:06:15.000 --> 01:06:22.000
+empresa de relemes.
+
+01:06:22.000 --> 01:06:29.000
+que es del digile en mi.
+
+01:06:29.000 --> 01:06:34.000
+Dios espues de este papers desa publicacion.
+
+01:06:34.000 --> 01:06:40.000
+Este salio este otro modello.
+
+01:06:40.000 --> 01:06:44.000
+And the year. And the year, Claro.
+
+01:06:44.000 --> 01:06:47.000
+Eh, se llama, esas del minimax.
+
+01:06:47.000 --> 01:06:52.000
+esoter compania tambien de open source, que esta generando mu de los open source.
+
+01:06:52.000 --> 01:06:55.000
+Es elime 202…
+
+01:06:55.000 --> 01:07:01.000
+Y es se moder esta muy cerga de losotros modes.
+
+01:07:01.000 --> 01:07:07.000
+supera, este cosas donde estampo comas abaja.
+
+01:07:07.000 --> 01:07:09.000
+Pero estan ahi ahi.
+
+01:07:09.000 --> 01:07:13.000
+intereso vasant.
+
+01:07:13.000 --> 01:07:17.000
+SLA bench.
+
+01:07:17.000 --> 01:07:27.000
+que reservatarias de…
+
+01:07:27.000 --> 01:07:32.000
+Y aqui esta combrando le evolucion de cado une lo se meme que es de minimax.
+
+01:07:32.000 --> 01:07:35.000
+Controspecto a los modidos este privados, no?
+
+01:07:35.000 --> 01:07:38.000
+Podemer que esta ahi no mas, ahi.
+
+01:07:38.000 --> 01:07:46.000
+este open source.
+
+01:07:46.000 --> 01:07:52.000
+Que vamos acceder sin problemas este… y estan muy cerca de los modos privados, no?
+
+01:07:52.000 --> 01:07:56.000
+Y tambien dicen que el esa semana vasar esteep.
+
+01:07:56.000 --> 01:08:05.000
+deep sea. Quite from a person?
+
+01:08:05.000 --> 01:08:10.000
+a commentar.
+
+01:08:10.000 --> 01:08:15.000
+soy vindo que la siente clases presencial.
+
+01:08:15.000 --> 01:08:20.000
+Okay. Buen de la clase preciseles comentaria que tal el story divesik, okay?
+
+01:08:20.000 --> 01:08:29.000
+Bueno. Les menciono mas quinoar como pare que echojo si es que tienen este trabajando comprele, meso esta parse empresas.
+
+01:08:29.000 --> 01:08:36.000
+Y queregum modelo que este serrado, no, que no este… que no compartan en la informacion.
+
+01:08:36.000 --> 01:08:42.000
+is the confidential con Gemini con OpenAI con cloud, con Grog.
+
+01:08:42.000 --> 01:08:47.000
+quere en a segun fine-tuning.
+
+01:08:47.000 --> 01:08:53.000
+estan muy cerca, no?
+
+01:08:53.000 --> 01:08:57.000
+Mali este eso solamente noticias.
+
+01:08:57.000 --> 01:09:00.000
+It's another cosa, volumos a lat lesson.
+
+01:09:00.000 --> 01:09:07.000
+de convolucionales.
+
+01:09:07.000 --> 01:09:16.000
+Ah, bueno vimos un bocode como implementar esos codigo en PyTorch estamos represento voco de PyTorch que ustedesia cuando se cruso preview.
+
+01:09:16.000 --> 01:09:27.000
+una importancia historica, no que fue inflexion con respecto a la…
+
+01:09:27.000 --> 01:09:31.000
+o como funcionaba el computer vision.
+
+01:09:31.000 --> 01:09:36.000
+And this. Don Disable Vio Popular este deep learning gusto fue con Alexnet.
+
+01:09:36.000 --> 01:09:40.000
+Okay? Popular en el sentido de investigacion.
+
+01:09:40.000 --> 01:09:43.000
+Malim, ese hacer 201
+
+01:09:43.000 --> 01:09:51.000
+relevantes. Yo se era al trois comente la primera clase que era…
+
+01:09:51.000 --> 01:09:56.000
+Algo cool de saber, pero para numero algo que…
+
+01:09:56.000 --> 01:10:03.000
+Diamos que tu postulas un trabajo deciades de seranare Sierra como que y.
+
+01:10:03.000 --> 01:10:07.000
+esche…
+
+01:10:07.000 --> 01:10:14.000
+SGBUS estro machin Random Forest, este… no utilizar este retro nales.
+
+01:10:14.000 --> 01:10:18.000
+Se esta en que sepa, pero.
+
+01:10:18.000 --> 01:10:27.000
+Y dicho recomendaciones eran como que, bueno, si querez aprende, pero lo que realmenco frizas lo otro, no?
+
+01:10:27.000 --> 01:10:39.000
+arias tambien comesaron a probar ne vas cosas, no?
+
+01:10:39.000 --> 01:10:44.000
+La idea esotizar este…
+
+01:10:44.000 --> 01:10:49.000
+mejorando.
+
+01:10:49.000 --> 01:10:55.000
+Okay? This is AlexNet. ImageNet.
+
+01:10:55.000 --> 01:11:03.000
+comprendo contra enimamento umano.
+
+01:11:03.000 --> 01:11:07.000
+ano.
+
+01:11:07.000 --> 01:11:10.000
+Esto de a caso modulos este handcraft, modulos clasicos,
+
+01:11:10.000 --> 01:11:13.000
+mu fuerte.
+
+01:11:13.000 --> 01:11:16.000
+Okay? Luego los indes anos.
+
+01:11:16.000 --> 01:11:18.000
+deep learning,
+
+01:11:18.000 --> 01:11:24.000
+As the resonate, no, the resonating a dos mil…
+
+01:11:24.000 --> 01:11:27.000
+Let me say Scrumify?
+
+01:11:27.000 --> 01:11:36.000
+And…
+
+01:11:36.000 --> 01:11:42.000
+deep learning.
+
+01:11:42.000 --> 01:11:46.000
+Okay? Bueno, una hablemos de la BDG.
+
+01:11:46.000 --> 01:11:50.000
+empasadas.
+
+01:11:50.000 --> 01:11:55.000
+Ondo lamidity is un architectura intresante sobre todo.
+
+01:11:55.000 --> 01:12:01.000
+isde. Yo creo valorizada por lo que descubrio.
+
+01:12:01.000 --> 01:12:06.000
+terminino escubriendo este como…
+
+01:12:06.000 --> 01:12:14.000
+resportores, okay?
+
+01:12:14.000 --> 01:12:18.000
+Vemos hablad un poco del campo receptivo, no, es de doante provin en informacion que yo se procesando.
+
+01:12:18.000 --> 01:12:27.000
+Okay? Local technician have a…
+
+01:12:27.000 --> 01:12:33.000
+Por ejemplo, la informacion que vi bene?
+
+01:12:33.000 --> 01:12:40.000
+esta region, no? Okay, lo deca todo de esta region.
+
+01:12:40.000 --> 01:12:44.000
+Ose donde provin en informacion que se esta codificando en esa posicion en particular, no?
+
+01:12:44.000 --> 01:12:50.000
+Eso, es el campo receptivo. Y bueno si no solos queremos tener un intimido de todo ne esener.
+
+01:12:50.000 --> 01:12:56.000
+como parque analiste los suficiente del imagin.
+
+01:12:56.000 --> 01:12:59.000
+Como pareto mana algun tipo de conclusion.
+
+01:12:59.000 --> 01:13:09.000
+Okay? Bueno, lo que se sia hasta antes de la village de trabajar en la posile con convolucionales grandes, como para tener un Mayor con porosetivondo.
+
+01:13:09.000 --> 01:13:12.000
+Okay, vientemente queremos enermas contexto.
+
+01:13:12.000 --> 01:13:19.000
+El problema es que so genera a mayor console computacional, no, el caso base que es una transportre, sono del parametingos.
+
+01:13:19.000 --> 01:13:25.000
+El siguiente que seria una cinco por cinco, seria 25 para metros, no ten que es mas que el doble.
+
+01:13:25.000 --> 01:13:30.000
+They chose Casi el Triple. KC Triple numero de Parametros.
+
+01:13:30.000 --> 01:13:37.000
+esca 10 veces
+
+01:13:37.000 --> 01:13:45.000
+No, we think you're working seria casi…
+
+01:13:45.000 --> 01:13:48.000
+Porcanto Seria este…
+
+01:13:48.000 --> 01:13:56.000
+corrospector caso base.
+
+01:13:56.000 --> 01:14:04.000
+Okay? Lo que serio cuenta nuestro amigo carim.
+
+01:14:04.000 --> 01:14:07.000
+Okay.
+
+01:14:07.000 --> 01:14:12.000
+Es que nosotros podemos acumular este capas de comucional estortres.
+
+01:14:12.000 --> 01:14:22.000
+mas grandes, okay? Entonces, no necesitamos trabajar con blessionales muy grandes como apart tener
+
+01:14:22.000 --> 01:14:25.000
+Estequivalentes.
+
+01:14:25.000 --> 01:14:30.000
+res.
+
+01:14:30.000 --> 01:14:37.000
+bueno, esto, como les mencion receptivo, no. Tempo receptivo de esta region, estada oportuno de esta region, no?
+
+01:14:37.000 --> 01:14:46.000
+Okay? Por como se comporte esta convolucional, you know? Pora, si sericionam si trabajamos sobre una region mucho mas, como tracapa mas,
+
+01:14:46.000 --> 01:14:48.000
+mas.
+
+01:14:48.000 --> 01:14:53.000
+de estar region.
+
+01:14:53.000 --> 01:14:56.000
+Eh, ese result todo de procesar…
+
+01:14:56.000 --> 01:14:59.000
+Regenes de esta otra e tapa, no.
+
+01:14:59.000 --> 01:15:08.000
+Por ejemplo, esto deca?
+
+01:15:08.000 --> 01:15:11.000
+The human negrafico, pueden ver que…
+
+01:15:11.000 --> 01:15:13.000
+Esta region deca?
+
+01:15:13.000 --> 01:15:26.000
+Okay? Esta…
+
+01:15:26.000 --> 01:15:30.000
+Okay?
+
+01:15:30.000 --> 01:15:37.000
+Okay? Y bueno. Elazon de la esquine inferior.
+
+01:15:37.000 --> 01:15:42.000
+a key, okay? Pa correspondir a todo estaria de aqui.
+
+01:15:42.000 --> 01:15:46.000
+value?
+
+01:15:46.000 --> 01:15:49.000
+Entonces, eh, pueden ver que…
+
+01:15:49.000 --> 01:15:52.000
+este resultado deca.
+
+01:15:52.000 --> 01:15:56.000
+original, no?
+
+01:15:56.000 --> 01:16:00.000
+Pero todos estas luego son procedados par igar solamente hay este unico numero.
+
+01:16:00.000 --> 01:16:03.000
+Okay?
+
+01:16:03.000 --> 01:16:09.000
+Entonces, este si lo vemos todeso como un solo bloque. No, como dos pasos.
+
+01:16:09.000 --> 01:16:15.000
+Okay, el resultado de esta posicion esta degradado en todo esta sona grande de Coloracion.
+
+01:16:15.000 --> 01:16:22.000
+Okay? Y bueno puedeno terque estas una grande region esta manos 5 por cinco.
+
+01:16:22.000 --> 01:16:26.000
+Okay? It's okay atilamos dos conversional estres tres porres.
+
+01:16:26.000 --> 01:16:30.000
+El camo receptivo global va a ser como una cinco por cinco.
+
+01:16:30.000 --> 01:16:34.000
+estres.
+
+01:16:34.000 --> 01:16:37.000
+no?
+
+01:16:37.000 --> 01:16:44.000
+originalmente con una convolucion 5?
+
+01:16:44.000 --> 01:16:47.000
+Uh, what intermediate income parameters, no?
+
+01:16:47.000 --> 01:17:00.000
+En este caso con solamente dos conversiones refortres, vamos a tener por cada convolucion a reporter 201cion el numero de parametros.
+
+01:17:00.000 --> 01:17:07.000
+serian tresno. Si te porcite son con el tiene parametros.
+
+01:17:07.000 --> 01:17:14.000
+cual guineve.
+
+01:17:14.000 --> 01:17:18.000
+es mucho menos para interest. Vamos ahorar
+
+01:17:18.000 --> 01:17:24.000
+Numero parameters.
+
+01:17:24.000 --> 01:17:31.000
+Pero nos remetes esos, sino que recuerden que nosotros aumentamos en la complejidad de la representacion.
+
+01:17:31.000 --> 01:17:37.000
+de las, este lasres neonales, utilizando funes activacion, no?
+
+01:17:37.000 --> 01:17:39.000
+Okay.
+
+01:17:39.000 --> 01:17:44.000
+Tenemos este… hablemos una en eleven, no? Una MLP.
+
+01:17:44.000 --> 01:17:48.000
+Okay? Somebody has capas de funciones activacion, no?
+
+01:17:48.000 --> 01:17:51.000
+linear.
+
+01:17:51.000 --> 01:17:56.000
+Okay?
+
+01:17:56.000 --> 01:18:00.000
+Duevo otra capilinian, no.
+
+01:18:00.000 --> 01:18:03.000
+Okay?
+
+01:18:03.000 --> 01:18:07.000
+Uh, por pone el otra cosa, digamos una solo.
+
+01:18:07.000 --> 01:18:13.000
+Okay, entonces, este vamos a generic diferentes capas de… funerales.
+
+01:18:13.000 --> 01:18:20.000
+Seguides de una positivacion, no? Y lo que les comentaba era que lo que le edara complejidad a la representacion.
+
+01:18:20.000 --> 01:18:27.000
+una recta, no?
+
+01:18:27.000 --> 01:18:33.000
+de lo que hace se cambio este que le edad complejidad vase la funcion de activacion de linear.
+
+01:18:33.000 --> 01:18:39.000
+Okay? Entosis. Originalmente estamos diciendo que hacer solventeen una convolucionar 5 por cinco.
+
+01:18:39.000 --> 01:18:44.000
+For example ejemplo, no? Tenicamente es como.
+
+01:18:44.000 --> 01:18:47.000
+So, the estar is in that, no?
+
+01:18:47.000 --> 01:18:54.000
+Okay? Answer multiplicacion de los pesos, por las posiciones, no?
+
+01:18:54.000 --> 01:18:59.000
+Okay?
+
+01:18:59.000 --> 01:19:04.000
+Okay? aplicado una pequena 25, okay?
+
+01:19:04.000 --> 01:19:11.000
+Sobre esto una funcion de activacion, no, y en este caso era una relo.
+
+01:19:11.000 --> 01:19:14.000
+Okay? Estos con a sola 5 por cinco.
+
+01:19:14.000 --> 01:19:19.000
+Hora, cuando utilizamos dos convolucionales.
+
+01:19:19.000 --> 01:19:25.000
+3 tres porres.
+
+01:19:25.000 --> 01:19:27.000
+Okay?
+
+01:19:27.000 --> 01:19:35.000
+Por rotanto este vamos a tier como que dos capas de no linearidad, lo que levar augo mas complicidad en la representacion, no?
+
+01:19:35.000 --> 01:19:41.000
+Entonces, la ganancia no solamente es la composicion de… o la reduccion del numero de parametros.
+
+01:19:41.000 --> 01:19:47.000
+Si no que al constamente se para lo como que varios bloques, varias convulsiones seguidas.
+
+01:19:47.000 --> 01:19:52.000
+Estamos aumentando la configion de la representacion porque tenemos mas este
+
+01:19:52.000 --> 01:19:57.000
+Okay?
+
+01:19:57.000 --> 01:20:02.000
+una comparacion por especto a la bananasia.
+
+01:20:02.000 --> 01:20:07.000
+780%.
+
+01:20:07.000 --> 01:20:13.000
+Si lo compre. Es el mucho de reducion de para metros.
+
+01:20:13.000 --> 01:20:19.000
+numero parameters.
+
+01:20:19.000 --> 01:20:25.000
+una ganze ya vas a te notar, no?
+
+01:20:25.000 --> 01:20:28.000
+Okay? When…
+
+01:20:28.000 --> 01:20:36.000
+A key is the… is immaculate original que me parece vastante interesande el como lo presenta.
+
+01:20:36.000 --> 01:20:41.000
+Okay? A ver e carin tuvo un idea.
+
+01:20:41.000 --> 01:20:48.000
+Y lo quizo evaluar, okay? Que tal sizolamente trabajo con convenional transport, okay?
+
+01:20:48.000 --> 01:20:54.000
+Vamos a parte de un caso base que va a ser esta redeca, que sea Marcela BGG Ons, okay?
+
+01:20:54.000 --> 01:21:00.000
+igual aqui e que o a laqui.
+
+01:21:00.000 --> 01:21:04.000
+Rego una millipede classificacion, okay?
+
+01:21:04.000 --> 01:21:10.000
+Bueno probabo y bueno. Consider. Y espoto 4%?
+
+01:21:10.000 --> 01:21:13.000
+Luego trabajo con el…
+
+01:21:13.000 --> 01:21:16.000
+local…
+
+01:21:16.000 --> 01:21:20.000
+Respo is the response node.
+
+01:21:20.000 --> 01:21:25.000
+normalizacion de la extension.
+
+01:21:25.000 --> 01:21:32.000
+Okay, no nos importa mucho, porque de hechos se enjo utilizar este fue mucho masolibac normalization.
+
+01:21:32.000 --> 01:21:41.000
+bueno, no funcional. Si no funciono, lo escartamos este cambio.
+
+01:21:41.000 --> 01:21:57.000
+GIM has been decimos que talimentamos re numero de capas, no.
+
+01:21:57.000 --> 01:22:02.000
+even the Bahamos el eror no, llamos a neponder, qui ser que vamos por buen camino, not?
+
+01:22:02.000 --> 01:22:07.000
+Even though por este mismo ano este ano un peuper que si el…
+
+01:22:07.000 --> 01:22:11.000
+CMA network in network, utilizans, commerciales ondo podundo, no?
+
+01:22:11.000 --> 01:22:16.000
+Recordaran de Computer Vision que la convulucion delundo por uno lo que hace,
+
+01:22:16.000 --> 01:22:19.000
+Es un operacion puramente de canales.
+
+01:22:19.000 --> 01:22:25.000
+Okay? Entonces, una convolutional, lo que hace es una opresion espacia de canales a la vez.
+
+01:22:25.000 --> 01:22:30.000
+Okay, por eso tenemos production de carne si vuego combinesion especial de canales.
+
+01:22:30.000 --> 01:22:36.000
+operacion poramente de canalis, okay?
+
+01:22:36.000 --> 01:22:41.000
+representacion de los canales canales.
+
+01:22:41.000 --> 01:22:48.000
+Okay, entonces dijo este carn que tal si per utterizolidad de 1990.
+
+01:22:48.000 --> 01:22:54.000
+Lo provo y bajo el error. No es punto cuat.
+
+01:22:54.000 --> 01:23:02.000
+You won't. A iso pregunto que tal si buenoso conversion el es uno por uno, que como les digos, soleamente son procesamento sobre canales.
+
+01:23:02.000 --> 01:23:10.000
+espacial en con punto.
+
+01:23:10.000 --> 01:23:17.000
+Y bueno, entonces, eso serial emplasario por en at 3 esas conversionales. Y justamente estamos aqui.
+
+01:23:17.000 --> 01:23:21.000
+eror hasta 8 puntoch.
+
+01:23:21.000 --> 01:23:28.000
+Okay? Even though Jabby Monsk administramos las capas,
+
+01:23:28.000 --> 01:23:33.000
+aumentar el numero de capas, no?
+
+01:23:33.000 --> 01:23:39.000
+McDonald's mas conversionales para ver que talc.
+
+01:23:39.000 --> 01:23:45.000
+llegamos a un tope. No chocamos con el mura de laia como…
+
+01:23:45.000 --> 01:23:48.000
+Modicen muchos.
+
+01:23:48.000 --> 01:23:56.000
+Nosquedamos ahi. Entonces, la version vigamos…
+
+01:23:56.000 --> 01:24:00.000
+Okay? Tambien algunos de some of the VGCD Sinoeve.
+
+01:24:00.000 --> 01:24:06.000
+un poquito masal, no?
+
+01:24:06.000 --> 01:24:11.000
+Okay? Ese peper de 201ince fue muy relevante por…
+
+01:24:11.000 --> 01:24:17.000
+muy conveniente.
+
+01:24:17.000 --> 01:24:28.000
+Okay? una crea clasica y muy demandada para este computer visiones del rostros.
+
+01:24:28.000 --> 01:24:36.000
+como recondecimiente de intidades, no?
+
+01:24:36.000 --> 01:24:46.000
+Entonces, si hiz son entrenamiento acunabase de rostros pais.
+
+01:24:46.000 --> 01:24:53.000
+muchos anos anos.
+
+01:24:53.000 --> 01:24:58.000
+muy fandezo.
+
+01:24:58.000 --> 01:25:00.000
+Y tambien de la visite.
+
+01:25:00.000 --> 01:25:11.000
+Pero la visitin unagral limiteante, como pueden ver que un punto el numero de carpas aumentar capas, lo que sijera de gradar en desempeno de la renderonal.
+
+01:25:11.000 --> 01:25:14.000
+is in sabemor porque?
+
+01:25:14.000 --> 01:25:40.000
+se coran porque eso se de esto.
+
+01:25:40.000 --> 01:25:45.000
+Sakura?
+
+01:25:45.000 --> 01:25:50.000
+vanishing gradient.
+
+01:25:50.000 --> 01:25:55.000
+exacto.
+
+01:25:55.000 --> 01:26:02.000
+Claro es que cuando aumentamos mucha mas capar recuarenque nosotros entreavamos por propagando, no?
+
+01:26:02.000 --> 01:26:08.000
+una composicion de funciones.
+
+01:26:08.000 --> 01:26:11.000
+La gradiente se convierte en una productoria, no?
+
+01:26:11.000 --> 01:26:14.000
+Si tenemos valores pequenos.
+
+01:26:14.000 --> 01:26:20.000
+va dejar de entrenar.
+
+01:26:20.000 --> 01:26:24.000
+Entonces, vamos a tener…
+
+01:26:24.000 --> 01:26:27.000
+ser una grafica.
+
+01:26:27.000 --> 01:26:32.000
+come inside, no?
+
+01:26:32.000 --> 01:26:38.000
+y al punto dondez.
+
+01:26:38.000 --> 01:26:42.000
+in existente, no? Entonces, la frivieras capas, reciben gradiente.
+
+01:26:42.000 --> 01:26:45.000
+Butleris is the resonables.
+
+01:26:45.000 --> 01:26:49.000
+este un buen gradiente, no.
+
+01:26:49.000 --> 01:26:54.000
+Pero las primeras no lo van a recibir, no, porque bueno yan publicado, ya multiplicado comocho valores.
+
+01:26:54.000 --> 01:26:59.000
+Okay? Resolucion antes problema el ResNet.
+
+01:26:59.000 --> 01:27:05.000
+Okay? No,
+
+01:27:05.000 --> 01:27:10.000
+Entonces, conviarte, buen es no complicien de funciones, y toces conviarte una productoria, no?
+
+01:27:10.000 --> 01:27:16.000
+la sigmode,
+
+01:27:16.000 --> 01:27:19.000
+Tine como maximo alur,
+
+01:27:19.000 --> 01:27:25.000
+buenos. Pero quienas importa la normo.
+
+01:27:25.000 --> 01:27:27.000
+Entonces, ba esta entrecer euno.
+
+01:27:27.000 --> 01:27:30.000
+Entonces me publicando poros valores entrecer yundo.
+
+01:27:30.000 --> 01:27:36.000
+momento obtema de banish.
+
+01:27:36.000 --> 01:27:39.000
+Relo is a Umpayor.
+
+01:27:39.000 --> 01:27:42.000
+Porque la relo lo que va a ser es…
+
+01:27:42.000 --> 01:27:50.000
+dosanas, no?
+
+01:27:50.000 --> 01:27:53.000
+Okay?
+
+01:27:53.000 --> 01:27:57.000
+All northern is that, apagado.
+
+01:27:57.000 --> 01:28:02.000
+mende, no?
+
+01:28:02.000 --> 01:28:04.000
+Sendido.
+
+01:28:04.000 --> 01:28:10.000
+Okay, y bueno SMAX…
+
+01:28:10.000 --> 01:28:15.000
+Entas aqui van a ser cero.
+
+01:28:15.000 --> 01:28:18.000
+Vale?
+
+01:28:18.000 --> 01:28:21.000
+la derivada en esta region.
+
+01:28:21.000 --> 01:28:28.000
+a ser. Cero, no?
+
+01:28:28.000 --> 01:28:33.000
+multiplicar en el propaganda.
+
+01:28:33.000 --> 01:28:35.000
+Tequila gradiente zero.
+
+01:28:35.000 --> 01:28:42.000
+Esso vas a ser que matel la propagacion de rayente, no?
+
+01:28:42.000 --> 01:28:44.000
+Todd lo que este para tras.
+
+01:28:44.000 --> 01:28:47.000
+Vasem investigado porun se.
+
+01:28:47.000 --> 01:28:54.000
+amente por esta zona de la real.
+
+01:28:54.000 --> 01:29:00.000
+Well, is there a Lagran limitacion que existienes en la rede enordade que ellos anos.
+
+01:29:00.000 --> 01:29:05.000
+Even though polloquin era difice trabajar por redes mucho mas profundes.
+
+01:29:05.000 --> 01:29:12.000
+las connecion del residuales pero.
+
+01:29:12.000 --> 01:29:15.000
+When the Keep coordination residual…
+
+01:29:15.000 --> 01:29:17.000
+Sesone refer lo mismo.
+
+01:29:17.000 --> 01:29:24.000
+utilizan en la unit, recordjaran de la Unit.
+
+01:29:24.000 --> 01:29:27.000
+respecto la unit.
+
+01:29:27.000 --> 01:29:38.000
+The semicola unit, no? C'est quora?
+
+01:29:38.000 --> 01:29:44.000
+Not missing a unit, pero que sino, organ segmentacion se diaen que ver CO60 tiene que basal po a unit.
+
+01:29:44.000 --> 01:29:46.000
+See, in here.
+
+01:29:46.000 --> 01:29:50.000
+tenhes.
+
+01:29:50.000 --> 01:29:54.000
+Pasar es informacion como parale detalle ese a la reconstruction.
+
+01:29:54.000 --> 01:30:00.000
+llamar escape conceion.
+
+01:30:00.000 --> 01:30:02.000
+Pero el nombre…
+
+01:30:02.000 --> 01:30:04.000
+The paper has connexion residual.
+
+01:30:04.000 --> 01:30:10.000
+lo que estamos haciendo es que haya un via descape o…
+
+01:30:10.000 --> 01:30:18.000
+de la gradiente, no? Aqui la gradiente se puede perdero, ya sea aporo. Gradientes pequenaso, porque la relu esta pagada.
+
+01:30:18.000 --> 01:30:23.000
+Pero gracias esta comunicacion deca, lo que vamos a ser esde…
+
+01:30:23.000 --> 01:30:26.000
+que la llama la gradiente decbivando.
+
+01:30:26.000 --> 01:30:29.000
+Que si activa la gradiente.
+
+01:30:29.000 --> 01:30:35.000
+value? In termsa fin de cuenta la relaactualizacion, va a ser esta decando.
+
+01:30:35.000 --> 01:30:40.000
+tambien lo pomos entender.
+
+01:30:40.000 --> 01:30:44.000
+Recording is the, um…
+
+01:30:44.000 --> 01:30:49.000
+Algo que viamamos estado discutiendo ainicia de la crease.
+
+01:30:49.000 --> 01:30:55.000
+tener la redneuronal como un proceso de cambios, no?
+
+01:30:55.000 --> 01:30:57.000
+Osa tenemos lentrada.
+
+01:30:57.000 --> 01:31:08.000
+Se procesa con una capac, este promoco de capas y generos una representacion, no queues…
+
+01:31:08.000 --> 01:31:15.000
+you know?
+
+01:31:15.000 --> 01:31:21.000
+una trayetore interrepresentaciones.
+
+01:31:21.000 --> 01:31:26.000
+Okay? Este lo puedemos ver asi un las redes de Ronales.
+
+01:31:26.000 --> 01:31:28.000
+Entonces vamos a tener.
+
+01:31:28.000 --> 01:31:33.000
+otrakappa, y odrakappa, no?
+
+01:31:33.000 --> 01:31:36.000
+Como hacer de transformaciones, no?
+
+01:31:36.000 --> 01:31:39.000
+Em algum ponto, vamos atender, por ejemplo…
+
+01:31:39.000 --> 01:31:45.000
+No? Okay.
+
+01:31:45.000 --> 01:31:50.000
+las conneciones residuales, ni?
+
+01:31:50.000 --> 01:32:00.000
+las 12 este convucionales.
+
+01:32:00.000 --> 01:32:08.000
+Que esta procesando entradando que ma se caso es set elimenosundo, no?
+
+01:32:08.000 --> 01:32:11.000
+Okay? Man seta elimination.
+
+01:32:11.000 --> 01:32:16.000
+Okay?
+
+01:32:16.000 --> 01:32:19.000
+Hora, eh, quiero que no ten…
+
+01:32:19.000 --> 01:32:23.000
+lo pasamos a problem.
+
+01:32:23.000 --> 01:32:30.000
+Passamos Aristar.
+
+01:32:30.000 --> 01:32:35.000
+Okay? Esi se vora de la funcion, no?
+
+01:32:35.000 --> 01:32:41.000
+value? Ora, este es elo von se tender como que es un pequeno cambio.
+
+01:32:41.000 --> 01:32:45.000
+ale.
+
+01:32:45.000 --> 01:32:48.000
+C'ambio.
+
+01:32:48.000 --> 01:32:51.000
+esto sorio un cambio que su uno, okay?
+
+01:32:51.000 --> 01:32:55.000
+value, in case la diferencia dos.
+
+01:32:55.000 --> 01:32:59.000
+como que…
+
+01:32:59.000 --> 01:33:03.000
+Seno, elimenos un delta sobre delta, no?
+
+01:33:03.000 --> 01:33:06.000
+Considerando como un pequeno, pequeno habarezion.
+
+01:33:06.000 --> 01:33:11.000
+I've seen them.
+
+01:33:11.000 --> 01:33:15.000
+Limite de adulta tende…
+
+01:33:15.000 --> 01:33:20.000
+Imagine se que tengamos tantas capas.
+
+01:33:20.000 --> 01:33:31.000
+que lo pomos considerar como que hacen pequenos cas, cambiecitos en casa posicion, okay?
+
+01:33:31.000 --> 01:33:34.000
+Balik? Y bueno, esto se comperte,
+
+01:33:34.000 --> 01:33:36.000
+en una derivada, no?
+
+01:33:36.000 --> 01:33:45.000
+derivada del Ceta, okay, prospecto a la perfundidad, no? Okay.
+
+01:33:45.000 --> 01:33:52.000
+Okay? Instamos Bindo el cambio de la representacion en el
+
+01:33:52.000 --> 01:33:58.000
+En la profundidad, no? Entonces, si, vemos esto como un proceso de cambio, no?
+
+01:33:58.000 --> 01:34:00.000
+A partir del concunto de datos.
+
+01:34:00.000 --> 01:34:03.000
+Okay, este distribuacion de los datos auna distribucion…
+
+01:34:03.000 --> 01:34:06.000
+Te representaciones, okay?
+
+01:34:06.000 --> 01:34:15.000
+Este cambio, que es que mirado por la render on crenoon de la estando poco, poco esta generar y espacio latente que donde tosta Reynaldo.
+
+01:34:15.000 --> 01:34:20.000
+llegar a cesar representacion final.
+
+01:34:20.000 --> 01:34:23.000
+Lo que va aprender la funcion?
+
+01:34:23.000 --> 01:34:27.000
+ResNet, va a ser como una derivada.
+
+01:34:27.000 --> 01:34:32.000
+Okay? Okay?
+
+01:34:32.000 --> 01:34:42.000
+es como cuanto tenco que cambiar a la representacion actual, como para cercarme ace espacio representaciones.
+
+01:34:42.000 --> 01:34:56.000
+Okay? Entonces, is the HR de connectar law for conixion residual, lo que hace es que cambia la dynamica de la misma renderunar, por hace comporta como si fuera un especia de delada, comuna…
+
+01:34:56.000 --> 01:35:00.000
+de cambio entre la representaciones, no?
+
+01:35:00.000 --> 01:35:02.000
+Okay?
+
+01:35:02.000 --> 01:35:07.000
+Kiroke is again con esta idea, porque esto vaciro util masa adelante.
+
+01:35:07.000 --> 01:35:14.000
+como que simulando que tal si tenemos infinitas capas y questo se vuel comrades su apien, no?
+
+01:35:14.000 --> 01:35:18.000
+Pero mas hailante, vamos aer que podemos modular esto.
+
+01:35:18.000 --> 01:35:21.000
+como si fuera un continuo.
+
+01:35:21.000 --> 01:35:25.000
+este la tecnica.
+
+01:35:25.000 --> 01:35:30.000
+que mas esto drizandoctalmente esten modo generosiv.
+
+01:35:30.000 --> 01:35:34.000
+Trabajarlo como un proceso continuos de camos.
+
+01:35:34.000 --> 01:35:42.000
+lo vamos ver como un proceso continu cambios,
+
+01:35:42.000 --> 01:35:47.000
+muy importante para esteem.
+
+01:35:47.000 --> 01:35:51.000
+Es que…
+
+01:35:51.000 --> 01:35:59.000
+entran, no?
+
+01:35:59.000 --> 01:36:02.000
+Okay, algun tipo de ab abstraction.
+
+01:36:02.000 --> 01:36:07.000
+Muchas capas pang esta especializaz corund dominion muy en especific.
+
+01:36:07.000 --> 01:36:15.000
+a intender, um…
+
+01:36:15.000 --> 01:36:20.000
+lives, no?
+
+01:36:20.000 --> 01:36:24.000
+mucho ese concepto,
+
+01:36:24.000 --> 01:36:31.000
+Pero notaran que no simbres seitan processar, entender conceptos, no, porque imaginense que es una foto de…
+
+01:36:31.000 --> 01:36:37.000
+esa capaco por de completamente in util, no?
+
+01:36:37.000 --> 01:36:43.000
+Decho el la representacion de perrito, no debirre ser actualizada por esa capa, no?
+
+01:36:43.000 --> 01:36:46.000
+Porque esa capa nuestas trayndo informos en deperit.
+
+01:36:46.000 --> 01:36:51.000
+tener esa propiad.
+
+01:36:51.000 --> 01:36:57.000
+retorno lo mismo que recibid.
+
+01:36:57.000 --> 01:37:08.000
+Okay, una vez mas. E representacion de burrito, esta cabez de ceblares, no tienena que ver entonces deberia retornar la mismo representacion de parito, no, como y sindo a no tenen a que ver no logo na.
+
+01:37:08.000 --> 01:37:15.000
+Okay? Bueno, answer que unciones asi con una red normal dijamos marfiera con a VG,
+
+01:37:15.000 --> 01:37:19.000
+Es muy complicado, pori tiene que aprender la funcion y identia.
+
+01:37:19.000 --> 01:37:26.000
+Es muy complicado aprende lo prorces alariente.
+
+01:37:26.000 --> 01:37:32.000
+Entonces este con is implementacion la operacion identidad se volve trivial.
+
+01:37:32.000 --> 01:37:37.000
+If CSo tinina que ver simplemente estan de horona, o esta capa de aca,
+
+01:37:37.000 --> 01:37:39.000
+Lo que va a ser es apagarse, no?
+
+01:37:39.000 --> 01:37:42.000
+aca.
+
+01:37:42.000 --> 01:37:50.000
+No mesintaniza esta representacion, no me representa, esta representacion, no tienena que ver comigo no tienen hay que elares.
+
+01:37:50.000 --> 01:37:53.000
+Entonces no lo, pero. Resultado sego.
+
+01:37:53.000 --> 01:37:59.000
+Por otro lado, por el otro caminito, quedemos por aca, tiene la representacion original de los directos, no entonces…
+
+01:37:59.000 --> 01:38:03.000
+no?
+
+01:38:03.000 --> 01:38:10.000
+que es muy importante con este conesion residual.
+
+01:38:10.000 --> 01:38:13.000
+muchas architectores.
+
+01:38:13.000 --> 01:38:17.000
+Okay? La conicero residual.
+
+01:38:17.000 --> 01:38:20.000
+representado que este en la ResNet.
+
+01:38:20.000 --> 01:38:22.000
+Tenes os anos.
+
+01:38:22.000 --> 01:38:26.000
+va a ser el estandar para…
+
+01:38:26.000 --> 01:38:32.000
+Poro decir todos de las.
+
+01:38:32.000 --> 01:38:34.000
+Okay? Porque de hecho nos va a permitir.
+
+01:38:34.000 --> 01:38:39.000
+is the… and there is the redes mas profundes.
+
+01:38:39.000 --> 01:38:41.000
+Porque afrente en el problema del vanish.
+
+01:38:41.000 --> 01:38:45.000
+identidad.
+
+01:38:45.000 --> 01:38:54.000
+implicita, y tambien tener esa propida de gradiente, no comuna pequena derivada de transformacion. Okay, todesos propidades se obtienes simple este conacion residal.
+
+01:38:54.000 --> 01:38:57.000
+Por esos que estan usar, estan usar.
+
+01:38:57.000 --> 01:39:00.000
+vamosar una coniccion residual.
+
+01:39:00.000 --> 01:39:05.000
+para que.
+
+01:39:05.000 --> 01:39:08.000
+I think that those are probably eyes. Okay?
+
+01:39:08.000 --> 01:39:11.000
+is thick.
+
+01:39:11.000 --> 01:39:23.000
+este descubiardo anos Andes.
+
+01:39:23.000 --> 01:39:31.000
+amente tambien ya la conoce.
+
+01:39:31.000 --> 01:39:41.000
+Tambien tenia un componente que se termina comportando comunida connecion residual.
+
+01:39:41.000 --> 01:39:47.000
+es muy intresante porque adelanta dos conceptos que el luego
+
+01:39:47.000 --> 01:39:49.000
+Se van a prediscubrir.
+
+01:39:49.000 --> 01:39:53.000
+sepa.
+
+01:39:53.000 --> 01:39:55.000
+Okay? Um…
+
+01:39:55.000 --> 01:40:01.000
+de que miji.
+
+01:40:01.000 --> 01:40:04.000
+Kim in here, jet muy buenos papers.
+
+01:40:04.000 --> 01:40:12.000
+antes, no?
+
+01:40:12.000 --> 01:40:16.000
+Okay, bueno. Ademas de todo esto.
+
+01:40:16.000 --> 01:40:21.000
+residuales.
+
+01:40:21.000 --> 01:40:26.000
+otra mas, algo mas que tambien ayuda es de…
+
+01:40:26.000 --> 01:40:29.000
+residuales.
+
+01:40:29.000 --> 01:40:35.000
+sobre la superficia de la funcion de los, okay?
+
+01:40:35.000 --> 01:40:42.000
+espasadas un imagen de la superficia de la funcion de perdando,
+
+01:40:42.000 --> 01:40:47.000
+quiera muy facen quera optimo locales.
+
+01:40:47.000 --> 01:40:53.000
+Okay? Ponosirizamos conicciones residuales, okay, o escapones,
+
+01:40:53.000 --> 01:41:00.000
+Vamos a conseguir e una suvisar la pucion de la superficia de los, de la funcion de pervido.
+
+01:41:00.000 --> 01:41:04.000
+mucho mas o visa. Okay?
+
+01:41:04.000 --> 01:41:07.000
+SOC aqui es unzum, sorry Limaching.
+
+01:41:07.000 --> 01:41:13.000
+Se pueder que casi ese…
+
+01:41:13.000 --> 01:41:18.000
+Eh, bueno que basicamente como mud despecer para la
+
+01:41:18.000 --> 01:41:27.000
+porque es un Zoom, no? See, hay un su ha visado, pero no quita que ya opimo locales, okay? Desocia que tener cuidado.
+
+01:41:27.000 --> 01:41:31.000
+So retodo para este casojica. Este deca en la dense net.
+
+01:41:31.000 --> 01:41:37.000
+comien.
+
+01:41:37.000 --> 01:41:44.000
+seve completamente plano espasicamento una para habila.
+
+01:41:44.000 --> 01:41:46.000
+Pero esas porque es un Zoom.
+
+01:41:46.000 --> 01:41:55.000
+igual hay optimo locales, no crecer que sus si us a indecanos locales, sido que aqui en hecho un como para resultar el hecho de que…
+
+01:41:55.000 --> 01:41:57.000
+Senden representaciones mud.
+
+01:41:57.000 --> 01:42:03.000
+De hecho aqui estarra comparacion de losresno.
+
+01:42:03.000 --> 01:42:10.000
+estamos han desalizada
+
+01:42:10.000 --> 01:42:14.000
+y mucho mas saliva a la testne, okay?
+
+01:42:14.000 --> 01:42:18.000
+anos atras?
+
+01:42:18.000 --> 01:42:21.000
+Excellent. Okay.
+
+01:42:21.000 --> 01:42:25.000
+Anusadras era muy importante…
+
+01:42:25.000 --> 01:42:28.000
+hablar de la antesnet com Architectura, pero…
+
+01:42:28.000 --> 01:42:33.000
+Roman de Ora, no inetanta relevancia. Pora que les comendo.
+
+01:42:33.000 --> 01:42:39.000
+Okay?
+
+01:42:39.000 --> 01:42:44.000
+Es eluso mucho mas intensivo de justamente decidia de condesion residuales.
+
+01:42:44.000 --> 01:42:46.000
+Para que lo bien simple,
+
+01:42:46.000 --> 01:42:52.000
+Con centresolamente em…
+
+01:42:52.000 --> 01:42:59.000
+You know, the cinema can?
+
+01:42:59.000 --> 01:43:02.000
+Okay? Podembe verque basicamentes como una ResNet, no?
+
+01:43:02.000 --> 01:43:07.000
+Okay, una grain diferencia, qui no este sum, si no concaten.
+
+01:43:07.000 --> 01:43:11.000
+you know, mother kung papel mu simida.
+
+01:43:11.000 --> 01:43:21.000
+Consider this element is a key. Puede ember que se exactamente como una pencil residual, como Dio que tenar, de voce summar, pero es basicament ivo, no?
+
+01:43:21.000 --> 01:43:24.000
+Okay? Or a serieamos otra capa mas…
+
+01:43:24.000 --> 01:43:31.000
+Okay? Pueden ver que lo que va a ser es como una recondicion residual, que es lo anterior, lo procesa,
+
+01:43:31.000 --> 01:43:36.000
+a residar.
+
+01:43:36.000 --> 01:43:41.000
+Pero ademas de eso, vamos a anadier lo que vino entran.
+
+01:43:41.000 --> 01:43:48.000
+Okay?io.
+
+01:43:48.000 --> 01:43:52.000
+Y asi, no? Okay.
+
+01:43:52.000 --> 01:44:00.000
+Claro que so va a servantro de un bloque, no va a ser este as si con la cinco enca capas, no, porque hem un punto seria como que muchas characteristicas.
+
+01:44:00.000 --> 01:44:04.000
+Pero esa si como funcional adenz.
+
+01:44:04.000 --> 01:44:08.000
+Okay?
+
+01:44:08.000 --> 01:44:17.000
+Bueno, este resuminum un popo, entonces, lo que vamos utilizar son conixiones residuales, aqui pueden ver la architectura de la resna cuatro,
+
+01:44:17.000 --> 01:44:23.000
+Okay? AquitoWS Elizando como si necesita porse.
+
+01:44:23.000 --> 01:44:29.000
+Y lecho es algo que se sole utilizar. En la primera tapas errata de hacer una primera…
+
+01:44:29.000 --> 01:44:37.000
+approximacion, o primer processamientos el imagin si solo utilizar unosquerandes como apra entender un poco los pixels, no?
+
+01:44:37.000 --> 01:44:41.000
+Okay?
+
+01:44:41.000 --> 01:44:44.000
+Aquinas resident original que se document.
+
+01:44:44.000 --> 01:44:57.000
+estua anos.
+
+01:44:57.000 --> 01:45:04.000
+casos reducion de misionaridad,
+
+01:45:04.000 --> 01:45:09.000
+IE este um uso del pulling.
+
+01:45:09.000 --> 01:45:13.000
+en este, por ejemplo, en la yolo.
+
+01:45:13.000 --> 01:45:18.000
+Sutriza para comuna forma de analizarre.
+
+01:45:18.000 --> 01:45:20.000
+Comun axis multi-resolucion.
+
+01:45:20.000 --> 01:45:25.000
+Pero emasional prizan el pulling porque es uno presion muy.
+
+01:45:25.000 --> 01:45:39.000
+el numero operaciones, por esosa por limo.
+
+01:45:39.000 --> 01:45:43.000
+And this process in transalidadesnde muy poco.
+
+01:45:43.000 --> 01:45:51.000
+los pixeles.
+
+01:45:51.000 --> 01:46:02.000
+Okay? Aqui van a ver 4 stage, que de hecho muchas architecturas van a seguirees que mas de 4 stage.
+
+01:46:02.000 --> 01:46:07.000
+Okay? Estage uno, dos 34
+
+01:46:07.000 --> 01:46:11.000
+este…
+
+01:46:11.000 --> 01:46:13.000
+brocho Yasul, okay?
+
+01:46:13.000 --> 01:46:20.000
+en los cambios estage, o sea cuando pasamos de moderado perde. Pueden ver que una linea pondead.
+
+01:46:20.000 --> 01:46:23.000
+Okay? I'll return cases.
+
+01:46:23.000 --> 01:46:26.000
+Ademas de eso pueden verca y un cambio de resolucion.
+
+01:46:26.000 --> 01:46:33.000
+Okay? En todo lo que es morado todos 1 dimensiones,
+
+01:46:33.000 --> 01:46:37.000
+Pero cuando los verdes hay un cambio, no? Como vamos a siendo 25.
+
+01:46:37.000 --> 01:46:43.000
+Siempre por dos, poros, por dos.
+
+01:46:43.000 --> 01:46:47.000
+Por otro lado, en ese cambio pueden ver que hay un entrell.
+
+01:46:47.000 --> 01:46:50.000
+Entredos.
+
+01:46:50.000 --> 01:46:58.000
+Okay? Lo que esta pasando hoy es que hemos reducido entre 2, la simenciones espaciades, yemos campleado por dos el numero de canales.
+
+01:46:58.000 --> 01:47:01.000
+Eso pasa en todo cambio de stage.
+
+01:47:01.000 --> 01:47:11.000
+Qui jusamente esa procesamento jirar higo que tienelacen, you know, en cada del tapa, vamos perdendo resolciones espacial, y ganando dimensionalidad en caracteristates. Okay?
+
+01:47:11.000 --> 01:47:20.000
+Y bueno, al suser diferente los tensores entradizalida, porque no venue aqui apoco, aqui la divis el reducion de inenciones espaciales,
+
+01:47:20.000 --> 01:47:24.000
+No?
+
+01:47:24.000 --> 01:47:28.000
+resultado vase un imagin machica con mas canales canales.
+
+01:47:28.000 --> 01:47:31.000
+Pero lentrada pasero imagin mas grande cominos canales.
+
+01:47:31.000 --> 01:47:34.000
+diferentesares, no?
+
+01:47:34.000 --> 01:47:41.000
+Entonces para que sean compatible elst tan manos,
+
+01:47:41.000 --> 01:47:47.000
+Lo que se va a ser es agrigar este component, que se haya marse una rede proccion.
+
+01:47:47.000 --> 01:47:51.000
+Okay, uh, que qui lolly llaman tambien corto ser cuida.
+
+01:47:51.000 --> 01:47:54.000
+When the identity corte serpito…
+
+01:47:54.000 --> 01:48:00.000
+was it? We didn't yet? Mencionado, no?
+
+01:48:00.000 --> 01:48:07.000
+Y la otraversion es que cuando a solamente cuando hay cambios de inter solucion de middleo el cambio de stage,
+
+01:48:07.000 --> 01:48:14.000
+Vamos a legar esto que lo que va a ser es ambieras emanciones especiales y reducir las divenciones este…
+
+01:48:14.000 --> 01:48:20.000
+para que la sumacea posible.
+
+01:48:20.000 --> 01:48:30.000
+Okay? Eso se puede vera facimento encodio que lo vamos a ver creo que…
+
+01:48:30.000 --> 01:48:32.000
+Um… bueno.
+
+01:48:32.000 --> 01:48:41.000
+essay la configuracion, voce como asamos Windows Windows cap y la compulicional es la configureacion de la residence identical. Que usta muy bien conocce, no?
+
+01:48:41.000 --> 01:48:49.000
+res apiece 5
+
+01:48:49.000 --> 01:48:51.000
+Yeah, so the reasonabotenek.
+
+01:48:51.000 --> 01:48:53.000
+Okay? Case esta configuracion deca.
+
+01:48:53.000 --> 01:48:59.000
+Recordaran que su papel es primero producir las emaciones espacial, la dimensiones de carnales perdo.
+
+01:48:59.000 --> 01:49:06.000
+canales coniente, okay?
+
+01:49:06.000 --> 01:49:11.000
+Est solo hace imaginado por reducir en numero de operaciones. Okay?
+
+01:49:11.000 --> 01:49:18.000
+Um, a recording que la operecion convolucionar.
+
+01:49:18.000 --> 01:49:20.000
+Eh, o cualquier favano, no?
+
+01:49:20.000 --> 01:49:23.000
+Es una comienacion tanto de presiones especiales como de canales.
+
+01:49:23.000 --> 01:49:26.000
+localas se muy pesado, okay?
+
+01:49:26.000 --> 01:49:29.000
+Tonces para reducir es enumero operaciones.
+
+01:49:29.000 --> 01:49:32.000
+numero de canales.
+
+01:49:32.000 --> 01:49:41.000
+Y sores espacio convenos canales, vamos a ser la presion espacial, no, y luego otra ver vamos a retro, okay?
+
+01:49:41.000 --> 01:49:48.000
+8 AM…
+
+01:49:48.000 --> 01:49:53.000
+gave one time estar descotiendo, no? Recordan que ese es una presion a nivel de canal.
+
+01:49:53.000 --> 01:49:59.000
+Okay? Entonces, lo que vamos hacer es mejorar, representacion en emaile canades conezad nu podium.
+
+01:49:59.000 --> 01:50:03.000
+Aja, exacto.
+
+01:50:03.000 --> 01:50:09.000
+les leos no revenues India.
+
+01:50:09.000 --> 01:50:16.000
+exactamente uteriza la inverse bottleneck.
+
+01:50:16.000 --> 01:50:21.000
+encia con respecto la mobile net person.
+
+01:50:21.000 --> 01:50:31.000
+que bueno, um…
+
+01:50:31.000 --> 01:50:36.000
+correspondo numero operaciones.
+
+01:50:36.000 --> 01:50:41.000
+una operacion normal,
+
+01:50:41.000 --> 01:50:47.000
+mucho menos, no?
+
+01:50:47.000 --> 01:50:52.000
+no?
+
+01:50:52.000 --> 01:50:56.000
+muchos numero operaciones que se estan relizant.
+
+01:50:56.000 --> 01:51:04.000
+llamar esteem.
+
+01:51:04.000 --> 01:51:09.000
+una classificacion, okay?
+
+01:51:09.000 --> 01:51:12.000
+A partidades de architectura je adelante,
+
+01:51:12.000 --> 01:51:15.000
+levantes.
+
+01:51:15.000 --> 01:51:20.000
+Et la capa el classificacion ya no va a ser pona MLP.
+
+01:51:20.000 --> 01:51:24.000
+Si no va a ser sieplemente una funcion de clasificilicacion linear.
+
+01:51:24.000 --> 01:51:27.000
+Okay? Recording que la BGT.
+
+01:51:27.000 --> 01:51:30.000
+You know, isacion ratita.
+
+01:51:30.000 --> 01:51:34.000
+Enia todo esto en la capa de clasificacion, lo cual instrumento.
+
+01:51:34.000 --> 01:51:44.000
+And… tambien motiviza en aqui este un flatempro de hecho voy escuderen este retronando el de la pausa.
+
+01:51:44.000 --> 01:51:51.000
+muchos canales, no? Imaginando que le entrar a tambien 4 tambien 96? Entonces…
+
+01:51:51.000 --> 01:52:01.000
+42 mil.
+
+01:52:01.000 --> 01:52:12.000
+But in the mean, what do we know atrificial antescan, no? Por mi, no?
+
+01:52:12.000 --> 01:52:15.000
+Somebodyas is the…
+
+01:52:15.000 --> 01:52:23.000
+Matrices Higandes, y jo usamente gran parte del peso de la BGG es responsabilidad de esta fues de esas fuliconet.
+
+01:52:23.000 --> 01:52:27.000
+Okay? In time biolo lo que se sole a sera ahora.
+
+01:52:27.000 --> 01:52:35.000
+es colocar simplemente una classificacion lineal. Okay, solamente una capa, tenicamente seria con partza trauno.
+
+01:52:35.000 --> 01:52:41.000
+Pero alche sole llamar Folikonet, no?
+
+01:52:41.000 --> 01:52:49.000
+lo que vamos incentivar es que en el espacio representacion las diferentes clases extense paradados de manera linear.
+
+01:52:49.000 --> 01:52:55.000
+local ayud aqui esten cada una de las clases. Disgradas mejor se paradas, llegamos.
+
+01:52:55.000 --> 01:52:59.000
+Y tambien teng en las papillas que no sufos queremos, no, que composizo linea al y todeso, no?
+
+01:52:59.000 --> 01:53:07.000
+Entonces, vase mucho mas conveniente para nosotros que espacio representacion este se paro de informal linear y se a mucho mas mandijal.
+
+01:53:07.000 --> 01:53:13.000
+Okay? This is Elisander Vacer esto. Y tambien votrizar alo que seama Aberpull.
+
+01:53:13.000 --> 01:53:15.000
+Estores comentara cuando viamamos a COVID.
+
+01:53:15.000 --> 01:53:21.000
+Okay. Akisanas configuraciones por defecto de lasn.
+
+01:53:21.000 --> 01:53:25.000
+La dice en la 34 utilizan dos conversional estres porres,
+
+01:53:25.000 --> 01:53:30.000
+de la cincuenta hailantes, de la sinoidados de hech violento de la sinto 906, creo,
+
+01:53:30.000 --> 01:53:35.000
+que lo que les comentado.
+
+01:53:35.000 --> 01:53:37.000
+Okay?
+
+01:53:37.000 --> 01:53:43.000
+Bueno, este large ResNet tiene varias personas.
+
+01:53:43.000 --> 01:53:47.000
+Okay, buddy of accidents modificaz actualizadas.
+
+01:53:47.000 --> 01:53:50.000
+Solamente el esquiro comentar sobre la ResNix, okay?
+
+01:53:50.000 --> 01:53:52.000
+hacemos en la pause.
+
+01:53:52.000 --> 01:53:59.000
+Well, if 202e es una variacion de la ResNet, okay?
+
+01:53:59.000 --> 01:54:09.000
+In medio, uh, hay muchas otras barrecenes con la mesional barrios anos. De heche arose este para probar lo intent.
+
+01:54:09.000 --> 01:54:13.000
+That means that la resistance, or…
+
+01:54:13.000 --> 01:54:15.000
+muchas, muchas, muchas.
+
+01:54:15.000 --> 01:54:21.000
+el concepto de cardinalidad.
+
+01:54:21.000 --> 01:54:27.000
+Okay? Lo que vamos a hacer es procesar de manera independente un conjuncto de canales.
+
+01:54:27.000 --> 01:54:32.000
+canales este.
+
+01:54:32.000 --> 01:54:35.000
+tipo informacion.
+
+01:54:35.000 --> 01:54:38.000
+Okay? Y bueno. Para explicar el cose de Cardinalidad,
+
+01:54:38.000 --> 01:54:45.000
+para los canales.
+
+01:54:45.000 --> 01:54:53.000
+Creo que se grafico es muy bueno. Em machinemos cone carinalidados, significa que de todos los canales vamos a debilo en dos bloques, en dos partes.
+
+01:54:53.000 --> 01:54:57.000
+Con de las partes loser and processar en forme independent, eh?
+
+01:54:57.000 --> 01:55:02.000
+partes.
+
+01:55:02.000 --> 01:55:06.000
+Okay? I can a parte, pas el procesada…
+
+01:55:06.000 --> 01:55:09.000
+por sus queenes, okay?
+
+01:55:09.000 --> 01:55:12.000
+E resultado va a sero.
+
+01:55:12.000 --> 01:55:15.000
+entrenos.
+
+01:55:15.000 --> 01:55:20.000
+Okay?
+
+01:55:20.000 --> 01:55:25.000
+Okay? Higuel en el otro lado, no, esta otra parte, tambien va a se o tramitan, no.
+
+01:55:25.000 --> 01:55:30.000
+Y vase processesado por otros carnos. Okay, diferentes.
+
+01:55:30.000 --> 01:55:33.000
+Procesado y esto vamos a solver otro dei, no?
+
+01:55:33.000 --> 01:55:41.000
+Oh, bueno, de ot, parole.
+
+01:55:41.000 --> 01:55:43.000
+Okay?
+
+01:55:43.000 --> 01:55:49.000
+Entonces lo que tenemicamente que lo que estamos haciendo es segmentar los canales entrocitos y casa atrocito…
+
+01:55:49.000 --> 01:56:00.000
+Eso lo que va darnos es como diferentes bias de procesamiento en una sol la capa.
+
+01:56:00.000 --> 01:56:10.000
+Okay? Ymo genemos que estemos classificanda nimales, no?
+
+01:56:10.000 --> 01:56:16.000
+las formas de la patanoce la forma de la cola. Entonces,
+
+01:56:16.000 --> 01:56:20.000
+diferent tipo formacion.
+
+01:56:20.000 --> 01:56:26.000
+Yl baser procesandolo sobre los canales que represente en ese tipo informacion.
+
+01:56:26.000 --> 01:56:36.000
+Claire, okay, so vast propaganda, no? Entonces, el primer blo que es ver bloque del cola del animal porque en blo.
+
+01:56:36.000 --> 01:56:49.000
+corresponde de la colead animal. El segundo conjunto que es el belaje vasta procedando solamente los se canales de pela. Y asi, no. Y cados no vater sus carnas respectivos para esotivo informacional.
+
+01:56:49.000 --> 01:56:54.000
+Okay? Esto nos permite tender como un procesamiendo parallelo diferentes cosas, no? Okay.
+
+01:56:54.000 --> 01:57:06.000
+bloques este especializado en algo en particular. Es como si tuvieramos un experto de pelagio en inspector de Cola un experto in
+
+01:57:06.000 --> 01:57:16.000
+una mixtura de experto, el miksur of experts.
+
+01:57:16.000 --> 01:57:19.000
+O las mois.
+
+01:57:19.000 --> 01:57:26.000
+mas interes mas relevante con las Transformers. Y aun seguan.
+
+01:57:26.000 --> 01:57:36.000
+Okay?icete,
+
+01:57:36.000 --> 01:57:42.000
+There you?
+
+01:57:42.000 --> 01:58:12.000
+Okay, buenoces este possamos 10os.
+
+02:08:47.000 --> 02:08:58.000
+No sabemos que el aqui.
+
+02:08:58.000 --> 02:09:02.000
+Okay, it's the…
+
+02:09:02.000 --> 02:09:09.000
+settings. Okay? Um…
+
+02:09:09.000 --> 02:09:13.000
+Las res queemos todo viendo.
+
+02:09:13.000 --> 02:09:20.000
+resultados.
+
+02:09:20.000 --> 02:09:28.000
+hype con respecto a loquiporen hacer.
+
+02:09:28.000 --> 02:09:30.000
+Okay, is the sin embargo,
+
+02:09:30.000 --> 02:09:34.000
+In aplicaciones practicas, todavia no tremendar.
+
+02:09:34.000 --> 02:09:42.000
+practicas de uso masivo.
+
+02:09:42.000 --> 02:09:50.000
+estaba la ayunde, y esta en la max resene en este lle habia muchos modellos.
+
+02:09:50.000 --> 02:09:56.000
+muchas circstancias, no?
+
+02:09:56.000 --> 02:10:02.000
+servide tipo, este podia su trizar de sus modelos.
+
+02:10:02.000 --> 02:10:13.000
+utilizar una aplicacion para que la gente a cosas. Este la gente por… este clasifici que oleccione cosas a partidades despositivos moviles.
+
+02:10:13.000 --> 02:10:22.000
+esto estable de signa.
+
+02:10:22.000 --> 02:10:25.000
+Entonces ante esta necesidad de…
+
+02:10:25.000 --> 02:10:31.000
+Pasad moles a artist mucho masmitado, es que se prevonder en la mobile net.
+
+02:10:31.000 --> 02:10:39.000
+Okay? La mobile net es una granite, es una granida de como optimizar esteel.
+
+02:10:39.000 --> 02:10:42.000
+What does that mean?
+
+02:10:42.000 --> 02:10:50.000
+Bueno, este… a recuarenque yo le sebia mencionado que las convolucionales al 50 cuentas,
+
+02:10:50.000 --> 02:10:56.000
+son dos operaciones que trabajan confunto, no su puedes en mundo.
+
+02:10:56.000 --> 02:11:00.000
+Operacionespacial, y operacion de canales a la vez, okay?
+
+02:11:00.000 --> 02:11:09.000
+Entonces, por ejemplo, aqui para te un solo canal de resultado, lo que estamos haciendo es procesar espacialmente cado de los de los canales de entrada,
+
+02:11:09.000 --> 02:11:13.000
+se van a combinedar.
+
+02:11:13.000 --> 02:11:19.000
+Okay? Tonas procesamos espacialmente, de manera separada y luego lo combinamos,
+
+02:11:19.000 --> 02:11:23.000
+is the parao tener us a resultad, entonces, es una operacion.
+
+02:11:23.000 --> 02:11:30.000
+Tanto despacian como de canales, okay? Y hostamente eso lo que lo hace basan de pesado, no? Pueden ver que…
+
+02:11:30.000 --> 02:11:34.000
+Para un solo este canal todos ofresciones que estamos haciendo, no.
+
+02:11:34.000 --> 02:11:39.000
+mas deballos y todoes, okay?
+
+02:11:39.000 --> 02:11:45.000
+son muchas operaciones, localjidera mucho… mucho cosiad en tambien mucha mi mor.
+
+02:11:45.000 --> 02:11:47.000
+Okay?
+
+02:11:47.000 --> 02:11:52.000
+Entonces, para sinunicarizo, era movable en net propusieron
+
+02:11:52.000 --> 02:11:55.000
+separarlo en dos parties.
+
+02:11:55.000 --> 02:11:57.000
+Okay?
+
+02:11:57.000 --> 02:12:01.000
+Like you said. Es unigo Andrew,
+
+02:12:01.000 --> 02:12:05.000
+Undo forward.
+
+02:12:05.000 --> 02:12:09.000
+cohort. Bueno, Andrew Howard, um…
+
+02:12:09.000 --> 02:12:13.000
+los guardes.
+
+02:12:13.000 --> 02:12:17.000
+Un processamiento poramente de.
+
+02:12:17.000 --> 02:12:24.000
+espacial, espacial puro, puro, okay?
+
+02:12:24.000 --> 02:12:26.000
+Comblesionales, okay?
+
+02:12:26.000 --> 02:12:35.000
+El presento puede conversionar a ser la domicionado antes, no la cumulacional uno porgundo, si lo nico que ese es elacionar que este canal cabana, okay?
+
+02:12:35.000 --> 02:12:41.000
+este poramente especiales, okay?
+
+02:12:41.000 --> 02:12:45.000
+vamos a tener un quierda en especific.
+
+02:12:45.000 --> 02:12:47.000
+Okay?
+
+02:12:47.000 --> 02:12:54.000
+y este lo unico que va a ser es ental darlo espacionmente combo es el continuido reformacion que contiene ese…
+
+02:12:54.000 --> 02:12:56.000
+Okay?
+
+02:12:56.000 --> 02:13:02.000
+ser es combinar lo su processarlo a nivel de canales este…
+
+02:13:02.000 --> 02:13:04.000
+las composional, okay?
+
+02:13:04.000 --> 02:13:07.000
+And this porcierto o se la Comicido Normal,
+
+02:13:07.000 --> 02:13:12.000
+canales, pero lo hace
+
+02:13:12.000 --> 02:13:17.000
+Por separado, por cada… por cada canalesar.
+
+02:13:17.000 --> 02:13:24.000
+Mesplico. Es imaginese que te tendamos se senti 4 canales entrada y 5 de salida. No, para de sundumero.
+
+02:13:24.000 --> 02:13:34.000
+de maner independiente
+
+02:13:34.000 --> 02:13:41.000
+cabo los canales se los 204 una sola vez.
+
+02:13:41.000 --> 02:13:46.000
+And there's nothing muforta diferencia entre 34 y se 204%?
+
+02:13:46.000 --> 02:13:51.000
+Okay? As a reduction muy fuerte en el numero de operaciones, y lo que lo hace bastante dijero.
+
+02:13:51.000 --> 02:13:56.000
+Alepp ,
+
+02:13:56.000 --> 02:14:01.000
+Okay? Simplicamos con…
+
+02:14:01.000 --> 02:14:08.000
+no poruno.
+
+02:14:08.000 --> 02:14:12.000
+diferenzo lo que voy a ser simplemente es factoriz.
+
+02:14:12.000 --> 02:14:15.000
+Greatemos.
+
+02:14:15.000 --> 02:14:19.000
+por aqui se.
+
+02:14:19.000 --> 02:14:27.000
+el otro y es som bueno.
+
+02:14:27.000 --> 02:14:29.000
+Set codes, okay?
+
+02:14:29.000 --> 02:14:34.000
+Entonces… se, no, ya, este simplemente sumado los dos.
+
+02:14:34.000 --> 02:14:36.000
+the factory cell, okay?
+
+02:14:36.000 --> 02:14:41.000
+Entonces, vamos a comparar esta con esta, okay?
+
+02:14:41.000 --> 02:14:49.000
+Es odos estan aqui esse en esta aqui, lo que que esta cambiando son estos dos bloques.
+
+02:14:49.000 --> 02:14:52.000
+Okay? SD yesterday, okay?
+
+02:14:52.000 --> 02:14:55.000
+Aqui estos dos estan multiplicando.
+
+02:14:55.000 --> 02:14:58.000
+se estan somati.
+
+02:14:58.000 --> 02:15:02.000
+Okay? Jose explains…
+
+02:15:02.000 --> 02:15:09.000
+y multiplicares emulado, multiplicar fuencer valuedes muy grandes, por ejemplo, asi son…
+
+02:15:09.000 --> 02:15:15.000
+cambio alismal, no?
+
+02:15:15.000 --> 02:15:21.000
+much el numero operaciones y el numero de pesos que el civamos.
+
+02:15:21.000 --> 02:15:29.000
+Okay? Entonces lo que vamos a ser es tener varios bloques de esto, no convolucional este di convolucion.
+
+02:15:29.000 --> 02:15:32.000
+Idento este como elisionales sono producer.
+
+02:15:32.000 --> 02:15:35.000
+magnet.
+
+02:15:35.000 --> 02:15:41.000
+La version union.
+
+02:15:41.000 --> 02:15:44.000
+order K is Releu says…
+
+02:15:44.000 --> 02:15:50.000
+que no es la gran cosa.
+
+02:15:50.000 --> 02:15:57.000
+Una rello normal escino.
+
+02:15:57.000 --> 02:16:01.000
+17, you know?
+
+02:16:01.000 --> 02:16:09.000
+esa version a reluces, es…
+
+02:16:09.000 --> 02:16:12.000
+See?
+
+02:16:12.000 --> 02:16:14.000
+Peru case corte.
+
+02:16:14.000 --> 02:16:18.000
+Okay? Se corta en seis.
+
+02:16:18.000 --> 02:16:26.000
+Los significa es que…
+
+02:16:26.000 --> 02:16:30.000
+Se la porcion original era…
+
+02:16:30.000 --> 02:16:32.000
+I see no max.
+
+02:16:32.000 --> 02:16:37.000
+Comoizo tenemos lo que esta de rojito, no?
+
+02:16:37.000 --> 02:16:41.000
+En este caso, lo que vamos a hacer es un mi.
+
+02:16:41.000 --> 02:16:49.000
+Entresto y seis significa que los valores van estar entre serious, no? No al poder a ver valores mas arrival, okay?
+
+02:16:49.000 --> 02:16:52.000
+Estos maquinada para tener un…
+
+02:16:52.000 --> 02:16:54.000
+No evitar este algun tipo esaturacion.
+
+02:16:54.000 --> 02:17:00.000
+6, okay?
+
+02:17:00.000 --> 02:17:02.000
+M…
+
+02:17:02.000 --> 02:17:08.000
+mobile que se la que se presento originalmente.
+
+02:17:08.000 --> 02:17:12.000
+Si embargo, como todo tiene un costo.
+
+02:17:12.000 --> 02:17:18.000
+Okay? Viamos dicho que vamos a producir mucho el numero operaciones con este tipo en…
+
+02:17:18.000 --> 02:17:21.000
+separando las supras.
+
+02:17:21.000 --> 02:17:26.000
+independentiente.
+
+02:17:26.000 --> 02:17:29.000
+Illumino, the parameters elimo presiones reseduce masantes antes.
+
+02:17:29.000 --> 02:17:34.000
+Si embargo is the…
+
+02:17:34.000 --> 02:17:41.000
+Okay? El hecho que las convolucionales…
+
+02:17:41.000 --> 02:17:43.000
+Es mucho mas esteem…
+
+02:17:43.000 --> 02:17:49.000
+abstraction del contio.
+
+02:17:49.000 --> 02:17:52.000
+Okay? En este caso, al separarlo,
+
+02:17:52.000 --> 02:17:55.000
+esa relacion que se…
+
+02:17:55.000 --> 02:17:58.000
+hace la vez de espacial con charactersicas.
+
+02:17:58.000 --> 02:18:06.000
+Most dying is the no componente porquelemos separado, y eso lo que hace que se degrad el des empeno, que se un…
+
+02:18:06.000 --> 02:18:08.000
+un peuores utilization.
+
+02:18:08.000 --> 02:18:14.000
+Okay? Entonces para frantar este problema, para fronar esta integradado en el desempeno,
+
+02:18:14.000 --> 02:18:23.000
+En el mobile net person 2, se presento la voterne que invertida, que fusamente lo que me estan preguntando por privado hacion momento.
+
+02:18:23.000 --> 02:18:29.000
+Okay? Lo que vase la mobile de invertida es, este…
+
+02:18:29.000 --> 02:18:32.000
+Yero expantir el numero de characteristicas, okay?
+
+02:18:32.000 --> 02:18:36.000
+Espandimos el numero characteristicas y processamos espacionment.
+
+02:18:36.000 --> 02:18:42.000
+Okay? Entas, este, um…
+
+02:18:42.000 --> 02:18:44.000
+Primero multiplicamos por…
+
+02:18:44.000 --> 02:18:54.000
+Oops…
+
+02:18:54.000 --> 02:18:56.000
+Eso vasir uno presion puramente de canales.
+
+02:18:56.000 --> 02:18:58.000
+espacion emble.
+
+02:18:58.000 --> 02:19:06.000
+O sea, en ese paso empleado dondeemos este comparado todos los canales del entrada, o que hemos proceso de lo canales entrada.
+
+02:19:06.000 --> 02:19:10.000
+Hase hemos la operacion espacial, okay? Haya hacemos represente espacial.
+
+02:19:10.000 --> 02:19:15.000
+Una vez que hemos procesado especialmente idealizad de paro espacia todo el…
+
+02:19:15.000 --> 02:19:20.000
+o trabejo comprimos hacia el tambano origina. Okay?
+
+02:19:20.000 --> 02:19:30.000
+Este paso de ampliar el numero dimension primer, es lo que hace que se contra restre sefecto que teniamos antes, no, de la renducion de seen.
+
+02:19:30.000 --> 02:19:38.000
+representaciones mas complejas, gustamente en esta expansion. Es como decir quiero que…
+
+02:19:38.000 --> 02:19:48.000
+mucho mas por funo, crea que serial el termina.
+
+02:19:48.000 --> 02:19:53.000
+es lo que de esta permitiendo esa emplencion de numero dimensiones, okay?
+
+02:19:53.000 --> 02:20:00.000
+In the 12 months is still the aumente un poco liberal para metros, pero compensa el la mejor en el desenem.
+
+02:20:00.000 --> 02:20:02.000
+Okay?
+
+02:20:02.000 --> 02:20:06.000
+you wonder what is the, um…
+
+02:20:06.000 --> 02:20:12.000
+That makes a Cambil architectura y podemos ver aqui que este vamos atender este un…
+
+02:20:12.000 --> 02:20:17.000
+to uno mucho masanto que la version uno.
+
+02:20:17.000 --> 02:20:20.000
+Okay? Ose estamos teniendo un mejor de se empeno.
+
+02:20:20.000 --> 02:20:26.000
+las operaciones. Okay?
+
+02:20:26.000 --> 02:20:44.000
+dos es lo que se estila utiliza.
+
+02:20:44.000 --> 02:20:51.000
+se fue probechando para muchas otras architecturas.
+
+02:20:51.000 --> 02:20:56.000
+Achilles que hablar a architectura in particular, que me parece evacante relevant.
+
+02:20:56.000 --> 02:20:59.000
+que fue presentado en el 2020.
+
+02:20:59.000 --> 02:21:06.000
+llama el paper.
+
+02:21:06.000 --> 02:21:23.000
+Comnet. Por cierto. Jan Le Kang is the legusta Cleame.
+
+02:21:23.000 --> 02:21:26.000
+Lo que sucede es que en el 2020.
+
+02:21:26.000 --> 02:21:30.000
+que vamos aro despues.
+
+02:21:30.000 --> 02:21:33.000
+Isayama beat, okay?
+
+02:21:33.000 --> 02:21:40.000
+El lo que sucedia era que en el dos milkings.
+
+02:21:40.000 --> 02:21:46.000
+monton las transformers,
+
+02:21:46.000 --> 02:21:52.000
+Yue propuesto inicialmente para texa, okay, era para at traduccion de texa.
+
+02:21:52.000 --> 02:21:58.000
+Eero modelo muy bueno, y una que estara completamente distinta, entonces, lo obturande probar en otros dominos.
+
+02:21:58.000 --> 02:22:02.000
+eran imaginis, okay?
+
+02:22:02.000 --> 02:22:07.000
+un poco complicado eso…
+
+02:22:07.000 --> 02:22:10.000
+Transformers.
+
+02:22:10.000 --> 02:22:16.000
+bueno sindentobarez cosas hasta que en 201 salud beat.
+
+02:22:16.000 --> 02:22:22.000
+que justamente otrizo informificiciente una forma de jugada y muvian a prochado de los transformers.
+
+02:22:22.000 --> 02:22:30.000
+computer vision se paso hacia Transformers.
+
+02:22:30.000 --> 02:22:34.000
+Entonces, las tenenes se comenzaron hacer menos relevantes.
+
+02:22:34.000 --> 02:22:40.000
+Y por eso es estatito, no, una com next para esta era de los transformers. El lo que quiere expresar estetidulo.
+
+02:22:40.000 --> 02:22:45.000
+Y bueno. Vamos a ver que la Comnex esta arriba.
+
+02:22:45.000 --> 02:22:51.000
+Arriva de las… de la architectura beats.
+
+02:22:51.000 --> 02:22:54.000
+Y arriva de sin transformar que sere que tambemos.
+
+02:22:54.000 --> 02:23:03.000
+Okay? Entonces, eh, como logro una recolucinal en la era de las transformers ser otra vez relevante.
+
+02:23:03.000 --> 02:23:08.000
+Bueno, utilizando las eja de los transformers, basicamente, okay?
+
+02:23:08.000 --> 02:23:15.000
+esta muy basado en la architectura de los transformas.
+
+02:23:15.000 --> 02:23:19.000
+pero…
+
+02:23:19.000 --> 02:23:23.000
+Basicamente transformer ti ne dos blokes, este dentro de…
+
+02:23:23.000 --> 02:23:26.000
+um, bloke transformer.
+
+02:23:26.000 --> 02:23:30.000
+patencion,
+
+02:23:30.000 --> 02:23:35.000
+el condeno elimination.
+
+02:23:35.000 --> 02:23:39.000
+luego vamos.
+
+02:23:39.000 --> 02:23:42.000
+Forward.
+
+02:23:42.000 --> 02:23:46.000
+Okay? El la etapa de…
+
+02:23:46.000 --> 02:23:54.000
+This could be.
+
+02:23:54.000 --> 02:24:00.000
+El estapas de procesamente mujeta de safe atencion lo que se hace es comparar…
+
+02:24:00.000 --> 02:24:05.000
+Las diferentes posiciones espaciales, en ese caso en transforme lovon so ver como apaces.
+
+02:24:05.000 --> 02:24:08.000
+Mas el antilam se…
+
+02:24:08.000 --> 02:24:17.000
+Este a ondar masa fondo esse tema, pero es como aaniza elimas emporasitos, pero comparando con losorespedacitos, no? Como hacer tenos una foto.
+
+02:24:17.000 --> 02:24:20.000
+es lo que hay en el fondo.
+
+02:24:20.000 --> 02:24:26.000
+cito.
+
+02:24:26.000 --> 02:24:31.000
+Bueno, esa lo… eso lo hacer motivation.
+
+02:24:31.000 --> 02:24:37.000
+If a grand problema como vamoserva el ante es que ese mulcher cafatension es una presion poramente linear.
+
+02:24:37.000 --> 02:24:43.000
+Okay, ASL mechanism atencion, pero todo es puramente linear. ustedes saben que…
+
+02:24:43.000 --> 02:24:52.000
+tapas de fit formula.
+
+02:24:52.000 --> 02:24:58.000
+In Feed Forward, Basicamente es unemale PED dos capas, okay? Que lo que vamos a hacer es expandir en numero dimensiones,
+
+02:24:58.000 --> 02:25:14.000
+operar a nivel de emenciones de characteristicas este la dimension de features.
+
+02:25:14.000 --> 02:25:22.000
+Entonces, aqui lo que esta siendo es esto de a solo seria como el Feed Forward, yso de rojo seria como el dijerse ato.
+
+02:25:22.000 --> 02:25:29.000
+imagin, que se puede ver processamento este espacial.
+
+02:25:29.000 --> 02:25:36.000
+espaciel. Este…
+
+02:25:36.000 --> 02:25:44.000
+Pero con una convolucion, okay? Porque si de por si, porque usamente, algo que portar los transformer, es que es importante tenido una vista…
+
+02:25:44.000 --> 02:25:46.000
+the localidad amplidad, okay?
+
+02:25:46.000 --> 02:25:52.000
+Entonces, esto de aar replas a lun dijesa atencion y esto
+
+02:25:52.000 --> 02:25:54.000
+Estar cual este…
+
+02:25:54.000 --> 02:25:57.000
+On the feet forward, okay?
+
+02:25:57.000 --> 02:26:00.000
+Y bueno, por aqui les elegiviano.
+
+02:26:00.000 --> 02:26:09.000
+una espacio delta de misalignidad.
+
+02:26:09.000 --> 02:26:13.000
+mas complejas dentro de las canacteristic.
+
+02:26:13.000 --> 02:26:23.000
+Okay? Deleces paso verdesicas. Y ora cosa que utilizan la Comnex que tambien era…
+
+02:26:23.000 --> 02:26:26.000
+Era la funcion helio. Okay?
+
+02:26:26.000 --> 02:26:31.000
+esa heludu, okay, ya lesbia comentado un poco sobre la fuzien deactivacion jello.
+
+02:26:31.000 --> 02:26:34.000
+Que termina siendo muy combines.
+
+02:26:34.000 --> 02:26:40.000
+las clase pasada.
+
+02:26:40.000 --> 02:26:43.000
+funcion de horro.
+
+02:26:43.000 --> 02:26:48.000
+Okay? Telefuncion de aroor.
+
+02:26:48.000 --> 02:27:01.000
+Es basicamente el integrar de la ocean. Y, bueno, es una internal que no tienes solucion analytica si que tenemos que a sabero contar los approximaciones, no?
+
+02:27:01.000 --> 02:27:04.000
+Okay, bueno, esa lo que va a ser que la helios y a pesada.
+
+02:27:04.000 --> 02:27:16.000
+Okay? Es muy impesada y porrotanto va a generar mucho de este.
+
+02:27:16.000 --> 02:27:20.000
+Por eso que en elamente trajamos con approximaciones. Okay?
+
+02:27:20.000 --> 02:27:26.000
+es importante cuando cambien la jeel.
+
+02:27:26.000 --> 02:27:28.000
+Hello?
+
+02:27:28.000 --> 02:27:34.000
+el pueden notar que un este caso es una deriva a soabe.
+
+02:27:34.000 --> 02:27:37.000
+Okay, una gradiente suave.
+
+02:27:37.000 --> 02:27:40.000
+Okay, se ac according la condition deliches para desensor era.
+
+02:27:40.000 --> 02:27:42.000
+On a funcion suave.
+
+02:27:42.000 --> 02:27:52.000
+informas infotica hace la rello, no?
+
+02:27:52.000 --> 02:27:54.000
+Estacomo que vienna a comoda.
+
+02:27:54.000 --> 02:28:08.000
+Pero tambient tenemos tres regiones en laje. Okay? Una sona exitatoria, okay, que seria como la parte e kis de la relo.
+
+02:28:08.000 --> 02:28:10.000
+Pro tambien una zona den inicon.
+
+02:28:10.000 --> 02:28:16.000
+Okay? Entonces, algo que per diemos con la relo era la sola de inimicion, como decir que…
+
+02:28:16.000 --> 02:28:26.000
+Amira is the marking, y bueno, esa capa representat permos, esoto teninal que ver comparison que ver el congato, entonces en lobby me de devo lejard de la…
+
+02:28:26.000 --> 02:28:28.000
+they conceptually better.
+
+02:28:28.000 --> 02:28:30.000
+eso de narrow.
+
+02:28:30.000 --> 02:28:37.000
+Patras, no lo daba la relo, porque no tiamos favors negativos, pero casino, nimos un valor negativo.
+
+02:28:37.000 --> 02:28:42.000
+Qui podria ayudar a…
+
+02:28:42.000 --> 02:28:44.000
+Okay? Este la helud.
+
+02:28:44.000 --> 02:28:54.000
+L otro es que aqui se triza layro normalization, que originalmente se tririzo para este…
+
+02:28:54.000 --> 02:28:57.000
+los transformers.
+
+02:28:57.000 --> 02:28:59.000
+Okay, popularizar cones transformers.
+
+02:28:59.000 --> 02:29:04.000
+Lo que pasa es que…
+
+02:29:04.000 --> 02:29:09.000
+normalization.
+
+02:29:09.000 --> 02:29:16.000
+It better visualization lo que hace es…
+
+02:29:16.000 --> 02:29:18.000
+lo cuales muy importante, por estabilidad.
+
+02:29:18.000 --> 02:29:22.000
+is the Englando como las representaciones.
+
+02:29:22.000 --> 02:29:30.000
+normalizacion.
+
+02:29:30.000 --> 02:29:39.000
+muy mala abstraction delos datos, no como las datos senderar.
+
+02:29:39.000 --> 02:29:47.000
+Ademas que nosotros en entrenamiento tenemos que hacer una…
+
+02:29:47.000 --> 02:29:52.000
+global, lo que les…
+
+02:29:52.000 --> 02:30:02.000
+lo que hace esimar por es la medida la espeacion de los datos en general para que en inferencia sigumente lo 3cemos, no?
+
+02:30:02.000 --> 02:30:04.000
+Or as utilizamos paches chequitos,
+
+02:30:04.000 --> 02:30:09.000
+Eso sistimadores van a ser muy redoso, suean estar cambiando much.
+
+02:30:09.000 --> 02:30:14.000
+Okay, tell meida juiciendo mejor con bache grandes, per igual epeniza mucho de la…
+
+02:30:14.000 --> 02:30:19.000
+entre los datos entre vasivatch, okay?
+
+02:30:19.000 --> 02:30:24.000
+Alo que va a ser mucho mas estable va a ser normalizer a partir de canal.
+
+02:30:24.000 --> 02:30:26.000
+Okay? Liar normalization.
+
+02:30:26.000 --> 02:30:30.000
+es una normalizacion a nive de canalis.
+
+02:30:30.000 --> 02:30:36.000
+Okay, entonces, lo que vamos a ser es calcular la mediele ideacion entre los canales de la renderona.
+
+02:30:36.000 --> 02:30:42.000
+Okay? los baches, no?
+
+02:30:42.000 --> 02:30:46.000
+Porque simbrevamos a tener todos los canales este para sacion.
+
+02:30:46.000 --> 02:30:48.000
+Y es por esos que es mucho mas practico.
+
+02:30:48.000 --> 02:30:50.000
+Okay?
+
+02:30:50.000 --> 02:30:59.000
+Este le estandar para este… dechos mucho mas utilizado en…
+
+02:30:59.000 --> 02:31:04.000
+Okay? Originalmente eso se presento de transformers, pero mas a quedado en cenail.
+
+02:31:04.000 --> 02:31:07.000
+Vamos a ver que en…
+
+02:31:07.000 --> 02:31:14.000
+In transformers.
+
+02:31:14.000 --> 02:31:18.000
+papers, de…
+
+02:31:18.000 --> 02:31:22.000
+The quitar la parte de normalizacion.
+
+02:31:22.000 --> 02:31:28.000
+a normalizacion intendido este como calcular una medio una escacion, y ahi
+
+02:31:28.000 --> 02:31:30.000
+Hacir en alguna dimension del densor,
+
+02:31:30.000 --> 02:31:33.000
+Y luego a partir de eso, este procesando, no.
+
+02:31:33.000 --> 02:31:41.000
+Vamos a ver que este… que es posible a trabajar sinus enormecacion, y de hechos se ha transformer without normalization.
+
+02:31:41.000 --> 02:31:49.000
+y de hecho esos algo exclusivo de transformers.
+
+02:31:49.000 --> 02:31:55.000
+was completed.
+
+02:31:55.000 --> 02:32:03.000
+Termina sindol la representante mas arriba digamos de la mejor representante a nivel de las convolucionales, a nivel de las senienix.
+
+02:32:03.000 --> 02:32:06.000
+Okay, since quitting una cenene…
+
+02:32:06.000 --> 02:32:10.000
+utiliza la comnex.
+
+02:32:10.000 --> 02:32:15.000
+Okay? So this is getting utilizar algo eficiente.
+
+02:32:15.000 --> 02:32:20.000
+tienen muy pocos recurs.
+
+02:32:20.000 --> 02:32:26.000
+But instead of getting esquire algo iniciente, pero tambien que tengan buenes empeno, utilizen eficNet.
+
+02:32:26.000 --> 02:32:33.000
+Okay?
+
+02:32:33.000 --> 02:32:37.000
+Our Levisinet bundle poltizar…
+
+02:32:37.000 --> 02:32:40.000
+Em parte el architectural de la mobile net personos.
+
+02:32:40.000 --> 02:32:44.000
+Okay? Utiliza.
+
+02:32:44.000 --> 02:32:47.000
+is the, um… let's talk?
+
+02:32:47.000 --> 02:32:56.000
+operaciones, no?
+
+02:32:56.000 --> 02:32:58.000
+Pero tambien?
+
+02:32:58.000 --> 02:33:06.000
+dicho por elado de la architectura del bloque basico, tambien motivizar un componenten que baser no operand nosotros.
+
+02:33:06.000 --> 02:33:09.000
+llamado channel atenco.
+
+02:33:09.000 --> 02:33:15.000
+Que bueno, explicitamente se llama aqui este esquisa no excitement, que es una architectola de chanel atencion.
+
+02:33:15.000 --> 02:33:18.000
+En momento les suplicarizo.
+
+02:33:18.000 --> 02:33:24.000
+Pero ademas eso que es como que eso va a ser elo que vase para construir lefic enetes.
+
+02:33:24.000 --> 02:33:29.000
+Pero eso siamma aficione por la forma como acido construya.
+
+02:33:29.000 --> 02:33:39.000
+Okay? Abraham notado que este… esas architecturas basicamente son un bloque basico que es repetido, o enamrado varias veces, no?
+
+02:33:39.000 --> 02:33:46.000
+numero de canales, numero de capas, numeros de numero de canales este.
+
+02:33:46.000 --> 02:33:48.000
+numero de tapas, este…
+
+02:33:48.000 --> 02:33:57.000
+Resoluciones cosas asi este todeso son parametros que cuando disena asunda nerve architectura debriacer considerando estas probando, no?
+
+02:33:57.000 --> 02:34:00.000
+E is the…
+
+02:34:00.000 --> 02:34:05.000
+tapas ah.
+
+02:34:05.000 --> 02:34:08.000
+O cuanto se esta, no.
+
+02:34:08.000 --> 02:34:15.000
+Terminac sindo manual, o sea, prueba a saber que pasos y le metro tanto que pasos y la agricultumas, un documento, se asi.
+
+02:34:15.000 --> 02:34:18.000
+know.
+
+02:34:18.000 --> 02:34:21.000
+Estas un proceso vasanteard.
+
+02:34:21.000 --> 02:34:25.000
+Porque tienes que es probar, probabar, probogar y estar simple el pennant.
+
+02:34:25.000 --> 02:34:30.000
+dijamos que…
+
+02:34:30.000 --> 02:34:36.000
+misma via este optimizando renneronal.
+
+02:34:36.000 --> 02:34:42.000
+Even racing national las nasse.
+
+02:34:42.000 --> 02:34:49.000
+Here's another architecture research.
+
+02:34:49.000 --> 02:34:51.000
+muchas nas, okay?
+
+02:34:51.000 --> 02:34:57.000
+modificando este una retro national.
+
+02:34:57.000 --> 02:35:01.000
+Este habardido una signal.
+
+02:35:01.000 --> 02:35:03.000
+Cuando eso pas…
+
+02:35:03.000 --> 02:35:09.000
+de para metros para la architectural.
+
+02:35:09.000 --> 02:35:15.000
+Okay? Entonces, para se un marco de optimizacion,
+
+02:35:15.000 --> 02:35:19.000
+And let me send it e proposo por nuestro amigo tan.
+
+02:35:19.000 --> 02:35:29.000
+Bueno, en esta amigo tan es, eh…
+
+02:35:29.000 --> 02:35:32.000
+Living in the paper.
+
+02:35:32.000 --> 02:35:39.000
+And… sobre como relacionar esas conseas, no de profundidad, de…
+
+02:35:39.000 --> 02:35:44.000
+The numero de canales a resolucion de la imagen, este…
+
+02:35:44.000 --> 02:35:55.000
+parametros. Alpha, beta, yamma, que escostamente lo decay. Profundidad
+
+02:35:55.000 --> 02:35:58.000
+handshake Americanalees y la solucion de rib, okay?
+
+02:35:58.000 --> 02:36:04.000
+Posar elcinado entre Alpha Beta Yamaha, okay? Este fi va a ser con un parametros de escala.
+
+02:36:04.000 --> 02:36:11.000
+Okay? Y3 asi, no?
+
+02:36:11.000 --> 02:36:17.000
+Esto esa lo que lo vamos se aareficien el 1,013 asi, okay?
+
+02:36:17.000 --> 02:36:21.000
+CFI.
+
+02:36:21.000 --> 02:36:29.000
+Pero lo que vamos optimizar es se alpha Beta Egam. Y bueno, talcual como lo presenteorico,
+
+02:36:29.000 --> 02:36:37.000
+al final como relacionar en esas variables es come seaciendo alfa por veto algarado, por gamma alcado, va a ser mas o menos dos.
+
+02:36:37.000 --> 02:36:42.000
+numeros que optimizarno.
+
+02:36:42.000 --> 02:36:46.000
+esta configuracion, que serema…
+
+02:36:46.000 --> 02:36:51.000
+no?
+
+02:36:51.000 --> 02:37:02.000
+controjador que va estar optimizando a vez mas y la configuracion de la renderonal, que ya saben que aqui basar tecinido por este alpha Beta Yam.
+
+02:37:02.000 --> 02:37:12.000
+Okay? Il la funcion que quieren optimizar esa que accuracy por la tencia.
+
+02:37:12.000 --> 02:37:18.000
+is, is the aumenter la accuracy y reducir la latencia que hormos a…
+
+02:37:18.000 --> 02:37:23.000
+Okay? Y juzamente generic dificiente, no?
+
+02:37:23.000 --> 02:37:26.000
+Puenes empeno con poco tiempo de recu.
+
+02:37:26.000 --> 02:37:32.000
+estar correctura.
+
+02:37:32.000 --> 02:37:35.000
+If that is an API signet person uno.
+
+02:37:35.000 --> 02:37:42.000
+Okay? El entrada temos la transportres que la estapa esten recordan est de la…
+
+02:37:42.000 --> 02:37:50.000
+luego sigue los bloques normales este de…
+
+02:37:50.000 --> 02:37:56.000
+bloques de MVV comp, okay?
+
+02:37:56.000 --> 02:37:58.000
+ISTO is MUV Comp.
+
+02:37:58.000 --> 02:38:09.000
+Okay? Que, bueno, hay diferentes tipos de deblokes, no, hay bloques que trabaja con kernel ser por 3, 5 los esotes son carnal 5 por cinco,
+
+02:38:09.000 --> 02:38:11.000
+los rojos son tresportres.
+
+02:38:11.000 --> 02:38:15.000
+Y vamos a ver aqui un tema de espanzion, no?
+
+02:38:15.000 --> 02:38:18.000
+Aqui eso no sin expansion y los demas a no expansion porces.
+
+02:38:18.000 --> 02:38:21.000
+Espanzion se refiere a esto de aca.
+
+02:38:21.000 --> 02:38:31.000
+llega la entrada se spanes numero canales que ca aislefort seis, me aqui lo pueso un facto ver cuatro.
+
+02:38:31.000 --> 02:38:35.000
+Where are you serious?
+
+02:38:35.000 --> 02:38:39.000
+del paper.
+
+02:38:39.000 --> 02:38:43.000
+Um…
+
+02:38:43.000 --> 02:38:45.000
+Entonces… oops…
+
+02:38:45.000 --> 02:38:52.000
+Okay. Entonces, espandimos enumula de canales, lo procesamos espacientmente con la divvoy y luego lo comprimos, no?
+
+02:38:52.000 --> 02:39:00.000
+Exactamente la misma configuracion de la mobile person dos, no, estar cual, una calga a la compuacion mobile ad personas.
+
+02:39:00.000 --> 02:39:04.000
+Si en verbo, vamos a negar un component text.
+
+02:39:04.000 --> 02:39:06.000
+is the ECE.
+
+02:39:06.000 --> 02:39:08.000
+esta del antando.
+
+02:39:08.000 --> 02:39:11.000
+Sayama e squiss and oxidation.
+
+02:39:11.000 --> 02:39:13.000
+Okay?
+
+02:39:13.000 --> 02:39:16.000
+Queues este muglo de aca.
+
+02:39:16.000 --> 02:39:22.000
+ODA, but this voice flicker esto the queues, esto es que se patient.
+
+02:39:22.000 --> 02:39:32.000
+And…
+
+02:39:32.000 --> 02:39:43.000
+Okay, according case studies…
+
+02:39:43.000 --> 02:39:50.000
+Okay. No, que esas nuestra representacion, no?
+
+02:39:50.000 --> 02:39:59.000
+Sentacion, let's see.
+
+02:39:59.000 --> 02:40:05.000
+Okay? El o que vemos vistas ahora, no?
+
+02:40:05.000 --> 02:40:16.000
+Y recorder en que esta ev vientemente trabajado en un espacio discretiz.
+
+02:40:16.000 --> 02:40:21.000
+Techo esto lo vamos ver como un cubo de rugby.
+
+02:40:21.000 --> 02:40:27.000
+Let's see…
+
+02:40:27.000 --> 02:40:36.000
+I say no. igua de la parte de arriban.
+
+02:40:36.000 --> 02:40:40.000
+silica, I'll also rectangularis.
+
+02:40:40.000 --> 02:40:48.000
+Es como… como esto de a cano, he cho esto seria un buen digo.
+
+02:40:48.000 --> 02:41:04.000
+Somewhere you go to end. Um…
+
+02:41:04.000 --> 02:41:07.000
+Uh, no.
+
+02:41:07.000 --> 02:41:16.000
+No, not my youth.joro bueno.
+
+02:41:16.000 --> 02:41:21.000
+A quizeria esto hace bedole y aqui la profundidad, no? Ele molecanales, no?
+
+02:41:21.000 --> 02:41:26.000
+Even when you're saying Keiko necesas posiciones corresponde a una regionsen embrada, no?
+
+02:41:26.000 --> 02:41:33.000
+sea.
+
+02:41:33.000 --> 02:41:35.000
+aca un lago.
+
+02:41:35.000 --> 02:41:44.000
+aqui unbolito aqui.
+
+02:41:44.000 --> 02:41:49.000
+de un nino.
+
+02:41:49.000 --> 02:41:54.000
+Why not?
+
+02:41:54.000 --> 02:41:57.000
+un perito.
+
+02:41:57.000 --> 02:42:00.000
+When the AI mechanic is confirmed.
+
+02:42:00.000 --> 02:42:09.000
+Okay. Okay, bueno, ese su nano, entonces, ya saben que cado uno de esa regiones va a ser procesados con…
+
+02:42:09.000 --> 02:42:16.000
+tambiente desportres, no?
+
+02:42:16.000 --> 02:42:18.000
+Don says…
+
+02:42:18.000 --> 02:42:23.000
+el concepto del agu.
+
+02:42:23.000 --> 02:42:25.000
+logo, okay?
+
+02:42:25.000 --> 02:42:29.000
+El perrito pasta ragano, peritone.
+
+02:42:29.000 --> 02:42:31.000
+Reito, okay?
+
+02:42:31.000 --> 02:42:35.000
+cepto de solo.
+
+02:42:35.000 --> 02:42:41.000
+Okay? Y bueno la persona esta parcano este person.
+
+02:42:41.000 --> 02:42:49.000
+Okay? Bueno, entonces durante todo este canal, el durante todos en todas dimensiones que estamos viendo a cabajo.
+
+02:42:49.000 --> 02:42:51.000
+Because technically, el concepto de la.
+
+02:42:51.000 --> 02:42:56.000
+Okay? en los ejemplo que vamos aer aqui,
+
+02:42:56.000 --> 02:43:02.000
+Vamos a su poner que casa dimension corresponde a una informacion concept en particular, okay?
+
+02:43:02.000 --> 02:43:07.000
+Imaginemos que el concepto elago este en esta dimension.
+
+02:43:07.000 --> 02:43:10.000
+Okay?
+
+02:43:10.000 --> 02:43:13.000
+Y este el concepto de Perrito.
+
+02:43:13.000 --> 02:43:18.000
+He stay in the account.
+
+02:43:18.000 --> 02:43:22.000
+El concepto de abandonar holista de entrance.
+
+02:43:22.000 --> 02:43:30.000
+El concepto de sol este porca.
+
+02:43:30.000 --> 02:43:35.000
+Okay, y tambemue agregar un concepto de…
+
+02:43:35.000 --> 02:43:37.000
+digamos de…
+
+02:43:37.000 --> 02:43:42.000
+Ose que no se pueda este…
+
+02:43:42.000 --> 02:43:47.000
+this plazar. El pueden el solstice des Plaza, por imaginemos que…
+
+02:43:47.000 --> 02:43:52.000
+Can we focus ese momento, muy poco segundo.
+
+02:43:52.000 --> 02:43:57.000
+vena el solo, no?
+
+02:43:57.000 --> 02:43:59.000
+pero quito.
+
+02:43:59.000 --> 02:44:04.000
+es unaidament with Lenten, okay?
+
+02:44:04.000 --> 02:44:13.000
+Mintras que el perito este el contrario, no? El perrito este…
+
+02:44:13.000 --> 02:44:17.000
+tiempo, no? Okay?
+
+02:44:17.000 --> 02:44:21.000
+otro vector otra vector.
+
+02:44:21.000 --> 02:44:27.000
+Pa corresponde el concepto de elementos agiles, no que se pueden des plaza mi rapes de un instanti, okay?
+
+02:44:27.000 --> 02:44:35.000
+Alright, um, imaginemos que estemos en uneteria de reconocer este…
+
+02:44:35.000 --> 02:44:41.000
+composicion de necena, no?
+
+02:44:41.000 --> 02:44:45.000
+queremos escribir distribir un paisar, okay?
+
+02:44:45.000 --> 02:44:50.000
+Yeah, a liquid mascribirlo como este…
+
+02:44:50.000 --> 02:44:52.000
+Como constante ese paisaje, no?
+
+02:44:52.000 --> 02:44:59.000
+For example, if I say, un bajarita, perce bajarito seriebolando, no, entas una constante del pajarito, no?
+
+02:44:59.000 --> 02:45:05.000
+a jugar otro la, no?
+
+02:45:05.000 --> 02:45:08.000
+Entonces, en ese context in particular,
+
+02:45:08.000 --> 02:45:11.000
+Lo que vamos a ser es de todos los canales.
+
+02:45:11.000 --> 02:45:15.000
+Okay? Lo que en importa es esteca canan particular, no.
+
+02:45:15.000 --> 02:45:24.000
+Quiero saber, este sista el concepto de ina movilidad o no esta concede enabobilidad, no?
+
+02:45:24.000 --> 02:45:30.000
+Okay? Esta informacion que mi importante, mientras que informacion de identidad.
+
+02:45:30.000 --> 02:45:34.000
+ejemplo.
+
+02:45:34.000 --> 02:45:38.000
+Um…
+
+02:45:38.000 --> 02:45:46.000
+They almost quesa emencion de a case el dimension de color, no?
+
+02:45:46.000 --> 02:45:48.000
+Que segunda retriever,
+
+02:45:48.000 --> 02:45:53.000
+Entonces, aqui se la informacion de mostazam, no?
+
+02:45:53.000 --> 02:45:56.000
+le tinta de morado.
+
+02:45:56.000 --> 02:46:06.000
+Este concerto de mostaza amino importa, ses que yo quiero extender en concepto de paisabendo del concepto de que cose en la movible de todo esteen, no?
+
+02:46:06.000 --> 02:46:13.000
+Entonces, eh, aqui estoy diciendo que este canal mi importa mucho, este en canal no importa.
+
+02:46:13.000 --> 02:46:18.000
+Yasi cado de las canales puedo decir cual pas her mas relevante, dependido de la tarea, no?
+
+02:46:18.000 --> 02:46:22.000
+digamos de conducion.
+
+02:46:22.000 --> 02:46:27.000
+Okay? una persona.
+
+02:46:27.000 --> 02:46:39.000
+Okay, yaka, no se un…
+
+02:46:39.000 --> 02:46:42.000
+Bueno, is it aqui muchos conceptos, no?
+
+02:46:42.000 --> 02:46:46.000
+conducion.
+
+02:46:46.000 --> 02:46:54.000
+Es el conceto de la persona, porque el habia, no mi vas her nada, no? Aun que ultimamente visto videos de habian esa terrexando de medio de la pista,
+
+02:46:54.000 --> 02:46:59.000
+El concerta de habion no mi importa resaldaro.
+
+02:46:59.000 --> 02:47:09.000
+una persona que se esta moviendo, no? Yo el larval, no, el larvol va a seguir estatico, no tales va a ser relevante, sis que yo me a circle accelerundo, si estoy pontechargo el ar uno.
+
+02:47:09.000 --> 02:47:21.000
+es ver la persona, no que esta haciendo esta queriendo cruisar a clapista, o sintlemente esta esperando como de veria saluno.
+
+02:47:21.000 --> 02:47:28.000
+Entonces, de todas las canales voy a sericonar cual para mi esma relevante. Y bueno.
+
+02:47:28.000 --> 02:47:34.000
+El definir cuales para mi marlevante lo vamos a resolver de ente en la classificacion, okay? Vamos a classificar.
+
+02:47:34.000 --> 02:47:41.000
+Irrelevante, o no relevante, okay? Y bueno, ocean que classificacion se ha conasimo, no?
+
+02:47:41.000 --> 02:47:47.000
+levante.
+
+02:47:47.000 --> 02:47:51.000
+Okay, yesamente lo que va a ser escuiza en exito.
+
+02:47:51.000 --> 02:48:00.000
+relevantes da el contexto por lo que se trabajant, okay?
+
+02:48:00.000 --> 02:48:07.000
+tieboy dia.
+
+02:48:07.000 --> 02:48:16.000
+este espaciale.
+
+02:48:16.000 --> 02:48:22.000
+Parqueener un Vector. Procesar este vector para generar un vector que diciendo cuales son los canales mas relevantes, okay?
+
+02:48:22.000 --> 02:48:28.000
+Este vector que esta diciendo que sombreroes entrecer yundo, lo vamos a multiplicar con lo de entrada.
+
+02:48:28.000 --> 02:48:31.000
+El multiplicar estamos o a tenuando,
+
+02:48:31.000 --> 02:48:35.000
+Hor este mandiendo cierto informacion. Por ejemplo…
+
+02:48:35.000 --> 02:48:38.000
+aqui estaria muz…
+
+02:48:38.000 --> 02:48:42.000
+Atenuando la informacion de color, porque no mi importa, vacironde de distractor para renal.
+
+02:48:42.000 --> 02:48:47.000
+igual a can, no?
+
+02:48:47.000 --> 02:48:59.000
+Este no importa, este el arbol no se la textara el arbo. Es lo a tenuar, lo que voy me importa esqueces, estamos viendo opera ser peligroso para la persona que el.
+
+02:48:59.000 --> 02:49:01.000
+Por el elemento que esta persona la pista.
+
+02:49:01.000 --> 02:49:09.000
+Okay? This is the other context of vamos selecionar algun canal in particular. Yes, exactamente ese resuicen existacion que lobreamos aqui.
+
+02:49:09.000 --> 02:49:12.000
+Okay?
+
+02:49:12.000 --> 02:49:17.000
+Y, bueno, viendo lo resultados pueden ver que leficient es una muy buena architectura.
+
+02:49:17.000 --> 02:49:20.000
+Aquis de la resonat 5a.
+
+02:49:20.000 --> 02:49:31.000
+Okay? Pueden ver que con lis mundumero de parametros…
+
+02:49:31.000 --> 02:49:37.000
+respecto el desarre anterior, okay?
+
+02:49:37.000 --> 02:49:42.000
+And… okay?
+
+02:49:42.000 --> 02:49:47.000
+pero con mucho menos paramos.
+
+02:49:47.000 --> 02:49:55.000
+Okay? vamos a ver que tambien le supera esta diversion mundo.
+
+02:49:55.000 --> 02:50:00.000
+Okay, enumero de parametros y este…
+
+02:50:00.000 --> 02:50:05.000
+mucho mas haremo.
+
+02:50:05.000 --> 02:50:08.000
+Okay, vamos a ver que lo que esta siendo eseficiene.
+
+02:50:08.000 --> 02:50:15.000
+Y tambien aqui ya estamos enera de los transformers asi que tambil va a cubar como la beat base.
+
+02:50:15.000 --> 02:50:18.000
+de los transformers, no?
+
+02:50:18.000 --> 02:50:21.000
+Vision Transformers beat.
+
+02:50:21.000 --> 02:50:26.000
+Well, if so discutimos la siente clase.
+
+02:50:26.000 --> 02:50:38.000
+Learning Learning.
+
+02:50:38.000 --> 02:50:40.000
+No? Entonces este la…
+
+02:50:40.000 --> 02:50:45.000
+Continamos la siente clase. Recuerden que le se compartido la…
+
+02:50:45.000 --> 02:50:50.000
+voy a subir todos los codigos.
+
+02:50:50.000 --> 02:50:52.000
+Maybe that's comparable.
+
+02:50:52.000 --> 02:50:56.000
+proclamande impliedo.
+
+02:50:56.000 --> 02:50:59.000
+Mmm…
+
+02:50:59.000 --> 02:51:06.000
+Entonces, ahi van a subier to los codivos, y voy a estar subiendo tambien los cogos de lo que hemos traviendo idea.
+
+02:51:06.000 --> 02:51:11.000
+es presencial hay conversamos, okay?
+
+02:51:11.000 --> 02:51:13.000
+Bueno, tenga buena tarde.
+
+02:51:13.000 --> 02:51:16.000
+Los vemos.
+
+02:51:16.000 --> 02:51:46.000
+Gracias ustedes.
+

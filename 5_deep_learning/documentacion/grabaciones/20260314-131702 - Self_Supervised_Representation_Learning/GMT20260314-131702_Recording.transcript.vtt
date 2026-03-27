@@ -1,0 +1,4490 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:18.740
+Escuela de Posgrado: Hemos trabajado con supervides. Learn significa que tiene una base de datos donde íbamos a relacionar un mapeo entre las 2 este entre los dominios. Entonces hacemos una clasificación. Entonces este cada 1 de los objetos, los retos, sillas, reclasificado como silla.
+
+2
+00:00:18.770 --> 00:00:26.000
+Escuela de Posgrado: había un mar entre las 2 entre 2 fases. Hasta Hasta ahí estaba bien. No bien.
+
+3
+00:00:26.220 --> 00:00:34.230
+Escuela de Posgrado: ¿por qué trabajar ahora con ser Superbiker? ¿se acuerda de la motivación mote
+
+4
+00:00:37.700 --> 00:00:40.400
+Escuela de Posgrado: doctora en la motivación de ser supervise.
+
+5
+00:00:48.340 --> 00:00:50.270
+Escuela de Posgrado: Ese es supermas, ¿no?
+
+6
+00:00:51.100 --> 00:01:00.560
+Escuela de Posgrado: Bueno. Entonces ahí lo que hacíamos era un mapeo que teníamos un espacio de dados, ¿cierto?
+
+7
+00:01:01.340 --> 00:01:07.419
+Escuela de Posgrado: Donde recuerden que nosotros habíamos visto que el espacio de representación era una especie de greenistas
+
+8
+00:01:07.620 --> 00:01:17.330
+Escuela de Posgrado: donde las cosas similares certificadas, pero en un espacio intratable para nosotros, porque era un espacio así de completo. No
+
+9
+00:01:17.690 --> 00:01:25.299
+Escuela de Posgrado: creo que si hablamos del gran posibilidad todavía en un imán, digamos, parte de
+
+10
+00:01:25.930 --> 00:01:28.330
+Escuela de Posgrado: 512 por 100 los 2.
+
+11
+00:01:28.710 --> 00:01:36.110
+Escuela de Posgrado: Esa es una matriz, Una posición es un pincel en particular. Cuántos canales tenemos una píxel normal.
+
+12
+00:01:36.610 --> 00:01:51.569
+Escuela de Posgrado: Digamos 3 canales. ¿no? Ahora, si trabajamos también en una imagen normal, cada píxel podría tener 256 tonalidades, ¿cierto? Entonces el número de casos va a ser
+
+13
+00:01:51.970 --> 00:02:03.139
+Escuela de Posgrado: en los 12 512 por 3, 4. Las toalías también son canales, tratan como tamiz. No
+
+14
+00:02:03.270 --> 00:02:17.239
+Escuela de Posgrado: siento que claro. Recuerden que, bueno, nosotros trabajamos en computadoras y en computadoras, no podemos trabajar de forma continua.
+
+15
+00:02:17.350 --> 00:02:19.190
+Escuela de Posgrado: Entonces, en lo que
+
+16
+00:02:19.960 --> 00:02:26.230
+Escuela de Posgrado: se hace para pasar al mundo real, que es real, es más continuo, realista, más vivo.
+
+17
+00:02:26.270 --> 00:02:41.219
+Escuela de Posgrado: aunque si no podemos quisquilloso con naturaleza cuántica. Es duro, pero bueno, trabajamos cuando hacemos transición, tenemos que hacer un muestreo, un muestreo, lo que hace de por sí ya es discretizar temporalmente. ¿no? Luego tenemos que empatizarlo, no porque tenemos que volverlo a valores Kits.
+
+18
+00:02:41.510 --> 00:02:50.379
+Escuela de Posgrado: Entonces, en imágenes tenemos una resolución común, digamos, porque de por sí podríamos tener imágenes muy
+
+19
+00:02:50.600 --> 00:03:04.350
+Escuela de Posgrado: bueno con más una este cuantización mucho más fina, ¿no? Pero lo usual en el lo que usamos siempre en imágenes son este de 8 bits, no
+
+20
+00:03:05.540 --> 00:03:19.680
+Escuela de Posgrado: lo cual son 256 tonalidades. Bueno, valores de color. Esos son valores de color. No, tal vez no está la mejor palabra tonalidad porque se confunde con la
+
+21
+00:03:20.140 --> 00:03:24.200
+Escuela de Posgrado: pero sí ese. Esos son los valores que puede tener una imagen.
+
+22
+00:03:24.220 --> 00:03:34.130
+Escuela de Posgrado: Entonces, por cada posición. Podemos tener 256 opciones, no estas 256 opciones, vamos a tener al 3 veces por cada canal. Entonces.
+
+23
+00:03:34.130 --> 00:03:49.690
+Escuela de Posgrado: básicamente, el color de un solo pix. No, Ahora vamos a tener esa cantidad. Esa es la cantidad de posibilidades de imágenes individuales que podríamos obtener. Claro, esa es la complejidad. Y se dan cuenta que eso es muy complejo.
+
+24
+00:03:49.800 --> 00:03:55.329
+Escuela de Posgrado: Ok, lidia eso directamente y tratar muchas dimensiones.
+
+25
+00:03:55.470 --> 00:04:08.190
+Escuela de Posgrado: Vale. Y también pueden notar de que en muchos casos van a ser imágenes que no tienen ningún sentido. Solamente un subconjunto, un pequeño refieres va a corresponder a imágenes reales, ¿no?
+
+26
+00:04:08.210 --> 00:04:25.149
+Escuela de Posgrado: Y bueno, esos sistemas reales van a tener una existencia, porque podemos ver en un píxel. Va a seguir siendo básicamente un animal, tomamos una foto, Si le cambiamos un píxel. Sigue siendo la misma persona. Cambiamos los píxeles. Así no, Eso significa que en el espacio
+
+27
+00:04:25.290 --> 00:04:30.609
+Escuela de Posgrado: es, están cercanos, no digo noción de visitar, ¿no?
+
+28
+00:04:30.690 --> 00:04:48.050
+Escuela de Posgrado: Pero de todos modos, el espacio va a estar medio vacío. No solamente veía fracciones, hay esposas, ¿no? Y bueno donde hay cosas o datos que nos interesa es esa superficie.
+
+29
+00:04:48.470 --> 00:05:03.669
+Escuela de Posgrado: Ese es el espacio de los años donde los que queremos aprender o entender. Ese es el espacio de la gente también. No es el espacio de los datos, el paso latente, pero prestación de datos No, claro, esos son los El espacio
+
+30
+00:05:04.610 --> 00:05:09.559
+Escuela de Posgrado: es el los datos en grupo
+
+31
+00:05:09.810 --> 00:05:12.440
+Escuela de Posgrado: que, como les digo, comienza a ser intratable.
+
+32
+00:05:12.550 --> 00:05:23.490
+Escuela de Posgrado: Pero para que nosotros lo podamos manejar lo que hacemos es trabajarlo, un espacio reducido, un espacio latel donde justamente estábamos en la cercanía, y todo eso
+
+33
+00:05:23.800 --> 00:05:41.250
+Escuela de Posgrado: donde hay una relación semántica también de conceptos que nos hacen bien para nosotros. Entonces ese es el dato del espacio digamos normal, no el bruto. Luego lo proyectamos a un espacio latente y luego sin clasificación. Pero, bueno, en este caso, lo que le estoy explicando.
+
+34
+00:05:41.710 --> 00:05:51.289
+Escuela de Posgrado: lo que vamos a hacer es un match entre cosas, ¿no? Por ejemplo, suculino o espalón.
+
+35
+00:05:51.810 --> 00:05:53.179
+Escuela de Posgrado: No hay que hacer.
+
+36
+00:05:55.390 --> 00:06:01.860
+Escuela de Posgrado: Lilian, dice, bueno, picaflor, digamos.
+
+37
+00:06:02.720 --> 00:06:09.410
+Escuela de Posgrado: Entonces lo que tenemos que hacer es, con cada 1 de estos hacer un tipo de Max, no
+
+38
+00:06:09.480 --> 00:06:11.930
+Escuela de Posgrado: desde el que corresponde a cada 1.
+
+39
+00:06:11.930 --> 00:06:31.250
+Escuela de Posgrado: Y bueno, ¿cómo hacer ese Match? Para eso esperamos una reunión, ¿no? Y bueno, aquí el objetivo está claro, no. El objetivo justamente es hacer un Batch entre 2 espacios, no un espacio, Digamos que no es continuo per se, pero puedo encender continuo. La gran cantidad de datos
+
+40
+00:06:31.440 --> 00:06:38.050
+Escuela de Posgrado: hace un espacio directamente discreto. No vimos un número fijo de candidatos ya
+
+41
+00:06:38.180 --> 00:06:43.480
+Escuela de Posgrado: volviendo a la pregunta: ¿por qué se sube bajando? Entonces esta es una tarea directa.
+
+42
+00:06:44.090 --> 00:06:47.239
+Escuela de Posgrado: ¿por qué ahora se gasta tanto dinero en esa supermercado
+
+43
+00:06:49.470 --> 00:06:53.390
+Escuela de Posgrado: hasta donde llovió debido a la construcción.
+
+44
+00:06:53.550 --> 00:07:02.419
+Escuela de Posgrado: Claro, Eso es una complejidad del cálculo alto, porque está lidiando los datos, pero no va a lidiar con los datos. No.
+
+45
+00:07:03.040 --> 00:07:11.290
+Escuela de Posgrado: claro. Bueno, quiere explicar un poco. Pero recuerda que aquí está el el poder. No
+
+46
+00:07:11.490 --> 00:07:14.420
+Escuela de Posgrado: generamos. Z. Luego pasa la clasificación.
+
+47
+00:07:14.550 --> 00:07:22.869
+Escuela de Posgrado: Eso también puse en supervives, No, este enfoder podría ser una modalidad. Beach, un swing transformer.
+
+48
+00:07:23.010 --> 00:07:27.549
+Escuela de Posgrado: Todas las redes que hemos visto pueden ser este, tienen esa representación y luego falsificado.
+
+49
+00:07:27.960 --> 00:07:31.150
+Escuela de Posgrado: Sí que por cierto, eso se le pasa a la gente.
+
+50
+00:07:33.810 --> 00:07:34.820
+Escuela de Posgrado: Mhm.
+
+51
+00:07:35.760 --> 00:07:36.550
+Escuela de Posgrado: ¿qué?
+
+52
+00:07:36.840 --> 00:07:47.669
+Escuela de Posgrado: Bueno, este aquí? Como les digo, la tarea, esta clave, está claro, la fiesta directa, básicamente lo que quieres es clasificar, clasificar mi papelitos escuchando
+
+53
+00:07:49.230 --> 00:07:51.210
+Escuela de Posgrado: por qué es el supermercado.
+
+54
+00:07:52.440 --> 00:07:56.140
+Escuela de Posgrado: Y aquí este está muy bien de que el remediar
+
+55
+00:07:56.250 --> 00:07:59.199
+Escuela de Posgrado: no se aclaró. Por qué se gasta tanto
+
+56
+00:08:12.730 --> 00:08:13.640
+Escuela de Posgrado: te acuerdas
+
+57
+00:08:20.610 --> 00:08:30.069
+Escuela de Posgrado: si algo que recuerdo a través de un filador
+
+58
+00:08:30.320 --> 00:08:35.110
+Escuela de Posgrado: es bastante teórico. Yo estoy tratando de limpiar esa parte.
+
+59
+00:08:35.280 --> 00:08:42.529
+Escuela de Posgrado: pero es una determinada en común esto. ¿para qué? Porque es bastante matemática, es bastante de teoría.
+
+60
+00:08:43.480 --> 00:08:51.060
+Escuela de Posgrado: pero se preguntan qué son a ver lo primero.
+
+61
+00:08:51.800 --> 00:08:56.190
+Escuela de Posgrado: Sergio. Fernández, como herramienta nació este para
+
+62
+00:08:56.310 --> 00:09:00.659
+Escuela de Posgrado: afrontar un gran problema. Es el indicado de datos. Es vital.
+
+63
+00:09:01.020 --> 00:09:06.609
+Escuela de Posgrado: No sé si alguna vez ustedes han tenido que llegar con eso.
+
+64
+00:09:07.050 --> 00:09:09.639
+Escuela de Posgrado: No lo ves en pequeña escala.
+
+65
+00:09:10.560 --> 00:09:19.820
+Escuela de Posgrado: Imagínense 1 000 000 de datos, no porque se han dado cuenta que se entrenan con los modelos y conocen más el espacio de los datos, ¿no? Entonces este, si
+
+66
+00:09:19.960 --> 00:09:22.089
+Escuela de Posgrado: quieren tener un gasto sed de 1 000 000
+
+67
+00:09:22.370 --> 00:09:30.320
+Escuela de Posgrado: consumir unas cuantas horas? Bueno, si usted lo hace a a lo mismo de cuando usted solo trabajan.
+
+68
+00:09:30.590 --> 00:09:34.970
+Escuela de Posgrado: digamos, hay costo 0, pero también estás poniendo horas de tu vida. Pero
+
+69
+00:09:35.090 --> 00:09:42.670
+Escuela de Posgrado: si contratas a otra persona, cuánto se gasta. No creo que les había comentado el caso de lo Picón.
+
+70
+00:09:43.070 --> 00:09:47.400
+Escuela de Posgrado: No a ver. También es una de las granjas de
+
+71
+00:09:47.630 --> 00:10:06.830
+Escuela de Posgrado: de etiquetadores, pero me refería a este: ¿va a salir una convocatoria. De hecho, les voy a compartir. Cuando ya se dice claro, es un concurso del Imetc, que es este para etiquetar este karts. Básicamente, entonces este hay una pista de
+
+72
+00:10:07.810 --> 00:10:13.620
+Escuela de Posgrado: quieren ver qué carros se está moviendo. Básicamente.
+
+73
+00:10:13.870 --> 00:10:20.910
+Escuela de Posgrado: entonces este ha llegado un momento que yo estaba más infectado en ese curso, porque ahora ha avanzado y he visto que
+
+74
+00:10:21.070 --> 00:10:28.550
+Escuela de Posgrado: y les cuento que pasa el concurso que gane ahí. Les cuento que he visto. Pero bueno, este
+
+75
+00:10:30.520 --> 00:10:43.779
+Escuela de Posgrado: yo hice una cotización aproximada de cuánto iba a costar ese dato de 5 000 lirios, o sea, son videoscripts de 5 s.
+
+76
+00:10:44.380 --> 00:10:48.530
+Escuela de Posgrado: Ok, porque hizo un vídeo si se quiere evaluar este movimiento de los tablets.
+
+77
+00:10:48.640 --> 00:10:52.290
+Escuela de Posgrado: salía algo de 3 000 o 4 000 dólares.
+
+78
+00:10:53.580 --> 00:10:56.929
+Escuela de Posgrado: El claro, el M. P. C no quiere pagar al vacío
+
+79
+00:10:57.030 --> 00:11:02.199
+Escuela de Posgrado: donde va a venir. ¿cuánto es ese dinero? No como si no hubiera
+
+80
+00:11:02.590 --> 00:11:14.620
+Escuela de Posgrado: este entonces este no querían hacer eso? Evidentemente, lo querían resolver ellos mismos este individual y bueno, y
+
+81
+00:11:14.740 --> 00:11:28.130
+Escuela de Posgrado: entre octubre. Hasta ahora no se han hecho un cambio de enfoque pero bueno, es caro. Ok. Entonces ese comiles a un 1 000 000. Hay una gran diferencia. No se dan cuenta que van a ser un montón.
+
+82
+00:11:28.150 --> 00:11:36.680
+Escuela de Posgrado: Ok, Entonces el tiktar, como les digo, es muy caro. Entonces aparecieron varias técnicas de aprendizaje
+
+83
+00:11:36.720 --> 00:11:43.740
+Escuela de Posgrado: con bajos recursos, digamos, de etiquetado, no este semisularizado de
+
+84
+00:11:43.790 --> 00:11:49.549
+Escuela de Posgrado: de gente supervisada y también se supervenga a supervisar.
+
+85
+00:11:49.910 --> 00:11:54.780
+Escuela de Posgrado: Ok. Entonces, justamente para aliviar ese problema que
+
+86
+00:11:54.890 --> 00:12:06.889
+Escuela de Posgrado: ahora. Pero una consulta es efectivo realmente para eso. ¿cuál es la tasa de error?
+
+87
+00:12:07.030 --> 00:12:07.790
+Escuela de Posgrado: Sí, claro.
+
+88
+00:12:08.090 --> 00:12:11.760
+Escuela de Posgrado: Mhm: A ver justamente eso es lo que iba a ver.
+
+89
+00:12:12.280 --> 00:12:20.730
+Escuela de Posgrado: Se dan cuenta que, técnicamente, estamos teniendo sus productos, no la clasificación tal cual y el espacio latente.
+
+90
+00:12:21.250 --> 00:12:28.830
+Escuela de Posgrado: Recuerdan que ustedes en Twitter Vision, porque les he comentado en sus clases que hay técnicas que
+
+91
+00:12:30.080 --> 00:12:40.989
+Escuela de Posgrado: cáncer, learning o byreaming, este esa técnica. Lo que hacen es utilizar una red pre entrenada en un dominio cualquiera
+
+92
+00:12:41.050 --> 00:12:51.380
+Escuela de Posgrado: hacia otra aplicación, ok, Incluso podríamos enviar el caso de que tengan completamente eso. Solamente entrar en la parte física, cierto y reservas recientes.
+
+93
+00:12:51.690 --> 00:13:00.379
+Escuela de Posgrado: entonces este ustedes están aprovechando en ese caso particular.
+
+94
+00:13:00.860 --> 00:13:04.619
+Escuela de Posgrado: Ok, Entonces el el la red ha aprendido a modelar.
+
+95
+00:13:04.770 --> 00:13:12.920
+Escuela de Posgrado: aprendido a modelarlos a entenderlos. Entonces eso incluso es aprovechar.
+
+96
+00:13:13.060 --> 00:13:14.620
+Escuela de Posgrado: Entonces
+
+97
+00:13:14.750 --> 00:13:27.439
+Escuela de Posgrado: esta red se ha entrenado para un dominio muy específico. Por ejemplo, están entrenadas en Imash que seguramente no tienen nada que ver con la tipo Cinco C en su trabajo.
+
+98
+00:13:27.800 --> 00:13:38.670
+Escuela de Posgrado: Pero ese espacio, la gente es muy aprovechado. Se dan cuenta que cuantas empresas han utilizado en diferentes espacios, la gente, espacio, la gente como base, esa randy como base fundamental
+
+99
+00:13:38.960 --> 00:13:40.090
+Escuela de Posgrado: que
+
+100
+00:13:40.190 --> 00:13:58.620
+Escuela de Posgrado: entonces básicamente tiene una gran movilidad, porque pueden utilizarse diferentes dominios, entonces este varios parece que si las tienen muy bien para diferentes homínidos, entonces
+
+101
+00:13:58.770 --> 00:14:13.479
+Escuela de Posgrado: ser supervisor se fue hacia ese lado buscar examinar buenos poder, buenos, pasear libres que se pueden generalizar. El problema inicial era lineal lidiar con nuestro problema?
+
+102
+00:14:14.680 --> 00:14:26.399
+Escuela de Posgrado: Falta de etiquetado, ¿no? Pero luego fue más allá. Y trató de encontrar muy buenas recomendaciones, y ya se ha encontrado fenómenos bastante interesantes. Ok, Entonces.
+
+103
+00:14:27.060 --> 00:14:34.660
+Escuela de Posgrado: claro que se entrenarlo directamente con la base de datos. Podría ser mucho más, pero en muchos casos, pero
+
+104
+00:14:34.780 --> 00:14:39.449
+Escuela de Posgrado: ahora que tenemos 1 000 000 o billones de datos, es el ganador.
+
+105
+00:14:39.890 --> 00:14:43.230
+Escuela de Posgrado: Por ejemplo, meta. Lo está aprovechando bastante bien.
+
+106
+00:14:43.420 --> 00:14:48.279
+Escuela de Posgrado: Venga es para las imágenes de Instagram.
+
+107
+00:14:48.960 --> 00:14:51.559
+Escuela de Posgrado: Bueno, 1 de los tantos, este
+
+108
+00:14:52.710 --> 00:15:03.170
+Escuela de Posgrado: que nunca leemos, es decir, que utilizarlo para entrenar ese modelo de I. Y justamente lo que han hecho es crapear por el Youtube Instagram, Internet como de local.
+
+109
+00:15:04.210 --> 00:15:05.730
+Escuela de Posgrado: Vamos a ver.
+
+110
+00:15:05.870 --> 00:15:19.809
+Escuela de Posgrado: entonces el valor justamente es el espacio latente que justamente escapó en otro caso. Ahora también lo que se ha hecho es, debemos
+
+111
+00:15:20.970 --> 00:15:22.669
+Escuela de Posgrado: los cambios
+
+112
+00:15:22.980 --> 00:15:35.459
+Escuela de Posgrado: y todo esto ya y sobre el paso de la Tinte, aplicar cambios y 20. También clasifica luego solamente con papel.
+
+113
+00:15:35.840 --> 00:15:39.449
+Escuela de Posgrado: Y tiene una cosa bastante
+
+114
+00:15:39.860 --> 00:15:48.979
+Escuela de Posgrado: claro: una vez con supervisado. Suele ser mejor supervisado, no porque realmente les estás dando directamente. Cuáles son las clases que tú quieres evaluar.
+
+115
+00:15:49.180 --> 00:16:02.489
+Escuela de Posgrado: Pero es interesante que solamente con ser supervivencia mucho. Y lo bueno es que esto generaliza bastante bien, no porque comienza a ver mucho, o sea, y eso se vuelve ya un béisbol.
+
+116
+00:16:02.660 --> 00:16:07.520
+Escuela de Posgrado: ¿has escuchado todas las fundaciones? Sí, ¿cierto? Este
+
+117
+00:16:08.460 --> 00:16:14.150
+Escuela de Posgrado: para los modelos fundacionales son modelos, Digamos que son capaces de trabajar con diferentes.
+
+118
+00:16:14.340 --> 00:16:19.440
+Escuela de Posgrado: Sí, el éxito de tareas debería ser fútbol,
+
+119
+00:16:19.570 --> 00:16:29.080
+Escuela de Posgrado: No, necesariamente puede ser que un fundamento exclusivamente, Por ejemplo, los modelos de L. L. M. Los clásicos que eran virtuales
+
+120
+00:16:29.200 --> 00:16:32.759
+Escuela de Posgrado: interactuar con chat.
+
+121
+00:16:32.900 --> 00:16:35.990
+Escuela de Posgrado: ¿por qué? ¿por qué trabajaron primera vez con Charlieve
+
+122
+00:16:37.290 --> 00:16:44.190
+Escuela de Posgrado: música investigación cuando todos entramos por curiosidad, pues es.
+
+123
+00:16:45.240 --> 00:16:53.340
+Escuela de Posgrado: Yo recuerdo haberlo visto primero este con noticias de guía cuando a mí eso no lo probaba para nada.
+
+124
+00:16:53.570 --> 00:17:02.830
+Escuela de Posgrado: Luego me dio curiosidad que algo aquí siempre me quedaba pensando de la primera vez que yo probé de estudiar un centro de acción
+
+125
+00:17:03.010 --> 00:17:10.359
+Escuela de Posgrado: era el tema de que hay muchos lenguajes que técnicamente iguales podrían hacer lo mismo, pero sus emplean.
+
+126
+00:17:10.540 --> 00:17:14.110
+Escuela de Posgrado: Entonces me preguntaba cómo hacer un traductor de pasar de un lenguaje a otro.
+
+127
+00:17:15.099 --> 00:17:26.179
+Escuela de Posgrado: Entonces este al ver lo que está pasando y les decían que si estaba funcionando bien. Dije, mi sueño es ser realizado un devastador.
+
+128
+00:17:26.710 --> 00:17:31.230
+Escuela de Posgrado: Bueno, no funcionaba. Tan Estaba más.
+
+129
+00:17:31.530 --> 00:17:41.450
+Escuela de Posgrado: Sí, imagino que ahora último sí funciona mucho mejor. Pero claro que ahora ya no tengo tanto esa necesidad
+
+130
+00:17:42.220 --> 00:17:46.449
+Escuela de Posgrado: en esos tiempos. En el 2 022
+
+131
+00:17:46.560 --> 00:17:59.979
+Escuela de Posgrado: hace tantos años vivos de la prehistoria de la serie que he visto ya existían antes.
+
+132
+00:18:00.220 --> 00:18:13.400
+Escuela de Posgrado: Claro, Ya existe en las series. Solamente que desde ahí fue el uso masivo, No, yo lo podía usarla. Por ejemplo, mi propia computadora. Entonces este ahora que está masificado, era mucho más
+
+133
+00:18:13.940 --> 00:18:23.170
+Escuela de Posgrado: Bueno, este, por ejemplo, son los modelos. Son modelos poblacionales. Son fundation model.
+
+134
+00:18:23.330 --> 00:18:26.409
+Escuela de Posgrado: porque ustedes pueden fascinar cualquier tipo de tarea.
+
+135
+00:18:27.600 --> 00:18:36.540
+Escuela de Posgrado: Tal vez no cualquiera cualquiera mejor diferentes tipos de tareas que se aparte de pros. El modelo ha sido entrenado como un completador de test
+
+136
+00:18:37.690 --> 00:18:56.159
+Escuela de Posgrado: se entrenado de esa forma. Sin embargo, ustedes lo podemos utilizar para hacer traducción de texto como para que te genere códigos que haga demostraciones matemáticas que no sé que te ayuden a a lidiar con ciertos parciales cosas así no ha sido entrenado bajo una cosa, pero lo puedes utilizar para muchas otras
+
+137
+00:18:56.540 --> 00:19:02.470
+Escuela de Posgrado: dile encima si quieres puedes hacer un país dividido, aunque los pozos Mhm
+
+138
+00:19:02.940 --> 00:19:11.379
+Escuela de Posgrado: depende mucho de la situación en el caso supervive si públicamente algún este.
+
+139
+00:19:11.590 --> 00:19:18.450
+Escuela de Posgrado: Bien así, digamos, su producto multiobjetivo.
+
+140
+00:19:18.610 --> 00:19:32.110
+Escuela de Posgrado: De hecho, este en un rato lo voy a mostrar y está más actualizado. Ahora, Image Imagine es una base de datos. Y sobre esa base de datos.
+
+141
+00:19:32.670 --> 00:19:33.480
+Escuela de Posgrado: mhm.
+
+142
+00:19:33.920 --> 00:19:37.929
+Escuela de Posgrado: Sobre esa base de datos, hay varios modelos que han pedido.
+
+143
+00:19:38.410 --> 00:19:40.069
+Escuela de Posgrado: Never. 100 por 100: Sí,
+
+144
+00:19:40.520 --> 00:19:53.130
+Escuela de Posgrado: Bueno, claro, cada cierto tiempo. Bueno, todo el tiempo salíamos arquitectura. Ese estado del arte. Antes había una página que se llamaba Papers. Lo conocieron.
+
+145
+00:19:55.000 --> 00:19:59.849
+Escuela de Posgrado: Era. Ese sería el sótano todo el tiempo.
+
+146
+00:20:00.270 --> 00:20:02.290
+Escuela de Posgrado: Ahora que existe esa página.
+
+147
+00:20:02.590 --> 00:20:10.880
+Escuela de Posgrado: Antes estaba en el banco.
+
+148
+00:20:12.130 --> 00:20:13.800
+Escuela de Posgrado: Buenos días. ¿cómo estás
+
+149
+00:20:20.010 --> 00:20:25.830
+Escuela de Posgrado: para ver esto? Bien, en Top. Uno ya está en el 91 por 100 el convoca
+
+150
+00:20:27.680 --> 00:20:28.880
+Escuela de Posgrado: que mi nombre.
+
+151
+00:20:29.910 --> 00:20:30.630
+Escuela de Posgrado: Mhm.
+
+152
+00:20:31.200 --> 00:20:39.500
+Escuela de Posgrado: Supongo que esto debe ser, También será.
+
+153
+00:20:47.730 --> 00:20:51.679
+Escuela de Posgrado: Me sale consola. Yo creo que va a ser algo que no funciona.
+
+154
+00:20:53.340 --> 00:21:03.870
+Escuela de Posgrado: Bueno, risas.
+
+155
+00:21:05.660 --> 00:21:13.729
+Escuela de Posgrado: el top, 1 de acuerdo a este ranking, porque no sé cuándo habrán pensado, porque pocas es en vivo en 22
+
+156
+00:21:14.530 --> 00:21:23.759
+Escuela de Posgrado: consume en diversas antiguas, y es más fácil que también de esta página.
+
+157
+00:21:23.880 --> 00:21:33.820
+Escuela de Posgrado: Antes de mencionar este Facebook era lo mejor todo el tiempo se estaba actualizando. Este podía ser un suscripto constante.
+
+158
+00:21:34.280 --> 00:21:37.530
+Escuela de Posgrado: Pero ahora que no existe en el sistema.
+
+159
+00:21:44.970 --> 00:21:48.420
+Escuela de Posgrado: después nada más vamos a hacer pizarro
+
+160
+00:21:51.740 --> 00:21:54.200
+Escuela de Posgrado: y se siguen cargando o así?
+
+161
+00:21:57.630 --> 00:22:01.680
+Escuela de Posgrado: Bueno, en Estados Unidos este coca era lo mismo.
+
+162
+00:22:03.930 --> 00:22:11.860
+Escuela de Posgrado: Aquí también me relaciona más de un contexto. De hecho, ahorita. Les voy a explicar este presentación.
+
+163
+00:22:12.800 --> 00:22:19.480
+Escuela de Posgrado: por cierto, este aquí está siendo un ejemplo de este, y puede ser.
+
+164
+00:22:20.140 --> 00:22:25.749
+Escuela de Posgrado: Lo puse en pocas épocas porque sabía que iba a demorar igual. Se ha demorado como 40 min más.
+
+165
+00:22:26.070 --> 00:22:39.400
+Escuela de Posgrado: solamente con mucho, porque hay poca importancia este porque esa relacionada. No
+
+166
+00:22:39.580 --> 00:22:46.709
+Escuela de Posgrado: les voy a lo voy a correr con más época. Lo voy a dejar así. Ya es asociación para que ustedes lo vean.
+
+167
+00:22:47.030 --> 00:22:53.720
+Escuela de Posgrado: 1 está disgregando con nuevas clases El y el
+
+168
+00:22:55.560 --> 00:22:59.589
+Escuela de Posgrado: aunque le forma objeción, más perfil.
+
+169
+00:23:01.000 --> 00:23:05.930
+Escuela de Posgrado: eso lo voy a hacer este en los
+
+170
+00:23:17.640 --> 00:23:19.230
+Escuela de Posgrado: Bueno, es.
+
+171
+00:23:20.380 --> 00:23:29.569
+Escuela de Posgrado: Y bueno, creo que se ha compartido en la pantalla.
+
+172
+00:23:34.810 --> 00:23:39.220
+Escuela de Posgrado: Y así es
+
+173
+00:23:44.890 --> 00:23:45.969
+Escuela de Posgrado: bueno el libro.
+
+174
+00:23:47.670 --> 00:23:53.589
+Escuela de Posgrado: Entonces recapitulando por qué es el superbander si le hacía claro.
+
+175
+00:23:55.500 --> 00:24:07.150
+Escuela de Posgrado: justamente, ya no queremos etiquetar todos esos 1 000 000. No tenemos que etiquetar todo en Instagram como para poder proyectar esa contraseña.
+
+176
+00:24:07.620 --> 00:24:18.299
+Escuela de Posgrado: Y justamente aquí el producto va a ser el espacio de la resolución invitarnos a ser presidentes.
+
+177
+00:24:19.260 --> 00:24:32.029
+Escuela de Posgrado: y eso lo podemos extrapolar a diferentes tipos de sonidos. Entonces este vamos a ver por ahí algunos modelos que generalizan muy bien se pueden aprovechar bastante bien este
+
+178
+00:24:32.060 --> 00:24:41.670
+Escuela de Posgrado: con la capacidad de descripción de esos vectores que va a generar, proponen generar representaciones no que son representaciones, son muy descriptivas. Las podemos utilizar sin permiso mixto.
+
+179
+00:24:41.860 --> 00:24:45.439
+Escuela de Posgrado: Vamos a ver cómo llegamos a eso.
+
+180
+00:24:45.770 --> 00:24:46.590
+Escuela de Posgrado: Bueno.
+
+181
+00:24:56.740 --> 00:25:11.499
+Escuela de Posgrado: a la así Instagram, y espero que Mhm, o ustedes están conectando
+
+182
+00:25:12.210 --> 00:25:21.790
+Escuela de Posgrado: ¿Y por qué se ha preguntado en inglés?
+
+183
+00:25:22.920 --> 00:25:26.989
+Escuela de Posgrado: Me he asustado ¿
+
+184
+00:25:35.270 --> 00:25:42.000
+Escuela de Posgrado: En 2 canales en
+
+185
+00:25:43.270 --> 00:25:49.559
+Escuela de Posgrado: Así es. Me me hace recordar, porque ese es mi olvido de la entrevista de historia, ¿sí?
+
+186
+00:25:50.310 --> 00:25:59.439
+Escuela de Posgrado: Bueno, recuerden que en el espacio de representación, lo que buscamos es que las cosas similares estén cerca y las cosas diferentes se alejen.
+
+187
+00:25:59.550 --> 00:26:02.390
+Escuela de Posgrado: Por ejemplo, este.
+
+188
+00:26:03.270 --> 00:26:04.480
+Escuela de Posgrado: ¿cómo te llamas?
+
+189
+00:26:04.930 --> 00:26:11.330
+Escuela de Posgrado: Bueno, pues, por ejemplo, las fotos de pozole queremos que estén más o menos juntitas viendo la foto de
+
+190
+00:26:12.300 --> 00:26:19.020
+Escuela de Posgrado: alguien, se llama Luis sí.
+
+191
+00:26:20.340 --> 00:26:23.780
+Escuela de Posgrado: Este sentido para para
+
+192
+00:26:24.700 --> 00:26:33.220
+Escuela de Posgrado: ya este, por ejemplo, la foto se costó y se encuentra sin la cual estén más alejados, ¿no? Y así, cada 1 de ustedes estén como en pequeños grupitos independientes
+
+193
+00:26:33.350 --> 00:26:46.309
+Escuela de Posgrado: y más o menos. Con eso queremos imitar el comportamiento que tenemos en el espacio latente visual Ok, entonces el resultado sería el espacio de representación que sí.
+
+194
+00:26:46.510 --> 00:26:59.710
+Escuela de Posgrado: Y entonces, para ir, bueno, las fotos no es sí mismo, sino que tener una profesión numérica.
+
+195
+00:27:00.450 --> 00:27:08.130
+Escuela de Posgrado: Recuerdo empezó a ser un impasse práctico.
+
+196
+00:27:09.640 --> 00:27:13.300
+Escuela de Posgrado: Disculpen a los que estén con la intro, pero
+
+197
+00:27:14.710 --> 00:27:17.390
+Escuela de Posgrado: que son los pesos. Por favor.
+
+198
+00:27:18.050 --> 00:27:28.050
+Escuela de Posgrado: los pesos. Los pesos pueden ser fácil. Bueno, puedes hacer un espacio de pesos, pero ese es otro tema.
+
+199
+00:27:28.790 --> 00:27:34.479
+Escuela de Posgrado: De hecho, nosotros vamos a hacer. Es un espacio de transformaciones, también un espacio de redes.
+
+200
+00:27:34.900 --> 00:27:43.549
+Escuela de Posgrado: Podemos ver definido mucho de como queremos seguir el espacio, pero en este caso a ver, vamos a suponer que este sea el espacio de los árabes.
+
+201
+00:27:43.550 --> 00:27:54.960
+Escuela de Posgrado: como lo habíamos hecho la discusión al inicio. El paso de los datos es un espacio bastante completo. De hecho, teníamos esa cantidad de posibilidades
+
+202
+00:27:55.150 --> 00:28:07.279
+Escuela de Posgrado: ahora que ese espacio es completamente tratable por la cantidad. Entonces, en ese caso, lo que vamos a hacer es un mapeo entre los datos y la representación Ok.
+
+203
+00:28:07.410 --> 00:28:20.880
+Escuela de Posgrado: En ese espacio de representación, las cosas son mucho más manejables, ¿no? Entonces aquí es donde van a ver esos hitos.
+
+204
+00:28:21.650 --> 00:28:27.410
+Escuela de Posgrado: Este. Entonces lo que va a aprender la red neuronal es mejor en que hay un papeo entre los 2.
+
+205
+00:28:27.960 --> 00:28:32.959
+Escuela de Posgrado: Sí, está en el poder nombrar.
+
+206
+00:28:33.130 --> 00:28:50.179
+Escuela de Posgrado: va a aprender a ser un match en el espacio de los datos originales y esos grumidos. Ok, lo que aprende el resultado es eso lejano? Los vectores en ese espacio de resultados? Una representación, mejor dicho.
+
+207
+00:28:50.630 --> 00:28:54.590
+Escuela de Posgrado: en el
+
+208
+00:28:56.080 --> 00:29:04.829
+Escuela de Posgrado: sí en ese contexto. Sí, en ese contexto, pero representación también se puede extrapolar muchas cosas, pero si en este contexto está rindiendo arte?
+
+209
+00:29:05.300 --> 00:29:10.260
+Escuela de Posgrado: Ya no, no. Si yo decía si ese espacio de representación es de buen humor.
+
+210
+00:29:10.540 --> 00:29:17.330
+Escuela de Posgrado: ¿Cómo lo miro respecto al original, como la
+
+211
+00:29:18.190 --> 00:29:22.900
+Escuela de Posgrado: a ver cómo se que es seguro, como si que es confiable, robusto.
+
+212
+00:29:23.130 --> 00:29:27.570
+Escuela de Posgrado: o sea, porque yo estoy buscando un objeto que sea
+
+213
+00:29:27.930 --> 00:29:35.059
+Escuela de Posgrado: realmente representativo del original, como evalúa el hip hop.
+
+214
+00:29:35.610 --> 00:29:53.289
+Escuela de Posgrado: Eso mucho es depende de cómo lo estés hablando, porque no hay una aplicación, etcétera. Claro, es que el el tema es que eso es un espacio reducido. No es una verificación mucho más, digamos.
+
+215
+00:29:53.430 --> 00:29:55.310
+Escuela de Posgrado: es lo que es algo.
+
+216
+00:29:55.440 --> 00:30:06.999
+Escuela de Posgrado: no, sino que después tú haces una tarea de clasificación. Si ese espacio ya generado es fichado acorde, entonces esa tarea de clasificación puede ser un ejemplo. El cambio es que les mencionaba.
+
+217
+00:30:07.120 --> 00:30:22.939
+Escuela de Posgrado: Podrías ser este un ranking organizado. 60 000 si este espacio estacionista, trayendo que quieres traer e importante. Se lo debería resolver rápidamente. Debería crear diferentes espacios de representación y épocas.
+
+218
+00:30:22.940 --> 00:30:33.129
+Escuela de Posgrado: Sí, ahí deberías evaluar que también está funcionando, aunque también es necesario evaluar, como es, dependiendo de la función de pérdidas que se va a utilizar los email.
+
+219
+00:30:33.170 --> 00:30:44.279
+Escuela de Posgrado: Ahora, eso es un Depende muy fuerte porque ahorita. Hemos visto info en ese va a ser lo estándar dentro de confort titular, pero más adelante vamos a ver otras técnicas.
+
+220
+00:30:44.580 --> 00:30:47.990
+Escuela de Posgrado: Vamos a volver porque. M. C:
+
+221
+00:30:48.150 --> 00:30:53.729
+Escuela de Posgrado: Porque ahí lo que vamos a hacer es como una. Vamos a hacer una predicción, o vamos a hacer una reconstrucción.
+
+222
+00:30:54.050 --> 00:31:12.070
+Escuela de Posgrado: Pero si quieres hacer una comparación global, tal vez lo más directo sería este no, o sea, en base a representación
+
+223
+00:31:13.470 --> 00:31:16.680
+Escuela de Posgrado: en Mhm.
+
+224
+00:31:19.540 --> 00:31:32.010
+Escuela de Posgrado: Entonces el objetivo aquí, el objetivo es, como les mencionaba las fotos de suene.
+
+225
+00:31:32.080 --> 00:31:37.069
+Escuela de Posgrado: entonces hoy tenemos una foto más haciendo la foto de su carnet y la foto, no sé,
+
+226
+00:31:37.140 --> 00:31:51.189
+Escuela de Posgrado: es el ancla en la clase positiva. Entonces ambas fotos deberían ser, mientras que la foto de Juan debía estar en otro lado es el nefríe, ¿no?
+
+227
+00:31:51.190 --> 00:31:59.490
+Escuela de Posgrado: Entonces acercar el positivo y alejar al negativo. Entonces ahí justamente contrastantes. Es un contraste entre positivo y negativo.
+
+228
+00:32:01.740 --> 00:32:17.829
+Escuela de Posgrado: Entonces el primer hipó que vimos para esto fue compararlo con respecto al ruido. No funciona bastante bien, pero depende mucho del diseño del ruido que también el número de es.
+
+229
+00:32:18.050 --> 00:32:20.570
+Escuela de Posgrado: Y teníamos.
+
+230
+00:32:20.740 --> 00:32:26.490
+Escuela de Posgrado: Sí, El inputs se mejora en este respecto al Mc.
+
+231
+00:32:27.210 --> 00:32:36.429
+Escuela de Posgrado: Aquí tenemos que lidiar con muchos ejemplos negativos para funcionar relativamente bien en la clase pasada de ciencia
+
+232
+00:32:38.540 --> 00:32:42.800
+Escuela de Posgrado: que una relación importante en mi colegio era esta relación. De
+
+233
+00:32:43.250 --> 00:32:46.970
+Escuela de Posgrado: bueno, ahí habla de información. Se pueden crear información mutua.
+
+234
+00:32:52.460 --> 00:33:07.450
+Escuela de Posgrado: La impresión de que primera vez que vimos se casó, ajá capacidad Claro, Aquí, justamente veíamos
+
+235
+00:33:07.800 --> 00:33:13.350
+Escuela de Posgrado: a ver información muy clara, es que comparten información porque no tiene algo que ver con el otro.
+
+236
+00:33:13.620 --> 00:33:18.600
+Escuela de Posgrado: ¿cuál es el caso de el peor de los casos, Cuando comparto información
+
+237
+00:33:18.730 --> 00:33:20.849
+Escuela de Posgrado: que no compartan absolutamente nada, no
+
+238
+00:33:20.980 --> 00:33:34.320
+Escuela de Posgrado: que son independientes, no ya este. En el caso extremo negativo, digamos que no comparten la información es que sean independientes, ¿no? Ahora, ¿cómo definimos que 2 variables son independientes?
+
+239
+00:33:36.470 --> 00:33:47.769
+Escuela de Posgrado: Claro, en la prioridad conjunta es igual al producto de las probabilidades. Justamente lo que queríamos ver eso. Entonces este el caso 0 información 0 va a ser cuando
+
+240
+00:33:48.030 --> 00:33:50.019
+Escuela de Posgrado: el producto de las prioridades
+
+241
+00:33:50.160 --> 00:34:09.769
+Escuela de Posgrado: es igual al portal conjunto. Ok. Entonces, cuanto más nos alejemos de eso significa que más nos estamos alejando del caso básico, más bien que están compartiendo algún tipo de información, ¿no? Entonces información mutua, pues también te va a medir que tanto se aleja de ese caso básico
+
+242
+00:34:09.969 --> 00:34:16.880
+Escuela de Posgrado: y cómo lo va a hacer justamente con la una métrica entre inscripciones. ¿no
+
+243
+00:34:17.070 --> 00:34:20.869
+Escuela de Posgrado: se acuerdan ¿Este qué medica distribución se pueden utilizar
+
+244
+00:34:23.590 --> 00:34:28.830
+Escuela de Posgrado: en métrica para comparar distribuciones se puede utilizar o qué usamos, ¿verdad?
+
+245
+00:34:33.130 --> 00:34:35.609
+Escuela de Posgrado: Solo hemos visto una métrica para comprar este dulce
+
+246
+00:34:39.960 --> 00:34:45.939
+Escuela de Posgrado: mhm examen teórico, podría tomarlos.
+
+247
+00:34:46.550 --> 00:34:54.569
+Escuela de Posgrado: ¿por qué muchas personas ya tengo examen de los examen chileno
+
+248
+00:34:55.449 --> 00:35:01.029
+Escuela de Posgrado: y tú. De hecho, yo quería hacerlo presencial, pero por varias cosas va a tener que ser virtual.
+
+249
+00:35:01.770 --> 00:35:05.579
+Escuela de Posgrado: Así que van a usar proactorio. Vamos a proctorios.
+
+250
+00:35:05.830 --> 00:35:25.780
+Escuela de Posgrado: ¿sí? Justo en la mañana solo No lo he podido responder este año, me está reclamando de que, o sea profesor, ya tiene varias configuraciones para evitar que pasen cosas, sí
+
+251
+00:35:25.780 --> 00:35:30.200
+Escuela de Posgrado: refuerzan cerrando todas las ventanas de todas las pestañas. Ya
+
+252
+00:35:30.620 --> 00:35:39.720
+Escuela de Posgrado: yo hice este una prueba, digamos, una evaluación de pruebas que no tiene no genera puntajes simplemente para que todos vean que funciona su campo.
+
+253
+00:35:39.970 --> 00:35:50.289
+Escuela de Posgrado: Alguien le gustó, pero no se dio cuenta de ese de que se ha roto las ventanas. Entonces cerró con sus ventanas su trabajo Y en la mañana de cosas avanzaba viniendo. Vi un montón de mensajes.
+
+254
+00:35:50.530 --> 00:35:54.010
+Escuela de Posgrado: Sí, no tengo que responder eso.
+
+255
+00:35:55.130 --> 00:35:58.310
+Escuela de Posgrado: Pero, bueno, volviste el tema de que estamos hablando de este
+
+256
+00:35:59.760 --> 00:36:05.409
+Escuela de Posgrado: distribuciones, no este para comprar distribuciones. Este, ¿Qué podemos usar igual.
+
+257
+00:36:08.820 --> 00:36:09.620
+Escuela de Posgrado: Mhm.
+
+258
+00:36:14.040 --> 00:36:22.950
+Escuela de Posgrado: Sí, claro es que por una distribución de probabilidades y en muy buenas.
+
+259
+00:36:33.100 --> 00:36:34.640
+Escuela de Posgrado: y en
+
+260
+00:36:39.060 --> 00:36:42.420
+Escuela de Posgrado: que una distribución de Broadwich
+
+261
+00:36:44.720 --> 00:36:50.940
+Escuela de Posgrado: claro, es una inflexión. En realidad no tenemos algún tipo de fenómeno que lo describimos justamente.
+
+262
+00:36:53.270 --> 00:37:03.070
+Escuela de Posgrado: Okay, distribución normal. Por ejemplo, no la persiana. La Chef: La es.
+
+263
+00:37:03.890 --> 00:37:06.170
+Escuela de Posgrado: Soy la de paso.
+
+264
+00:37:06.530 --> 00:37:07.740
+Escuela de Posgrado: Sí. Diferentes.
+
+265
+00:37:07.940 --> 00:37:14.539
+Escuela de Posgrado: Ok. Entonces, por ejemplo, el artículo del poder.
+
+266
+00:37:15.270 --> 00:37:26.290
+Escuela de Posgrado: ¿Quién está más cerca? Digamos entre Mhm: sí lejano.
+
+267
+00:37:27.180 --> 00:37:33.150
+Escuela de Posgrado: digamos entre esta esta y este, ¿cuál es la más cercano a este de acá?
+
+268
+00:37:33.380 --> 00:37:34.380
+Escuela de Posgrado: hobby
+
+269
+00:37:35.310 --> 00:37:43.870
+Escuela de Posgrado: velo se dan cuenta que ven, No, ¿cierto? Y se nota que está un poquito más parejo hasta ahí como mires, este que está un poquito más alto hasta ahí ¿no?
+
+270
+00:37:45.360 --> 00:37:46.790
+Escuela de Posgrado: Y eso me hicieron.
+
+271
+00:37:47.920 --> 00:37:57.260
+Escuela de Posgrado: Claro, tú podrías manejar todavía media varianza porque estás todavía en una situación, pero en un caso general.
+
+272
+00:37:57.430 --> 00:37:59.440
+Escuela de Posgrado: por ejemplo, comparar una distribución uniforme.
+
+273
+00:37:59.760 --> 00:38:04.440
+Escuela de Posgrado: ¿qué tanta distancia hay entre nuestros uniformes y 9 por 100.
+
+274
+00:38:14.880 --> 00:38:27.239
+Escuela de Posgrado: Buenas tardes ha sido la siempre me olvido no como este escribir esos autos, pero es caer en
+
+275
+00:38:27.620 --> 00:38:31.930
+Escuela de Posgrado: empiece a caer ahí para los amigos Kyle.
+
+276
+00:38:33.220 --> 00:38:41.119
+Escuela de Posgrado: esta definición de que se desprendía también de la definición de cross entro por la que le dice: esa
+
+277
+00:38:41.380 --> 00:38:43.450
+Escuela de Posgrado: Sí, ¿cierto?
+
+278
+00:38:43.610 --> 00:38:55.070
+Escuela de Posgrado: Claro, se fueron, y este proceso es producto del río Pablo, por ejemplo, Ajá.
+
+279
+00:38:55.280 --> 00:39:01.550
+Escuela de Posgrado: Claro, este se han dado cuenta que lo utilizan muchas utilizan mucho el té
+
+280
+00:39:02.730 --> 00:39:10.149
+Escuela de Posgrado: en clasificación, no cierto. Este. Podríamos tener el caso binario que usamos binario
+
+281
+00:39:10.540 --> 00:39:16.159
+Escuela de Posgrado: y la general no es el proceso, ¿no? Ok. Este.
+
+282
+00:39:17.200 --> 00:39:25.850
+Escuela de Posgrado: Ambos vienen del concepto de entropidiotropía este. Y esto viene en concepto de información.
+
+283
+00:39:26.060 --> 00:39:32.680
+Escuela de Posgrado: ¿a qué este? Básicamente, la entropía es el valor esperado de la información.
+
+284
+00:39:32.980 --> 00:39:41.259
+Escuela de Posgrado: Luego teníamos placer que básicamente vivía que tan cercano están los seres, todo tipo de percepción
+
+285
+00:39:41.380 --> 00:39:47.760
+Escuela de Posgrado: relacionando una predicción de algún tipo de red se están determinando cómo es eso.
+
+286
+00:39:49.600 --> 00:39:53.890
+Escuela de Posgrado: Comentar una de estas se representa.
+
+287
+00:40:07.440 --> 00:40:13.399
+Escuela de Posgrado: Eso es en la forma de estrella. La forma continua sería simplemente un mineral muy interesante.
+
+288
+00:40:13.560 --> 00:40:19.140
+Escuela de Posgrado: Esto es 0 y lo que hacemos es ¿Y qué es estilo? Aquí
+
+289
+00:40:23.860 --> 00:40:32.640
+Escuela de Posgrado: recuerden que esto es la distribución real.
+
+290
+00:40:33.360 --> 00:40:35.200
+Escuela de Posgrado: y es lo que dice el médico.
+
+291
+00:40:37.780 --> 00:40:44.539
+Escuela de Posgrado: entonces lo que queremos es minimizar el presente.
+
+292
+00:40:44.960 --> 00:40:54.150
+Escuela de Posgrado: Entonces lo que vamos a hacer es minimizarlo hasta que ambas propuestas sean iguales, ¿no? Y cuando son iguales, es cuando.
+
+293
+00:40:55.220 --> 00:41:02.569
+Escuela de Posgrado: cierto allí ya son iguales, nosotros queremos pasar de aquí hasta aquí.
+
+294
+00:41:02.940 --> 00:41:05.189
+Escuela de Posgrado: Sí, entonces eso que es
+
+295
+00:41:11.520 --> 00:41:24.309
+Escuela de Posgrado: eso es el Crosster Bill. ¿eso qué es el y lo dicho por descarte? Creo.
+
+296
+00:41:24.460 --> 00:41:28.310
+Escuela de Posgrado: Mhm, Prefiero siempre en el
+
+297
+00:41:29.400 --> 00:41:39.549
+Escuela de Posgrado: Ok. Entonces pasamos de aquí hasta aquí, Y de hecho, este el valor mínimo, O, bueno, hasta lo siguiente, ese es el y es el objetivo.
+
+298
+00:41:39.670 --> 00:41:43.010
+Escuela de Posgrado: Ok, Entonces vamos reduciendo ácido.
+
+299
+00:41:43.310 --> 00:41:44.160
+Escuela de Posgrado: ¿
+
+300
+00:41:44.490 --> 00:41:50.430
+Escuela de Posgrado: Y bueno, este en cierto punto queremos saber cuánto nos falta para llegar de aquí hasta Cancún
+
+301
+00:41:50.690 --> 00:42:00.169
+Escuela de Posgrado: de la entropía cruzada hasta la entropía. Bueno, esa diferencia entre estos 2, cuanto me falta es el detalle
+
+302
+00:42:01.090 --> 00:42:01.990
+Escuela de Posgrado: Facebook.
+
+303
+00:42:02.740 --> 00:42:08.729
+Escuela de Posgrado: Entonces, si se dan cuenta aquí ya está puesto de forma positiva, pero si hacemos, la Resta.
+
+304
+00:42:08.900 --> 00:42:21.010
+Escuela de Posgrado: no sería este y no este menos. Menos sería más llamatoria peso de peso.
+
+305
+00:42:21.840 --> 00:42:26.750
+Escuela de Posgrado: Mira este eso. Se puede juntar porque estás complicando por Pail, ¿cierto?
+
+306
+00:42:27.050 --> 00:42:39.400
+Escuela de Posgrado: Sería igual este ana sumatoria de de por qué? Porque no de nuestro amor, ¿cierto?
+
+307
+00:42:40.030 --> 00:42:41.680
+Escuela de Posgrado: Y ahora, ¿cómo lo unimos? Esto
+
+308
+00:42:42.860 --> 00:42:45.359
+Escuela de Posgrado: se acuerdan de primaria es el origen.
+
+309
+00:42:49.490 --> 00:42:51.380
+Escuela de Posgrado: ¿qué pasa?
+
+310
+00:42:51.650 --> 00:43:02.120
+Escuela de Posgrado: La división? No estudiar sumatorio de los
+
+311
+00:43:04.060 --> 00:43:05.780
+Escuela de Posgrado: Y justamente es lo que sabe.
+
+312
+00:43:07.170 --> 00:43:14.550
+Escuela de Posgrado: Eso se cae. Entonces soy la discrepancia entre centro pí y la entropía objetivo. Ok.
+
+313
+00:43:15.700 --> 00:43:24.190
+Escuela de Posgrado: Bueno, entonces eso termina siendo como una medida similar entre 2 distribuciones. Es una medida clásica aparte.
+
+314
+00:43:24.300 --> 00:43:31.899
+Escuela de Posgrado: Entonces, si en este es 0, significaría que ya hemos llegado a la excursión de quilú.
+
+315
+00:43:32.170 --> 00:43:38.509
+Escuela de Posgrado: El tema es que esta medida se dan cuenta que no es médico.
+
+316
+00:43:39.070 --> 00:43:43.450
+Escuela de Posgrado: Cierto, no es lo mismo que hacer 35,
+
+317
+00:43:44.830 --> 00:43:47.140
+Escuela de Posgrado: por cierto, se suele colocar así.
+
+318
+00:43:47.420 --> 00:43:49.810
+Escuela de Posgrado: Es distinto al que tenga.
+
+319
+00:43:53.340 --> 00:43:56.140
+Escuela de Posgrado: Ok, o sea, tiene un orbe.
+
+320
+00:43:56.460 --> 00:44:05.190
+Escuela de Posgrado: ¿vale? Entonces este, al no ser simétrico, esto no es una distancia, sí versax.
+
+321
+00:44:05.600 --> 00:44:12.209
+Escuela de Posgrado: algo que sí va a ser distancia, y lo vamos a ver más adelante. Más adelante. Es pasta
+
+322
+00:44:12.330 --> 00:44:13.910
+Escuela de Posgrado: la sustancia más.
+
+323
+00:44:14.580 --> 00:44:25.129
+Escuela de Posgrado: Entonces eso va a ser unas medidas de contribuciones. Y volviendo a lo que estamos hablando? No que es información mutua. ¿se acuerda.
+
+324
+00:44:28.150 --> 00:44:42.679
+Escuela de Posgrado: claro, no lo diríamos de que tanto nos alejábamos de qué efectivamente información mutua 0 cuando sucede
+
+325
+00:44:43.040 --> 00:44:44.540
+Escuela de Posgrado: como te iba a decir nosotros.
+
+326
+00:44:44.750 --> 00:44:47.529
+Escuela de Posgrado: independientes, no y cuándo son independientes.
+
+327
+00:44:54.010 --> 00:45:00.650
+Escuela de Posgrado: Cuando a sí perdón.
+
+328
+00:45:03.570 --> 00:45:15.730
+Escuela de Posgrado: entonces lo que va este caso va a ser el caso base, no aquí. La distancia debería expandirse. Entonces, si hacemos un decaile entre
+
+329
+00:45:15.940 --> 00:45:23.659
+Escuela de Posgrado: la conjunta del producto ahorita. Le muestro mejor en la
+
+330
+00:45:24.400 --> 00:45:26.090
+Escuela de Posgrado: no es que no hay modcast.
+
+331
+00:45:32.310 --> 00:45:33.410
+Escuela de Posgrado: Muchas gracias.
+
+332
+00:45:35.200 --> 00:45:36.490
+Escuela de Posgrado: De los
+
+333
+00:45:40.980 --> 00:45:41.830
+Escuela de Posgrado: el fútbol.
+
+334
+00:45:42.280 --> 00:45:43.010
+Escuela de Posgrado: Mhm.
+
+335
+00:45:43.950 --> 00:45:45.840
+Escuela de Posgrado: Este
+
+336
+00:45:54.740 --> 00:45:56.099
+Escuela de Posgrado: volviendo a lo que está pasando?
+
+337
+00:45:56.750 --> 00:46:14.450
+Escuela de Posgrado: Bueno, aquí. Lo que está haciendo es comparar 2 variables que corresponden al mismo contexto. Por cierto, Inconvenity fue presentado para la televisión de audio. Entonces serán como queríamos. Era más interesante entre 2,
+
+338
+00:46:14.450 --> 00:46:23.780
+Escuela de Posgrado: digamos, están escondidos, pero eso no está rodeada de nuestro caso. Aquí lo queremos verlo como 2 imágenes o 2 datos.
+
+339
+00:46:24.260 --> 00:46:27.749
+Escuela de Posgrado: Bueno, lo que queremos es maximizar la información.
+
+340
+00:46:27.920 --> 00:46:31.310
+Escuela de Posgrado: Si son del mismo 2 imágenes de
+
+341
+00:46:32.760 --> 00:46:43.759
+Escuela de Posgrado: Ok. Entonces, si queremos maximizar esto, ¿qué tenemos que hacer?
+
+342
+00:46:48.080 --> 00:46:50.350
+Escuela de Posgrado: ¿qué nos dice esa ecuación?
+
+343
+00:46:58.860 --> 00:47:05.000
+Escuela de Posgrado: Y es información claro, por lo menos esa es la diferencia.
+
+344
+00:47:05.020 --> 00:47:17.800
+Escuela de Posgrado: Entonces, si queremos maximizar esto, también podríamos maximizar esto de acá no es como que tu información está aquí. Eso está aquí abajo. Si esto lo empujamos, eso sí o sí, va a tener que subir no
+
+345
+00:47:17.800 --> 00:47:25.939
+Escuela de Posgrado: algo clásico que se hace en billar en bachiller en cocinización, que es utilizar una tarea secundaria que sea mucho más fácil de tratar.
+
+346
+00:47:26.160 --> 00:47:31.810
+Escuela de Posgrado: Pero bueno, en este caso, Ok, si queremos maximizar esto. ¿qué tendríamos que hacer de acuerdo a este ecuación?
+
+347
+00:47:35.250 --> 00:47:40.209
+Escuela de Posgrado: Es la cantidad de muertes? No es básico.
+
+348
+00:47:40.350 --> 00:47:44.009
+Escuela de Posgrado: Podría considerarlo un tipo, terminaría, digamos que no sea fijo.
+
+349
+00:47:44.140 --> 00:47:45.500
+Escuela de Posgrado: ¿qué teníamos que hacer?
+
+350
+00:47:46.300 --> 00:47:47.290
+Escuela de Posgrado: Sí, Sí,
+
+351
+00:47:47.420 --> 00:47:59.229
+Escuela de Posgrado: minimizar eso de acá. No, Justamente entonces el oso tiene sentido. ¿no? Porque Mi visa no es solo que estamos haciendo comentar la información, entonces tiene sentido. Hay una demostración bonita de todo esto, pero lo estamos hundido
+
+352
+00:47:59.610 --> 00:48:03.970
+Escuela de Posgrado: en love de ahora. Consideremos una varia.
+
+353
+00:48:05.260 --> 00:48:06.680
+Escuela de Posgrado: ¿qué tenemos que hacer
+
+354
+00:48:07.530 --> 00:48:25.509
+Escuela de Posgrado: para que maximice el el información, incrementarla, ¿no? Ok. Entonces este n la cantidad de casos negativos. ¿no? Bueno, la caso negativo es más positivo, pero es la cantidad de muestras que se está realizando, Ok, entonces a más datos es mejor el gran problema que se ofrece formar logaritmo.
+
+355
+00:48:26.030 --> 00:48:26.720
+Escuela de Posgrado: Sí,
+
+356
+00:48:27.010 --> 00:48:39.729
+Escuela de Posgrado: ¿cierto? Lo que les comentaba no era de pasar de de 1 a 10. Es sencillo, no de 10 a 100 Ya cuesta, no, porque son 90, no, pero de 100 100 si quieres pasar una escala más.
+
+357
+00:48:40.490 --> 00:48:44.099
+Escuela de Posgrado: el mío ya se vuelve un poco complicado.
+
+358
+00:48:44.950 --> 00:48:47.830
+Escuela de Posgrado: Entonces este, si te ven esto funcione
+
+359
+00:48:48.120 --> 00:48:54.960
+Escuela de Posgrado: bien, digamos que consiste estar muchos datos. Un tipo para de contrastar en
+
+360
+00:48:55.570 --> 00:48:57.569
+Escuela de Posgrado: que te quiero. Eso es muy malo para la rap, ¿no?
+
+361
+00:48:57.700 --> 00:49:01.770
+Escuela de Posgrado: Y ahorita. La rama está muy cara a la
+
+362
+00:49:05.080 --> 00:49:14.919
+Escuela de Posgrado: Bueno, aquí está la explicación de cosas.
+
+363
+00:49:15.120 --> 00:49:22.250
+Escuela de Posgrado: Otra cosa: esta información. Esta definición es explicando en él.
+
+364
+00:49:23.500 --> 00:49:28.849
+Escuela de Posgrado: o sea la información mutual entre el Ye y de Ye y yements es la misma.
+
+365
+00:49:31.750 --> 00:49:32.950
+Escuela de Posgrado: ¿qué distinción?
+
+366
+00:49:35.270 --> 00:49:41.950
+Escuela de Posgrado: No, los 2, Sí, Sí, no. A la vez
+
+367
+00:49:45.740 --> 00:49:53.010
+Escuela de Posgrado: es significado y ahora estoy convenciendo ahora, Sí,
+
+368
+00:49:54.370 --> 00:49:56.389
+Escuela de Posgrado: Sí, vamos a decir que sí,
+
+369
+00:49:57.120 --> 00:50:06.210
+Escuela de Posgrado: no, porque la compañía simétrica no es un ritmo potente y al trabajo del producto. El orden del papel es hacer el producto.
+
+370
+00:50:06.780 --> 00:50:11.169
+Escuela de Posgrado: Eso sí, sí me
+
+371
+00:50:16.640 --> 00:50:18.430
+Escuela de Posgrado: bueno. Es.
+
+372
+00:50:18.700 --> 00:50:21.810
+Escuela de Posgrado: Estamos hasta ahora repasando.
+
+373
+00:50:22.710 --> 00:50:25.580
+Escuela de Posgrado: Todavía tenemos hasta las garzón.
+
+374
+00:50:28.260 --> 00:50:33.420
+Escuela de Posgrado: Mhm de las personas.
+
+375
+00:50:34.910 --> 00:50:36.340
+Escuela de Posgrado: Dos meses.
+
+376
+00:50:37.460 --> 00:50:41.360
+Escuela de Posgrado: Sí, se leer. ¿se acuerdan?
+
+377
+00:50:41.470 --> 00:50:57.890
+Escuela de Posgrado: Básicamente, eso es un soft que puede ser bien. Aquí se utiliza en imágenes. Aquí se está trabajando sobre ejemplos parecidos en las imágenes. Vamos a ver.
+
+378
+00:51:00.280 --> 00:51:06.299
+Escuela de Posgrado: vamos a ver qué técnicas que vamos a ver más adelante va a trabajar sobre
+
+379
+00:51:06.850 --> 00:51:17.959
+Escuela de Posgrado: las variaciones. Son las imágenes tal cual no va a ser la foto original de los sueños, sino hacer comparaciones
+
+380
+00:51:18.280 --> 00:51:22.630
+Escuela de Posgrado: mhm, incluido tanto la respuesta positiva como la figping.
+
+381
+00:51:22.980 --> 00:51:26.929
+Escuela de Posgrado: Muy bien, 1 está desayunando.
+
+382
+00:51:30.050 --> 00:51:33.379
+Escuela de Posgrado: Yo también quiero desayunar. Lo vamos a terminar listo para desayunar
+
+383
+00:51:33.620 --> 00:51:42.420
+Escuela de Posgrado: Ya Entonces vamos a aplicar este no con el dation variaciones. Por ejemplo, al gatito le hemos hecho Crops y le hemos cambiado socrops este proceso
+
+384
+00:51:42.630 --> 00:51:54.260
+Escuela de Posgrado: y a cada 1 de esos, hemos generado algún tipo de representación. Y luego, algo que es importante y es algo que se va a mantener en las siguientes técnicas es hacer una proyección.
+
+385
+00:51:54.810 --> 00:51:55.670
+Escuela de Posgrado: Okay.
+
+386
+00:51:58.990 --> 00:52:14.679
+Escuela de Posgrado: hacer el cálculo o el trabajo o la entrenamiento de ser súper bailar bien directamente sobre las representaciones no suele funcionar muy bien, suele tener al colapso de las representaciones colapsos quiere decir que todo se va hacia el mismo punto
+
+387
+00:52:14.990 --> 00:52:24.289
+Escuela de Posgrado: o apunta hacia una distribución. Recuerden que nosotros queremos algo como mits mitos con diferentes tipos de clases que podemos reconocernos. Pero el orden del caso es que todos
+
+388
+00:52:24.710 --> 00:52:35.259
+Escuela de Posgrado: se vuelve un solo grumito y no consigue nada con los demás. Entonces, para una técnica para evitar eso, es justamente trabajar sobre propinciones.
+
+389
+00:52:35.450 --> 00:52:48.409
+Escuela de Posgrado: Ok, entonces aquí puede ver como que más distracción que no estamos pensando que todos se unan. Pero aquí podemos hacer que todos estemos juntos y trabajar con sobre predicción es algo que vamos a ver que nosotros vamos a trabajar más
+
+390
+00:52:48.880 --> 00:53:01.299
+Escuela de Posgrado: de innovación de Síndic. L Bien, luego hablamos de moco. No es que no, Sí, Sí, Sí,
+
+391
+00:53:01.490 --> 00:53:10.820
+Escuela de Posgrado: claro. Ahí parecía. Ya en ese momento no se llamaba Teacher. El silencio. Ese es el Teacher, y ese ¿Quién es
+
+392
+00:53:10.940 --> 00:53:17.240
+Escuela de Posgrado: por ser vistos gracias a la propuesta de innovación de moco?
+
+393
+00:53:20.280 --> 00:53:23.660
+Escuela de Posgrado: ¿por qué se nos pone en la parte de arriba? Correcto.
+
+394
+00:53:23.940 --> 00:53:31.370
+Escuela de Posgrado: Bueno, eso me puso este. ¿se acuerdan? ¿cuál era la innovación de moto?
+
+395
+00:53:42.690 --> 00:53:45.900
+Escuela de Posgrado: ¿puede leerlo también.
+
+396
+00:53:56.110 --> 00:53:56.800
+Escuela de Posgrado: Sí,
+
+397
+00:54:22.970 --> 00:54:39.730
+Escuela de Posgrado: tenemos una escuela. Básicamente vamos a tener una memoria que se van a almacenar varios sistemas, no que, como les mencionaba con una gran invitación de que un C, justamente era que dependía de cuantos datos. Tengamos en memoria.
+
+398
+00:54:39.730 --> 00:54:44.460
+Escuela de Posgrado: y eso iba a ser muy productivo para memorias pequeños. Por eso me enseñaron esto.
+
+399
+00:54:44.510 --> 00:54:54.429
+Escuela de Posgrado: Entonces, este para afrontar esta situación, lo que propusieron fue guardar las representaciones, no las imágenes, sino representaciones de una memoria.
+
+400
+00:54:55.620 --> 00:55:05.700
+Escuela de Posgrado: Si lo hacemos directamente como tú, pones, Ok, o sea, simplemente representaciones pasadas, y vamos a compararlas. De hecho, genera un problema porque digamos.
+
+401
+00:55:07.950 --> 00:55:12.450
+Escuela de Posgrado: Mhm: Y
+
+402
+00:55:14.520 --> 00:55:23.010
+Escuela de Posgrado: tenemos que ensuciar a lo mejor. Ok. Entonces vamos a suponer también algo fijo. Entonces la nueva información está aquí.
+
+403
+00:55:24.030 --> 00:55:39.580
+Escuela de Posgrado: Imaginemos que no sea con este techo de cine simplemente una sola red utilizando Info Ns: solamente que guarda mis propios presentes. Ahora este la las representaciones anteriores van a corresponder a un listado anterior de la red, no porque es lo que lleva antes.
+
+404
+00:55:39.580 --> 00:55:45.750
+Escuela de Posgrado: Aquí. Esta representación va a ser ligeramente distinta, Pero si vamos mucho más atrás.
+
+405
+00:55:47.160 --> 00:56:02.390
+Escuela de Posgrado: esa representación es un Estado completamente distinto. Es algo que no tiene nada que ver algún tipo de relación con esto, pero es muy distante. ¿no? Entonces vas a estar comparando con diferentes versiones de la misma red con diferentes estados. Eso genera bastante inestabilidad
+
+406
+00:56:02.520 --> 00:56:04.520
+Escuela de Posgrado: de entrenamiento.
+
+407
+00:56:04.660 --> 00:56:15.510
+Escuela de Posgrado: Entonces, para aliviar esto, para hacer que esto sea estable, no las operaciones sean estables, es que se hace esa configuración. Eso le da estabilidad.
+
+408
+00:56:17.750 --> 00:56:23.670
+Escuela de Posgrado: Entonces aquí vamos a tener un pitch que se va a utilizar por momentos que también se llama Game
+
+409
+00:56:23.920 --> 00:56:31.559
+Escuela de Posgrado: este momento, lo que va a hacer es básicamente promediar estudio. Por cierto, Pitcher Studio va a tener exactamente el marketing.
+
+410
+00:56:31.870 --> 00:56:36.959
+Escuela de Posgrado: El estudiante va a recibir el granito, por favor.
+
+411
+00:56:37.130 --> 00:56:56.719
+Escuela de Posgrado: pero que el teacher se va a actualizar mediante esa regla de acá porque lo que esta haciendo es promediar los pesos como una especie de media mod. Y eso va a hacer que las versiones de Teacher va a haber orientadas al entrenamiento de los civiles, pero van a ser ligeras.
+
+412
+00:56:56.930 --> 00:57:08.800
+Escuela de Posgrado: ¿son los peces, Sí, tíos como el melón. Sí.
+
+413
+00:57:09.360 --> 00:57:16.650
+Escuela de Posgrado: Mhm: Y si lo lo y
+
+414
+00:57:23.450 --> 00:57:28.770
+Escuela de Posgrado: son los pesos de de la red pesos de este.
+
+415
+00:57:31.550 --> 00:57:45.140
+Escuela de Posgrado: Yo nací porque el kilo está representando como si 4.
+
+416
+00:57:45.140 --> 00:58:04.430
+Escuela de Posgrado: Esto. ¿por qué? Porque recuerden que lo que estamos haciendo es hacer un producto punto de similaridad. Entonces lo que estamos haciendo es comparar esta imagen, esta versión de la foto de usual banco de datos. Entonces estaba buscando a Josué en todas esas marcas
+
+417
+00:58:05.050 --> 00:58:12.420
+Escuela de Posgrado: linealmente. En este caso solamente hay 1 a partir de estabilidad del producto, punto. Estamos localizando los fans, ¿sí?
+
+418
+00:58:13.190 --> 00:58:21.640
+Escuela de Posgrado: Y.
+
+419
+00:58:22.590 --> 00:58:29.320
+Escuela de Posgrado: Mhm, Y eso está todo por lo definición del técnico.
+
+420
+00:58:30.670 --> 00:58:36.010
+Escuela de Posgrado: Bueno, eso es un conjunto, un buen paper de los
+
+421
+00:58:36.230 --> 00:58:44.259
+Escuela de Posgrado: en cuanto son. Ahora estás viendo desde hace rato 4, 6, 8, 10, 2,
+
+422
+00:58:46.560 --> 00:58:53.490
+Escuela de Posgrado: 12 semanas más o menos por lo que sucede en Gracias.
+
+423
+00:58:53.730 --> 00:58:58.650
+Escuela de Posgrado: Entonces, Ya Okay.
+
+424
+00:59:02.820 --> 00:59:06.570
+Escuela de Posgrado: y ahora vamos a hotel.
+
+425
+00:59:09.860 --> 00:59:16.560
+Escuela de Posgrado: a ver, vamos a hablar de clips has echado antes de que sí.
+
+426
+00:59:17.170 --> 00:59:22.930
+Escuela de Posgrado: Bueno, sí, la de los ojitos. Sí,
+
+427
+00:59:23.630 --> 00:59:27.749
+Escuela de Posgrado: bueno, además de las tortitas, Creep es un modelo clásico
+
+428
+00:59:28.020 --> 00:59:37.670
+Escuela de Posgrado: que de por sí fue famoso porque fue la base de Day.
+
+429
+00:59:39.550 --> 00:59:51.440
+Escuela de Posgrado: Actualmente ya hemos perdido la capacidad de asombro con los modelos generativos. Pero hubo un tiempo donde nos asombramos de todo esto, ¿no?
+
+430
+00:59:51.950 --> 00:59:56.349
+Escuela de Posgrado: De hecho, la primera vez que enseñé
+
+431
+00:59:56.930 --> 01:00:01.710
+Escuela de Posgrado: el gobierno estaba normalizado, yo enseñé, se da allí, todos serán más sopranos.
+
+432
+01:00:01.930 --> 01:00:07.250
+Escuela de Posgrado: Ahora les enseño de allí y dicen cómo es posible que esto siéntale aquí.
+
+433
+01:00:07.700 --> 01:00:12.320
+Escuela de Posgrado: También es la primera clase que hicimos como nosotros hicimos.
+
+434
+01:00:12.500 --> 01:00:17.359
+Escuela de Posgrado: Y les mostré un ejemplo de robots que hacen cosas.
+
+435
+01:00:17.750 --> 01:00:20.190
+Escuela de Posgrado: Recuerdo que le preguntó eso. Es penal
+
+436
+01:00:20.300 --> 01:00:29.039
+Escuela de Posgrado: si era real. Yo me imagino que aquí a 2 o 3 años, empezó a decir, ah, mira un robot más. ¿no?
+
+437
+01:00:29.270 --> 01:00:39.100
+Escuela de Posgrado: Bueno, en Lima, yo creo que nos vamos a ver muchos sí gris
+
+438
+01:00:42.160 --> 01:00:43.160
+Escuela de Posgrado: en el.
+
+439
+01:00:46.730 --> 01:00:48.689
+Escuela de Posgrado: Bueno. De hecho esa narices.
+
+440
+01:00:49.060 --> 01:00:52.170
+Escuela de Posgrado: Mhm Mhm.
+
+441
+01:01:00.080 --> 01:01:09.690
+Escuela de Posgrado: Bueno, el prob que a todos les emocionaba. Era el plan de la palma Mhm
+
+442
+01:01:10.410 --> 01:01:13.340
+Escuela de Posgrado: que, bueno, en nuestros estándares es como el dibujo.
+
+443
+01:01:13.900 --> 01:01:20.159
+Escuela de Posgrado: ¿qué tiene de especial esto y que tan feo le está haciendo el pan de la palma. También es un sopa con forma de pala.
+
+444
+01:01:20.290 --> 01:01:21.070
+Escuela de Posgrado: pues no
+
+445
+01:01:21.630 --> 01:01:36.840
+Escuela de Posgrado: era sorprendente encontrar una imagen que no es seria para que no existía este sofás de forma Nepal. Sin embargo, este modelo logra generalizar, generar sompas de esa forma
+
+446
+01:01:37.000 --> 01:01:38.280
+Escuela de Posgrado: sopas de pan.
+
+447
+01:01:38.500 --> 01:01:47.060
+Escuela de Posgrado: Y aquí lo que estamos haciendo es una señalización obligatoria. Entonces, 2 conceptos separados están listos para tener un libro que más o menos, poniendo.
+
+448
+01:01:47.210 --> 01:01:53.989
+Escuela de Posgrado: entonces hay una tarea de composición del paso de representación y también de la generación humana cerco de ella. Ok.
+
+449
+01:01:54.260 --> 01:02:03.020
+Escuela de Posgrado: Y bueno, aquí, para que esto funcione, tenemos que hacer una relación entre representaciones de imágenes.
+
+450
+01:02:03.750 --> 01:02:19.310
+Escuela de Posgrado: Bueno, en ese momento no queda muy claro cómo hacer una relación. Ok. Ahora ya también es otra cosa que hemos organizado últimamente esos tiempos, donde relacionamos con ustedes.
+
+451
+01:02:19.930 --> 01:02:24.950
+Escuela de Posgrado: Sí, todos los días Utilizo este un nuevo tipo de vida, ¿cierto?
+
+452
+01:02:28.280 --> 01:02:32.739
+Escuela de Posgrado: Pero bueno, este vamos a ver, vamos a tener 2.
+
+453
+01:02:32.980 --> 01:02:45.590
+Escuela de Posgrado: Entonces 2 en covers en 2 dominios distintos. Ok, un einbover de imagen pretexto.
+
+454
+01:02:45.770 --> 01:02:53.050
+Escuela de Posgrado: Entonces ambos imágenes vamos centradas, imagínate, eso se van a ver. Es exactamente lo mismo.
+
+455
+01:02:53.190 --> 01:03:01.200
+Escuela de Posgrado: Por ejemplo, no, no hazlo.
+
+456
+01:03:01.850 --> 01:03:08.460
+Escuela de Posgrado: Por ejemplo, imaginemos una foto de alguien. Ok. Entonces aquí está.
+
+457
+01:03:15.190 --> 01:03:20.620
+Escuela de Posgrado: Y Ahí está ejemplo.
+
+458
+01:03:21.290 --> 01:03:33.079
+Escuela de Posgrado: Ya Ahí estamos la foto de alguien. Entonces acá. Tengo la foto de aldo y acá tenemos inscripción de alguien, no hombre con excelentes cuadrados, el negro.
+
+459
+01:03:33.830 --> 01:03:44.880
+Escuela de Posgrado: esa descripción. Entonces acá tenemos un text. Ambos son lo mismo. Ambos corresponden a lo mismo, ¿no?
+
+460
+01:03:45.880 --> 01:03:55.789
+Escuela de Posgrado: Pero este. Hay ciertos detalles que tal vez no sean compartidos. Por ejemplo, aquí su descripción real, no como estaba viendo
+
+461
+01:03:55.930 --> 01:04:00.899
+Escuela de Posgrado: su pelo y su bol. Pero hay varios detalles que no están.
+
+462
+01:04:01.080 --> 01:04:07.539
+Escuela de Posgrado: No, por ejemplo, la imagen no solamente va a tener eso. También va a tener ese Bookbuilder. Esa información está aquí.
+
+463
+01:04:08.040 --> 01:04:09.169
+Escuela de Posgrado: Está aquí, ¿no?
+
+464
+01:04:09.740 --> 01:04:18.510
+Escuela de Posgrado: Incluso también en el texto. ¿podría agregar algo más diciendo: ha obtenido este promedio 20 en Twitter.
+
+465
+01:04:18.620 --> 01:04:23.729
+Escuela de Posgrado: Bravo. Ahora tenemos exposición el lunes, O sea, no se olvide
+
+466
+01:04:24.240 --> 01:04:28.489
+Escuela de Posgrado: si me enseñas el domingo el lunes de septiembre.
+
+467
+01:04:28.880 --> 01:04:36.790
+Escuela de Posgrado: Lamentablemente, no, sí.
+
+468
+01:04:38.120 --> 01:04:46.640
+Escuela de Posgrado: Ya entonces esa información de promedio, 20, que es una descripción de de algo. No.
+
+469
+01:04:46.840 --> 01:04:48.770
+Escuela de Posgrado: lo importante es la actividad, No.
+
+470
+01:04:48.880 --> 01:05:04.180
+Escuela de Posgrado: no está aquí. ¿no? Entonces hay información que puede estar aquí. No puede estar igual, acá. ¿no? Ok. Y también la forma como estructurar la información es distinta, No, este la forma como se relacionan palabras es distinta, como se relacionan las imágenes.
+
+471
+01:05:04.350 --> 01:05:10.650
+Escuela de Posgrado: Por ejemplo, esta imagen se podría relacionar con mucha facilidad con la foto de temas que este
+
+472
+01:05:14.300 --> 01:05:19.380
+Escuela de Posgrado: no lo conoces se sientan juntos, siempre
+
+473
+01:05:19.540 --> 01:05:28.070
+Escuela de Posgrado: sí cómo te llamas Desde el por ejemplo, a los 10 años.
+
+474
+01:05:28.150 --> 01:05:45.380
+Escuela de Posgrado: por ejemplo, 2 fotos de ellos en imágenes se van a estar más o menos cerca, ¿no? Porque bueno, el contexto similar. Y así no. Pero en cambio el texto van a estar separados, no porque son 2 hombres independientes. No son 2 personas independientes, ¿no? Entonces, en un contexto, puede estar cercanos y otros.
+
+475
+01:05:45.410 --> 01:05:52.810
+Escuela de Posgrado: Entonces aquí vamos a generar 2 representaciones con z y siéntate
+
+476
+01:05:53.040 --> 01:06:01.819
+Escuela de Posgrado: que van a ser distintos. No podemos hacer que simplemente esas 2 cosas sean iguales porque representan cosas distintas en un espacio distinto.
+
+477
+01:06:02.160 --> 01:06:09.319
+Escuela de Posgrado: Esto va a estar en un espacio de un latente de imagen.
+
+478
+01:06:09.500 --> 01:06:12.239
+Escuela de Posgrado: Y esto va a estar en una Tempest.
+
+479
+01:06:13.400 --> 01:06:17.360
+Escuela de Posgrado: ¿por qué aquí vamos a tener un vector
+
+480
+01:06:17.770 --> 01:06:26.590
+Escuela de Posgrado: que son distintos en los espacios distintos. Ahora, ¿cómo nos relacionamos?
+
+481
+01:06:27.160 --> 01:06:33.930
+Escuela de Posgrado: Lo que vamos a hacer es simplemente proyectarnos a un espacio compartido.
+
+482
+01:06:34.890 --> 01:06:47.869
+Escuela de Posgrado: vamos a aprender un peso de predicción, de imagen a texto de imagen al espacio compartido, espacio compartido. Y aquí sí, ambos sectores se van a tratar de
+
+483
+01:06:48.120 --> 01:07:05.050
+Escuela de Posgrado: entonces esos espacios? Claro que son independientes. Son distintos diferentes tipos de espacios, pero lo vamos a iniciar en un espacio compartido. Entonces en los la función de parrillas. Justamente lo que va a hacer es medir el coseno con Info Nsi. Lo conocemos
+
+484
+01:07:05.830 --> 01:07:23.169
+Escuela de Posgrado: sobre ese espacio. Y bueno, lo que va a hacer es propagarlo por acá propagarlo por acá. Y bueno, voy propagarlo hacia la red a un maestro. Ok. Entonces esto es muy bueno porque vamos a en cierto modo. Si bien es cierto, vamos a estar preparando en base compartido.
+
+485
+01:07:23.180 --> 01:07:34.450
+Escuela de Posgrado: Vamos a inducir que el proceso proviene del texto. Ok. Recuerden, el texto es mucho más libre, mucho más amplios. Digamos.
+
+486
+01:07:34.540 --> 01:07:37.819
+Escuela de Posgrado: mientras que la imagen normalmente
+
+487
+01:07:39.820 --> 01:07:51.270
+Escuela de Posgrado: disculpe este. Normalmente este suelen trabajar con pocos espacios, ¿no? O sea, son Normalmente trabajan en clases muy establecidas. Ok, Aquí, por ejemplo.
+
+488
+01:07:51.270 --> 01:08:06.599
+Escuela de Posgrado: debes de concentrarnos decir esto es una persona. Estamos diciendo, es una persona que además tiene un polo negro que además tiene un mouse y todo eso. Entonces este lector va a ser mucho más enriquecido, ya ya que lo estás conduciendo.
+
+489
+01:08:06.870 --> 01:08:15.650
+Escuela de Posgrado: Ok, entonces eso ayuda a generar muy buenas. Precipitaciones. Vale, eso es Flip: Bien.
+
+490
+01:08:16.000 --> 01:08:21.909
+Escuela de Posgrado: con eso. Aprendimos representaciones conjuntas entre imágenes.
+
+491
+01:08:22.340 --> 01:08:23.170
+Escuela de Posgrado: ¿vale?
+
+492
+01:08:23.600 --> 01:08:27.260
+Escuela de Posgrado: Y bueno, esto es la base de lo que es eso.
+
+493
+01:08:27.479 --> 01:08:31.770
+Escuela de Posgrado: Claro que se hicieron algo por unas cosas.
+
+494
+01:08:35.000 --> 01:08:38.450
+Escuela de Posgrado: No sé si complicar la historia, pero
+
+495
+01:08:39.140 --> 01:08:47.630
+Escuela de Posgrado: les voy comentando este. A ver aquí. Lo que estamos aprendiendo es relacionar los tipos de representaciones. No, el tema es que tampoco sabemos si
+
+496
+01:08:47.979 --> 01:08:56.230
+Escuela de Posgrado: hacemos clic en creación de imágenes es colocar un texto y generar una imagen, No, Aquí no estamos haciendo esto. Simplemente vamos reflexionando.
+
+497
+01:08:56.720 --> 01:09:01.399
+Escuela de Posgrado: Entonces lo que hicieron para Dalí es crear algo que se llama clips.
+
+498
+01:09:02.359 --> 01:09:03.500
+Escuela de Posgrado: Pues sí.
+
+499
+01:09:04.060 --> 01:09:05.729
+Escuela de Posgrado: ¿y contra qué?
+
+500
+01:09:05.870 --> 01:09:23.539
+Escuela de Posgrado: Entonces? Lo que hacemos es aprender una red que relacione a partir de esto, predecir cuál sería la representación de la imagen, o sea, dado que ya lo hemos impresionado, simplemente hacer Manchestering. Para eso utiliza una técnica de difusión. Sí, vamos a verlo más adelante.
+
+501
+01:09:23.819 --> 01:09:26.009
+Escuela de Posgrado: Después, ese fue un discurso del capitán.
+
+502
+01:09:26.760 --> 01:09:29.790
+Escuela de Posgrado: Este, qué es para el entrenamiento.
+
+503
+01:09:30.189 --> 01:09:45.489
+Escuela de Posgrado: El clip se utiliza para entrenar Tanto imágenes como ustedes tienen que estar al lado Están relacionando.
+
+504
+01:09:45.680 --> 01:10:00.460
+Escuela de Posgrado: Lo que también se puede hacer es utilizar un pre entrenado de texto. Por ejemplo, has entrenado tu G. V, D, que ya de por sí conoce muy bien el texto y por aquí ya tiene unas direcciones ya establecidas, entonces puedes orientar a la imagen que aprende esa información.
+
+505
+01:10:08.300 --> 01:10:13.230
+Escuela de Posgrado: Eso Eso es lo que sucede con piel
+
+506
+01:10:22.520 --> 01:10:23.680
+Escuela de Posgrado: en
+
+507
+01:10:24.980 --> 01:10:34.769
+Escuela de Posgrado: bueno. Entonces lo como lo vamos a relacionar, como mencionaba, era construyting, a ver, esta definición se ve un poco
+
+508
+01:10:36.850 --> 01:10:46.400
+Escuela de Posgrado: un poco gruesa, pero básicamente es la definición de impongase, pero hacia 2 direcciones.
+
+509
+01:10:55.270 --> 01:11:04.500
+Escuela de Posgrado: Igual primera vez posible de aquí la sumatoria de los lentes. Entonces, aquí estamos olvidando tu informe C. Y aquí también.
+
+510
+01:11:05.230 --> 01:11:13.430
+Escuela de Posgrado: la diferencia con nosotros es que aquí estamos siendo imponiéndose entre máquina texto. Y luego de texto, hay más. Nos está haciendo información.
+
+511
+01:11:13.790 --> 01:11:18.990
+Escuela de Posgrado: entonces aplicar.
+
+512
+01:11:19.560 --> 01:11:28.200
+Escuela de Posgrado: Y es muy interesante porque nosotros lo podemos utilizar para para tareas de clasificación 0. Short.
+
+513
+01:11:29.250 --> 01:11:39.199
+Escuela de Posgrado: pero como le mencionaba, el texto es muy diferente. Podemos decir, mira, yo quiero una silla negra, por ejemplo.
+
+514
+01:11:39.250 --> 01:11:55.979
+Escuela de Posgrado: negro con azul. O sea, yo no lo voy a entrenar para eso. Estás muy específicos, pero yo no puedo condicionar a partir del test, porque lo que voy a hacer, otro punto entre los 2.
+
+515
+01:11:56.380 --> 01:12:03.629
+Escuela de Posgrado: Entonces voy a tener imágenes. Y luego voy a tener este cambiar, digamos, el
+
+516
+01:12:03.940 --> 01:12:15.350
+Escuela de Posgrado: silla negra es el aptop cosas así diferentes. Con esta imagen, la representación de esa imagen Lo voy a hacer Match con respecto a las textos
+
+517
+01:12:15.530 --> 01:12:22.480
+Escuela de Posgrado: donde haya una menor distancia en este espacio tapativo va a ser una cosa.
+
+518
+01:12:23.770 --> 01:12:34.400
+Escuela de Posgrado: Vamos a hacer un ejemplo de eso, pero descanso no ha dicho miss cuando pase yo también.
+
+519
+01:12:36.010 --> 01:12:38.930
+Escuela de Posgrado: Gracias.
+
+520
+01:12:55.650 --> 01:13:24.370
+Escuela de Posgrado: Ajá, entonces profundamente que se pero sí, sí, yo, Okay, sí.
+
+521
+01:13:26.020 --> 01:13:32.510
+Escuela de Posgrado: Y el sí.
+
+522
+01:13:33.110 --> 01:13:36.260
+Escuela de Posgrado: ¿y
+
+523
+01:13:40.850 --> 01:13:41.699
+Escuela de Posgrado: qué ves?
+
+524
+01:13:42.080 --> 01:13:43.210
+Escuela de Posgrado: Lo entiendo
+
+525
+01:14:39.850 --> 01:14:40.539
+Escuela de Posgrado: de los
+
+526
+01:15:52.980 --> 01:15:57.660
+Escuela de Posgrado: de la sí?
+
+527
+01:15:59.920 --> 01:16:00.650
+Escuela de Posgrado: No, no.
+
+528
+01:17:28.810 --> 01:17:30.200
+Escuela de Posgrado: ¿qué tal
+
+529
+01:17:46.180 --> 01:17:49.870
+Escuela de Posgrado: 2 014, ¿no?
+
+530
+01:17:50.340 --> 01:17:54.810
+Escuela de Posgrado: Y muy bien.
+
+531
+01:17:55.800 --> 01:18:04.050
+Escuela de Posgrado: Y en sí, sí,
+
+532
+01:18:07.210 --> 01:18:16.190
+Escuela de Posgrado: no es una pesadilla y y no serán Mhm.
+
+533
+01:18:16.680 --> 01:18:36.030
+Escuela de Posgrado: Y en y en el y a ver su potencial otro.
+
+534
+01:18:36.230 --> 01:18:42.110
+Escuela de Posgrado: Sí, por supuesto, a ver.
+
+535
+01:18:42.880 --> 01:18:43.570
+Escuela de Posgrado: Bueno.
+
+536
+01:18:47.870 --> 01:18:53.389
+Escuela de Posgrado: y sí, sí, sí.
+
+537
+01:18:53.900 --> 01:18:56.290
+Escuela de Posgrado: Gracias.
+
+538
+01:18:57.240 --> 01:18:58.450
+Escuela de Posgrado: Gracias
+
+539
+01:20:04.600 --> 01:20:05.300
+Escuela de Posgrado: a la
+
+540
+01:20:12.470 --> 01:20:13.150
+Escuela de Posgrado: no, no
+
+541
+01:21:03.460 --> 01:21:09.140
+Escuela de Posgrado: de la Y salud.
+
+542
+01:21:09.300 --> 01:21:11.650
+Escuela de Posgrado: Uf: Sí, sí.
+
+543
+01:21:27.320 --> 01:21:37.150
+Escuela de Posgrado: Se parte de la y el aire.
+
+544
+01:21:39.510 --> 01:21:41.190
+Escuela de Posgrado: Sí.
+
+545
+01:21:41.420 --> 01:21:44.570
+Escuela de Posgrado: Gracias.
+
+546
+01:21:46.220 --> 01:21:46.910
+Escuela de Posgrado: Mhm.
+
+547
+01:23:01.460 --> 01:23:10.620
+Escuela de Posgrado: Soy preguntas. ¿son prendidas, o sea, aparte del del vídeo. Son oscuros.
+
+548
+01:23:11.450 --> 01:23:24.829
+Escuela de Posgrado: A se movió de segundo anillo.
+
+549
+01:23:25.160 --> 01:23:31.759
+Escuela de Posgrado: Sí, Dos 1 010. Perdón.
+
+550
+01:23:31.900 --> 01:23:51.359
+Escuela de Posgrado: Ah, estaba preguntando sobre el horario. Ah, ya de repente, sí, porque hola en el control?
+
+551
+01:23:58.780 --> 01:24:06.790
+Escuela de Posgrado: Mhm, No
+
+552
+01:24:10.760 --> 01:24:12.039
+Escuela de Posgrado: con el
+
+553
+01:24:18.610 --> 01:24:20.050
+Escuela de Posgrado: Y en
+
+554
+01:24:40.990 --> 01:24:43.510
+Escuela de Posgrado: pues, y no.
+
+555
+01:24:46.860 --> 01:24:47.770
+Escuela de Posgrado: sí,
+
+556
+01:24:53.470 --> 01:24:55.090
+Escuela de Posgrado: muy bien.
+
+557
+01:24:55.940 --> 01:24:56.680
+Escuela de Posgrado: Sí,
+
+558
+01:25:16.540 --> 01:25:21.110
+Escuela de Posgrado: Sí, es.
+
+559
+01:25:21.610 --> 01:25:22.380
+Escuela de Posgrado: Mhm.
+
+560
+01:25:38.570 --> 01:25:57.820
+Escuela de Posgrado: Gracias a ti, Joder, y sí, y lo de luces. Pienso gracias al sol.
+
+561
+01:25:57.950 --> 01:26:42.210
+Escuela de Posgrado: Y si aplausos los demás días, todos, sí, sí, sí
+
+562
+01:26:43.170 --> 01:26:50.430
+Escuela de Posgrado: y bien, al tanto hacia donde.
+
+563
+01:26:50.970 --> 01:26:53.909
+Escuela de Posgrado: de hecho, el ideal es que estén todos para que todos sirvan.
+
+564
+01:26:55.580 --> 01:27:43.820
+Escuela de Posgrado: Pero sí es importante que todos, a fin de cuentas, y a y o a ver es sí,
+
+565
+01:27:44.100 --> 01:27:50.080
+Escuela de Posgrado: en fin, no en marzo.
+
+566
+01:27:50.850 --> 01:27:53.800
+Escuela de Posgrado: ¿sí?
+
+567
+01:27:54.090 --> 01:27:58.170
+Escuela de Posgrado: Ohh: Y era.
+
+568
+01:27:59.920 --> 01:28:01.210
+Escuela de Posgrado: Y
+
+569
+01:28:08.270 --> 01:28:09.420
+Escuela de Posgrado: bueno, total.
+
+570
+01:28:12.450 --> 01:28:22.590
+Escuela de Posgrado: si no el sábado. Simón, ¡Ah, perdón por el
+
+571
+01:28:25.940 --> 01:28:42.930
+Escuela de Posgrado: claro. El tema es que, por favor.
+
+572
+01:28:43.440 --> 01:28:44.550
+Escuela de Posgrado: Muy bien.
+
+573
+01:28:45.000 --> 01:28:51.040
+Escuela de Posgrado: Sí, no está bien, no está bien.
+
+574
+01:28:51.260 --> 01:28:57.619
+Escuela de Posgrado: Hola, Teresa. Me gustaría los 2 primeros habitantes.
+
+575
+01:28:57.990 --> 01:29:18.540
+Escuela de Posgrado: Sí, es A, pero es también.
+
+576
+01:29:19.360 --> 01:29:35.570
+Escuela de Posgrado: no, no. Ahí sí que no voy a tener tiempo por mí en abril y por mi caso.
+
+577
+01:29:35.940 --> 01:29:49.339
+Escuela de Posgrado: Sí, por eso, y y no eso no les arrepiento.
+
+578
+01:29:49.470 --> 01:29:51.240
+Escuela de Posgrado: Gracias por su resultado.
+
+579
+01:29:51.520 --> 01:29:53.699
+Escuela de Posgrado: Sí, tamales en casa.
+
+580
+01:29:54.360 --> 01:29:58.960
+Escuela de Posgrado: Sí, por ellos y en sí.
+
+581
+01:29:59.340 --> 01:30:12.820
+Escuela de Posgrado: Y si igual y y no.
+
+582
+01:30:13.210 --> 01:30:18.230
+Escuela de Posgrado: Y
+
+583
+01:30:24.990 --> 01:30:26.629
+Escuela de Posgrado: vamos. Santos.
+
+584
+01:30:29.680 --> 01:30:30.670
+Escuela de Posgrado: Mhm
+
+585
+01:30:39.920 --> 01:30:41.610
+Escuela de Posgrado: y
+
+586
+01:30:45.900 --> 01:30:50.180
+Escuela de Posgrado: y
+
+587
+01:30:53.920 --> 01:31:06.429
+Escuela de Posgrado: ahorita que se conecte, se va a borrar este ejemplo, pero les voy explicar a ver aquí.
+
+588
+01:31:07.960 --> 01:31:12.110
+Escuela de Posgrado: Mhm: Y los muestra aquello
+
+589
+01:31:15.410 --> 01:31:16.999
+Escuela de Posgrado: y dónde está.
+
+590
+01:31:17.580 --> 01:31:26.610
+Escuela de Posgrado: Mhm: Por ejemplo, vamos a cerrar esta imagen de este venga
+
+591
+01:31:30.260 --> 01:31:46.620
+Escuela de Posgrado: que de por sí. Esta imagen es algo complicada que vamos a hacer. Una clasificación de por sí. Es una gran invitación que vienen de los modelos de clasificación, que era que funcionaban muy bien, un dominio muy específico. Son imágenes reales. Las explicamos que iban reales.
+
+592
+01:31:46.780 --> 01:31:53.740
+Escuela de Posgrado: Si son imágenes de dibujos, específicamente pitos, ¿no? Pero un caso general es bien complicado, ¿cierto?
+
+593
+01:31:56.620 --> 01:32:01.079
+Escuela de Posgrado: Vamos a ver que también lo hace este podio perfecto.
+
+594
+01:32:03.740 --> 01:32:08.239
+Escuela de Posgrado: Y sin embargo, lo guardé y en descargas
+
+595
+01:32:11.150 --> 01:32:15.349
+Escuela de Posgrado: a ver aquí. Lo que estoy haciendo es inducir que esté aquí se me inclino.
+
+596
+01:32:15.900 --> 01:32:27.440
+Escuela de Posgrado: Puede incriminar algunas clases con las que va a clasificar uy.
+
+597
+01:32:29.400 --> 01:32:35.859
+Escuela de Posgrado: Aquí estoy colocando las clases picado, perro cara
+
+598
+01:32:36.540 --> 01:32:41.029
+Escuela de Posgrado: ves que es el carro. Pueden verlo. Y Marlin? Creo que no.
+
+599
+01:32:41.510 --> 01:32:48.489
+Escuela de Posgrado: Bueno, ahí hay este varias clases.
+
+600
+01:32:49.370 --> 01:33:05.920
+Escuela de Posgrado: Entonces, como lo vamos a hacer como les mencionaba es mediante 1 punto, solamente que, al ser este producto orientado al texto, un solo texto es insuficiente. Queremos tener como diferentes tipos de vectores
+
+601
+01:33:06.130 --> 01:33:10.200
+Escuela de Posgrado: que representan lo mismo. Básicamente, lo mismo, y
+
+602
+01:33:13.310 --> 01:33:19.210
+Escuela de Posgrado: para que definan como una pequeña región, entonces lo que vamos a hacer es generar brechas pronto.
+
+603
+01:33:19.310 --> 01:33:35.660
+Escuela de Posgrado: Por ejemplo, eso es una foto de este. Digamos esto que es un Este, por ejemplo, es un rendering de un gato. Es Es una foto sucia de un tarro. Y así todos esos son diferentes vectores que
+
+604
+01:33:35.850 --> 01:33:40.470
+Escuela de Posgrado: tienen diferentes direcciones, ¿no? Pero en promedio, todos apuntan al rapso.
+
+605
+01:33:40.660 --> 01:33:46.680
+Escuela de Posgrado: Igual Compré con araña. No sé con pajarillo, sí
+
+606
+01:33:46.800 --> 01:34:01.929
+Escuela de Posgrado: desde con diferentes clases que podemos definir, ok, entonces vamos a digerir un conjunto de Bronx que vamos a agregar aquí la clase. Y esto va a generar, como le digo, flectores, como habíamos visto aquí todo eso. Lo vamos a
+
+607
+01:34:01.930 --> 01:34:10.090
+Escuela de Posgrado: este promediar, y lo vamos a proyectar en Stask. No, la imagen que venga, le vamos a hacer producto. Y vamos a compararlo con diferentes clases. Ok.
+
+608
+01:34:10.160 --> 01:34:13.320
+Escuela de Posgrado: eso es lo que estamos haciendo aquí.
+
+609
+01:34:14.490 --> 01:34:28.310
+Escuela de Posgrado: Por cierto orden en esta tarea que no hemos entrenado para crear este tipo de clasificación. No le hemos dado ejemplos de entrenamiento. No estoy diciendo. Ah, mira, ese es un tren reconoce los otros 3, no. Eso se llama Cero Shot.
+
+610
+01:34:29.840 --> 01:34:38.170
+Escuela de Posgrado: mira a lo que salga. Sale muy bien.
+
+611
+01:34:39.330 --> 01:34:42.170
+Escuela de Posgrado: Reconoce que es un tren Mhm.
+
+612
+01:34:42.350 --> 01:34:49.359
+Escuela de Posgrado: Y también le da un valor alto al al dibujo y también que tiene algo de A.
+
+613
+01:34:50.060 --> 01:34:55.899
+Escuela de Posgrado: También se recibe un poco al carro que tiene ruedas, Pero un gato no es, Ok.
+
+614
+01:34:56.460 --> 01:35:16.129
+Escuela de Posgrado: entonces se dan cuenta que no han terminado esta clase, pero lo está haciendo texto. Eso se llama el. Ese es un problema de vocabulario abierto, y es algo que ha sido tendencia en los últimos años, también de esa llamada desde 2 020 hacia ahora.
+
+615
+01:35:16.730 --> 01:35:17.530
+Escuela de Posgrado: Mhm.
+
+616
+01:35:18.130 --> 01:35:26.999
+Escuela de Posgrado: Justamente esas técnicas basadas en clipterlas que son técnicamente relacionadas. Esos tipos de niños funcionan bastante bien, no porque
+
+617
+01:35:27.150 --> 01:35:36.620
+Escuela de Posgrado: lo empecé de forma razonable, No que por ahí
+
+618
+01:35:39.820 --> 01:35:47.590
+Escuela de Posgrado: obsertivo fundamental, pero de un rato complicado, a ver si la ves?
+
+619
+01:35:49.200 --> 01:35:53.750
+Escuela de Posgrado: Bueno, esto creo que será. Vamos a probar primero con este y lo vamos a poner de nuevo escondite
+
+620
+01:35:55.210 --> 01:36:02.770
+Escuela de Posgrado: y y no, no no sé si colocar el ámbito técnico, por ejemplo.
+
+621
+01:36:13.910 --> 01:36:15.590
+Escuela de Posgrado: el de acá puede ser.
+
+622
+01:36:18.440 --> 01:36:20.799
+Escuela de Posgrado: Ahora vamos a comenzar con la imagen que me has marcado.
+
+623
+01:36:21.700 --> 01:36:30.040
+Escuela de Posgrado: Aquí van a correr el baloncesto y Pekín.
+
+624
+01:36:30.290 --> 01:36:35.740
+Escuela de Posgrado: Ahora lo recorremos. Y ahora sí es un dato, un dibujo de un gato.
+
+625
+01:36:35.920 --> 01:36:36.750
+Escuela de Posgrado: Vale.
+
+626
+01:36:36.850 --> 01:36:45.879
+Escuela de Posgrado: ¿se dan cuenta que no he entrenado nada para que vean que estoy haciendo trucos extraños y que están haciendo lo que quieren para vamos a usar esta imagen de acá.
+
+627
+01:36:47.360 --> 01:36:50.560
+Escuela de Posgrado: No tiene este el.
+
+628
+01:36:50.580 --> 01:36:54.200
+Audio shared by Escuela de Posgrado: Y no, y no.
+
+629
+01:37:01.850 --> 01:37:10.320
+Escuela de Posgrado: Eso es, no sé si lo reconozca, pero veo, Valencia.
+
+630
+01:37:10.770 --> 01:37:13.830
+Escuela de Posgrado: Es muy común trabajar en este formato de imagen.
+
+631
+01:37:15.260 --> 01:37:17.259
+Escuela de Posgrado: pero muchas veces no es compatible.
+
+632
+01:37:17.760 --> 01:37:27.160
+Escuela de Posgrado: Aquí pueden ver que sigue reconociendo que es un gato, Le cuesta más y no tiene una precisión del 90 por 100. Pero este está ahí.
+
+633
+01:37:27.410 --> 01:37:30.410
+Escuela de Posgrado: Ok. Y bueno, ¿qué sigo?
+
+634
+01:37:31.540 --> 01:37:32.730
+Escuela de Posgrado: Es Chévere?
+
+635
+01:37:33.640 --> 01:37:41.149
+Escuela de Posgrado: Imaginen las posibilidades, y eso que solo sigue siendo una caja negra de golpes maravilloso.
+
+636
+01:37:42.500 --> 01:37:54.589
+Escuela de Posgrado: ¿sí? Recuerden que caja negra se le dice porque es complejo. También tiene muchas capas. Es el el proceso para comprender que está flotando salud
+
+637
+01:37:54.830 --> 01:38:13.699
+Escuela de Posgrado: muchos pasos. Pero si lo puedes comprender algo mejor se representa. Haciendo. Podrías ver el P. C a esa representación. Podrías ver este qué neuronas se están ejercitando más por esta imagen. Entonces sí se puede saber más o menos lo que está pasando
+
+638
+01:38:13.700 --> 01:38:17.809
+Escuela de Posgrado: ahí está. Es la inabili, el escenario del reembolso.
+
+639
+01:38:19.260 --> 01:38:24.879
+Escuela de Posgrado: Si nos alcanza el tiempo, aunque creemos que estamos sería un poco más.
+
+640
+01:38:27.380 --> 01:38:31.910
+Escuela de Posgrado: Pero bueno, pueden ver que el clip es bastante útil y de hecho, es el clip original.
+
+641
+01:38:33.000 --> 01:38:40.779
+Escuela de Posgrado: Hay otros modelos que no me corrieron. Y bueno, el próximo podríamos utilizar ya con esto.
+
+642
+01:38:51.240 --> 01:38:54.950
+Escuela de Posgrado: Yo puedo ampliar ahí este tema de los mismos.
+
+643
+01:38:55.350 --> 01:39:02.010
+Escuela de Posgrado: Puedes colocar aquí todo lo que tú quieras.
+
+644
+01:39:02.340 --> 01:39:07.120
+Escuela de Posgrado: Ok. Ahora, este pueden ver que esto funciona bastante bien.
+
+645
+01:39:07.390 --> 01:39:11.179
+Escuela de Posgrado: pero este puede haber situaciones donde no, pues se ve muy bien.
+
+646
+01:39:11.340 --> 01:39:20.210
+Escuela de Posgrado: Ok, entonces este no es que esto sea la panacea y sea la solución final para todos nuestros problemas, pero es una muy buena meditación
+
+647
+01:39:21.080 --> 01:39:35.180
+Escuela de Posgrado: sería que ustedes prueben en sus dominios respectivos. Vale, por ejemplo, es cuando mencionaba eso. Es un problema de vocabulario abierto. Es interesante. No es un 0 show. Se ha investigado mucho para clasificación, pero para también para segmentación.
+
+648
+01:39:35.320 --> 01:39:40.840
+Escuela de Posgrado: Ya les había comentado esta Sam
+
+649
+01:39:56.660 --> 01:39:57.709
+Escuela de Posgrado: en el
+
+650
+01:40:02.320 --> 01:40:06.430
+Escuela de Posgrado: usa una base de datos.
+
+651
+01:40:07.030 --> 01:40:16.690
+Escuela de Posgrado: ha sido entrenado con muchos pares de imágenes y suscripciones. Ahí hizo un extrajero de Internet.
+
+652
+01:40:16.920 --> 01:40:21.459
+Escuela de Posgrado: O sea, tengo que clientes de Opel.
+
+653
+01:40:22.060 --> 01:40:26.369
+Escuela de Posgrado: Y este esto es alto. Y también es una locura.
+
+654
+01:40:26.690 --> 01:40:34.829
+Escuela de Posgrado: Aquí tú haces una segmentación a partir de pronto, o sea, tú dices un objeto, Quiero perrito y te selecciona los perritos.
+
+655
+01:40:35.630 --> 01:40:37.280
+Escuela de Posgrado: Invitación por pronts.
+
+656
+01:40:38.230 --> 01:40:42.990
+Escuela de Posgrado: Si tú quieres este, no sé a ver. No es solamente Youtube lo Facebook.
+
+657
+01:40:45.140 --> 01:40:58.009
+Escuela de Posgrado: Puedes colocar diferentes tipos de pronto, y lo vas a seleccionar. Y de hecho, también este programa fue selección, no como hacer video aquí. Y lo va a localizar con los pigmentos.
+
+658
+01:40:58.190 --> 01:41:08.389
+Escuela de Posgrado: Y si haces una miseria, mi selección, como pueden ver aquí haces control y la descripción negativa, y simplemente te vas a quedar con los pingüinos. Y vas a una superclases.
+
+659
+01:41:08.820 --> 01:41:13.820
+Escuela de Posgrado: También hay inconsistencia temporal. Hay seguimiento de objetos.
+
+660
+01:41:15.190 --> 01:41:25.430
+Escuela de Posgrado: Es un buen güey San Luis. Claro que es pesadilla, pero al cuello otro día probamos
+
+661
+01:41:27.350 --> 01:41:30.149
+Escuela de Posgrado: vocabulario biónico es algo muy interesante
+
+662
+01:41:32.280 --> 01:41:39.079
+Escuela de Posgrado: que les puede salvar a muchos problemas. Eso sí, esos modelos tienden a ser sesgados hacia este
+
+663
+01:41:40.810 --> 01:41:49.090
+Escuela de Posgrado: tareas con textura, o sea, imágenes con 0 textura. Pero cuando son imágenes tipo Sketch
+
+664
+01:41:50.420 --> 01:41:58.259
+Escuela de Posgrado: como brazos, este líneas planos. Específicamente no funciona muy bien. Lo menciono, porque
+
+665
+01:41:58.830 --> 01:42:04.930
+Escuela de Posgrado: sin decir, comenzaba que hubiera trabajado con planos con planos arquitectónicas, puedes cometer esa pregunta.
+
+666
+01:42:06.250 --> 01:42:19.140
+Escuela de Posgrado: Pero ahí este 1 de los tantos intentos para reconocer las estructuras. Los planos es.
+
+667
+01:42:20.630 --> 01:42:32.030
+Escuela de Posgrado: no podía intuir que están muy bien estructurados, que es normal, pero realmente se hace una norma, pero hay muchas cosas que se prestan a la interpretación.
+
+668
+01:42:32.280 --> 01:42:44.549
+Escuela de Posgrado: Hay líneas incompletas que están medidas y simplificado. Entonces, algo que pensamos para que nos ayude a reconocer cosas. Y les digo, está bien estructurado.
+
+669
+01:42:44.550 --> 01:42:57.749
+Escuela de Posgrado: Era segmentar. Y bueno, etiquetar eso no era una opción, no tenía tiempo y se acaba 1 de los aspectos. Entonces, este lo que yo intenté justamente era utilizar estas cosas. Y no funcionó.
+
+670
+01:42:58.340 --> 01:43:05.020
+Escuela de Posgrado: Justamente esos modelos están más cercados a reconstruir personas. Y al tener puras líneas que son de los planos, no lo reconocían.
+
+671
+01:43:06.150 --> 01:43:13.159
+Escuela de Posgrado: Ese es un problema. Aquí? Bueno, este vamos a ver la siguiente técnica de que es ser superbién, ¿no?
+
+672
+01:43:13.310 --> 01:43:15.439
+Escuela de Posgrado: Entonces, ¿para qué hacer super miami?
+
+673
+01:43:27.350 --> 01:43:31.609
+Escuela de Posgrado: ¿por qué nos están molestando de hacer ya los clásicos.
+
+674
+01:43:33.670 --> 01:43:53.150
+Escuela de Posgrado: Queremos aprovechar de forma masiva la base de datos y hemos visto algunas técnicas de cosas. Ah, por cierto, click, técnicamente no es una técnica de esos supermercado, porque tenemos descripciones con Max, no técnicamente. Tenemos etiquetas.
+
+675
+01:43:53.330 --> 01:44:10.319
+Escuela de Posgrado: pero los demás si no informe, pero depende mucho de este de cuantos segundos negativos. Tengamos este y también tiene unos problemas. Vamos a ver otra forma de trabajar este
+
+676
+01:44:10.720 --> 01:44:24.589
+Escuela de Posgrado: pensamiento distinto, pero también en otro domingo distinto. Por eso vamos a hablar de edad, me cuesta hablarnos.
+
+677
+01:44:24.930 --> 01:44:27.380
+Escuela de Posgrado: Ah, no, sí, me pasaba el libro.
+
+678
+01:44:29.410 --> 01:44:38.729
+Escuela de Posgrado: Vamos a verlo. Primero, ves verse en español, es de todo de plaza sefar.
+
+679
+01:44:41.020 --> 01:44:45.330
+Escuela de Posgrado: Sí, les había comentado que en estos años había muchos modelos de plazas de spam.
+
+680
+01:44:45.840 --> 01:44:53.399
+Escuela de Posgrado: comenzando con él. Elmo era un modelo de L. L. Luego salió perth. Luego salió Carl
+
+681
+01:44:54.000 --> 01:44:58.339
+Escuela de Posgrado: a ver si hay varios modelos de plazas, qué bonitos años.
+
+682
+01:44:59.750 --> 01:45:04.719
+Escuela de Posgrado: Pero bueno, ver es una referencia en el games
+
+683
+01:45:05.150 --> 01:45:15.590
+Escuela de Posgrado: y de hecho, todavía se siguen utilizando. ¿lo ven? Hay una mente que se llama Perth Scort. Justamente una réplica de similaridad de Texas.
+
+684
+01:45:15.890 --> 01:45:16.750
+Escuela de Posgrado: Sí,
+
+685
+01:45:16.920 --> 01:45:34.900
+Escuela de Posgrado: Bueno, el tema es muy relevantes, muy importante y es la base de muchas cosas que se vieron más adelante. Ok, recuerden que cuando hablamos de Transformers, les mencionaba que eso fue entrenado para producción de test. Entonces teníamos un encoder de cover, no un encoder que tenía un idioma y un decoder que traducía, ¿no?
+
+686
+01:45:34.900 --> 01:45:38.429
+Escuela de Posgrado: Ok, Ese no es el funcionamiento desde el chasis de Piqué No.
+
+687
+01:45:38.740 --> 01:45:52.640
+Escuela de Posgrado: no está traduciendo por tu tiempo. De hecho, ¿si? Y bueno, justamente el que dio ese paso para trabajar de ese modo es justamente este arte.
+
+688
+01:45:52.920 --> 01:46:03.850
+Escuela de Posgrado: Werth hace este presenta una forma de hacer aprendizaje Autosupervisado mediante el Masking. La realidad utiliza 2 cosas.
+
+689
+01:46:04.050 --> 01:46:11.610
+Escuela de Posgrado: Una de esas, la que voy a resaltar, y es más,
+
+690
+01:46:11.820 --> 01:46:23.749
+Escuela de Posgrado: a ver, ya hemos conversado un poco de cómo funcionan las transformers, lo que reciben. A fin de cuentas, van a seres que se van a convertir en Doctors. No se acuerdan ese esquema
+
+691
+01:46:26.780 --> 01:46:40.530
+Escuela de Posgrado: ¿Se acuerdan que había algo que se llama Topen, un texto bien grande que de algún modo se convertía en montón de numeritos. Este unos indis, no. Esos índices se convertían en vectores, no se acuerdan vectores
+
+692
+01:46:41.390 --> 01:46:47.449
+Escuela de Posgrado: claro un email. No teníamos teníamos como una enorme.
+
+693
+01:46:48.030 --> 01:46:57.469
+Escuela de Posgrado: un enorme diccionario, No por cada día hay un vector, ¿no? Y esos vectores también se actualizan bien del banco país. ¿no? Entonces aquí tenemos el aire. Dos 1 000. 27 Iba
+
+694
+01:46:57.520 --> 01:47:14.450
+Escuela de Posgrado: extraer el vector, 2 037 igual Aquí este el aire. Dos 1 020 después, esos vectores, lo que va a pasar por el transformer y lo va a procesar como series aquí. No sé que ya son unos expertos en transformers, ¿no? Y muy bien todos los mecanismos, ¿no?
+
+695
+01:47:14.640 --> 01:47:18.969
+Escuela de Posgrado: Y todas las variaciones que hemos estudiado no tiene muy clara, ¿no?
+
+696
+01:47:19.330 --> 01:47:21.050
+Escuela de Posgrado: Casi el Transformers se conocen.
+
+697
+01:47:26.750 --> 01:47:30.080
+Escuela de Posgrado: sí, pero tengo la atención.
+
+698
+01:47:30.300 --> 01:47:38.779
+Escuela de Posgrado: A mí me termina siendo, Me parece lo más importante, una gran innovación que se transforma que. Bueno.
+
+699
+01:47:39.070 --> 01:47:55.180
+Escuela de Posgrado: también está el Kitforward, que es esta posición. Y todo eso, todo eso se transforma y, al fin de cuentas, este interesante es que logran comprender el texto, cada 1 de los socios. A partir de ese contexto.
+
+700
+01:47:55.350 --> 01:48:04.719
+Escuela de Posgrado: entonces siempre está analizando el contexto de todo el entorno. Ok, Bueno, eso es lo que está pasando ahí. Entonces, cada una de esas palabras
+
+701
+01:48:05.080 --> 01:48:13.949
+Escuela de Posgrado: está interpretando a partir de un contexto donde test, por cierto, Cns se fueron el Cls.
+
+702
+01:48:16.710 --> 01:48:23.620
+Escuela de Posgrado: Sí, Sí, era un toque, ajá.
+
+703
+01:48:24.240 --> 01:48:29.520
+Escuela de Posgrado: El Sms tiene un toque representativo de sí.
+
+704
+01:48:30.320 --> 01:48:32.099
+Escuela de Posgrado: ¿dónde le vemos mis sándwiches?
+
+705
+01:48:32.760 --> 01:48:33.520
+Escuela de Posgrado: Mhm.
+
+706
+01:48:38.590 --> 01:48:44.999
+Escuela de Posgrado: Claro, lo colocamos en un extremo cronómetro, poníamos al inicio. Pero, ¿para qué?
+
+707
+01:48:45.380 --> 01:48:48.309
+Escuela de Posgrado: ¿por qué? De pronto evacuamos un este
+
+708
+01:48:48.460 --> 01:48:58.030
+Escuela de Posgrado: un vector? Un rango que me dice: ¿Qué fin tendría? ¿se acuerdan representantes?
+
+709
+01:48:58.160 --> 01:49:00.870
+Escuela de Posgrado: Mhm: Cocido.
+
+710
+01:49:01.420 --> 01:49:06.130
+Escuela de Posgrado: Bueno, se pone en qué red lo habíamos usado antes.
+
+711
+01:49:08.990 --> 01:49:10.469
+Escuela de Posgrado: Sí, claro.
+
+712
+01:49:13.080 --> 01:49:19.430
+Escuela de Posgrado: A sí.
+
+713
+01:49:19.790 --> 01:49:22.240
+Escuela de Posgrado: Mhm.
+
+714
+01:49:22.380 --> 01:49:27.089
+Escuela de Posgrado: Claro, eso del toque de inicio si es importante, pero eso lo vamos a ver con el Set.
+
+715
+01:49:28.500 --> 01:49:35.050
+Escuela de Posgrado: Sí, de hecho, eso es importante que a ver. C, L, S. Lo utilizamos en bits.
+
+716
+01:49:36.110 --> 01:49:37.470
+Escuela de Posgrado: ¿se acuerdan Beats?
+
+717
+01:49:38.730 --> 01:49:42.860
+Escuela de Posgrado: No se acuerdan de eso. De Transformer
+
+718
+01:49:47.780 --> 01:49:49.919
+Escuela de Posgrado: tiene una cara que no se acuerda
+
+719
+01:49:50.330 --> 01:49:59.550
+Escuela de Posgrado: transformers, pero en visión, no aquella persona claro. Y para trabajar. Este me acordé de misión que hacíamos
+
+720
+01:50:05.090 --> 01:50:12.720
+Escuela de Posgrado: agarramos una imagen. Qué más no era suyo.
+
+721
+01:50:13.000 --> 01:50:24.569
+Escuela de Posgrado: Lo fileteamos a la imagen, lo hacemos en pequeños trocitos. Eso fue el proceso. Lo proyectamos y lo procesamos. Ese era mix, ¿no? Pero Además, agregamos un toque de inicio. No el celeste
+
+722
+01:50:24.700 --> 01:50:28.200
+Escuela de Posgrado: se acuerda. ¿por qué se llamaba celeste ligera?
+
+723
+01:50:29.610 --> 01:50:42.100
+Escuela de Posgrado: Sí, claro. Cleo.
+
+724
+01:50:42.240 --> 01:51:00.849
+Escuela de Posgrado: Eso lo que va a hacer es, recuerden que el performance lo que hace es simplemente relacionar todos los tokens. Y lo que va a hacer es mejorar las representaciones de los topes, no para tener un token que englobe Todos vamos a tener que agregar un topin adicional que esté orientado a una tarea en particular.
+
+725
+01:51:01.040 --> 01:51:18.920
+Escuela de Posgrado: Era esa salida del parsifire que entraba a una clasificación y hacía la tarea. Entonces, para resolver esa tarea durante el entrenamiento. Lo que lo que sucedía era que ese toque se encargaba de recolectar información de los demás.
+
+726
+01:51:18.980 --> 01:51:21.449
+Escuela de Posgrado: hacer una especie de resumen de toda la imagen.
+
+727
+01:51:21.860 --> 01:51:29.019
+Escuela de Posgrado: y eso es orientado por el mismo. No es que tú manualmente has dicho tú hacer tal cosa. El entrenamiento. He aprendido a hacer eso.
+
+728
+01:51:29.300 --> 01:51:31.859
+Escuela de Posgrado: Y entonces la salida se toca. En particular.
+
+729
+01:51:32.130 --> 01:51:43.719
+Escuela de Posgrado: Comprendía todo el contenido y por eso utilizamos para tener el clasismo? Bueno, ahí también les mencionaba que esa idea en realidad viene de verdad que justamente aquí.
+
+730
+01:51:43.720 --> 01:51:57.900
+Escuela de Posgrado: Entonces, ¿qué expresión está haciendo ahí ahorita. Les explico, pero así estamos bien. No tenemos diferentes tokens. También vamos a tener el set que va a separar diferentes tipos de oraciones. Ok. Y bueno, el tema de las mascaritas.
+
+731
+01:51:58.880 --> 01:52:04.349
+Escuela de Posgrado: Aquí también este en persu vamos a trabajar con texto grande.
+
+732
+01:52:05.320 --> 01:52:24.439
+Escuela de Posgrado: Hasta ahora hemos trabajado con textos más o menos chiquito. Me refiero Aquí vamos a tener diferentes palabras y también diferentes tipos de oraciones. Entonces vamos a tener un posicionalepoding para la posición de texto, como la posición de las oraciones. También eso está en la oración a la oración B
+
+733
+01:52:24.620 --> 01:52:34.940
+Escuela de Posgrado: Ok, diferentes oraciones. Vale, Bueno, este la primera tarea de Verd va a ser el más.
+
+734
+01:52:35.380 --> 01:52:40.760
+Escuela de Posgrado: Lo que vamos a hacer es tapar algunas palabras. Es como cuando ustedes aparecen Y
+
+735
+01:52:40.910 --> 01:52:50.750
+Escuela de Posgrado: por ejemplo, les ponen un texto y destapan unas palabras, Se describe la palabra.
+
+736
+01:52:50.960 --> 01:53:03.020
+Escuela de Posgrado: pero si sabes inglés este, ¿Sabes qué palabra poner, ¿no? Entonces este igual. No es es como si
+
+737
+01:53:03.040 --> 01:53:15.939
+Escuela de Posgrado: se irán colocando un examen de inglés al pobre, ver, tapamos una palabra y decimos cuál es el texto más coherente que debería estar aquí abajo. Ok, Entonces aquí colocamos un vector que va a ser el vector más
+
+738
+01:53:15.940 --> 01:53:31.690
+Escuela de Posgrado: a la salida de esto. Lo que vamos a hacer es una clasificación. ¿hasta qué palabra corresponde? Recuerden, una vez más, lo que se transforme es entender cada 1 de los tokens A partir de ese contexto, no al inicio más. No dice nada.
+
+739
+01:53:32.020 --> 01:53:42.599
+Escuela de Posgrado: Ok. Entonces, a partir de cómo se transforma este Max se va a interpretar o va a entender a partir de su contexto va a tener un vector que corresponde al texto del empresario
+
+740
+01:53:42.930 --> 01:53:58.800
+Escuela de Posgrado: Ok, entonces cada salida de transformer correspondiente al crear, va a aprender a generar una buena representación de ese Token, en particular, tratar de entender que lo que está sucediendo detrás de ese paso. Ok. Entonces con eso. Berk aprende el lenguaje.
+
+741
+01:53:59.070 --> 01:54:07.060
+Escuela de Posgrado: el ser humano, el lenguaje inglés, en este caso, ¿no? Entonces con eso aprendemos la sintaxis, la gramática y todo eso
+
+742
+01:54:07.090 --> 01:54:22.639
+Escuela de Posgrado: vale Ahora, Nosotros también queremos comprender textos largos, como se relacionan diferentes oraciones, Ok, y para comprender diferentes oraciones. Lo que vamos a utilizar son los otros 2 tokens que les mencionamos, no el ser y el celeste. Y eso es una tarea.
+
+743
+01:54:23.750 --> 01:54:25.970
+Escuela de Posgrado: Vamos a presentar 2 oraciones.
+
+744
+01:54:26.400 --> 01:54:33.019
+Escuela de Posgrado: oración A y oración B, y cada 1 puede tener este máscaras también como para hacer entrenamientos de 2 a la vez.
+
+745
+01:54:33.280 --> 01:54:38.800
+Escuela de Posgrado: Ahora este la pregunta es: ¿tiene sentido que la oración B si abre la oración A
+
+746
+01:54:39.320 --> 01:54:45.600
+Escuela de Posgrado: o están cambiando de peso. Por ejemplo, vamos a hablar. No sé de hipopótamos. Y aquí hablando de fútbol.
+
+747
+01:54:46.340 --> 01:54:52.530
+Escuela de Posgrado: clasificación, no tiene nada que ver, no especiales, hipopótamos y hipopútamos, entonces está bien, ¿no? Entonces
+
+748
+01:54:52.940 --> 01:54:58.180
+Escuela de Posgrado: esa tarea de clasificación de que continúa o no continúa, Lo vamos a hacer, la salida de celes.
+
+749
+01:54:58.930 --> 01:55:10.689
+Escuela de Posgrado: Ok, entonces eso va a combinar diferentes oraciones. Ok. Y también está obligando a que Cns aprenda a abstraer todo el contenido del texto.
+
+750
+01:55:11.310 --> 01:55:22.380
+Escuela de Posgrado: Ok, entonces esta salida va en el contenido de todo el texto que le estamos dando. Ok, eso va a ser lo que va a decir de un texto. Siempre he dicho no solo eso.
+
+751
+01:55:22.510 --> 01:55:26.449
+Escuela de Posgrado: ¿Cómo ¿Cómo se genera en sus servicios?
+
+752
+01:55:27.080 --> 01:55:30.449
+Escuela de Posgrado: Claro, es
+
+753
+01:55:30.920 --> 01:55:43.879
+Escuela de Posgrado: no, eso de verdad Es un vector aprendible tipo como hemos hecho en Bitch. ¿se acuerdan en Beat. También vimos ir viendo Cns, que era un vector que comenzaba aleatorio solamente. Comprar.
+
+754
+01:55:44.560 --> 01:55:54.659
+Escuela de Posgrado: Y de hecho, hay que me preguntaron y no sé quién fue.
+
+755
+01:55:55.520 --> 01:56:06.909
+Escuela de Posgrado: Pero esto es un vector que es entrenar Ahora, este Cds es una señal que se va a utilizar para todos los usuarios. Y esa señal, lo que está haciendo, es decir, ah, mira, mi tarea es
+
+756
+01:56:07.180 --> 01:56:16.209
+Escuela de Posgrado: aprender de todos igual. Esto de acá es un vector que termina diciendo. Mi tarea es tratar de comprender qué es lo que está pasando ahí
+
+757
+01:56:17.050 --> 01:56:17.850
+Escuela de Posgrado: Okay.
+
+758
+01:56:18.480 --> 01:56:26.840
+Escuela de Posgrado: entonces no es que tenemos diferentes tendencias, porque también tendremos que definir diferentes tipos de tópicos en texto. Recuerden que aquí estamos sextos para bailar. No tenemos etiquetas.
+
+759
+01:56:27.430 --> 01:56:28.189
+Escuela de Posgrado: ¿por qué,
+
+760
+01:56:28.880 --> 01:56:42.469
+Escuela de Posgrado: entonces este dado como funciona esto de aquí? Si queremos, imaginemos que hemos entrenado y entrenado con todo Internet y has crapeado han bajado libros piratas, Todo ha aprendido a hablar de entenderlo del peso. Bien.
+
+761
+01:56:42.890 --> 01:57:00.560
+Escuela de Posgrado: ahora ustedes quieren hacer una tarea de clasificación de textos. El clásico sentimental. Están haciendo este comentarios positivos a nuestra publicación o nos están tirando el texto, no con qué salida ustedes habrían
+
+762
+01:57:01.820 --> 01:57:05.690
+Escuela de Posgrado: o cómo utilizarían ver para hacer esa tarea.
+
+763
+01:57:10.750 --> 01:57:13.070
+Escuela de Posgrado: o sea, la máscara sería el resultado.
+
+764
+01:57:13.130 --> 01:57:32.850
+Escuela de Posgrado: Ahí va la pregunta. Yo tengo un texto. Quiero saber para ver cuál es el sentimiento el cls. No, justamente porque el Cls vinculó al contenido de todo el texto, ¿no? Si coloco una salida de un token en particular.
+
+765
+01:57:32.890 --> 01:57:50.440
+Escuela de Posgrado: va a ser solamente la salida de ese toque no la representación de ese toque, ¿no? Pero ese cambio Cls: resumen todo el contenido entonces salida del cls lo clasifico hace como una m. L, p. Siguiente Okay. Entonces este era una red plácida para hacer esas tareas.
+
+766
+01:57:50.930 --> 01:57:51.740
+Escuela de Posgrado: ¿sí?
+
+767
+01:57:53.410 --> 01:58:10.260
+Escuela de Posgrado: Y también este. Tengo otros casos que decían clasificación por alternativas. Lo que hacían era decir, este alternativa. Uno, 2 y 3, digamos, 6, 7 y 8 decían esos toques. Y luego esas 3 salidas pasaron un el clasificador, y decía, mira, la respuesta es tanto
+
+768
+01:58:10.590 --> 01:58:17.640
+Escuela de Posgrado: Okay, ¿qué es lo que se solía hacer con Perth. Me he olvidado que le iba a pasar. Ok.
+
+769
+01:58:18.010 --> 01:58:27.129
+Escuela de Posgrado: Lo que mencionaba hace clasificación. No, Este paso con diferentes es.
+
+770
+01:58:31.260 --> 01:58:35.699
+Escuela de Posgrado: parecen 3 especies.
+
+771
+01:58:36.010 --> 01:58:38.980
+Escuela de Posgrado: Es el que estaba sonando hace rato, te preguntaba cuál es mi esposo
+
+772
+01:58:40.480 --> 01:58:47.439
+Escuela de Posgrado: con el clip? Debería ser? Este es este?
+
+773
+01:58:47.820 --> 01:58:58.499
+Escuela de Posgrado: Bueno, Está claro, esta parte del texto, No, cierto.
+
+774
+01:58:58.710 --> 01:59:07.229
+Escuela de Posgrado: De hecho, esto funciona bastante bien. Ahora Xbert se propuso en el 2 000. Dieciocho. Si no mal recuerdo si el 2 018
+
+775
+01:59:07.850 --> 01:59:15.389
+Escuela de Posgrado: fue una muy buena idea. Fue mencionada, muy revolucionaria, sus años.
+
+776
+01:59:16.070 --> 01:59:18.810
+Escuela de Posgrado: todo el aspecto en esos años.
+
+777
+01:59:19.580 --> 01:59:26.450
+Escuela de Posgrado: y como era algo muy bueno. Igual que Transformers, las otras áreas también querían aprovechar esa idea.
+
+778
+01:59:26.840 --> 01:59:34.719
+Escuela de Posgrado: Transformers de por sí Era un poco problemático en imágenes se resolvió de mejor manera con Beats.
+
+779
+01:59:35.170 --> 01:59:38.689
+Escuela de Posgrado: Pero la idea de ver como lo extrapolamos la imagen.
+
+780
+01:59:39.890 --> 01:59:45.570
+Escuela de Posgrado: Pudimos aprovechar ideas de planctos de las máscaras. Sí, a ver
+
+781
+01:59:46.160 --> 02:00:02.689
+Escuela de Posgrado: máscaras es tapar algo, y luego clasificar, que es lo que estaba debajo. En el caso de Berk, Lo que hicimos era clasificar sobre todo el conjunto del procomodaje, que puede ser grande que más de 65 000 palabras.
+
+782
+02:00:02.800 --> 02:00:10.869
+Escuela de Posgrado: pero se puede ser una clasificación de lo que estamos tapando Si queremos hacer lo mismo en marketings. Vamos a seguir
+
+783
+02:00:18.780 --> 02:00:24.669
+Escuela de Posgrado: pregunta de Wish que no podemos hacer eso.
+
+784
+02:00:36.700 --> 02:00:46.789
+Escuela de Posgrado: La idea es ver, de hecho, quieres hacer más y luego hacer clasificación sobre lo que está debajo de esa máscara. ¿cómo lo podemos utilizar
+
+785
+02:00:50.950 --> 02:00:59.339
+Escuela de Posgrado: claro. Hacemos una máscara en la imagen. Y ahora ya clasificamos sobre qué clasificamos.
+
+786
+02:01:01.070 --> 02:01:07.709
+Escuela de Posgrado: Recuerda que no tenemos el hipotecas donde ha partido.
+
+787
+02:01:08.460 --> 02:01:10.310
+Escuela de Posgrado: la partimos es que me pregunto.
+
+788
+02:01:12.380 --> 02:01:18.269
+Escuela de Posgrado: claro, es que cada parche un parche, lo tapamos, pero sobre qué lo clasificamos.
+
+789
+02:01:20.770 --> 02:01:23.350
+Escuela de Posgrado: Visualiza Mhm.
+
+790
+02:01:23.970 --> 02:01:36.339
+Escuela de Posgrado: Tenemos que tener un diccionario, ¿no? ¿cierto? Y, claro, el problema era cómo definir ese diccionario. Y eso justamente fue un gran problema que hubo para transferir la idea de ver asmantes.
+
+791
+02:01:36.570 --> 02:01:48.040
+Escuela de Posgrado: La primera idea, digamos, exitosa, fue Beige, No te Mhm.
+
+792
+02:02:00.300 --> 02:02:02.659
+Escuela de Posgrado: Siempre había una mujer. No sé qué le ha pasado.
+
+793
+02:02:02.990 --> 02:02:09.760
+Escuela de Posgrado: Mhm: Ah, gracias por fin.
+
+794
+02:02:13.670 --> 02:02:21.569
+Escuela de Posgrado: Ahora, Sí, tengo claro, sí, sí, Sí, estamos dando
+
+795
+02:02:21.860 --> 02:02:24.739
+Escuela de Posgrado: a ver. Entonces pasamos del verst
+
+796
+02:02:28.080 --> 02:02:29.430
+Escuela de Posgrado: a Beit.
+
+797
+02:02:31.750 --> 02:02:32.570
+Escuela de Posgrado: ¿qué
+
+798
+02:02:32.740 --> 02:02:46.480
+Escuela de Posgrado: veis? Bueno, sería vips, en realidad perfecto. Es simplemente con mi imagen. Ok. Entonces lo que hicieron fue inducir algún tipo de token como estas mencionando?
+
+799
+02:02:46.630 --> 02:02:53.880
+Escuela de Posgrado: Mhm: Bueno, 3 fáciles.
+
+800
+02:02:55.360 --> 02:02:56.510
+Escuela de Posgrado: Y
+
+801
+02:02:58.120 --> 02:03:17.120
+Escuela de Posgrado: lo que vamos a inducir es una generación de tokens o en regiones para hacer una clasificación, Como mencionamos un diccionario, Entonces, para generar un diccionario, se utiliza otra técnica que es, vamos a verlo.
+
+802
+02:03:17.700 --> 02:03:18.830
+Escuela de Posgrado: Ven kumbar.
+
+803
+02:03:21.500 --> 02:03:25.369
+Escuela de Posgrado: Bueno, estrictamente, vamos a utilizar lo que se llama devil.
+
+804
+02:03:26.210 --> 02:03:34.410
+Escuela de Posgrado: Pero esa técnica de Cuba por aquí, ¿Qué representa se llama vector Vanisage Ok.
+
+805
+02:03:34.510 --> 02:03:36.560
+Escuela de Posgrado: se fueron los otros 20. Goles
+
+806
+02:03:41.090 --> 02:03:42.990
+Escuela de Posgrado: Es un auto entorno
+
+807
+02:03:50.760 --> 02:03:54.520
+Escuela de Posgrado: a ver auto en Power.
+
+808
+02:04:03.720 --> 02:04:12.300
+Escuela de Posgrado: Ajá muy bien en todo lo que todo.
+
+809
+02:04:13.040 --> 02:04:18.560
+Escuela de Posgrado: Tengo que pasar a la situación. Acá. Tenemos un eje, y
+
+810
+02:04:18.670 --> 02:04:26.450
+Escuela de Posgrado: entonces el los va a ser este. Mci X, Y es sí,
+
+811
+02:04:26.930 --> 02:04:31.150
+Escuela de Posgrado: entonces ese es un auto engor, y el producto que nos importa es la representación.
+
+812
+02:04:31.270 --> 02:04:38.830
+Escuela de Posgrado: técnicamente. Es una técnica de ser supervis, no porque no tiene
+
+813
+02:04:39.020 --> 02:04:46.060
+Escuela de Posgrado: ya este. Eso lo podemos manejar como tal cual como estamos así este generando lectores.
+
+814
+02:04:46.260 --> 02:04:52.970
+Escuela de Posgrado: Ok. Pero como vamos a ver más adelante, también podemos inducir aquí una distribución de probabilidad que eso sea una distribución.
+
+815
+02:04:53.130 --> 02:05:01.450
+Escuela de Posgrado: Entonces cada imagen o cada texto, cada audio se va a convertirse en una distribución de probabilidad esta técnica. Vamos a ver más allá. Se llama Vyle
+
+816
+02:05:02.230 --> 02:05:03.730
+Escuela de Posgrado: Okay
+
+817
+02:05:04.380 --> 02:05:18.130
+Escuela de Posgrado: ya este Eso luego les explico cómo funciona. Pero hay una variación de esto que se llama Bq Bile, que no va a generar una es una a una distribución per se sino va a generar una especie de región
+
+818
+02:05:18.710 --> 02:05:22.499
+Escuela de Posgrado: que ¿para qué? Es más simple? ¿se acuerdan de wolo Noi?
+
+819
+02:05:24.570 --> 02:05:28.500
+Escuela de Posgrado: Por el momento no se agoné y no.
+
+820
+02:05:29.110 --> 02:05:29.860
+Escuela de Posgrado: Mhm.
+
+821
+02:05:40.660 --> 02:05:42.190
+Escuela de Posgrado: ¿se acuerdan esto?
+
+822
+02:05:48.660 --> 02:05:54.360
+Escuela de Posgrado: ¿han utilizado alguna vez esta amistad soluts migrafo de Buranoid?
+
+823
+02:06:01.840 --> 02:06:06.600
+Escuela de Posgrado: Me gusta okay que
+
+824
+02:06:07.640 --> 02:06:13.970
+Escuela de Posgrado: eso tiene que ver con el tema de visitas más cercanas. Eso lo han visto que no
+
+825
+02:06:15.810 --> 02:06:25.509
+Escuela de Posgrado: cada vecinos más cercanos. Ese problema. De hecho, nosotros hacemos de entrega de datos justamente para hacer búsqueda, rápida de acercarnos.
+
+826
+02:06:26.280 --> 02:06:32.409
+Escuela de Posgrado: Ok. Aquí, cada punto que ven ahí, cada puntito que ven ahí, que es un dato en particular.
+
+827
+02:06:32.550 --> 02:06:47.109
+Escuela de Posgrado: Ok. Normalmente, lo que hacíamos en estructuras era definir una estructura que lo agrupe de cierta forma y que sea una búsqueda más o menos. ¿no? Bien, aquí vamos a hacer algo distinto. Lo que vamos a hacer es una especie de clasificación de todo el espacio. ¿qué
+
+828
+02:06:47.220 --> 02:06:48.580
+Escuela de Posgrado: cada celda.
+
+829
+02:06:48.690 --> 02:06:57.439
+Escuela de Posgrado: Ok, en cada celda se diseña una región tanquesitaria, un punto, acá su vecino más cercano va a ser el punto que corresponde a esa célula
+
+830
+02:06:57.950 --> 02:06:58.850
+Escuela de Posgrado: okay
+
+831
+02:06:58.920 --> 02:07:18.880
+Escuela de Posgrado: entonces la búsqueda del vecino más cercano, que es trivial, ¿no? Si cae en esa celda. Entonces, claro, igual si cae a cambio, se va acercando hasta aquí, no. Ok. Entonces este grafo o esa estructura que estamos viendo acá lo que está definiendo justamente es esa región trivial. Para ser búsqueda de vecino más cercano. Eso es como una una definición bastante situada.
+
+832
+02:07:19.100 --> 02:07:24.390
+Escuela de Posgrado: Ahora, esa rebeca cantive son las mediatrices entre los 2. Pero
+
+833
+02:07:24.800 --> 02:07:30.549
+Escuela de Posgrado: para que se entienda a ver, solamente vemos este caso.
+
+834
+02:07:30.710 --> 02:07:42.540
+Escuela de Posgrado: Ok, desde si llega un punto, acá se dan cuenta que está más cerca de este lado que de acá. No, ¿cierto? De hecho, si está a pie, va a estar más cerca de acá que en el Can, no, ya cual es el caso intermedio, digamos en esta mitad
+
+835
+02:07:42.710 --> 02:07:57.100
+Escuela de Posgrado: en la media, ¿cierto? Entonces, el conjunto de todos esos puntos donde están, como allá, en la mediatriz, ¿no? Entonces vamos a dividir todas las mediatrices entre todos los puntos, y ahí se consigue este gráfico.
+
+836
+02:07:58.020 --> 02:07:59.709
+Escuela de Posgrado: Ok, Ya
+
+837
+02:08:00.030 --> 02:08:08.530
+Escuela de Posgrado: ese es el gran polimoronel y se dan cuenta que estamos induciendo regiones del espacio donde el vecino más cercano es el punto correspondiente. No
+
+838
+02:08:08.750 --> 02:08:18.159
+Escuela de Posgrado: algo así es lo que induce el Bng: Cuba. Vamos a inscribir. Se da ese volumen. Pero en el espacio de la representación vamos a tener algo.
+
+839
+02:08:19.050 --> 02:08:23.850
+Escuela de Posgrado: Sí, sí, sí,
+
+840
+02:08:29.490 --> 02:08:31.119
+Escuela de Posgrado: y estoy escrito.
+
+841
+02:08:33.710 --> 02:08:38.959
+Escuela de Posgrado: Es preciso, pero algo así. Ok. Entonces voy a definir algunas regiones. Ok.
+
+842
+02:08:39.080 --> 02:08:51.049
+Escuela de Posgrado: al igual que el Grafenoi. Voy a tener este centros. Digamos que van a ser los prospectivos. Para empezar, Okay. Aquí está tu diccionario que estás preguntando sobre
+
+843
+02:08:51.270 --> 02:09:10.589
+Escuela de Posgrado: no van a ser aleatorios, van a ser entrenados justamente con Facebook, cómo se entrena los últimos retos, Pero el tema es que digamos algo así. Ok, entonces la tarea que están buscando para que funcione como Bert es justamente clasificar. Dado que tenemos esta máscara, ¿en qué celda debería caer
+
+844
+02:09:11.000 --> 02:09:28.490
+Escuela de Posgrado: calle al alcance termina una clasificación sobre qué celda corresponde, ¿no? Ok. Y este beige funcionó bastante bien. De hecho, fue la primera técnica efectiva de maskins imágenes.
+
+845
+02:09:29.970 --> 02:09:49.909
+Escuela de Posgrado: Pero este esta técnica dependía mucho de cuál ha sido un entrenamiento del B u B si está en un dominio muy establecido de datos recién estrenado. Es sobre ese dominio de datos. Es donde va a funcionar bien. ¿no? Si cambias de dominio, no va a funcionar bien, ¿no? Porque entonces ahí era problemático.
+
+846
+02:09:50.090 --> 02:09:59.930
+Escuela de Posgrado: Entonces, para solventar este problema se propuso una técnica más interesante.
+
+847
+02:10:00.550 --> 02:10:01.550
+Escuela de Posgrado: Hay
+
+848
+02:10:04.720 --> 02:10:11.439
+Escuela de Posgrado: y aquí volvemos al Teacher Stevens: bien a ver
+
+849
+02:10:11.960 --> 02:10:14.040
+Escuela de Posgrado: suele ser un poco complejo por lo que es.
+
+850
+02:10:14.570 --> 02:10:22.780
+Escuela de Posgrado: dada la cantidad de elementos que tenía esta enfoque, pero vamos por partes, van a darse cuenta que en realidad es más difícil de lo que parece.
+
+851
+02:10:23.100 --> 02:10:27.900
+Escuela de Posgrado: Primero, se acuerdan. Teacher Studio no se para el moco.
+
+852
+02:10:30.030 --> 02:10:34.830
+Escuela de Posgrado: ¿cómo era? Muy, No, hasta luego.
+
+853
+02:10:36.570 --> 02:10:40.700
+Escuela de Posgrado: ah, comparada en beneficio y resident ¿Cómo se actualizaba el Pitcher?
+
+854
+02:10:43.220 --> 02:10:46.469
+Escuela de Posgrado: Un mail, No, cierto que, bueno, también se llama el
+
+855
+02:10:46.580 --> 02:11:01.379
+Escuela de Posgrado: el Teacher. No se actualiza por 4 paello. Se actualiza por extendiente y justamente aquí tenemos la marquitas de Stopcard significa que la gradiente no va a pasar por aquí solamente por aquí. Aquí se actualiza porque
+
+856
+02:11:01.540 --> 02:11:02.370
+Escuela de Posgrado: sí,
+
+857
+02:11:02.580 --> 02:11:14.420
+Escuela de Posgrado: también por cierto, aquí van a ver que estamos trayendo varias ideas de unos. También utilizamos las proyecciones que aparecieron en sin. Sé que leer
+
+858
+02:11:14.650 --> 02:11:17.020
+Escuela de Posgrado: movilizaba eso.
+
+859
+02:11:17.260 --> 02:11:29.580
+Escuela de Posgrado: Entonces eso genera el espacio de representación. Ese es el reto. Esa puede ser nuestro bit, nuestro psic, nuestro eficiencia. Hemos visto, son muchas arquitecturas
+
+860
+02:11:31.350 --> 02:11:35.220
+Escuela de Posgrado: han aprendido bastante.
+
+861
+02:11:35.480 --> 02:11:42.610
+Escuela de Posgrado: Cuatro han visto aquello. No sé si inventaron en escena.
+
+862
+02:11:43.600 --> 02:11:49.720
+Escuela de Posgrado: Alguien me ha planteado de que hay un examen después de terminar todas las carreras
+
+863
+02:11:50.060 --> 02:11:55.579
+Escuela de Posgrado: para evaluar si realmente han emprendido o no. Entonces, al egresar
+
+864
+02:11:56.390 --> 02:12:03.000
+Escuela de Posgrado: todo tiene que dar un examen indicado de muchas universidades para ver si realmente se levante la chica
+
+865
+02:12:05.030 --> 02:12:08.259
+Escuela de Posgrado: de esa caían 20.
+
+866
+02:12:08.880 --> 02:12:24.169
+Escuela de Posgrado: Pero estaba planteando esa idea. Yo he escuchado, y de hecho, porque ahí es, no es homogéneo lo que se enseña entre diferentes universidades.
+
+867
+02:12:24.280 --> 02:12:28.959
+Escuela de Posgrado: Y no sabes qué calidad son los profesionales que salen diferentes.
+
+868
+02:12:30.810 --> 02:12:35.110
+Escuela de Posgrado: entonces este es una forma de verificar un check que
+
+869
+02:12:35.320 --> 02:12:40.730
+Escuela de Posgrado: realmente no se puede juzgar a una persona con solo una evaluación, pero es una forma de verificar.
+
+870
+02:12:40.990 --> 02:12:57.420
+Escuela de Posgrado: Imaginen lo que tenemos exámenes. Ellos tendrían como diferentes herramientas para responder. Esto es lo que le estaba mencionando Entonces aquí tenemos el estudio, ¿no? Ok, esto va
+
+871
+02:12:57.590 --> 02:13:08.220
+Escuela de Posgrado: sirve como una especie de referencia, ¿no? Y el estudian es lo que aprenden mediante otro país. No. Lo que hacíamos era comparar entre los 2. ¿no se ¿Cómo comparábamos el Teager en
+
+872
+02:13:10.800 --> 02:13:16.309
+Escuela de Posgrado: cómo hacíamos esa comparación de las representaciones? O, bueno, las proyecciones de las representaciones se acuerdan?
+
+873
+02:13:17.720 --> 02:13:19.380
+Escuela de Posgrado: Son distribución también?
+
+874
+02:13:19.610 --> 02:13:21.020
+Escuela de Posgrado: Aquí son vectores.
+
+875
+02:13:23.290 --> 02:13:26.069
+Escuela de Posgrado: Bueno, la respuesta de cada una de las imágenes.
+
+876
+02:13:26.410 --> 02:13:35.929
+Escuela de Posgrado: Es un vector y comparamos vectores las respuestas Ahí claro que lo puedes ver en conjuntos en población, como si fueran extensiones.
+
+877
+02:13:36.110 --> 02:13:44.700
+Escuela de Posgrado: Pero Bueno, en este caso es un dato individual que son vectores, nuevos datos individuales. ¿cómo hacíamos esa comparación? ¿se acuerdan como lo hacíamos en moco.
+
+878
+02:13:45.910 --> 02:13:54.620
+Escuela de Posgrado: claro. Productos juntos. ¿no? Entonces aquí igual vamos a hacer producto. ¿vale? Entonces sí me sigue
+
+879
+02:13:54.760 --> 02:14:04.410
+Escuela de Posgrado: los míos muy cansados, nos vemos con una empatía muy fuerte, sobre todo ese libro.
+
+880
+02:14:06.010 --> 02:14:13.109
+Escuela de Posgrado: Sí, de hecho, le diría, para hacer otra pausa, pero ya se está acabando la hora de no? No, Pues sí.
+
+881
+02:14:15.570 --> 02:14:21.970
+Escuela de Posgrado: Yo creo que los ojos rojos ya
+
+882
+02:14:22.280 --> 02:14:30.390
+Escuela de Posgrado: tendrá que soportar tanto mi entorno. Entonces lo que vamos a hacer, como les mencionaba en
+
+883
+02:14:30.620 --> 02:14:36.719
+Escuela de Posgrado: en cincelr. Aquí lo mencionas de una misma imagen. Ok.
+
+884
+02:14:36.840 --> 02:14:43.510
+Escuela de Posgrado: Entonces tengo una imagen original, y acá tenemos 2 variaciones en la foto.
+
+885
+02:14:43.910 --> 02:14:56.500
+Escuela de Posgrado: la evaluación azul de la persona Mozu sigue siendo Josué. Solamente que con un tipo de no tome un pecho, puede ser basura total
+
+886
+02:14:56.750 --> 02:15:07.170
+Escuela de Posgrado: sigue siendo idealmente este lo Las 2 representaciones deberían apuntar hacia lo mismo. ¿no? Ok, porque es el mismo
+
+887
+02:15:07.880 --> 02:15:11.100
+Escuela de Posgrado: claro que si hemos hecho diferentes atormentation
+
+888
+02:15:11.300 --> 02:15:26.350
+Escuela de Posgrado: técnicamente, también las 2 imágenes van a ser diferentes, o sea, el concepto global es lo mismo, pero cada parche va a contar diferentes cosas. Es importante que no tengas. Entonces, digamos aquí este proceso rotado y el equipo suene.
+
+889
+02:15:26.780 --> 02:15:33.919
+Escuela de Posgrado: hola este. Vamos a usar bits, Ok, otras queda en Kravitz.
+
+890
+02:15:34.650 --> 02:15:38.629
+Escuela de Posgrado: ¿cómo trabajamos en Bits?
+
+891
+02:15:39.950 --> 02:15:57.520
+Escuela de Posgrado: Hacemos un pacheo cerdo pacheo, y además, agregamos un toque adicional. Tenemos aquí los baches. Aquí hemos seguido y sub 6
+
+892
+02:15:57.810 --> 02:16:12.150
+Escuela de Posgrado: los 40 que están encima los demás son los protocolos. Ok, entonces el azul es este rodado. Y aquí está igual aquí
+
+893
+02:16:12.250 --> 02:16:24.209
+Escuela de Posgrado: este rotado. Y con las 2 versiones. Ok. Entonces aquí son parches individuales que son de cada posición de la imagen. Ok. Y aquí son las vistas globales. Hasta ahí estamos bien
+
+894
+02:16:24.560 --> 02:16:26.500
+Escuela de Posgrado: si no Facebook.
+
+895
+02:16:26.940 --> 02:16:39.250
+Escuela de Posgrado: De hecho, esos 2 deberían ser técnicamente iguales o muy cercanos, y esos también iguales, no. Y como son, en imagen. De hecho, lo que falta deberían ser lo mismo. Deberían ser muy cercanos.
+
+896
+02:16:39.250 --> 02:16:47.939
+Escuela de Posgrado: Lo que sí fallaría entre esto y esto, bueno, entre azul y rojo, porque son diferentistas, ¿no? Pero entre este rojo, y este rojo debe ser lo mismo, ¿no?
+
+897
+02:16:48.000 --> 02:16:58.460
+Escuela de Posgrado: Dado eso. Ahora vamos a ver cómo funciona esto. Listo. Ya como les mencionaba arriba está el studing y abajo está el Beat.
+
+898
+02:16:58.540 --> 02:17:13.739
+Escuela de Posgrado: Ya vamos a hacer una previsión para cls. Es como un email global. Tiene su propio espacio y una previsión para los parches, porque son como que pedían una diagonal.
+
+899
+02:17:14.200 --> 02:17:25.540
+Escuela de Posgrado: Cuando está con una Dioni, Sí, un poquito de estudio, lo que les quería explicar.
+
+900
+02:17:25.870 --> 02:17:35.409
+Escuela de Posgrado: Mhm: Y no, bueno, como les mencionaba, como estaba mencionando. Y aquí hay algunas entradas que están tachadas. ¿no?
+
+901
+02:17:35.540 --> 02:17:45.180
+Escuela de Posgrado: Eso significa que algunas partes, algunos baches, van a ser tapados. Y lo que vamos a hacer es igual, como hemos hecho en cuenta.
+
+902
+02:17:45.200 --> 02:18:00.499
+Escuela de Posgrado: ajá. Lo que hemos hecho en Perth es predecir que hay debajo. Ok. Entonces vamos a hacer una predicción de que es lo que hay por debajo. Y aquí está la predicción en un momento, les digo cómo hacemos esa predicción, pero imaginen que simplemente vamos a predecir, Y les explico.
+
+903
+02:18:00.650 --> 02:18:04.779
+Escuela de Posgrado: entonces aquí la predicción de lo que está tapado aquí, otra previsión. Y así no
+
+904
+02:18:05.020 --> 02:18:11.180
+Escuela de Posgrado: la tarea que se lesionen en este nivel es predecir qué hay debajo de los parches.
+
+905
+02:18:11.809 --> 02:18:17.500
+Escuela de Posgrado: igual que sucedía en tanto para la vista, este ¿cuál era el rotado el asunto.
+
+906
+02:18:20.020 --> 02:18:33.139
+Escuela de Posgrado: Ya? Bueno, eso era como no tanto la versión que está rotada sobre todo, y acá está este conjunto.
+
+907
+02:18:33.190 --> 02:18:46.139
+Escuela de Posgrado: Vamos va a hacer lo mismo. Si ha hecho una correcta predicción de lo que está debajo de la máscara, debería ser lo mismo o cercano a lo que está en el pecho, ¿no? Por eso estamos haciendo esta comparación
+
+908
+02:18:46.700 --> 02:18:47.880
+Escuela de Posgrado: por otro punto
+
+909
+02:18:49.299 --> 02:19:01.960
+Escuela de Posgrado: ahorita. Les explico, pero por ahora, en forma glog, no, entonces lo que habrá dicho aquí debajo de la máscara debería ser equivalente a lo que está aquí abajo.
+
+910
+02:19:02.530 --> 02:19:17.269
+Escuela de Posgrado: ¿cierto? Igual, Acá no, Esta es la vista del roca. Lo que ha predicho aquí debería ser lo mismo que está aquí abajo. Esa es la tarea de máscaras está prediciendo que está debajo de las máscaras, y usted lo está haciendo correctamente.
+
+911
+02:19:17.530 --> 02:19:19.390
+Escuela de Posgrado: Ok. Así estamos bien.
+
+912
+02:19:20.600 --> 02:19:33.829
+Escuela de Posgrado: Facilito no cosas triviales. Por otro lado, también la clasificación o ese nivel global que es el Cns, deberían ser lo mismo, ¿no? Ok. Entonces ahí vamos a hacer una comparación cruzada.
+
+913
+02:19:34.049 --> 02:19:38.010
+Escuela de Posgrado: Lo que habredicho ahí arriba es su imagen
+
+914
+02:19:38.240 --> 02:19:45.610
+Escuela de Posgrado: con Blur. Debería ser lo mismo que la imagen rotada en el teacher, no igual, acá no este enrotado como
+
+915
+02:19:45.799 --> 02:19:53.160
+Escuela de Posgrado: Ok, entonces nadie debe ser profesor.
+
+916
+02:19:53.720 --> 02:20:09.350
+Escuela de Posgrado: De hecho, nos conviene hacerlo cruzado porque la identidad de José sigue siendo cierto. En cambio, en los parches. Debe ser lo mismo, porque no, cierto, pero hay una, Debe haber una correspondencia entre imagen y mar.
+
+917
+02:20:09.690 --> 02:20:18.710
+Escuela de Posgrado: porque una cosa es ser rotado y otra cosa es conspirativo. Por ejemplo, si está rotado su reloj estaría en la mano izquierda.
+
+918
+02:20:19.450 --> 02:20:29.919
+Escuela de Posgrado: Si estuviera derecho de la mano derecha, Ok, entonces ahí no hay correspondencia. Claro, entonces el empate, si debe haber correspondencia con el mismo. Pero el concepto, si es correcto hacerlo que usaba. No.
+
+919
+02:20:29.920 --> 02:20:41.510
+Escuela de Posgrado: hasta ahí estamos bien explicado no concepto en el sentido del ser, es como la representación completa del producto.
+
+920
+02:20:41.750 --> 02:20:48.090
+Escuela de Posgrado: Hasta ahí estamos viendo, vale que facilito en cosas triviales, No.
+
+921
+02:20:48.850 --> 02:20:52.330
+Escuela de Posgrado: no. Las cosas que hemos visto antes se están acumulando para llegar al cielo
+
+922
+02:20:52.710 --> 02:20:59.510
+Escuela de Posgrado: Cuando veamos signos, van a ver que aún más se van a conclusiones a lo que nos dice ya
+
+923
+02:21:00.490 --> 02:21:04.070
+Escuela de Posgrado: ahora, ¿cómo es que se hacen esas comparaciones?
+
+924
+02:21:04.850 --> 02:21:15.880
+Escuela de Posgrado: Bueno, les mencionaba hace un rato que había un problema de de hacer comparaciones, pero en el espacio de imágenes, técnicamente es como el paso contigo. No es exactamente el contenido. Hemos visto la cantidad de posibilidades.
+
+925
+02:21:16.250 --> 02:21:33.750
+Escuela de Posgrado: pero justamente por esa cantidad de posibilidades son tan altas que no podemos manejar como si fuera un continuo. ¿no? Entonces no podemos hacer una clasificación sobre esa cantidad de posibilidades. No, no, no tiene sentido. No tenemos que hacerlo de alguna otra forma y una muy buena forma, como le había dicho, en
+
+926
+02:21:33.750 --> 02:21:36.939
+Escuela de Posgrado: era hacer una clasificación sobre regiones, No.
+
+927
+02:21:36.990 --> 02:21:41.140
+Escuela de Posgrado: Pero lo malo de esto es que inducía a
+
+928
+02:21:41.940 --> 02:21:47.660
+Escuela de Posgrado: dependía de o que también ha sido representado ese mismo desde 2 011. Claro. Entonces.
+
+929
+02:21:48.250 --> 02:21:52.770
+Escuela de Posgrado: aquí vamos a hacer también una clasificación.
+
+930
+02:21:53.450 --> 02:22:01.039
+Escuela de Posgrado: Ok, vamos a definir. Este va a ser un hiperfarámetro, una especie de cantidad de prototipos. Ok.
+
+931
+02:22:01.490 --> 02:22:11.110
+Escuela de Posgrado: entonces la salida de esto va a ser una clasificación por cada 1 de sus prototipos. Esto es el número gráfico. Entonces, si la clasificación de acá no
+
+932
+02:22:11.110 --> 02:22:24.589
+Escuela de Posgrado: y la de acá corresponde significa que está haciendo bien, ¿no? Si la precipitación de acá y acá es diferente, está haciendo mal, ¿no? Ok, entonces va a ser una clasificación, este eso sea el haber dicho y eso sea el tag. No.
+
+933
+02:22:24.680 --> 02:22:27.680
+Escuela de Posgrado: ¿Cómo relacionamos 2 clasificaciones de dichas y tarde.
+
+934
+02:22:29.850 --> 02:22:31.950
+Escuela de Posgrado: ¿cómo lo colocamos en loser perdón
+
+935
+02:22:39.220 --> 02:22:42.070
+Escuela de Posgrado: a ver
+
+936
+02:22:42.090 --> 02:23:00.899
+Escuela de Posgrado: por el lado del estudio, vamos a hacer una predicción de que claro que productivo corresponde no es como una clasificación, no tenemos unas probabilidades en clasificaciones. El Target también va a tener con probabilidades de clasificación este, pero eso va a ser la referencia. ¿no? Entonces eso es como el Target, y eso es la predicción.
+
+937
+02:23:01.040 --> 02:23:10.020
+Escuela de Posgrado: clasificación. ¿cómo hacíamos en los que los utilizamos en verdad, pero el Centro Cross Entro, y tal cual
+
+938
+02:23:12.300 --> 02:23:19.540
+Escuela de Posgrado: vamos a usar cross End. Aquí está el P por el Ocde. Tú, pero ahí es este.
+
+939
+02:23:22.370 --> 02:23:23.780
+Escuela de Posgrado: Bien, esto
+
+940
+02:23:24.230 --> 02:23:32.340
+Escuela de Posgrado: esto es del Pitcher, y eso es del estilo. Y eso es como el Target. Y eso es la prensa
+
+941
+02:23:32.460 --> 02:23:33.470
+Escuela de Posgrado: Etsu.
+
+942
+02:23:34.500 --> 02:23:54.030
+Escuela de Posgrado: Ese es el 2 que vamos a utilizar Ahora, este lo que estamos induciendo técnicamente por detrás, que es una especie de bolonor. Si estamos teniendo la misma distribución y en la misma región del espacio. En este caso estábamos haciéndolo bien, pero si está en un lugar distante, estamos en el mar, Tenemos que ser campo.
+
+943
+02:23:54.140 --> 02:23:58.089
+Escuela de Posgrado: Ok, eso lo vamos a hacer tanto para el Cns como para las mascaras.
+
+944
+02:23:58.500 --> 02:24:01.360
+Escuela de Posgrado: Ok, la expedición de los fans. Ok.
+
+945
+02:24:01.530 --> 02:24:06.180
+Escuela de Posgrado: Entonces con eso vamos a entrenar con eso. Vamos a entrenar este
+
+946
+02:24:07.080 --> 02:24:19.590
+Escuela de Posgrado: el el por el lado de los C, N, S. Porque vamos a entrenar el Skill que la parte del estudio. Por el otro lado, el Pitcher, con que lo entrenamos
+
+947
+02:24:21.700 --> 02:24:27.610
+Escuela de Posgrado: como medio, No, claro con qué se llama Em Ok.
+
+948
+02:24:28.590 --> 02:24:32.690
+Escuela de Posgrado: Ya este. Hasta ahí está claro. Es esta parte.
+
+949
+02:24:33.920 --> 02:24:35.580
+Escuela de Posgrado: Sí,
+
+950
+02:24:35.820 --> 02:24:45.109
+Escuela de Posgrado: simplemente utilizar todo lo que hemos visto hasta ahora, combinado este como poner una licuadora combinado de una forma y tener ese enfoque tan curioso de
+
+951
+02:24:45.630 --> 02:24:46.460
+Escuela de Posgrado: Okay.
+
+952
+02:24:47.180 --> 02:24:52.729
+Escuela de Posgrado: Pero solo tienes este punto, no una pequeña cosita, más.
+
+953
+02:24:53.940 --> 02:24:57.850
+Escuela de Posgrado: Un pequeño detalle, un pequeño detalle.
+
+954
+02:24:58.380 --> 02:25:08.430
+Escuela de Posgrado: Lo que sucede es que y de 7,
+
+955
+02:25:28.320 --> 02:25:31.099
+Escuela de Posgrado: este es tradicional.
+
+956
+02:25:32.000 --> 02:25:37.100
+Escuela de Posgrado: Así vamos a ver un ingrediente adicional. Esto
+
+957
+02:25:37.780 --> 02:25:43.470
+Escuela de Posgrado: tiende a podría funcionar bien, pero salir ya, como en el presentador
+
+958
+02:25:43.890 --> 02:25:48.769
+Escuela de Posgrado: es coherente, no a la teoría, pero este tiende a colapsar.
+
+959
+02:25:49.480 --> 02:25:59.440
+Escuela de Posgrado: Es el el modelo como el enfoque que le estoy presentando, tal cual como estoy presentando tiende a colapsar. ¿se acuerdan que se refiere a colapsar en este sentido.
+
+960
+02:25:59.660 --> 02:26:11.130
+Escuela de Posgrado: Claro, todos convergen a un solo una sola región. Recuerden que nosotros queremos un espacio lleno de Groomix, ¿no? Donde aquí están los grumitos de Gozoya que están los de miel, los que están los bulli?
+
+961
+02:26:11.770 --> 02:26:19.349
+Escuela de Posgrado: No, Bueno, cada 1 de los truquitos
+
+962
+02:26:19.730 --> 02:26:30.420
+Escuela de Posgrado: lo siento. Soy muy malo recordando mi memoria es muy malo. Se ve como diferentes Grumitos para que cada 1 sea independiente. Eso queremos. Pero ¿qué pasaría si todos colapsan con una sola persona.
+
+963
+02:26:30.670 --> 02:26:36.870
+Escuela de Posgrado: como el promedio Alto Juan es, pues soy hay una
+
+964
+02:26:36.940 --> 02:26:44.749
+Escuela de Posgrado: este. No, No quisiéramos algo así. ¿no? Nosotros queremos esa dispersión.
+
+965
+02:26:44.760 --> 02:26:55.679
+Escuela de Posgrado: Y, bueno, se dan cuenta que esos esos serían la primera vez que utilizaron algo. Pero era porque en el entrenamiento habían como direcciones privilegiadas
+
+966
+02:26:55.680 --> 02:27:11.000
+Escuela de Posgrado: como que ese error, digamos que el Esa es la distribución, No, el punto estaba por Acá el error. Era este, no como tratando de pegarse a su grupo, y eso generaba como un desplazamiento de todo el conjunto Hacia un lado había como unas direcciones privilegiadas dentro de la representación.
+
+967
+02:27:11.100 --> 02:27:17.640
+Escuela de Posgrado: Entonces, para solucionar ese problema. Lo único que hicieron fue quitar la media
+
+968
+02:27:17.990 --> 02:27:24.800
+Escuela de Posgrado: para que no ni 1 de esas distribución es hacer divisiones, que estoy privilegiada y justamente
+
+969
+02:27:25.370 --> 02:27:31.820
+Escuela de Posgrado: el Target, que es la referencia. Le vamos a quitar la medida.
+
+970
+02:27:32.200 --> 02:27:50.069
+Escuela de Posgrado: Ok, como para hacer una comparación, no sesgar, ok, recuerden que hacemos es, estamos haciendo un proceso si conocen lo que está, si estamos en una ubicación sobre un valor que está muy al extremo, digamos, valores de 3 000 para que es un producto y una sumatoria. Ese 3 000 se va a notarse mucho, no va a estar muy sesgado hacia esa dirección.
+
+971
+02:27:50.130 --> 02:28:02.839
+Escuela de Posgrado: Para evitar que sucede eso, le vamos a quitar simplemente la mente. Y aquí lo que vamos a hacer es simplemente una estimación de la médula mediante una media móvil. Entonces aquí tenemos un estimador de media, y con eso vamos a normalizar.
+
+972
+02:28:02.910 --> 02:28:11.169
+Escuela de Posgrado: Eso fue el primer enfoque que fue presentado En luego vamos a ver que ese enfoque puede mejorar
+
+973
+02:28:11.510 --> 02:28:14.379
+Escuela de Posgrado: en vi pasar después.
+
+974
+02:28:15.740 --> 02:28:18.010
+Escuela de Posgrado: No creo que oiría, pero vamos a verlo.
+
+975
+02:28:18.240 --> 02:28:21.780
+Escuela de Posgrado: Ok, la serie. Estamos bien. Dime.
+
+976
+02:28:22.100 --> 02:28:31.799
+Escuela de Posgrado: M: Sí, el Asia, gracias por mencionarlo. Eso de acá. Es la temperatura.
+
+977
+02:28:32.040 --> 02:28:39.309
+Escuela de Posgrado: Conocen la temperatura como la intensidad, No, sí, sí fatal.
+
+978
+02:28:40.200 --> 02:28:43.509
+Escuela de Posgrado: No es exactamente la dirección sonar, pero.
+
+979
+02:28:43.850 --> 02:28:50.500
+Escuela de Posgrado: claro, puede ser como una especie de desviación, porque el tren es una distorsión.
+
+980
+02:28:50.910 --> 02:28:58.389
+Escuela de Posgrado: Claro, la media es como una especie de normalización, pero, ah, ya te entendí muchas clases, como dicen, no exactamente.
+
+981
+02:28:58.810 --> 02:29:03.899
+Escuela de Posgrado: Y todos han usado alguna vez. Ldlms por el diario.
+
+982
+02:29:05.630 --> 02:29:15.199
+Escuela de Posgrado: Y bien, ah, sí, sí, se han utilizado, habrán notado que hay un parámetro que se llama temperatura.
+
+983
+02:29:15.630 --> 02:29:27.250
+Escuela de Posgrado: Normalmente le dicen que tan creativo. Está ten cuidado. Interpretar ese concepto de ser creativo. En realidad, lo que estás haciendo es que haya más incertidumbre con la respuesta.
+
+984
+02:29:27.450 --> 02:29:36.220
+Escuela de Posgrado: Cuando tú tienes temperatura 0, estás haciendo que las distribuciones. Collage, ahorita. Entonces y, por lo tanto, siempre genero. Lo mismo
+
+985
+02:29:36.320 --> 02:29:49.779
+Escuela de Posgrado: es el resultado determinista. Cuando ustedes somete la temperatura, estas dando más probabilidad a otra respuesta. Entonces, puede divertir más. Ok, Entonces puede ser más en este
+
+986
+02:29:50.270 --> 02:29:54.620
+Escuela de Posgrado: no alucinaciones
+
+987
+02:30:04.510 --> 02:30:13.149
+Escuela de Posgrado: a ver aquí. Esta imagen. Siempre lo coloco es una muy buena animación. Noten que la imagen está partiendo desde temperatura 0, 1.
+
+988
+02:30:13.290 --> 02:30:24.629
+Escuela de Posgrado: Bien, Miren como evoluciona bien cuando aumente la temperatura ambiente a uniformizarse.
+
+989
+02:30:24.990 --> 02:30:32.460
+Escuela de Posgrado: Justamente es lo que reflexionaba. No aumentar la temperatura hace que los otros resultados tienden a aumentarlo.
+
+990
+02:30:32.650 --> 02:30:38.140
+Escuela de Posgrado: No es que realmente está aumentando, sino que todo se está volviendo uniforme. Claro.
+
+991
+02:30:38.360 --> 02:30:43.529
+Escuela de Posgrado: Lo que hace el aumento de la temperatura es una suavizar la detención
+
+992
+02:30:44.030 --> 02:30:47.960
+Escuela de Posgrado: y se suavizan demasiado. Ya todo se mueve el plano. Ok.
+
+993
+02:30:48.200 --> 02:30:51.430
+Escuela de Posgrado: Y bueno, lo contrario que sepa si baja la temperatura, ¿qué pasa?
+
+994
+02:30:52.530 --> 02:30:57.929
+Escuela de Posgrado: Lo que pasa es que se defina más que se envuelva una región mucho más compacta.
+
+995
+02:30:58.310 --> 02:31:00.880
+Escuela de Posgrado: Ok.
+
+996
+02:31:01.020 --> 02:31:09.970
+Escuela de Posgrado: Recuerden, lo que estamos haciendo aquí es como una especie de clasificación. ¿a qué celda corresponde? Nosotros podemos tener como una temperatura alta, haciendo que
+
+997
+02:31:10.080 --> 02:31:24.660
+Escuela de Posgrado: la incertidumbre de que la región corresponda esté más amplia, No, por ejemplo, este Hacer que esto sea, no sé 0, 6, 0, 2.
+
+998
+02:31:24.850 --> 02:31:32.810
+Escuela de Posgrado: O sea, hay una cierta incertidumbre sobre quién celta va a terminar? Ok? En ciertos casos, eso te va a competir. Pero aquí no.
+
+999
+02:31:32.900 --> 02:31:45.629
+Escuela de Posgrado: porque tú quieres una referencia para que lo estudien aprenda, ¿Quieres algo seguro, o sea, una guía clara. Entonces lo que vamos a hacer es bajar la temperatura haciendo que esto sea el 0. Coma 99
+
+1000
+02:31:45.820 --> 02:31:46.720
+Escuela de Posgrado: okay.
+
+1001
+02:31:46.990 --> 02:31:55.419
+Escuela de Posgrado: o sea, por ejemplo, entonces que esté bien seguro de que corresponde a esta distribución, entonces Justamente lo que vas a hacer aquí
+
+1002
+02:31:56.160 --> 02:32:14.299
+Escuela de Posgrado: es al Teacher bajarle la temperatura igual. Vamos a bajar la temperatura del estudio como para ser comparación es mucho más definida. Ok, para que tenga una señal mucho más clara de hacia dónde Eso es algo que también se encontró experimentalmente que era mucho más.
+
+1003
+02:32:15.610 --> 02:32:20.460
+Escuela de Posgrado: Es como si quieres tomar un examen y ustedes pudieran marcar diferentes alternativas.
+
+1004
+02:32:20.690 --> 02:32:27.209
+Escuela de Posgrado: Y si está dentro de las alternativas correctas. Les marco como alguien podría decir, ah, mira mejor marco a todos
+
+1005
+02:32:27.750 --> 02:32:28.740
+Escuela de Posgrado: pillando.
+
+1006
+02:32:29.370 --> 02:32:40.969
+Escuela de Posgrado: No es correcto? ¿no? Porque está adentro claro. Nosotros queremos obligarlos a que marquen solamente 1 que esté incluido 1 para de frente.
+
+1007
+02:32:41.330 --> 02:32:49.769
+Escuela de Posgrado: Bueno, hasta ahí está viendo clarísimo cosas cosas cotidianas que yo. Todavía
+
+1008
+02:32:49.990 --> 02:33:06.480
+Escuela de Posgrado: vamos a ver otro enfoque que, de hecho ha tenido cierta popularidad últimamente. Por ejemplo, las ideas de ipod van a ver que se van a propagar o van a ser utilizadas en el pero vamos a ver
+
+1009
+02:33:07.210 --> 02:33:14.550
+Escuela de Posgrado: en la próxima clase, pero ahí lo tengo que es el mar.
+
+1010
+02:33:14.720 --> 02:33:17.739
+Escuela de Posgrado: En realidad, esto viene de decir de
+
+1011
+02:33:18.050 --> 02:33:26.710
+Escuela de Posgrado: de otras épocas. No vamos a ver, pero este esta idea también se ha estado extrapolando hacia
+
+1012
+02:33:32.320 --> 02:33:33.200
+Escuela de Posgrado: sí.
+
+1013
+02:33:36.620 --> 02:33:38.260
+Escuela de Posgrado: Im Show Paepad.
+
+1014
+02:33:43.690 --> 02:33:44.690
+Escuela de Posgrado: Y
+
+1015
+02:33:49.440 --> 02:33:53.520
+Escuela de Posgrado: antes habían escuchado dilo y te
+
+1016
+02:33:54.170 --> 02:34:06.290
+Escuela de Posgrado: es un enfoque El simple me parece interesante, pero para el
+
+1017
+02:34:07.720 --> 02:34:18.400
+Escuela de Posgrado: digamos que no era, no destacaba tanto el performance, por así decirlo, pero el últimamente, en los últimos meses ha comenzado a escalar y de hecho, tiene una especificación muy buena
+
+1018
+02:34:18.780 --> 02:34:21.480
+Escuela de Posgrado: con respecto a cómo funciona el cerebro
+
+1019
+02:34:21.610 --> 02:34:26.439
+Escuela de Posgrado: en otra clase de eres para evitar el problema del tiempo.
+
+1020
+02:34:26.660 --> 02:34:35.080
+Escuela de Posgrado: Pero, bueno, Kepa, en cierto modo está basado en mal, o sea, se basa su forma de entrenar
+
+1021
+02:34:35.980 --> 02:34:37.600
+Escuela de Posgrado: a ver
+
+1022
+02:34:38.050 --> 02:34:48.610
+Escuela de Posgrado: lo que estamos haciendo con mastín era tapar algo y predecir lo que estaba debajo. ¿cierto? Y como hasta ahora habíamos estado trabajando, era imitar lo que estaba haciendo. Este
+
+1023
+02:34:50.090 --> 02:35:08.210
+Escuela de Posgrado: Berth es de la predicción alguna clase en particular, No, ¿cierto? Así es como hemos estado trabajando hasta hoy. Y bueno para eso. Utilizamos este generamos bueno, iniciamos algunas regiones, no con Bq o con la otra. También empezamos con los prototipos, No, al fin de cuentas terminas una clasificación
+
+1024
+02:35:08.380 --> 02:35:09.220
+Escuela de Posgrado: muy bien.
+
+1025
+02:35:09.350 --> 02:35:17.539
+Escuela de Posgrado: Luego se preguntaron por qué estamos induciendo regiones si simplemente no hacemos una previsión de cuáles son los cruceros que están debajo?
+
+1026
+02:35:18.750 --> 02:35:24.819
+Escuela de Posgrado: Bueno, probaron esa idea es 2 enfoques distintos, pero
+
+1027
+02:35:24.990 --> 02:35:30.939
+Escuela de Posgrado: ese enfoque más precisamente hace Es entonces lo que vamos a hacer es predecir
+
+1028
+02:35:32.160 --> 02:35:36.610
+Escuela de Posgrado: este: qué tokens estaban debajo del mar o debajo de las máscaras.
+
+1029
+02:35:36.760 --> 02:35:40.339
+Escuela de Posgrado: Aquí hacemos una predicción directa de píxels.
+
+1030
+02:35:41.240 --> 02:35:45.950
+Escuela de Posgrado: Entonces, técnicamente, eso también revuelve al estado del poder de code.
+
+1031
+02:35:46.060 --> 02:35:52.689
+Escuela de Posgrado: pues acá tenemos un ecoder que va a generar representaciones que va a tratar de predecir cuáles son los
+
+1032
+02:35:52.940 --> 02:36:02.350
+Escuela de Posgrado: las representaciones debajo de las máscaras de un decoder que va a tratar de predecir cuáles son los píxeles, no a partir de la representación general, los píxeles
+
+1033
+02:36:02.490 --> 02:36:10.570
+Escuela de Posgrado: ¿vale? Entonces eso es lo que es lo que va a ser mal ahora algo que también ellos introduce es una red asimétrica.
+
+1034
+02:36:11.900 --> 02:36:16.269
+Escuela de Posgrado: Esa dinámica no sigue picante.
+
+1035
+02:36:16.610 --> 02:36:23.959
+Escuela de Posgrado: que vamos a ser una red super compleja, más avanzada de mailpoder y el de poder va a ser una red mucho más simple.
+
+1036
+02:36:24.890 --> 02:36:33.759
+Escuela de Posgrado: Ok, Eso induce también a que la predicción genere no una imagen muy detallada, su imagen, una predicción más con Blue Ok.
+
+1037
+02:36:35.320 --> 02:36:39.140
+Escuela de Posgrado: Y aquí pueden ver los resultados, ¿cierto?
+
+1038
+02:36:39.370 --> 02:36:48.710
+Escuela de Posgrado: A partir de esto, lo que van a hacer es predecir cuáles son los baches que están tapados. Y pueden ver que aquí el más es mucho más agresivo
+
+1039
+02:36:48.770 --> 02:37:04.810
+Escuela de Posgrado: que todas las técnicas que no hemos visto antes. Y de hecho, este llega a ser al 75 por 100. Eso podría ser más. Y bueno, como les mencionaba, es una previsión de la imagen. Lo único que se hace es un Ime C, el I M C, clásico.
+
+1040
+02:37:05.330 --> 02:37:14.069
+Escuela de Posgrado: Pero volviendo al ejemplo, noten que aquí es muy agresivo. Y aquí reconoce que a mira ese es un período y hace la predicción, ¿no?
+
+1041
+02:37:14.290 --> 02:37:18.160
+Escuela de Posgrado: Aquí estás comparando entre la previsión y lo real.
+
+1042
+02:37:18.300 --> 02:37:19.180
+Escuela de Posgrado: Ok.
+
+1043
+02:37:19.800 --> 02:37:29.470
+Escuela de Posgrado: lo está haciendo bastante bien. No tiene detalles, porque es asimétrica. La segunda no está haciendo una pensión precisa, pero es así? Lo pasó muy bien. Igual acá no es
+
+1044
+02:37:29.900 --> 02:37:31.190
+Escuela de Posgrado: su voz.
+
+1045
+02:37:31.470 --> 02:37:38.839
+Escuela de Posgrado: De hecho, es un poco complicado. ¿cómo, si leen esto, yo quisiera hacer el ejemplo de un gran ejercicio? ¿qué viene aquí?
+
+1046
+02:37:43.680 --> 02:37:46.720
+Escuela de Posgrado: Escaleras?
+
+1047
+02:37:47.130 --> 02:37:56.510
+Escuela de Posgrado: ¿qué más? Qué qué va Una sala de estudio, videojuegos abre la escalera sala de estudio. Y después
+
+1048
+02:37:56.760 --> 02:38:02.879
+Escuela de Posgrado: hay un sesgo sobre 1. Piensa en casa, otro estudiante otro.
+
+1049
+02:38:03.110 --> 02:38:08.690
+Escuela de Posgrado: ¿cuál será de todos? Eso lo real es un artista.
+
+1050
+02:38:12.520 --> 02:38:19.380
+Escuela de Posgrado: y, de hecho, más o menos lo hace bien. El resultado también muy fácil para el siguiente: ¿Qué es esto?
+
+1051
+02:38:20.300 --> 02:38:28.380
+Escuela de Posgrado: Es una cascada, una cascada? No, eso es más cuarto, cada sacerdote siempre.
+
+1052
+02:38:29.060 --> 02:38:35.570
+Escuela de Posgrado: ¿qué es esto: perritos, no carrito, merrito.
+
+1053
+02:38:36.290 --> 02:38:49.310
+Escuela de Posgrado: Ok, se dan cuenta que se está apareciendo aproximadamente bien, pero con blue. Ahora, este algo que podrían pensar que es que está haciendo. Lo está haciendo mal, No está haciendo con.
+
+1054
+02:38:50.480 --> 02:38:55.210
+Escuela de Posgrado: y de hecho, en Kepa ya les estaban diciendo, Ok, Pa hacen una discusión sobre eso.
+
+1055
+02:38:55.600 --> 02:38:58.349
+Escuela de Posgrado: Lo más adecuado es que lo haga con blue
+
+1056
+02:38:59.170 --> 02:39:16.180
+Escuela de Posgrado: ahora. ¿por qué? Porque justamente lo que queremos hacer son representaciones de imágenes, representaciones de conceptos. En cambio, este cuando tomamos una foto, la foto tiene como que detalles minúsculos que no quieres que aprenda el modelo que no se salgan a esos detalles. Newstons, por ejemplo, que hoy día no sé,
+
+1057
+02:39:16.330 --> 02:39:18.459
+Escuela de Posgrado: pero mucho que podría haber pasado.
+
+1058
+02:39:18.830 --> 02:39:22.890
+Escuela de Posgrado: No sé tu gato pepe arañado. Tienes una arañazo de gato, pero es un punk
+
+1059
+02:39:22.930 --> 02:39:40.619
+Escuela de Posgrado: porque se me ocurren esas cosas. Pero este este detalle del arañazos. No quiere que aprendas no están. Ok. Entonces el concepto de tu cara, quieres que lo aprendan y no que se fijen en esas minucias, no sino los conceptos. Entonces, justamente trabajar simplemente en espacios medio difuso, con lo que aprenden.
+
+1060
+02:39:40.620 --> 02:39:52.859
+Escuela de Posgrado: ayuda a entender más el concepto y no tanto ver esos detalles. Claro, el contexto? Bueno, la información en global no, y no tanto de esos detalles que tal vez no sean relevantes para aprender
+
+1061
+02:39:53.220 --> 02:40:05.439
+Escuela de Posgrado: mal. Es un enfoque totalmente exitoso y, de hecho, un enfoque. Este es una variación que se llama Videomic. Es una referencia con respecto a este bonificaciones de vídeo
+
+1062
+02:40:05.710 --> 02:40:17.720
+Escuela de Posgrado: que, bueno, en la siguiente clase vamos a ver. No les interesan asociation, su destilación de modelos.
+
+1063
+02:40:17.940 --> 02:40:25.189
+Escuela de Posgrado: Ahí van a poder pasar sus modelos gigantesco modelo chicle igualmente eficiente. Y
+
+1064
+02:40:25.660 --> 02:40:31.449
+Escuela de Posgrado: hoy vamos a verlo como lo aplicamos a transformer states.
+
+1065
+02:40:31.620 --> 02:40:42.199
+Escuela de Posgrado: Hoy día comenzamos con el tema de que han estado discutiendo en clase, Bien, Quizá se entera del vecino
+
+1066
+02:40:45.440 --> 02:40:52.779
+Escuela de Posgrado: aquí con puro aprendizaje autosupersado con ella internamente, ya aprenderás.
+
+1067
+02:40:54.200 --> 02:40:59.399
+Escuela de Posgrado: Pero siempre hay detrás un modelo fundacional. No.
+
+1068
+02:40:59.570 --> 02:41:07.410
+Escuela de Posgrado: eso es un modelo fundacional, o sea, eso entrenado desde ha comenzado desde 0 y ha aprendido a hacer. Es: no está siendo un país Tv sobre un modelo técnica.
+
+1069
+02:41:07.520 --> 02:41:26.019
+Escuela de Posgrado: Es un modelo que estamos viendo es algo, Todo eso está partiendo desde aleatorio. Si es aleatorio.
+
+1070
+02:41:26.160 --> 02:41:30.239
+Escuela de Posgrado: yo pensé que habías fighting. M M:
+
+1071
+02:41:30.550 --> 02:41:45.960
+Escuela de Posgrado: No, Entonces una cosa es escribir que es otro tema. Claro, puedes utilizar un bipic entrenado para ayudarle, no al al modelo de imagen, ¿no? Pero en este caso no tienes etiqueta. Eso tiene esta etiqueta.
+
+1072
+02:41:46.160 --> 02:41:53.210
+Escuela de Posgrado: Ok, Entonces está partiendo de ese entrenamiento desde 0. Y logra hacer esto ahí para el día.
+
+1073
+02:41:53.390 --> 02:41:56.710
+Escuela de Posgrado: Es una base de datos.
+
+1074
+02:41:56.960 --> 02:42:09.080
+Escuela de Posgrado: Claro, tienes una base de datos, solamente que hay una base de datos en etiquetas, no. Y justamente lo que están aprovechando. Ese meta no es de meta, es utilizar, como les mencionaba la las s. I sus fotos de Instagram.
+
+1075
+02:42:09.380 --> 02:42:10.530
+Escuela de Posgrado: Mhm, Francisco
+
+1076
+02:42:12.720 --> 02:42:20.230
+Escuela de Posgrado: solamente por el combinado de datos. Claro, es una base de datos sin etiquetas, y eso ha generado buenas representaciones.
+
+1077
+02:42:20.440 --> 02:42:21.200
+Escuela de Posgrado: Sí.
+
+1078
+02:42:21.680 --> 02:42:22.380
+Escuela de Posgrado: Pua.
+
+1079
+02:42:23.550 --> 02:42:30.180
+Escuela de Posgrado: Mhm Ahorita ahorita. Seguimos teniendo la clase.
+
+1080
+02:42:31.280 --> 02:42:45.060
+Escuela de Posgrado: Sí, yo tengo que cerrar esto de acá y hubiera gustado.
+
+1081
+02:42:50.420 --> 02:42:54.310
+Escuela de Posgrado: Yo no soy el papá, pero el francés.
+
+1082
+02:42:55.690 --> 02:43:01.760
+Escuela de Posgrado: el desgrave metido algo más contenidos actualizados, los materiales.
+
+1083
+02:43:02.810 --> 02:43:07.660
+Escuela de Posgrado: esto es el clip. Creo que no escriba el código.
+
+1084
+02:43:09.570 --> 02:43:27.139
+Escuela de Posgrado: por cierto. Si tienen alguna duda de algo de laboratorios de cualquier cosa, me pueden escribir por el chat grupal. Sí, disculpen que a veces no les puedo responder razonables.
+
+1085
+02:43:27.370 --> 02:43:32.390
+Escuela de Posgrado: A veces la algunos se habrán notado que a veces es.
+
+1086
+02:43:37.050 --> 02:43:39.100
+Escuela de Posgrado: pero eventualmente me sorprende.
+
+1087
+02:43:39.580 --> 02:43:41.720
+Escuela de Posgrado: Solo disculpen por la demora.
+
+1088
+02:43:43.330 --> 02:43:45.950
+Escuela de Posgrado: Momento se sanguís
+
+1089
+02:43:49.870 --> 02:43:53.460
+Escuela de Posgrado: a los que están en viettuán.
+
+1090
+02:43:54.710 --> 02:43:56.190
+Escuela de Posgrado: Nos vemos juntos.
+
+1091
+02:43:57.230 --> 02:43:58.130
+Escuela de Posgrado: Por eso
+
+1092
+02:44:11.760 --> 02:44:16.990
+Escuela de Posgrado: han visto Juan en la mañana y después éxito
+
+1093
+02:44:17.790 --> 02:44:26.190
+Escuela de Posgrado: si lo ven otra vez, la vista.
+
+1094
+02:44:27.690 --> 02:44:46.010
+Escuela de Posgrado: no es necesario que grabes un video y la parte de mi sí,
+
+1095
+02:44:46.410 --> 02:45:04.510
+Escuela de Posgrado: o sea, tengo que explicar primero el paper. Luego s. Es lo que han dicho que no, que me expliquen el código. Ah, mira para hacer esto y se muestran claro
+
+1096
+02:45:04.510 --> 02:45:07.119
+Escuela de Posgrado: si hay algo interesante, que es.
+
+1097
+02:45:07.490 --> 02:45:12.260
+Escuela de Posgrado: luego los resultados organices, los resultados, y.
+
+1098
+02:45:12.620 --> 02:45:20.439
+Escuela de Posgrado: o sea, el video no es necesario si es necesario
+
+1099
+02:45:20.760 --> 02:45:30.709
+Escuela de Posgrado: si, de hecho, idealmente debería ser que ustedes pongan y les haga preguntas después. Pero va a ser mucho tiempo
+
+1100
+02:45:31.410 --> 02:45:50.170
+Escuela de Posgrado: preguntas claro Y sí es que les tengo que preguntar, porque sí
+
+1101
+02:45:50.710 --> 02:45:59.940
+Escuela de Posgrado: a ver. Yo lo voy a hacer aleatorio, pero si alguien le preguntaría a solito a esa persona.
+
+1102
+02:46:01.340 --> 02:46:07.020
+Escuela de Posgrado: o sea, yo voy a llamar aleatorio de forma aleatoria a todos los grupos.
+
+1103
+02:46:07.620 --> 02:46:16.780
+Escuela de Posgrado: Si falta alguien al final, tal vez tu persona le encantaría solitario y no ese día
+
+1104
+02:46:17.110 --> 02:46:24.620
+Escuela de Posgrado: de por sí ese día. Quiero terminar con todos, porque si no vamos a estar acumulando esa carga para nuestros días, para empezar un poco las clases.
+
+1105
+02:46:25.060 --> 02:46:29.839
+Escuela de Posgrado: pero si se van a demorar en entrar, no se preocupen después. Les pregunto si es.
+
+1106
+02:46:32.670 --> 02:46:34.479
+Escuela de Posgrado: pero tendría que ser el menos
+
+1107
+02:46:34.610 --> 02:46:40.200
+Escuela de Posgrado: o dices que hasta las 9, digamos, hasta las 9.
+
+1108
+02:46:40.770 --> 02:46:45.409
+Escuela de Posgrado: Bueno, a las 7. Podría ser que no estén todos, pero los que están ya. Les voy evaluando.
+
+1109
+02:46:47.150 --> 02:46:53.250
+Escuela de Posgrado: M: Sí, a ver. Hay 2. Hay 2 partes de la nota, no la nota
+
+1110
+02:46:53.530 --> 02:46:59.229
+Escuela de Posgrado: grupal, que es la exposición y el código, y la nota individual, que es lo que les voy a preguntar.
+
+1111
+02:46:59.810 --> 02:47:09.000
+Escuela de Posgrado: Claro: eso es más. Es importante que a todos les haga, porque si no, no tendría eso, Lo vemos en lunes
+
+1112
+02:47:10.820 --> 02:47:18.900
+Escuela de Posgrado: que sí, por lo menos este 4 preguntas para cada 1 para cada
+
+1113
+02:47:22.050 --> 02:47:28.330
+Escuela de Posgrado: y va y lo que englobas.
+
+1114
+02:47:28.540 --> 02:47:29.629
+Escuela de Posgrado: No sé,
+
+1115
+02:47:31.250 --> 02:47:38.789
+Escuela de Posgrado: No les voy a preguntar, por ejemplo, si sus modelos no se transforman. No les voy a preguntar, no sé el mal si no tiene nada que ver. Su primer combate.
+
+1116
+02:47:38.860 --> 02:47:54.869
+Escuela de Posgrado: algo que suelo hacer es preguntar cosas, por ejemplo, de su gente diciendo este esto que está pasando con esa ecuación que que que te está diciendo. ¿con qué pasaría si es que esto lo cambias con esto? Otro.
+
+1117
+02:47:55.720 --> 02:47:58.420
+Escuela de Posgrado: preguntar casos extremos o cosas así?
+
+1118
+02:47:58.810 --> 02:48:04.539
+Escuela de Posgrado: Ya nos van a conocer. El lunes nos vemos por ahí. Veo que me están.
+
+1119
+02:48:05.560 --> 02:48:09.270
+Escuela de Posgrado: Gracias.
+
+1120
+02:48:09.510 --> 02:48:19.239
+Escuela de Posgrado: Destruido y a sí, sí
+
+1121
+02:48:23.210 --> 02:48:35.870
+Escuela de Posgrado: a ver si se me olvida aparecer.
+
+1122
+02:48:37.140 --> 02:48:40.880
+Escuela de Posgrado: Vamos a sí.
+

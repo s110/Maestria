@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-over-banner" class="hidden">
+        <h1 id="game-over-text">GAME OVER</h1>
+        <button id="restart-btn" onclick="resetGame()">PLAY AGAIN</button>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="neon-text">NEON R-P-S</h1>
+            <div class="scoreboard">
+                <div class="score-card player">
+                    <span>PLAYER</span>
+                    <span id="player-score" class="score neon-cyan">0</span>
+                </div>
+                <div class="score-card computer">
+                    <span>COMPUTER</span>
+                    <span id="computer-score" class="score neon-magenta">0</span>
+                </div>
+            </div>
+            <div class="round-info">Round: <span id="round-number">1</span></div>
+        </header>
+
+        <main class="board-container">
+            <div class="status-message" id="status-message">AWAITING YOUR MOVE...</div>
+            
+            <div class="arena">
+                <div class="player-side">
+                    <div id="player-display" class="choice-display neon-cyan-glow">?</div>
+                </div>
+                <div class="vs-text">VS</div>
+                <div class="computer-side">
+                    <div id="computer-display" class="choice-display neon-magenta-glow">?</div>
+                </div>
+            </div>
+
+            <div class="controls" id="controls">
+                <button class="choice-btn" data-choice="rock">✊<br>ROCK</button>
+                <button class="choice-btn" data-choice="paper">✋<br>PAPER</button>
+                <button class="choice-btn" data-choice="scissors">✌️<br>SCISSORS</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

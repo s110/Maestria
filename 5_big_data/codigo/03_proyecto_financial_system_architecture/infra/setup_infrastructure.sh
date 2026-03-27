@@ -231,7 +231,6 @@ else
         --image-version=2.1-debian11 \
         --optional-components=JUPYTER \
         --enable-component-gateway \
-        --initialization-actions="" \
         --metadata="PIP_PACKAGES=google-cloud-bigquery google-cloud-storage" \
         --properties="spark:spark.sql.sources.partitionOverwriteMode=dynamic" \
         --bucket="$BUCKET_TEMP" \

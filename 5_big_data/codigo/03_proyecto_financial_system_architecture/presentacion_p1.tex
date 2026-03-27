@@ -1,0 +1,261 @@
+\documentclass[aspectratio=169, xcolor=table]{beamer}
+
+% Tema y configuración básica
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+% Definir colores institucionales
+\definecolor{UtecBlue}{RGB}{0, 51, 102}
+\setbeamercolor{palette primary}{bg=UtecBlue,fg=white}
+\setbeamercolor{palette secondary}{bg=UtecBlue!80,fg=white}
+\setbeamercolor{palette tertiary}{bg=UtecBlue!60,fg=white}
+\setbeamercolor{title}{bg=UtecBlue,fg=white}
+\setbeamercolor{frametitle}{bg=UtecBlue,fg=white}
+
+% Portada
+\title[Arquitectura P1 - Lumina Bank]{Lumina Bank: Arquitectura Big Data en GCP}
+\subtitle{Caso de Estudio: DataBank Metropolitan \\ Entregable I (P1) - Pipeline de Ingesta}
+\author[Lopez, Tapia, Nieto]{Sebastian Lopez \and Mateo Tapia \and Brajan Nieto}
+\institute[UTEC]{
+  Curso CS8087: Big Data \\
+  Maestría en Ciencia de Datos e Inteligencia Artificial \\
+  Universidad de Ingeniería y Tecnología (UTEC)
+}
+\date{\today}
+
+\begin{document}
+
+% Transparencia de título
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Índice
+\begin{frame}{Contenido}
+    \tableofcontents
+\end{frame}
+
+% -------------------------------------------------------------
+\section{Contexto y Problemática}
+
+\begin{frame}{Contexto del Proyecto}
+    \begin{itemize}
+        \item \textbf{El Escenario:} Una nueva ley en DataLandia obliga a 12 bancos independientes a fusionarse en una sola super-entidad: \textbf{Lumina Bank}.
+        \item \textbf{La Escala:} Una base combinada de más de 9 millones de clientes y volumen masivo transaccional.
+        \item \textbf{El Reto:} Diseñar una arquitectura unificada, segura, escalable y en la nube capaz de manejar tanto transacciones en tiempo real como procesamiento por lotes para un \textit{unified risk profiling}.
+    \end{itemize}
+    
+    \vspace{0.5cm}
+    \begin{center}
+        % PLACEHOLDER para una imagen introductoria, ej. Logo de Lumina Bank
+        \fbox{\includegraphics[width=0.4\textwidth, height=2.5cm]{placeholder_contexto.png}} \\
+        \footnotesize \textit{[Aquí puedes insertar un logo ficticio de Lumina Bank o esquema de la fusión]}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Pain Points Identificados}
+    Análisis inicial de la situación de los 12 bancos \textit{legacy}:
+    \begin{enumerate}
+        \item \textbf{Fragmentación de Datos:} Silos operativos, sin visión 360 del cliente.
+        \item \textbf{Congestión de Procesamiento:} Caídas del sistema los días de pago y latencias en cálculos de fraude, debido a enfoques de procesamiento nocturno restrictivos.
+        \item \textbf{Mala Experiencia Digital:} Población joven demanda respuestas inmediatas; ancianos frustrados con interfaces, exacerbando la brecha digital.
+        \item \textbf{Riesgo Centralizado:} Dificultad para prevenir fraudes rápidos y coordinados o detectar lavados de dinero.
+        \item \textbf{Cajeros Subutilizados:} Infraestructura de ATMs costosa e ineficiente.
+    \end{enumerate}
+\end{frame}
+
+% -------------------------------------------------------------
+\section{Arquitectura Propuesta}
+
+\begin{frame}{Diseño de Arquitectura: Patrón Lambda en GCP}
+    Nuestra solución implementa una \textbf{Arquitectura Lambda} 100\% Serverless en Google Cloud Platform.
+    
+    \begin{columns}
+        \column{0.5\textwidth}
+        \textbf{Hot Path (Tiempo Real)}
+        \begin{itemize}
+            \item \textbf{Objetivo:} Detección de fraude y alertas inmediatas.
+            \item \textbf{Stack:} Ingesta en \textit{Cloud Pub/Sub} $\rightarrow$ Procesamiento con \textit{Cloud Dataflow} (Streaming).
+        \end{itemize}
+        
+        \vspace{0.3cm}
+        \textbf{Cold Path (Batch)}
+        \begin{itemize}
+            \item \textbf{Objetivo:} KPIs diarios y perfiles de riesgo consolidados.
+            \item \textbf{Stack:} \textit{Cloud Storage} (Lake) $\rightarrow$ \textit{Dataproc/Spark} \& \textit{Dataflow} (Batch).
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \begin{center}
+            % PLACEHOLDER para el diagrama exportado de Mermaid
+            \fbox{\includegraphics[width=0.9\textwidth, height=4cm]{placeholder_diagrama_arquitectura.png}} \\
+            \footnotesize \textit{[Inserta aquí la captura o render del diagrama Mermaid de architecture.md]}
+        \end{center}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Justificación del Stack Tecnológico (GCP)}
+    \begin{table}[]
+        \centering
+        \small
+        \begin{tabular}{p{3cm} p{3.5cm} p{6cm}}
+            \toprule
+            \textbf{Capa} & \textbf{Servicio Elegido} & \textbf{Justificación / Beneficio} \\
+            \midrule
+            \textbf{Ingesta (Real-Time)} & Cloud Pub/Sub & Desacoplador serverless, absorbe picos (días de pago) con semántica \textit{at-least-once}. \\
+            \addlinespace
+            \textbf{Data Lake} & Cloud Storage (GCS) & Storage inmutable, separación de cómputo y almacenamiento, costo-efectivo para TBs/PBs. \\
+            \addlinespace
+            \textbf{Procesamiento} & Dataflow / Apache Beam & Unifica código para Batch y Streaming, auto-escalado horizontal de workers. \\
+            \addlinespace
+            \textbf{Cómputo Legacy} & Dataproc / Spark & Aprovecha ecosistema Hadoop, optimizado para procesar datos históricos en paralelo. \\
+            \addlinespace
+            \textbf{Data Warehouse} & BigQuery & Motor OLAP columner serverless, consultas en milisegundos sobre Petabytes. \\
+            \addlinespace
+            \textbf{Machine Learning} & Vertex AI & Ecosistema MLOps unificado, despliegue de modelos pre-entrenados sin fricción. \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Modelo de Datos Conceptual}
+    Diseño centrado en el cliente para consolidar información de 12 entidades \textit{legacy}.
+    
+    \begin{columns}
+        \column{0.55\textwidth}
+        \textbf{Entidades Principales:}
+        \begin{itemize}
+            \item \textbf{Cliente:} Perfil unificado (Edad, Nivel Riesgo, Preferencia Digital, Banco Origen).
+            \item \textbf{Transacción:} Historial unificado (Monto, Canal, Ubicación, Fraude score).
+            \item \textbf{ATM \& Mercado:} Eventos físicos del Banco y variables externas.
+        \end{itemize}
+        
+        \vspace{0.3cm}
+        \textbf{Relacionamiento en el Data Lake/Warehouse:}
+        \begin{itemize}
+            \item Modelado desnormalizado en BigQuery para analítica rápida.
+            \item Esquema Estrella/Snowflake adaptado (\textit{Client\_ID} como Foreign Key universal).
+            \item Particionamiento por fecha (\texttt{event\_timestamp}) y Clustering por \texttt{district} para eficiencia.
+        \end{itemize}
+        
+        \column{0.45\textwidth}
+        \begin{center}
+            % PLACEHOLDER para el diagrama ERD (Entity-Relationship)
+            % Imagen más alta que ancha, ej. un diagrama vertical
+            \fbox{\includegraphics[width=0.85\textwidth, height=6cm]{placeholder_data_model.png}} \\
+            \footnotesize \textit{[Esquema ERD desde architecture.md]}
+        \end{center}
+    \end{columns}
+\end{frame}
+
+% -------------------------------------------------------------
+\section{Avance Entregable I (P1)}
+
+\begin{frame}{Generación de Datos Mockup (Simulación)}
+    Ante la falta de datos reales, desarrollamos 4 generadores Python:
+    \vspace{0.3cm}
+    \begin{table}[]
+        \centering
+        \small
+        \begin{tabular}{llp{5cm}}
+            \toprule
+            \textbf{Entidad} & \textbf{Volumen Simulado} & \textbf{Atributos Clave} \\
+            \midrule
+            Clientes & 50,000 (Muestra) & Edad, Distrito, Preferencia digital, Nivel de riesgo \\
+            Transacciones & 500,000 & Monto (Log-normal), Canal, Coordenadas, Fraude simulado \\
+            Eventos ATM & 200,000 en 500 ATMs & Estado, Tipo (EFECTIVO, MANTENIMIENTO) \\
+            Mercado & 2 Años diarios & Tasas interes, festivos (Planificación liquidez) \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \vspace{0.2cm}
+    Todos los archivos consolidados en \textbf{Google Cloud Storage}: \texttt{gs://lumina-raw-bd...}
+\end{frame}
+
+\begin{frame}{Infraestructura (Setup Script)}
+    Mediante \textit{gcloud CLI}, desplegamos automáticamente el entorno base:
+    \begin{itemize}
+        \item \textbf{Cloud Storage:} Buckets \textit{raw}, \textit{processed} y \textit{temp}.
+        \item \textbf{Pub/Sub:} Topic \texttt{lumina-transactions-stream}.
+        \item \textbf{BigQuery:} Datasets \texttt{lumina\_raw}, \texttt{lumina\_curated} y \texttt{lumina\_reporting}. Tablas particionadas por fecha y clusterizadas.
+        \item \textbf{Dataproc:} Cluster \texttt{lumina-spark-cluster} con \textit{PySpark}.
+    \end{itemize}
+    
+    \begin{center}
+        % PLACEHOLDER para captura de la terminal de Cloud Shell ejecutando el script
+        \fbox{\includegraphics[width=0.7\textwidth, height=2cm]{placeholder_cloud_shell_infra.png}} \\
+        \footnotesize \textit{[Inserta captura de la terminal de Cloud Shell corriendo el script de infra]}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Pipeline 1: Dataflow Streaming (Detección de Fraude)}
+    Aplicación \textbf{Apache Beam} en modo streaming corriendo en \textit{Cloud Dataflow}.
+    
+    \begin{columns}
+        \column{0.45\textwidth}
+        \textbf{Flujo:}
+        \begin{enumerate}
+            \item Productor inyecta 10k transacciones a Pub/Sub.
+            \item Beam consume, valida JSON y aplica ventanas dinámicas de 60s.
+            \item Identificación heurística de fraude (\textit{velocity checks}, montos anómalos).
+            \item Escritura en BigQuery.
+        \end{enumerate}
+        
+        \column{0.5\textwidth}
+        \begin{center}
+            % PLACEHOLDER para el gráfico del DAG en la consola de Dataflow
+            \fbox{\includegraphics[width=\textwidth, height=3.5cm]{placeholder_dataflow_graph.png}} \\
+            \footnotesize \textit{[Inserta captura del DAG de Dataflow en consola GCP]}
+        \end{center}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Pipeline 2: Procesamiento Batch (Spark y Beam)}
+    Consolidación y síntesis de la historia (Cold Path).
+    
+    \begin{itemize}
+        \item \textbf{Dataflow Batch:} Lee todos los CSVs desde GCS, elimina duplicados, calcula sumarios diarios por distrito (KPIs de monto, fraude y transacciones) y guarda en BigQuery (\texttt{daily\_summary}).
+        \item \textbf{Spark / Dataproc:} El job Spark cruza la base de Clientes con el total de Transacciones, utilizando funciones de ventana (Window Functions) para determinar \textit{canales preferidos} y calcular tasas de fraude individuales. Exporta el perfil final en formato \textit{Parquet} a GCS y BigQuery.
+    \end{itemize}
+    
+    \begin{center}
+        % PLACEHOLDER para la tabla en BigQuery de resultados finales
+        \fbox{\includegraphics[width=0.7\textwidth, height=2.5cm]{placeholder_bigquery_results.png}} \\
+        \footnotesize \textit{[Inserta captura de BigQuery consultando los perfiles de riesgo]}
+    \end{center}
+\end{frame}
+
+% -------------------------------------------------------------
+\section{Conclusiones y Siguientes Pasos}
+
+\begin{frame}{Conclusiones y Próximos Pasos}
+    \textbf{Logros P1:}
+    \begin{itemize}
+        \item Arquitectura en GCP diseñada y validada.
+        \item Ingesta y limpieza en ambas modalidades (Streaming y Batch).
+        \item Centralización inicial hacia un Data Warehouse operativo (BigQuery).
+    \end{itemize}
+    
+    \vspace{0.5cm}
+    \textbf{Próximas Fases (Entregables 2 y 3):}
+    \begin{itemize}
+        \item Entrenamiento y despliegue de modelo ML en \textbf{Vertex AI} (Superando la heurística actual de fraude).
+        \item Implementación del motor \textbf{RAG} utilizando historial transaccional.
+        \item Orquestación y Agente de atención inteligente.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \huge \textbf{¡Gracias!} \\
+        \medskip
+        \large ¿Preguntas?
+    \end{center}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,5 @@
+00:25:40	Victor Flores Benites:	CLS
+01:08:13	Victor Flores Benites:	R-CNN?
+01:08:18	Victor Flores Benites:	Mask R-CNN?
+02:01:00	Victor Flores Benites:	https://huggingface.co/spaces
+03:08:33	Jorge Luis Palacios Chilo:	Gracias profesor

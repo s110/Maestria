@@ -48,42 +48,42 @@ La arquitectura adoptada es **Lambda Architecture** adaptada al ecosistema GCP, 
 ```mermaid
 flowchart TB
     subgraph SOURCES["📥 FUENTES DE DATOS"]
-        S1[📱 Banca Móvil\nApp Events]
-        S2[🏧 ATMs\nIoT Events]
-        S3[💻 Banca Web\nTransacciones]
-        S4[🏦 Core Bancario\nLegacy APIs]
-        S5[📊 Mercados\nFinancieros]
-        S6[📅 Eventos\nCalendario]
+        S1[📱 Banca Móvil App Events]
+        S2[🏧 ATMs IoT Events]
+        S3[💻 Banca Web Transacciones]
+        S4[🏦 Core Bancario Legacy APIs]
+        S5[📊 Mercados Financieros]
+        S6[📅 Eventos Calendario]
     end
 
     subgraph INGESTION["⚡ CAPA DE INGESTA"]
-        PS[Cloud Pub/Sub\nStreaming Queue]
-        GCS_RAW[Cloud Storage\ngs://lumina-raw/\nData Lake - Zona Raw]
+        PS[Cloud Pub/Sub Streaming Queue]
+        GCS_RAW[Cloud Storage gs://lumina-raw/ Data Lake - Zona Raw]
     end
 
     subgraph PROCESSING["⚙️ CAPA DE PROCESAMIENTO"]
-        DF_STREAM[Cloud Dataflow\nStreaming Pipeline\nApache Beam]
-        DF_BATCH[Cloud Dataflow\nBatch Pipeline\nApache Beam]
-        DATAPROC[Cloud Dataproc\nPySpark Jobs\nHadoop Ecosystem]
+        DF_STREAM[Cloud Dataflow Streaming Pipeline Apache Beam]
+        DF_BATCH[Cloud Dataflow Batch Pipeline Apache Beam]
+        DATAPROC[Cloud Dataproc PySpark Jobs Hadoop Ecosystem]
     end
 
     subgraph STORAGE["🗄️ CAPA DE ALMACENAMIENTO"]
-        GCS_PROC[Cloud Storage\ngs://lumina-processed/\nParquet / ORC]
-        BQ_RAW[BigQuery\nlumina_raw]
-        BQ_CUR[BigQuery\nlumina_curated]
-        BQ_RPT[BigQuery\nlumina_reporting]
+        GCS_PROC[Cloud Storage gs://lumina-processed/ Parquet / ORC]
+        BQ_RAW[BigQuery lumina_raw]
+        BQ_CUR[BigQuery lumina_curated]
+        BQ_RPT[BigQuery lumina_reporting]
     end
 
     subgraph SERVING["📊 CAPA DE SERVICIO"]
-        LOOKER[Looker Studio\nDashboards Operativos]
-        API[Cloud Run\nREST APIs]
-        ML[Vertex AI\nModelos ML]
+        LOOKER[Looker Studio Dashboards Operativos]
+        API[Cloud Run REST APIs]
+        ML[Vertex AI Modelos ML]
     end
 
     subgraph GOV["🔐 GOBERNANZA & SEGURIDAD"]
-        DATAPLEX[Dataplex\nGovernance & Lineage]
-        CMPOSER[Cloud Composer\nOrchestration / Airflow]
-        IAM[Cloud IAM\n+ VPC Service Controls]
+        DATAPLEX[Dataplex Governance & Lineage]
+        CMPOSER[Cloud Composer Orchestration / Airflow]
+        IAM[Cloud IAM + VPC Service Controls]
     end
 
     S1 & S2 & S3 --> PS
@@ -151,34 +151,34 @@ sequenceDiagram
 ```mermaid
 flowchart LR
     subgraph SOURCES_BATCH["Fuentes Batch"]
-        LEGACY[Core Bancario\nExport Nightly\nCSV/JSON]
-        MARKET[APIs Mercados\nFinancieros\nREST]
-        ATM_LOG[Logs ATM\nSFTP Diario]
+        LEGACY[Core Bancario Export Nightly CSV/JSON]
+        MARKET[APIs Mercados Financieros REST]
+        ATM_LOG[Logs ATM SFTP Diario]
     end
 
     subgraph GCS_ZONES["Data Lake - Cloud Storage"]
-        RAW[gs://lumina-raw/\nZona Raw\nFormato original]
-        STAGE[gs://lumina-processed/\nZona Procesada\nParquet comprimido]
+        RAW[gs://lumina-raw/ Zona Raw Formato original]
+        STAGE[gs://lumina-processed/ Zona Procesada Parquet comprimido]
     end
 
     subgraph PROC["Procesamiento Batch"]
-        DF_B[Dataflow Batch\nApache Beam\nETL + Calidad]
-        SPARK[Dataproc Spark\nPySpark\nAnálisis Distribuido]
+        DF_B[Dataflow Batch Apache Beam ETL + Calidad]
+        SPARK[Dataproc Spark PySpark Análisis Distribuido]
     end
 
     subgraph BQ["BigQuery"]
-        RAW_BQ[lumina_raw\nTablas de staging]
-        CURATED[lumina_curated\nDatos limpios y enriquecidos]
-        REPORTING[lumina_reporting\nAggregations para BI]
+        RAW_BQ[lumina_raw Tablas de staging]
+        CURATED[lumina_curated Datos limpios y enriquecidos]
+        REPORTING[lumina_reporting Aggregations para BI]
     end
 
-    LEGACY & MARKET & ATM_LOG -->|"Cloud Storage Transfer\n/ custom scripts"| RAW
+    LEGACY & MARKET & ATM_LOG -->|"Cloud Storage Transfer / custom scripts"| RAW
     RAW -->|"Dataflow Lee"| DF_B
     DF_B -->|"Limpieza + Validación"| RAW_BQ
     DF_B -->|"Parquet Comprimido"| STAGE
     STAGE -->|"Spark Lee"| SPARK
-    SPARK -->|"Risk Profiles\n+ Aggregations"| CURATED
-    RAW_BQ -->|"SQL Views\nDataform"| CURATED
+    SPARK -->|"Risk Profiles + Aggregations"| CURATED
+    RAW_BQ -->|"SQL Views Dataform"| CURATED
     CURATED -->|"SQL Aggregations"| REPORTING
 ```
 
@@ -308,23 +308,23 @@ erDiagram
 ```mermaid
 flowchart TD
     subgraph SEC["🔐 Capas de Seguridad"]
-        IAM["Cloud IAM\nRoles granulares por equipo:\n• data-engineers\n• data-analysts\n• risk-team\n• fraud-ops"]
-        VPC["VPC Service Controls\nPerímetro de seguridad:\nBigQuery + GCS + Pub/Sub\nsin acceso desde internet"]
-        CMEK["CMEK\nCustomer-Managed Encryption Keys\nCloud KMS para datos PII"]
-        DLP["Cloud DLP\nDetección y enmascaramiento\nautomático de PII\n(DNI, tarjetas, cuentas)"]
+        IAM["Cloud IAM Roles granulares por equipo: • data-engineers • data-analysts • risk-team • fraud-ops"]
+        VPC["VPC Service Controls Perímetro de seguridad: BigQuery + GCS + Pub/Sub sin acceso desde internet"]
+        CMEK["CMEK Customer-Managed Encryption Keys Cloud KMS para datos PII"]
+        DLP["Cloud DLP Detección y enmascaramiento automático de PII (DNI, tarjetas, cuentas)"]
     end
 
     subgraph GOV["📋 Gobernanza de Datos"]
-        DATAPLEX["Dataplex\nCatálogo de datos\nLinaje automático\nPolíticas de calidad"]
-        DATAFORM["Dataform\nVersionado de transformaciones SQL\nCI/CD de pipelines analíticos\nDocumentación de modelos"]
-        AUDIT["Cloud Audit Logs\nRegistro inmutable de todos\nlos accesos a datos"]
+        DATAPLEX["Dataplex Catálogo de datos Linaje automático Políticas de calidad"]
+        DATAFORM["Dataform Versionado de transformaciones SQL CI/CD de pipelines analíticos Documentación de modelos"]
+        AUDIT["Cloud Audit Logs Registro inmutable de todos los accesos a datos"]
     end
 
     subgraph CLASSIFY["🏷️ Clasificación de Datos"]
-        PII["PII Sensible\nDNI, nombre, dirección\n→ Enmascarado + acceso restringido"]
-        FINANCIAL["Financiero Confidencial\nSaldos, movimientos\n→ Cifrado CMEK + rol específico"]
-        OPERATIONAL["Operativo Interno\nMétricas, logs de sistema\n→ Acceso estándar por equipo"]
-        PUBLIC["Referencia Pública\nMercados, calendarios\n→ Sin restricción"]
+        PII["PII Sensible DNI, nombre, dirección → Enmascarado + acceso restringido"]
+        FINANCIAL["Financiero Confidencial Saldos, movimientos → Cifrado CMEK + rol específico"]
+        OPERATIONAL["Operativo Interno Métricas, logs de sistema → Acceso estándar por equipo"]
+        PUBLIC["Referencia Pública Mercados, calendarios → Sin restricción"]
     end
 
     IAM --> DATAPLEX
@@ -342,29 +342,29 @@ flowchart TD
 ```mermaid
 flowchart LR
     subgraph INPUT["Entrada"]
-        TX[Transacción Nueva\nJSON vía Pub/Sub]
+        TX[Transacción Nueva JSON vía Pub/Sub]
     end
 
     subgraph ENRICH["Enriquecimiento"]
-        PROFILE[Perfil de Cliente\nRisk Score + Historial\ndesde BigQuery read]
-        GEO[Geolocalización\nVerificar ubicación\nvs. última transacción]
+        PROFILE[Perfil de Cliente Risk Score + Historial desde BigQuery read]
+        GEO[Geolocalización Verificar ubicación vs. última transacción]
     end
 
     subgraph RULES["Motor de Reglas"]
-        R1{Monto > 3x\npromedio histórico?}
-        R2{Ubicación\nImposible en tiempo?}
-        R3{> 5 transacciones\nen 60 seg?}
-        R4{País de alto\nriesgo?}
+        R1{Monto > 3x promedio histórico?}
+        R2{Ubicación Imposible en tiempo?}
+        R3{> 5 transacciones en 60 seg?}
+        R4{País de alto riesgo?}
     end
 
     subgraph SCORE["Scoring"]
-        FRAUD_SCORE[Calcular Fraud Score\n0.0 - 1.0\nSuma ponderada de reglas]
+        FRAUD_SCORE[Calcular Fraud Score 0.0 - 1.0 Suma ponderada de reglas]
     end
 
     subgraph ACTION["Acción"]
-        APPROVE[✅ Aprobar\nscore < 0.3]
-        REVIEW[⚠️ Revisión\n0.3 ≤ score < 0.7]
-        BLOCK[🚫 Bloquear\nscore ≥ 0.7]
+        APPROVE[✅ Aprobar score < 0.3]
+        REVIEW[⚠️ Revisión 0.3 ≤ score < 0.7]
+        BLOCK[🚫 Bloquear score ≥ 0.7]
     end
 
     TX --> PROFILE
@@ -381,22 +381,22 @@ flowchart LR
 ```mermaid
 flowchart TB
     subgraph INPUTS["Entradas Diarias (Batch)"]
-        HIST[Histórico de\nRetiros por ATM]
-        MARKET[Tasas Interbancarias\ny Tipo de Cambio]
-        CAL[Calendario de Eventos\nFestivos, Ferias, Quincenas]
-        TREND[Tendencias de\nMovilidad y Gasto]
+        HIST[Histórico de Retiros por ATM]
+        MARKET[Tasas Interbancarias y Tipo de Cambio]
+        CAL[Calendario de Eventos Festivos, Ferias, Quincenas]
+        TREND[Tendencias de Movilidad y Gasto]
     end
 
     subgraph PROC["Procesamiento Dataproc / Spark"]
-        FEAT[Feature Engineering\nSpark MLlib]
-        MODEL[Modelo Predictivo\nRegresión / Gradient Boosting]
-        PREDICT[Predicción de Demanda\npor ATM / Distrito]
+        FEAT[Feature Engineering Spark MLlib]
+        MODEL[Modelo Predictivo Regresión / Gradient Boosting]
+        PREDICT[Predicción de Demanda por ATM / Distrito]
     end
 
     subgraph OUTPUT["Salidas"]
-        PLAN[Plan Diario de Liquidez\nBigQuery lumina_reporting.liquidity_plan]
-        ALERT[Alertas de ATMs\ncon riesgo de quedarse sin efectivo]
-        DASHBOARD[Dashboard Operativo\nLooker Studio]
+        PLAN[Plan Diario de Liquidez BigQuery lumina_reporting.liquidity_plan]
+        ALERT[Alertas de ATMs con riesgo de quedarse sin efectivo]
+        DASHBOARD[Dashboard Operativo Looker Studio]
     end
 
     HIST & MARKET & CAL & TREND --> FEAT

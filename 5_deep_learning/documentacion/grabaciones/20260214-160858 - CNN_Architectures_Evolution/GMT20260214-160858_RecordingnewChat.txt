@@ -1,0 +1,12 @@
+00:41:26	Victor Flores Benites:	https://drive.google.com/drive/folders/1k8YNj0m4Kp5NrPsSBPFWq4qjQgJyBi9Z?usp=sharing
+00:42:39	Amador Zuñiga:	pytorch
+00:42:40	Walter:	pytorch recuerd
+00:42:42	Jorge Luis Palacios Chilo:	Pytorch
+01:05:39	Jorge Luis Palacios Chilo:	2
+01:05:40	rg:	w
+01:05:41	Paúl Sánchez:	2
+01:05:41	rg:	2
+01:38:01	Jorge Luis Palacios Chilo:	vanishing gradient
+01:42:00	Brajan Nieto:	si
+03:03:16	Victor Flores Benites:	https://drive.google.com/drive/folders/1k8YNj0m4Kp5NrPsSBPFWq4qjQgJyBi9Z?usp=drive_link
+03:03:42	Kelvin Palomino Huallanca:	Gracias

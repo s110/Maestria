@@ -111,7 +111,7 @@ def generate_transaction(client: dict, base_time: datetime) -> dict:
     lon = round(base_lon + random.uniform(-0.05, 0.05), 6)
 
     balance = float(client.get("balance", 500))
-    amount = round(random.lognormal(mean=4.5, sigma=1.2), 2)  # Distribución log-normal realista
+    amount = round(random.lognormvariate(mu=4.5, sigma=1.2), 2)  # Distribución log-normal realista
     amount = min(amount, balance * 1.05)  # No puede exceder mucho el saldo
     amount = max(0.1, amount)
 

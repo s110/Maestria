@@ -1,0 +1,4670 @@
+WEBVTT
+
+1
+00:00:01.540 --> 00:00:05.330
+Escuela de Posgrado: Ahora se está grabando. Gracias por avisarme
+
+2
+00:00:06.400 --> 00:00:10.070
+Escuela de Posgrado: a ver. Les voy a compartir también. Por por qué no
+
+3
+00:00:13.550 --> 00:00:14.820
+Escuela de Posgrado: tiene un telescopio
+
+4
+00:00:26.120 --> 00:00:28.170
+Escuela de Posgrado: es compartir el dinero en equipo.
+
+5
+00:00:29.960 --> 00:00:30.640
+Escuela de Posgrado: Ohh.
+
+6
+00:00:43.040 --> 00:00:47.610
+Escuela de Posgrado: el selecciono.
+
+7
+00:00:47.830 --> 00:00:57.400
+Escuela de Posgrado: Te puedes subir con 1 de los, Claro, técnicamente sería como si estuviera solo examen
+
+8
+00:00:59.450 --> 00:01:09.720
+Escuela de Posgrado: un solo miembro, 2 miembros, Samasumo 3. Y también me pensó que tus prácticas musical son más que nada porque ya están en una vía de comunicación.
+
+9
+00:01:10.130 --> 00:01:11.919
+Escuela de Posgrado: entonces va a ser un poco
+
+10
+00:01:12.230 --> 00:01:15.429
+Escuela de Posgrado: de haber complicado para algunos este tener otros grupos diferentes.
+
+11
+00:01:17.380 --> 00:01:21.950
+Escuela de Posgrado: Bueno, el semáforo no.
+
+12
+00:01:22.130 --> 00:01:29.800
+Escuela de Posgrado: De hecho, él está solo. Sí, En el hotel
+
+13
+00:01:30.390 --> 00:01:46.940
+Escuela de Posgrado: voy a contar una lista de todos. Los fueron distintos para que gracias.
+
+14
+00:01:47.080 --> 00:01:56.090
+Escuela de Posgrado: Bueno, cualquier cosa. También me puedo escribir por Whatsapp, ya sea que tenemos el grupo.
+
+15
+00:01:56.370 --> 00:02:02.540
+Escuela de Posgrado: también les voy a dar una lista de opciones con los con la rúbrica para
+
+16
+00:02:04.210 --> 00:02:07.820
+Escuela de Posgrado: para que Uds. Tengan una idea. Además, me funciona de hablar.
+
+17
+00:02:07.930 --> 00:02:08.810
+Escuela de Posgrado: Bueno.
+
+18
+00:02:09.030 --> 00:02:26.129
+Escuela de Posgrado: vamos a continuar con lo que nos habíamos quedado la clase pasada. Se puede convertirse iniciado con Transformers. ¿en qué consistía el trabajo? Ah, sí, a ver lo lo que tienen que hacer en la tabla es inscribir a su grupo y seleccionar un pail.
+
+19
+00:02:26.210 --> 00:02:32.770
+Escuela de Posgrado: Este efecto, que ustedes elijan que debe ser único, o sea, Si alguien ya limpió el 5, por ejemplo, ya no puede ser el 5.
+
+20
+00:02:32.970 --> 00:02:48.740
+Escuela de Posgrado: Ok, entonces tienes que descartar dependiendo lo que tienen que hacer. Es, evidentemente, leer el paper, entenderlo muy bien, implementarlo. Y les voy a pasar una base de datos que van a ser el transformadores.
+
+21
+00:02:48.910 --> 00:02:59.670
+Escuela de Posgrado: Y bueno, vamos a utilizar ese ideal para hacer una predicción. Mira 2 variables. Por tanto.
+
+22
+00:03:00.010 --> 00:03:02.109
+Escuela de Posgrado: les voy a compartir la base de datos
+
+23
+00:03:02.600 --> 00:03:07.310
+Escuela de Posgrado: Vale, Entonces, para la fecha que les puse por acá
+
+24
+00:03:07.560 --> 00:03:12.750
+Escuela de Posgrado: un día antes me envían un video explicando lo que han hecho.
+
+25
+00:03:12.830 --> 00:03:18.700
+Escuela de Posgrado: No tiene que ser tan rica para que espere esa parte.
+
+26
+00:03:18.770 --> 00:03:35.149
+Escuela de Posgrado: Pero un día antes me envían un video más o menos, que es como una especie de exposición, no de lo que han hecho. Y el día sábado yo les hago preguntas Entonces, Parte de su nota va a ser lo del video, su implementación, lo que es código, y todo eso. Y parte de la nota también va a ser las preguntas.
+
+27
+00:03:35.460 --> 00:03:44.329
+Escuela de Posgrado: Vale, eso. Vamos a hacer por lo menos en el 1, el 2, tal vez en el 3 y 4. Podríamos ser un poco más prácticos, porque vamos a ver con
+
+28
+00:03:44.530 --> 00:03:55.209
+Escuela de Posgrado: generativos. De ahí vamos a ver más adelante como trabajamos eso porque también van a tener este Capson: imagino, en sus días, las últimas semanas.
+
+29
+00:03:56.280 --> 00:04:00.860
+Escuela de Posgrado: Sí, buenas tarifas también.
+
+30
+00:04:01.030 --> 00:04:08.589
+Escuela de Posgrado: Los 2. Primeros. Sí, Sí, o sí, quiero. Se lo conté. Y los últimos, sabes, un poco más
+
+31
+00:04:09.540 --> 00:04:12.730
+Escuela de Posgrado: de todos modos. Va a tener su grado de complejidad, pero está, pero risas.
+
+32
+00:04:12.970 --> 00:04:14.390
+Escuela de Posgrado: No va a ser tanto así?
+
+33
+00:04:14.680 --> 00:04:22.959
+Escuela de Posgrado: Bueno, volviendo a lo que estabas inventando clases, estamos avanzando ya transformers, se acuerdan el mecanismo de atención de lo que hablamos en mecanismo de atención.
+
+34
+00:04:27.720 --> 00:04:29.319
+Escuela de Posgrado: no puedes acceder todavía.
+
+35
+00:04:29.570 --> 00:04:35.370
+Escuela de Posgrado: No es que yo no estoy con eso. No claro, tiene interés como un cuento. De
+
+36
+00:04:37.020 --> 00:04:40.280
+Escuela de Posgrado: bueno se acuerdan del mecanismo de atención.
+
+37
+00:04:40.800 --> 00:04:44.559
+Escuela de Posgrado: ¿por qué se refiere con atención lo que hemos visto hoy, la clase pasada?
+
+38
+00:04:49.780 --> 00:04:53.980
+Escuela de Posgrado: Bueno, ya hemos visto que la inspiración venía de hacer. S T. M, Esto
+
+39
+00:04:54.170 --> 00:05:01.670
+Escuela de Posgrado: terminaba siendo como una solución a un problema que tenía el Stm con trabajar consecuencias largas.
+
+40
+00:05:20.770 --> 00:05:22.799
+Escuela de Posgrado: Strans: o.
+
+41
+00:05:38.080 --> 00:05:52.899
+Escuela de Posgrado: bueno, les mencionaba que justamente lo que insertar teníamos atención. Buscábamos información de lo que estamos generando en la secuencia dental, No, por eso lo que hacíamos era guardar este los las
+
+42
+00:05:52.900 --> 00:05:59.659
+Escuela de Posgrado: y la forma de averiguar donde está la información que nosotros queríamos Era mediante un producto puro.
+
+43
+00:05:59.750 --> 00:06:04.600
+Escuela de Posgrado: los productos juntos, producto juntos. Y al final generamos una sport no
+
+44
+00:06:04.700 --> 00:06:15.639
+Escuela de Posgrado: score. Pasaba por un softmax que lo que básicamente está haciendo es una clasificación de todos los elementos en la secuencia, cuales son los más relevantes.
+
+45
+00:06:15.950 --> 00:06:24.409
+Escuela de Posgrado: En, por cierto, aquí. Ya les estoy mostrando que lo estoy trabajando con Softmax, pero este
+
+46
+00:06:24.760 --> 00:06:37.610
+Escuela de Posgrado: probando, cuál es la mejor configuración. Había algunas configuraciones que había con su móvil. Y, bueno, la que funcionara por terminación de 5.
+
+47
+00:06:38.250 --> 00:06:41.459
+Escuela de Posgrado: Por cierto, cuando ustedes hacen una.
+
+48
+00:06:41.600 --> 00:07:01.430
+Escuela de Posgrado: o sea, trabajo en los score songmas están haciendo que la selección o la activación de cualquier tipo de entrada dependa de las demás. En cambio, la es como una sedición como que cada 1 tiene una probabilidad independiente, no importa cuál es la activación de las obras. Este
+
+49
+00:07:01.500 --> 00:07:06.690
+Escuela de Posgrado: las horas, generalmente en cambio de software. Sí, es este compartir.
+
+50
+00:07:07.980 --> 00:07:17.700
+Escuela de Posgrado: Bueno, con esto generamos distribución a su familiar, no que son valores. ¿de
+
+51
+00:07:17.890 --> 00:07:23.899
+Escuela de Posgrado: qué tan es probable que ese elemento de la experiencia va a ser relevante, y eso es lo que vamos a multiplicar.
+
+52
+00:07:25.020 --> 00:07:31.589
+Escuela de Posgrado: Bueno, mucho ese valor que tenemos acá multiplicamos con las apreciaciones de pagos.
+
+53
+00:07:31.700 --> 00:07:36.569
+Escuela de Posgrado: luego los humanos. Y esto es un mecanismo de atención para el sistema.
+
+54
+00:07:36.840 --> 00:07:43.369
+Escuela de Posgrado: Bueno, años después, de hecho, 3 años después.
+
+55
+00:07:43.620 --> 00:07:54.580
+Escuela de Posgrado: Bueno, evidentemente me ha pasado varios papers y se vieron varios rituales, como les mencionaba, haces años dando mucho sobre
+
+56
+00:07:54.780 --> 00:08:01.050
+Escuela de Posgrado: cuál es el mecanismo de atención más adecuado, por ejemplo, cambiar el software, cosas y así.
+
+57
+00:08:01.520 --> 00:08:11.859
+Escuela de Posgrado: Pero también estaba notando que el papel del mecanismo de atención era muy alto. Entonces, más igual en Google
+
+58
+00:08:12.610 --> 00:08:24.739
+Escuela de Posgrado: probaron quitar por completo las L C, P. M y solamente centrándose en el metalismo de atención. Y bueno, funcionó bastante bien. Y eso es lo que es. Por eso me llamo la atención, soy you neex.
+
+59
+00:08:25.150 --> 00:08:27.310
+Escuela de Posgrado: y bueno es en arquitectura transforma.
+
+60
+00:08:27.520 --> 00:08:30.390
+Escuela de Posgrado: Suponen que les están enseñando ideas pasadas
+
+61
+00:08:42.200 --> 00:08:47.169
+Escuela de Posgrado: en ese piso mucho ruido.
+
+62
+00:08:47.770 --> 00:08:55.679
+Escuela de Posgrado: Bueno, ese es el mecanismo transformer Solamente le estaba yo introduciendo cada 1 de las Farc en la parte
+
+63
+00:08:56.210 --> 00:08:57.639
+Escuela de Posgrado: de de
+
+64
+00:09:00.060 --> 00:09:14.939
+Escuela de Posgrado: igual que el sistema hace 4, la parte izquierda termina siendo el de codo. Ok. Entonces aquí lo que vamos a hacer es un procesamiento puramente de la entrada.
+
+65
+00:09:14.940 --> 00:09:22.070
+Escuela de Posgrado: Al igual que hemos hecho las series Tm: generamos representaciones que era lucir en 6 dedicada al elemento de la secuencia
+
+66
+00:09:22.190 --> 00:09:34.129
+Escuela de Posgrado: y se va a utilizar el decoder para generar la respuesta, generar traducción. Eso también va a funcionar congresivo. Se pueden modelos superregresivos.
+
+67
+00:09:35.900 --> 00:09:38.110
+Escuela de Posgrado: autorregresión. Se fueron.
+
+68
+00:09:41.110 --> 00:09:42.580
+Brajan Nieto: Como las recurrentes no.
+
+69
+00:09:43.560 --> 00:09:47.090
+Escuela de Posgrado: Claro para recurrentes. Hicimos progresivos, no.
+
+70
+00:09:47.310 --> 00:09:48.670
+Amador Zuñiga: La secuencia importante.
+
+71
+00:09:49.690 --> 00:09:56.089
+Escuela de Posgrado: Ajá Lo que íbamos haciendo era en cada vibración a ver bien.
+
+72
+00:10:01.050 --> 00:10:08.570
+Escuela de Posgrado: En cada interacción, íbamos a hacer una predicción, y esa predicción iba a retroalimentar en la siguiente secuencia.
+
+73
+00:10:08.680 --> 00:10:09.520
+Escuela de Posgrado: Ok. Gracias.
+
+74
+00:10:09.870 --> 00:10:13.469
+Escuela de Posgrado: Entonces eso terminaba siendo como un autocompletador de test.
+
+75
+00:10:13.710 --> 00:10:22.690
+Escuela de Posgrado: escribió una palabra y que iba a tener texto en forma limitada, claro hasta que genere un token de parada. Por ejemplo, parece hasta que llegó de artes.
+
+76
+00:10:23.670 --> 00:10:34.179
+Escuela de Posgrado: De hecho, antes así es como se trabajaba artísticamente. Lo podemos del igual con el Stm: ser. Todos terminan siendo revulsivo, Pero así trabajaba
+
+77
+00:10:34.310 --> 00:10:40.549
+Escuela de Posgrado: yo. Cuando llegué a la universidad, le comenté esto. A mí me me impidieron hacer eso de acá con esto de Whatsapp
+
+78
+00:10:40.990 --> 00:10:49.080
+Escuela de Posgrado: en Whatsapp. Usted puede disparar las conversaciones que se lo pueden colocar en una Lst para que entreguen y hablen con usted
+
+79
+00:10:49.700 --> 00:10:55.640
+Escuela de Posgrado: y bueno, era una que se hizo bastante curioso, sobre todo cuando
+
+80
+00:10:56.450 --> 00:11:06.530
+Escuela de Posgrado: a ver, se acuerdan que la Lctn tiene varios mecanismos de memoria. ¿cuál es compuesto para seleccionar cuánto de la memoria C. D. M. Y Lctn va a ser usada
+
+81
+00:11:06.720 --> 00:11:09.949
+Escuela de Posgrado: para predecir el siguiente coeficiente coeficiente, Lo que siente todo.
+
+82
+00:11:10.070 --> 00:11:23.429
+Escuela de Posgrado: Bueno, en nuestro caso, habíamos entrenado, pero no hemos entrenado bien. Un criterio de parada criterio de parada. Quiere decir que hay un token especial diciendo: mira, hasta aquí se va a pagar, se va a acabar la conversación o algo así,
+
+83
+00:11:23.790 --> 00:11:27.430
+Escuela de Posgrado: debe predecir eso, no cuando terminar de generar tesis.
+
+84
+00:11:27.580 --> 00:11:43.969
+Escuela de Posgrado: En nuestro caso, no habíamos puesto eso. Entonces el texto generaba de forma infinita, pero en un punto se saturaba, significa que seguramente lo que pasaba era que el S. T. M había sobreactivado este el mecanismo de guardado de memoria.
+
+85
+00:11:44.080 --> 00:11:47.359
+Escuela de Posgrado: Y bueno, les pasa memoria. Si bien.
+
+86
+00:11:47.620 --> 00:12:02.030
+Escuela de Posgrado: digamos, había colapsado de un solo concepto, y eso lo que hacía era generar siempre mismo. Para la respuesta clásica, era un texto más o menos coherente al inicio como 6 palabras, 40 s. Y luego la misma palabra repetida de forma ilimitada.
+
+87
+00:12:02.650 --> 00:12:07.570
+Escuela de Posgrado: Bueno, eso era en esos en esos tiempos ¿vale?
+
+88
+00:12:09.010 --> 00:12:16.440
+Escuela de Posgrado: Este es un modelo regresivo y también es lo que se utiliza en nuestras formas. Lo hace la base de hoy. Vamos a verlo más adelante.
+
+89
+00:12:16.770 --> 00:12:28.099
+Escuela de Posgrado: Vale, Bueno, también les mencionaba que todo esto va a funcionar mediante el mecanismo del producto. Y hemos estado viendo en la sala.
+
+90
+00:12:28.390 --> 00:12:33.639
+Escuela de Posgrado: Solamente tentí yo utilizar las señales, ¿no? Y puede intimarlo.
+
+91
+00:12:33.740 --> 00:12:36.109
+Escuela de Posgrado: Lograron ver el video que les impartí
+
+92
+00:12:39.490 --> 00:12:44.320
+Escuela de Posgrado: entraron allí, te estás demasiados días.
+
+93
+00:12:44.880 --> 00:12:50.899
+Escuela de Posgrado: Los ya son son vídeos muy bonitos
+
+94
+00:12:51.390 --> 00:12:53.789
+Escuela de Posgrado: o para verlas, un ratito, mientras que desayunan
+
+95
+00:12:54.340 --> 00:13:07.369
+Escuela de Posgrado: en esos vídeos, este curso hacen una introducción, me parece bastante gráfica de de como son mecanismos de atención. Creo que les puede ayudar un poco para entender cómo funciona todo eso
+
+96
+00:13:07.930 --> 00:13:10.630
+Escuela de Posgrado: sí que
+
+97
+00:13:10.770 --> 00:13:17.960
+Escuela de Posgrado: a ver para que se entienda un poco la idea, vamos a considerar, por ejemplo, esta secuencia. Ok.
+
+98
+00:13:18.590 --> 00:13:26.909
+Escuela de Posgrado: Ah, por cierto, ese mecanismo se llama el mecanismo que vamos a ver al inicio aquí. Se llama ser patente
+
+99
+00:13:27.120 --> 00:13:33.840
+Escuela de Posgrado: auto atención auto atención porque se va hacia la atención a sí mismo como dice el nombre.
+
+100
+00:13:34.010 --> 00:13:40.209
+Escuela de Posgrado: entonces sobre la misma secuencia, la misma secuencia del texto. Vamos a aplicar el mismo mecanismo de atención.
+
+101
+00:13:40.450 --> 00:13:58.389
+Escuela de Posgrado: Eso quiere decir, Por ejemplo, aquí tenemos una frase de animal de libros escépticos. Toda esta frase de acá Ok, lo que vamos a hacer, auto atención sobre la misma frase va a buscar este cuáles son los elementos más importantes.
+
+102
+00:13:58.680 --> 00:14:02.940
+Escuela de Posgrado: Entonces frase, 1 baja atención sobre la frase, sí.
+
+103
+00:14:03.070 --> 00:14:08.930
+Escuela de Posgrado: Entonces lo que vamos a ver primero en el ecoder
+
+104
+00:14:09.210 --> 00:14:16.040
+Escuela de Posgrado: cada fase del empoder es tratar de mejorar la representación de cada 1 de los elementos.
+
+105
+00:14:18.970 --> 00:14:20.899
+Escuela de Posgrado: Por ejemplo.
+
+106
+00:14:24.710 --> 00:14:30.700
+Escuela de Posgrado: nosotros aquí tenemos unas palabras, serán 12 más o menos?
+
+107
+00:14:30.910 --> 00:14:32.370
+Escuela de Posgrado: Bueno, tenemos que ser tú.
+
+108
+00:14:33.370 --> 00:14:38.839
+Escuela de Posgrado: De sí sí son 12.
+
+109
+00:14:40.600 --> 00:14:45.329
+Escuela de Posgrado: Qué? Bueno, vamos a tener varios toques, no entre 2. ¿vale?
+
+110
+00:14:45.450 --> 00:14:50.639
+Escuela de Posgrado: Y luego vamos a ver cómo vamos a vectorizar esto. De hecho, se va a tener una.
+
+111
+00:14:52.050 --> 00:14:54.110
+Escuela de Posgrado: Bueno, una entrevista de tenis que
+
+112
+00:14:54.260 --> 00:15:01.229
+Escuela de Posgrado: luego lo vamos a hacer con cuando habíamos como se construye, pero todas nuestras palabras se van a topeizar.
+
+113
+00:15:01.360 --> 00:15:07.479
+Escuela de Posgrado: Pueden ver en este caso el concepto Token expresa un elemento mínimo de
+
+114
+00:15:07.620 --> 00:15:16.330
+Escuela de Posgrado: qué significado. Por ejemplo, vidents Este Esa t es de negación, entonces eso lo han organizado como algo superado, ¿no?
+
+115
+00:15:16.350 --> 00:15:30.049
+Escuela de Posgrado: Y este esa fe al final también tiene un significado. Por eso la separaba. Ok, es justamente porque eso significa, bueno, cada 1 de esos tokens. Vamos a convertirlos en Baker. Por ahora no nos interesa como
+
+116
+00:15:30.360 --> 00:15:32.990
+Escuela de Posgrado: básicamente va a ser una tabla donde vamos a buscar. Pero
+
+117
+00:15:34.610 --> 00:15:45.830
+Escuela de Posgrado: por ahora solamente sepan que lo va a convertir en mejores. Ok, esos vectores van a pasar por el mecanismo de transformer que todos. Ok. Y como resultado, vamos a tener
+
+118
+00:15:46.200 --> 00:15:57.100
+Escuela de Posgrado: todos esos tokens ya procesados, como que un nivel de abstracción, un primer nivel de abstracción, B z 4
+
+119
+00:15:58.050 --> 00:15:59.210
+Escuela de Posgrado: y soldados
+
+120
+00:15:59.330 --> 00:16:13.020
+Escuela de Posgrado: ¿vale? Entonces todos estos han sido procesados. Y aquí están actualizados por acción ganado. La primera interacción, lo que gana en cada etapa de interacción del transformer es un contexto con respecto a todo el contenido.
+
+121
+00:16:13.200 --> 00:16:18.790
+Escuela de Posgrado: ¿vale? Entonces, por ejemplo, la palabra animal. Ok.
+
+122
+00:16:18.890 --> 00:16:26.870
+Escuela de Posgrado: cuando llega aquí, simplemente la palabra animal como una definición de diccionarios, pues nada.
+
+123
+00:16:27.060 --> 00:16:33.800
+Escuela de Posgrado: pero este luego una primera leída mira, es un animal que no está haciendo algo.
+
+124
+00:16:34.720 --> 00:16:40.280
+Escuela de Posgrado: entonces ya no solamente es un animal genérico, sino que está pasando algo con el animal, no
+
+125
+00:16:40.730 --> 00:16:51.709
+Escuela de Posgrado: entonces en cada en cada paso del procesamiento de Transformers, vamos a ser cada vez más complejos, esa representación, entendiendo mucho mejor ese contexto en particular. Vale.
+
+126
+00:16:53.910 --> 00:16:57.060
+Escuela de Posgrado: entonces, otra vez, eso va a procesar.
+
+127
+00:16:57.570 --> 00:17:01.280
+Escuela de Posgrado: Y vamos a tener otra vez una representación aún más compleja
+
+128
+00:17:01.490 --> 00:17:06.630
+Escuela de Posgrado: en la siguiente etapa de transformar. Y va a seguir así. De así. En cada una de las etapas
+
+129
+00:17:07.270 --> 00:17:09.770
+Escuela de Posgrado: es lo que va a suceder en el transformer.
+
+130
+00:17:09.880 --> 00:17:14.799
+Escuela de Posgrado: Entonces, para entender el token, 1,
+
+131
+00:17:15.240 --> 00:17:20.239
+Escuela de Posgrado: lo que vamos a hacer es preguntar a todos los tokens si tiene información complementaria
+
+132
+00:17:20.760 --> 00:17:23.490
+Escuela de Posgrado: a todos, incluido así Miski
+
+133
+00:17:24.430 --> 00:17:42.430
+Escuela de Posgrado: Ok. Entonces este para entender, por ejemplo, el token 2 es animado para entender el token animal. Le voy a preguntar a todos. Da tiene algo que darme como información para animal, realmente no. Tanto no animal en sí mismos, dicen sí, no es el definición de animal
+
+134
+00:17:42.740 --> 00:17:58.200
+Escuela de Posgrado: Cross Street está dando una acción, ¿no? Tal vez un poco de información. Me está dando ese secuencia. ¿no? Entonces has ido a preguntar a todos: ¿Quién tiene información que me es útil para mejorar nuestra situación? Bien.
+
+135
+00:17:59.860 --> 00:18:04.089
+Escuela de Posgrado: ahora algo que podría ser, es
+
+136
+00:18:04.730 --> 00:18:06.829
+Escuela de Posgrado: algo que se podría pensar en esto
+
+137
+00:18:06.930 --> 00:18:16.810
+Escuela de Posgrado: es que tal vez no es tan relevante hacer ese producto junto consigo mismo, porque sí o sí va a estar relacionado, de hecho, intuitivamente, podríamos pensar eso?
+
+138
+00:18:17.310 --> 00:18:27.149
+Escuela de Posgrado: Probl no, no, perdón animal consigo mismo. Tiene en sí mismo una significada.
+
+139
+00:18:27.320 --> 00:18:36.740
+Escuela de Posgrado: Sin embargo, vamos a ver que hay algunas palabras que en sí mismos no tienen ningún significado y más bien depende de su contexto. Ok, Por ejemplo, la palabra kits.
+
+140
+00:18:37.180 --> 00:18:43.950
+Escuela de Posgrado: o Sea It no significa nada. No es la traducción que hemos hecho. La película de Bilkien
+
+141
+00:18:44.120 --> 00:18:45.390
+Escuela de Posgrado: Bueno, y no?
+
+142
+00:18:45.570 --> 00:18:49.030
+Escuela de Posgrado: Ok, el significado de Ift. ¿dónde está
+
+143
+00:18:51.670 --> 00:19:01.569
+Escuela de Posgrado: cierto entonces? Supuestamente pueden ver ahí que está resaltando la palabra está en forma de, color, bueno, código de color, oro.
+
+144
+00:19:02.630 --> 00:19:05.239
+Escuela de Posgrado: intensidad del color.
+
+145
+00:19:05.350 --> 00:19:16.779
+Escuela de Posgrado: las palabras, este intensidad del color, dado el valor, atención. Y pueden ver qué animal justamente es valor alto. Entonces ese Its, el significado
+
+146
+00:19:16.990 --> 00:19:25.449
+Escuela de Posgrado: es justamente el proceso de ánimas. Entonces ese token corresponde ahí en la interacción, diciendo, ah, mira. Me refiero a un ánimas, ¿no?
+
+147
+00:19:25.960 --> 00:19:33.760
+Escuela de Posgrado: Ok. Y luego va a seguir procesando. Y va a ser un poco más el contexto profesor y al inicio. Como
+
+148
+00:19:34.230 --> 00:19:41.140
+Escuela de Posgrado: o sea, esto determina, o sabe, el significado o su relación con otro actor.
+
+149
+00:19:41.510 --> 00:19:48.820
+Escuela de Posgrado: En la primera interacción vamos a tener tokens base, digamos, bueno, ahorita. No les estoy dando.
+
+150
+00:19:48.930 --> 00:19:58.960
+Escuela de Posgrado: No les estoy explicando el proceso de convertirlo esto en lectores. Asocian palabras en lectores. Y como les menciono, en realidad es una tabla de búsqueda.
+
+151
+00:19:59.230 --> 00:20:08.940
+Escuela de Posgrado: pero eso lo vamos a ver un poco más adelante, pero pueden verlo como si fueran definiciones de diccionarios. Ok, entonces vamos a tener vectores que van a tener como definición en el diccionario.
+
+152
+00:20:09.050 --> 00:20:12.209
+Escuela de Posgrado: Entonces aquí Dani me va diciendo, animal, Bueno, es
+
+153
+00:20:13.020 --> 00:20:18.100
+Escuela de Posgrado: cómo definimos un animal, un ser vivo. No sé grande. Bueno, no solamente grande.
+
+154
+00:20:18.480 --> 00:20:32.709
+Escuela de Posgrado: Bueno, este todo eso está incluido en ese vector. Y lo que va a ayudar es cómo relacionarse unos con otros. Es como un concepto básico. Ok, es como si leyeran desde primera vez un libro
+
+155
+00:20:33.560 --> 00:20:40.250
+Escuela de Posgrado: Bueno, antes, antes, cuando le leíamos libros, recuerden que teníamos que usar nuestra nuestro diccionario, no al costado.
+
+156
+00:20:40.600 --> 00:20:51.789
+Escuela de Posgrado: Claro, entonces está leyendo el libro y dice: ah, mira estas palabras, no conozco el diccionario y lo trato de relacionar con los demás, ¿no? Y a partir del contexto. Termino entendiendo que es lo que pasando allí esa obra.
+
+157
+00:20:52.550 --> 00:21:02.890
+Escuela de Posgrado: y cuando se llevan operando cada palabra, una lista escolar, un beso
+
+158
+00:21:03.420 --> 00:21:17.879
+Escuela de Posgrado: que si lo podemos interpretar como peso y justo a eso, vamos a ir en un momento, Pero claro, ahorita. Lo estamos viendo como que qué palabras se relacionan unas con otras no. Ok. Y ese diccionario que mencionas
+
+159
+00:21:18.150 --> 00:21:25.249
+Escuela de Posgrado: que define cada palabra es en base a este contexto en general, en general, o sea, a ver.
+
+160
+00:21:26.610 --> 00:21:38.220
+Escuela de Posgrado: Ya les voy explicando Lo que pasa es que el punto alto transformer junto al Lnm no te sirve.
+
+161
+00:21:38.380 --> 00:21:44.180
+Escuela de Posgrado: Vamos a tener una tabla, y vamos a tener un I D y un vector.
+
+162
+00:21:44.820 --> 00:22:00.100
+Escuela de Posgrado: Ok, entonces cada una de estas palabras corresponden a un aire en específico. Por ejemplo, mi sociedad, 1 002, si es o sea 953. Entonces lo que para esta palabra usa en la posición 2, 953.
+
+163
+00:22:00.630 --> 00:22:02.960
+Escuela de Posgrado: Y va a retornar ese vector de acá
+
+164
+00:22:03.790 --> 00:22:06.359
+Escuela de Posgrado: ese vector es lo que va a entrar aquí.
+
+165
+00:22:06.580 --> 00:22:11.250
+Escuela de Posgrado: ¿vale? Ahora, esto sucede solamente en la entrada de transforming.
+
+166
+00:22:12.570 --> 00:22:19.470
+Escuela de Posgrado: Aquí pueden ver aquí, Podéis ver, escribir. Ok.
+
+167
+00:22:23.450 --> 00:22:32.770
+Escuela de Posgrado: este. Aquí van a recibir una secuencia de vectores que corresponden a esos vectores que hemos obtenido debido a los silbo y
+
+168
+00:22:33.170 --> 00:22:38.769
+Escuela de Posgrado: y es y los vectores que hemos reconocido ¿vale? Entonces solamente esa selección va a ser aquí.
+
+169
+00:22:39.120 --> 00:22:49.640
+Escuela de Posgrado: Entonces aquí está como la definición genérica de las palabras. Luego todo eso lo vamos a relacionar durante primera impresión. Vale Ahora, aquí cuando estemos generando los sockets.
+
+170
+00:22:49.730 --> 00:23:04.680
+Escuela de Posgrado: Aquí va a terminar siendo una clasificación del texto principal. La clasificación te va a decir, sigue stopping número 58. Entonces buscamos el vector 58, y lo robamos aquí. Pero esa es la parte que vamos a ver un poco más adelante.
+
+171
+00:23:05.150 --> 00:23:10.849
+Escuela de Posgrado: Es esta tabla ya es como que modelo, sí,
+
+172
+00:23:11.220 --> 00:23:29.680
+Escuela de Posgrado: solamente que en el entrenamiento que justo quería no complicarles un poco ahorita. Pero en el entrenamiento. Lo que vamos a hacer es, bueno, todo esto se entrena con bancro país, ¿cierto? Banco: lo que va a ser actualizar las redes. Por acá. Cierto, ya este va a países va a llegar a sobre esta tabla.
+
+173
+00:23:30.280 --> 00:23:35.900
+Escuela de Posgrado: Esta tabla se entrena junto al transporte Okay
+
+174
+00:23:36.040 --> 00:23:43.950
+Escuela de Posgrado: no han visto entrenamiento de embeles en sí mismo, no como tablas de este tipo, todavía sí.
+
+175
+00:23:44.080 --> 00:23:53.780
+Escuela de Posgrado: Sí. Bueno, este así es como se está entrenando ahora esto. Antes usaba Work provee o variantes. Este blog, lo que es el otro
+
+176
+00:23:54.610 --> 00:24:00.630
+Escuela de Posgrado: no Globe, habían varios este mecanismos de envejez de texto.
+
+177
+00:24:01.010 --> 00:24:11.820
+Escuela de Posgrado: Posiblemente los órganos convertían en victorias. Habían como eran técnicas. Aparte que lo utilizamos para importar los cuerpos, o Bueno, a la red neuronal que se hacen trabajando.
+
+178
+00:24:11.820 --> 00:24:25.480
+Escuela de Posgrado: pero actualmente lo que se hace es entregar esto junto a este mecanismo de transformer. Entonces esos 2 están sintonizados. Antes era un trasplante, no de un modelo a otro. Ya están completamente relacionados, termina siendo más conveniente.
+
+179
+00:24:25.930 --> 00:24:31.639
+Escuela de Posgrado: Okay, Bueno, se entiende la idea, no hasta ahora.
+
+180
+00:24:32.340 --> 00:24:36.609
+Escuela de Posgrado: ¿sí? Y trata de ser un poco detallado aquí, porque
+
+181
+00:24:37.230 --> 00:24:40.209
+Escuela de Posgrado: esa es la base de muchas cosas de lo que va a venir después.
+
+182
+00:24:41.430 --> 00:24:45.650
+Escuela de Posgrado: Algo no queda claro. Después va a hacerlo de Dios.
+
+183
+00:24:46.350 --> 00:24:49.060
+Escuela de Posgrado: Bueno, entonces aquí,
+
+184
+00:24:51.690 --> 00:25:00.460
+Escuela de Posgrado: bueno, aquí este justamente está relacionado con la palabra. Este animal no es que no está cruzando la
+
+185
+00:25:00.860 --> 00:25:03.180
+Escuela de Posgrado: la pizza porque está muy cansado, ¿no?
+
+186
+00:25:03.610 --> 00:25:09.450
+Escuela de Posgrado: Bueno, justamente relaciones que estamos haciendo mediante proyecto, punto que me hubiera gustado.
+
+187
+00:25:09.630 --> 00:25:17.200
+Escuela de Posgrado: Ok. Y bueno, en este nivel ya tenemos que definir 3 señales: el Fit Huery. Y vale
+
+188
+00:25:17.760 --> 00:25:21.930
+Escuela de Posgrado: separan eso en base de datos que significa.
+
+189
+00:25:26.550 --> 00:25:32.330
+Escuela de Posgrado: vamos a base de datos. Hit Bolivario: Sí, claro.
+
+190
+00:25:32.710 --> 00:25:36.169
+Escuela de Posgrado: Mhm: Bueno, ¿qué quiere decir un país
+
+191
+00:25:37.220 --> 00:25:43.629
+Escuela de Posgrado: claro. Quiero saberlo. Por ejemplo, Info dice: quiero saber quién soy yo, ¿no?
+
+192
+00:25:44.430 --> 00:25:46.739
+Escuela de Posgrado: Entonces mi concepto es: ¿quién soy el Neckon.
+
+193
+00:25:47.150 --> 00:25:54.080
+Escuela de Posgrado: Bueno, ese sería el cuento. El hit sería como una descripción de que información tiene
+
+194
+00:25:54.320 --> 00:26:00.649
+Escuela de Posgrado: y bueno, es como una información global del tiempo reciente y el valor es información real que nos puede aportar.
+
+195
+00:26:00.800 --> 00:26:05.210
+Escuela de Posgrado: Por ejemplo, imaginemos que prefiero, cuando sea.
+
+196
+00:26:05.950 --> 00:26:17.260
+Escuela de Posgrado: Miguel, por ejemplo, yo quiero conocer a mi vieja. No sé nada de inglés solamente sé que se llama Miguel como el token inicial.
+
+197
+00:26:17.910 --> 00:26:26.939
+Escuela de Posgrado: entonces cada 1 de ustedes tienen diferente tipo de información. Tal vez este disculpa rodolfo. Este
+
+198
+00:26:27.770 --> 00:26:33.139
+Escuela de Posgrado: tal vez trabaja en la misma empresa. No Yo soy de la empresa tal y él también es empresa de Time.
+
+199
+00:26:33.260 --> 00:26:42.630
+Escuela de Posgrado: Y tal vez a ver qué otras palabras en el cine lo conoces también yo
+
+200
+00:26:43.040 --> 00:26:50.129
+Escuela de Posgrado: estudiamos juntos. Tal vez el hijo en la universidad, ¿no? Entonces cada 1 tiene como una pequeña descripción, ¿no? Ok. Ahora.
+
+201
+00:26:50.210 --> 00:27:02.089
+Escuela de Posgrado: si hago producto, tal vez trabajan juntos. Entonces ese producto, punto va a ser alto. ¿no? Entonces, ahora le pregunto, le voy a dar más importancia: ¿Qué información me puedes contar de mi vida.
+
+202
+00:27:02.130 --> 00:27:18.350
+Escuela de Posgrado: o me cuenta una experiencia particular, cosas así. Ok, Entonces noten que la consulta ha sido por Miguel, la descripción ha sido. Yo he sido educado, señor trabajo.
+
+203
+00:27:18.350 --> 00:27:26.590
+Escuela de Posgrado: pero el contenido es diferente. No es como que una historia en Instagram, entonces ahí está la consulta Query y
+
+204
+00:27:26.600 --> 00:27:31.099
+Escuela de Posgrado: y el barrio no la información que necesita alguien. Ok.
+
+205
+00:27:31.340 --> 00:27:35.600
+Escuela de Posgrado: De hecho, este siento que es una de las de lo
+
+206
+00:27:35.710 --> 00:27:39.149
+Escuela de Posgrado: de las partes que suelen ser un poco tediosas de entender al inicio.
+
+207
+00:27:39.260 --> 00:27:42.910
+Escuela de Posgrado: La primera vez que leí yo, este paper atención
+
+208
+00:27:43.650 --> 00:27:51.579
+Escuela de Posgrado: no entendía para nada, que era tipo baile, porque yo electrónico no había trabajado mucho antes.
+
+209
+00:27:51.730 --> 00:27:55.399
+Escuela de Posgrado: Vicky Privada, Y dije, ¿será esto: me puse a buscar Internet
+
+210
+00:27:55.660 --> 00:28:02.850
+Escuela de Posgrado: Antes no habían escuchado chipitín como para preguntarme diciendo qué estilo libario y me mandaban por otras por las ramas.
+
+211
+00:28:03.490 --> 00:28:07.989
+Escuela de Posgrado: Un año después, después de tanto, Bacon dije, ah, ya creo que ya entiendo qué es esto.
+
+212
+00:28:09.360 --> 00:28:24.459
+Escuela de Posgrado: Entonces lo que vamos a tener son 3 señales que cada 1 de los tokens va a generar esas 3 señales diciendo qué información yo necesito, este? ¿qué puedo aportar? No, qué descripción de las cosas que yo puedo aportar. Y, bueno, la información en sí misma ¿vale?
+
+213
+00:28:24.930 --> 00:28:40.720
+Escuela de Posgrado: Entiendo que así como esa frase, nosotros, dentro de este contexto de este salón tenemos un significado.
+
+214
+00:28:41.330 --> 00:28:44.299
+Escuela de Posgrado: Entonces, por ejemplo, si estamos los 6 incluidos
+
+215
+00:28:44.840 --> 00:29:03.839
+Escuela de Posgrado: en este contexto, su vectores que es el profesor de la materia y domina el valor de su vector es 1 particular. Si ustedes ven otro contexto, el sector lo que hace el
+
+216
+00:29:04.060 --> 00:29:20.079
+Escuela de Posgrado: al siguiente claro. Tal cual. Justamente lo interesante de esto es que eso es dinámico. Depende del contexto, o sea, y justo ahorita. Estoy preguntando por Miguel
+
+217
+00:29:20.090 --> 00:29:35.520
+Escuela de Posgrado: tal vez este? Bueno, no los conozco muchos, pero tal vez el a los que estoy apoyando en el Cap son este. Me preguntan a mí ahí, tal vez a él, si le puedo dar más valor, ¿no? Porque bueno, estamos en casa, y puedo decir algo de él, ¿no?
+
+218
+00:29:35.520 --> 00:29:42.029
+Escuela de Posgrado: Entonces pueden notar que, dependiendo del contexto de quién está preguntando, puede ser diferente aportación.
+
+219
+00:29:42.070 --> 00:29:46.580
+Escuela de Posgrado: Y justamente a eso. Por ahí están mencionando por ahí. Este
+
+220
+00:29:49.070 --> 00:29:59.999
+Escuela de Posgrado: Este es sobre dales pesos. No aquí va a ser una asignación dinámica de pesos asignación dinámica de pesos este en forma.
+
+221
+00:30:00.280 --> 00:30:03.169
+Escuela de Posgrado: dependiendo del contexto, No, si es que
+
+222
+00:30:03.470 --> 00:30:06.600
+Escuela de Posgrado: puede aportar algo, le vamos a dar más importancia.
+
+223
+00:30:06.730 --> 00:30:15.080
+Escuela de Posgrado: De hecho, lo pueden comparar un poco con las M. L, P: Se ponen las M. L, Ps: No, que eran dar pesos a diferentes entradas, No, Por ejemplo, ustedes son 5. No
+
+224
+00:30:15.240 --> 00:30:25.499
+Escuela de Posgrado: puedo dar pesos a cada 1 de los 5 para hacer una clasificación. A diferencia del C, M. L. P. Es que es algo estático, sino que siempre le voy a dar más importancia A.
+
+225
+00:30:25.970 --> 00:30:28.550
+Escuela de Posgrado: Y si
+
+226
+00:30:29.130 --> 00:30:45.329
+Escuela de Posgrado: la onza más importancia. Eidher va a ser como que Eder siempre va a tener máxima importancia por el entrenamiento. En cambio, aquí la importancia de Eder va a depender del contexto. Ok, Eso es lo que lo hace interesante al mecanismo de atención.
+
+227
+00:30:45.540 --> 00:30:46.360
+Escuela de Posgrado: Vale.
+
+228
+00:30:48.000 --> 00:30:48.690
+Escuela de Posgrado: Mhm
+
+229
+00:30:54.330 --> 00:30:59.010
+Escuela de Posgrado: mhm exacto.
+
+230
+00:31:00.330 --> 00:31:04.699
+Escuela de Posgrado: Bueno, se entendió esa parte de Víctor Iván, ¿no?
+
+231
+00:31:05.800 --> 00:31:08.550
+Escuela de Posgrado: De hecho, en el vídeo que les compartí
+
+232
+00:31:10.930 --> 00:31:15.130
+Escuela de Posgrado: Perdón, consulta, perdón. No había visto tu tu mensaje de informe.
+
+233
+00:31:20.520 --> 00:31:23.370
+Jorge Luis Palacios Chilo: Era cuando preguntó qué era el Queery.
+
+234
+00:31:24.030 --> 00:31:34.020
+Escuela de Posgrado: Ah, vale claro, claro, para dejar ahí el chip, el chip.
+
+235
+00:31:37.590 --> 00:31:40.780
+Escuela de Posgrado: Un ejemplo que me parece sí.
+
+236
+00:31:40.780 --> 00:31:41.920
+Audio shared by Escuela de Posgrado: Como vector.
+
+237
+00:31:41.950 --> 00:31:44.499
+Escuela de Posgrado: En el audio solamente las documentas del sur.
+
+238
+00:31:48.990 --> 00:31:54.190
+Escuela de Posgrado: por ejemplo. Aquí lo ves como si fuera este un match de vídeo.
+
+239
+00:31:54.750 --> 00:32:03.270
+Escuela de Posgrado: Entonces este mi interés no me interesa. Y bueno, tal vez este dado su papeles por ahí.
+
+240
+00:32:04.030 --> 00:32:09.710
+Escuela de Posgrado: ¿y cuál es eso? No busco palabras expresadas por la naturaleza a poder ser un verbo.
+
+241
+00:32:09.920 --> 00:32:11.679
+Escuela de Posgrado: Es lo que yo estoy buscando.
+
+242
+00:32:11.860 --> 00:32:25.180
+Escuela de Posgrado: algo tiene que naturaleza, que tiene que ser humano. Y bueno, la palabra pangulín es, soy un sujeto innova sujeto. No tiene que ver con animal, pero no es lo que se buscan.
+
+243
+00:32:25.380 --> 00:32:29.649
+Escuela de Posgrado: La palabra florecer entra no
+
+244
+00:32:29.890 --> 00:32:42.109
+Escuela de Posgrado: porque es naturaleza y es un verbo, ¿no? Entonces ahí hacen más Okay, la rutina de aquí, pues?
+
+245
+00:32:42.840 --> 00:32:45.729
+Escuela de Posgrado: Bueno, en base de datos, entiendo que los Simpson bastante.
+
+246
+00:32:46.130 --> 00:32:56.809
+Escuela de Posgrado: Entonces, dependiendo de cuáles sean esos machos, nosotros vamos a relacionar diferentes tipos diferentes. Y bueno, eso es lo que ya no pasar. Eso funciona muy bien con producto.
+
+247
+00:32:59.510 --> 00:33:04.479
+Escuela de Posgrado: Mhm: A mí me parece genial. Las animaciones que hacen por ahí.
+
+248
+00:33:04.950 --> 00:33:13.260
+Escuela de Posgrado: Ah, también les voy a compartir otro vídeo, pero es un poco más matemático, el de no
+
+249
+00:33:14.190 --> 00:33:21.060
+Escuela de Posgrado: de la oración de nada.
+
+250
+00:33:21.500 --> 00:33:24.170
+Escuela de Posgrado: Cada palabra divina tiene una.
+
+251
+00:33:24.410 --> 00:33:32.710
+Escuela de Posgrado: Y si cada toque que va a ser cada palabra, va a tener su propio equipo y bases.
+
+252
+00:33:32.930 --> 00:33:39.809
+Escuela de Posgrado: Bueno, ese video también. Les voy a compartir. Les diría que primero comience con el otro, y que aquí es un poco más matemático.
+
+253
+00:33:39.960 --> 00:33:43.349
+Escuela de Posgrado: pero sí es bien interesante. El enfoque como lo presentan
+
+254
+00:33:46.140 --> 00:33:53.270
+Escuela de Posgrado: es un poco verboso por el número de la cantidad de números, pero bueno, debe estar acostumbrado a producirse.
+
+255
+00:33:54.310 --> 00:34:01.780
+Escuela de Posgrado: Y A: bueno, la idea del equipo. No.
+
+256
+00:34:02.400 --> 00:34:06.200
+Escuela de Posgrado: Por ejemplo, aquí tenemos la frase, el gato persiguiano. Perdón.
+
+257
+00:34:06.550 --> 00:34:07.340
+Escuela de Posgrado: ¿
+
+258
+00:34:07.410 --> 00:34:22.740
+Escuela de Posgrado: Entonces lo que vamos a preguntar para mejorar la comprensión de la palabra gato, porque el inicio del gato es gato, o sea el gato como concepto, ni siquiera su color. No sabemos, simplemente es un gato. Entonces, en este caso vamos a hacer la pregunta, no
+
+259
+00:34:22.790 --> 00:34:31.209
+Escuela de Posgrado: a qué acción estás sin delegar. ¿no? Entonces cada una de las palabras va a tener diferentes kits, No, como hemos visto, el ejemplo del pangolín del mismo.
+
+260
+00:34:31.630 --> 00:34:38.109
+Escuela de Posgrado: Por ejemplo, la palabra persigue la palabra, persis De Verbo ¿no? Ok.
+
+261
+00:34:38.110 --> 00:34:55.089
+Escuela de Posgrado: Entonces acción. Ambos son acciones. También pueden entrenar sus machos. Ahora, el barrio que aporta persigue es justamente el concepto de perseguir, ¿no? Entonces, después de hacer esa pregunta, el gato no es un gato genérico. Si no es un gato que persigue ratones.
+
+262
+00:34:55.500 --> 00:34:56.280
+Escuela de Posgrado: ¿
+
+263
+00:34:58.390 --> 00:35:05.140
+Escuela de Posgrado: Así es como va a terminar funcionando el mecanismo de atención, pero
+
+264
+00:35:07.210 --> 00:35:11.159
+Escuela de Posgrado: no sé si se acuerdan que les mencionaba que mecanismos de atención
+
+265
+00:35:11.480 --> 00:35:17.100
+Escuela de Posgrado: va a suceder con varios pasos en paralelo, que es lo que vamos a llamarlo Pets.
+
+266
+00:35:19.740 --> 00:35:32.389
+Escuela de Posgrado: Sólo hemos visto solamente esto de aquí, que es el Ok. Pero esto va a funcionar de esa forma en varios mecanismos, varios procesos en paralelo. Ok. Entonces
+
+267
+00:35:32.390 --> 00:35:42.519
+Escuela de Posgrado: cada proceso en paralelo va a ser una consulta distinta? Ok, Entonces, en paralelo, vamos a preguntar al gato que está persiguiendo o qué está haciendo
+
+268
+00:35:42.640 --> 00:35:49.400
+Escuela de Posgrado: o que no sé qué preguntas que nosotros tengamos, Por ejemplo, si queremos conocer a Miguel. Puedo hacer varias preguntas. También
+
+269
+00:35:50.220 --> 00:35:56.080
+Escuela de Posgrado: tiene 3 lectores.
+
+270
+00:35:56.210 --> 00:36:08.060
+Escuela de Posgrado: Sí, cada palabrita página de 3 lectores. Ajá: ¿sí? Y Y vamos a tener esos 3 3 lectores por cada palabra en cada jet
+
+271
+00:36:08.810 --> 00:36:18.560
+Escuela de Posgrado: pena, en cada hits funcionando, No, O sea, es una idea que hemos visto de preguntar, incluso de información.
+
+272
+00:36:20.490 --> 00:36:28.789
+Escuela de Posgrado: Creo que la lesión un poco es ir comprando información para hacerlo más complejo. Okay.
+
+273
+00:36:29.200 --> 00:36:32.539
+Escuela de Posgrado: Eso lo vamos a hacer en paralelo varias veces.
+
+274
+00:36:33.040 --> 00:36:37.350
+Escuela de Posgrado: Ok, Cada procesamiento independiente lo vamos a llamar a mujeres.
+
+275
+00:36:37.390 --> 00:36:57.379
+Escuela de Posgrado: Ok, y bueno, vamos a tener múltiples. Entonces, por cada palabra, como bien estas diciendo, vamos a tener esas 3 señales, esos 3 vectores, pero te vamos a tener esos 3 vectores por cada cepa, entonces tenemos 8, significa que tenemos 8 y 8 por palabra. Ok, y cada 1 de forma independiente, Okay.
+
+276
+00:36:57.520 --> 00:36:58.510
+Escuela de Posgrado: Entonces
+
+277
+00:36:58.960 --> 00:37:07.989
+Escuela de Posgrado: Lo interesante de justamente este enfoque de trabajar en múltiples gets es que vamos a analizar la secuencia en diferentes maneras en paralelo.
+
+278
+00:37:08.200 --> 00:37:12.160
+Escuela de Posgrado: Se acuerdan del concepto de cardinalidad de la C. D. M:
+
+279
+00:37:19.320 --> 00:37:26.970
+Escuela de Posgrado: Bueno, es una adicción, Ah, y cada
+
+280
+00:37:27.520 --> 00:37:31.990
+Escuela de Posgrado: no de las N. S. ¿se acuerdan?
+
+281
+00:37:34.590 --> 00:37:54.590
+Escuela de Posgrado: Bueno, la C N. N. También. Lo que hacíamos era dividirlo. Este la cantidad de canales en sus blogs bloque era procesado de forma independiente Y lo que terminaba procesando de esa forma era que la entrada se procesaba de diferentes maneras según experiencia. En este caso va a ser similar
+
+282
+00:37:54.590 --> 00:37:58.159
+Escuela de Posgrado: en los topes de entrada, se van a procesar diferentes maneras.
+
+283
+00:37:58.160 --> 00:38:04.709
+Escuela de Posgrado: Okay, Como encontraron diferentes tipos, relaciones en una sola etapa en una sola capa. Bueno, en una en un solo bloque, me
+
+284
+00:38:06.530 --> 00:38:15.580
+Escuela de Posgrado: es llamado, transforma tu perdón. Este sexo de tenis
+
+285
+00:38:18.450 --> 00:38:24.910
+Escuela de Posgrado: está bien, por ejemplo, que este porque adentro está municipios.
+
+286
+00:38:26.260 --> 00:38:36.580
+Escuela de Posgrado: Luego vamos a ver qué es lo que tiene adentro. Ok. Entonces vamos a hacer el procesamiento en paralelo, cada 1 de los gestos va a ser un gesto en particular.
+
+287
+00:38:36.900 --> 00:38:40.260
+Escuela de Posgrado: Por ejemplo, al inicio, teníamos en el
+
+288
+00:38:44.230 --> 00:38:51.800
+Escuela de Posgrado: justamente qué opción está per estación del gato? No, en este caso perseguían. No, Eso va a ser el primer test.
+
+289
+00:38:51.800 --> 00:38:55.400
+Escuela de Posgrado: el segundo head que ya saben que es la versión de paralelo.
+
+290
+00:38:55.400 --> 00:39:12.170
+Escuela de Posgrado: es con quién está haciendo una acción o con qué se está relacionando en este caso? Es un ratón, ¿no? Entonces en un solo pasada, esa estás esté identificando qué acción está tomando y con quién se relaciona. Entonces, al final, lo que tiene es que no solamente es un gato, sino es un gato que está persiguiendo un ratón.
+
+291
+00:39:12.510 --> 00:39:17.600
+Escuela de Posgrado: Ok, Entonces ya es más complejo.
+
+292
+00:39:17.600 --> 00:39:20.990
+Juan Casavilca: Son no solo una consulta.
+
+293
+00:39:21.370 --> 00:39:22.240
+Escuela de Posgrado: Dime.
+
+294
+00:39:22.760 --> 00:39:31.800
+Juan Casavilca: Sí, ahí aparece. Entonces el gato persigue ratón. Pero ¿cómo sabe que el gato es el que el sujeto, digamos no.
+
+295
+00:39:32.370 --> 00:39:33.679
+Juan Casavilca: y no el ratón.
+
+296
+00:39:35.050 --> 00:39:40.639
+Escuela de Posgrado: Ah, ¿cómo sabe que la clave aquí es, por definición, del mismo
+
+297
+00:39:40.840 --> 00:39:46.489
+Escuela de Posgrado: este de ningún vector. No recuerden que el inicio, o sea, en la primera interacción.
+
+298
+00:39:46.670 --> 00:39:47.980
+Escuela de Posgrado: Y
+
+299
+00:39:48.670 --> 00:40:00.929
+Escuela de Posgrado: nosotros vamos a tener vectores que son construidos esa época y todo eso. Pero eso va a ser un vector que va a decir. Ah, mira, ese es un gato y en sentido gramatical.
+
+300
+00:40:01.180 --> 00:40:18.660
+Escuela de Posgrado: y bueno, igual retorno, eso va a ser no. Y eso va a ser un verso. Entonces ese vector va a tener precisamente el significado, por cierto, ese ejemplo, que el hecho de que ser un poco este de juguetes no es tan preciso. Tal vez no sería como la pregunta que se está realizando este sujeto.
+
+301
+00:40:18.800 --> 00:40:25.990
+Escuela de Posgrado: Tal vez sería como en general, qué acción está relacionado con esa palabra o algo así que.
+
+302
+00:40:26.220 --> 00:40:39.889
+Escuela de Posgrado: pero bueno, más que nada para resucitar la idea, porque de por sí, qué acción está realizando este sujeto? Tal vez no tendría sentido como la palabra, eli no un gel especializada. Solamente acciones. Algunas palabras no se van a activar.
+
+303
+00:40:40.040 --> 00:40:42.440
+Escuela de Posgrado: lo cual también puede suceder, ¿cierto?
+
+304
+00:40:44.030 --> 00:40:49.920
+Escuela de Posgrado: Bueno, se entiende la idea de los fets, perdón, ibas a preguntar algo.
+
+305
+00:40:50.100 --> 00:41:07.679
+Escuela de Posgrado: Casi lo mismo era estudiar, digamos, herbalium, 15 lector del número 1 para el significado del valor.
+
+306
+00:41:08.580 --> 00:41:10.030
+Escuela de Posgrado: Y claro que es un arco
+
+307
+00:41:11.330 --> 00:41:17.080
+Escuela de Posgrado: a ver este lo que más allá vamos a ver, de hecho, en forma matemática, pero
+
+308
+00:41:17.260 --> 00:41:20.530
+Escuela de Posgrado: digamos que sea en 2. Ok.
+
+309
+00:41:21.250 --> 00:41:30.729
+Escuela de Posgrado: El shopping 2 es el token. Bueno, es el vector de información que tenemos aquí, el toque Lo estoy colocando como si fuera el vector que vamos a procesar.
+
+310
+00:41:31.200 --> 00:41:39.360
+Escuela de Posgrado: Lo vamos a procesar. De hecho, va a ser una mlp
+
+311
+00:41:39.900 --> 00:41:44.740
+Escuela de Posgrado: en múltiples fets Ok, hets, 1, 2, 3,
+
+312
+00:41:45.160 --> 00:41:47.499
+Escuela de Posgrado: y cada 1 va a generar.
+
+313
+00:41:51.270 --> 00:42:01.300
+Escuela de Posgrado: Entonces vas a tener tu el 1, este o sea, del 3. Uno te toca en 2 y 2,
+
+314
+00:42:02.430 --> 00:42:07.970
+Escuela de Posgrado: Sí, no, ¿no?
+
+315
+00:42:09.020 --> 00:42:24.640
+Escuela de Posgrado: Y 1, este también 2 también, 2. Y aquí y 2, y bueno, así, para todos los elementos. Entonces, para una sola palabra, pueden ver que estamos generando
+
+316
+00:42:25.660 --> 00:42:27.630
+Escuela de Posgrado: varias señales. Ok.
+
+317
+00:42:27.930 --> 00:42:33.659
+Escuela de Posgrado: Y como lo vamos a ver en unos momentos es generado simplemente como una. M. L: P:
+
+318
+00:42:39.210 --> 00:42:40.070
+Escuela de Posgrado: Bien.
+
+319
+00:42:40.450 --> 00:42:47.749
+Escuela de Posgrado: Entonces un solo vector lo vamos a proyectar en todas esas señales. Vale, en realidad todo eso lo vamos a hacer
+
+320
+00:42:48.910 --> 00:42:52.310
+Escuela de Posgrado: de una sola pasada o una Mlb.
+
+321
+00:42:55.210 --> 00:43:04.729
+Escuela de Posgrado: Entonces ese token que es un vector, lo vamos a procesar. Y va a tener otro vector, no este vector. Lo vamos a dividir en 3 partes y cada una de sus partes. Lo vamos a dividir en 3
+
+322
+00:43:05.000 --> 00:43:14.560
+Escuela de Posgrado: en unos momentos. Pero entonces este en una sola entrada genera todos esos textos.
+
+323
+00:43:15.830 --> 00:43:17.469
+Escuela de Posgrado: Tengo una pregunta así?
+
+324
+00:43:18.940 --> 00:43:25.870
+Escuela de Posgrado: Bueno, ese es un test. Ok, Bueno, presentados ya los
+
+325
+00:43:25.990 --> 00:43:34.750
+Escuela de Posgrado: cuántas preguntas pueden hacer? Por cada set hay un un kiko igual?
+
+326
+00:43:35.350 --> 00:43:40.790
+Escuela de Posgrado: No, No, no, no a ver.
+
+327
+00:43:44.980 --> 00:43:52.830
+Escuela de Posgrado: Por ejemplo, esa es la secuencia. No son 5 palabras, son 5 palabras por cada 1 de los elementos de esas 5 palabras.
+
+328
+00:43:52.960 --> 00:44:02.219
+Escuela de Posgrado: Ok, Este gel va a hacer consultas, Ok, O sea, cada palabra va a ser, va a ser algún tipo de consultas
+
+329
+00:44:02.810 --> 00:44:07.020
+Escuela de Posgrado: y claro de los
+
+330
+00:44:08.050 --> 00:44:16.590
+Escuela de Posgrado: o sea, hacer tipo de Iván, no hacer preguntas sobre si están relacionados o no. Ok.
+
+331
+00:44:16.700 --> 00:44:28.420
+Escuela de Posgrado: Sobre la misma secuencia podemos hacer diferentes tipos de preguntas, por ejemplo, sobre Miguel, podemos preguntarnos si son amigos, no, si son su edad. No sé
+
+332
+00:44:28.420 --> 00:44:39.219
+Escuela de Posgrado: diferente información. Son diferentes consultas como diferentes grupos. Entonces lo que vamos a hacer son es generar diferentes preguntas diferentes, preguntas.
+
+333
+00:44:39.290 --> 00:44:41.550
+Escuela de Posgrado: En paralelo, Okay.
+
+334
+00:44:42.130 --> 00:44:48.360
+Escuela de Posgrado: cada 1 de estos que pueden ver que está en paralelo. Es un gens que aquí hay 3 sets.
+
+335
+00:44:49.040 --> 00:44:53.730
+Escuela de Posgrado: Ok. Entonces aquí le podemos preguntar algo en particular
+
+336
+00:44:53.910 --> 00:45:11.589
+Escuela de Posgrado: donde trabaja sus estudios y no sé amigos, claro, por cada palabra de toda la secuencia. Recuerden que si bien cierto que estamos dando un ejemplo para una palabra en particular. Eso se ejecuta para toda la secuencia.
+
+337
+00:45:11.800 --> 00:45:19.129
+Escuela de Posgrado: Ok. Entonces este gen se especializa, digamos, en verbos, pero va a ser verbos para toda la secuencia.
+
+338
+00:45:19.530 --> 00:45:21.940
+Escuela de Posgrado: Esto deja, no sé,
+
+339
+00:45:22.370 --> 00:45:34.750
+Escuela de Posgrado: en propiedades, no sé para toda la secuencia igual, acá no. Ok. Entonces cada Ted se va a especializar en un tópico en específico, pero suele ejecutarse para toda la superficie
+
+340
+00:45:35.110 --> 00:45:42.090
+Escuela de Posgrado: de de claro, va a generar un cohete por cada
+
+341
+00:45:42.510 --> 00:45:54.390
+Escuela de Posgrado: por cada palabra claro que va a ser claro. O sea, es como que recuerden que eso es como tópicos. No, no es que están generándose exactamente la misma cuerda y por cada palabra.
+
+342
+00:45:56.220 --> 00:46:04.509
+Escuela de Posgrado: pero ese iba a ser como un tópico compartido. Por ejemplo, volviendo al tema de animales, no sé eso. Estoy especializado en pelaje, el otro en.
+
+343
+00:46:04.680 --> 00:46:21.380
+Escuela de Posgrado: no sé el color de ojos de y el otro el tamaño de los bigotestar un ejemplo. Entonces este por aquí es ¿de qué tamaño es el bigote del gato? ¿no? Pero tal vez si es un pez, no va a ser, va a ser esos esas cosas como que no me proporcionaba realmente no
+
+344
+00:46:21.440 --> 00:46:27.480
+Escuela de Posgrado: como el bagre tiene eso? Ok. Entonces es otra pregunta: ¿No se les va por eso? Entonces
+
+345
+00:46:27.550 --> 00:46:33.880
+Escuela de Posgrado: es por tópico, y cada 1 va a hacer diferentes fueras pequeños elementos necesitarán.
+
+346
+00:46:34.340 --> 00:46:35.200
+Escuela de Posgrado: Vale.
+
+347
+00:46:41.890 --> 00:46:43.360
+Escuela de Posgrado: aceptamos bien, no.
+
+348
+00:46:43.630 --> 00:46:44.160
+Brajan Nieto: Eso no.
+
+349
+00:46:47.070 --> 00:47:00.079
+Brajan Nieto: Una consulta. El Ki, en este caso es el mismo. No varía cierto. O sea, para un token, el kino varía a menos que sea en distintas gentes.
+
+350
+00:47:01.640 --> 00:47:03.810
+Brajan Nieto: el mismo cierto.
+
+351
+00:47:04.280 --> 00:47:09.740
+Escuela de Posgrado: O sea, en un gets. Cada palabra tiene un ki. Cada palabra tiene.
+
+352
+00:47:09.740 --> 00:47:10.170
+Brajan Nieto: Bien se.
+
+353
+00:47:10.170 --> 00:47:13.380
+Escuela de Posgrado: Y un Pan Okay.
+
+354
+00:47:13.620 --> 00:47:18.610
+Escuela de Posgrado: De hecho, ahorita. Les voy a enseñar un ejemplo poco más matemático
+
+355
+00:47:18.760 --> 00:47:23.709
+Escuela de Posgrado: En esa parte quisiera que se entienden muy bien los conceptos individuales. Ahorita, Lo vamos a conocer.
+
+356
+00:47:25.690 --> 00:47:44.970
+Escuela de Posgrado: Bueno, como ya les he adelantado al inicio aquí, vamos a tener el engolder y el encoder va a ser esa parte, que es lo único que va a hacer es procesar la entrada, el Ecoder, lo que va a hacer palabra por palabra la traducción.
+
+357
+00:47:45.170 --> 00:47:49.890
+Escuela de Posgrado: Ah, por cierto, ustedes me ha explicado que el bebé original era para traducciones inditex.
+
+358
+00:47:54.950 --> 00:47:59.620
+Escuela de Posgrado: Vamos por el ruido tal cual.
+
+359
+00:48:00.680 --> 00:48:12.760
+Escuela de Posgrado: Bueno, entonces este eso va a ser parte del ecod. Ok, Vamos a tener una representación con fauna de palabras sedental, y eso lo vamos a utilizar para Vamos a verlo un poco más adelante.
+
+360
+00:48:15.240 --> 00:48:24.769
+Escuela de Posgrado: Ahora, cada 1 de esos bloques de Transformer. Le hemos explicado un poco de forma genérica cómo funciona, pero en realidad adentro tiene 2 partes.
+
+361
+00:48:25.500 --> 00:48:32.079
+Escuela de Posgrado: que es básicamente lo que ya eres sol explicando, pero también el pitt forma.
+
+362
+00:48:33.820 --> 00:48:36.439
+Escuela de Posgrado: En fin, for Watner ¿
+
+363
+00:48:36.690 --> 00:48:42.000
+Escuela de Posgrado: Se acuerdan que les había comentado para qué era el Pickford, el profesional.
+
+364
+00:48:49.440 --> 00:48:51.440
+Escuela de Posgrado: ¿Qué actividad tenía el que informar?
+
+365
+00:49:02.380 --> 00:49:06.660
+Escuela de Posgrado: Y bueno, de hecho, en el texto dicen: Mhm.
+
+366
+00:49:06.880 --> 00:49:18.650
+Escuela de Posgrado: el modificante es un mecanismo bastante interesante. Pueden ver que es una correspondencia dinámica. No es de cada 1 de los elementos de la entrada. Sin embargo, es un procesamiento completamente lineal.
+
+367
+00:49:18.930 --> 00:49:24.109
+Escuela de Posgrado: Ok, ¿Se acuerdan? ¿qué pasa si tenemos un montón de capas de puro procesamiento lineal?
+
+368
+00:49:26.560 --> 00:49:27.650
+Escuela de Posgrado: No sé,
+
+369
+00:49:27.870 --> 00:49:36.759
+Escuela de Posgrado: bueno, aprende, pero aprende cosas lineales, composición de puro proceso lineal. Y se va a dar en conjunto a lo boliviano y justamente
+
+370
+00:49:36.990 --> 00:49:51.340
+Escuela de Posgrado: un gran valor que genera la las redes neuronales o donde les da la complejidad de las representaciones, o lo que pueden hacer es las los ese procesamiento no lineal. Ok. Entonces, con diferencia de la atención, todo lo que hemos hablado
+
+371
+00:49:51.550 --> 00:49:54.210
+Escuela de Posgrado: es básicamente puro procesamiento lineal.
+
+372
+00:49:55.110 --> 00:50:04.110
+Escuela de Posgrado: Ok. Entonces, para insertar la nominalidad, vamos a utilizar el Pintford. Ok. El filform básicamente va a ser un Mlp. Entonces
+
+373
+00:50:04.400 --> 00:50:09.279
+Escuela de Posgrado: son 2 cápitas de melenque donde vamos a tener primero una expansión y de una comprensión.
+
+374
+00:50:09.530 --> 00:50:12.599
+Escuela de Posgrado: Lo vamos a conversar un poco más adelante. También
+
+375
+00:50:12.760 --> 00:50:18.790
+Escuela de Posgrado: solamente sepan que, de hecho, una pregunta clásica que hago en los exámenes.
+
+376
+00:50:18.820 --> 00:50:34.380
+Escuela de Posgrado: Ustedes no tienen exámenes. Hablo de pregrado. Hacemos un procesamiento a nivel top, o sea, relacionamos sobre el control para ver como se relaciona. Pero el fitpod es un procesamiento a nivel canal.
+
+377
+00:50:34.720 --> 00:50:40.999
+Escuela de Posgrado: lo estamos presionando. Vamos a perfeccionar la representación a nivel de cada 1 de los ojos.
+
+378
+00:50:41.640 --> 00:50:50.649
+Escuela de Posgrado: Aquí los toques son independientes aquí, claro. Ok, todo esto es un bloque de transformer. Un bloque transformer en code.
+
+379
+00:50:51.340 --> 00:50:56.949
+Escuela de Posgrado: Depende ahora S en el ejemplo que les estaba prometiendo.
+
+380
+00:50:57.080 --> 00:50:59.270
+Escuela de Posgrado: Aquí tenemos 2 palabras. Ok.
+
+381
+00:51:01.330 --> 00:51:13.110
+Escuela de Posgrado: Aquí tenemos esas palabras: Thinky machines Ok, Aquí está la palabra, y eso lo han convertido en un subventor. Ok. Justamente lo que me estaba preguntando. Miguel, No.
+
+382
+00:51:13.450 --> 00:51:19.670
+Escuela de Posgrado: A partir de ese nivel se van generando las 3 siguientes: el cuello y el qui y el bala. Ok.
+
+383
+00:51:20.300 --> 00:51:27.850
+Escuela de Posgrado: Ahora todas esas palabras se van a procesar con las otras. Ok, Vamos a sentarnos solamente la palabra. Y,
+
+384
+00:51:27.990 --> 00:51:35.320
+Escuela de Posgrado: Ok, Entonces, con la palabra thinking va a ser una consulta y esa consulta se puede ir con quién va a ser producto?
+
+385
+00:51:37.990 --> 00:51:39.290
+Escuela de Posgrado: El paramédico.
+
+386
+00:51:39.440 --> 00:51:40.510
+Brajan Nieto: Claro.
+
+387
+00:51:40.570 --> 00:51:46.290
+Escuela de Posgrado: Bueno. Skis, no como con el I, Uno y con el I 2, no con los 2, tiene que ser Otro punto
+
+388
+00:51:46.460 --> 00:51:58.350
+Escuela de Posgrado: es justamente lo que vamos a hacer. Pregunta un punto de 22 Ok, eso nos da diferentes valores de Scout.
+
+389
+00:51:58.720 --> 00:52:05.319
+Escuela de Posgrado: Sí, aquí sale 112 y aquí 96. Ok, luego prescribirse perdón.
+
+390
+00:52:08.370 --> 00:52:09.820
+Escuela de Posgrado: ¿qué pasaba después.
+
+391
+00:52:15.570 --> 00:52:18.500
+Brajan Nieto: Se tendría que hacer un softmaps o un score.
+
+392
+00:52:19.150 --> 00:52:21.020
+Escuela de Posgrado: Ajá exacto eso
+
+393
+00:52:21.190 --> 00:52:37.490
+Escuela de Posgrado: solamente que, de hecho, aquí una cosita. Por aquí vamos a aplicar el showmans. Pero antes de aplicar ese Solmant. Lo que vamos a hacer es una normalización de esos valores. Lo vamos a dividir entre la raíz del tamaño del
+
+394
+00:52:37.930 --> 00:52:49.540
+Escuela de Posgrado: ese tamaño del vector es el tamaño de I por igual. Por cierto, suelen suelen tener el mismo tamaño. En este caso, estoy asumiendo un tamaño. 64. Por eso la edición es entre 8.
+
+395
+00:52:49.690 --> 00:53:02.560
+Escuela de Posgrado: Ok. Entonces lo dividimos entre 8 en este caso, y aplicamos el software ahí para volverlo en valores. Ahora, ¿por qué no estamos dividiendo entre las raíces de K, ¿Por qué exactamente ese valor
+
+396
+00:53:02.690 --> 00:53:05.819
+Escuela de Posgrado: ya aquí no se colocaban la clasificación.
+
+397
+00:53:07.190 --> 00:53:14.669
+Escuela de Posgrado: Lo que sucede es que nos va a interesar mucho. ¿cómo van a crecer esos valores de activación.
+
+398
+00:53:14.880 --> 00:53:27.930
+Escuela de Posgrado: Ok, O sea, me refiero al producto, punto. ¿cómo van a crecer cuando nosotros aumentamos el número de canales? Lo que sucede es que si calculamos la varianza. Ok, este producto. Punto, los sensor estamos calculando.
+
+399
+00:53:28.200 --> 00:53:29.010
+Escuela de Posgrado: ¿
+
+400
+00:53:29.120 --> 00:53:45.010
+Escuela de Posgrado: Al final, vamos a tener un valor igual a T. K por la desviación de cada 1, la desviación del pueblo y de aquí por Vk: Y eso quiere decir que si nosotros aumentamos ese valor, Bk: La varianza va a aumentar.
+
+401
+00:53:45.690 --> 00:53:47.639
+Escuela de Posgrado: Eso lo vuelve no escalable.
+
+402
+00:53:48.230 --> 00:53:58.919
+Escuela de Posgrado: Ok, ya no es escalable, porque si tenemos este una respuesta en 120 canales, No, y de pronto queremos expandir la 256 va a aumentar la varianza.
+
+403
+00:53:59.740 --> 00:54:11.630
+Escuela de Posgrado: algo que no queremos queremos que se mantenga el Estado. Entonces, como ese es un factor que se va a quedarse ahí siempre que está con nosotros, lo vamos a dividir entre raíces de K, que es la educación. Esta
+
+404
+00:54:11.810 --> 00:54:26.450
+Escuela de Posgrado: justamente por eso es que utilizamos la normalización en sol. Bueno, finalmente, una vez que hemos tenido ese valor de probabilidad de un segundo, 8 y 0. Doce. Eso de acá lo vamos a aplicar por el valor
+
+405
+00:54:26.520 --> 00:54:38.059
+Escuela de Posgrado: este por el valor este por el V a L y el resultado. Vamos a ver, acá Pueden ver que el vuelo se va a atenuar la mano, Luego, lo que vamos a hacer es sumar. Y vamos a tener el resultado. El Z 1
+
+406
+00:54:38.530 --> 00:54:43.560
+Escuela de Posgrado: vale. Eso lo vamos a hacer primero parte. Hemos hecho solamente preguntas para él.
+
+407
+00:54:45.780 --> 00:54:58.499
+Escuela de Posgrado: Preguntas para el para Tingui, el cuer y 1 y lo mismo, hacer para el cuello o para manchín manchís, va a preguntar por qué 1, porque 2 vamos a cruzar. Y al final tenemos seta 2.
+
+408
+00:54:58.720 --> 00:55:01.019
+Escuela de Posgrado: Ok, se ha entendido esa parte.
+
+409
+00:55:02.480 --> 00:55:03.800
+Escuela de Posgrado: Facilito no
+
+410
+00:55:08.130 --> 00:55:17.409
+Escuela de Posgrado: a 6. Estamos bien, no producto. Punto. Es esa división entre raíz y acá es y luego, digamos dogmas.
+
+411
+00:55:17.580 --> 00:55:19.839
+Escuela de Posgrado: Básicamente es el mecanismo de atención.
+
+412
+00:55:21.130 --> 00:55:22.760
+Escuela de Posgrado: Ahora.
+
+413
+00:55:23.760 --> 00:55:40.840
+Escuela de Posgrado: esto lo vamos a tener aquí. Estamos haciendo como un procesamiento dentro de un Evidentemente, dentro de la implementación vamos a hacer varios esfuerzos como para ese procesamiento, sino que lo que vamos a hacer, Vamos a aprovechar que eso se trabaja en matrices. Ok.
+
+414
+00:55:41.000 --> 00:55:49.280
+Escuela de Posgrado: Entonces aquí vamos a generar el ascenso más para el sector de Antrony. De hecho, este Anthony
+
+415
+00:55:50.020 --> 00:55:54.439
+Escuela de Posgrado: permitió a mi servé como un gran director.
+
+416
+00:55:56.060 --> 00:56:02.969
+Escuela de Posgrado: pero pueden ver que cada una de estas palabras tiene 64 dimensiones, y tenemos 9 palabras total.
+
+417
+00:56:03.000 --> 00:56:17.619
+Escuela de Posgrado: Lo que queremos es el producto, punto, no producto, punto de cada 1 de los vectores. Ahora, ese producto, punto lo podemos expresar con multiplicador, multiplicación de matrices de esta forma. Ok, Aquí, fila, columna, no fila por columna, No se acuerdan de ella.
+
+418
+00:56:17.930 --> 00:56:20.440
+Escuela de Posgrado: matemáticas, no pila columna, pila, columna.
+
+419
+00:56:20.490 --> 00:56:36.299
+Escuela de Posgrado: y la columna está haciendo por otro punto entre conductores numeritos y la columna. Y así, con todos así, tenemos este vector que termina siendo valor de tensión, no para la palabra Anthony
+
+420
+00:56:36.320 --> 00:56:50.429
+Escuela de Posgrado: para el directo, este igual, ese producto punto, y va a tener otro patrón de tensión. Y lo tenemos de esa forma. Ok, por así decirlo, hacemos eso para todos. Al final, vamos a tener esto de acá que se llama el Atention Bab.
+
+421
+00:56:51.760 --> 00:56:58.420
+Escuela de Posgrado: ¿qué Entonces, una vez más, aquí tenemos el query.
+
+422
+00:56:59.230 --> 00:57:03.419
+Escuela de Posgrado: el cueril y el Kiki está en traspuesto, No, de hecho.
+
+423
+00:57:03.780 --> 00:57:19.210
+Escuela de Posgrado: pero pueden notar que está arrojado. Entonces, producto de vectores, perdón, producto de matrices, pila, columna, pila, columna, pila columna encina. Y así vamos generando cada 1 de esos temas.
+
+424
+00:57:19.470 --> 00:57:28.489
+Escuela de Posgrado: Entonces aquí lo que están generando es el valor de importancia de cada 1 de los de los elementos secuencias para cada me.
+
+425
+00:57:28.650 --> 00:57:43.020
+Escuela de Posgrado: Por ejemplo, para Anthony Ok, los valores de importancia de cada 2 min de secuencia te está dando aquí para simple palabras, No, la importancia está dado aquí. Entonces, ¿dónde está hacia la dirección de la cinta?
+
+426
+00:57:43.500 --> 00:57:49.279
+Escuela de Posgrado: ¿por qué eso es arte humana. Ok. Entonces software de
+
+427
+00:57:49.500 --> 00:57:55.249
+Escuela de Posgrado: y traspuesto sobre la raíz de cada quien era el benchú más.
+
+428
+00:57:55.430 --> 00:58:03.399
+Escuela de Posgrado: ¿qué Bueno, aquí Este, Bueno, esa imagen. He sacado de una página que os voy a compartir más adelante
+
+429
+00:58:03.570 --> 00:58:06.320
+Escuela de Posgrado: solamente por
+
+430
+00:58:06.530 --> 00:58:12.919
+Escuela de Posgrado: por tema visual, que creo que lo confunde mal. Lo han colocado de la transfuerza. Por eso voy transpuesta por todos lados
+
+431
+00:58:13.430 --> 00:58:33.100
+Escuela de Posgrado: y también está echado, pero el pide la misma. No, Lo que vamos a hacer es multiplicación. Este de matriz no fila, colón, ¿no? Entonces por cada 1 de esas filas, corresponden a cada 1 de los elementos de la secuencia, no el barrio de Anthony Paupkins. Y, bueno, de todas las palabras.
+
+432
+00:58:33.100 --> 00:58:40.479
+Escuela de Posgrado: los resultados de esos elementos se están multiplicando por su respectivo score
+
+433
+00:58:40.740 --> 00:58:53.159
+Escuela de Posgrado: Ok. Entonces, en esa modificación de matices, estás aplicando el mecanismo de atención o si estás seleccionando los valores importantes. Después de todo ese producto, vas a tener resultados.
+
+434
+00:58:54.470 --> 00:58:59.110
+Escuela de Posgrado: Y al final, tenemos todo esto de acá. Este es el mecanismo de atención.
+
+435
+00:58:59.220 --> 00:59:04.499
+Escuela de Posgrado: Este puede ir por cifras puestas sobre a raíz de casos más complicado, por 1.
+
+436
+00:59:04.690 --> 00:59:09.780
+Escuela de Posgrado: Qué, y eso se ve de esta manera. De Acá eso es atención.
+
+437
+00:59:12.370 --> 00:59:16.499
+Escuela de Posgrado: Vale, se entendió hasta ese punto.
+
+438
+00:59:17.620 --> 00:59:33.379
+Escuela de Posgrado: Depende del tamaño de mi persona. No han interactuado con el elemento este, o sea, no por sino con. M. G,
+
+439
+00:59:34.590 --> 00:59:39.840
+Escuela de Posgrado: No, Bueno, este verás que
+
+440
+00:59:41.870 --> 00:59:50.409
+Escuela de Posgrado: las L M tiene diferentes cif diferente tamaño, no, O sea, algunos son de más chiquitos como para dispositivos más livianos, digamos.
+
+441
+00:59:50.810 --> 01:00:06.380
+Escuela de Posgrado: mejor dicho, dispositivos cotidianos para nosotros, porque suelen ser las C. L. M: Es muy grandes. Bueno, Esos tamaños de la de las redes neuronales tienen que ver por el número de bloques de transformer, pero también el tamaño de los también los vectores. Ok.
+
+442
+01:00:06.420 --> 01:00:12.079
+Escuela de Posgrado: Y acá es un ejemplo. 64, pero podríamos ampliar a 100. 28 256, no.
+
+443
+01:00:12.320 --> 01:00:16.669
+Escuela de Posgrado: Ok, lo a más dimensiones, tienes como que una me
+
+444
+01:00:16.710 --> 01:00:33.420
+Escuela de Posgrado: mayor capacidad de abstraer cosas o representar cosas, ¿no? Aunque también muchas dimensiones pueden generar maldición de dimensional. Lo bueno de esto es que termina funcionando de manera. Spark significa que no todas las neuronas están activas. Entonces genera como una especie de extracción. Es otra instrucción.
+
+445
+01:00:34.050 --> 01:00:37.659
+Escuela de Posgrado: Ok, 64, es un ejemplo en el resumen.
+
+446
+01:00:37.930 --> 01:00:54.590
+Escuela de Posgrado: Bueno, entonces este lo que vamos a hacer para calcular cada una de las señales que hemos visto, que el picor y Vale, termina siendo matrices. Ok, para calcularlo. Lo que vamos a hacer es usar una M. L. Ps: Aprendices
+
+447
+01:00:54.590 --> 01:01:00.630
+Escuela de Posgrado: Más adelante, vamos a ver una implementación para que veamos cómo se enseña esto. Pero básicamente es un M l
+
+448
+01:01:00.970 --> 01:01:07.350
+Escuela de Posgrado: Bueno, mejor dicho, es solamente una capa, sería un tercer drone dicho, ni siquiera tiene un
+
+449
+01:01:07.740 --> 01:01:11.559
+Escuela de Posgrado: una especie de activación, literalmente. Es una transformación lineal.
+
+450
+01:01:12.040 --> 01:01:20.320
+Escuela de Posgrado: Entonces se multiplicamos por unos pesos. Primero, estoy comprando más filial. Y con eso generamos cada 1 de los colores tipo de imagen.
+
+451
+01:01:24.880 --> 01:01:31.179
+Escuela de Posgrado: comenzamos a Las 11, tienen un receso ahorita o no?
+
+452
+01:01:31.520 --> 01:01:33.240
+Escuela de Posgrado: ¿sí?
+
+453
+01:01:33.540 --> 01:01:46.989
+Escuela de Posgrado: Sí que necesitas tomar algo, Sí, igual a los que están ambiciosos, que es eso
+
+454
+01:01:49.410 --> 01:01:55.299
+Escuela de Posgrado: Bueno, Tenemos, pues esos 10 min hasta las 12 y 40, y continuamos.
+
+455
+01:01:57.270 --> 01:02:00.530
+Escuela de Posgrado: La mayoría está en ajá.
+
+456
+01:02:02.070 --> 01:02:09.170
+Escuela de Posgrado: No sé más amplios.
+
+457
+01:02:27.020 --> 01:02:46.069
+Escuela de Posgrado: y sí, somos somos, vaya muy bien.
+
+458
+01:02:47.110 --> 01:02:55.710
+Escuela de Posgrado: Sí, fue sí, porque si no nos ofrecimos como ahorita, no de freno ya
+
+459
+01:02:59.310 --> 01:03:00.270
+Escuela de Posgrado: en el
+
+460
+01:03:13.370 --> 01:03:23.060
+Escuela de Posgrado: sí vivir viernes tenía respuestas privado.
+
+461
+01:03:24.170 --> 01:03:43.330
+Escuela de Posgrado: pero es complicado, Pero la segunda de alma, piden regresar a su vez aplauso.
+
+462
+01:03:43.490 --> 01:03:52.350
+Escuela de Posgrado: Bueno, ese ciclo ha sido un significado, Sí, nivel social.
+
+463
+01:03:52.530 --> 01:03:54.280
+Escuela de Posgrado: Hay que empezar.
+
+464
+01:03:54.540 --> 01:04:16.140
+Escuela de Posgrado: Sí. Mhm por aluminio y y salga, y en a integral.
+
+465
+01:04:16.670 --> 01:04:19.990
+Escuela de Posgrado: Número 5, sí,
+
+466
+01:04:25.870 --> 01:04:37.300
+Escuela de Posgrado: y chino, y la pintar no.
+
+467
+01:04:37.580 --> 01:05:17.020
+Escuela de Posgrado: Y Mhm Cuántos aplausos y y y y en y a que sí alucinante a ver y
+
+468
+01:05:17.940 --> 01:06:19.750
+Escuela de Posgrado: para no formarnos a sí sí, sí, sí tal cual creo que ponéis la oportunidad, Sí, sí, por favor.
+
+469
+01:06:20.020 --> 01:06:33.979
+Escuela de Posgrado: Y en el momento en grupos.
+
+470
+01:06:34.400 --> 01:06:40.920
+Escuela de Posgrado: eso parece que es parte del diseño.
+
+471
+01:06:41.040 --> 01:07:07.370
+Escuela de Posgrado: Pucky y tu respiración hubieras generado la luz? No, no este siempre he y ohh
+
+472
+01:07:08.050 --> 01:07:59.660
+Escuela de Posgrado: sí, Sí, se trata de simplemente evolucionando tanto con tantas calientes por tener tantos a sí, Sí, sí, tecnología
+
+473
+01:07:59.800 --> 01:08:11.030
+Escuela de Posgrado: a a que fue algo innecesaria muchas veces.
+
+474
+01:08:11.170 --> 01:08:18.430
+Escuela de Posgrado: Bueno, pues hay muchas cosas que se pueden ser, mira, pero tampoco puedes pasar las consecuencias.
+
+475
+01:08:18.950 --> 01:08:42.529
+Escuela de Posgrado: Es entender muy bien el porqué. Es algo muy interesante, porque eso es, primero, escultural, claro, Sí, Sí, claro.
+
+476
+01:08:43.189 --> 01:09:08.050
+Escuela de Posgrado: Cuando quieres se va pasando las capturas grande.
+
+477
+01:09:09.920 --> 01:09:14.940
+Escuela de Posgrado: Sí, nos ha pasado muchas veces, no lo sabe. ¿lo va a preguntar.
+
+478
+01:09:18.010 --> 01:09:24.210
+Escuela de Posgrado: Ohh: Los relojes de países están representados.
+
+479
+01:09:27.569 --> 01:09:37.170
+Escuela de Posgrado: Una vez me habían contactado para apoyar la situación. Fue el motor poses.
+
+480
+01:09:37.660 --> 01:09:45.719
+Escuela de Posgrado: pero no de verdad, pero son muy malo.
+
+481
+01:09:51.920 --> 01:10:08.610
+Escuela de Posgrado: Si ellos toman otros a postes y en técnicas, salen en
+
+482
+01:10:09.280 --> 01:10:19.380
+Escuela de Posgrado: entonces, se dice actualmente solo hace manual, entonces más fácil ser automatizado porque llega algo que le tome foto
+
+483
+01:10:20.110 --> 01:10:21.870
+Escuela de Posgrado: y lo puedes hacer como un sal
+
+484
+01:10:22.930 --> 01:10:30.060
+Escuela de Posgrado: después que hubo eso. No pasó con el grupo.
+
+485
+01:10:31.250 --> 01:10:44.800
+Escuela de Posgrado: Sí, esto es de un de Whatsapp.
+
+486
+01:10:45.370 --> 01:10:47.699
+Escuela de Posgrado: No sé si eso ya ni voy a intentarlo
+
+487
+01:10:51.930 --> 01:11:05.510
+Escuela de Posgrado: 4.
+
+488
+01:11:09.280 --> 01:11:41.260
+Escuela de Posgrado: Gracias. Puedes ver el los si puede pasar el link del pero tienes acceso. Alexander es Mhm y
+
+489
+01:11:48.390 --> 01:12:05.670
+Escuela de Posgrado: planificación de comentarios que existe.
+
+490
+01:12:05.760 --> 01:12:10.420
+Escuela de Posgrado: Has dicho, siguen utilizando mucho el transporte al paraíso.
+
+491
+01:12:10.530 --> 01:12:20.220
+Escuela de Posgrado: pero o sea que quieres hacer, Por ejemplo, clasificación de es, reclamos.
+
+492
+01:12:21.250 --> 01:12:25.939
+Escuela de Posgrado: ya tú quieres tú quieres que analice ver a ver a ver
+
+493
+01:12:28.530 --> 01:12:46.420
+Escuela de Posgrado: qué tan disgregado que eres la respuesta como para que diga, ah, mira, para esta categoría, cuántos recursos tiene fácil le pasa, pero a veces.
+
+494
+01:12:46.420 --> 01:12:57.719
+Escuela de Posgrado: por cada 1, El tema es que hay 2 cosas: los comentarios para determinarlo. Y si hay una determinada reclamos
+
+495
+01:12:57.970 --> 01:13:00.790
+Escuela de Posgrado: para poder. El trabajo que nos han dicho se hace es
+
+496
+01:13:00.890 --> 01:13:09.070
+Escuela de Posgrado: definir qué áreas, a qué áreas, para cuándo contextual, claro
+
+497
+01:13:09.440 --> 01:13:19.819
+Escuela de Posgrado: involucrado está también. De hecho, eso era una tarea clásica de guerra. El tema es que hay muchas cosas que se hacían.
+
+498
+01:13:19.960 --> 01:13:34.180
+Escuela de Posgrado: o sea, directamente, en la red de donde tú puedes clasificar y tener un resultado solamente que como ahora todo funciona muy bien. Así como con Toggins se ha dejado mucho de investigar por ese lado. Pero si hay modelos que directamente clasifican.
+
+499
+01:13:34.390 --> 01:13:40.220
+Escuela de Posgrado: aunque por lo que tú me dices, creo que dependiendo del caso, puedes necesitar una fase de razonamiento por un
+
+500
+01:13:40.410 --> 01:13:49.810
+Escuela de Posgrado: cuántos recursos tienes, O sea, ¿qué es lo que corres en una computadora, sí, ya o sea, como digo, que corre en una computadora de cuántos recursos usas esa computadora
+
+501
+01:13:51.020 --> 01:13:58.839
+Escuela de Posgrado: no ahorita, o sea, las pruebas. En en ese sentido son todas de local, serie de Ramos, pero gráfica.
+
+502
+01:13:59.000 --> 01:14:05.659
+Escuela de Posgrado: No, no, No disponemos. Hay algunas lancas que tienen que probar. Hay una que tenemos en la cocina
+
+503
+01:14:05.960 --> 01:14:09.990
+Escuela de Posgrado: que tiene. Sí que fue un pero cuántos de 4 es antigüita?
+
+504
+01:14:10.740 --> 01:14:32.330
+Escuela de Posgrado: Sí, sí, pero no es que con 4. Sí, este sí.
+
+505
+01:14:32.480 --> 01:14:38.450
+Escuela de Posgrado: Bueno, no he podido hacer.
+
+506
+01:14:39.030 --> 01:15:02.380
+Escuela de Posgrado: Me estaba preguntando el 13 000
+
+507
+01:15:02.790 --> 01:15:11.009
+Escuela de Posgrado: por ejemplo, claro, justo investigarlo. Me Me llegué a eso ¿sí? Pero así no.
+
+508
+01:15:11.010 --> 01:15:39.460
+Escuela de Posgrado: O sea, tuve esa opción investigando, pero siempre salían de sí, claro. Pero si lo ejecutas, claro
+
+509
+01:15:39.510 --> 01:15:57.429
+Escuela de Posgrado: que hice como que iba a correr, pero no tan bien. Por eso ya no llegué a probar.
+
+510
+01:15:57.470 --> 01:15:59.929
+Escuela de Posgrado: pero usted sí piensa que podría correr.
+
+511
+01:16:00.470 --> 01:16:05.680
+Escuela de Posgrado: Sí. Este con 4 puede ser tal vez 1 los encuentres a ver
+
+512
+01:16:07.230 --> 01:16:12.810
+Escuela de Posgrado: una de un 1 000 000. Debe ser por ahí, eso Sí, tienes que asegurarte que te en
+
+513
+01:16:12.930 --> 01:16:20.200
+Escuela de Posgrado: pero más que nada por la velocidad, Porque, claro, va a ser mi elemento, cuéntame quién no.
+
+514
+01:16:20.420 --> 01:16:27.220
+Escuela de Posgrado: Claro, el joven. De hecho, son muy buenos, pero no he probado tan chiquito. He probado de 8 000 000
+
+515
+01:16:28.080 --> 01:16:29.360
+Escuela de Posgrado: politizados.
+
+516
+01:16:29.680 --> 01:16:35.100
+Escuela de Posgrado: Funciona muy bien, pero es con la gente de un tipo colar.
+
+517
+01:16:35.510 --> 01:16:48.109
+Escuela de Posgrado: Necesitan invertir en una computadora.
+
+518
+01:16:48.570 --> 01:17:02.179
+Escuela de Posgrado: Tiene recursos de la química ahí es 1 base de datos
+
+519
+01:17:02.760 --> 01:17:05.810
+Escuela de Posgrado: para que ahorita hacer un proyecto proyectil.
+
+520
+01:17:06.150 --> 01:17:14.440
+Escuela de Posgrado: ¿qué pasa? Está en el plan, pero no como para que porque es buena prueba.
+
+521
+01:17:14.910 --> 01:17:16.300
+Escuela de Posgrado: Y,
+
+522
+01:17:16.640 --> 01:17:26.680
+Escuela de Posgrado: claro, este es cuando son pruebas bases de datos. Básicamente compran con C, p. Us con mucha memoria. A veces claro, sería más servidor editado para
+
+523
+01:17:27.010 --> 01:17:29.490
+Escuela de Posgrado: analítica, pero todavía hay.
+
+524
+01:17:31.000 --> 01:17:36.599
+Escuela de Posgrado: Pero para esto no creo, claro, es que ahí como que yo quiero empezar con ciertas pruebas.
+
+525
+01:17:36.990 --> 01:17:46.510
+Escuela de Posgrado: Claro, prueba con esto con estos chiringuitos. Haz que funcione. Chévere y diles, ah, mira, ¿quieren algo? Willy
+
+526
+01:17:47.020 --> 01:18:08.479
+Escuela de Posgrado: con Facebook Increíble así, claro, sí, pero de hecho, está desactualizado.
+
+527
+01:18:09.390 --> 01:18:14.379
+Escuela de Posgrado: Pero si se si me das la boca que dice
+
+528
+01:18:14.850 --> 01:18:18.020
+Escuela de Posgrado: y no se pueden darme un poco.
+
+529
+01:18:18.280 --> 01:18:30.850
+Escuela de Posgrado: y ambos dicen que era este, pero diles para el 2 026 porque te voy a poner este clásico de 2 023, el s, el sótano.
+
+530
+01:18:31.520 --> 01:18:41.290
+Escuela de Posgrado: ya profesor y respecto a lo que estamos avanzando, no podemos, no sé de alguna forma, en paralelo.
+
+531
+01:18:41.730 --> 01:18:47.879
+Escuela de Posgrado: No sé cómo se crea conveniente y con la parte práctica para hacerla más digerible. Poder.
+
+532
+01:18:48.360 --> 01:18:53.869
+Escuela de Posgrado: La verdad para a mí personalmente, ya tanto como
+
+533
+01:18:54.950 --> 01:18:59.009
+Escuela de Posgrado: por tanta atunes, es prácticos, no tanto como pueden ir.
+
+534
+01:18:59.160 --> 01:19:02.119
+Escuela de Posgrado: O sea, claro, dices.
+
+535
+01:19:02.190 --> 01:19:19.230
+Escuela de Posgrado: claro, o sea, cada vez vemos más que el código fórmulas no. O sea, este sí podría ser un notebook, que tampoco es que te entendamos a profundidad el código, pero sí entendemos los bloques o o qué es lo que hace cada paso. Sí, de hecho, quiero terminar de ver todos los bloques cerca.
+
+536
+01:19:20.040 --> 01:19:28.990
+Escuela de Posgrado: Sé que esa parte es bien barbosa. Luego vamos a hacer una pequeña implementación de esto para que vean como
+
+537
+01:19:29.630 --> 01:19:32.520
+Escuela de Posgrado: que sí, porque en plan
+
+538
+01:19:35.760 --> 01:19:45.909
+Escuela de Posgrado: a ver, hay niveles de entendimiento. Uno es a nivel de uso y que es básicamente me loves como llamarlo quesitos sin pintarlos y todo eso.
+
+539
+01:19:45.990 --> 01:20:01.770
+Escuela de Posgrado: Pero lo que estamos desarrollando aquí es un entendimiento más a profundidad de cada 1 de los blogs. Así que ahí hay bastante bastante matemática, y entiendo que es un poco, tal vez verboso o muy cargado. Otra cosa que le estoy mencionando.
+
+540
+01:20:01.940 --> 01:20:18.940
+Escuela de Posgrado: pero al fin de cuentas, esto esto va a converger a este aplicaciones tipo L L que está mencionando. Y lo bueno de entender esto es también entender en qué casos podría fallar este, porque sucede cada una de las cosas y pueden tomar una mejor decisión con con un entendimiento más amplio.
+
+541
+01:20:20.490 --> 01:20:26.439
+Escuela de Posgrado: Perdón. Por cierto, este antes que me olvide cuando me estaba preguntando por modelos chiquitos.
+
+542
+01:20:26.950 --> 01:20:34.160
+Escuela de Posgrado: He visto ahora último con las conversaciones que hemos tenido desde la clase pasada con Cuba y que ya fue usando manga.
+
+543
+01:20:34.320 --> 01:20:40.720
+Escuela de Posgrado: Si hay modelos que están chiquitos, que estamos utilizando mamba justamente para optimizar.
+
+544
+01:20:41.140 --> 01:20:47.149
+Escuela de Posgrado: Tal vez si tú buscas justamente lo que te mencionan, no para el 2 026 que sale este modelo 60,
+
+545
+01:20:47.400 --> 01:20:53.260
+Escuela de Posgrado: en ahora, varias implementaciones que son optimizadas.
+
+546
+01:20:53.620 --> 01:21:05.949
+Escuela de Posgrado: Bueno, hay 1 que se llama Flash Atentan, que de hecho es una implementación de lo que estamos sabiendo, porque estamos viendo de transformer que está muy bien optimizada para Gpus. O sea, es como que una implementación diseñada a nivel hardware, digamos.
+
+547
+01:21:06.520 --> 01:21:12.450
+Escuela de Posgrado: Ahora, al hacer de este tipo va a depender la arquitectura de hardware que ha tenido la G. P. U.
+
+548
+01:21:12.590 --> 01:21:20.520
+Escuela de Posgrado: Entonces hay versiones de Flash Atention, por ejemplo, que no van a correr en colab porque son muy antiguas. Es para esa versión de Flash Tenge.
+
+549
+01:21:20.950 --> 01:21:25.469
+Escuela de Posgrado: Y si tienes una G, P. U muy antigua, muy probablemente fallecen. No va a funcionar ahí.
+
+550
+01:21:26.130 --> 01:21:38.279
+Escuela de Posgrado: Vas a tener que utilizar la implementación, base de de atención no que o sea bajos. En los 2, ambos ambos casos va a funcionar, pero va a ser menos optimizada.
+
+551
+01:21:38.480 --> 01:21:51.380
+Escuela de Posgrado: Eso van a notar cuando estén utilizando esos modelos chiquitos? Bueno, nos habíamos quedado aquí.
+
+552
+01:21:52.350 --> 01:22:03.789
+Escuela de Posgrado: ¿sí? Estetiminando un poco esta parte, vamos a ver un poco de código para que vean cómo se relaciona con lo que es. Primero, que se note muy bien bien claro cómo funcionan con los mecanismos
+
+553
+01:22:04.050 --> 01:22:06.899
+Escuela de Posgrado: hasta esa parte que estamos bien. ¿no? ¿cierto?
+
+554
+01:22:07.460 --> 01:22:13.209
+Escuela de Posgrado: Esto de acá genera el mapa de atención, no que es este termina siendo como un producto punto
+
+555
+01:22:13.510 --> 01:22:26.409
+Escuela de Posgrado: y la columna y la columna no genera una matriz, no una matriz de 3 por 3 3 por 3, porque son elementos de secuencia por elementos de secuencia no. Entonces, si la secuencia son de 15 tokens? ¿de qué tamaño es la matriz
+
+556
+01:22:28.310 --> 01:22:30.650
+Escuela de Posgrado: 15, por 15, no de si.
+
+557
+01:22:30.650 --> 01:22:30.970
+Juan Casavilca: Precioso.
+
+558
+01:22:31.620 --> 01:22:32.280
+Escuela de Posgrado: Sí. Perdón.
+
+559
+01:22:32.280 --> 01:22:36.829
+Juan Casavilca: Una pregunta. Este la matriz de tensión tiene que ser simétrica.
+
+560
+01:22:38.280 --> 01:22:39.010
+Juan Casavilca: Tiene que ser.
+
+561
+01:22:39.010 --> 01:22:41.809
+Escuela de Posgrado: No necesariamente.
+
+562
+01:22:43.010 --> 01:22:48.880
+Juan Casavilca: Porque cuando usted demostró ahí y sí,
+
+563
+01:22:49.420 --> 01:22:52.880
+Juan Casavilca: vence, pensé que iba a salir esa matriz de puntitos. No.
+
+564
+01:22:53.450 --> 01:22:54.360
+Escuela de Posgrado: Ajá.
+
+565
+01:22:54.360 --> 01:23:00.310
+Juan Casavilca: Ajá. Esa es esa materia. Pensé que iba a salir este simétrico porque estaba multiplicando como que
+
+566
+01:23:00.940 --> 01:23:02.629
+Juan Casavilca: la frase con ella misma.
+
+567
+01:23:03.410 --> 01:23:18.080
+Escuela de Posgrado: Ajá. Sí, de hecho, este una una noción intuitiva que podríamos tener, algo que podríamos pensar a priori, es que Justamente eso va a ser simétrica, No, pero no es métrica. ¿se imaginan por qué el porqué no es simétrico?
+
+568
+01:23:19.730 --> 01:23:24.670
+Escuela de Posgrado: Por ejemplo, hace un momento estamos diciendo. Queremos saber este de Miguel.
+
+569
+01:23:24.870 --> 01:23:27.990
+Escuela de Posgrado: Queremos conocer a Miguel. Tal vez este.
+
+570
+01:23:29.140 --> 01:23:43.819
+Escuela de Posgrado: Tal vez Edher conoce a Miguel, pero Miguel no conoce a Edward. Entonces este muchas veces no es bidireccional. Ok, Por eso.
+
+571
+01:23:43.940 --> 01:23:46.699
+Escuela de Posgrado: porque tendríamos que dejar la natación no
+
+572
+01:23:47.000 --> 01:23:54.810
+Escuela de Posgrado: claro cuadrada, Sí, no claro, es cuadrada, pero no simétrica, ¿sí?
+
+573
+01:23:54.940 --> 01:23:59.419
+Escuela de Posgrado: Ok, Entonces es un dato que esas cosas no.
+
+574
+01:23:59.520 --> 01:24:01.000
+Juan Casavilca: Gracias. Pepe.
+
+575
+01:24:01.420 --> 01:24:10.890
+Escuela de Posgrado: Sí. Gracias. Algo que les iba a comentar. Bueno, por ejemplo, el texto que por ahí quieren trabajar, ¿Cómo te llamas del fútbol paso
+
+576
+01:24:11.410 --> 01:24:13.410
+Escuela de Posgrado: más máximo.
+
+577
+01:24:13.530 --> 01:24:16.080
+Escuela de Posgrado: Bien, maximo bolus.
+
+578
+01:24:16.870 --> 01:24:18.990
+Escuela de Posgrado: Mhm: Sí,
+
+579
+01:24:19.230 --> 01:24:29.680
+Escuela de Posgrado: con todos los títulos. Tiene un montón de títulos, verdad y al máximo sinies. Este está trabajando con sus documentos que son? Cuántos Cuántos son ¿Los Tendrás los documentos que quieres analizar
+
+580
+01:24:30.610 --> 01:24:32.710
+Escuela de Posgrado: reclamos? Ajá?
+
+581
+01:24:36.490 --> 01:24:38.990
+Escuela de Posgrado: ¿serán unos 3 000, no 3 000 personas.
+
+582
+01:24:40.180 --> 01:24:48.430
+Escuela de Posgrado: unos pequeños textos de fermín, no 3 000 páginas. Cuántos tokens creen que hayan por cuántas palabras son. Más
+
+583
+01:24:51.670 --> 01:24:58.320
+Escuela de Posgrado: claro. En total saldrá sus 1 000 000, no ya
+
+584
+01:24:58.420 --> 01:25:01.569
+Escuela de Posgrado: ¿De qué tamaño va a ser la matriz de atención.
+
+585
+01:25:03.830 --> 01:25:08.160
+Escuela de Posgrado: Un 1 000 000 por un 1 000 000 no se dan cuenta del tremendo problema que tiene Esto no
+
+586
+01:25:08.480 --> 01:25:12.119
+Escuela de Posgrado: ya. Esa es una gran limitación que tienen los transformers.
+
+587
+01:25:14.090 --> 01:25:19.080
+Escuela de Posgrado: Esto escala en forma cuadrada, la matriz de atención
+
+588
+01:25:20.890 --> 01:25:27.350
+Escuela de Posgrado: perdón. Este la matriz de atención crece en forma cuadrática. Ahora noten que esa matriz de cohesión es por Head.
+
+589
+01:25:27.730 --> 01:25:40.279
+Escuela de Posgrado: Cada get tiene un una matriz de atención si tenemos 16 Teds, de hecho, un parámetro que vamos a escalar para que la empresa más grande es el inglés. Si tenemos 16, tenemos 16 000 000 por 1 000 000.
+
+590
+01:25:40.430 --> 01:25:52.639
+Escuela de Posgrado: Y tenemos 16 por un guion por un 1 000 000 por cada una de las de los bloques de los Transformers. No, Si tenemos profundidad. 64 64, por 16 por un 1 000 000 por un 1 000 000
+
+591
+01:25:53.330 --> 01:26:11.959
+Escuela de Posgrado: de esas prendas por las oraciones. De hecho.
+
+592
+01:26:12.510 --> 01:26:28.739
+Escuela de Posgrado: de hecho, la forma canónica, digamos, la forma, este base de trabajarlo es todos contra todos que justamente el valor del Transformer es que procesa todos contra todos y encuentran los patrones del con de contexto entre todos contra todos
+
+593
+01:26:28.740 --> 01:26:35.390
+Escuela de Posgrado: es justamente el gran valor de los transformistas. El gran claro, eso es el canónico.
+
+594
+01:26:35.540 --> 01:26:49.980
+Escuela de Posgrado: Se dan cuenta que es muy, muy ineficiente. Entonces, este lo que se hicieron los siguientes años, sobre todo en inicios del 2 020. Por cierto, vamos a ver un montón de papers abajo. Siempre les pongo la cita. Si ignorarán
+
+595
+01:26:50.250 --> 01:26:54.289
+Escuela de Posgrado: y van a ver que muchos pekers salieron en el 2 020, 2 021. 22
+
+596
+01:26:54.590 --> 01:26:58.320
+Escuela de Posgrado: Mhm: En esos años tuvo una explosión de innovación.
+
+597
+01:26:58.510 --> 01:27:10.830
+Escuela de Posgrado: Luego vamos a discutir sobre esto. Bueno, al final de esos años se exploraron muchas formas de cómo optimizar esa alimentación de los de los transformers. Vamos a discutirlo. Este
+
+598
+01:27:11.000 --> 01:27:13.190
+Escuela de Posgrado: disculpe ya nos vemos allí
+
+599
+01:27:13.640 --> 01:27:25.889
+Escuela de Posgrado: allí se hace todo rápidamente. Los mapas de atención. Claro, rápidamente se ha dicho hoy.
+
+600
+01:27:26.260 --> 01:27:34.600
+Escuela de Posgrado: Ok, por supuesto, se techo, no es tan inmediata. ¿se dan cuenta que genera Token por Token. ¿no
+
+601
+01:27:35.250 --> 01:27:45.990
+Escuela de Posgrado: se dan cuenta que a veces están apurados y están esperando que se sequen ya está cerrando el deadline y está todo bien.
+
+602
+01:27:47.150 --> 01:27:56.119
+Escuela de Posgrado: No, este se dan cuenta que funciona así. De hecho, es por el comportamiento progresivo. Y justamente para generar el siguiente token. Otra vez está haciendo el producto de matrices. Y todo eso.
+
+603
+01:27:56.600 --> 01:28:01.570
+Escuela de Posgrado: claro, lo que también estamos guardando información por caché.
+
+604
+01:28:02.110 --> 01:28:09.949
+Escuela de Posgrado: O sea, esos esos valores de aquí query lo podemos guardar en caché como para poderlo utilizar. Hay optimizaciones a diver hardware
+
+605
+01:28:10.200 --> 01:28:15.110
+Escuela de Posgrado: que no vamos a centrar mucha discusión, pero a fin de cuentas, estamos haciendo ese producto.
+
+606
+01:28:16.610 --> 01:28:22.619
+Escuela de Posgrado: ya que es el producto de matrices. Ok, esa generación de las matrices por cada caso.
+
+607
+01:28:22.870 --> 01:28:31.620
+Escuela de Posgrado: En por otro lado, este les había compartido a ustedes, claro, ustedes compartir por el chat.
+
+608
+01:28:31.820 --> 01:28:39.670
+Escuela de Posgrado: un modelo que lo genera todo de golpe lo vieron?
+
+609
+01:28:40.020 --> 01:28:51.330
+Escuela de Posgrado: Sí, de hecho, porque como se llama este Mercury mercurio
+
+610
+01:28:52.700 --> 01:28:55.629
+Escuela de Posgrado: Grande, esto es para coger y pegar
+
+611
+01:28:57.310 --> 01:29:03.350
+Escuela de Posgrado: para que me saldrá a estar ingresado las salud.
+
+612
+01:29:05.250 --> 01:29:11.090
+Escuela de Posgrado: Ok, Este aquí mira, es un modelo progresivo, como son xilostones.
+
+613
+01:29:14.410 --> 01:29:25.070
+Escuela de Posgrado: Ok, estos modelos de preventivo. En cambio, esto de acá generando los tokens a la vez solamente que se van perfeccionando, es un modelo de discusión. Vamos a verlo más adelante.
+
+614
+01:29:25.550 --> 01:29:27.649
+Escuela de Posgrado: Es un difusión. Evidentemente.
+
+615
+01:29:30.210 --> 01:29:34.379
+Escuela de Posgrado: Ok, Bueno, ¿cómo funciona eso? Lo discutimos más allá,
+
+616
+01:29:34.760 --> 01:29:41.300
+Escuela de Posgrado: pero no nos parece cómo funciona. Y para ver dónde
+
+617
+01:29:41.770 --> 01:29:44.910
+Escuela de Posgrado: el panorama general, un blog general de esto.
+
+618
+01:29:45.750 --> 01:29:51.750
+Escuela de Posgrado: qué necesitamos aprender para poder desarrollar ya este
+
+619
+01:29:52.030 --> 01:30:01.699
+Escuela de Posgrado: a ver los modelos de difusión es es igual que modelos generativos. Es un tipo de modelo generativo de perdón de modelos regresivos. Un tipo de modelo este generativo.
+
+620
+01:30:01.800 --> 01:30:09.290
+Escuela de Posgrado: Lo que vamos a hacer es aprender una distribución de datos, o sea, el objetivo de modelos generativos, es justamente hacer un modelamiento de los datos.
+
+621
+01:30:09.370 --> 01:30:17.309
+Escuela de Posgrado: Entonces, justamente hemos hablado mucho sobre espacio de representación, ¿no? Ok.
+
+622
+01:30:17.310 --> 01:30:32.169
+Escuela de Posgrado: ese espacio de representación en una subregión es donde están los datos, digamos, donde están distribuidos cada 1 de los datos que estamos aprendiendo. No, ahora. Ese es el espacio de representación. El espacio de los datos reales también es un espacio súper complejo, no inmenso.
+
+623
+01:30:32.340 --> 01:30:43.940
+Escuela de Posgrado: con ciertos tipos de propiedades. No digamos que están como que, agrupados en una región. Lo que queremos modelar es justamente esa distribución de los datos. Hay muchas técnicas de cómo modelar esa distribución de los datos.
+
+624
+01:30:44.570 --> 01:30:57.089
+Escuela de Posgrado: Están las las buestional out and cover, que tal vez lo discutiremos un poco, pero no vamos a ver tanto a detalle las Guns, que fueron muy famosas durante mucho tiempo, ¿no? ¿sí?
+
+625
+01:30:57.730 --> 01:31:05.429
+Escuela de Posgrado: O escucharon Gangs, las gangs eran súper populares. Luego entraron los modelos de difusión.
+
+626
+01:31:05.550 --> 01:31:13.529
+Escuela de Posgrado: Los modelos de difusión aprenden un mapeo entre una distribución gaussiana normalmente gaussiana, pero
+
+627
+01:31:13.780 --> 01:31:31.280
+Escuela de Posgrado: pero normalmente gausiana y una distribución completa. Ok, entonces parte de una gocena, y lo quieres proyectar una distribución completa. Pasar de de este punto de gocena sustitución completa completa lo va a hacer con pequeños cambios. Ok. Es como que dibujar.
+
+628
+01:31:33.170 --> 01:31:38.800
+Escuela de Posgrado: Estamos viendo. Yo no quiero a ver
+
+629
+01:31:40.240 --> 01:31:51.070
+Escuela de Posgrado: al inicio. Vamos a tener una distribución gausiana. Por cierto, eso es un corte en la oceana. Es así? Solamente es que lo he cortado. ¿vale? Entonces la distribución de los datos es algo así.
+
+630
+01:31:52.690 --> 01:32:11.949
+Escuela de Posgrado: Es algo complejo. Lo que queremos es mapear esa distribución, esta distribución, entonces tú construyes aquí y tienes una flota aquí. En este caso, son toques, no en caso imágenes. Esa es una imagen, No sé de de un árbol o de una flor, ¿no? Ok. Entonces tienes que aprender a hacer esa transformación de que llegue de aquí Hasta acá no.
+
+631
+01:32:13.680 --> 01:32:19.569
+Escuela de Posgrado: Okay, ese mapeo de cómo se relaciona, cómo se relaciona. Cada 1 de estos
+
+632
+01:32:20.710 --> 01:32:22.880
+Escuela de Posgrado: debe aprender la raíz del honor.
+
+633
+01:32:23.410 --> 01:32:37.459
+Escuela de Posgrado: Ok. Ahora pueden ver que la forma de esos 2 son diferentes. Entonces, como para aproximar, es esta región a esto de acá que está como que me ha aplastado, lo podría ser como que modificarlo así no como aplastar. Ok.
+
+634
+01:32:39.070 --> 01:32:40.080
+Escuela de Posgrado: Eso.
+
+635
+01:32:40.770 --> 01:32:50.689
+Escuela de Posgrado: como les digo, va a ser una serie de transformaciones. Es como una especie de gradiente para este lado, como si estuviera aplastando. Ok. Entonces vamos a tener como una serie de pasos
+
+636
+01:32:50.830 --> 01:32:54.930
+Escuela de Posgrado: e igualdad muchas veces.
+
+637
+01:32:55.690 --> 01:33:03.749
+Escuela de Posgrado: Ok, vamos a ver diferentes pasos que le van a añadir una pequeña distorsión a esos espacios de representación. Ok, Bueno, esas distribuciones.
+
+638
+01:33:03.880 --> 01:33:16.249
+Escuela de Posgrado: y, bueno, cada nivel va a tener un pequeño desplazamiento hasta llegar a la posición final. Ok, Y esos desplazamientos que son pequeños sobre las distribuciones son gradientes.
+
+639
+01:33:16.990 --> 01:33:29.540
+Escuela de Posgrado: Ok, entonces lo que va a hacer modelos de difusión es aprender la dirección a cuanto debe transformarse este esa distribución o un dato, esa distribución para que sea la distribución de un dato real.
+
+640
+01:33:29.770 --> 01:33:40.340
+Escuela de Posgrado: ¿por qué eso se ve completamente claro y
+
+641
+01:33:52.300 --> 01:33:58.580
+Escuela de Posgrado: en señal policía, que es salir a un píxel.
+
+642
+01:33:59.380 --> 01:34:04.580
+Escuela de Posgrado: Ya eso vamos a ver un poco más adelante.
+
+643
+01:34:06.620 --> 01:34:09.050
+Escuela de Posgrado: a ver lo que va a hacer un proceso de difusión
+
+644
+01:34:09.820 --> 01:34:20.069
+Escuela de Posgrado: han escuchado el proceso brownieano. Una vez bromiani que un mito aleatorio
+
+645
+01:34:20.660 --> 01:34:24.690
+Escuela de Posgrado: como una mota de polvo, bailando así en el aire
+
+646
+01:34:25.530 --> 01:34:27.799
+Escuela de Posgrado: buenísimo. Es un movimiento aleatorio. Ok.
+
+647
+01:34:28.050 --> 01:34:31.719
+Escuela de Posgrado: Entonces lo que vamos a aprender es justamente a
+
+648
+01:34:32.140 --> 01:34:40.729
+Escuela de Posgrado: distorsionar el dato en sí. Y lo que va a aprender es cómo componer hace una instrucción para los datos. Entonces vamos a aprender, a fin de cuentas gradientes.
+
+649
+01:34:40.960 --> 01:34:45.969
+Escuela de Posgrado: sí gradientes que te va a ayudar a revolver a la posición de los datos originales.
+
+650
+01:34:46.150 --> 01:34:53.909
+Escuela de Posgrado: entonces lo que va a aprender el modelo de infusión justamente son gradientes gradientes te va a decir cómo se deben este
+
+651
+01:34:54.510 --> 01:34:58.750
+Escuela de Posgrado: acumular los datos a lo que él estaba dibujando por ahí en la pizarra. Ok.
+
+652
+01:35:05.030 --> 01:35:10.580
+Escuela de Posgrado: Bueno, para que funcione, el modelo de fusión también va a ser muy importante el componente aleatorio.
+
+653
+01:35:12.040 --> 01:35:16.939
+Escuela de Posgrado: Vamos a ver eso si es un poco de eso, la matemática de esta parte, pero
+
+654
+01:35:17.250 --> 01:35:32.989
+Escuela de Posgrado: más o menos de ese groso modo. Así funciona modelos de infusión que, de hecho de manera muy similar, va a funcionar también los Love Marking, que ya le estaba conversando años. Ok. Entonces, ¿cómo funciona esta arquitectura?
+
+655
+01:35:33.140 --> 01:35:35.590
+Escuela de Posgrado: Ostras aquí.
+
+656
+01:35:36.290 --> 01:35:43.319
+Escuela de Posgrado: Lo que vamos a tener es, vamos a inicializar de forma aleatoria. Por eso, al inicio, está como que cualquier cosa
+
+657
+01:35:43.430 --> 01:35:49.000
+Escuela de Posgrado: y luego, lo que va a hacer es componer poco a poco a cuál es la posición del dato resultante.
+
+658
+01:35:49.240 --> 01:35:57.040
+Escuela de Posgrado: Ok, vamos a ver de un punto aleatorio de cualquier palabra, no va a moverse a una posición de una palabra que sea coherente a esa respuesta.
+
+659
+01:35:57.260 --> 01:36:00.750
+Escuela de Posgrado: Ok, Y Lo bueno es que todo eso lo hace en paralelo.
+
+660
+01:36:01.360 --> 01:36:15.780
+Escuela de Posgrado: porque toda esa composición de palabras es un punto aleatorio de todos los espacios. Entonces se va a mover sobre ese espacio. Es una posición que sea coherente a lo que les
+
+661
+01:36:15.780 --> 01:36:21.669
+Escuela de Posgrado: sí no está prediciendo. La siguiente palabra está prediciendo. Todo el conjunto
+
+662
+01:36:22.310 --> 01:36:25.610
+Escuela de Posgrado: ajá, O sea, todo eso como bloque, está en ese espacio.
+
+663
+01:36:25.720 --> 01:36:33.389
+Escuela de Posgrado: Y lo que estás haciendo es como darte. ¿cuál es la posición del de la secuencia de palabras más proa
+
+664
+01:36:33.500 --> 01:36:40.030
+Escuela de Posgrado: claro, Digamos, claro, podrías decir como que mueve los datos, lo que estás haciendo es desplazarse sobre el espacio de atracciones.
+
+665
+01:36:41.340 --> 01:36:42.770
+Escuela de Posgrado: Es interesante.
+
+666
+01:36:43.200 --> 01:36:54.230
+Escuela de Posgrado: Por eso es importante que entiendan bien qué quiere decir espacio de representación, ¿Qué espacio de datos, instituciones de datos y todo eso justamente, es la base para las cosas que vamos a ver más adelante.
+
+667
+01:36:58.050 --> 01:36:59.660
+Escuela de Posgrado: Qué divertido todo esto? No.
+
+668
+01:37:00.570 --> 01:37:01.510
+Escuela de Posgrado: Mhm.
+
+669
+01:37:14.050 --> 01:37:15.960
+Escuela de Posgrado: Volvamos a nuestra realidad.
+
+670
+01:37:16.260 --> 01:37:17.360
+Escuela de Posgrado: Estamos.
+
+671
+01:37:29.570 --> 01:37:35.140
+Escuela de Posgrado: Bueno, entonces este esto se convertía en ese proceso de atención.
+
+672
+01:37:35.510 --> 01:37:46.759
+Escuela de Posgrado: respuesta, ¿no? Y por eso tenemos el mapa de tensión. No consideramos una respuesta, y así no Ahora, algo que también les había comentado, que
+
+673
+01:37:47.180 --> 01:37:52.619
+Escuela de Posgrado: es que íbamos a hacer el procesamiento en múltiples genes. No
+
+674
+01:37:58.070 --> 01:38:01.400
+Escuela de Posgrado: vamos a hacer procesamiento, multiplesques, ¿cierto?
+
+675
+01:38:01.670 --> 01:38:07.979
+Escuela de Posgrado: Ok. Cada vez, como les mencionaba, los iba a hacer es un procesamiento del que es un tópico, en especial.
+
+676
+01:38:08.340 --> 01:38:09.240
+Escuela de Posgrado: Vale.
+
+677
+01:38:11.030 --> 01:38:23.400
+Escuela de Posgrado: Ahora, ¿qué quiere decir? Bueno, yo les he dado como que palabras como para que se entienda la idea. Pero, estrictamente hablando, lo que vamos a hacer es trabajar en un sub espacio de todo el espacio de representación
+
+678
+01:38:23.540 --> 01:38:24.440
+Escuela de Posgrado: Okay.
+
+679
+01:38:24.580 --> 01:38:26.570
+Escuela de Posgrado: Ahora vamos a agregar un poco esto.
+
+680
+01:38:28.920 --> 01:38:44.919
+Escuela de Posgrado: como les mencionaba. Los datos viven en un espacio inmenso, no donde, por ejemplo, la palabra, No sé cuadro. Ahí tenemos cuadros. Este el concepto de cuadro en cuadro en particular, puede tener este los colores que tiene la abstracción que contiene este
+
+681
+01:38:45.290 --> 01:38:52.930
+Escuela de Posgrado: no se le estilo de dibujo, que eso es un cuadro modernista abstracto. Es eso. No
+
+682
+01:38:53.180 --> 01:39:02.090
+Escuela de Posgrado: No sé que quiera representar. Bueno, los que están en grabación no saben que cuadro me estoy refiriendo, pero hay un cuadro. Hay 4 cuadros que les dice esos cuadros. Por cierto.
+
+683
+01:39:04.140 --> 01:39:07.980
+Escuela de Posgrado: en el surrealistas?
+
+684
+01:39:08.330 --> 01:39:15.079
+Escuela de Posgrado: Bueno, la primera parece una una cara de chi una nariz grande. La segunda, no sé qué será. Por ejemplo.
+
+685
+01:39:15.500 --> 01:39:16.720
+Escuela de Posgrado: no tengo que ir.
+
+686
+01:39:17.310 --> 01:39:22.420
+Escuela de Posgrado: La Las la tercera, no sí
+
+687
+01:39:22.560 --> 01:39:31.569
+Escuela de Posgrado: son los estados del ciclo. Es cierto, golpecitos y perdón. Stilly Tomlins.
+
+688
+01:39:32.950 --> 01:39:46.949
+Escuela de Posgrado: Bueno, todo eso está en el espacio de representación, o sea, el contenido mismo de esos cuadros y a los que están en virtual. Imagínense cuadros, pero es de todo ese contenido. Está en el espacio de representación, no ahora sobre cada 1 de esos cuadros, podemos decir muchas cosas, ¿no?
+
+689
+01:39:47.120 --> 01:39:51.920
+Escuela de Posgrado: Ok. Trabajar sobre el espacio inmenso de de todos los todos los datos
+
+690
+01:39:51.980 --> 01:39:56.290
+Escuela de Posgrado: es muy tedioso. Deberíamos enfocarnos en algo particular como para
+
+691
+01:39:56.340 --> 01:40:15.960
+Escuela de Posgrado: poder seleccionar, no, por ejemplo, decir cuál es el color base de este. Queremos analizar colores, no el color base el pro color promedio de cada 1 de esos cuadros, no entonces de todo el espacio de toda la información que puede contener, no el número de curvas, el número de pintura que se ha gastado ahí, el significado del autor y el significado de las otras personas, porque creo que
+
+692
+01:40:15.980 --> 01:40:18.190
+Escuela de Posgrado: no creo que tenga un significado único
+
+693
+01:40:18.240 --> 01:40:21.730
+Escuela de Posgrado: de toda esa información. Vamos a enfocarnos en un simple espacio.
+
+694
+01:40:22.080 --> 01:40:34.060
+Escuela de Posgrado: Se centra en los colores, en colores promedio. Ok, en ese subespacio de colores promedio puede decir que ese cuadro es verde. Ese cuadro es marrón y los otros es.
+
+695
+01:40:34.270 --> 01:40:37.459
+Escuela de Posgrado: No sé que puede ser eso medio morado, ¿no?
+
+696
+01:40:37.530 --> 01:40:51.169
+Escuela de Posgrado: Bueno, entonces, en ese subespacio vamos a poder seleccionar a mira, yo quiero un cuadro verde, entonces voy a sentarme ahí. No me importa la otra información, ¿no? Cuando crearon el cuadro, este, ¿qué autor tiene nada de eso. Me estoy centrando en un tipo de información.
+
+697
+01:40:51.170 --> 01:41:06.670
+Escuela de Posgrado: Ok, y tal vez otra otro factor de decisión sea, No sé es de que tenga curvas. Entonces, de todo el espacio ya no está en el espacio subespacio de colores, sino en el espacio, de qué tipo de trazos tiene, ¿no? Ok. Entonces lo que estamos haciendo es una selección de sub espacios
+
+698
+01:41:06.860 --> 01:41:07.670
+Escuela de Posgrado: Its.
+
+699
+01:41:07.770 --> 01:41:15.809
+Escuela de Posgrado: Claro, cada jet se selecciona un subespacio. Ahora, ¿cómo seleccionamos subespacio, pero hemos entendido hasta ahora esa parte. No.
+
+700
+01:41:16.220 --> 01:41:20.679
+Escuela de Posgrado: Sí, estamos bien, no bien. ¿cómo seleccionamos su espacio
+
+701
+01:41:20.890 --> 01:41:23.749
+Escuela de Posgrado: justamente para eso hacemos una proyección lineal.
+
+702
+01:41:26.440 --> 01:41:34.679
+Escuela de Posgrado: Ahora, este este, que es un poco abstracto de como que repasando un poco de pregrado este hay una alianza con el
+
+703
+01:41:35.190 --> 01:41:37.109
+Escuela de Posgrado: ¿Se acuerdan los hiperplanos?
+
+704
+01:41:41.340 --> 01:41:42.910
+Escuela de Posgrado: ¿qué es el hiperplana?
+
+705
+01:41:45.420 --> 01:42:00.919
+Escuela de Posgrado: Mhm: No, Básicamente es, digamos, que está en un espacio de 3 dimensiones. Aquí
+
+706
+01:42:01.530 --> 01:42:04.320
+Escuela de Posgrado: vamos a tener un plan Ok.
+
+707
+01:42:04.830 --> 01:42:17.380
+Escuela de Posgrado: Este plano termina siendo un espacio de 2 dimensiones. Tenemos espacio de 3 dimensiones, un espacio de 2 dimensiones. Ok, en ese espacio de aquí
+
+708
+01:42:17.560 --> 01:42:28.280
+Escuela de Posgrado: este estamos perdiendo, digamos, información, ¿no? Este, digamos los detalles de profundidad. Lo estamos perdiendo. Si proyectamos los datos sobre este subespacio reducido, no
+
+709
+01:42:28.280 --> 01:42:40.680
+Escuela de Posgrado: igual como abstrayéndolo un poco a los procesos que hemos dicho, por ejemplo, de toda la información que tenemos, los faros. Vamos a implicar solamente ese espacio sobre ese plano que proyecta el significado de color.
+
+710
+01:42:40.820 --> 01:42:51.480
+Escuela de Posgrado: Perdemos todos los detalles. Y aquí solamente hay color. Y aquí solamente analizamos, Ok, entonces esto de acá va a ser sube espacio que vamos a trabajar, que es un espacio más chiquito
+
+711
+01:42:52.080 --> 01:42:57.780
+Escuela de Posgrado: enfocado en una categoría específica. ¿y ¿cómo llegamos a un espacio más chiquito?
+
+712
+01:42:58.590 --> 01:43:05.040
+Escuela de Posgrado: Bueno, ¿cómo definimos cómo proyectamos un plan. Se acuerda en
+
+713
+01:43:06.190 --> 01:43:20.339
+Escuela de Posgrado: era básicamente usar una matriz de transformación. En este caso sería de R a la 1 024 hacia Rl: 64. No es una matriz de transformación. Simplemente no afecta a este plano. Ok, entonces
+
+714
+01:43:20.460 --> 01:43:35.319
+Escuela de Posgrado: va a ser una proyección a un sub plano, un plano esté más reducido, no que se enfoca a un tópico muy específico. Okay. El Plange va a ser eso y justamente es el papel de cada 1
+
+715
+01:43:37.760 --> 01:43:40.109
+Escuela de Posgrado: en cada 1 de esos tests. Ok.
+
+716
+01:43:41.970 --> 01:43:52.910
+Escuela de Posgrado: Entonces cada luego de hacer ese procesamiento, vamos a tener respuesta a diferentes gentes, entonces cada get va va a representar o va a estar en diferentes tipos de información. No
+
+717
+01:43:52.910 --> 01:44:03.300
+Escuela de Posgrado: volviendo al cuadro. ¿no? Ahora, este el cuadro era como que algo complejo diciendo, ah, mira, este cuadro es verde. Tiene trazos este rectos principalmente
+
+718
+01:44:03.420 --> 01:44:16.170
+Escuela de Posgrado: tiene un poquito de rojo, y así no, o sea, como que respuestas diferentes que eres. ¿no? Ahora, todas esas respuestas que están como que independiente. Lo tenemos que combinar como para hacer una conclusión, digamos, Okay. Entonces, ¿cómo combinamos diferentes respuestas?
+
+719
+01:44:18.240 --> 01:44:18.980
+Escuela de Posgrado: Mhm.
+
+720
+01:44:20.470 --> 01:44:35.299
+Escuela de Posgrado: Esa es la respuesta de criticar exactamente. Ok. Entonces lo que estamos haciendo es procesar múltiples skets dentro de cada objeto, hacemos producto punto, y hacemos todo eso.
+
+721
+01:44:35.350 --> 01:44:41.490
+Escuela de Posgrado: respuesta de cada test lo concatenamos y lo hemos llegado 13 veces. Y finalmente esa respuesta
+
+722
+01:44:41.650 --> 01:44:50.370
+Escuela de Posgrado: que teníamos por acá Ok, lo ponga aquí. Video en medio porque dice que es Beaufort. Ok, Eso es.
+
+723
+01:44:50.780 --> 01:44:57.330
+Escuela de Posgrado: Resumiendo, lo tenemos así, por cierto, aquí ya habla de posición en el coding que lo voy a hablar más al final.
+
+724
+01:44:57.470 --> 01:45:01.690
+Escuela de Posgrado: Así estamos bien. Entonces una entrada procesamos el
+
+725
+01:45:02.120 --> 01:45:15.430
+Escuela de Posgrado: Ok. Este múltiples kits. Cada agente se va a generar una respuesta. Lo compaginamos, lo multiplicamos por una secuencia y resultado final. Ok.
+
+726
+01:45:16.690 --> 01:45:18.840
+Escuela de Posgrado: Ese es el movimiento. De papel.
+
+727
+01:45:20.080 --> 01:45:22.219
+Escuela de Posgrado: Vale, Esto no tienes ahí
+
+728
+01:45:24.460 --> 01:45:32.900
+Escuela de Posgrado: dentro de la arquitectura también vamos a tener algo que se llama conexiones residuales. Se acuerdan que era la conexión residual.
+
+729
+01:45:33.870 --> 01:45:35.080
+Escuela de Posgrado: ¿Para qué servía.
+
+730
+01:45:37.270 --> 01:45:38.709
+Brajan Nieto: Para evitar banking.
+
+731
+01:45:39.630 --> 01:45:43.640
+Escuela de Posgrado: Disculpa para evitar qué habitualmente
+
+732
+01:45:44.450 --> 01:45:57.660
+Escuela de Posgrado: exacto, como les mencioné en la red este, después de la reset, todos vas a utilizar este conexiones residuales. Y ahí pueden ver que el transformer también tiene
+
+733
+01:45:58.200 --> 01:46:04.560
+Escuela de Posgrado: otra cosa es que ella utiliza una normalización, algo que se llama Layernizagetion
+
+734
+01:46:04.780 --> 01:46:11.539
+Escuela de Posgrado: En el Paper original de Transformer. El Illar, normalization, lo aplicaban después del mecanismo de atención.
+
+735
+01:46:11.650 --> 01:46:17.659
+Escuela de Posgrado: Luego se dieron cuenta que era más adecuado colocarlo antes del mecanismo de atención porque ayudaba a.
+
+736
+01:46:18.390 --> 01:46:29.460
+Escuela de Posgrado: digamos, que las activaciones estén normalizadas previo al producto. Junto Era más conveniente colocarlo. Acá Esa es la innovación de formar X L que no vamos a ver en detalles, pero definición.
+
+737
+01:46:29.840 --> 01:46:32.640
+Escuela de Posgrado: se acuerdan. ¿cómo funciona el radio como iniciation.
+
+738
+01:46:35.090 --> 01:46:37.880
+Escuela de Posgrado: A ver qué le dice layern normalization
+
+739
+01:46:38.020 --> 01:46:41.539
+Escuela de Posgrado: normalization. Es de normalizar y liar
+
+740
+01:46:42.540 --> 01:46:51.370
+Escuela de Posgrado: por las capas por los canales. No entonces es básicamente una normalización de desactivaciones por los canales.
+
+741
+01:46:53.210 --> 01:46:57.409
+Escuela de Posgrado: entonces la dirección de los canales, lo que vamos a hacer es calcular su media
+
+742
+01:46:58.730 --> 01:47:01.759
+Escuela de Posgrado: sus medidas de desviación, y con eso lo vamos a normalizar.
+
+743
+01:47:05.100 --> 01:47:08.859
+Escuela de Posgrado: ¿ven el Beatform para qué servía, según
+
+744
+01:47:16.790 --> 01:47:18.280
+Escuela de Posgrado: es un pueblo
+
+745
+01:47:23.860 --> 01:47:34.539
+Escuela de Posgrado: así, fueron examen orgánicos, te contesto eso.
+
+746
+01:47:34.900 --> 01:47:47.430
+Escuela de Posgrado: claro. Y cuando dice la palabra de hecho era procesado portento o el mecanismo que 1 hizo hasta ahora, que hace el producto. Punto y todo eso, no después del procedimiento, seguir el procesamiento del perfil forwarking.
+
+747
+01:47:47.700 --> 01:47:49.229
+Escuela de Posgrado: ¿para qué el Pib forro
+
+748
+01:47:53.030 --> 01:48:06.469
+Escuela de Posgrado: de dimensión. Mhm: Exacto, enriquecer, ¿no? Que buenas palabras
+
+749
+01:48:06.680 --> 01:48:14.990
+Escuela de Posgrado: viene Bien, claro, no. Yo estoy estudiando ya de antes qué más y
+
+750
+01:48:15.470 --> 01:48:31.669
+Escuela de Posgrado: lo que sucede? Que bueno, también Lo que le estás comentando es que el multihete atentation es un procesamiento puramente lineal. Se han dado cuenta que era multiplicar por puros pesos, no multiplicación de pesos es un X por alrededor, no
+
+751
+01:48:32.410 --> 01:48:39.120
+Escuela de Posgrado: 1 X por W. Sería X proveedor en proveedor por W. Al final de cuentas, todo eso es una representación lineal.
+
+752
+01:48:40.130 --> 01:48:45.810
+Escuela de Posgrado: Mhm Ok, que su capacidad de abstracción de representación es muy simple.
+
+753
+01:48:46.060 --> 01:48:53.170
+Escuela de Posgrado: Ok, entonces para enriquecer esa complejidad de las representaciones, vamos a utilizar el Fib for
+
+754
+01:48:53.560 --> 01:48:57.210
+Escuela de Posgrado: recuerden que el fish Fover es un procesamiento a nivel de canal.
+
+755
+01:48:57.410 --> 01:49:00.099
+Escuela de Posgrado: Cada token lo procesa en forma independiente.
+
+756
+01:49:00.300 --> 01:49:06.690
+Escuela de Posgrado: Ok, donde se relacionan entre los jefes. Es en boutiquets de patente en ping forman este
+
+757
+01:49:07.080 --> 01:49:14.420
+Escuela de Posgrado: cada token es independiente y supuestamente a nivel de canal. Ok, Ahí vamos a agregar la función de activación. No.
+
+758
+01:49:14.980 --> 01:49:17.819
+Escuela de Posgrado: en este caso vamos a usar la gem.
+
+759
+01:49:19.200 --> 01:49:19.990
+Escuela de Posgrado: ¿
+
+760
+01:49:20.770 --> 01:49:25.779
+Escuela de Posgrado: Otra cosa es que aquí primero vamos a ampliar el número de canales y luego
+
+761
+01:49:26.760 --> 01:49:38.869
+Escuela de Posgrado: lo vamos a volver a comprimir. Ok, eso más que nada como para analizar los datos de diferentes tipos de perspectivas, No, porque o sea en multifertion, es como para pasarle
+
+762
+01:49:39.290 --> 01:49:40.799
+Escuela de Posgrado: a ver cómo les digo.
+
+763
+01:49:41.990 --> 01:50:00.349
+Escuela de Posgrado: Es como si ustedes hubieran hecho un análisis exhaustivo sobre algo. Por ejemplo, si quieren investigar este cosas de arte inglés sobre temas de pinturas. Este cada 1 de ustedes han tenido como diferentes perspectivas, entonces tiene un montón de hojas diferentes cosas, ¿no?
+
+764
+01:50:00.400 --> 01:50:11.170
+Escuela de Posgrado: Entonces, en el Fit. Formar primero en la ampliación es como que analizar esos análisis que hemos tenido, analizar las diferentes perspectivas, ¿no? Y luego tenemos que comprimir unas conclusiones.
+
+765
+01:50:11.360 --> 01:50:17.490
+Escuela de Posgrado: Así como pueden ver este el porqué lo spanding lo comprime en
+
+766
+01:50:18.570 --> 01:50:21.720
+Escuela de Posgrado: y aquí? Bueno, utilizan telo. ¿se acuerdan de la tele.
+
+767
+01:50:24.840 --> 01:50:29.480
+Escuela de Posgrado: Es que Solomi.
+
+768
+01:50:30.890 --> 01:50:40.910
+Escuela de Posgrado: el arreglo era el máximo entre 0 y el Iris, no, que era justamente la proservativación clásica. Pero la Geli p.
+
+769
+01:50:42.940 --> 01:50:45.669
+Escuela de Posgrado: ¿qué indicados en error ¿Se acuerdan
+
+770
+01:50:56.470 --> 01:50:57.760
+Escuela de Posgrado: también extranjeros? No.
+
+771
+01:50:58.160 --> 01:50:58.830
+Escuela de Posgrado: Mhm.
+
+772
+01:51:03.270 --> 01:51:04.549
+Escuela de Posgrado: esta que
+
+773
+01:51:10.950 --> 01:51:15.400
+Escuela de Posgrado: Bueno, en Internet existen letras que se ve un poco en este
+
+774
+01:51:15.660 --> 01:51:18.430
+Escuela de Posgrado: lo liado, pero esa definición de gente
+
+775
+01:51:18.870 --> 01:51:22.229
+Escuela de Posgrado: ahora, esa definición de que ellos noten que es como un integral
+
+776
+01:51:25.350 --> 01:51:26.410
+Escuela de Posgrado: ¿cierto?
+
+777
+01:51:27.010 --> 01:51:36.030
+Escuela de Posgrado: Ese integral no tiene solución analítica. Por eso la definición tal cual es como un integral, esa es la función de la Rohr, que es el integrante de la caución.
+
+778
+01:51:36.710 --> 01:51:42.190
+Escuela de Posgrado: Vale, bueno, al tener esta definición tan compleja, el
+
+779
+01:51:42.690 --> 01:51:49.100
+Escuela de Posgrado: normalmente se refiere con tablas o con algún tipo de aproximación. Sí, por aquella.
+
+780
+01:51:52.950 --> 01:51:59.780
+Escuela de Posgrado: Bueno, se suele aproximar, por ejemplo, para Simone y bueno, vamos a ir viendo más adelante.
+
+781
+01:52:01.020 --> 01:52:08.809
+Escuela de Posgrado: Algo que es positivo de los Transformers, como hemos estado viendo, es que justamente procesa todo. De forma paralela.
+
+782
+01:52:09.210 --> 01:52:11.959
+Escuela de Posgrado: el procesamiento paralelo de todos los tokens.
+
+783
+01:52:12.530 --> 01:52:18.269
+Escuela de Posgrado: a diferencia del L. S. P. N, con el L. S. T. M. Lo que hacía era procesar 1 por 1 en secuencias. Cierto
+
+784
+01:52:18.410 --> 01:52:30.049
+Escuela de Posgrado: que conforme iban llegando las palabras, generaba este procesaba entonces tenías como que un borde explícito de cada una de las secuencias del central.
+
+785
+01:52:31.160 --> 01:52:42.209
+Escuela de Posgrado: Por otro lado, los transformers, como les digo, trabaja todo en paralelo. Eso es muy bueno porque optimistas, muy bien, el uso de la Gpu. Sin embargo, también genera un gran problema.
+
+786
+01:52:43.920 --> 01:52:45.800
+Escuela de Posgrado: No hay un orden.
+
+787
+01:52:46.800 --> 01:52:48.720
+Escuela de Posgrado: Este explícito
+
+788
+01:52:49.230 --> 01:52:55.349
+Escuela de Posgrado: de cada 1 de los tokens, es decir, que no importa el orden de la secuencia, siempre va a tener el mismo resultado.
+
+789
+01:52:57.210 --> 01:53:07.889
+Escuela de Posgrado: Todo ese texto que están viendo acá el transformer lo va a ver. Va a ser igual para él sembrarlo de ese orden o en orden aleatorio, porque, al fin de cuentas, lo único que se ha sido es productos juntos.
+
+790
+01:53:08.020 --> 01:53:11.660
+Escuela de Posgrado: Pronto. Punto. No hay ni idea de ahorro.
+
+791
+01:53:11.940 --> 01:53:21.350
+Escuela de Posgrado: pero se acuerdan cuando nosotros, cuando vimos este, comenzamos a ver secuencias. Les mencionaba que el orden de las secuencias es muy importante.
+
+792
+01:53:21.500 --> 01:53:28.679
+Escuela de Posgrado: ¿cierto? Y al perder aquí el orden de la secuencia como que estás perdiendo algo algo crucial para entender el significado.
+
+793
+01:53:28.830 --> 01:53:30.070
+Escuela de Posgrado: Entonces, para
+
+794
+01:53:30.210 --> 01:53:46.530
+Escuela de Posgrado: dado que el transformer por sí mismo no no entiende el concepto de orden. Lo que vamos a hacer es insertar esa información de algún modo. Ok? Y la forma de insertar esa información va a ser mediante el positional en código Ok, una codificación de posición.
+
+795
+01:53:46.780 --> 01:53:47.740
+Escuela de Posgrado: ¿vale?
+
+796
+01:53:49.260 --> 01:53:52.550
+Escuela de Posgrado: Y, bueno, la forma inicial y
+
+797
+01:53:52.910 --> 01:54:00.270
+Escuela de Posgrado: cómo se desarrolla el posicionar el coding se requiere una aplicación de eso. Fue con este diseño, senos y procesos.
+
+798
+01:54:00.590 --> 01:54:05.280
+Escuela de Posgrado: Entonces aquí estamos insertando señales de diferentes frecuencias
+
+799
+01:54:05.830 --> 01:54:22.419
+Escuela de Posgrado: ¿vale? Por cada canal, vamos a tener diferentes frecuencias. Y bueno, componiendo de todos los canales, vamos a tener como una. Es un vector único para cada una de las posiciones que eso justamente lo que le va a ayudar a transformar. A decir: ah, mira, estoy en la posición 0 en la posición 1,
+
+800
+01:54:22.780 --> 01:54:28.309
+Escuela de Posgrado: la posición. 200 Entonces, si hago producto, punto, posición 200 por disposición 0,
+
+801
+01:54:28.590 --> 01:54:45.039
+Escuela de Posgrado: voy a saber. Ah, mira, esa palabra está bien lejana, ¿no? Ok, ese se llama el posicional ecore. Y como se insertada en el paper original, era mediante una suma. Era una suma de vectores, no que se acuerdan, que este nosotros pudimos sumar lectores y mantener la información
+
+802
+01:54:45.180 --> 01:54:53.559
+Escuela de Posgrado: justamente porque el espacio de representación era lineal. No podíamos sumar vectores y poner los tipos de informaciones. Ok.
+
+803
+01:54:55.090 --> 01:55:01.750
+Escuela de Posgrado: entonces Position, el móvil inglés a mí es imposible.
+
+804
+01:55:02.480 --> 01:55:13.060
+Escuela de Posgrado: Mhm Vector que básicamente era noción de orden. Entonces lo que hacemos, literalmente es sumar
+
+805
+01:55:14.000 --> 01:55:21.609
+Escuela de Posgrado: eso más. El vector más ecosiste hoy es lo que entra en el transport.
+
+806
+01:55:22.360 --> 01:55:26.970
+Escuela de Posgrado: Sin embargo, este no es el método que se suele utilizar. Ahora
+
+807
+01:55:27.080 --> 01:55:32.030
+Escuela de Posgrado: te voy a explicar el otro método más adelante, pero básicamente es con rotaciones.
+
+808
+01:55:32.600 --> 01:55:36.490
+Escuela de Posgrado: ¿se acuerdan esta rotación de matrices? Bueno, matriz de rotación, perdón.
+
+809
+01:55:39.800 --> 01:55:41.950
+Escuela de Posgrado: se ponen transformaciones afines
+
+810
+01:55:45.010 --> 01:55:47.100
+Escuela de Posgrado: a ver
+
+811
+01:55:48.220 --> 01:55:55.739
+Escuela de Posgrado: No, no no es en no me equivoqué palabra de rotación de matrices, no sino Einstein, rotación de vectores.
+
+812
+01:55:56.060 --> 01:56:00.420
+Escuela de Posgrado: Tienes una matriz de transformación. ¿no? ¿cómo haces que rote cerdo el doctor?
+
+813
+01:56:01.090 --> 01:56:06.779
+Escuela de Posgrado: Mhm: Claro, con con el ángulo, claro dice, pero ¿cómo
+
+814
+01:56:07.100 --> 01:56:13.819
+Escuela de Posgrado: ¿cómo haces esa transformación, o sea, si te doy el vector 4, 7. Quiero que los propios 30 grados.
+
+815
+01:56:15.150 --> 01:56:17.340
+Brajan Nieto: Una matriz de rotación.
+
+816
+01:56:18.160 --> 01:56:20.090
+Escuela de Posgrado: Con una matriz de transformación. No.
+
+817
+01:56:20.550 --> 01:56:28.539
+Escuela de Posgrado: justamente vamos a hacer una materia de transformación, Entonces vamos a usar transformaciones, transformaciones Y de hecho, la forma como lo planteas es bastante interesante.
+
+818
+01:56:28.780 --> 01:56:31.359
+Escuela de Posgrado: Vamos a ser un poco más seria.
+
+819
+01:56:33.070 --> 01:56:37.760
+Escuela de Posgrado: Bueno de ti, Este vemos que el Closet. El patrón es
+
+820
+01:56:41.610 --> 01:56:42.610
+Escuela de Posgrado: Y
+
+821
+01:56:51.680 --> 01:57:00.290
+Escuela de Posgrado: Mhm Mhm ahorita, Les comparto, de hecho, eso en
+
+822
+01:57:04.100 --> 01:57:04.760
+Escuela de Posgrado: sí, sí
+
+823
+01:57:10.630 --> 01:57:17.270
+Escuela de Posgrado: a ver aquí. Vamos a ver una implementación de lo que hemos estado viendo ahí. Pueden ver la pantalla.
+
+824
+01:57:19.110 --> 01:57:19.940
+Escuela de Posgrado: Sí, no
+
+825
+01:57:20.250 --> 01:57:27.750
+Escuela de Posgrado: vamos a ver una pequeña implementación de lo que hemos sabido en multitention como para que se entienda un poco mejor
+
+826
+01:57:27.960 --> 01:57:30.060
+Escuela de Posgrado: cómo es todo este proceso.
+
+827
+01:57:30.270 --> 01:57:34.610
+Escuela de Posgrado: Y de hecho, es interesante porque es un juego de
+
+828
+01:57:35.690 --> 01:57:39.619
+Escuela de Posgrado: defensores sepas que hablamos de tensores. No
+
+829
+01:57:40.690 --> 01:57:43.639
+Escuela de Posgrado: hemos manejado las dimensiones sensores, y todo eso no.
+
+830
+01:57:44.120 --> 01:57:45.020
+Escuela de Posgrado: ¿por qué?
+
+831
+01:57:47.330 --> 01:57:53.290
+Escuela de Posgrado: Bueno, pues aquí.
+
+832
+01:57:56.710 --> 01:57:57.390
+Escuela de Posgrado: Mhm.
+
+833
+01:58:05.200 --> 01:58:06.170
+Escuela de Posgrado: en
+
+834
+01:58:06.830 --> 01:58:16.969
+Escuela de Posgrado: eso era el mecanismo de atención y, a fin de cuentas, tenemos un mecanismo de forma y así no tenemos que hacer un proceso de preparamiento de todos los este
+
+835
+01:58:16.990 --> 01:58:28.959
+Escuela de Posgrado: entre todos los toques, no yo en general. Ok, para eso es más importante saber cuáles va a ser las indicaciones
+
+836
+01:58:29.590 --> 01:58:31.330
+Escuela de Posgrado: en el que pienso retrance.
+
+837
+01:58:33.210 --> 01:58:35.149
+Escuela de Posgrado: Pero voy a borrar
+
+838
+01:58:51.070 --> 01:58:57.820
+Escuela de Posgrado: a ver el tensor de entrada y por ello es
+
+839
+01:58:59.890 --> 01:59:08.500
+Escuela de Posgrado: va a tener las dimensiones. N Bach? Bueno, el tamaño de Bach siempre al inicio se
+
+840
+01:59:08.880 --> 01:59:16.959
+Escuela de Posgrado: el tamaño de la secuencia, por ejemplo, en su caso de a maximiliano, Sí,
+
+841
+01:59:17.060 --> 01:59:27.880
+Escuela de Posgrado: hay que ir a un 1 000 000 de tokens, ¿no? Entonces cada 1 de esos tokens va a tener una representación, por ejemplo, que sea. No sé cuál
+
+842
+01:59:28.080 --> 01:59:31.700
+Escuela de Posgrado: esto de acá va a ser, al fin de cuentas, una materia así,
+
+843
+01:59:33.860 --> 01:59:38.799
+Escuela de Posgrado: para proponer un número más chico que sea tamaño, 100 que es n secuencias.
+
+844
+01:59:39.860 --> 01:59:42.559
+Escuela de Posgrado: Y aquí el tamaño es cuánto digno.
+
+845
+01:59:45.900 --> 01:59:54.360
+Escuela de Posgrado: Ok. Evidentemente, todo esto en paralelo para cada 1 de los valores de las secuencias. Vale.
+
+846
+01:59:54.580 --> 02:00:00.880
+Escuela de Posgrado: Lo que vamos a hacer es transformar cada 1 de esos toques X
+
+847
+02:00:01.010 --> 02:00:08.880
+Escuela de Posgrado: para generar este equipo en estibajos. Ok, los vamos a transformarlo.
+
+848
+02:00:13.370 --> 02:00:18.810
+Escuela de Posgrado: Ok, vamos a transformarlo para que éste tenga.
+
+849
+02:00:20.460 --> 02:00:25.710
+Escuela de Posgrado: Vamos a tener aquí, evidentemente, el tamaño de la secuencia, sí.
+
+850
+02:00:26.420 --> 02:00:30.660
+Escuela de Posgrado: Y bueno, ese va a ser en nuestra matriz de fuego. Ok.
+
+851
+02:00:31.070 --> 02:00:42.990
+Escuela de Posgrado: Lo que vamos a hacer es dividir este cuello en pequeños bloques. Ok, cada bloque, este va a ser el mismo tamaño, pero en total vamos a tener este
+
+852
+02:00:44.120 --> 02:00:45.319
+Escuela de Posgrado: en el Gels.
+
+853
+02:00:47.070 --> 02:00:58.819
+Escuela de Posgrado: Cada Getz va a tener, como les digo, el mismo tamaño de elementos. Inicialmente teníamos tamaño. Ok, Y lo que vamos a hacer es que el tamaño de cada 1
+
+854
+02:00:59.310 --> 02:01:05.789
+Escuela de Posgrado: va a ser que dicha sobre número de genes negs okay
+
+855
+02:01:05.890 --> 02:01:13.119
+Escuela de Posgrado: Eso quiere decir que si adquiere un joven del teléfono, 4 porque sonríe.
+
+856
+02:01:27.020 --> 02:01:32.700
+Escuela de Posgrado: Ok, lo hemos vivido así. Ok. Entonces este si es entre 4 024 entre 4, cuándo es
+
+857
+02:01:33.780 --> 02:01:39.199
+Escuela de Posgrado: 256, 256,
+
+858
+02:01:39.490 --> 02:01:47.370
+Escuela de Posgrado: todos los viernes, 56. Ok, vamos a hacer lo mismo para este y también para este
+
+859
+02:01:48.800 --> 02:02:08.460
+Escuela de Posgrado: el Ki, Bueno, el Ki y el Bali, la misma operación. Ok. Eso significa que se dan cuenta que el espacio de los Kates es un espacio reducido. No, Eso implica que vamos a estar haciendo una proyección. Vamos a estar trabajando en un subespacio, como lo hemos discutido hace un momento.
+
+860
+02:02:11.220 --> 02:02:16.240
+Escuela de Posgrado: ya, com cómo ¿Cuál era la la ecuación del mecanismo de atención? Se acordaron
+
+861
+02:02:21.520 --> 02:02:23.040
+Escuela de Posgrado: el mecanismo de atención.
+
+862
+02:02:23.390 --> 02:02:24.690
+Escuela de Posgrado: Seguro que sí.
+
+863
+02:02:29.320 --> 02:02:32.280
+Escuela de Posgrado: Uy, perdón, No sé.
+
+864
+02:02:35.110 --> 02:02:37.190
+Escuela de Posgrado: Se acuerdan tú?
+
+865
+02:02:37.410 --> 02:02:38.420
+Escuela de Posgrado: ¿por qué?
+
+866
+02:02:38.900 --> 02:02:44.050
+Escuela de Posgrado: Mhm: Cada respuesta sobre
+
+867
+02:02:44.760 --> 02:02:52.910
+Escuela de Posgrado: de raíces de can no que en ese caso de K va a ser 256 ya. Todo eso operado. ¿por qué
+
+868
+02:02:53.790 --> 02:03:00.380
+Escuela de Posgrado: son muy bien ajá multiplicado? ¿por qué?
+
+869
+02:03:09.750 --> 02:03:28.300
+Escuela de Posgrado: Por medio por el malo, no exacto. Esa es la ecuación de de atención. ¿no? Entonces este hasta aquí lo que hemos hecho es generar este las dimensiones para cada 1 de los este de los kates? No, pero tenemos que operar, ponerlo de una forma para que podamos hacer ese producto
+
+870
+02:03:28.300 --> 02:03:32.870
+Escuela de Posgrado: de matrices para poder hacer esas preguntas de matices implica que
+
+871
+02:03:33.310 --> 02:03:36.150
+Escuela de Posgrado: Ok, para que se puede hacerlo de esta forma.
+
+872
+02:03:36.770 --> 02:03:40.079
+Escuela de Posgrado: Recuerden que para que se pueda hacer este.
+
+873
+02:03:40.610 --> 02:03:56.799
+Escuela de Posgrado: para que se pueda multiplicar esas 2 matrices implica que la segunda dimensión de acá debe ser la primera dimensión de acá. Ok, Entonces, si eso es M: Por N, Eso ha de ser N o papel no, deben ser compatibles, ¿no? Y aquí la operación entre qué canales deberían hacer?
+
+874
+02:03:57.830 --> 02:04:05.850
+Escuela de Posgrado: ¿en qué dimensión debería ser de dimensión de cannabis, No, sí, no previo.
+
+875
+02:04:06.310 --> 02:04:11.029
+Escuela de Posgrado: Bueno, este deseo crear sobrevivención de canales, entonces al final debe estar en Channing.
+
+876
+02:04:11.450 --> 02:04:16.470
+Escuela de Posgrado: Sí, aquí igual debe estar con enechan. Ok.
+
+877
+02:04:16.920 --> 02:04:33.280
+Escuela de Posgrado: aquí algo. Y el bien. Ok. Ahora, en este caso queremos ser obligación. Esto de acá debe ser. Este tiene ser cannabis, tiene champ porque lo que son siendo el producto punto con el número de ganancia, ¿cierto? De qué tamaño debería ser, Eso
+
+878
+02:04:34.870 --> 02:04:41.369
+Escuela de Posgrado: sí, no, claro. Sí, sí, señor, quién sería ese en ese caso?
+
+879
+02:04:41.960 --> 02:04:48.549
+Escuela de Posgrado: Secuencia. Y acá el tamaño de la secuencia.
+
+880
+02:04:50.010 --> 02:04:54.079
+Escuela de Posgrado: Entonces eso es lo que ya tenemos: una matriz cuadrada de n secrets
+
+881
+02:04:55.740 --> 02:05:04.180
+Escuela de Posgrado: órdenes, ¿no? Entonces aquí también debe salir emisor de secuencia, no en segmentos llegar en esa cuestión.
+
+882
+02:05:05.420 --> 02:05:06.390
+Escuela de Posgrado: ¿
+
+883
+02:05:08.250 --> 02:05:11.380
+Escuela de Posgrado: Y por aquí este. Esto se va a ejecutar.
+
+884
+02:05:11.800 --> 02:05:16.150
+Escuela de Posgrado: Eso es para mujeres, ¿no? Pero queremos que se ejecute para todos kates en paralelo, No.
+
+885
+02:05:16.440 --> 02:05:23.479
+Escuela de Posgrado: ¿cierto? Entonces Aquí tenemos que colocar N, F, Ts: Ok, tiene gente
+
+886
+02:05:25.940 --> 02:05:28.749
+Escuela de Posgrado: que es como que la L, el
+
+887
+02:05:29.780 --> 02:05:40.989
+Escuela de Posgrado: la dimensión de de los jefes. Y bueno. Lo que va a hacer es que todo ese producto se va a ejecutar en paralelo para los discates. Igual antes, también nos falta el número del si no en el Batch
+
+888
+02:05:42.390 --> 02:05:52.260
+Escuela de Posgrado: decir de Banks Okay, entonces nuestro objetivo va a ser llevar todo a esta forma
+
+889
+02:05:53.100 --> 02:06:02.609
+Escuela de Posgrado: Ok, para poder hacer el producto de matrices y que sea del cálculo que nosotros queremos hacer note que queremos separar la dimensión de los heats
+
+890
+02:06:03.120 --> 02:06:17.399
+Escuela de Posgrado: y acá lo hemos tenido todo este unido. ¿no? Entonces lo vamos a tener que separar esos canales y luego en esa posición, aunque esté en esa posición. ¿cuál es la de acá? Ok, Entonces todo eso que les he mencionado? Ahí te lo vamos a tener que hacer en Ford.
+
+891
+02:06:17.640 --> 02:06:22.159
+Escuela de Posgrado: se puede ver la pantalla mejor bajo el Lekra.
+
+892
+02:06:23.960 --> 02:06:39.170
+Escuela de Posgrado: Entonces hasta este segundo, lo que hemos hecho ya saben que es en echar en el chan, o sea, el 1 024 a 1 024. Solamente que aquí adentro. Vamos a dividir el número de jefes. Ok, Ahorita. Lo vamos a dividir.
+
+893
+02:06:39.430 --> 02:06:48.059
+Escuela de Posgrado: Ok. Entonces esa es la operación para calcular el coito. Y bueno, es esto es al final no
+
+894
+02:06:50.050 --> 02:06:51.909
+Escuela de Posgrado: lo siguiente que vamos a hacer.
+
+895
+02:06:54.380 --> 02:07:00.899
+Escuela de Posgrado: Lo siguiente que vamos a hacer es combinar los las dimensiones no
+
+896
+02:07:01.140 --> 02:07:07.170
+Escuela de Posgrado: perdón separaron las financieras, no el jets y el el El H. D.
+
+897
+02:07:07.800 --> 02:07:13.149
+Escuela de Posgrado: A. Hdl es Sn Chang. Por después de los modelos
+
+898
+02:07:13.410 --> 02:07:21.580
+Escuela de Posgrado: sobre New York, eso lo vamos a llamar cacherie. La dimensión dentro de cada 1 de los Sí,
+
+899
+02:07:21.680 --> 02:07:23.930
+Escuela de Posgrado: de esos son espacios, ¿no? Ok.
+
+900
+02:07:24.980 --> 02:07:37.109
+Escuela de Posgrado: Entonces lo que vamos a hacer es ahorita, todo está combinado. Separarlos en blogs. Entonces lo que vamos a hacer es un punto débil que nos separe y tenemos las 4 divisiones que nosotros queríamos. Ok. Lo otro que también queremos es que
+
+901
+02:07:37.680 --> 02:07:46.229
+Escuela de Posgrado: esta dimensión de hits esté para atrás, no moverlo para que esté después del Bach. Y bueno, eso lo vamos a lograr mediante el Transports
+
+902
+02:07:46.820 --> 02:07:54.159
+Escuela de Posgrado: Ok, este transfouse es como la transpuesta, Pero como estos tensores podemos explicar que es cambiando.
+
+903
+02:07:54.380 --> 02:07:58.689
+Escuela de Posgrado: Sí, queremos la posición menos 2.
+
+904
+02:08:00.840 --> 02:08:05.890
+Escuela de Posgrado: A ver. Nosotros podemos contar de 2 formas: 0, 1,
+
+905
+02:08:06.110 --> 02:08:10.029
+Escuela de Posgrado: 2, Tres: no recuerden que fivers lo coloca de esa forma.
+
+906
+02:08:10.350 --> 02:08:18.250
+Escuela de Posgrado: Pero también podemos colocar este menos 1, menos 2, menos 3 y 4. En este caso tenemos el Gents
+
+907
+02:08:18.380 --> 02:08:32.219
+Escuela de Posgrado: esté en la posición en esa posición de acá Ok. Por eso podemos colocar transpodos entre 1 y 2, porque esos van a intercambiar o también transportes entre los 2 y menos 3, no porque esos 2 van a cambiar.
+
+908
+02:08:32.450 --> 02:08:45.820
+Escuela de Posgrado: Ok es lo que está diciendo esa esa operación. De ahí ya no colocamos los jets en la posición que nosotros queremos no ahora para poder hacer la multiplicación que nosotros queremos. Además, el C A. D debe estar cambiado de posición, no
+
+909
+02:08:46.610 --> 02:08:49.090
+Escuela de Posgrado: por qué queremos que se hagan después, ¿cierto?
+
+910
+02:08:49.370 --> 02:08:53.159
+Escuela de Posgrado: Entonces eso lo logramos aquí abajo. Bueno, está un poco infectado otra vez
+
+911
+02:08:53.450 --> 02:09:00.129
+Escuela de Posgrado: con un trans todos, Ok, cada por k traspuesta, y ahí hacemos la multiplicación de matrices.
+
+912
+02:09:00.260 --> 02:09:06.739
+Escuela de Posgrado: Acá Tenemos nuestras cosas. El siguiente paso es dividirlo entre la raíz cuadrada del tamaño.
+
+913
+02:09:07.040 --> 02:09:09.349
+Escuela de Posgrado: la red para el 256,
+
+914
+02:09:09.590 --> 02:09:16.299
+Escuela de Posgrado: y aplicar el sol más. Aquí tenemos el mapa de atención, lo que ya les estaba mencionando. B
+
+915
+02:09:16.570 --> 02:09:26.400
+Escuela de Posgrado: luego de todo eso, ya tenemos hasta ese punto que tenemos esta ecuación de acá hasta aquí
+
+916
+02:09:26.550 --> 02:09:30.000
+Escuela de Posgrado: lo siguiente. Por ejemplo, es el atentic show map, ¿no?
+
+917
+02:09:30.470 --> 02:09:48.349
+Escuela de Posgrado: Luego, esa techo más se tiene que multiplicar con los vals. No, justamente lo que está sucediendo. Acá No, la tensión más. Esa es la salida. Esos son los Zetas. Ahora, Esos Zetas, Ok, es por cada agente de forma independiente y va a tener las dimensiones que ya hemos Nosotros hemos construido, no
+
+918
+02:09:48.840 --> 02:10:00.579
+Escuela de Posgrado: ahora, para que podamos hacer la operación como queríamos. Lo que vamos a tener es que componer todo este detalle
+
+919
+02:10:02.480 --> 02:10:18.730
+Escuela de Posgrado: es justamente lo que está pasando. Acá No, ahorita. No ahorita lo Paso lo que lo abrimos.
+
+920
+02:10:19.010 --> 02:10:24.119
+Escuela de Posgrado: Mhm: Bueno, aquí lo que hemos hecho es pasar
+
+921
+02:10:26.250 --> 02:10:41.869
+Escuela de Posgrado: envasar esa dimensión aquí. Y esta para acá hemos intercambiado esas 2 dimensiones. No lo hemos colocado de esa forma. Entonces, Ahora, si los hits con las dimensiones están juntos, no, eso lo podemos combinar, y va a hacer en el chat como lo teníamos originalmente. ¿no?
+
+922
+02:10:41.940 --> 02:10:52.259
+Escuela de Posgrado: Ok. Entonces lo combinamos. Y ahora sí aplicamos la pieza. Sería como concatenar, no porque estamos generando 2 dimensiones: ubicamos los peces. Y ya tenemos finalmente la respuesta.
+
+923
+02:10:52.360 --> 02:11:03.740
+Escuela de Posgrado: Ese es todo el mecanismo de atención implementado para sugerir con pura operación de tensores Vale.
+
+924
+02:11:03.930 --> 02:11:06.699
+Escuela de Posgrado: ¿ Un ratito. Después de compartir el sesión.
+
+925
+02:11:06.940 --> 02:11:07.800
+Escuela de Posgrado: Mhm.
+
+926
+02:11:08.220 --> 02:11:09.750
+Escuela de Posgrado: Y
+
+927
+02:11:26.320 --> 02:11:35.819
+Escuela de Posgrado: por cierto, esa implementación de por sí no termina siendo la más y la más eficiente.
+
+928
+02:11:36.500 --> 02:11:45.940
+Escuela de Posgrado: Y Mhm, Y
+
+929
+02:11:52.130 --> 02:11:59.269
+Escuela de Posgrado: ya no deberían poder ver ahí. Debes compartir. Bueno, esa
+
+930
+02:12:00.120 --> 02:12:08.649
+Escuela de Posgrado: esa prueba, implementarlo es funcional, pero se dan cuenta de que estamos haciendo muchas traspuestas, movimientos de dimensiones, y todo eso
+
+931
+02:12:08.870 --> 02:12:11.219
+Escuela de Posgrado: eso lo hace muy poco eficiente.
+
+932
+02:12:12.860 --> 02:12:17.270
+Escuela de Posgrado: La forma como realmente se implementa. Es mediante
+
+933
+02:12:18.000 --> 02:12:21.860
+Escuela de Posgrado: operaciones de aizoon has escuchado alguna vez esto
+
+934
+02:12:27.740 --> 02:12:42.340
+Escuela de Posgrado: y tú en el cumplimiento, ¿no? Pero una persona ajá.
+
+935
+02:12:42.660 --> 02:12:47.879
+Escuela de Posgrado: Y la anotación de Einstein de los matorias.
+
+936
+02:12:50.580 --> 02:12:59.879
+Escuela de Posgrado: Un estándar para hacer operaciones. Lo único que coloca son los índices. Recuerdan que la teoría es de
+
+937
+02:13:00.190 --> 02:13:01.790
+Escuela de Posgrado: la relatividad.
+
+938
+02:13:02.210 --> 02:13:06.560
+Escuela de Posgrado: Trabajar en tensores No, como era una operación después de tensores y
+
+939
+02:13:07.210 --> 02:13:10.980
+Escuela de Posgrado: lo que era escribir todo lo suficiente, lo respondía de esa forma.
+
+940
+02:13:11.260 --> 02:13:16.410
+Escuela de Posgrado: Y, bueno, esa anotación que se utiliza hasta ahora, que
+
+941
+02:13:17.550 --> 02:13:30.170
+Escuela de Posgrado: varias librerías tipo Navy, por ejemplo, tiene sus indemnizaciones. Lo bueno es que tú puedes optimizar eso a nivel de Gpu para ver este como operaciones de de entre dimensiones.
+
+942
+02:13:30.400 --> 02:13:33.999
+Escuela de Posgrado: Pase, no han bajado con jefe o alguna vez, O sea.
+
+943
+02:13:34.350 --> 02:13:38.200
+Escuela de Posgrado: me refiero a implementar su carne oscura y todo eso.
+
+944
+02:13:38.740 --> 02:14:01.860
+Escuela de Posgrado: No sé si han llevado acción paralelo Claro, creaba su carnet, te lo colocamos punto, 1 que trabajar.
+
+945
+02:14:04.320 --> 02:14:05.110
+Escuela de Posgrado: Mhm.
+
+946
+02:14:05.630 --> 02:14:08.360
+Escuela de Posgrado: Que un archivo, punto. Com: Bueno.
+
+947
+02:14:11.600 --> 02:14:27.109
+Escuela de Posgrado: no sé que no sería covid, este pulgar, claro, o sea eso simplemente así su su perra.
+
+948
+02:14:27.720 --> 02:14:37.510
+Escuela de Posgrado: Bueno, en las operaciones de cardano. De hecho, es interesante hacer estos ejercicios de implementación sinfónico a nivel. P: P: U
+
+949
+02:14:37.720 --> 02:14:50.289
+Escuela de Posgrado: Porque ahí notas como realmente funciona el Gpu, 1 lo que tú estás haciendo es mandar una sola instrucción para todos los núcleos de Pude, o sea, justamente Gpu es muy bueno para ser procesamiento paralelo, Es un procesamiento base. ¿no?
+
+950
+02:14:50.370 --> 02:14:57.779
+Escuela de Posgrado: Ok, entonces todos los los carnets van a tener la misma tarea Solamente que le vas a asignar diferentes posiciones al inmueble
+
+951
+02:14:57.870 --> 02:15:07.360
+Escuela de Posgrado: Ok, y en ese tipo de tareas que es donde es muy eficiente la G. P. U: Bueno, esa anotación de Einstein
+
+952
+02:15:08.290 --> 02:15:10.860
+Escuela de Posgrado: en sí
+
+953
+02:15:14.380 --> 02:15:21.409
+Escuela de Posgrado: es muy competente para eso, porque está diciendo, Ah, mira, para esas posiciones, lo voy a operar. Y voy a tener esa nueva posición.
+
+954
+02:15:21.560 --> 02:15:25.140
+Escuela de Posgrado: ¿qué es lo que está significando de estas operaciones. Bueno.
+
+955
+02:15:25.250 --> 02:15:34.850
+Escuela de Posgrado: no les voy a hacer de eso, pero todas las operaciones que hemos visto acá de cambiar de dimensión y todo eso lo podemos implicar a esa única operación.
+
+956
+02:15:35.410 --> 02:15:37.149
+Escuela de Posgrado: Todo está contenido ahí
+
+957
+02:15:39.810 --> 02:15:47.270
+Escuela de Posgrado: derecho y aplicar el Solmans, pero aquí están aplicando todas las operaciones de que he borrado mejor.
+
+958
+02:15:47.410 --> 02:15:54.609
+Escuela de Posgrado: Aquí están todas las operaciones de atención. Se dan cuenta que es mucho más simple. No tienes que estar moviendo las dimensiones ni nada de eso.
+
+959
+02:15:54.840 --> 02:16:07.600
+Escuela de Posgrado: Entonces la forma usual de implementar la forma óptima implementaria es así, aunque bueno, ya lo estaba adelantando, que también este implementación es mucho más optimizadas, que es Flash Atentation
+
+960
+02:16:09.710 --> 02:16:18.599
+Escuela de Posgrado: en Planchation. Este cual les mencionaba es una utilización a nivel hardware, y muchos de hechos de esos
+
+961
+02:16:19.750 --> 02:16:29.480
+Escuela de Posgrado: habla. Este están muy utilizadas a G T. Un semestre en específico, por ejemplo, estas para a 100 y las H 100. Algunos de ustedes tiene un H. C,
+
+962
+02:16:30.990 --> 02:16:40.590
+Escuela de Posgrado: pues no es muy caro eso. Nosotros queríamos comprar una H. 200 De hecho, queríamos postular un poco sobre eso para comprar una, porque un H 100 queríamos
+
+963
+02:16:40.910 --> 02:16:45.080
+Escuela de Posgrado: y se nos iba todo el proceso en todo el presupuesto solamente compraría ese mensaje.
+
+964
+02:16:47.090 --> 02:16:49.690
+Escuela de Posgrado: El son ambientales.
+
+965
+02:16:50.450 --> 02:16:52.469
+Escuela de Posgrado: Entonces.
+
+966
+02:16:52.910 --> 02:17:02.650
+Escuela de Posgrado: claro que la tensión 3 no no necesariamente va a funcionar solo en estos también hay hay como de vivir en otras ciudades, Pero va a depender de la arquitectura.
+
+967
+02:17:02.790 --> 02:17:09.870
+Escuela de Posgrado: Ok, Entonces hay optimizaciones a nivel hardware como estas que, bueno vamos a tener detalles, han sido muy largo.
+
+968
+02:17:10.170 --> 02:17:18.549
+Escuela de Posgrado: Es importante que lo sepas, pero implementaciones genéricas, que no solamente es el hardware. Lo más común es utilizar connotaciones.
+
+969
+02:17:18.740 --> 02:17:22.730
+Escuela de Posgrado: sí, pero también fitos. Ya lo tiene implementado.
+
+970
+02:17:23.540 --> 02:17:29.969
+Escuela de Posgrado: que, igual que en la serie Zms que nosotros pudimos importar. También hay Multiheels Atentation invite.
+
+971
+02:17:32.059 --> 02:17:35.379
+Escuela de Posgrado: Recuerden también que ustedes pueden gustar.
+
+972
+02:17:44.290 --> 02:17:46.509
+Escuela de Posgrado: Bueno, está un poco lento el intervenir
+
+973
+02:17:48.610 --> 02:17:59.410
+Escuela de Posgrado: aquí está. Bueno, aquí está todo el mecanismo que hemos hablado, que es Gtation, que tiene la respuesta de características explicando la operación. Atención.
+
+974
+02:17:59.709 --> 02:18:00.599
+Escuela de Posgrado: ¿por qué?
+
+975
+02:18:01.160 --> 02:18:16.409
+Escuela de Posgrado: Bueno, eso tiene varios parámetros, Pero por aquí les he resumido lo más importante. Primero, en el y es el tamaño de dimensiones en la entrada. En el ejemplo que yo hemos dibujado, que es tamaño 1 024.
+
+976
+02:18:16.969 --> 02:18:23.160
+Escuela de Posgrado: Ok, es el tamaño de 24 el número de pets es un parámetro muy importante
+
+977
+02:18:23.700 --> 02:18:26.400
+Escuela de Posgrado: que tienen que ver con este.
+
+978
+02:18:26.959 --> 02:18:33.999
+Escuela de Posgrado: Bueno, ¿qué tiene que ver el tamaño de jets, cantidad de heats, no en la cantidad. Te va a decir cuántos productos.
+
+979
+02:18:34.660 --> 02:18:40.309
+Escuela de Posgrado: cuántos tópicos en paralelo vamos a analizar ahora? Tampoco es conveniente generar
+
+980
+02:18:40.459 --> 02:18:43.079
+Escuela de Posgrado: este. No sé los 5 sketch
+
+981
+02:18:43.709 --> 02:18:52.529
+Escuela de Posgrado: se primero se va a volverse muy práctico porque recuerden que que porque cada vez vamos a generar este un mapa de atención. Entonces vas a consumir mucha más memoria.
+
+982
+02:18:52.730 --> 02:19:00.480
+Escuela de Posgrado: Okay, pero también que sería. Repor se ha reportado mucho que
+
+983
+02:19:00.480 --> 02:19:15.040
+Escuela de Posgrado: depende de arquitectura, varios que se vuelven inútiles, o sea, nunca se activan. Están como que desactivados o siempre generan ruido. Entonces este agregar simplemente hits porque sí. Por la esperanza de que va a encontrar más patrones.
+
+984
+02:19:15.040 --> 02:19:23.820
+Escuela de Posgrado: no necesariamente va a terminar funcionando de esa forma. Ok, el otro parámetro importante porque quiero mencionar es el top out.
+
+985
+02:19:23.860 --> 02:19:28.690
+Escuela de Posgrado: Se acuerdan que era trophoult apagar neuronas. No
+
+986
+02:19:28.820 --> 02:19:34.850
+Escuela de Posgrado: Ya ese apagado de neuronas es el Drop Out. Va a ser para el mapa de atención.
+
+987
+02:19:36.059 --> 02:19:43.100
+Escuela de Posgrado: Ok, eso significa que de toda esa matriz vamos a pagar algunas posiciones de forma aleatoria. Ahora, ¿por qué sucede eso?
+
+988
+02:19:43.430 --> 02:19:52.299
+Escuela de Posgrado: Han escuchado el dilema de Exploration and Splotation, exploración y exploración y explotación
+
+989
+02:19:52.470 --> 02:19:56.080
+Escuela de Posgrado: ¿Qué explotación en español tiene connotaciones muy negativas.
+
+990
+02:19:57.030 --> 02:20:04.390
+Escuela de Posgrado: Sí, por ejemplo, ¿dónde almuerzan ustedes no? No?
+
+991
+02:20:05.280 --> 02:20:16.740
+Escuela de Posgrado: Y Y mhm Lo Lo que esté más cerca no a ver. Por ejemplo, digamos que
+
+992
+02:20:17.400 --> 02:20:26.029
+Escuela de Posgrado: solo me acuerdo de tu nombre. Miguel, lo siento. Miguel le gusta una cebichería que está cerca, ¿no? Entonces, ¿cómo se llama la cebichería?
+
+993
+02:20:27.090 --> 02:20:31.320
+Escuela de Posgrado: Determinar el pesquero se llama el Yacam.
+
+994
+02:20:31.570 --> 02:20:39.830
+Escuela de Posgrado: Imaginemos que Miguel caserito de perdón, pesquero, no o sea caserito, porque sabe que es rico.
+
+995
+02:20:40.250 --> 02:20:53.100
+Escuela de Posgrado: Ok. Entonces este tal vez al la primer día probó 2 lugares y el más rico era ese terminal pesquero, ya si se queda solamente con la versión, o sea, de todo su conocimiento, Son 2 casos, no digamos el
+
+996
+02:20:53.550 --> 02:20:57.460
+Escuela de Posgrado: la señora de por ahí es que no me acuerdo cómo se llama la tienda
+
+997
+02:20:57.720 --> 02:21:15.219
+Escuela de Posgrado: este con respecto a tener pesquero entre los 2, El mejor es terminar pesquero. No te puedes quedar simplemente ahí este porque estás garantizando que es lo mejor que has explorado. Hasta ahora, no, eso se llama Exploitation. Estás explotando lo que tú ya conoces.
+
+998
+02:21:15.420 --> 02:21:25.849
+Escuela de Posgrado: Sin embargo, podría ser que cruzando la avenida otra vez, encuentres otro restaurante que es mucho más rico. Solamente que no lo conoces, porque no lo has probado, no
+
+999
+02:21:26.000 --> 02:21:31.439
+Escuela de Posgrado: ya justamente probar esas nuevas opciones por saber cuál es la respuesta se llama Exploration
+
+1000
+02:21:32.480 --> 02:21:38.110
+Escuela de Posgrado: Okay, entonces tal vez te estás perdiendo algo muy bueno porque no cambias de restaurante, ¿no?
+
+1001
+02:21:38.520 --> 02:21:42.090
+Escuela de Posgrado: O tal vez, al contrario, no vas. Y es un desastre. No
+
+1002
+02:21:42.430 --> 02:21:58.890
+Escuela de Posgrado: terminas como yo, y dije, aquí está. Bueno, entonces puedes irte por exploración que tiene un riesgo de tener algo peor, pero amplias tu espacio de conocimiento, no. Esos dilema exploration exploitation, que de hecho se utiliza mucho en A, R. L,
+
+1003
+02:21:59.060 --> 02:22:18.920
+Escuela de Posgrado: pero en este caso a ver, hemos hablado mucho del mecanismo de atención. El mecanismo de atención. Lo que está seleccionando es cuáles son los topes más relevantes, no para cada 1 de las secuencias. Después de muchas etapas de entrenamiento puedes hacer que encuentren, se afiancen relaciones muy, muy comunes, no diciendo.
+
+1004
+02:22:20.300 --> 02:22:29.489
+Escuela de Posgrado: por ejemplo, el ejemplo del gato y ratón. No sé la palabra gato y ratón generalmente son relacionadas, ¿no? Entonces, cuando se entrenan muchos padres, muchas veces
+
+1005
+02:22:29.550 --> 02:22:44.329
+Escuela de Posgrado: este esa relación se va a hacerse tan tan afianzada que al final va a colapsar diciendo que solamente voy a hacer caso a los ratones si aparece un ratón por ahí. ¿pero ¿qué tal si la frase es el gato. Caza, un pájaro y un ratón pasó por debajo
+
+1006
+02:22:45.180 --> 02:22:55.189
+Escuela de Posgrado: ahí. Lo más importante, el el pájaro, ¿no? Pero debido al entrenamiento. Ella no hace caso al al ratón, al pájaro perdón solamente al al ratón, porque mucho ha sido su entrenamiento. No
+
+1007
+02:22:56.080 --> 02:23:07.110
+Escuela de Posgrado: es un plazo de un plazo de explotege. Vamos a perder esta exploración de diferentes opciones y justamente en atención. Lo que queremos es que se exploren más opciones para comprar que no tienen por el contexto.
+
+1008
+02:23:07.110 --> 02:23:21.390
+Escuela de Posgrado: Entonces lo que vamos a hacer es aleatoriamente out. Vamos a pagar algunas activaciones y lo que va a incentivar este explorer o que trate de resolverlo con otros tipos de relaciones, no. Y así que cuando aparece un pájaro diga: ah, mira.
+
+1009
+02:23:21.580 --> 02:23:35.070
+Escuela de Posgrado: en este caso la relación es con un pájaro inventando con el ratón. Ok. Por eso es importante este factor de drophouse Bueno, termina siendo importante, sobre todo cuando trabajamos con contextos muy grandes cuando son chiquitos.
+
+1010
+02:23:35.260 --> 02:23:37.770
+Escuela de Posgrado: está en 0. Cero.
+
+1011
+02:23:41.160 --> 02:23:59.629
+Escuela de Posgrado: Bueno, también tiene parámetros sobre las dimensiones de los ies, perdón, los kiess y los valores. Estos suelen suceder. Por ahora, el zep atention es de todos son del mismo tamaño.
+
+1012
+02:23:59.880 --> 02:24:04.779
+Escuela de Posgrado: El otro es el vals pies que es un parámetro que yo hemos inversado. No
+
+1013
+02:24:05.130 --> 02:24:13.100
+Escuela de Posgrado: es lo mismo que en el S T. M, nosotros vamos a colocarlo siempre porque es la configuración visual
+
+1014
+02:24:13.460 --> 02:24:22.000
+Escuela de Posgrado: más que nada por esta relevancia, Digamos históricamente, pues la mayoría de países
+
+1015
+02:24:22.150 --> 02:24:29.270
+Escuela de Posgrado: es que por defecto está que falls. Pero realmente por el cliente, ¿
+
+1016
+02:24:30.040 --> 02:24:37.969
+Escuela de Posgrado: Bueno, como va a funcionar el mecanismo de atención a cierto perfil está en duplicar el otro
+
+1017
+02:24:40.150 --> 02:24:44.739
+Escuela de Posgrado: ya este esos fragmentos de aquí abajo, donde les explico después con los Aventure.
+
+1018
+02:24:45.000 --> 02:24:50.099
+Escuela de Posgrado: Pero bueno, los parámetros importantes en el instituto. Lo que tenemos aquí abajo
+
+1019
+02:24:50.560 --> 02:24:56.470
+Escuela de Posgrado: son esos 3 de arriba. El Ki. El Ki puede igual. Ok, todo puede equivale
+
+1020
+02:24:56.850 --> 02:25:04.790
+Escuela de Posgrado: en quartieval. Lo que vamos a insertar son las fuentes para generar el ki, el val
+
+1021
+02:25:05.160 --> 02:25:11.739
+Escuela de Posgrado: no los las señales tal cual, sino las fuentes de dónde viene esa información.
+
+1022
+02:25:12.100 --> 02:25:27.060
+Escuela de Posgrado: Por ejemplo, en el universo que hemos visto, el Qy, el ki y el balón es de las 3 señales provienen de la fuente. Entonces, en implementación. Lo vamos a poner X X X
+
+1023
+02:25:27.090 --> 02:25:34.280
+Escuela de Posgrado: porque los 3 provienen de la misma fuente. No vamos a ver otros casos que lo que queremos es relacionar diferentes ciudades.
+
+1024
+02:25:34.450 --> 02:25:39.570
+Escuela de Posgrado: ¿dónde vamos a colocar, por ejemplo, si estas cosas
+
+1025
+02:25:40.110 --> 02:25:47.779
+Escuela de Posgrado: aquí, el el Pueby, viene del I, que es lo que estamos generando. Pero el Ki y el barrio proviene de otra fuente
+
+1026
+02:25:47.890 --> 02:25:49.220
+Escuela de Posgrado: X. X.
+
+1027
+02:25:49.340 --> 02:25:53.629
+Escuela de Posgrado: Aquí colocamos las fuentes, no las señales sencillas.
+
+1028
+02:25:58.110 --> 02:25:59.720
+Escuela de Posgrado: nos vamos aquí.
+
+1029
+02:26:06.540 --> 02:26:07.460
+Escuela de Posgrado: Strong.
+
+1030
+02:26:11.630 --> 02:26:14.189
+Escuela de Posgrado: Bueno, hasta ahí tiene alguna pregunta.
+
+1031
+02:26:24.370 --> 02:26:29.819
+Escuela de Posgrado: Y en qué casos se usa el profesor. Lo que las opciones que nos ha dado el con la hizo
+
+1032
+02:26:30.550 --> 02:26:33.680
+Escuela de Posgrado: de a ver
+
+1033
+02:26:34.380 --> 02:26:43.860
+Escuela de Posgrado: este de acá. Es una explicación que les quería dar como para que se entiendan cómo es el manejo, los episodios. La forma usual de implementar es esta de Acá
+
+1034
+02:26:43.860 --> 02:26:55.059
+Escuela de Posgrado: muchas veces. Ustedes van a querer hacer implementaciones, cursos, por ejemplo, cambiar el mecanismo de atención, ver formas distintas de como equipalo
+
+1035
+02:26:55.090 --> 02:27:00.060
+Escuela de Posgrado: que bueno, ahorita. No estamos hablando de modificaciones ni la misma tensión, pero pueden cambiar. ¿no?
+
+1036
+02:27:00.100 --> 02:27:06.110
+Escuela de Posgrado: Entonces ahí tendrían que hacer ese tipo de implementación y modificarlo dependiendo cuál sea su enfoque.
+
+1037
+02:27:06.180 --> 02:27:09.630
+Escuela de Posgrado: Si ustedes quieren la implementación usual.
+
+1038
+02:27:09.880 --> 02:27:19.250
+Escuela de Posgrado: los que la impresión de utilizar tienen que utilizar esto de acá Y esto ha implementado, Por ejemplo.
+
+1039
+02:27:28.300 --> 02:27:33.209
+Escuela de Posgrado: otra implementación de los transformers Ok, que es una implementación optimizada.
+
+1040
+02:27:33.920 --> 02:27:45.069
+Escuela de Posgrado: Pero la forma como Y eso en comparación entre la forma y la otra forma, esa iluminación optimizada.
+
+1041
+02:27:45.430 --> 02:27:53.230
+Escuela de Posgrado: Pero las ecuaciones son distintas. Por lo tanto, no lo puedes utilizar directamente con esto de casa, porque esa es la interpretación visual. ¿no?
+
+1042
+02:27:54.070 --> 02:28:01.729
+Escuela de Posgrado: Aquí. Lo que va a hacer es una proyección sobre el valor de secuencia.
+
+1043
+02:28:02.010 --> 02:28:02.770
+Escuela de Posgrado: Sí.
+
+1044
+02:28:05.320 --> 02:28:13.650
+Escuela de Posgrado: Bien. ¿qué pasa este de acá. Ok? Aquí es distinto como lo están operando.
+
+1045
+02:28:15.240 --> 02:28:16.310
+Escuela de Posgrado: Mhm.
+
+1046
+02:28:16.740 --> 02:28:27.619
+Escuela de Posgrado: Aquí está. Ese es distinto, como lo está operando ¿no? Entonces el vigencia, la atención no lo vas a utilizar, entonces tiene que hacer una implementación manual, Digamos entonces aquí tienes que usar la implementación.
+
+1047
+02:28:27.950 --> 02:28:28.730
+Escuela de Posgrado: Vale.
+
+1048
+02:28:29.360 --> 02:28:30.070
+Escuela de Posgrado: Mhm.
+
+1049
+02:28:33.870 --> 02:28:40.279
+Escuela de Posgrado: Ahora, prefiero tener al menos clase.
+
+1050
+02:28:45.790 --> 02:28:56.870
+Escuela de Posgrado: Entonces el ecoder de cover, ya saben, ¿para qué es? Bueno, hemos trabajado solo el encoder, que es básicamente lo que estamos haciendo es mejorar las representaciones de la secuencia de entrada. Ok.
+
+1051
+02:28:56.970 --> 02:29:09.170
+Escuela de Posgrado: Recuerden eso. El engolder lo que hace es mejorar las restricciones de la secuencia. De entrada vale, lo vamos a utilizar esta arquitectura de acá en otros contextos completamente distintos. Por ejemplo, se mente de imágenes.
+
+1052
+02:29:09.500 --> 02:29:26.730
+Escuela de Posgrado: Pero, ya saben, pues mejorar la representación de la secuencia de atrás. Ok, el Coder, ¿Qué es lo que vamos a ver. Lo que vamos a hacer es generar un toque importante. No sé si la conoce, no como el mecanismo
+
+1053
+02:29:29.080 --> 02:29:41.060
+Escuela de Posgrado: perdón, Este, el mecanismo de modelos auto regresivos, ¿no? Entonces, lo que hemos tenido las representaciones de este nivel. Lo vamos a usar como contexto para generar las respuestas.
+
+1054
+02:29:41.250 --> 02:29:42.060
+Escuela de Posgrado: ¿
+
+1055
+02:29:44.780 --> 02:29:53.200
+Escuela de Posgrado: Entonces aquí primero vamos a utilizar el multi advention con máscaras a ver. Me explico cómo hacer funciona esto.
+
+1056
+02:29:53.720 --> 02:29:54.950
+Escuela de Posgrado: En
+
+1057
+02:29:57.060 --> 02:30:03.339
+Escuela de Posgrado: se acuerdan que les había mencionado. Era procedimiento. Solo para usar el ejemplo de la palabra de arriba. La frase de arriba.
+
+1058
+02:30:03.520 --> 02:30:07.080
+Escuela de Posgrado: ¿se acuerdan que les mencionaba que lo bueno de estas performance
+
+1059
+02:30:07.260 --> 02:30:12.490
+Escuela de Posgrado: es que ejecutan todo en paralelo, a diferencia de las L. C, P, M: No.
+
+1060
+02:30:13.280 --> 02:30:25.770
+Escuela de Posgrado: Sin embargo, bueno, ahí perdemos el problema del orden de las palabras y por lo tanto, tenemos que insertar un vector extra adicional como para que sepa el orden de los tokens, que ya lo he discutimos en su momento.
+
+1061
+02:30:26.000 --> 02:30:31.869
+Escuela de Posgrado: Sin embargo, la forma como vamos a utilizarlo es mediante este
+
+1062
+02:30:32.480 --> 02:30:40.520
+Escuela de Posgrado: modelos auto regresivos. No, O sea, vamos a ir retroalimentando, para generando Token y toque Ok, en forma auto regresiva. Es como lo vamos a utilizar
+
+1063
+02:30:40.940 --> 02:30:45.150
+Escuela de Posgrado: en el
+
+1064
+02:30:45.470 --> 02:31:01.110
+Escuela de Posgrado: bueno. Si el funcionamiento es auto regresivo, el problema También va a ser que cuando nosotros queramos decodificar o generar una respuesta, el transformer va a seguir funcionando completamente todo en paralelo. Eso significa que cuando estemos generando la palabra, propusieron.
+
+1065
+02:31:01.110 --> 02:31:07.950
+Escuela de Posgrado: se está generando todo en paralelo. Se está prestando paralelo. También va a estar viendo la palabra seno coseno.
+
+1066
+02:31:07.950 --> 02:31:25.870
+Escuela de Posgrado: Me refiero en el entrenamiento, el entrenamiento. Le estamos dando toda la secuencia completa porque estamos entrenando, pero otra vez. Bueno, estemos generando la palabra, propusieron o estar teniendo la palabra, propusieron, va a estar viendo en paralelo. Toda la secuencia como si no funciona con funciones. Todas las palabras no van a estar bien. Ok, lo cual no es realista.
+
+1067
+02:31:25.870 --> 02:31:30.100
+Escuela de Posgrado: Recuerden que nosotros vemos el monstruo externo de lo que todo residuo
+
+1068
+02:31:30.450 --> 02:31:35.400
+Escuela de Posgrado: Significa que cuando estudiaron primero la palabra, propusieron Lo demás es el futuro.
+
+1069
+02:31:35.830 --> 02:31:39.629
+Escuela de Posgrado: ¿por qué no podemos ver el futuro.
+
+1070
+02:31:39.760 --> 02:31:50.329
+Escuela de Posgrado: Este tenemos es, tenemos que ver solamente el pasado. Entonces, para simular ese comportamiento auto regresivo como funciona, lo que vamos a hacer es
+
+1071
+02:31:50.710 --> 02:32:04.270
+Escuela de Posgrado: es tapar. Cuando damos diferencia de la palabra, pusiéramos es trabajar. Vamos a tapar desde el U hacia adelante, cuando generemos la palabra de feminista, trabajamos desde pasado hacia adelante. Y así. Ok.
+
+1072
+02:32:04.510 --> 02:32:07.730
+Escuela de Posgrado: Y eso es justamente el Dimash
+
+1073
+02:32:07.890 --> 02:32:17.599
+Escuela de Posgrado: más que estamos viendo aquí. Ok, cuando predecimos la primera palabra, solamente podemos ver la primera palabra porque es el único contexto que tenemos
+
+1074
+02:32:17.740 --> 02:32:28.790
+Escuela de Posgrado: cuando operamos la segunda palabra, solamente podemos ver la anterior y la palabra. Actuar, que es el único contexto que tenemos. Igual. Con la tercera, no solo podemos ver el pasado, no el futuro.
+
+1075
+02:32:28.790 --> 02:32:38.870
+Escuela de Posgrado: Y bueno, en el sistema que es el mapa de tensión. Lo que vamos a forzar es que todos estos tengan valores pagados. ¿no? Ok, que estén desactivado.
+
+1076
+02:32:39.540 --> 02:32:45.460
+Escuela de Posgrado: Eso es enmascaramiento. Y va a ser útil para que tenga un comportamiento causal.
+
+1077
+02:32:47.010 --> 02:32:49.550
+Escuela de Posgrado: Sin escuchar la causalidad, No.
+
+1078
+02:32:51.060 --> 02:33:02.570
+Escuela de Posgrado: no claro para que ella causa efecto. El efecto no debe ser parte de la causa de un hombre. No pueden ver el futuro.
+
+1079
+02:33:03.130 --> 02:33:04.949
+Escuela de Posgrado: Eso es el más
+
+1080
+02:33:06.710 --> 02:33:14.780
+Escuela de Posgrado: Bueno, entonces eso vamos a utilizarlo aquí. Por cierto, no les había presentado, como es el
+
+1081
+02:33:14.880 --> 02:33:26.410
+Escuela de Posgrado: el bloque del depor. Ese es el bloque del empoder que hemos visto inteligencia ni performer el bloque del de poder tiene 3 partes. Esto es lo que le estoy mencionando. No hay más que
+
+1082
+02:33:26.410 --> 02:33:37.059
+Escuela de Posgrado: luego el crossatation que ahorita. Les voy a explicar, y finalmente el hit for que ustedes ya lo conocen muy bien. Entonces, lo que hemos visto más que con ese filtro, con esa
+
+1083
+02:33:38.440 --> 02:33:45.440
+Escuela de Posgrado: ese procedimiento constante de no ver el futuro. Luego, el Clos Apention que vamos a ver hoy: el hip hop. Ok.
+
+1084
+02:33:47.850 --> 02:33:52.289
+Escuela de Posgrado: El siguiente componente, que es el Cross advention es lo que viene aquí.
+
+1085
+02:33:56.140 --> 02:34:08.159
+Escuela de Posgrado: Les quería comentar que este para generar la secuencia de salida, que en este caso son tareas de traducción de texto para afinar cada palabra de la transmisión. Lo que necesitamos es el contexto
+
+1086
+02:34:09.130 --> 02:34:11.569
+Escuela de Posgrado: de la frase original. Ok.
+
+1087
+02:34:13.920 --> 02:34:21.089
+Escuela de Posgrado: Al igual que en ese perímetro que vamos a hacer es un producto, punto punto para ver dónde está la información que yo necesito.
+
+1088
+02:34:21.260 --> 02:34:26.060
+Escuela de Posgrado: Entonces, el perdón, este
+
+1089
+02:34:27.560 --> 02:34:44.550
+Escuela de Posgrado: el decoder para generar, va a querer generar una palabra. Va a ser un cuello diciendo: ah, mira, yo quiero hacer unas palabras sobre alguien que está haciendo una acción que la información la va a buscar en la representación de la Ecuador, o sea, la salida que hemos tenido por ahí en el bloque se transforma.
+
+1090
+02:34:44.550 --> 02:34:53.569
+Escuela de Posgrado: Ok, entonces va a ser el producto. Punto, Va a ser con Kiss, o sea, los donde sea donde haya más, no tiene un precio puntual. No
+
+1091
+02:34:53.640 --> 02:35:06.689
+Escuela de Posgrado: va a esos barrios que va a utilizar ¿no? Y el barrio viene del encode. Ok. Entonces lo que está haciendo aquí, el decoder es pedir información al encoder para generar el texto de la traducción.
+
+1092
+02:35:06.920 --> 02:35:14.409
+Escuela de Posgrado: Una vez más, el decoder genera un key buscando información y esa información disponible ecoder
+
+1093
+02:35:14.570 --> 02:35:29.910
+Escuela de Posgrado: definidas por sí, sí. Entonces lo hacemos pronto juntos entre el juez y el decode y el Ea del Cover, que era un señor de atención. Y luego ese mapa de atención salpica sobre el palo es el eco. Finalmente generamos el sol.
+
+1094
+02:35:30.080 --> 02:35:42.559
+Escuela de Posgrado: Y luego podemos utilizar de diferentes formas. Bueno, este gráfico que por ahí me parece bastante ilustrativo sobre todo esto.
+
+1095
+02:35:42.720 --> 02:35:55.740
+Escuela de Posgrado: Por ejemplo, al inicio en Z. Atención Lo que teníamos era ese mismo dato. Generamos el equipo rival, hacemos el producto que es y por cuenta respuesta, no más la atención por el barrio.
+
+1096
+02:35:55.880 --> 02:36:02.249
+Escuela de Posgrado: Y esa es la respuesta no que se encuentration. Todo proviene de la entrada el que proviene de aquí
+
+1097
+02:36:02.380 --> 02:36:06.220
+Escuela de Posgrado: el crosspacho, que lo que estamos viendo acá vamos a tener 2 puentes.
+
+1098
+02:36:06.470 --> 02:36:22.200
+Escuela de Posgrado: la este, el telecoder no, que es el que, suma en este caso, y el X, 2, que tiene que ver con el que perdón que está arriba, que estamos generando la la secuencia de sonido y el ecoder que tiene el contexto no
+
+1099
+02:36:22.200 --> 02:36:30.830
+Escuela de Posgrado: ese de acá genera valor para el que vamos a hacer el producto, pongo. Y bueno, todo el mecanismo de atención
+
+1100
+02:36:31.820 --> 02:36:32.660
+Escuela de Posgrado: ¿vale?
+
+1101
+02:36:33.900 --> 02:36:48.969
+Escuela de Posgrado: Entonces, finalmente esto va a ser procesado de manera progresiva. Ok, vamos a hacer primero, por comprensión de todas las fuentes de entrada, y vamos a ir generando palabra por palabra. Ahí genera la palabra al
+
+1102
+02:36:49.100 --> 02:36:56.199
+Escuela de Posgrado: siguiente procesal. Va a retroalimentar y va a generar 7 palabras que es Iham
+
+1103
+02:36:56.740 --> 02:37:04.820
+Escuela de Posgrado: Ok. Luego cerró el experimento y generar la cinta para otro no retroalimenta. Y así no. Ok.
+
+1104
+02:37:05.030 --> 02:37:22.100
+Escuela de Posgrado: un proceso auto regresivo, como ya hemos visto antes. Y recuerden que esa parte de arriba que dice líneas son más porque está haciendo. Es una clasificación. ¿no? Por ejemplo, termina la oración, no una clasificación de cuál es el siguiente token que debería seguir?
+
+1105
+02:37:22.900 --> 02:37:24.810
+Escuela de Posgrado: Bueno, este
+
+1106
+02:37:25.060 --> 02:37:34.670
+Escuela de Posgrado: hasta aquí nos quedamos. Así que nos hemos pasado unos minutos en la siguiente clase, vamos a ver algunas modificaciones y algunas organizaciones sobre
+
+1107
+02:37:34.780 --> 02:37:43.110
+Escuela de Posgrado: Ok las diapositivas. Después le voy a compartir a Juan como para que lo suba al campus.
+
+1108
+02:37:44.350 --> 02:37:46.640
+Escuela de Posgrado: Entonces compartido transformers obvia. No
+
+1109
+02:37:52.210 --> 02:37:55.169
+Escuela de Posgrado: debo compartir varias gentes.
+
+1110
+02:37:56.800 --> 02:38:06.819
+Escuela de Posgrado: Ah, también no se olvide. Bueno, se acomodan, seleccionamos el 26 creo que era.
+
+1111
+02:38:06.930 --> 02:38:13.010
+Escuela de Posgrado: No hay más a mirar ya.
+
+1112
+02:38:13.590 --> 02:38:22.450
+Escuela de Posgrado: Y hay una gran. No sé si hay minerales no que
+
+1113
+02:38:22.960 --> 02:38:32.920
+Escuela de Posgrado: sí está ocupado en el 12 show.
+
+1114
+02:38:34.880 --> 02:38:42.359
+Escuela de Posgrado: Les voy a dar las fechas. voy a hacer un texto para que usted lo vea, pero igual ya los voy dictando
+
+1115
+02:38:42.910 --> 02:38:47.159
+Escuela de Posgrado: disculpe que esta semana he estado muy ocupado y no le has podido dar antes
+
+1116
+02:38:47.910 --> 02:38:51.669
+Escuela de Posgrado: a ver hoy día. 28 les voy a dejar un trabajo para el 14.
+
+1117
+02:38:53.670 --> 02:39:00.609
+Escuela de Posgrado: Sí, para el 14 de marzo, ¿no? Y el 14 de marzo. También les voy a dejar el laboratorio, Dos.
+
+1118
+02:39:01.000 --> 02:39:03.940
+Escuela de Posgrado: que sería para el 28 de marzo.
+
+1119
+02:39:04.310 --> 02:39:15.640
+Escuela de Posgrado: Ahora el laboratorio. Tres les podría dejar el 28 de marzo. Otra vez les podría dar el denunciado ya desde el 21 como para que vayan avanzando. Pero sí o sí va a ser hasta el hasta el 4 de abril.
+
+1120
+02:39:15.860 --> 02:39:21.699
+Escuela de Posgrado: el 4 de vigas dejaría el último laboratorio, sería para el 18 de abril. Ahí ya terminaríamos el curso
+
+1121
+02:39:27.890 --> 02:39:32.890
+Escuela de Posgrado: a ver, porque eran poco tiempo en estos temas.
+
+1122
+02:39:34.140 --> 02:39:35.100
+Escuela de Posgrado: Mhm.
+
+1123
+02:39:36.880 --> 02:39:38.219
+Escuela de Posgrado: Pero voy a acomodar.
+
+1124
+02:39:41.610 --> 02:39:53.310
+Escuela de Posgrado: Y en la economía chiquitín es algo pequeñí.
+
+1125
+02:39:53.880 --> 02:40:00.119
+Escuela de Posgrado: Ha entrenado para hacer estas cosas o qué qué te gustaría ver alguna aplicación?
+
+1126
+02:40:00.430 --> 02:40:10.880
+Escuela de Posgrado: Ah, sí, en esta primera parte del curso, Les estoy explicando todas las arquitecturas básicas. De hecho, vamos a tener con con mis Transformers
+
+1127
+02:40:10.970 --> 02:40:26.959
+Escuela de Posgrado: a partir de esas arquitecturas básicas. Este vamos a utilizar con muchas cosas, por ejemplo, modelos generativos. Pero antes de eso, también les tengo que hablar otra cosa que tal vez va a sonar un poco teórico. Lo voy a tratar de compactar lo suficiente como para que tampoco no.
+
+1128
+02:40:28.040 --> 02:40:39.389
+Escuela de Posgrado: no le demos muchas vueltas. Este está súper bailar, que es algo que se ha vuelto muy relevante en este los últimos años. Has escuchado Foundation Models.
+
+1129
+02:40:40.920 --> 02:40:42.920
+Escuela de Posgrado: Modelos fundacionales.
+
+1130
+02:40:43.430 --> 02:40:56.509
+Escuela de Posgrado: Son modelos generales, digamos, o sea, no son entrenados por un propósito específico, sino que ustedes pueden hacer algún tipo de adicionamiento para una aplicación.
+
+1131
+02:40:57.090 --> 02:41:09.149
+Escuela de Posgrado: En, o sea, estoy entrenado de forma general, y lo puedes condicionar a diferentes aplicaciones específicas, ¿no? Sigity fue entrenado con mucha información, Pero vamos a usar para generar códigos para que expliquen matemática o para que les
+
+1132
+02:41:09.210 --> 02:41:13.660
+Escuela de Posgrado: no sé el Manden un mensaje a su a sus novias o a su esposa.
+
+1133
+02:41:13.700 --> 02:41:30.330
+Escuela de Posgrado: Son diferentes dominios para una red en general. No, ya eso es para texto, pero también puede ver para imágenes, ok. Entonces muchos están trabajando sobre generar servicio móviles para imágenes. Eso más interesante, no sólo por
+
+1134
+02:41:30.440 --> 02:41:44.480
+Escuela de Posgrado: este la arquitectura, el o el algoritmo mismo, sino porque genera representaciones que son muy, muy expresivas y pueden ser útiles para muchas aplicaciones. Entonces de eso quiero discutir. Este
+
+1135
+02:41:44.720 --> 02:41:49.860
+Escuela de Posgrado: un par de clases fue a tratar de dar mucha vuelta de ahí es.
+
+1136
+02:41:50.250 --> 02:41:55.190
+Escuela de Posgrado: Y para luego ya pasar con modelos generativos que tal vez les puede interesar un poco más. Ok.
+
+1137
+02:41:55.960 --> 02:42:09.900
+Escuela de Posgrado: Entonces ahí vamos a ver tal vez un poco más de aplicación. Sé que aquí es un poco más teórico, ya que es puras arquitecturas. Y tal vez van a ver un poco más prácticos con esas aplicaciones que ven ahí, que todo lo que hemos visto de
+
+1138
+02:42:09.900 --> 02:42:22.500
+Escuela de Posgrado: como teoría, digamos. Es como si ahorita. Les hubiera enseñado a derivar e integrar, no después de entender cómo es el derivado integral, ese gradientes y todo eso ya pueden hacer aplicaciones, no como como los primeros cursos de
+
+1139
+02:42:22.940 --> 02:42:24.940
+Escuela de Posgrado: mío, Ferrer.
+
+1140
+02:42:27.820 --> 02:42:47.470
+Escuela de Posgrado: Y sí, digamos, teóricos, son de de
+
+1141
+02:42:48.320 --> 02:42:52.210
+Escuela de Posgrado: hagamos una solución. Estamos hablando de experiencia
+
+1142
+02:42:52.590 --> 02:42:59.669
+Escuela de Posgrado: a un uso de bueno uso transformers. Creo que lo pueden ver este directamente con
+
+1143
+02:43:01.960 --> 02:43:05.720
+Escuela de Posgrado: directamente. Si es un uso, se transforma
+
+1144
+02:43:06.060 --> 02:43:14.980
+Escuela de Posgrado: algo que haya hecho hace poco un frasco. ¿qué es en su mirada? Digamos fuera
+
+1145
+02:43:18.820 --> 02:43:22.109
+Escuela de Posgrado: ya claro, sabes que eres más que nada como que casos ¿no?
+
+1146
+02:43:22.610 --> 02:43:35.170
+Escuela de Posgrado: Sí, Lo que pasa, que es diferente analogía, podemos ver la ciudad con con la teórico sorpresa.
+
+1147
+02:43:35.590 --> 02:43:39.170
+Escuela de Posgrado: Y eso tiene una valla, ¿no? Porque cuando vamos al mundo real.
+
+1148
+02:43:39.470 --> 02:43:54.579
+Escuela de Posgrado: sí, de hecho, este en parte de, no sé
+
+1149
+02:43:54.940 --> 02:44:11.490
+Escuela de Posgrado: en parte, ese laboratorio les va a chocar con eso bastante que de por sí les voy a dar una base de datos, y ahí van a ver diferentes tipos de arquitecturas que algunas son muy simples, pero van a funcionar bastante bien. Y ahí vamos a discutir mucho de eso.
+
+1150
+02:44:13.470 --> 02:44:20.229
+Escuela de Posgrado: Tal vez este en la siguiente les hago ustedes que también quiero estar un poco alineado a esos intereses.
+
+1151
+02:44:20.370 --> 02:44:26.370
+Escuela de Posgrado: Aquí es más que nada series temporales que recuerdo que les interesa a ustedes les interesa visión o
+
+1152
+02:44:27.190 --> 02:44:30.379
+Escuela de Posgrado: ya entonces la siguiente: voy a ser la condición o para que
+
+1153
+02:44:30.830 --> 02:44:37.369
+Escuela de Posgrado: si tal vez en la división, si un poco diver diversificarlas, los datos.
+
+1154
+02:44:39.360 --> 02:44:49.839
+Escuela de Posgrado: si vamos a hacer eso, por cierto, vamos a hacer presentaciones, como digo, van a hacer preguntas y sé que se muchos se ponen nervioso en mis preguntas pero traten de escuchar
+
+1155
+02:44:49.950 --> 02:44:53.769
+Escuela de Posgrado: todo con porque son bastante diferentes experiencias que les pueden
+
+1156
+02:44:54.080 --> 02:45:00.310
+Escuela de Posgrado: aportando. Van a ser muchos enfoques que tal vez lo puedan utilizar en sus trabajos. No
+
+1157
+02:45:00.490 --> 02:45:07.789
+Escuela de Posgrado: por eso lo trato de hacer que esa parte sea presencial a cierto ritmo presencial en auxiliares. Todos tenemos presencial. Eso no.
+
+1158
+02:45:09.000 --> 02:45:15.230
+Escuela de Posgrado: Así es que via ojalá que sean presenciales.
+
+1159
+02:45:15.460 --> 02:45:23.700
+Escuela de Posgrado: Pues sí, 70, noches, claro, los cuales son virtuales los días de semana, es un virtual.
+
+1160
+02:45:24.510 --> 02:45:33.690
+Escuela de Posgrado: Y sí, cuando traten de bueno, también lo podemos poder ver en el video.
+
+1161
+02:45:34.240 --> 02:45:40.740
+Escuela de Posgrado: Ah, cierto, también en el bueno, ya sé que no se pasó mucho tiempo este en el
+
+1162
+02:45:41.390 --> 02:45:48.940
+Escuela de Posgrado: en el formulario que les voy a decir para que suban sus presentaciones y su código. Le voy a poner un
+
+1163
+02:45:49.320 --> 02:45:52.729
+Escuela de Posgrado: preguntas, si es que están de acuerdo con compartir su video con los demás.
+
+1164
+02:45:53.170 --> 02:45:59.700
+Escuela de Posgrado: Lo hago sobre todo porque alguno de esos métodos Tal vez es interesante para ustedes lo puedan ver en video de otros grupos.
+
+1165
+02:45:59.890 --> 02:46:03.879
+Escuela de Posgrado: Claro que va a ser opcional y va a depender si ustedes están de acuerdo en mí.
+
+1166
+02:46:03.980 --> 02:46:09.070
+Escuela de Posgrado: Bueno, disculpen por extender el tiempo, nos vemos antes con un digital.
+
+1167
+02:46:09.750 --> 02:46:10.340
+Escuela de Posgrado: Por eso.
+
