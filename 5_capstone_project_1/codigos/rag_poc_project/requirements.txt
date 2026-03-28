@@ -1,0 +1,6 @@
+google-genai
+chromadb
+pypdf
+langchain-text-splitters
+python-dotenv
+jupyter
