@@ -1,0 +1,7 @@
+torch
+torchvision
+torchmetrics
+scikit-learn
+numpy
+Pillow
+pycocotools
