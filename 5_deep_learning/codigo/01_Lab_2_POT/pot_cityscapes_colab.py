@@ -39,8 +39,8 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description='POT: Prototypical Optimal Transport — SSH/SLURM Training')
     parser.add_argument('--dataset', type=str, required=True,
-                        choices=['cityscapes', 'coco'],
-                        help='Dataset: cityscapes or coco')
+                        choices=['cityscapes', 'coco', 'mapillary_vistas_v2'],
+                        help='Dataset: cityscapes, coco or mapillary_vistas_v2')
     parser.add_argument('--base-dir', type=str, default='.',
                         help='Base dir containing cityscapes/ and coco_dataset/ folders')
     parser.add_argument('--output-dir', type=str, default='./results',
@@ -241,6 +241,66 @@ class COCOWeakDataset(Dataset):
         mask_resized = np.array(
             Image.fromarray(mask).resize((self.img_size, self.img_size), Image.NEAREST))
         mask_tensor = torch.from_numpy(mask_resized).long()
+        return image, img_label, mask_tensor
+
+
+class MapillaryWeakDataset(Dataset):
+    """Dataset de Mapillary Vistas v2 (124 clases para v2.0)."""
+
+    def __init__(self, root, split='training', transform=None, img_size=224, num_classes=124):
+        self.root        = root
+        self.split       = split
+        self.transform   = transform
+        self.img_size    = img_size
+        self.num_classes = num_classes
+        self.samples     = []
+        self._build_file_list()
+
+    def _build_file_list(self):
+        img_dir = os.path.join(self.root, self.split, 'images')
+        gt_dir  = os.path.join(self.root, self.split, 'v2.0', 'labels')
+        
+        if not os.path.exists(img_dir) or not os.path.exists(gt_dir):
+            print(f'   [ERROR] Rutas faltantes: {img_dir} o {gt_dir}')
+            return
+
+        for fname in sorted(os.listdir(img_dir)):
+            if not (fname.endswith('.jpg') or fname.endswith('.png')):
+                continue
+            prefix   = os.path.splitext(fname)[0]
+            gt_fname = prefix + '.png'
+            img_path = os.path.join(img_dir, fname)
+            gt_path  = os.path.join(gt_dir, gt_fname)
+            if os.path.exists(gt_path):
+                self.samples.append((img_path, gt_path))
+        print(f'   [{self.split}] {len(self.samples)} muestras cargadas (Mapillary)')
+
+    def _get_image_label(self, mask_idx):
+        label  = torch.zeros(self.num_classes, dtype=torch.float32)
+        unique = np.unique(mask_idx)
+        for u in unique:
+            if 0 <= u < self.num_classes:
+                label[u] = 1.0
+        return label
+
+    def __len__(self):
+        return len(self.samples)
+
+    def __getitem__(self, idx):
+        img_path, gt_path = self.samples[idx]
+        image    = Image.open(img_path).convert('RGB')
+        mask_pil = Image.open(gt_path)
+        mask_idx = np.array(mask_pil, dtype=np.uint8)
+        
+        img_label = self._get_image_label(mask_idx)
+        
+        if self.transform:
+            image = self.transform(image)
+            
+        mask_tensor = torch.from_numpy(
+            np.array(Image.fromarray(mask_idx).resize(
+                (self.img_size, self.img_size), Image.NEAREST))
+        ).long()
         return image, img_label, mask_tensor
 
 
@@ -739,6 +799,9 @@ def run_experiment(dataset_name, data_root, num_classes, img_size,
     if dataset_name == 'cityscapes':
         train_ds = CityscapesWeakDataset(data_root, 'train', train_tf, img_size)
         val_ds   = CityscapesWeakDataset(data_root, 'val',   val_tf,   img_size)
+    elif dataset_name == 'mapillary_vistas_v2':
+        train_ds = MapillaryWeakDataset(data_root, 'training',   train_tf, img_size, num_classes)
+        val_ds   = MapillaryWeakDataset(data_root, 'validation', val_tf,   img_size, num_classes)
     else:
         train_ds = COCOWeakDataset(data_root, 'train', train_tf, img_size, num_classes)
         val_ds   = COCOWeakDataset(data_root, 'val',   val_tf,   img_size, num_classes)
@@ -865,6 +928,14 @@ def main():
         num_classes  = 19
         class_names  = CITYSCAPES_CLASSES
         data_root    = os.path.join(args.base_dir, 'cityscapes')
+    elif args.dataset == 'mapillary_vistas_v2':
+        data_root    = os.path.join(args.base_dir, 'mapillary_vistas_v2')
+        config_path  = os.path.join(data_root, 'config_v2.0.json')
+        print(f'Leyendo configuración de: {config_path}')
+        with open(config_path, 'r') as f:
+            cfg = json.load(f)
+        num_classes  = len(cfg['labels'])
+        class_names  = [l['readable'] for l in cfg['labels']]
     else:
         num_classes  = 80
         class_names  = COCO_CLASSES
