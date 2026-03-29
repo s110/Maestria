@@ -26,9 +26,40 @@ from torch.utils.data import Dataset, DataLoader, Subset
 from torchvision import transforms, models
 from torchvision.models import ResNet50_Weights
 from PIL import Image
-from sklearn.cluster import KMeans
 import warnings
 warnings.filterwarnings('ignore')
+
+
+def kmeans_gpu(X, K, n_iter=10, seed=42):
+    """KMeans on GPU using pure PyTorch. No CPU transfer needed.
+
+    Args:
+        X: (N, D) tensor on GPU — data points
+        K: number of clusters
+        n_iter: iterations (default 10, sufficient for K=3 with <200 points)
+        seed: random seed for centroid initialization
+
+    Returns:
+        labels: (N,) tensor — cluster assignment for each point
+    """
+    N, D = X.shape
+    if N <= K:
+        return torch.arange(N, device=X.device) % K
+    # Initialize: pick K random points as centroids
+    gen = torch.Generator(device=X.device)
+    gen.manual_seed(seed)
+    idx = torch.randperm(N, generator=gen, device=X.device)[:K]
+    centroids = X[idx].clone()
+    for _ in range(n_iter):
+        # Assign each point to nearest centroid
+        dists = torch.cdist(X, centroids)  # (N, K)
+        labels = dists.argmin(dim=1)       # (N,)
+        # Update centroids
+        for k in range(K):
+            mask = (labels == k)
+            if mask.any():
+                centroids[k] = X[mask].mean(dim=0)
+    return labels
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -373,70 +404,64 @@ def mask_average_pool(features, mask):
     return (features * mask.unsqueeze(0)).sum(dim=1) / mask.sum()
 
 
+def _partition_class(feats_flat, feats_detached, cam_c, K, threshold, device):
+    """Partition features of a single class into K clusters on GPU.
+
+    Returns (proto, cluster_protos, cluster_masks) or None if class not confident.
+    """
+    D, HW = feats_flat.shape
+    conf_mask = (cam_c > threshold)  # (HW,) bool tensor, stays on GPU
+    cls_proto = mask_average_pool(feats_flat, conf_mask.float())
+    n_conf = conf_mask.sum().item()
+
+    cluster_protos = cls_proto.unsqueeze(0).expand(K, -1).clone()  # (K, D)
+    cluster_masks = torch.zeros(HW, K, device=device)
+
+    if n_conf >= K:
+        conf_indices = torch.where(conf_mask)[0]  # (n_conf,)
+        conf_feats = feats_detached[:, conf_mask].T  # (n_conf, D)
+        labels = kmeans_gpu(conf_feats, K, n_iter=10, seed=SEED)  # (n_conf,)
+        for k in range(K):
+            k_sel = (labels == k)
+            if k_sel.any():
+                k_indices = conf_indices[k_sel]
+                k_mask = torch.zeros(HW, device=device)
+                k_mask[k_indices] = 1.0
+                cluster_protos[k] = mask_average_pool(feats_flat, k_mask)
+                cluster_masks[:, k] = k_mask
+
+    return cls_proto, cluster_protos, cluster_masks
+
+
 def feature_partitioning(feats_flat, cam_cls, img_label, K=K_CLUSTERS,
                          threshold=CAM_THRESHOLD):
-    D, HW    = feats_flat.shape
-    C        = img_label.shape[0]
-    J1       = C + 1
-    feats_np = feats_flat.detach().T.cpu().numpy()
+    D, HW = feats_flat.shape
+    C = img_label.shape[0]
+    J1 = C + 1
+    device = feats_flat.device
+    feats_detached = feats_flat.detach()
 
-    cluster_protos = torch.zeros(J1, K, D, device=feats_flat.device)
-    cls_protos     = torch.zeros(J1, D,    device=feats_flat.device)
-    cluster_masks  = torch.zeros(HW, J1, K, device=feats_flat.device)
+    cluster_protos = torch.zeros(J1, K, D, device=device)
+    cls_protos = torch.zeros(J1, D, device=device)
+    cluster_masks = torch.zeros(HW, J1, K, device=device)
     present_classes = []
 
-    # Background
-    bg_cam  = cam_cls[0]
-    bg_conf = (bg_cam > threshold).cpu().numpy()
-    bg_mask_t = torch.from_numpy(bg_conf.astype(np.float32)).to(feats_flat.device)
-    cls_protos[0] = mask_average_pool(feats_flat, bg_mask_t)
-    if bg_conf.sum() >= K:
-        try:
-            km     = KMeans(n_clusters=K, n_init=3, random_state=SEED)
-            labels = km.fit_predict(feats_np[bg_conf])
-            conf_indices = np.where(bg_conf)[0]
-            for k in range(K):
-                k_indices = conf_indices[labels == k]
-                if len(k_indices) > 0:
-                    k_mask = torch.zeros(HW, device=feats_flat.device)
-                    k_mask[k_indices] = 1.0
-                    cluster_protos[0, k] = mask_average_pool(feats_flat, k_mask)
-                    cluster_masks[:, 0, k] = k_mask
-        except Exception:
-            for k in range(K):
-                cluster_protos[0, k] = cls_protos[0]
-    else:
-        for k in range(K):
-            cluster_protos[0, k] = cls_protos[0]
+    # Background (class index 0)
+    cp, cps, cms = _partition_class(feats_flat, feats_detached, cam_cls[0], K, threshold, device)
+    cls_protos[0] = cp
+    cluster_protos[0] = cps
+    cluster_masks[:, 0, :] = cms
     present_classes.append(0)
 
-    # Foreground
+    # Foreground classes
     fg_present = torch.where(img_label > 0.5)[0].tolist()
     for c in fg_present:
-        class_idx = c + 1
-        cam_c     = cam_cls[class_idx]
-        conf_mask = (cam_c > threshold).cpu().numpy()
-        conf_t = torch.from_numpy(conf_mask.astype(np.float32)).to(feats_flat.device)
-        cls_protos[class_idx] = mask_average_pool(feats_flat, conf_t)
-        if conf_mask.sum() >= K:
-            try:
-                km     = KMeans(n_clusters=K, n_init=3, random_state=SEED)
-                labels = km.fit_predict(feats_np[conf_mask])
-                conf_indices = np.where(conf_mask)[0]
-                for k in range(K):
-                    k_indices = conf_indices[labels == k]
-                    if len(k_indices) > 0:
-                        k_mask = torch.zeros(HW, device=feats_flat.device)
-                        k_mask[k_indices] = 1.0
-                        cluster_protos[class_idx, k] = mask_average_pool(feats_flat, k_mask)
-                        cluster_masks[:, class_idx, k] = k_mask
-            except Exception:
-                for k in range(K):
-                    cluster_protos[class_idx, k] = cls_protos[class_idx]
-        else:
-            for k in range(K):
-                cluster_protos[class_idx, k] = cls_protos[class_idx]
-        present_classes.append(class_idx)
+        ci = c + 1
+        cp, cps, cms = _partition_class(feats_flat, feats_detached, cam_cls[ci], K, threshold, device)
+        cls_protos[ci] = cp
+        cluster_protos[ci] = cps
+        cluster_masks[:, ci, :] = cms
+        present_classes.append(ci)
 
     # Detach: prototypes are only used for computing the transport plan
     # (assignment decisions). Gradients flow later through feature_activation

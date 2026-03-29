@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=10
 #SBATCH --mem=64G
-#SBATCH --time=16:00:00
+#SBATCH --time=10:00:00
 #SBATCH --partition=gpu
 #SBATCH --nodelist=ag001
 #SBATCH --gres=gpu:1
@@ -14,11 +14,11 @@
 # ═══════════════════════════════════════════════════════════════════════════
 # POT Full Training — Paper parameters, all datasets sequential
 # ═══════════════════════════════════════════════════════════════════════════
-# Estimacion de tiempo (A100, batch_size=16, img_size=448):
-#   COCO:       118K imgs × 6 epochs ≈ 6-8 horas
-#   Cityscapes:   3K imgs × 6 epochs ≈ 15 min
-#   Mapillary:   18K imgs × 6 epochs ≈ 1.5 horas
-#   Total estimado: ~8-10 horas
+# Estimacion de tiempo (A100, batch_size=16, img_size=448, GPU KMeans):
+#   COCO:       118K imgs × 6 epochs ≈ 3-4 horas
+#   Cityscapes:   3K imgs × 6 epochs ≈ 8 min
+#   Mapillary:   18K imgs × 6 epochs ≈ 40 min
+#   Total estimado: ~5 horas (+ evaluacion ~1h)
 # ═══════════════════════════════════════════════════════════════════════════
 
 echo "========================================================"
