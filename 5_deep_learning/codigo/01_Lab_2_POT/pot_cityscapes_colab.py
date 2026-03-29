@@ -378,7 +378,7 @@ def feature_partitioning(feats_flat, cam_cls, img_label, K=K_CLUSTERS,
     D, HW    = feats_flat.shape
     C        = img_label.shape[0]
     J1       = C + 1
-    feats_np = feats_flat.T.cpu().numpy()
+    feats_np = feats_flat.detach().T.cpu().numpy()
 
     cluster_protos = torch.zeros(J1, K, D, device=feats_flat.device)
     cls_protos     = torch.zeros(J1, D,    device=feats_flat.device)
@@ -438,7 +438,10 @@ def feature_partitioning(feats_flat, cam_cls, img_label, K=K_CLUSTERS,
                 cluster_protos[class_idx, k] = cls_protos[class_idx]
         present_classes.append(class_idx)
 
-    return cluster_protos, cls_protos, cluster_masks, present_classes
+    # Detach: prototypes are only used for computing the transport plan
+    # (assignment decisions). Gradients flow later through feature_activation
+    # when prototypes are recomputed from live features.
+    return cluster_protos.detach(), cls_protos.detach(), cluster_masks.detach(), present_classes
 
 
 def cosine_similarity_matrix(A, B, eps=1e-8):
@@ -472,7 +475,9 @@ def sinkhorn_ot(S, x_constraint, reg=SINKHORN_REG, n_iter=SINKHORN_ITERS):
 
 
 def feature_allocation(feats_flat, cluster_protos, cls_protos, present_classes):
-    feats_T    = feats_flat.T.float()
+    # Detach for allocation: T_star is used as fixed weights, gradients flow
+    # through feature_activation instead. Avoids tracking 100 Sinkhorn iters.
+    feats_T    = feats_flat.detach().T.float()
     proto_list = [cluster_protos[c_idx] for c_idx in present_classes]
     all_protos = torch.cat(proto_list, dim=0)
     S = cosine_similarity_matrix(feats_T, all_protos)
@@ -521,9 +526,9 @@ def ot_consistency_loss(cam_proto, cam_cls, T_star, img_label,
     J1     = cam_proto.shape[0]
     C      = J1 - 1
     log_C1 = np.log(C + 1) + 1e-8
-    cam_proto_norm = F.normalize(cam_proto.float(), p=1, dim=0)
-    cam_cls_norm   = F.normalize(cam_cls.float(),   p=1, dim=0)
-    total_loss = torch.tensor(0.0, device=cam_proto.device, requires_grad=False)
+    cam_proto_f = cam_proto.float()
+    cam_cls_f   = cam_cls.float()
+    total_loss = torch.tensor(0.0, device=cam_proto.device)
     proto_idx  = 0
     count      = 0
     for c_idx in present_classes:
@@ -532,7 +537,12 @@ def ot_consistency_loss(cam_proto, cam_cls, T_star, img_label,
         H_t  = binary_entropy(t_ic)
         l_c  = 1.0 if c_idx == 0 else float(img_label[c_idx - 1].item())
         w_ic = (l_c * (1.0 - H_t / log_C1)).clamp(0)
-        diff = (cam_proto_norm[c_idx] - cam_cls_norm[c_idx]).abs()
+        # Per-class max normalization to [0,1] then L1 distance (Eq. 12)
+        cp = cam_proto_f[c_idx]
+        cc = cam_cls_f[c_idx]
+        cp = cp / (cp.max() + 1e-8)
+        cc = cc / (cc.max() + 1e-8)
+        diff = (cp - cc).abs()
         total_loss = total_loss + (w_ic * diff).sum() / (HW + 1e-8)
         count += 1
     return total_loss / max(count, 1)
@@ -558,6 +568,9 @@ def pot_forward_single(feats, cam_cls, img_label, H, W):
     return cam_proto_full, loss_otcon
 
 
+# TODO: The full POT pipeline (Section 4.2) generates pseudo-labels using
+# DenseCRF + IRN on prototype CAMs, then trains DeepLab-v2 on those labels.
+# This implementation uses argmax on CAMs directly as a simplification.
 def cam_to_segmentation(cam_proto, threshold=0.3):
     cam_norm = cam_proto.clone()
     for c in range(cam_norm.shape[0]):
@@ -603,10 +616,11 @@ def train_one_epoch(model, train_loader, optimizer, epoch, global_step,
         for b in range(B):
             try:
                 _, loss_otcon_b = pot_forward_single(
-                    feats[b].detach(), cam_cls[b].detach(), img_labels[b], H, W)
+                    feats[b], cam_cls[b], img_labels[b], H, W)
                 batch_loss_otcon = batch_loss_otcon + loss_otcon_b
-            except Exception:
-                pass
+            except Exception as e:
+                if batch_idx == 0 and b == 0:
+                    print(f'   [WARN] POT forward failed: {e}')
         batch_loss_otcon = batch_loss_otcon / B
 
         loss_total = loss_cls + THETA * batch_loss_otcon
@@ -699,7 +713,8 @@ def evaluate(model, loader, num_classes, device, n_samples=None):
 # ═════════════════════════════════════════════════════════════════════════════
 
 def evaluate_ablation(model, val_loader, num_classes, device,
-                      use_multi_cluster=True, use_sot=True, n_samples=100):
+                      use_multi_cluster=True, use_ot=True,
+                      use_similarity_constraint=True, n_samples=100):
     model.eval()
     intersection = np.zeros(num_classes)
     union        = np.zeros(num_classes)
@@ -722,17 +737,31 @@ def evaluate_ablation(model, val_loader, num_classes, device,
                         feats_flat, cam_flat, img_labels[b], K=K_use)
 
                     if use_multi_cluster and len(present) > 0:
-                        if use_sot:
-                            T_star, assignment, _ = feature_allocation(
-                                feats_flat, cluster_protos, cls_protos, present)
+                        if use_ot:
+                            if use_similarity_constraint:
+                                # Full POT: similarity-aware OT
+                                T_star, assignment, _ = feature_allocation(
+                                    feats_flat, cluster_protos, cls_protos, present)
+                            else:
+                                # Vanilla OT: uniform constraints
+                                N = len(present) * K_use
+                                x_unif = torch.full((N,), 1.0/N, device=device)
+                                proto_list = [cluster_protos[c] for c in present]
+                                all_p = torch.cat(proto_list, dim=0)
+                                S = cosine_similarity_matrix(feats_flat.T.float(), all_p)
+                                T_star = sinkhorn_ot(S, x_unif)
+                                assignment = T_star.argmax(dim=1)
                         else:
-                            N = len(present) * K_use
-                            x_unif = torch.full((N,), 1.0/N, device=device)
+                            # No OT: assign by nearest prototype (cosine similarity)
                             proto_list = [cluster_protos[c] for c in present]
                             all_p = torch.cat(proto_list, dim=0)
                             S = cosine_similarity_matrix(feats_flat.T.float(), all_p)
-                            T_star = sinkhorn_ot(S, x_unif)
-                            assignment = T_star.argmax(dim=1)
+                            assignment = S.argmax(dim=1)
+                            # Build uniform T_star for feature_activation
+                            N = len(present) * K_use
+                            T_star = torch.zeros(feats_flat.shape[1], N, device=device)
+                            for i in range(feats_flat.shape[1]):
+                                T_star[i, assignment[i]] = 1.0 / feats_flat.shape[1]
 
                         cam_proto, _ = feature_activation(
                             feats_flat, cluster_protos, T_star, assignment,
@@ -1018,18 +1047,22 @@ def main():
           f'(config: {best_result["experiment"]})')
     print(f'{"="*70}')
 
+    # NOTE: This ablation evaluates different inference pipelines on the same
+    # trained model. A rigorous ablation would train separate models per
+    # condition (Tab. 3-4 in the paper). This is a known simplification.
+    #                                (multi_cluster, use_ot, similarity_constraint)
     ablation_configs = [
-        ('I  — Baseline (single-cluster)',      False, False),
-        ('II — Multi-cluster (sin OT)',         True,  False),
-        ('III— Multi-cluster + OT vanilla',     True,  False),
-        ('IV — POT completo (SOT+Lotcon)',      True,  True),
+        ('I   — Baseline (single-cluster)',         False, False, False),
+        ('II  — Multi-cluster, sin OT',             True,  False, False),
+        ('III — Multi-cluster + OT uniforme',       True,  True,  False),
+        ('IV  — POT completo (SOT + L_otcon)',      True,  True,  True),
     ]
 
     ablation_results = {}
-    for name, mc, sot in ablation_configs:
+    for name, mc, use_ot, sim_constr in ablation_configs:
         print(f'   Evaluando: {name} ...')
         miou = evaluate_ablation(best_model, best_val_loader, num_classes,
-                                 device, mc, sot, n_samples=100)
+                                 device, mc, use_ot, sim_constr, n_samples=100)
         ablation_results[name] = miou
         print(f'   → mIoU = {miou*100:.2f}%')
 

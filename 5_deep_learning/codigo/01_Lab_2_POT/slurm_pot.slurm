@@ -4,12 +4,12 @@
 #SBATCH --error=logs/error_%j.log
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=16
+#SBATCH --cpus-per-task=10
 #SBATCH --mem=64G
 #SBATCH --time=08:00:00
 #SBATCH --partition=gpu
 #SBATCH --nodelist=ag001
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:1
 
 # ═══════════════════════════════════════════════════════════════════════════
 # POT: Prototypical Optimal Transport — SLURM Batch Script
@@ -70,7 +70,11 @@ python3 -c "import torch; print(f'CUDA disponible: {torch.cuda.is_available()}')
 echo "--------------------------"
 
 
-# 6. Ejecutar entrenamiento
+# 6. Limitar hilos internos de numpy/sklearn para evitar contención con DataLoader workers
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+
+# 7. Ejecutar entrenamiento
 echo "Ejecutando script POT con dataset: $DATASET"
 srun python3 -u pot_cityscapes_colab.py \
     --dataset $DATASET \
