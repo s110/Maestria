@@ -21,7 +21,7 @@
 
 # Validar argumento de dataset
 DATASET=${1:-cityscapes}
-if [[ "$DATASET" != "cityscapes" && "$DATASET" != "coco" ]]; then
+if [[ "$DATASET" != "cityscapes" && "$DATASET" != "coco" && "$DATASET" != "mapillary_vistas_v2" ]]; then
     echo "ERROR: Dataset debe ser 'cityscapes' o 'coco'. Recibido: $DATASET"
     exit 1
 fi
