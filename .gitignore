@@ -69,3 +69,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Capstone II: directorio de trabajo del curso en curso, sin versionar por
+# ahora. Son ~2 GB, de los cuales 01_BBDD_NoEstructurada son PDFs publicos de
+# terceros (OEFA y similares) y 02_BBDD_Estructurada es un volcado con datos
+# reales del backoffice de Minnder. Este repositorio es PUBLICO: lo que haya
+# que versionar de aqui deberia ir a un repositorio privado aparte.
+6_capstone_2/CapstoneII/
