@@ -1,0 +1,135 @@
+name: no-ai-attribution
+
+# Bloquea commits y PRs con atribución de IA:
+#   - cualquier trailer "Co-authored-by:" (o solo los de IA, según BLOCK_ALL_COAUTHORS)
+#   - autores/committers de IA en los commits
+#   - "Generated with Claude Code" y similares en título o descripción del PR
+#   - PRs abiertos por bots de IA o desde ramas típicas de agentes
+#
+# Debe estar en la rama por defecto. El ruleset "no-ai-attribution" exige
+# el status check "no-ai-attribution" antes de mergear.
+#
+# No ejecuta código del PR ni descarga el repositorio: solo lee metadatos
+# del evento y de la API de GitHub.
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+env:
+  # true  = bloquea CUALQUIER Co-authored-by, incluso de un humano.
+  # false = bloquea solo coautores de herramientas de IA.
+  BLOCK_ALL_COAUTHORS: "true"
+
+jobs:
+  no-ai-attribution:
+    name: no-ai-attribution
+    runs-on: ubuntu-latest
+    steps:
+      - name: Revisar autor, rama, título y descripción del PR
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_AUTHOR_TYPE: ${{ github.event.pull_request.user.type }}
+          PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          set -euo pipefail
+          fail=0
+
+          ai_names='claude|claude-code|anthropic|copilot|codex|openai|chatgpt|cursor|devin|jules|gemini|aider|windsurf|sweep|codegen'
+          if [ "$PR_AUTHOR_TYPE" = "Bot" ] && printf '%s' "$PR_AUTHOR" | grep -Eiq "$ai_names"; then
+            echo "::error::El PR lo abrió un bot de IA no permitido: $PR_AUTHOR"
+            fail=1
+          fi
+
+          if printf '%s' "$PR_HEAD_REF" | grep -Eiq "^(${ai_names})(/|-|_)"; then
+            echo "::error::El PR viene de una rama de agente de IA: $PR_HEAD_REF"
+            fail=1
+          fi
+
+          coauthor_pattern='co-authored-by[[:space:]]*:.*(claude|anthropic|copilot|cursor|codex|openai|chatgpt|gemini|devin|aider|windsurf)'
+          if [ "${BLOCK_ALL_COAUTHORS:-true}" = "true" ]; then
+            coauthor_pattern='co-authored-by[[:space:]]*:'
+          fi
+
+          ai_markers='(generated|created|authored|implemented|written|powered|built)[[:space:]]+(with|by|using)[[:space:]]+.*(claude|copilot|cursor|codex|openai|chatgpt|gemini|devin|aider|windsurf)|claude\.ai/code|claude\.com/claude-code|🤖[[:space:]]*(generated|created)'
+          pr_text="$(printf '%s\n%s' "$PR_TITLE" "$PR_BODY")"
+
+          if printf '%s' "$pr_text" | grep -Eiq "$coauthor_pattern"; then
+            echo "::error::El título o la descripción del PR contiene un Co-authored-by (GitHub podría convertirlo en coautor al hacer squash)."
+            printf '%s\n' "$pr_text" | grep -Ein "$coauthor_pattern" || true
+            fail=1
+          fi
+
+          if printf '%s' "$pr_text" | grep -Eiq "$ai_markers"; then
+            echo "::error::El título o la descripción del PR contiene atribución de una herramienta de IA."
+            printf '%s\n' "$pr_text" | grep -Ein "$ai_markers" || true
+            fail=1
+          fi
+
+          [ "$fail" -eq 0 ] || exit 1
+
+      - name: Revisar commits del PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          fail=0
+          count=0
+          commits_file="$(mktemp)"
+          trap 'rm -f "$commits_file"' EXIT
+
+          # Cada línea es un commit completo en base64: así los mensajes
+          # multilínea no rompen el parseo. Funciona también con PRs de forks.
+          gh api --paginate "repos/$REPO/pulls/$PR_NUMBER/commits?per_page=100" \
+            --jq '.[] | @base64' > "$commits_file"
+
+          if [ ! -s "$commits_file" ]; then
+            echo "Sin commits que revisar."
+            exit 0
+          fi
+
+          coauthor_pattern='^[[:space:]]*co-authored-by[[:space:]]*:'
+          if [ "${BLOCK_ALL_COAUTHORS:-true}" != "true" ]; then
+            coauthor_pattern='^[[:space:]]*co-authored-by[[:space:]]*:.*(claude|anthropic|copilot|cursor|codex|openai|chatgpt|gemini|devin|aider|windsurf)'
+          fi
+
+          while IFS= read -r encoded; do
+            [ -n "$encoded" ] || continue
+            count=$((count+1))
+            commit_json="$(printf '%s' "$encoded" | base64 --decode)"
+            sha="$(jq -r '.sha' <<< "$commit_json")"
+            msg="$(jq -r '.commit.message' <<< "$commit_json")"
+
+            if printf '%s' "$msg" | grep -Eiq "$coauthor_pattern"; then
+              echo "::error::El commit $sha tiene un trailer Co-authored-by."
+              printf '%s\n' "$msg" | grep -Ein "$coauthor_pattern" || true
+              fail=1
+            fi
+
+            names="$(jq -r '.commit.author.name, .commit.committer.name' <<< "$commit_json")"
+            if printf '%s' "$names" | grep -Eiq '^(claude|claude\[bot\]|anthropic|github copilot|copilot|cursor|devin|codex|openai|chatgpt|aider|jules|gemini)([[:space:]].*)?$'; then
+              echo "::error::El commit $sha tiene un autor o committer de IA."
+              fail=1
+            fi
+
+            emails="$(jq -r '.commit.author.email, .commit.committer.email' <<< "$commit_json")"
+            if printf '%s' "$emails" | grep -Eiq 'anthropic\.com|openai\.com|copilot@github\.com|cursor\.com|devin-ai|(claude|copilot|cursor|codex|devin).*@users\.noreply\.github\.com'; then
+              echo "::error::El commit $sha tiene un email de autor o committer de IA."
+              fail=1
+            fi
+          done < "$commits_file"
+
+          if [ "$fail" -ne 0 ]; then
+            echo "Reescribe los commits afectados (git rebase / git commit --amend) y vuelve a pushear."
+            exit 1
+          fi
+
+          echo "OK: $count commit(s) sin atribución de IA."
